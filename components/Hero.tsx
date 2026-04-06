@@ -18,10 +18,15 @@ export default function Hero() {
           {/* Left */}
           <div>
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-[#0A0A0A] text-[#FFE234] brutal-border brutal-shadow px-4 py-2 text-sm font-bold mb-8 mono">
+            <div className="inline-flex items-center gap-2 bg-[#0A0A0A] text-[#FFE234] brutal-border brutal-shadow px-4 py-2 text-sm font-bold mb-4 mono">
               <Star size={12} fill="#FFE234" />
               Développeur freelance · Disponible maintenant
             </div>
+
+            {/* SEO label */}
+            <p className="mono text-sm font-bold text-gray-500 mb-4">
+              // création application mobile iOS & Android · Brest, Bretagne
+            </p>
 
             {/* Headline */}
             <h1 className="text-5xl md:text-7xl font-bold leading-[1.05] mb-6 tracking-tight">
@@ -41,8 +46,9 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-md">
-              Je crée des applications iOS &amp; Android sur mesure pour restaurants,
-              commerces et jeux. De l'idée au déploiement sur l'App Store.
+              Développeur freelance basé à <strong>Brest, Bretagne</strong>. Je crée des applications
+              iOS &amp; Android sur mesure pour restaurants, commerces et jeux.
+              De l'idée au déploiement sur l'App Store.
             </p>
 
             {/* CTAs */}

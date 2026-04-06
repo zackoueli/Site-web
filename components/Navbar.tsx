@@ -18,9 +18,9 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 font-bold text-xl mono">
           <span className="bg-[#FFE234] brutal-border brutal-shadow px-2 py-0.5 text-sm">
-            APP
+            BREIZH
           </span>
-          <span>Mobile Pro</span>
+          <span>App</span>
         </a>
 
         {/* Desktop nav */}

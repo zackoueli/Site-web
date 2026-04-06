@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://votre-domaine.fr";
+  const base = "https://breizhapp.tech";
   return [
     { url: base, lastModified: new Date(), changeFrequency: "monthly", priority: 1 },
   ];

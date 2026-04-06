@@ -12,13 +12,25 @@ export default function Contact() {
     message: "",
   });
 
+  const [error, setError] = useState("");
+
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setLoading(true);
-    // Simulate send — replace with your email API (Resend, EmailJS, etc.)
-    await new Promise((r) => setTimeout(r, 1200));
-    setLoading(false);
-    setSent(true);
+    setError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error();
+      setSent(true);
+    } catch {
+      setError("Une erreur est survenue. Réessayez ou contactez-moi directement.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -97,18 +109,26 @@ export default function Contact() {
             </div>
 
             <div className="flex flex-col gap-1.5">
-              <label className="font-bold text-sm" htmlFor="budget">Budget envisagé</label>
+              <label className="font-bold text-sm" htmlFor="budget">Type de projet</label>
               <select
                 id="budget"
                 value={form.budget}
                 onChange={(e) => setForm({ ...form, budget: e.target.value })}
                 className="brutal-border p-3 font-medium outline-none focus:bg-[#FFFBF0] bg-white"
               >
-                <option value="">Sélectionnez...</option>
-                <option value="basique">400€ — App basique</option>
-                <option value="premium">600€ — App premium</option>
-                <option value="boutique">0€ + 10% — Boutique</option>
-                <option value="autre">Autre / À discuter</option>
+                <option value="">Sélectionnez votre type d'app...</option>
+                <option value="restaurant">🍽️ Restaurant / Food (commande, réservation)</option>
+                <option value="boutique">🛍️ Boutique en ligne / E-commerce</option>
+                <option value="maraicher">🌱 Maraîcher / Commerce local</option>
+                <option value="jeu">🎮 Jeu mobile</option>
+                <option value="portfolio">💼 Portfolio / Vitrine professionnelle</option>
+                <option value="reservation">📅 Réservation / Prise de RDV</option>
+                <option value="livraison">🚚 Livraison / Logistique</option>
+                <option value="social">💬 Réseau social / Communauté</option>
+                <option value="sante">🏥 Santé / Bien-être</option>
+                <option value="education">📚 Éducation / Formation</option>
+                <option value="evenement">🎉 Événementiel / Billetterie</option>
+                <option value="autre">✏️ Autre / Je ne sais pas encore</option>
               </select>
             </div>
 
@@ -124,6 +144,12 @@ export default function Contact() {
                 className="brutal-border p-3 font-medium outline-none focus:bg-[#FFFBF0] resize-none"
               />
             </div>
+
+            {error && (
+              <p className="brutal-border bg-red-50 border-red-400 text-red-700 p-3 text-sm font-semibold">
+                {error}
+              </p>
+            )}
 
             <button
               type="submit"

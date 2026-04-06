@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "Combien coûte la création d'une application mobile ?",
-    a: "Une app basique commence à 400€. Une app premium avec paiement, notifications et panel admin est à 600€. Pour les boutiques en ligne, j'ai aussi une offre à 0€ avec 10% de commission sur les ventes. Chaque projet est unique, le devis est gratuit.",
+    a: "Une app commence à 490€ d'installation + 49€/mois (hébergement & support inclus). Le prix final dépend des fonctionnalités choisies : paiement, notifications, panel admin, réservation… Pour les boutiques e-commerce, j'ai une offre spéciale à 0€ d'installation avec 12% de commission sur les ventes. Chaque projet est unique, le devis est gratuit et sans engagement.",
   },
   {
     q: "Est-ce que l'app fonctionnera sur iOS et Android ?",
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "Qu'est-ce qui est inclus dans le suivi après livraison ?",
-    a: "Après livraison, je reste disponible pour les corrections de bugs pendant 30 jours. Pour les évolutions et nouvelles fonctionnalités, on définit un tarif au cas par cas.",
+    a: "Je reste disponible après livraison — mon objectif est que l'app soit un outil qui vous convient vraiment. Corrections de bugs, ajustements, nouvelles fonctionnalités : on en discute au fil du temps selon vos besoins. Pas de contrat forcé, juste une collaboration continue.",
   },
   {
     q: "Est-ce que je peux avoir un exemple de ce que vous avez déjà réalisé ?",

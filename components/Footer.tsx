@@ -19,8 +19,8 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="font-bold text-xl mono mb-3 flex items-center gap-2">
-            <span className="bg-[#FFE234] text-[#0A0A0A] px-2 py-0.5 text-sm brutal-border border-[#FFE234]">APP</span>
-            Mobile Pro
+            <span className="bg-[#FFE234] text-[#0A0A0A] px-2 py-0.5 text-sm brutal-border border-[#FFE234]">BREIZH</span>
+            App
           </div>
           <p className="text-sm text-gray-400 leading-relaxed">
             Développeur freelance spécialisé en création d'applications mobiles
@@ -66,7 +66,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-gray-800 py-4 px-4 text-center text-sm text-gray-600 mono">
-        © {year} App Mobile Pro — Création d'applications mobiles iOS & Android
+        © {year} BreizhApp — Création d'applications mobiles iOS & Android
       </div>
     </footer>
   );

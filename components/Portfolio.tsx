@@ -107,7 +107,7 @@ export default function Portfolio() {
 
           <div className="flex justify-center">
             {app.video
-              ? <PhoneVideo src={app.video} appName={app.title} />
+              ? <PhoneVideo key={app.video} src={app.video} appName={app.title} />
               : <PhonePlaceholder app={app} />
             }
           </div>

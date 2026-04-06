@@ -4,19 +4,25 @@ export default function SchemaLD() {
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://votre-domaine.fr/#person",
-        name: "App Mobile Pro",
+        "@id": "https://breizhapp.tech/#person",
+        name: "BreizhApp",
         jobTitle: "Développeur d'applications mobiles freelance",
         description:
-          "Création d'applications mobiles iOS et Android sur mesure pour restaurants, commerces et jeux.",
-        url: "https://votre-domaine.fr",
+          "Création d'applications mobiles iOS et Android sur mesure pour restaurants, commerces et jeux. Basé à Brest, Bretagne.",
+        url: "https://breizhapp.tech",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Brest",
+          addressRegion: "Bretagne",
+          addressCountry: "FR",
+        },
         sameAs: [],
       },
       {
         "@type": "Service",
-        "@id": "https://votre-domaine.fr/#service",
+        "@id": "https://breizhapp.tech/#service",
         name: "Création d'application mobile iOS & Android",
-        provider: { "@id": "https://votre-domaine.fr/#person" },
+        provider: { "@id": "https://breizhapp.tech/#person" },
         description:
           "Développement d'applications mobiles sur mesure : authentification, boutique, paiement Stripe, notifications push, panel admin.",
         offers: [
@@ -33,7 +39,7 @@ export default function SchemaLD() {
             priceCurrency: "EUR",
           },
         ],
-        areaServed: "FR",
+        areaServed: ["FR", "Brest", "Bretagne"],
         serviceType: "Développement mobile",
       },
       {
@@ -52,7 +58,7 @@ export default function SchemaLD() {
             name: "Combien coûte la création d'une application mobile ?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Une app basique commence à 400€, une app premium à 600€. Devis gratuit disponible.",
+              text: "Une app commence à 490€ d'installation + 49€/mois. Le prix varie selon les fonctionnalités (paiement, admin, notifications...). Option boutique : 0€ installation + 12% de commission. Devis gratuit et sans engagement.",
             },
           },
           {
