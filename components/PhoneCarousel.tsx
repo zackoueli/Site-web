@@ -37,20 +37,20 @@ export default function PhoneCarousel({ images, appName }: PhoneCarouselProps) {
 
         {/* Screen */}
         <div
-          className="w-full h-full overflow-hidden bg-black relative"
+          className="w-full h-full overflow-hidden bg-white relative"
           style={{ borderRadius: "2rem" }}
         >
           {images.map((src, i) => (
             <div
               key={src}
-              className="absolute inset-0 transition-opacity duration-300"
+              className="absolute inset-0 transition-opacity duration-300 flex items-center justify-center bg-white"
               style={{ opacity: i === current ? 1 : 0 }}
             >
               <Image
                 src={src}
                 alt={`${appName} écran ${i + 1}`}
                 fill
-                className="object-cover object-top"
+                className="object-contain"
                 sizes="220px"
                 priority={i === 0}
               />
