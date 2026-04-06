@@ -1,0 +1,81 @@
+"use client";
+import { useState } from "react";
+import { Plus, Minus } from "lucide-react";
+
+const faqs = [
+  {
+    q: "Je veux une application mobile, par où commencer ?",
+    a: "Très simple : contactez-moi avec votre idée, même si elle n'est pas encore précise. Je vous pose des questions pour comprendre vos besoins, puis je vous envoie un devis détaillé sous 48h. On démarre dès validation.",
+  },
+  {
+    q: "Combien coûte la création d'une application mobile ?",
+    a: "Une app basique commence à 400€. Une app premium avec paiement, notifications et panel admin est à 600€. Pour les boutiques en ligne, j'ai aussi une offre à 0€ avec 10% de commission sur les ventes. Chaque projet est unique, le devis est gratuit.",
+  },
+  {
+    q: "Est-ce que l'app fonctionnera sur iOS et Android ?",
+    a: "Oui, je développe avec React Native qui permet de créer une seule application qui tourne nativement sur iOS (iPhone) et Android. Vous économisez le coût d'une double développement.",
+  },
+  {
+    q: "Combien de temps pour créer une application mobile ?",
+    a: "Une app basique est livrée en 2 à 4 semaines. Une app premium prend 4 à 8 semaines selon la complexité des fonctionnalités. Je travaille avec des sprints et vous tiens informé à chaque étape.",
+  },
+  {
+    q: "Est-ce que vous publiez l'app sur l'App Store et Google Play ?",
+    a: "Oui, le déploiement sur l'App Store (Apple) et le Google Play Store est inclus dans toutes les offres. Je m'occupe de toute la procédure de soumission.",
+  },
+  {
+    q: "Je suis restaurateur / commerçant, est-ce que vous pouvez créer mon app ?",
+    a: "Absolument. Je crée régulièrement des apps pour restaurants (réservation, commande en ligne, fidélité), commerçants (boutique, catalogue, abonnements) et maraîchers (paniers hebdomadaires, livraison locale).",
+  },
+  {
+    q: "Qu'est-ce qui est inclus dans le suivi après livraison ?",
+    a: "Après livraison, je reste disponible pour les corrections de bugs pendant 30 jours. Pour les évolutions et nouvelles fonctionnalités, on définit un tarif au cas par cas.",
+  },
+  {
+    q: "Est-ce que je peux avoir un exemple de ce que vous avez déjà réalisé ?",
+    a: "Oui ! Consultez mon portfolio sur cette page. Je peux également vous présenter en détail les projets similaires au vôtre lors d'un appel.",
+  },
+];
+
+function FAQItem({ q, a }: { q: string; a: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="brutal-border brutal-shadow bg-white overflow-hidden">
+      <button
+        className="w-full flex items-center justify-between gap-4 p-5 text-left font-bold hover:bg-[#FFFBF0] transition-colors"
+        onClick={() => setOpen(!open)}
+        aria-expanded={open}
+      >
+        <span>{q}</span>
+        <span className="flex-shrink-0 brutal-border w-8 h-8 flex items-center justify-center bg-[#FFE234]">
+          {open ? <Minus size={16} /> : <Plus size={16} />}
+        </span>
+      </button>
+      {open && (
+        <div className="px-5 pb-5 text-gray-700 leading-relaxed border-t-[3px] border-black pt-4">
+          {a}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default function FAQ() {
+  return (
+    <section id="faq" className="max-w-4xl mx-auto px-4 py-20">
+      <div className="mb-12 text-center">
+        <p className="mono text-sm font-bold mb-2">// vos questions</p>
+        <h2 className="text-4xl md:text-5xl font-bold">
+          Questions{" "}
+          <span className="bg-[#FFE234] px-2 brutal-border">fréquentes</span>
+        </h2>
+      </div>
+
+      <div className="flex flex-col gap-3">
+        {faqs.map((item) => (
+          <FAQItem key={item.q} q={item.q} a={item.a} />
+        ))}
+      </div>
+    </section>
+  );
+}
