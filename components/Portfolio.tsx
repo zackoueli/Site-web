@@ -1,6 +1,10 @@
+"use client";
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import PhoneCarousel from "./PhoneCarousel";
 
-const BASE = "https://firebasestorage.googleapis.com/v0/b/pizzeria-73927.firebasestorage.app/o/Capture%20Pizzeria%2F";
+const BASE =
+  "https://firebasestorage.googleapis.com/v0/b/pizzeria-73927.firebasestorage.app/o/Capture%20Pizzeria%2F";
 
 const pizzeriaScreens = [
   `${BASE}IMG_1717.PNG?alt=media&token=13ee1c15-af53-4182-a58f-5013d16dfdb8`,
@@ -32,119 +36,191 @@ const pizzeriaScreens = [
 const apps = [
   {
     title: "App Pizzeria",
-    category: "🍕 Restaurant",
+    category: "Restaurant",
+    emoji: "🍕",
     color: "#FF6B35",
-    tags: ["Menu", "Commande", "Panier", "Paiement", "Suivi", "Fidélité"],
-    desc: "Application complète pour une pizzeria : navigation du menu, commande en ligne, paiement intégré, suivi de commande et programme de fidélité.",
+    tags: ["Menu", "Commande", "Panier", "Paiement Stripe", "Suivi", "Fidélité"],
+    desc: "Application complète pour une pizzeria : navigation du menu, commande en ligne, paiement sécurisé, suivi de commande en temps réel et programme de fidélité.",
     screens: pizzeriaScreens,
   },
+  // ── Ajoutez vos autres apps ici ──
   {
     title: "Votre App",
-    category: "📱 À venir",
+    category: "À venir",
+    emoji: "📱",
     color: "#7C3AED",
     tags: ["iOS", "Android", "Sur mesure"],
-    desc: "Votre projet ici. Contactez-moi pour transformer votre idée en application mobile.",
+    desc: "Votre prochain projet. Envoyez-moi vos captures d'écran ou décrivez votre idée.",
     screens: null,
   },
   {
     title: "Votre App",
-    category: "📱 À venir",
+    category: "À venir",
+    emoji: "📱",
     color: "#00D4AA",
     tags: ["iOS", "Android", "Sur mesure"],
-    desc: "Votre projet ici. Contactez-moi pour transformer votre idée en application mobile.",
+    desc: "Votre prochain projet. Envoyez-moi vos captures d'écran ou décrivez votre idée.",
     screens: null,
   },
 ];
 
 export default function Portfolio() {
+  const [appIndex, setAppIndex] = useState(0);
+  const app = apps[appIndex];
+
+  const prevApp = () => setAppIndex((i) => (i === 0 ? apps.length - 1 : i - 1));
+  const nextApp = () => setAppIndex((i) => (i === apps.length - 1 ? 0 : i + 1));
+
   return (
-    <section id="portfolio" className="py-24 bg-[#0A0A0A]">
+    <section id="portfolio" className="py-24 bg-[#0A0A0A] overflow-hidden">
       <div className="max-w-6xl mx-auto px-4">
+
         {/* Header */}
         <div className="flex flex-wrap items-end justify-between gap-4 mb-16">
           <div>
             <p className="mono text-sm font-bold mb-2 text-gray-400">// mes réalisations</p>
             <h2 className="text-4xl md:text-5xl font-bold text-[#FFFBF0]">
               Portfolio{" "}
-              <span className="bg-[#FFE234] text-[#0A0A0A] px-2 brutal-border">
-                réel
-              </span>
+              <span className="bg-[#FFE234] text-[#0A0A0A] px-2 brutal-border">réel</span>
             </h2>
           </div>
           <a
             href="#contact"
-            className="brutal-btn bg-[#FF6B9D] text-white px-5 py-2.5 border-[#FF6B9D]"
-            style={{ borderColor: "#FF6B9D", boxShadow: "4px 4px 0px #FF6B9D80" }}
+            className="brutal-btn bg-[#FF6B9D] text-white px-5 py-2.5"
+            style={{ borderColor: "#FF6B9D", boxShadow: "4px 4px 0 rgba(255,107,157,0.4)" }}
           >
             Démarrer mon projet →
           </a>
         </div>
 
-        {/* Apps grid */}
-        <div className="grid md:grid-cols-3 gap-8 items-start">
-          {apps.map((app, idx) => (
-            <article key={idx} className="flex flex-col items-center gap-6">
-              {/* Phone or placeholder */}
+        {/* App counter */}
+        <div className="flex items-center gap-3 mb-10">
+          {apps.map((a, i) => (
+            <button
+              key={i}
+              onClick={() => setAppIndex(i)}
+              className={`brutal-btn px-4 py-1.5 text-sm transition-all ${
+                i === appIndex
+                  ? "bg-[#FFE234] text-[#0A0A0A]"
+                  : "bg-[#1a1a1a] text-gray-400 border-gray-700"
+              }`}
+              style={i !== appIndex ? { boxShadow: "none" } : {}}
+            >
+              {a.emoji} {a.title}
+            </button>
+          ))}
+        </div>
+
+        {/* Main layout: phone + info */}
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+
+          {/* Left: phone with prev/next app arrows */}
+          <div className="flex items-center justify-center gap-4">
+            <button
+              onClick={prevApp}
+              className="brutal-btn bg-[#1a1a1a] border-gray-700 text-gray-400 hover:bg-[#FFE234] hover:text-[#0A0A0A] hover:border-[#0A0A0A] p-3"
+              style={{ boxShadow: "3px 3px 0 #444" }}
+              aria-label="App précédente"
+            >
+              <ChevronLeft size={20} />
+            </button>
+
+            <div className="transition-all duration-300">
               {app.screens ? (
                 <PhoneCarousel images={app.screens} appName={app.title} />
               ) : (
                 <div
-                  className="brutal-border brutal-shadow flex flex-col items-center justify-center gap-3 text-[#FFFBF0]"
+                  className="brutal-border brutal-shadow-lg flex flex-col items-center justify-center gap-4 bg-[#1a1a1a]"
                   style={{
-                    width: 220,
-                    height: 460,
-                    borderRadius: "2.5rem",
-                    background: "#1a1a1a",
+                    width: 240,
+                    height: 520,
+                    borderRadius: 48,
                   }}
                 >
-                  <span className="text-5xl">📱</span>
-                  <span className="font-bold text-sm text-gray-500 text-center px-6">
-                    Bientôt disponible
+                  <span className="text-6xl">{app.emoji}</span>
+                  <span className="text-gray-500 font-bold text-sm text-center px-8">
+                    Captures d'écran à venir
                   </span>
                   <a
                     href="#contact"
-                    className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-4 py-2 text-xs mt-2"
+                    className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-4 py-2 text-xs"
                   >
-                    Votre app ici
+                    Votre app ici →
                   </a>
                 </div>
               )}
+            </div>
 
-              {/* Info card */}
-              <div
-                className="w-full brutal-border brutal-shadow-lg p-5"
-                style={{ backgroundColor: app.color }}
-              >
-                <p className="mono text-xs font-bold mb-1 opacity-70">{app.category}</p>
-                <h3 className="text-xl font-bold mb-2">{app.title}</h3>
-                <p className="text-sm leading-relaxed mb-3 opacity-90">{app.desc}</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {app.tags.map((t) => (
-                    <span
-                      key={t}
-                      className="brutal-border border-[2px] border-black px-2 py-0.5 text-xs font-bold bg-white/20"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
+            <button
+              onClick={nextApp}
+              className="brutal-btn bg-[#1a1a1a] border-gray-700 text-gray-400 hover:bg-[#FFE234] hover:text-[#0A0A0A] hover:border-[#0A0A0A] p-3"
+              style={{ boxShadow: "3px 3px 0 #444" }}
+              aria-label="App suivante"
+            >
+              <ChevronRight size={20} />
+            </button>
+          </div>
+
+          {/* Right: app info */}
+          <div>
+            {/* Category badge */}
+            <div
+              className="inline-flex items-center gap-2 brutal-border brutal-shadow px-4 py-2 font-bold mono text-sm mb-6"
+              style={{ backgroundColor: app.color, color: "#0A0A0A" }}
+            >
+              <span>{app.emoji}</span>
+              {app.category}
+            </div>
+
+            <h3 className="text-4xl font-bold text-[#FFFBF0] mb-4">{app.title}</h3>
+            <p className="text-gray-400 leading-relaxed mb-8 text-base">{app.desc}</p>
+
+            {/* Tags */}
+            <div className="flex flex-wrap gap-2 mb-10">
+              {app.tags.map((t) => (
+                <span
+                  key={t}
+                  className="brutal-border px-3 py-1 text-xs font-bold mono text-[#FFFBF0] border-gray-700 bg-[#1a1a1a]"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+
+            {/* App nav dots */}
+            <div className="flex items-center gap-4">
+              <div className="flex gap-2">
+                {apps.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setAppIndex(i)}
+                    className={`brutal-border transition-all ${
+                      i === appIndex
+                        ? "w-8 h-3 bg-[#FFE234]"
+                        : "w-3 h-3 bg-[#1a1a1a] border-gray-600"
+                    }`}
+                    aria-label={`App ${i + 1}`}
+                  />
+                ))}
               </div>
-            </article>
-          ))}
+              <span className="mono text-xs text-gray-600">
+                {appIndex + 1} / {apps.length}
+              </span>
+            </div>
+          </div>
         </div>
 
-        {/* Bottom note */}
-        <div className="mt-16 brutal-border border-[#FFE234] brutal-shadow bg-[#FFE234] p-6 flex flex-wrap items-center justify-between gap-4" style={{ boxShadow: "4px 4px 0px #FFE234" }}>
+        {/* Bottom CTA */}
+        <div className="mt-20 brutal-border border-[#FFE234] p-6 flex flex-wrap items-center justify-between gap-4 bg-[#111]">
           <div>
-            <p className="font-bold text-lg text-[#0A0A0A]">
-              Chaque application est développée de A à Z, sur mesure.
-            </p>
-            <p className="text-sm text-gray-700">Aucun template. Code propre, design soigné.</p>
+            <p className="font-bold text-lg text-[#FFE234]">Développé de A à Z, sur mesure.</p>
+            <p className="text-sm text-gray-500">Aucun template. Code propre, design soigné.</p>
           </div>
-          <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3">
+          <a href="#contact" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-6 py-3">
             Commencer mon app →
           </a>
         </div>
+
       </div>
     </section>
   );
