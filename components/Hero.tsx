@@ -1,108 +1,169 @@
-import { Smartphone, Star, Zap } from "lucide-react";
+import { Smartphone, Star, ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="max-w-6xl mx-auto px-4 py-16 md:py-24 relative overflow-hidden">
-      {/* Floating decorations */}
-      <div className="float-1 absolute top-8 right-8 md:right-24 bg-[#FFE234] brutal-border brutal-shadow px-3 py-2 text-sm font-bold mono hidden sm:block rotate-[-6deg]">
-        iOS & Android ✦
-      </div>
-      <div className="float-2 absolute bottom-8 right-4 md:right-16 bg-[#FF6B9D] brutal-border brutal-shadow px-3 py-2 text-sm font-bold text-white mono hidden sm:block rotate-[4deg]">
-        400€ → 600€
-      </div>
-      <div className="float-3 absolute top-1/2 right-2 md:right-8 bg-[#00D4AA] brutal-border brutal-shadow px-3 py-2 text-sm font-bold mono hidden md:block rotate-[-2deg]">
-        Sur mesure
-      </div>
+    <section className="relative overflow-hidden border-b-[3px] border-black">
+      {/* Background grid pattern */}
+      <div
+        className="absolute inset-0 opacity-[0.04]"
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(0deg,#000 0,#000 1px,transparent 0,transparent 50%),repeating-linear-gradient(90deg,#000 0,#000 1px,transparent 0,transparent 50%)",
+          backgroundSize: "40px 40px",
+        }}
+      />
 
-      <div className="grid md:grid-cols-2 gap-12 items-center">
-        {/* Left: text */}
-        <div>
-          <div className="inline-flex items-center gap-2 bg-[#7C3AED] text-white brutal-border brutal-shadow px-3 py-1.5 text-sm font-bold mb-6">
-            <Star size={14} fill="white" />
-            Développeur freelance · Disponible
-          </div>
-
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Vous avez une{" "}
-            <span className="relative inline-block">
-              idée
-              <span className="absolute bottom-1 left-0 w-full h-3 bg-[#FFE234] -z-10 brutal-border opacity-80" />
-            </span>
-            ,<br />
-            je crée votre{" "}
-            <span className="bg-[#FF6B9D] text-white px-2 brutal-border">
-              app mobile
-            </span>
-          </h1>
-
-          <p className="text-lg text-gray-700 mb-8 leading-relaxed max-w-lg">
-            Applications iOS &amp; Android sur mesure pour restaurants,
-            commerces et jeux. Boutique, paiement, notifications, panel admin —
-            tout ce dont vous avez besoin, livré clé en main.
-          </p>
-
-          <div className="flex flex-wrap gap-4">
-            <a
-              href="#contact"
-              className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-7 py-3 text-lg"
-            >
-              Démarrer mon projet
-            </a>
-            <a
-              href="#portfolio"
-              className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-7 py-3 text-lg"
-            >
-              Voir le portfolio
-            </a>
-          </div>
-
-          {/* Social proof mini */}
-          <div className="flex flex-wrap items-center gap-6 mt-10">
-            <div className="brutal-border brutal-shadow bg-white px-4 py-3">
-              <div className="text-2xl font-bold">10+</div>
-              <div className="text-sm text-gray-600">Apps livrées</div>
+      <div className="max-w-6xl mx-auto px-4 py-20 md:py-32 relative">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          {/* Left */}
+          <div>
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 bg-[#0A0A0A] text-[#FFE234] brutal-border brutal-shadow px-4 py-2 text-sm font-bold mb-8 mono">
+              <Star size={12} fill="#FFE234" />
+              Développeur freelance · Disponible maintenant
             </div>
-            <div className="brutal-border brutal-shadow bg-white px-4 py-3">
-              <div className="text-2xl font-bold">iOS & Android</div>
-              <div className="text-sm text-gray-600">React Native</div>
-            </div>
-            <div className="brutal-border brutal-shadow bg-[#FFE234] px-4 py-3">
-              <div className="text-2xl font-bold">Dès 400€</div>
-              <div className="text-sm">App basique complète</div>
-            </div>
-          </div>
-        </div>
 
-        {/* Right: phone mockup */}
-        <div className="flex justify-center md:justify-end">
-          <div className="relative">
-            {/* Phone frame */}
-            <div className="brutal-border brutal-shadow-lg bg-white w-56 md:w-64 rounded-[2.5rem] overflow-hidden" style={{ aspectRatio: "9/19" }}>
-              {/* Screen header */}
-              <div className="bg-[#0A0A0A] h-8 flex items-center justify-center">
-                <div className="w-20 h-1.5 bg-white rounded-full opacity-40" />
-              </div>
-              {/* App UI mock */}
-              <div className="p-4 flex flex-col gap-3 bg-[#FFFBF0] h-full">
-                <div className="brutal-border bg-[#7C3AED] text-white px-3 py-2 text-xs font-bold flex items-center gap-2">
-                  <Smartphone size={12} />
-                  Votre App
+            {/* Headline */}
+            <h1 className="text-5xl md:text-7xl font-bold leading-[1.05] mb-6 tracking-tight">
+              Votre idée.
+              <br />
+              <span className="relative">
+                <span className="relative z-10">Mon code.</span>
+                <span
+                  className="absolute bottom-2 left-0 w-full h-4 bg-[#FFE234] -z-0 brutal-border"
+                  style={{ transform: "skewX(-2deg)" }}
+                />
+              </span>
+              <br />
+              <span className="bg-[#FF6B9D] text-white px-3 brutal-border inline-block mt-1">
+                Votre app.
+              </span>
+            </h1>
+
+            <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-md">
+              Je crée des applications iOS &amp; Android sur mesure pour restaurants,
+              commerces et jeux. De l'idée au déploiement sur l'App Store.
+            </p>
+
+            {/* CTAs */}
+            <div className="flex flex-wrap gap-4 mb-12">
+              <a
+                href="#contact"
+                className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4 text-base"
+              >
+                Démarrer mon projet
+              </a>
+              <a
+                href="#portfolio"
+                className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-8 py-4 text-base"
+              >
+                Voir les apps ↓
+              </a>
+            </div>
+
+            {/* Stats row */}
+            <div className="flex flex-wrap gap-3">
+              {[
+                { val: "3+", label: "Apps livrées" },
+                { val: "iOS & Android", label: "React Native" },
+                { val: "Dès 400€", label: "Tarif transparent" },
+              ].map(({ val, label }) => (
+                <div
+                  key={label}
+                  className="brutal-border brutal-shadow bg-white px-5 py-3 flex flex-col"
+                >
+                  <span className="font-bold text-lg leading-tight">{val}</span>
+                  <span className="text-xs text-gray-500 mono">{label}</span>
                 </div>
-                <div className="brutal-border bg-white p-2 text-xs font-bold">🛒 Boutique</div>
-                <div className="brutal-border bg-white p-2 text-xs font-bold">🔔 Notifications</div>
-                <div className="brutal-border bg-[#FFE234] p-2 text-xs font-bold">💳 Paiement</div>
-                <div className="brutal-border bg-white p-2 text-xs font-bold">💬 Messagerie</div>
-                <div className="brutal-border bg-white p-2 text-xs font-bold">⭐ Avis clients</div>
-                <div className="brutal-border bg-[#FF6B9D] text-white p-2 text-xs font-bold text-center">
-                  Commander →
-                </div>
-              </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right: phone stack */}
+          <div className="flex justify-center md:justify-end relative">
+            {/* Floating stickers */}
+            <div className="float-1 absolute -top-6 left-4 bg-[#FFE234] brutal-border brutal-shadow px-3 py-2 text-xs font-bold mono z-10">
+              iOS & Android ✦
+            </div>
+            <div className="float-2 absolute -bottom-2 right-8 bg-[#00D4AA] brutal-border brutal-shadow px-3 py-2 text-xs font-bold mono z-10">
+              Stripe · Firebase ✦
             </div>
 
-            {/* Badge floating on phone */}
-            <div className="absolute -top-4 -right-4 bg-[#00D4AA] brutal-border brutal-shadow rounded-full w-16 h-16 flex flex-col items-center justify-center">
-              <Zap size={16} fill="#0A0A0A" />
-              <span className="text-[10px] font-bold leading-tight text-center">Rapide</span>
+            {/* Main phone */}
+            <div className="relative">
+              <div
+                className="bg-[#0A0A0A] brutal-border brutal-shadow-lg relative"
+                style={{
+                  width: 240,
+                  height: 500,
+                  borderRadius: "2.8rem",
+                  padding: "14px 10px",
+                }}
+              >
+                {/* Notch */}
+                <div className="absolute top-3.5 left-1/2 -translate-x-1/2 w-20 h-5 bg-[#0A0A0A] z-10 flex items-center justify-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-[#1a1a1a] border border-[#333]" />
+                  <div className="w-10 h-2 rounded-full bg-[#1a1a1a] border border-[#333]" />
+                </div>
+
+                {/* Screen content */}
+                <div
+                  className="w-full h-full bg-[#FFFBF0] overflow-hidden flex flex-col"
+                  style={{ borderRadius: "2.2rem" }}
+                >
+                  {/* App header */}
+                  <div className="bg-[#FF6B35] px-4 pt-8 pb-4">
+                    <p className="text-white text-[10px] font-bold mono opacity-70">PIZZERIA ROMA</p>
+                    <p className="text-white font-bold text-sm mt-0.5">Bonjour, Marco 👋</p>
+                  </div>
+
+                  {/* App body */}
+                  <div className="flex-1 p-3 flex flex-col gap-2 overflow-hidden">
+                    <div className="brutal-border bg-[#FFE234] p-2.5 flex items-center gap-2">
+                      <span className="text-lg">🍕</span>
+                      <div>
+                        <p className="text-[10px] font-bold leading-none">Margherita</p>
+                        <p className="text-[9px] text-gray-600">12,90€</p>
+                      </div>
+                    </div>
+                    <div className="brutal-border bg-white p-2.5 flex items-center gap-2">
+                      <span className="text-lg">🍕</span>
+                      <div>
+                        <p className="text-[10px] font-bold leading-none">4 Fromages</p>
+                        <p className="text-[9px] text-gray-600">14,50€</p>
+                      </div>
+                    </div>
+                    <div className="brutal-border bg-white p-2.5 flex items-center gap-2">
+                      <span className="text-lg">🍕</span>
+                      <div>
+                        <p className="text-[10px] font-bold leading-none">Reine</p>
+                        <p className="text-[9px] text-gray-600">13,90€</p>
+                      </div>
+                    </div>
+                    <div className="brutal-border bg-[#0A0A0A] text-white p-2 text-center text-[10px] font-bold mt-auto">
+                      Commander →
+                    </div>
+                  </div>
+
+                  {/* Bottom nav */}
+                  <div className="border-t-[2px] border-black flex justify-around py-2 bg-white">
+                    {["🏠", "🍕", "🛒", "👤"].map((e) => (
+                      <span key={e} className="text-base">{e}</span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Side buttons */}
+                <div className="absolute -right-[5px] top-24 w-[4px] h-12 bg-[#0A0A0A] brutal-border rounded-sm" />
+                <div className="absolute -left-[5px] top-20 w-[4px] h-8 bg-[#0A0A0A] brutal-border rounded-sm" />
+                <div className="absolute -left-[5px] top-32 w-[4px] h-8 bg-[#0A0A0A] brutal-border rounded-sm" />
+              </div>
+
+              {/* Scroll hint */}
+              <div className="mt-6 flex flex-col items-center gap-1 text-gray-400">
+                <ArrowDown size={16} className="animate-bounce" />
+                <span className="text-xs mono font-bold">Voir les vraies apps</span>
+              </div>
             </div>
           </div>
         </div>
