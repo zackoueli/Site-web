@@ -1,13 +1,12 @@
 "use client";
 import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import PhoneCarousel from "./PhoneCarousel";
 
 const BASE =
   "https://firebasestorage.googleapis.com/v0/b/pizzeria-73927.firebasestorage.app/o/Capture%20Pizzeria%2F";
 
+// IMG_1717 supprimée, on commence à IMG_1718
 const pizzeriaScreens = [
-  `${BASE}IMG_1717.PNG?alt=media&token=13ee1c15-af53-4182-a58f-5013d16dfdb8`,
   `${BASE}IMG_1718.PNG?alt=media&token=dd5fd40b-e54e-4b24-9492-bc95af6c0a38`,
   `${BASE}IMG_1719.PNG?alt=media&token=38f01aad-6345-44a3-8156-822e4483872f`,
   `${BASE}IMG_1720.PNG?alt=media&token=302bb702-22a0-4e35-8c41-caf653a8b41d`,
@@ -43,7 +42,6 @@ const apps = [
     desc: "Application complète pour une pizzeria : navigation du menu, commande en ligne, paiement sécurisé, suivi de commande en temps réel et programme de fidélité.",
     screens: pizzeriaScreens,
   },
-  // ── Ajoutez vos autres apps ici ──
   {
     title: "Votre App",
     category: "À venir",
@@ -64,19 +62,43 @@ const apps = [
   },
 ];
 
+// Placeholder phone pour les apps sans captures
+function PhonePlaceholder({ app }: { app: typeof apps[0] }) {
+  const W = 260;
+  const H = Math.round(W * (16 / 9));
+  return (
+    <div
+      className="flex flex-col items-center justify-center gap-4"
+      style={{
+        width: W,
+        height: H,
+        borderRadius: 40,
+        background: "#1a1a1a",
+        border: "3px solid #0A0A0A",
+        boxShadow: "6px 6px 0px #0A0A0A",
+      }}
+    >
+      <span className="text-6xl">{app.emoji}</span>
+      <span className="text-gray-500 font-bold text-sm text-center px-8">
+        Captures à venir
+      </span>
+      <a href="#contact" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-4 py-2 text-xs">
+        Votre app ici →
+      </a>
+    </div>
+  );
+}
+
 export default function Portfolio() {
   const [appIndex, setAppIndex] = useState(0);
   const app = apps[appIndex];
-
-  const prevApp = () => setAppIndex((i) => (i === 0 ? apps.length - 1 : i - 1));
-  const nextApp = () => setAppIndex((i) => (i === apps.length - 1 ? 0 : i + 1));
 
   return (
     <section id="portfolio" className="py-24 bg-[#0A0A0A] overflow-hidden">
       <div className="max-w-6xl mx-auto px-4">
 
         {/* Header */}
-        <div className="flex flex-wrap items-end justify-between gap-4 mb-16">
+        <div className="flex flex-wrap items-end justify-between gap-4 mb-12">
           <div>
             <p className="mono text-sm font-bold mb-2 text-gray-400">// mes réalisations</p>
             <h2 className="text-4xl md:text-5xl font-bold text-[#FFFBF0]">
@@ -87,22 +109,21 @@ export default function Portfolio() {
           <a
             href="#contact"
             className="brutal-btn bg-[#FF6B9D] text-white px-5 py-2.5"
-            style={{ borderColor: "#FF6B9D", boxShadow: "4px 4px 0 rgba(255,107,157,0.4)" }}
           >
             Démarrer mon projet →
           </a>
         </div>
 
-        {/* App counter */}
-        <div className="flex items-center gap-3 mb-10">
+        {/* ── Boutons de sélection d'app (au-dessus du phone) ── */}
+        <div className="flex flex-wrap items-center gap-3 mb-10">
           {apps.map((a, i) => (
             <button
               key={i}
               onClick={() => setAppIndex(i)}
-              className={`brutal-btn px-4 py-1.5 text-sm transition-all ${
+              className={`brutal-btn px-5 py-2 text-sm font-bold transition-all ${
                 i === appIndex
                   ? "bg-[#FFE234] text-[#0A0A0A]"
-                  : "bg-[#1a1a1a] text-gray-400 border-gray-700"
+                  : "bg-[#1a1a1a] text-gray-400 border-gray-600"
               }`}
               style={i !== appIndex ? { boxShadow: "none" } : {}}
             >
@@ -111,71 +132,30 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* Main layout: phone + info */}
+        {/* ── Layout principal : phone à gauche, infos à droite ── */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
-          {/* Left: phone with prev/next app arrows */}
-          <div className="flex items-center justify-center gap-4">
-            <button
-              onClick={prevApp}
-              className="brutal-btn bg-[#1a1a1a] border-gray-700 text-gray-400 hover:bg-[#FFE234] hover:text-[#0A0A0A] hover:border-[#0A0A0A] p-3"
-              style={{ boxShadow: "3px 3px 0 #444" }}
-              aria-label="App précédente"
-            >
-              <ChevronLeft size={20} />
-            </button>
-
-            <div className="transition-all duration-300">
-              {app.screens ? (
-                <PhoneCarousel images={app.screens} appName={app.title} />
-              ) : (
-                <div
-                  className="brutal-border brutal-shadow-lg flex flex-col items-center justify-center gap-4 bg-[#1a1a1a]"
-                  style={{
-                    width: 240,
-                    height: 520,
-                    borderRadius: 48,
-                  }}
-                >
-                  <span className="text-6xl">{app.emoji}</span>
-                  <span className="text-gray-500 font-bold text-sm text-center px-8">
-                    Captures d'écran à venir
-                  </span>
-                  <a
-                    href="#contact"
-                    className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-4 py-2 text-xs"
-                  >
-                    Votre app ici →
-                  </a>
-                </div>
-              )}
-            </div>
-
-            <button
-              onClick={nextApp}
-              className="brutal-btn bg-[#1a1a1a] border-gray-700 text-gray-400 hover:bg-[#FFE234] hover:text-[#0A0A0A] hover:border-[#0A0A0A] p-3"
-              style={{ boxShadow: "3px 3px 0 #444" }}
-              aria-label="App suivante"
-            >
-              <ChevronRight size={20} />
-            </button>
+          {/* Phone — les flèches noires sont DANS PhoneCarousel, à gauche et droite du frame */}
+          <div className="flex justify-center">
+            {app.screens
+              ? <PhoneCarousel images={app.screens} appName={app.title} />
+              : <PhonePlaceholder app={app} />
+            }
           </div>
 
-          {/* Right: app info */}
+          {/* Infos app */}
           <div>
-            {/* Category badge */}
             <div
               className="inline-flex items-center gap-2 brutal-border brutal-shadow px-4 py-2 font-bold mono text-sm mb-6"
-              style={{ backgroundColor: app.color, color: "#0A0A0A" }}
+              style={{ backgroundColor: app.color }}
             >
               <span>{app.emoji}</span>
               {app.category}
             </div>
 
             <h3 className="text-4xl font-bold text-[#FFFBF0] mb-4">{app.title}</h3>
-            <p className="text-gray-400 leading-relaxed mb-8 text-base">{app.desc}</p>
+            <p className="text-gray-400 leading-relaxed mb-8">{app.desc}</p>
 
-            {/* Tags */}
             <div className="flex flex-wrap gap-2 mb-10">
               {app.tags.map((t) => (
                 <span
@@ -187,18 +167,20 @@ export default function Portfolio() {
               ))}
             </div>
 
-            {/* App nav dots */}
-            <div className="flex items-center gap-4">
+            {/* Indicateur app actuelle */}
+            <div className="flex items-center gap-3">
               <div className="flex gap-2">
                 {apps.map((_, i) => (
                   <button
                     key={i}
                     onClick={() => setAppIndex(i)}
-                    className={`brutal-border transition-all ${
-                      i === appIndex
-                        ? "w-8 h-3 bg-[#FFE234]"
-                        : "w-3 h-3 bg-[#1a1a1a] border-gray-600"
-                    }`}
+                    className="brutal-border transition-all"
+                    style={{
+                      width: i === appIndex ? 32 : 12,
+                      height: 12,
+                      background: i === appIndex ? "#FFE234" : "#1a1a1a",
+                      borderColor: i === appIndex ? "#FFE234" : "#444",
+                    }}
                     aria-label={`App ${i + 1}`}
                   />
                 ))}
