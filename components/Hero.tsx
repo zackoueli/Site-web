@@ -48,7 +48,7 @@ export default function Hero() {
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 mb-12">
               <a
-                href="#contact"
+                href="#tarifs"
                 className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4 text-base"
               >
                 Démarrer mon projet

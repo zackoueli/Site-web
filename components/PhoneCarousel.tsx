@@ -8,9 +8,10 @@ interface PhoneCarouselProps {
   appName: string;
 }
 
-// iPhone 8 Plus screenshots : 1242 × 2208 px → ratio 9:16 (1:1.778)
-const W = 260;
-const H = Math.round(W * (16 / 9)); // 462px
+// Frame = ratio EXACT des captures iPhone 8 Plus (1242×2208 = 9:16)
+// → zéro marge noire garantie avec object-cover
+const W = 300;
+const H = Math.round(W * (2208 / 1242)); // = 533px
 
 export default function PhoneCarousel({ images, appName }: PhoneCarouselProps) {
   const [current, setCurrent] = useState(0);
@@ -25,8 +26,8 @@ export default function PhoneCarousel({ images, appName }: PhoneCarouselProps) {
   );
 
   return (
-    <div className="flex items-center gap-4">
-      {/* Flèche gauche — capture précédente */}
+    <div className="flex items-center gap-5">
+      {/* Flèche gauche */}
       <button
         onClick={prev}
         className="brutal-btn bg-[#0A0A0A] text-[#FFE234] p-3 flex-shrink-0"
@@ -35,79 +36,137 @@ export default function PhoneCarousel({ images, appName }: PhoneCarouselProps) {
         <ChevronLeft size={20} />
       </button>
 
-      {/* ── iPhone body ── */}
-      <div className="flex flex-col items-center gap-3">
+      <div className="flex flex-col items-center gap-4">
+        {/* ── Boîtier iPhone ── */}
         <div
-          className="relative"
           style={{
-            width: W,
-            height: H,
-            borderRadius: 40,
-            background: "#1a1a1a",
+            width: W + 16,   // +16 pour les bordures latérales du boîtier
+            height: H + 28,  // +28 pour la barre supérieure (Dynamic Island) + inférieure (home)
+            background: "#111",
+            borderRadius: 44,
             border: "3px solid #0A0A0A",
             boxShadow: "6px 6px 0px #0A0A0A",
-            overflow: "hidden",
+            padding: "14px 8px 14px 8px",
+            position: "relative",
+            boxSizing: "border-box",
           }}
         >
-          {/* Images plein écran */}
-          {images.map((src, i) => (
-            <div
-              key={src}
-              className="absolute inset-0 transition-opacity duration-300"
-              style={{ opacity: i === current ? 1 : 0 }}
-            >
-              <Image
-                src={src}
-                alt={`${appName} écran ${i + 1}`}
-                fill
-                className="object-contain"
-                sizes={`${W}px`}
-                priority={i === 0}
-              />
-            </div>
-          ))}
-
-          {/* Notch iPhone 8 Plus (pas de Dynamic Island) */}
+          {/* Dynamic Island */}
           <div
-            className="absolute z-20 bg-[#1a1a1a]"
             style={{
-              top: 0,
+              position: "absolute",
+              top: 8,
               left: "50%",
               transform: "translateX(-50%)",
-              width: 60,
-              height: 6,
-              borderRadius: "0 0 8px 8px",
+              width: 80,
+              height: 22,
+              background: "#000",
+              borderRadius: 16,
+              zIndex: 10,
             }}
           />
 
-          {/* Compteur overlay */}
+          {/* Écran — ratio exact = zéro marge */}
           <div
-            className="absolute bottom-3 left-1/2 -translate-x-1/2 z-20 mono font-bold text-xs text-white px-2 py-0.5 rounded"
-            style={{ background: "rgba(0,0,0,0.5)", backdropFilter: "blur(4px)" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              overflow: "hidden",
+              borderRadius: 36,
+              position: "relative",
+              background: "#000",
+            }}
           >
-            {current + 1} / {images.length}
+            {images.map((src, i) => (
+              <div
+                key={src}
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  opacity: i === current ? 1 : 0,
+                  transition: "opacity 0.3s ease",
+                }}
+              >
+                <Image
+                  src={src}
+                  alt={`${appName} écran ${i + 1}`}
+                  fill
+                  style={{ objectFit: "cover", objectPosition: "top" }}
+                  sizes={`${W}px`}
+                  priority={i === 0}
+                />
+              </div>
+            ))}
+
+            {/* Compteur overlay */}
+            <div
+              style={{
+                position: "absolute",
+                bottom: 20,
+                left: "50%",
+                transform: "translateX(-50%)",
+                background: "rgba(0,0,0,0.55)",
+                backdropFilter: "blur(6px)",
+                color: "#fff",
+                fontFamily: "monospace",
+                fontWeight: 700,
+                fontSize: 11,
+                padding: "2px 8px",
+                borderRadius: 4,
+                zIndex: 10,
+              }}
+            >
+              {current + 1} / {images.length}
+            </div>
+
+            {/* Home indicator */}
+            <div
+              style={{
+                position: "absolute",
+                bottom: 6,
+                left: "50%",
+                transform: "translateX(-50%)",
+                width: 80,
+                height: 4,
+                background: "rgba(255,255,255,0.35)",
+                borderRadius: 999,
+                zIndex: 10,
+              }}
+            />
           </div>
 
-          {/* Bouton home en bas (iPhone 8 Plus) */}
-          <div
-            className="absolute bottom-1 left-1/2 -translate-x-1/2 z-20 bg-white rounded-full opacity-30"
-            style={{ width: 28, height: 28, border: "1px solid rgba(255,255,255,0.4)" }}
-          />
+          {/* Bouton power (droite) */}
+          <div style={{
+            position: "absolute", right: -5, top: 90,
+            width: 4, height: 52, background: "#2a2a2a",
+            borderRadius: "0 3px 3px 0",
+          }} />
+          {/* Boutons volume (gauche) */}
+          {[75, 130, 175].map((top) => (
+            <div key={top} style={{
+              position: "absolute", left: -5, top,
+              width: 4, height: top === 75 ? 28 : 42,
+              background: "#2a2a2a",
+              borderRadius: "3px 0 0 3px",
+            }} />
+          ))}
         </div>
 
-        {/* Dots */}
-        <div className="flex items-center gap-1.5">
+        {/* Dots navigation */}
+        <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
           {images.map((_, i) => (
             <button
               key={i}
               onClick={() => setCurrent(i)}
-              className="transition-all"
               style={{
                 width: i === current ? 20 : 6,
                 height: 6,
                 background: i === current ? "#0A0A0A" : "#ccc",
                 border: "1.5px solid #0A0A0A",
                 borderRadius: 0,
+                cursor: "pointer",
+                transition: "all 0.2s",
+                padding: 0,
               }}
               aria-label={`Écran ${i + 1}`}
             />
@@ -115,7 +174,7 @@ export default function PhoneCarousel({ images, appName }: PhoneCarouselProps) {
         </div>
       </div>
 
-      {/* Flèche droite — capture suivante */}
+      {/* Flèche droite */}
       <button
         onClick={next}
         className="brutal-btn bg-[#0A0A0A] text-[#FFE234] p-3 flex-shrink-0"
