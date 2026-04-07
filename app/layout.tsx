@@ -3,6 +3,7 @@ import "./globals.css";
 import SchemaLD from "@/components/SchemaLD";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://breizhapp.tech"),
   title: "BreizhApp — Création d'application mobile iOS & Android sur mesure",
   description:
     "BreizhApp, développeur freelance à Brest (Bretagne) : je crée votre application mobile iOS & Android sur mesure. Restaurants, commerces, jeux, e-commerce. Devis gratuit sous 24h.",
@@ -19,6 +20,9 @@ export const metadata: Metadata = {
     "application restaurant",
     "application ecommerce mobile",
     "je veux une application mobile",
+    "React Native freelance",
+    "application mobile pas cher",
+    "développeur application mobile Finistère",
   ],
   openGraph: {
     title: "BreizhApp — Création d'application mobile iOS & Android sur mesure",
@@ -26,9 +30,29 @@ export const metadata: Metadata = {
       "BreizhApp, développeur freelance à Brest : transformez votre idée en application mobile iOS & Android. Boutique, paiement, notifications. Devis gratuit.",
     type: "website",
     locale: "fr_FR",
+    url: "https://breizhapp.tech",
+    siteName: "BreizhApp",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "BreizhApp — Développeur application mobile iOS & Android à Brest",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BreizhApp — Création d'application mobile iOS & Android sur mesure",
+    description:
+      "Développeur freelance à Brest : app iOS & Android sur mesure dès 490€. Restaurants, commerces, jeux. Devis gratuit sous 24h.",
+    images: ["/opengraph-image"],
   },
   robots: { index: true, follow: true },
   alternates: { canonical: "https://breizhapp.tech" },
+  verification: {
+    google: "aRvWxlkeNu2w3Fr4rVLJq1DEARcct2JdMzk5",
+  },
 };
 
 export default function RootLayout({
