@@ -1,4 +1,9 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "https://breizhapp.tech" },
+};
 import Hero from "@/components/Hero";
 import TechStrip from "@/components/TechStrip";
 import Services from "@/components/Services";

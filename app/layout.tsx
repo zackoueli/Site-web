@@ -49,7 +49,6 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "https://breizhapp.tech" },
   verification: {
     google: "aRvWxlkeNu2w3Fr4rVLJq1DEARcct2JdMzk5",
   },
