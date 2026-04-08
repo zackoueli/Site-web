@@ -1,14 +1,19 @@
 import type { MetadataRoute } from "next";
+import { articles } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://breizhapp.tech";
-  const now = new Date();
+
+  const blogArticles = articles.map((a) => ({
+    url: `${base}/blog/${a.slug}`,
+    lastModified: new Date(a.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
   return [
-    { url: base,              lastModified: now, changeFrequency: "weekly",  priority: 1.0 },
-    { url: `${base}/#services`,  lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/#tarifs`,    lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/#portfolio`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/#faq`,       lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/#contact`,   lastModified: now, changeFrequency: "yearly",  priority: 0.6 },
+    { url: base,             lastModified: new Date(), changeFrequency: "weekly",  priority: 1.0 },
+    { url: `${base}/blog`,   lastModified: new Date(), changeFrequency: "weekly",  priority: 0.9 },
+    ...blogArticles,
   ];
 }

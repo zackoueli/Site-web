@@ -9,7 +9,7 @@ export default function SchemaLD() {
         description:
           "Création d'applications mobiles iOS et Android sur mesure pour restaurants, commerces et jeux. Développeur freelance basé à Brest, Bretagne.",
         url: "https://breizhapp.tech",
-        telephone: "",
+        telephone: "+33642354886",
         priceRange: "€€",
         image: "https://breizhapp.tech/og-image.png",
         address: {

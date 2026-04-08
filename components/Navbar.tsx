@@ -3,10 +3,11 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { label: "Services", href: "#services" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "Tarifs", href: "#tarifs" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Services", href: "/#services" },
+  { label: "Portfolio", href: "/#portfolio" },
+  { label: "Tarifs", href: "/#tarifs" },
+  { label: "Blog", href: "/blog" },
+  { label: "FAQ", href: "/#faq" },
 ];
 
 export default function Navbar() {
@@ -37,7 +38,7 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="#contact"
+              href="/#contact"
               className="brutal-btn bg-[#FF6B9D] text-white px-5 py-2 ml-3"
             >
               Devis gratuit →
@@ -72,7 +73,7 @@ export default function Navbar() {
             ))}
             <li>
               <a
-                href="#contact"
+                href="/#contact"
                 className="brutal-btn bg-[#FF6B9D] text-white px-5 py-2 w-full justify-center"
                 onClick={() => setOpen(false)}
               >

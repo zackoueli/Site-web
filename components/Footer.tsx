@@ -33,11 +33,12 @@ export default function Footer() {
           <p className="font-bold mb-3 text-[#FFE234]">Navigation</p>
           <ul className="flex flex-col gap-2 text-sm text-gray-400">
             {[
-              ["Services", "#services"],
-              ["Portfolio", "#portfolio"],
-              ["Tarifs", "#tarifs"],
-              ["FAQ", "#faq"],
-              ["Contact", "#contact"],
+              ["Services", "/#services"],
+              ["Portfolio", "/#portfolio"],
+              ["Tarifs", "/#tarifs"],
+              ["Blog", "/blog"],
+              ["FAQ", "/#faq"],
+              ["Contact", "/#contact"],
             ].map(([label, href]) => (
               <li key={href}>
                 <a href={href} className="hover:text-[#FFFBF0] transition-colors">
