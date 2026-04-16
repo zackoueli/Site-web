@@ -78,7 +78,12 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-gray-800 py-4 px-4 text-center text-sm text-gray-600 mono">
-        © {year} BreizhApp — Création d'applications mobiles iOS & Android
+        <p>© {year} BreizhApp — Création d&apos;applications mobiles iOS &amp; Android</p>
+        <div className="flex flex-wrap justify-center gap-4 mt-2">
+          <a href="/mentions-legales" className="hover:text-gray-400 transition-colors">Mentions légales</a>
+          <a href="/politique-de-confidentialite" className="hover:text-gray-400 transition-colors">Politique de confidentialité</a>
+          <a href="/cgv" className="hover:text-gray-400 transition-colors">CGV</a>
+        </div>
       </div>
     </footer>
   );
