@@ -140,8 +140,8 @@ export default function CGV() {
             <h2 className="text-xl font-bold mb-3 border-l-4 border-[#FFE234] pl-3">11. Contact</h2>
             <p className="text-gray-700 leading-relaxed">
               Pour toute question relative aux présentes CGV :{" "}
-              <a href="mailto:contact@breizhapp.tech" className="underline hover:text-[#0A0A0A]">
-                contact@breizhapp.tech
+              <a href="mailto:breizhapp@outlook.fr" className="underline hover:text-[#0A0A0A]">
+                breizhapp@outlook.fr
               </a>
             </p>
           </section>

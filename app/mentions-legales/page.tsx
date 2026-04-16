@@ -35,8 +35,8 @@ export default function MentionsLegales() {
               <strong>Nom commercial :</strong> BreizhApp<br />
               <strong>Siège :</strong> Brest, Finistère (29), Bretagne, France<br />
               <strong>E-mail :</strong>{" "}
-              <a href="mailto:contact@breizhapp.tech" className="underline hover:text-[#0A0A0A]">
-                contact@breizhapp.tech
+              <a href="mailto:breizhapp@outlook.fr" className="underline hover:text-[#0A0A0A]">
+                breizhapp@outlook.fr
               </a><br />
               <strong>SIRET :</strong> [à compléter]<br />
               <strong>Numéro de TVA intracommunautaire :</strong> Non assujetti à la TVA (article 293 B du CGI)
@@ -46,7 +46,7 @@ export default function MentionsLegales() {
           <section>
             <h2 className="text-xl font-bold mb-3 border-l-4 border-[#FFE234] pl-3">2. Directeur de la publication</h2>
             <p className="text-gray-700 leading-relaxed">
-              Enzo Omnes — <a href="mailto:contact@breizhapp.tech" className="underline">contact@breizhapp.tech</a>
+              Enzo Omnes — <a href="mailto:breizhapp@outlook.fr" className="underline">breizhapp@outlook.fr</a>
             </p>
           </section>
 
@@ -105,7 +105,7 @@ export default function MentionsLegales() {
               Conformément à l&apos;article L. 612-1 du Code de la consommation, tout consommateur
               peut recourir gratuitement à un médiateur de la consommation. BreizhApp s&apos;engage
               à proposer les coordonnées d&apos;un médiateur agréé sur simple demande à{" "}
-              <a href="mailto:contact@breizhapp.tech" className="underline">contact@breizhapp.tech</a>.
+              <a href="mailto:breizhapp@outlook.fr" className="underline">breizhapp@outlook.fr</a>.
             </p>
           </section>
 

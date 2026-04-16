@@ -33,7 +33,7 @@ export default function PolitiqueConfidentialite() {
               <strong>Enzo Omnes</strong> — Auto-entrepreneur<br />
               Activité : Développement d'applications mobiles (BreizhApp)<br />
               Brest, Bretagne, France<br />
-              Contact : <a href="mailto:contact@breizhapp.tech" className="underline hover:text-[#0A0A0A]">contact@breizhapp.tech</a>
+              Contact : <a href="mailto:breizhapp@outlook.fr" className="underline hover:text-[#0A0A0A]">breizhapp@outlook.fr</a>
             </p>
           </section>
 
@@ -105,7 +105,7 @@ export default function PolitiqueConfidentialite() {
             </ul>
             <p className="text-gray-700 leading-relaxed mt-3">
               Pour exercer ces droits, contactez-nous à{" "}
-              <a href="mailto:contact@breizhapp.tech" className="underline">contact@breizhapp.tech</a>.
+              <a href="mailto:breizhapp@outlook.fr" className="underline">breizhapp@outlook.fr</a>.
               En cas de litige, vous pouvez saisir la{" "}
               <strong>CNIL</strong> sur{" "}
               <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" className="underline">cnil.fr</a>.
