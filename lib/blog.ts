@@ -180,7 +180,7 @@ export const articles: Article[] = [
     title: "Développeur freelance vs agence mobile : que choisir en 2025 ?",
     description:
       "Comparez les avantages d'un développeur mobile freelance face à une agence digitale : prix, délais, communication, qualité. Guide pour faire le bon choix.",
-    date: "2025-04-05",
+    date: "2026-04-20",
     readTime: "5 min",
     category: "Conseils",
     sections: [
@@ -452,7 +452,7 @@ export const articles: Article[] = [
     title: "Application mobile pas chère : mythe ou réalité en 2025 ?",
     description:
       "Est-il possible d'avoir une vraie application iOS & Android professionnelle pour moins de 1 000€ ? Oui — à condition de savoir à qui s'adresser et ce que vous demandez.",
-    date: "2026-04-15",
+    date: "2026-04-20",
     readTime: "6 min",
     category: "Tarifs",
     sections: [
