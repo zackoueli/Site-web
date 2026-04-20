@@ -520,6 +520,445 @@ export const articles: Article[] = [
       },
     ],
   },
+  // --- Nouveaux articles SEO ---
+  {
+    slug: "planity-tarif-prix-abonnement-2025",
+    title: "Planity tarif 2025 : prix, abonnement et commissions décryptés",
+    description:
+      "Planity tarif 2025 : combien coûte vraiment l'abonnement Planity pour un salon ? Prix, commissions, frais cachés — et une alternative moins chère pour les salons de coiffure et instituts.",
+    date: "2026-04-20",
+    readTime: "6 min",
+    category: "Comparatifs",
+    sections: [
+      {
+        paragraphs: [
+          "Vous cherchez à connaître le tarif de Planity avant de vous engager ? Vous avez raison de creuser. L'abonnement mensuel n'est que la partie visible de la facture. Voici tout ce que vous devez savoir sur les prix Planity en 2025, sans langue de bois.",
+        ],
+      },
+      {
+        heading: "Quel est le prix de l'abonnement Planity en 2025 ?",
+        paragraphs: [
+          "Planity propose plusieurs formules d'abonnement en fonction du nombre de praticiens et des fonctionnalités incluses. En 2025, les tarifs Planity se situent entre 29€ et 79€/mois selon la formule choisie.",
+        ],
+        list: [
+          "Formule Solo (1 praticien) : environ 29–39€/mois — agenda en ligne, rappels automatiques",
+          "Formule Équipe (2–5 praticiens) : environ 49–69€/mois — multi-agenda, statistiques",
+          "Formule Salon Pro : environ 69–79€/mois — fonctionnalités avancées, gestion des stocks",
+          "Frais d'installation/onboarding : parfois facturés en plus selon la formule",
+        ],
+      },
+      {
+        heading: "La commission Planity : ce qu'on vous dit moins",
+        paragraphs: [
+          "Ce qui distingue Planity d'un simple logiciel de réservation, c'est son annuaire. Planity référence votre salon et vous envoie de nouvelles clientes. En échange, une commission est prélevée sur ces réservations générées par la plateforme.",
+          "Cette commission peut représenter 20% de la prestation pour les nouvelles clientes. Sur un soin à 50€, c'est 10€ qui part directement à Planity — en plus de votre abonnement mensuel.",
+        ],
+        list: [
+          "Commission sur les nouvelles clientes via l'annuaire : ~20% du premier rendez-vous",
+          "Pas de commission sur les clientes existantes réservant via votre lien direct",
+          "Les rappels SMS peuvent être limités sur les formules de base",
+          "Augmentation de tarifs possible sans préavis important",
+        ],
+      },
+      {
+        heading: "Combien coûte Planity sur 1 an ? Sur 2 ans ?",
+        paragraphs: [
+          "Prenons un salon avec 2 praticiens, abonnement à 59€/mois, et 8 nouvelles clientes/mois via l'annuaire Planity à 45€ de prestation en moyenne :",
+        ],
+        list: [
+          "Abonnement annuel : 59€ × 12 = 708€/an",
+          "Commissions annuaire (20% × 8 × 45€) × 12 mois : 864€/an",
+          "Coût réel annuel : environ 1 572€/an",
+          "Sur 2 ans : environ 3 144€ — sans jamais posséder quoi que ce soit",
+        ],
+      },
+      {
+        heading: "Ce que l'abonnement Planity ne vous donne pas",
+        list: [
+          "Pas d'application mobile à votre nom sur l'App Store et Google Play",
+          "Pas de programme de fidélité personnalisé (tampons numériques, réductions automatiques)",
+          "Vos données clients appartiennent en partie à Planity",
+          "Aucun contrôle sur le design et l'expérience client",
+          "Dépendance totale : si Planity ferme ou augmente ses prix, vous repartez de zéro",
+        ],
+      },
+      {
+        heading: "L'alternative à Planity : votre propre application mobile",
+        paragraphs: [
+          "Pour un prix similaire à 2 ans d'abonnement Planity, je développe une application mobile iOS & Android à votre nom avec : réservation en ligne, rappels automatiques par notification push, programme de fidélité, panel admin pour gérer vos créneaux.",
+          "Tarif : 490€ une fois + 49€/mois. Zéro commission. L'app vous appartient à 100%.",
+          "Sur 2 ans, c'est 490€ + (49€ × 24) = 1 666€ — pour une solution qui vous appartient, à vos couleurs, avec vos données.",
+          "Devis gratuit sous 24h — contactez-moi avec votre projet.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "wix-tarif-prix-abonnement-2025",
+    title: "Wix tarif 2025 : prix des abonnements et coût réel d'un site pro",
+    description:
+      "Prix Wix 2025 : abonnement Core, Business, Elite — ce que coûte vraiment Wix pour un site pro. Comparatif avec une solution sur mesure à partir de 490€.",
+    date: "2026-04-20",
+    readTime: "6 min",
+    category: "Comparatifs",
+    sections: [
+      {
+        paragraphs: [
+          "\"Créez votre site gratuitement\" — le slogan de Wix est séduisant. Mais dès que vous avez besoin d'un nom de domaine propre, d'un site sans pub Wix et de vraies fonctionnalités, les tarifs montent rapidement. Voici le prix réel de Wix en 2025.",
+        ],
+      },
+      {
+        heading: "Prix des abonnements Wix en 2025",
+        paragraphs: [
+          "Wix propose 4 plans principaux pour les sites vitrine et e-commerce :",
+        ],
+        list: [
+          "Plan Light : 13€/mois — domaine propre, sans pub Wix, 2 Go de stockage (trop limité pour un usage pro)",
+          "Plan Core : 17€/mois — 50 Go de stockage, analytics de base, 5 formulaires",
+          "Plan Business : 25€/mois — e-commerce inclus, paiements en ligne, 100 Go de stockage",
+          "Plan Business Elite : 159€/mois — performances avancées, support prioritaire",
+          "Plan gratuit : sous-domaine wixsite.com + publicité Wix affichée — inutilisable pour un professionnel",
+        ],
+      },
+      {
+        heading: "Les frais cachés de Wix que personne ne mentionne",
+        paragraphs: [
+          "L'abonnement n'est que la base. Voici ce qui s'accumule dès que vous voulez un site vraiment professionnel :",
+        ],
+        list: [
+          "Nom de domaine : ~15€/an (offert 1 an sur certains plans, puis facturé)",
+          "Wix App Market : fonctionnalités essentielles (réservation, chat, avis, marketing) à 5–30€/mois chacune",
+          "Emails pro Google Workspace : 6€/mois/utilisateur (non inclus)",
+          "Wix Payments : 2,5% de frais de transaction sur chaque vente",
+          "Templates premium : certains sont payants entre 49€ et 200€",
+          "Support téléphonique : uniquement sur les plans les plus chers",
+        ],
+      },
+      {
+        heading: "Wix : les vraies limites techniques",
+        paragraphs: [
+          "Au-delà du prix, Wix a des contraintes que vous découvrirez seulement après avoir construit votre site :",
+        ],
+        list: [
+          "Verrouillage total : impossible de migrer votre site Wix vers un autre hébergeur",
+          "SEO inférieur : malgré les améliorations, les sites Wix se positionnent moins bien qu'un site Next.js ou WordPress optimisé",
+          "Temps de chargement : les sites Wix sont souvent lents, ce qui pénalise le référencement Google",
+          "Pas d'application mobile native possible depuis Wix",
+          "Personnalisation plafonnée : vous restez limité par l'éditeur Wix",
+        ],
+      },
+      {
+        heading: "Combien coûte Wix sur 2 ans ? (calcul réel)",
+        list: [
+          "Plan Core (17€/mois) × 24 = 408€",
+          "Nom de domaine × 2 ans = 30€",
+          "2 apps Wix Market (20€/mois) × 24 = 480€",
+          "Emails Google Workspace (6€/mois) × 24 = 144€",
+          "Total estimé sur 2 ans : 1 062€ — pour un site standard sans aucune fonctionnalité sur mesure",
+        ],
+      },
+      {
+        heading: "Pourquoi choisir une application mobile sur mesure plutôt que Wix ?",
+        paragraphs: [
+          "Si vous êtes artisan, restaurateur, coiffeur, prestataire de service ou commerçant : Wix ne vous donnera jamais une application mobile à votre nom sur l'App Store.",
+          "Pour 490€ + 49€/mois, je développe une application iOS & Android sur mesure, avec votre charte graphique, vos fonctionnalités, et sans aucun verrouillage. Votre code, vos données, votre application.",
+          "Devis gratuit sous 24h — décrivez votre projet et je vous réponds.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "shopify-tarif-prix-abonnement-2025",
+    title: "Shopify tarif 2025 : prix des plans et coût réel d'une boutique en ligne",
+    description:
+      "Prix Shopify 2025 : abonnement Basic, Shopify, Advanced — commissions, apps, thèmes. Découvrez le coût total réel d'une boutique Shopify et l'alternative sur mesure.",
+    date: "2026-04-20",
+    readTime: "7 min",
+    category: "Comparatifs",
+    sections: [
+      {
+        paragraphs: [
+          "Shopify est la référence mondiale de l'e-commerce. Mais entre l'abonnement, les commissions sur les transactions, les apps obligatoires et les thèmes premium, le coût réel d'un site Shopify en 2025 dépasse largement ce qu'affichent les pages tarifaires officielles.",
+        ],
+      },
+      {
+        heading: "Prix des abonnements Shopify en 2025",
+        paragraphs: [
+          "Shopify propose 5 plans. Voici les tarifs 2025 (en paiement mensuel) :",
+        ],
+        list: [
+          "Basic : 39€/mois — idéal pour démarrer, 2% de frais de transaction sans Shopify Payments",
+          "Shopify : 105€/mois — rapports standards, jusqu'à 5 comptes staff, 1% de frais de transaction",
+          "Advanced : 399€/mois — rapports avancés, livraison calculée par transporteur, 0,5% de transaction",
+          "Shopify Plus : à partir de 2 300€/mois — pour les grandes enseignes",
+          "Starter : 5€/mois — vente via liens et réseaux sociaux uniquement (pas de boutique complète)",
+        ],
+      },
+      {
+        heading: "Les frais de transaction Shopify : ce que ça coûte vraiment",
+        paragraphs: [
+          "Si vous n'utilisez pas Shopify Payments (disponible uniquement dans certains pays), des frais de transaction s'appliquent en plus des frais du prestataire de paiement :",
+        ],
+        list: [
+          "Plan Basic : 2% par transaction — sur 5 000€/mois de CA = 100€/mois de frais Shopify seuls",
+          "Plan Shopify : 1% par transaction",
+          "Plan Advanced : 0,5% par transaction",
+          "Frais Stripe ou PayPal en plus : environ 1,4% + 0,25€ par transaction européenne",
+        ],
+      },
+      {
+        heading: "Les coûts cachés d'une boutique Shopify",
+        list: [
+          "Thème premium : 150€ à 400€ (les thèmes gratuits sont très limités en design et fonctionnalités)",
+          "Apps indispensables : avis produits, upsell, récupération panier abandonné, SEO avancé — 50 à 200€/mois cumulés",
+          "Nom de domaine : 14€/an (non inclus dans l'abonnement)",
+          "Email marketing : Klaviyo ou Mailchimp, à partir de 20€/mois",
+          "Développeur Shopify pour les customisations : 400–600€/jour",
+          "Traductions multilingues : module payant requis hors plan Advanced",
+        ],
+      },
+      {
+        heading: "Coût réel Shopify sur 2 ans (plan Basic réaliste)",
+        list: [
+          "Abonnement Basic × 24 : 39€ × 24 = 936€",
+          "Thème premium : 250€ (une fois)",
+          "Apps cumulées 50€/mois × 24 : 1 200€",
+          "Nom de domaine × 2 ans : 28€",
+          "Frais de transaction 2% sur 3 000€/mois × 24 mois : 1 440€",
+          "Total sur 2 ans : environ 3 854€ — sans aucune ligne de code personnalisée",
+        ],
+      },
+      {
+        heading: "Ce que Shopify ne peut pas faire",
+        list: [
+          "Application mobile native iOS & Android à votre nom : impossible sans développement séparé",
+          "Personnalisation profonde de la logique métier sans développeur Liquid/Shopify",
+          "Propriété de votre infrastructure : vous êtes locataire chez Shopify",
+          "Hébergement des données en Europe si requis par votre politique RGPD",
+          "Expérience client vraiment différenciante face à des milliers de boutiques qui utilisent les mêmes thèmes",
+        ],
+      },
+      {
+        heading: "L'alternative : une boutique mobile sur mesure sans abonnement Shopify",
+        paragraphs: [
+          "Pour les commerçants qui veulent une boutique en ligne + une application mobile iOS & Android, je propose l'offre App Boutique : 0€ d'installation, 12% de commission sur les ventes uniquement — comme Shopify, mais avec une vraie app mobile à votre nom.",
+          "Aucun abonnement mensuel. Aucun frais de transaction fixe. Vous ne payez que quand vous vendez.",
+          "Contactez-moi pour un devis gratuit — je vous réponds sous 24h.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "squarespace-tarif-prix-2025",
+    title: "Squarespace tarif 2025 : prix des abonnements et vraie valeur",
+    description:
+      "Prix Squarespace 2025 : plans Personal, Business, Commerce — ce que coûte vraiment Squarespace pour un site pro. Comparatif avec une solution sur mesure.",
+    date: "2026-04-20",
+    readTime: "5 min",
+    category: "Comparatifs",
+    sections: [
+      {
+        paragraphs: [
+          "Squarespace est réputé pour ses templates soignés et son interface élégante. Mais quel est le vrai prix de Squarespace en 2025, une fois tous les frais additionnels pris en compte ?",
+        ],
+      },
+      {
+        heading: "Prix des plans Squarespace en 2025",
+        paragraphs: [
+          "Squarespace facture en abonnement annuel ou mensuel. Les tarifs mensuels sont :",
+        ],
+        list: [
+          "Personal : 16€/mois (annuel) ou 23€/mois — site vitrine, domaine inclus 1 an, pas de vente en ligne",
+          "Business : 23€/mois (annuel) ou 33€/mois — e-commerce avec 3% de commission par vente",
+          "Commerce Basic : 28€/mois (annuel) — e-commerce sans commission, fonctionnalités boutique avancées",
+          "Commerce Advanced : 52€/mois (annuel) — abonnements, ventes en gros, API avancée",
+        ],
+      },
+      {
+        heading: "La commission de 3% sur le plan Business",
+        paragraphs: [
+          "Le plan Business est le plus choisi par défaut — mais il prélève 3% sur chaque vente. Sur 2 000€/mois de CA, c'est 60€/mois de commission qui part à Squarespace, soit 720€/an en plus de l'abonnement.",
+          "Pour supprimer cette commission, il faut passer au plan Commerce Basic (28€/mois) — ce qui fait vite grimper la facture réelle.",
+        ],
+      },
+      {
+        heading: "Les coûts additionnels Squarespace",
+        list: [
+          "Extensions Squarespace (apps tierces) : 5–20€/mois par extension",
+          "Emails Google Workspace : 6€/mois/utilisateur",
+          "Campagnes email marketing Squarespace : à partir de 7€/mois",
+          "Domaine après la 1ère année : 20–30€/an",
+          "Squarespace Scheduling (prise de rendez-vous) : en supplément",
+        ],
+      },
+      {
+        heading: "Les limites de Squarespace à connaître",
+        list: [
+          "Impossible de migrer votre site vers un autre hébergeur",
+          "Pas d'application mobile native possible",
+          "Personnalisation très limitée : vous restez dans l'éditeur Squarespace",
+          "SEO moins performant qu'un site Next.js ou WordPress bien optimisé",
+          "Support uniquement par chat et email — pas de téléphone",
+        ],
+      },
+      {
+        heading: "Squarespace vs une solution sur mesure",
+        paragraphs: [
+          "Squarespace coûte entre 400€ et 750€/an pour un plan pro, sans compter extensions et commissions. En 2 ans, vous avez dépensé entre 800€ et 1 500€ pour un site qui ne vous appartient pas.",
+          "Pour un budget similaire, je développe un site sur mesure ou une application mobile iOS & Android à partir de 490€, avec votre code, vos données, et zéro dépendance à une plateforme.",
+          "Devis gratuit sous 24h — contactez-moi.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "comparatif-createurs-site-web-prix-2025",
+    title: "Comparatif créateurs de site web : tarifs Wix, Squarespace, Jimdo, Webflow en 2025",
+    description:
+      "Tableau comparatif des prix de tous les constructeurs de site web en 2025 : Wix, Squarespace, Webflow, Jimdo, Ionos, GoDaddy. Quel est le moins cher ? Quelle alternative choisir ?",
+    date: "2026-04-20",
+    readTime: "8 min",
+    category: "Comparatifs",
+    sections: [
+      {
+        paragraphs: [
+          "Vous voulez créer un site web professionnel et vous comparez les prix des constructeurs de site ? Wix, Squarespace, Webflow, Jimdo, Ionos, GoDaddy — chaque plateforme a sa propre grille tarifaire, avec ses avantages et ses pièges. Voici le comparatif complet des prix en 2025.",
+        ],
+      },
+      {
+        heading: "Tableau des prix des constructeurs de site web en 2025",
+        paragraphs: [
+          "Voici les tarifs d'entrée pour un site professionnel (avec domaine propre, sans pub, fonctionnalités e-commerce si applicable) :",
+        ],
+        list: [
+          "Wix Core : 17€/mois (204€/an) — site vitrine pro, stockage 50 Go",
+          "Squarespace Personal : 16€/mois (192€/an) — site vitrine, pas de vente en ligne",
+          "Jimdo Business : 15€/mois (180€/an) — site vitrine, SEO basique",
+          "Ionos Essentiel : 6€/mois (72€/an) — entrée de gamme, fonctionnalités très limitées",
+          "GoDaddy Basic : 10€/mois (120€/an) — site vitrine, intégrations limitées",
+          "Webflow Basic : 18€/mois (216€/an) — pour designers, courbe d'apprentissage élevée",
+          "WordPress.com Business : 25€/mois (300€/an) — plugins inclus, plus flexible",
+        ],
+      },
+      {
+        heading: "Le piège commun à tous ces constructeurs",
+        paragraphs: [
+          "Tous ces outils partagent le même modèle économique : vous êtes locataire. Votre site vit sur leurs serveurs, dans leur écosystème. Si la plateforme ferme, augmente ses prix ou change ses conditions — vous n'avez aucun recours.",
+          "Et aucun de ces constructeurs ne vous permettra jamais de créer une vraie application mobile iOS & Android native à votre nom.",
+        ],
+        list: [
+          "Verrouillage plateforme : impossible ou très difficile de migrer vers un autre hébergeur",
+          "SEO plafonné : les sites sur plateforme sont moins bien référencés que les sites sur mesure",
+          "Personnalisation limitée : vous restez dans les templates et contraintes de l'éditeur",
+          "Coût cumulé : sur 3–5 ans, le total dépasse souvent le coût d'un site sur mesure",
+          "Pas d'application mobile native possible",
+        ],
+      },
+      {
+        heading: "Quel constructeur de site choisir selon votre besoin ?",
+        list: [
+          "Site vitrine simple (artisan, professionnel libéral) : Ionos ou GoDaddy si budget serré, Squarespace si vous voulez du beau",
+          "Boutique e-commerce : Shopify reste la référence, mais regardez les commissions",
+          "Blog ou site de contenu : WordPress.com ou Wix Core",
+          "Site très personnalisé (designers, agences) : Webflow",
+          "Vous voulez une application mobile en plus : aucun de ces outils ne peut le faire",
+        ],
+      },
+      {
+        heading: "L'alternative sur mesure : moins cher sur la durée",
+        paragraphs: [
+          "Un site sur mesure ou une application mobile développée par un freelance coûte plus cher en une fois — mais vous appartient définitivement.",
+          "Sur 3 ans, un site Wix à 17€/mois + apps cumulées vous coûte facilement 1 500€ à 2 000€ pour un résultat standard. Un site sur mesure à 800€ est rentabilisé dès la 2ème année — et vous pouvez le déplacer, le faire évoluer, le vendre.",
+          "Et si vous êtes restaurateur, salon de coiffure, commerçant ou prestataire de services : une application mobile iOS & Android à partir de 490€ remplace avantageusement n'importe quel constructeur de site.",
+          "Devis gratuit sous 24h — contactez-moi avec votre projet.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "tarif-creation-site-internet-2025",
+    title: "Tarif création site internet 2025 : combien ça coûte vraiment ?",
+    description:
+      "Quel est le prix d'un site internet en 2025 ? Freelance, agence, constructeur DIY (Wix, Squarespace) — comparatif complet des tarifs de création de site web.",
+    date: "2026-04-20",
+    readTime: "7 min",
+    category: "Tarifs",
+    sections: [
+      {
+        paragraphs: [
+          "\"Combien coûte un site internet ?\" — c'est l'une des questions les plus posées sur Google. Et la réponse varie de 0€ (Wix gratuit) à 80 000€ (agence digitale grand compte). Voici un guide honnête des tarifs réels en 2025, selon votre besoin et votre budget.",
+        ],
+      },
+      {
+        heading: "Option 1 : les constructeurs de site (Wix, Squarespace, Jimdo…)",
+        paragraphs: [
+          "Les plateformes DIY permettent de créer un site sans coder. Idéales pour un premier site vitrine rapide.",
+        ],
+        list: [
+          "Tarif : 6€ à 30€/mois selon la plateforme et le plan",
+          "Sur 2 ans : 150€ à 900€ (abonnement seul, sans apps supplémentaires)",
+          "Avantages : rapide à mettre en place, pas de compétences techniques requises",
+          "Inconvénients : site non propriétaire, SEO limité, pas d'app mobile possible, verrouillage plateforme",
+        ],
+      },
+      {
+        heading: "Option 2 : WordPress avec hébergement",
+        paragraphs: [
+          "WordPress (self-hosted) est la solution la plus répandue dans le monde. Vous installez WordPress sur votre hébergeur, vous choisissez un thème, et vous personnalisez.",
+        ],
+        list: [
+          "Hébergement : 3€ à 15€/mois (OVH, Infomaniak, o2switch)",
+          "Thème premium : 50€ à 150€ (WPAstra, Divi, Elementor Pro)",
+          "Plugins indispensables : 50€ à 200€/an cumulés",
+          "Maintenance et sécurité : à gérer soi-même ou à déléguer (50–150€/mois)",
+          "Total sur 2 ans (DIY) : 250€ à 600€ — mais demande du temps et des compétences techniques",
+        ],
+      },
+      {
+        heading: "Option 3 : un développeur freelance",
+        paragraphs: [
+          "Un freelance développe votre site sur mesure : design personnalisé, fonctionnalités spécifiques, SEO optimisé. Vous obtenez exactement ce dont vous avez besoin, ni plus ni moins.",
+        ],
+        list: [
+          "Site vitrine simple : 400€ à 1 500€ selon les fonctionnalités",
+          "Site e-commerce : 800€ à 3 000€",
+          "Application mobile iOS & Android : 490€ à 2 000€ (BreizhApp)",
+          "Site + app mobile : bundle possible à partir de 800€",
+          "Avantages : sur mesure, SEO optimisé, vous possédez votre code, pas de verrouillage",
+        ],
+      },
+      {
+        heading: "Option 4 : une agence web",
+        paragraphs: [
+          "Une agence met à disposition toute une équipe : chef de projet, designer, développeurs, référenceur. Adapté aux grandes entreprises avec des budgets conséquents.",
+        ],
+        list: [
+          "Site vitrine : 3 000€ à 15 000€",
+          "Site e-commerce : 8 000€ à 50 000€",
+          "Application mobile : 15 000€ à 80 000€",
+          "Délais : 1 à 6 mois",
+          "Adapté pour : grandes entreprises, projets complexes avec équipes multiples",
+        ],
+      },
+      {
+        heading: "Quel tarif choisir selon votre profil ?",
+        list: [
+          "Vous démarrez et avez un budget < 200€/an : commencez par Wix ou Squarespace, mais prévoyez de migrer",
+          "Vous êtes artisan, commerçant, prestataire de service : un freelance à 490–800€ est le meilleur rapport qualité/prix",
+          "Vous vendez en ligne : Shopify ou une boutique mobile sur mesure (0€ + commission)",
+          "Vous avez besoin d'une app mobile : seul un développeur freelance peut vous l'offrir pour moins de 15 000€",
+          "Vous êtes une grande entreprise : une agence web",
+        ],
+      },
+      {
+        heading: "Mon offre : site ou app mobile à partir de 490€",
+        paragraphs: [
+          "Je suis développeur freelance basé à Brest, spécialisé dans les applications mobiles iOS & Android. Je travaille avec des TPE, artisans, restaurateurs et commerçants qui veulent une vraie présence numérique sans le budget d'une grande entreprise.",
+          "App Starter à 490€, App Premium à 600€, App Boutique à 0€ d'installation (12% sur les ventes). Devis gratuit sous 24h.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
