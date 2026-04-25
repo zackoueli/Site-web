@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
+import SchemaFAQ from "@/components/SchemaFAQ";
 
 export const metadata: Metadata = {
   alternates: { canonical: "https://breizhapp.tech" },
@@ -16,6 +17,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
+      <SchemaFAQ />
       <Navbar />
       <main>
         <Hero />

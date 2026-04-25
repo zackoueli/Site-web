@@ -4,9 +4,9 @@ import SchemaLD from "@/components/SchemaLD";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://breizhapp.tech"),
-  title: "BreizhApp — Création d'application mobile iOS & Android sur mesure",
+  title: "BreizhApp — Développeur app mobile iOS & Android",
   description:
-    "BreizhApp, développeur freelance à Brest (Bretagne) : je crée votre application mobile iOS & Android sur mesure. Restaurants, commerces, jeux, e-commerce. Devis gratuit sous 24h.",
+    "Développeur freelance à Brest : je crée votre app iOS & Android sur mesure dès 490€. Restaurants, commerces, e-commerce. Devis gratuit sous 24h.",
   keywords: [
     "création application mobile",
     "développeur application mobile",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "BreizhApp — Création d'application mobile iOS & Android sur mesure",
     description:
-      "BreizhApp, développeur freelance à Brest : transformez votre idée en application mobile iOS & Android. Boutique, paiement, notifications. Devis gratuit.",
+      "Développeur freelance à Brest : app iOS & Android sur mesure dès 490€. Restaurants, commerces, e-commerce. Devis gratuit sous 24h.",
     type: "website",
     locale: "fr_FR",
     url: "https://breizhapp.tech",

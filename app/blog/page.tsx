@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Blog — Conseils développement application mobile | BreizhApp",
   description:
-    "Articles et conseils sur la création d'applications mobiles iOS & Android : tarifs, fonctionnalités, comparatifs techniques. Par BreizhApp, développeur freelance à Brest.",
+    "Articles sur la création d'apps mobiles iOS & Android : tarifs, comparatifs techniques, conseils. Par BreizhApp, développeur freelance à Brest.",
   alternates: { canonical: "https://breizhapp.tech/blog" },
   openGraph: {
     title: "Blog BreizhApp — Conseils application mobile",

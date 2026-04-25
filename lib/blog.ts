@@ -19,7 +19,7 @@ export const articles: Article[] = [
     slug: "combien-coute-application-mobile",
     title: "Combien coûte une application mobile en 2025 ?",
     description:
-      "Prix d'une app iOS & Android selon les fonctionnalités : commande en ligne, paiement Stripe, notifications push. Grille tarifaire réelle d'un développeur freelance à Brest.",
+      "Prix d'une app iOS & Android selon les fonctionnalités : paiement Stripe, notifications push. Grille tarifaire réelle d'un développeur freelance à Brest.",
     date: "2025-03-15",
     readTime: "5 min",
     category: "Tarifs",
@@ -78,7 +78,7 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-restaurant",
-    title: "Application mobile pour restaurant : tout ce qu'il faut savoir",
+    title: "App mobile restaurant : guide complet 2025",
     description:
       "Commande en ligne, carte interactive, programme de fidélité, réservation de table : les fonctionnalités indispensables d'une app mobile pour restaurant en 2025.",
     date: "2025-03-22",
@@ -129,7 +129,7 @@ export const articles: Article[] = [
     slug: "react-native-vs-flutter",
     title: "React Native vs Flutter en 2025 : quel framework choisir ?",
     description:
-      "Comparatif complet React Native et Flutter pour créer une application mobile iOS & Android. Performance, coût, écosystème — le point de vue d'un développeur freelance.",
+      "React Native vs Flutter : performance, coût, écosystème — comparatif pour créer une app iOS & Android. Le point de vue d'un développeur freelance.",
     date: "2025-04-01",
     readTime: "7 min",
     category: "Tech",
@@ -177,7 +177,7 @@ export const articles: Article[] = [
   },
   {
     slug: "developpeur-freelance-vs-agence",
-    title: "Développeur freelance vs agence mobile : que choisir en 2025 ?",
+    title: "Freelance vs agence mobile : que choisir en 2025 ?",
     description:
       "Comparez les avantages d'un développeur mobile freelance face à une agence digitale : prix, délais, communication, qualité. Guide pour faire le bon choix.",
     date: "2026-04-20",
@@ -234,7 +234,7 @@ export const articles: Article[] = [
     slug: "cout-reel-site-shopify",
     title: "Shopify : le coût réel d'un site e-commerce en 2025",
     description:
-      "Abonnement, commissions, thèmes, apps payantes... Découvrez ce que coûte vraiment un site Shopify par rapport à une solution sur mesure développée par un freelance.",
+      "Abonnement, commissions, thèmes, apps payantes : le coût réel d'un site Shopify comparé à une solution sur mesure développée par un freelance.",
     date: "2026-04-15",
     readTime: "6 min",
     category: "Comparatifs",
@@ -312,7 +312,7 @@ export const articles: Article[] = [
     slug: "cout-reel-site-wix",
     title: "Wix : le coût réel d'un site web en 2025",
     description:
-      "Wix semble gratuit au départ, mais un vrai site professionnel avec nom de domaine, sans pub et avec les bonnes fonctionnalités coûte bien plus cher. Analyse complète.",
+      "Wix semble gratuit, mais un site pro avec domaine et fonctionnalités coûte bien plus cher. Analyse complète des tarifs Wix en 2025.",
     date: "2026-04-15",
     readTime: "5 min",
     category: "Comparatifs",
@@ -384,9 +384,9 @@ export const articles: Article[] = [
   },
   {
     slug: "cout-reel-planity",
-    title: "Planity : le coût réel pour un salon de coiffure ou d'esthétique en 2025",
+    title: "Planity : coût réel pour un salon en 2025",
     description:
-      "Planity prend une commission sur chaque réservation en ligne. Découvrez ce que ça coûte vraiment sur la durée, et pourquoi une application mobile sur mesure peut être plus rentable.",
+      "Planity prélève une commission sur chaque réservation. Coût réel sur la durée et comparatif avec une application mobile sur mesure pour salon.",
     date: "2026-04-15",
     readTime: "5 min",
     category: "Comparatifs",
@@ -451,7 +451,7 @@ export const articles: Article[] = [
     slug: "application-mobile-pas-chere",
     title: "Application mobile pas chère : mythe ou réalité en 2025 ?",
     description:
-      "Est-il possible d'avoir une vraie application iOS & Android professionnelle pour moins de 1 000€ ? Oui — à condition de savoir à qui s'adresser et ce que vous demandez.",
+      "Une vraie app iOS & Android professionnelle pour moins de 1 000€ : oui, c'est possible. Comment et à qui s'adresser en 2025.",
     date: "2026-04-20",
     readTime: "6 min",
     category: "Tarifs",
@@ -523,9 +523,9 @@ export const articles: Article[] = [
   // --- Nouveaux articles SEO ---
   {
     slug: "planity-tarif-prix-abonnement-2025",
-    title: "Planity tarif 2025 : prix, abonnement et commissions décryptés",
+    title: "Planity tarif 2025 : prix et commissions décryptés",
     description:
-      "Planity tarif 2025 : combien coûte vraiment l'abonnement Planity pour un salon ? Prix, commissions, frais cachés — et une alternative moins chère pour les salons de coiffure et instituts.",
+      "Planity tarif 2025 : prix de l'abonnement, commissions et frais cachés. Alternative moins chère pour les salons de coiffure et instituts.",
     date: "2026-04-20",
     readTime: "6 min",
     category: "Comparatifs",
@@ -595,7 +595,7 @@ export const articles: Article[] = [
   },
   {
     slug: "wix-tarif-prix-abonnement-2025",
-    title: "Wix tarif 2025 : prix des abonnements et coût réel d'un site pro",
+    title: "Wix tarif 2025 : coût réel d'un site pro",
     description:
       "Prix Wix 2025 : abonnement Core, Business, Elite — ce que coûte vraiment Wix pour un site pro. Comparatif avec une solution sur mesure à partir de 490€.",
     date: "2026-04-20",
@@ -669,9 +669,9 @@ export const articles: Article[] = [
   },
   {
     slug: "shopify-tarif-prix-abonnement-2025",
-    title: "Shopify tarif 2025 : prix des plans et coût réel d'une boutique en ligne",
+    title: "Shopify tarif 2025 : coût réel d'une boutique en ligne",
     description:
-      "Prix Shopify 2025 : abonnement Basic, Shopify, Advanced — commissions, apps, thèmes. Découvrez le coût total réel d'une boutique Shopify et l'alternative sur mesure.",
+      "Prix Shopify 2025 : abonnement Basic, Advanced, commissions et apps. Coût total réel d'une boutique Shopify et alternative sur mesure.",
     date: "2026-04-20",
     readTime: "7 min",
     category: "Comparatifs",
@@ -813,9 +813,9 @@ export const articles: Article[] = [
   },
   {
     slug: "comparatif-createurs-site-web-prix-2025",
-    title: "Comparatif créateurs de site web : tarifs Wix, Squarespace, Jimdo, Webflow en 2025",
+    title: "Wix, Squarespace, Webflow : comparatif prix 2025",
     description:
-      "Tableau comparatif des prix de tous les constructeurs de site web en 2025 : Wix, Squarespace, Webflow, Jimdo, Ionos, GoDaddy. Quel est le moins cher ? Quelle alternative choisir ?",
+      "Comparatif prix 2025 : Wix, Squarespace, Webflow, Jimdo. Quel constructeur de site web est le moins cher et quelle alternative choisir ?",
     date: "2026-04-20",
     readTime: "8 min",
     category: "Comparatifs",
@@ -877,7 +877,7 @@ export const articles: Article[] = [
   },
   {
     slug: "tarif-creation-site-internet-2025",
-    title: "Tarif création site internet 2025 : combien ça coûte vraiment ?",
+    title: "Tarif création site internet 2025 : le vrai prix",
     description:
       "Quel est le prix d'un site internet en 2025 ? Freelance, agence, constructeur DIY (Wix, Squarespace) — comparatif complet des tarifs de création de site web.",
     date: "2026-04-20",
@@ -955,6 +955,221 @@ export const articles: Article[] = [
         paragraphs: [
           "Je suis développeur freelance basé à Brest, spécialisé dans les applications mobiles iOS & Android. Je travaille avec des TPE, artisans, restaurateurs et commerçants qui veulent une vraie présence numérique sans le budget d'une grande entreprise.",
           "App Starter à 490€, App Premium à 600€, App Boutique à 0€ d'installation (12% sur les ventes). Devis gratuit sous 24h.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "site-web-restaurant-brest",
+    title: "Site web pour restaurant à Brest : guide 2025",
+    description:
+      "Menu en ligne, réservation, commande à emporter : tout ce qu'un site web de restaurant à Brest doit avoir en 2025. Tarifs et conseils d'un développeur local.",
+    date: "2026-04-25",
+    readTime: "6 min",
+    category: "Restaurants",
+    sections: [
+      {
+        paragraphs: [
+          "Vous êtes restaurateur à Brest et votre site web date de 2018 — ou vous n'en avez pas encore ? En 2025, un client qui ne vous trouve pas en ligne choisit le restaurant d'à côté. Voici ce qu'un bon site de restaurant doit avoir, et ce que ça coûte vraiment.",
+        ],
+      },
+      {
+        heading: "Pourquoi un site web ne suffit plus pour un restaurant à Brest",
+        paragraphs: [
+          "Les restaurateurs brestois font face à une concurrence numérique forte : TheFork, Google Maps, Tripadvisor, Uber Eats... Ces plateformes captent votre clientèle et prennent entre 15% et 30% de commission sur chaque commande ou réservation.",
+          "Un site web bien conçu vous permet de reprendre la main : apparaître en premier sur Google quand quelqu'un cherche \"restaurant Brest\", gérer vos propres réservations, et proposer la commande en ligne sans commission.",
+        ],
+      },
+      {
+        heading: "Les fonctionnalités indispensables en 2025",
+        list: [
+          "Menu en ligne à jour : vos clients consultent votre carte depuis leur téléphone avant de venir — si elle n'est pas là, ils vont ailleurs",
+          "Réservation en ligne 24h/24 : formulaire simple avec confirmation automatique par email et SMS",
+          "Commande à emporter ou livraison : directement sur votre site, sans passer par Uber Eats ou Deliveroo",
+          "Photos professionnelles de vos plats et de votre salle : 70% des clients décident sur les visuels",
+          "Fiche Google Business optimisée : liée à votre site, avec vos horaires, votre adresse et vos avis",
+          "Site rapide sur mobile : 80% des recherches \"restaurant Brest\" se font depuis un smartphone",
+        ],
+      },
+      {
+        heading: "Ce que coûte un site web pour un restaurant à Brest",
+        paragraphs: [
+          "Il existe trois niveaux de prix selon vos besoins :",
+        ],
+        list: [
+          "Site vitrine simple (menu, horaires, contact) : 400€ à 800€ chez un freelance local — suffisant pour apparaître sur Google",
+          "Site avec réservation en ligne : 800€ à 1 500€ — idéal pour réduire les appels téléphoniques",
+          "Site + commande en ligne avec paiement : 1 200€ à 2 500€ — pour s'affranchir des plateformes",
+          "Application mobile iOS & Android à partir de 490€ : votre restaurant directement sur le téléphone de vos clients",
+        ],
+      },
+      {
+        heading: "Site web ou application mobile : que choisir ?",
+        paragraphs: [
+          "Un site web est indexé par Google et accessible sans téléchargement — c'est la base. Une application mobile va plus loin : notifications push (\"Offre spéciale ce soir\"), programme de fidélité, commande en un clic pour les clients réguliers.",
+          "Pour un restaurant à Brest, la combinaison idéale est un site web bien référencé + une application mobile pour fidéliser la clientèle locale.",
+          "Je développe les deux depuis Brest. Devis gratuit sous 24h — décrivez votre projet.",
+        ],
+      },
+      {
+        heading: "Le référencement local : apparaître sur Google quand on cherche \"restaurant Brest\"",
+        paragraphs: [
+          "Un site web ne suffit pas s'il n'est pas visible. Voici les éléments clés pour apparaître en tête des résultats locaux :",
+        ],
+        list: [
+          "Fiche Google Business complète et vérifiée avec vos vraies photos",
+          "Mentions de Brest, du quartier (Recouvrance, Saint-Martin, Bellevue...) et de votre type de cuisine dans vos textes",
+          "Avis Google : invitez chaque client satisfait à en laisser un — c'est le facteur n°1 pour le ranking local",
+          "Site rapide et mobile-first : Google pénalise les sites lents dans les résultats locaux",
+          "Données structurées Restaurant (schema.org) : informent Google sur vos horaires, votre menu et votre localisation",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "application-mobile-restaurant-bretagne",
+    title: "App mobile restaurant en Bretagne : guide 2025",
+    description:
+      "App mobile pour restaurant en Bretagne : fonctionnalités, tarifs et retour sur investissement. Guide par un développeur freelance basé à Brest.",
+    date: "2026-04-25",
+    readTime: "7 min",
+    category: "Restaurants",
+    sections: [
+      {
+        paragraphs: [
+          "Les restaurateurs bretons sont de plus en plus nombreux à sauter le pas : avoir leur propre application mobile plutôt que de dépendre de Uber Eats, TheFork ou Planity. Moins de commission, plus de fidélité client, une image plus professionnelle.",
+          "Je suis développeur freelance basé à Brest, et je travaille avec des restaurants, crêperies, bars et commerces alimentaires en Bretagne. Voici ce que vous devez savoir avant de vous lancer.",
+        ],
+      },
+      {
+        heading: "Pourquoi une application mobile pour votre restaurant en Bretagne ?",
+        paragraphs: [
+          "La Bretagne a une culture gastronomique forte — crêperies, fruits de mer, restaurants bistronomiques — et une clientèle locale fidèle. Une application mobile bien conçue transforme un client de passage en habitué.",
+        ],
+        list: [
+          "Notifications push : prévenez vos clients du plat du jour, d'une soirée spéciale ou d'une offre limitée — directement sur leur téléphone",
+          "Programme de fidélité numérique : tampons virtuels, réductions automatiques à la 10ème visite, cadeaux d'anniversaire",
+          "Commande en ligne sans commission : gardez 100% de vos recettes au lieu de reverser 15 à 30% à Uber Eats",
+          "Réservation de table 24h/24 avec confirmation automatique",
+          "Carte du menu toujours à jour, modifiable en temps réel depuis votre panel admin",
+        ],
+      },
+      {
+        heading: "Combien coûte une application mobile pour un restaurant breton ?",
+        paragraphs: [
+          "C'est souvent la première question. Et la réponse est bien moins effrayante que ce que les restaurateurs imaginent.",
+        ],
+        list: [
+          "App Starter à 490€ + 49€/mois : application iOS & Android avec menu, réservation, notifications push, panel admin",
+          "App Premium à 600€ + 49€/mois : tout le Starter + commande en ligne avec paiement Stripe, programme de fidélité",
+          "App Boutique à 0€ d'installation : pour les restaurants avec livraison, 12% sur les ventes — zéro risque au départ",
+          "Délai de livraison : 3 à 5 semaines selon les fonctionnalités",
+        ],
+      },
+      {
+        heading: "Retour sur investissement : les chiffres réels",
+        paragraphs: [
+          "Un restaurateur de Brest m'a contacté après avoir calculé qu'Uber Eats lui coûtait environ 600€ par mois en commissions (20% sur 3 000€ de commandes livraison). Il a investi 600€ dans une application mobile avec commande en ligne.",
+          "En deux mois, ses clients réguliers avaient basculé sur l'app. Les commissions Uber Eats ont chuté de 60%. L'app était rentabilisée.",
+        ],
+        list: [
+          "Économie sur commissions Uber Eats/Deliveroo : 200€ à 1 000€/mois selon le volume",
+          "Augmentation de la fréquence de visite grâce aux notifications push : +15 à 25% observés",
+          "Programme de fidélité : augmente la valeur client sur 12 mois",
+          "Image professionnelle différenciante face aux concurrents sans app",
+        ],
+      },
+      {
+        heading: "Exemples de restaurants et commerces alimentaires accompagnés en Bretagne",
+        paragraphs: [
+          "Je travaille avec des restaurateurs sur Brest, Quimper, Rennes et le reste de la Bretagne. Les profils typiques :",
+        ],
+        list: [
+          "Restaurants et brasseries : commande sur place via QR code, commande à emporter, programme de fidélité",
+          "Crêperies : menu saisonnier modifiable en temps réel, réservation de groupe",
+          "Restaurants de fruits de mer : disponibilité en temps réel, commande de plateau pour enlèvement",
+          "Bars et bistrots : événements, soirées à thème, préventes de billets via l'app",
+          "Traiteurs et food trucks : planning de présence, commande à l'avance, paiement en ligne",
+        ],
+      },
+      {
+        heading: "Par où commencer ?",
+        paragraphs: [
+          "La première étape est un appel ou un échange par message pour définir vos besoins. Je vous pose les bonnes questions : volume de commandes, clientèle, fonctionnalités prioritaires, budget.",
+          "Sous 48h, vous recevez un devis détaillé avec le périmètre exact, les délais et le prix final. Pas de surprise.",
+          "Contactez-moi pour un devis gratuit — je réponds sous 24h, même le weekend.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "creation-site-pizzeria-brest",
+    title: "Site web pizzeria à Brest : tarifs et guide 2025",
+    description:
+      "Site web pour votre pizzeria à Brest : commande en ligne, menu digital, référencement local. Tarifs et conseils d'un développeur freelance brestois.",
+    date: "2026-04-25",
+    readTime: "6 min",
+    category: "Restaurants",
+    sections: [
+      {
+        paragraphs: [
+          "Vous avez une pizzeria à Brest et vous voulez récupérer vos commandes en ligne sans payer 25% à Uber Eats ou Just Eat ? Ou simplement apparaître en premier quand quelqu'un cherche \"pizzeria Brest\" sur Google ? Ce guide vous explique exactement ce qu'il faut faire — et ce que ça coûte.",
+        ],
+      },
+      {
+        heading: "Le problème des plateformes de livraison pour les pizzerias brestoises",
+        paragraphs: [
+          "Uber Eats, Just Eat, Deliveroo : ces plateformes vous apportent de la visibilité au départ, mais à un prix élevé. Entre 20% et 30% de commission sur chaque commande, plus les frais d'activation et les campagnes promotionnelles \"conseillées\".",
+          "Sur une pizza à 14€, vous reversez entre 2,80€ et 4,20€ à la plateforme. Sur 50 pizzas par soir, c'est 140€ à 210€ qui ne vous reviennent pas — soit 4 000€ à 6 000€ par mois sur une activité de livraison correcte.",
+          "Un site avec commande en ligne directe vous coûte quelques centaines d'euros une fois. L'amortissement est immédiat.",
+        ],
+      },
+      {
+        heading: "Ce qu'un site web de pizzeria doit avoir à Brest",
+        list: [
+          "Menu en ligne avec photos : vos pizzas, leurs ingrédients, leurs tailles et leurs prix — accessibles depuis un téléphone en 3 secondes",
+          "Commande en ligne avec choix livraison ou emporter : paiement sécurisé par Stripe, confirmation automatique par SMS",
+          "Estimation du temps de préparation en temps réel : réduit les appels téléphoniques pendant le coup de feu",
+          "Page Google optimisée : heures d'ouverture, zone de livraison, lien de commande directement dans Google Maps",
+          "Avis clients intégrés : widget Google Reviews ou système d'avis interne pour rassurer les nouveaux clients",
+          "Version mobile parfaite : 85% des commandes de pizzas se font depuis un smartphone",
+        ],
+      },
+      {
+        heading: "Référencement local : comment apparaître sur \"pizzeria Brest\" ?",
+        paragraphs: [
+          "Google affiche en priorité les résultats locaux pour les recherches alimentaires. Voici ce qui détermine votre position :",
+        ],
+        list: [
+          "Fiche Google Business complète : photos récentes, horaires exacts, réponses aux avis, menu uploadé",
+          "Avis Google en quantité et en qualité : demandez à chaque client satisfait de laisser un avis — 10 avis 5 étoiles font une vraie différence à Brest",
+          "Site rapide et bien structuré : Google pénalise les sites lents — un site Next.js ou WordPress optimisé charge en moins d'une seconde",
+          "Contenu local : mentionnez Brest, vos quartiers de livraison (Saint-Marc, Lambézellec, Kerichen...), et les événements locaux",
+          "Schema markup Restaurant : données structurées qui informent Google sur votre type d'établissement, vos horaires et votre menu",
+        ],
+      },
+      {
+        heading: "Application mobile ou site web : que choisir pour une pizzeria ?",
+        paragraphs: [
+          "Pour une pizzeria à Brest, ma recommandation est claire :",
+        ],
+        list: [
+          "Site web en priorité : apparaître sur Google est non-négociable — c'est le premier canal d'acquisition",
+          "Application mobile en complément : pour les clients réguliers, les notifications \"Pizza du vendredi\" et le programme de fidélité (ex. 10 pizzas achetées = 1 offerte)",
+          "L'app fidélise, le site acquiert — les deux se complètent parfaitement",
+        ],
+      },
+      {
+        heading: "Tarifs pour la création d'un site de pizzeria à Brest",
+        paragraphs: [
+          "Je propose des formules adaptées aux pizzerias et restaurants indépendants :",
+        ],
+        list: [
+          "Site vitrine + menu en ligne : à partir de 490€ — idéal pour apparaître sur Google et présenter votre carte",
+          "Site + commande en ligne avec paiement Stripe : à partir de 800€ — vos clients commandent directement, vous recevez les commandes sur votre écran",
+          "Application mobile iOS & Android : à partir de 490€ + 49€/mois — notifications push, programme de fidélité, commande intégrée",
+          "Pack site + app mobile : à partir de 900€ — la solution complète pour s'affranchir des plateformes",
+          "Devis gratuit sous 24h — je suis à Brest et je peux vous rencontrer pour discuter de votre projet",
         ],
       },
     ],

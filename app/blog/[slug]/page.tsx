@@ -25,8 +25,48 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://breizhapp.tech/blog/${article.slug}`,
       type: "article",
       publishedTime: article.date,
+      images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     },
   };
+}
+
+function ArticleSchema({ article }: { article: NonNullable<ReturnType<typeof getArticle>> }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": `https://breizhapp.tech/blog/${article.slug}#article`,
+        headline: article.title,
+        description: article.description,
+        datePublished: article.date,
+        dateModified: article.date,
+        mainEntityOfPage: `https://breizhapp.tech/blog/${article.slug}`,
+        author: {
+          "@type": "Person",
+          name: "Enzo Omnes",
+          url: "https://breizhapp.tech",
+        },
+        publisher: { "@id": "https://breizhapp.tech/#business" },
+        image: "https://breizhapp.tech/opengraph-image",
+        inLanguage: "fr-FR",
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Accueil", item: "https://breizhapp.tech" },
+          { "@type": "ListItem", position: 2, name: "Blog", item: "https://breizhapp.tech/blog" },
+          { "@type": "ListItem", position: 3, name: article.title, item: `https://breizhapp.tech/blog/${article.slug}` },
+        ],
+      },
+    ],
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
 }
 
 const categoryColors: Record<string, string> = {
@@ -45,6 +85,7 @@ export default async function ArticlePage({ params }: Props) {
 
   return (
     <>
+      <ArticleSchema article={article} />
       <Navbar />
       <main className="max-w-3xl mx-auto px-4 py-20">
         {/* Breadcrumb */}
