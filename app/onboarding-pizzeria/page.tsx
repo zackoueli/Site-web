@@ -104,14 +104,20 @@ export default function OnboardingPizzeria() {
     e.preventDefault();
     setLoading(true);
     try {
+      const nom = form["contact_nom"] || "Pizzeria (sans nom)";
+      const email = form["contact_email"] || "noreply@breizhapp.tech";
+      const lignes = Object.entries(form)
+        .filter(([k]) => k !== "contact_nom" && k !== "contact_email")
+        .map(([k, v]) => `<b>${k}</b> : ${v}`)
+        .join("<br/>");
       await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: form["contact_nom"] ?? "Pizzeria",
-          email: form["contact_email"] ?? "",
-          budget: "Onboarding pizzeria",
-          message: JSON.stringify(form, null, 2),
+          name: nom,
+          email,
+          budget: "📋 Onboarding pizzeria",
+          message: lignes,
         }),
       });
       setSent(true);
@@ -495,9 +501,6 @@ export default function OnboardingPizzeria() {
           </div>
         </form>
 
-        <p className="mono text-xs text-gray-400 text-center mt-8">
-          BreizhApp · Enzo Omnes · Brest · breizhapp@outlook.fr
-        </p>
       </div>
     </main>
     <Footer />
