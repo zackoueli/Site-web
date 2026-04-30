@@ -22,6 +22,7 @@ const categoryColors: Record<string, string> = {
   Restaurants: "bg-[#FF6B35] text-white",
   Tech: "bg-[#7C3AED] text-white",
   Conseils: "bg-[#00D4AA] text-[#0A0A0A]",
+  Comparatifs: "bg-[#FF3B82] text-white",
 };
 
 export default function BlogPage() {
