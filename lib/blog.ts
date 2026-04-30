@@ -523,9 +523,9 @@ export const articles: Article[] = [
   // --- Nouveaux articles SEO ---
   {
     slug: "planity-tarif-prix-abonnement-2025",
-    title: "Planity tarif 2025 : prix et commissions décryptés",
+    title: "Planity tarif 2025 : abonnement et commissions",
     description:
-      "Planity tarif 2025 : prix de l'abonnement, commissions et frais cachés. Alternative moins chère pour les salons de coiffure et instituts.",
+      "Planity tarif 2025 : abonnement 29€ à 79€/mois + commission sur réservations. Frais réels sur 2 ans et alternative moins chère pour votre salon.",
     date: "2026-04-20",
     readTime: "6 min",
     category: "Comparatifs",
@@ -583,12 +583,19 @@ export const articles: Article[] = [
         ],
       },
       {
+        heading: "Vous payez Planity chaque mois — et si vous possédiez votre propre app ?",
+        paragraphs: [
+          "Pour 490€ une fois + 49€/mois, je développe une application mobile iOS & Android à votre nom : réservation en ligne, rappels push, programme de fidélité, panel admin. Zéro commission. Sur 2 ans : 1 666€ contre 3 144€ chez Planity — et vous possédez votre outil.",
+          "Devis gratuit sous 24h — décrivez votre salon, je vous réponds rapidement.",
+        ],
+      },
+      {
         heading: "L'alternative à Planity : votre propre application mobile",
         paragraphs: [
           "Pour un prix similaire à 2 ans d'abonnement Planity, je développe une application mobile iOS & Android à votre nom avec : réservation en ligne, rappels automatiques par notification push, programme de fidélité, panel admin pour gérer vos créneaux.",
           "Tarif : 490€ une fois + 49€/mois. Zéro commission. L'app vous appartient à 100%.",
           "Sur 2 ans, c'est 490€ + (49€ × 24) = 1 666€ — pour une solution qui vous appartient, à vos couleurs, avec vos données.",
-          "Devis gratuit sous 24h — contactez-moi avec votre projet.",
+          "Contactez-moi pour un devis gratuit sous 24h.",
         ],
       },
     ],
@@ -750,7 +757,7 @@ export const articles: Article[] = [
   },
   {
     slug: "squarespace-tarif-prix-2025",
-    title: "Squarespace tarif 2025 : prix des abonnements et vraie valeur",
+    title: "Squarespace tarif 2025 : prix et vraie valeur",
     description:
       "Prix Squarespace 2025 : plans Personal, Business, Commerce — ce que coûte vraiment Squarespace pour un site pro. Comparatif avec une solution sur mesure.",
     date: "2026-04-20",
@@ -1170,6 +1177,181 @@ export const articles: Article[] = [
           "Application mobile iOS & Android : à partir de 490€ + 49€/mois — notifications push, programme de fidélité, commande intégrée",
           "Pack site + app mobile : à partir de 900€ — la solution complète pour s'affranchir des plateformes",
           "Devis gratuit sous 24h — je suis à Brest et je peux vous rencontrer pour discuter de votre projet",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "creation-application-mobile-brest",
+    title: "Création app mobile à Brest : tarifs 2025",
+    description:
+      "Créer une application mobile iOS & Android à Brest : tarifs, délais, fonctionnalités. Développeur freelance local, devis gratuit sous 24h.",
+    date: "2026-04-30",
+    readTime: "6 min",
+    category: "Tarifs",
+    sections: [
+      {
+        paragraphs: [
+          "Vous cherchez à créer une application mobile à Brest sans passer par une agence parisienne qui facture 30 000€ ? Je suis développeur freelance basé à Brest, spécialisé React Native, et je crée des applications iOS & Android pour des restaurateurs, commerçants et porteurs de projets bretons depuis 2023.",
+          "Voici tout ce qu'il faut savoir : tarifs, délais, fonctionnalités, et comment ça se passe concrètement.",
+        ],
+      },
+      {
+        heading: "Pourquoi choisir un développeur local à Brest ?",
+        list: [
+          "On peut se rencontrer : café, visio ou échange direct — pas de chef de projet intermédiaire à 500km",
+          "Je connais le tissu économique local : restaurateurs du centre-ville, commerces de Lambézellec, artisans du Finistère",
+          "Réactivité : je réponds sous 24h, souvent le jour même",
+          "Tarifs freelance sans marges d'agence : 490€ à 600€ contre 15 000€ à 80 000€ en agence",
+          "Suivi dans la durée : votre app évolue avec votre activité, je reste disponible",
+        ],
+      },
+      {
+        heading: "Mes tarifs pour la création d'une application mobile à Brest",
+        paragraphs: [
+          "Je propose trois formules adaptées à la majorité des projets :",
+        ],
+        list: [
+          "App Starter à 490€ + 49€/mois : application iOS & Android complète, design sur mesure, authentification, contenu dynamique, déploiement App Store & Google Play, hébergement et support inclus",
+          "App Premium à 600€ + 49€/mois : tout le Starter + paiement Stripe intégré, notifications push, panel d'administration web",
+          "App Boutique à 0€ d'installation : pour les e-commerçants et restaurateurs avec livraison — 12% de commission sur les ventes, zéro risque financier au départ",
+        ],
+      },
+      {
+        heading: "Délais de livraison réalistes",
+        list: [
+          "App Starter (catalogue, réservation, contenu) : 2 à 3 semaines",
+          "App Premium (paiement, notifications, admin) : 3 à 5 semaines",
+          "App complexe (marketplace, fonctionnalités sur mesure) : 6 à 10 semaines",
+          "Je travaille en sprints et vous montre l'avancement à chaque étape — pas de boîte noire",
+        ],
+      },
+      {
+        heading: "Exemples de projets réalisés depuis Brest",
+        list: [
+          "Application de commande en ligne pour une pizzeria brestoise : menu, paiement Stripe, suivi de commande",
+          "App de réservation pour un salon de coiffure à Brest : agenda, rappels push, programme de fidélité",
+          "Application catalogue pour un artisan du Finistère : présentation de produits, formulaire de devis",
+          "App de paniers hebdomadaires pour un maraîcher breton : abonnements, livraison locale, paiement récurrent",
+        ],
+      },
+      {
+        heading: "Comment démarrer ?",
+        paragraphs: [
+          "Contactez-moi avec votre idée — même floue. Je vous pose les bonnes questions pour cadrer le projet, puis je vous envoie un devis détaillé sous 48h. Pas de jargon, pas de surprise.",
+          "Je suis basé à Brest et disponible pour un café ou un appel selon votre préférence. Devis gratuit et sans engagement.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "developpeur-freelance-application-mobile-brest",
+    title: "Développeur app mobile freelance à Brest",
+    description:
+      "Développeur freelance application mobile à Brest : React Native iOS & Android, dès 490€. Restaurants, commerces, artisans. Devis gratuit sous 24h.",
+    date: "2026-04-30",
+    readTime: "5 min",
+    category: "Conseils",
+    sections: [
+      {
+        paragraphs: [
+          "Je m'appelle Enzo Omnes, développeur freelance spécialisé en applications mobiles iOS & Android, basé à Brest depuis 2023. Je travaille sous le nom BreizhApp avec des TPE, artisans, restaurateurs et porteurs de projets qui veulent une vraie application mobile sans le budget d'une grande agence.",
+        ],
+      },
+      {
+        heading: "Pourquoi un freelance plutôt qu'une agence à Brest ?",
+        paragraphs: [
+          "Les agences web brestoises et finistériennes facturent généralement entre 15 000€ et 50 000€ pour une application mobile. Ce n'est pas une arnaque — elles ont des équipes, des locaux, des marges à couvrir.",
+          "En tant que freelance spécialisé React Native, je couvre l'ensemble du projet seul : design, développement iOS & Android depuis une seule base de code, backend, déploiement sur les stores. Résultat : la même qualité pour 30 à 60 fois moins cher.",
+        ],
+        list: [
+          "Interlocuteur unique : vous parlez directement au développeur qui code votre app",
+          "Pas de chef de projet, pas de réunions inutiles, pas de marges d'agence",
+          "Disponible à Brest pour se rencontrer, ou en remote selon votre préférence",
+          "Réactivité : retours sous 24h, souvent le jour même",
+          "Suivi post-livraison inclus dans l'abonnement mensuel",
+        ],
+      },
+      {
+        heading: "Mes spécialités techniques",
+        list: [
+          "React Native & Expo : une seule base de code pour iOS et Android",
+          "Firebase & Supabase : base de données temps réel, authentification, stockage",
+          "Stripe : paiement en ligne sécurisé, abonnements récurrents, commissions",
+          "Notifications push : OneSignal, Expo Notifications",
+          "Panel admin web : Next.js ou interfaces légères pour gérer le contenu de votre app",
+          "Déploiement App Store & Google Play : je gère toute la procédure de publication",
+        ],
+      },
+      {
+        heading: "Les types de clients avec qui je travaille à Brest",
+        list: [
+          "Restaurateurs et pizzerias : commande en ligne, programme de fidélité, menu digital",
+          "Salons de coiffure et instituts : réservation, rappels automatiques, fidélité",
+          "Commerçants et boutiques : catalogue produits, commande, paiement",
+          "Artisans et prestataires de services : présentation, formulaire de devis, portfolio",
+          "Porteurs de projets et startups bretonnes : MVP mobile pour tester une idée",
+        ],
+      },
+      {
+        heading: "Tarifs et devis",
+        paragraphs: [
+          "App Starter à 490€ + 49€/mois, App Premium à 600€ + 49€/mois, App Boutique à 0€ d'installation (12% de commission). Devis gratuit et personnalisé sous 48h.",
+          "Contactez-moi avec votre projet — je réponds sous 24h.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "application-mobile-brest",
+    title: "Application mobile à Brest : création dès 490€",
+    description:
+      "Création d'application mobile à Brest : iOS & Android sur mesure dès 490€. Restaurateurs, commerçants, artisans. Développeur freelance local, devis gratuit.",
+    date: "2026-04-30",
+    readTime: "5 min",
+    category: "Tarifs",
+    sections: [
+      {
+        paragraphs: [
+          "Vous êtes à Brest ou dans le Finistère et vous voulez créer une application mobile pour votre activité ? Voici les options disponibles localement, ce que ça coûte, et pourquoi un freelance spécialisé est souvent la meilleure solution pour les TPE et PME brestoises.",
+        ],
+      },
+      {
+        heading: "Qui peut créer votre application mobile à Brest ?",
+        list: [
+          "Une agence web brestoise : budget 15 000€ à 60 000€, délais 3 à 9 mois — adapté aux grandes entreprises",
+          "Un développeur freelance local (BreizhApp) : budget 490€ à 2 000€, délais 2 à 8 semaines — adapté aux TPE, restaurateurs, artisans",
+          "Une plateforme no-code : résultat souvent refusé par l'App Store Apple, très limité fonctionnellement",
+          "Un freelance en ligne (Fiverr, Malt) : variable — attention à la qualité et à l'absence de suivi local",
+        ],
+      },
+      {
+        heading: "Ce qu'une application mobile peut faire pour votre activité à Brest",
+        list: [
+          "Commande en ligne directe : plus de 25% de commission à Uber Eats ou Just Eat",
+          "Réservation 24h/24 : vos clients réservent depuis leur canapé, vous recevez une confirmation automatique",
+          "Notifications push : \"Offre spéciale ce vendredi\", \"Nouveau menu disponible\" — vos clients reçoivent l'info directement",
+          "Programme de fidélité numérique : tampons virtuels, réductions automatiques, cadeaux",
+          "Présence sur l'App Store et Google Play : votre marque visible à côté des grandes enseignes",
+          "Panel admin : modifiez vos prix, votre menu, vos horaires sans repasser par un développeur",
+        ],
+      },
+      {
+        heading: "Tarifs pour une application mobile à Brest",
+        paragraphs: [
+          "Mes trois formules couvrent la grande majorité des besoins :",
+        ],
+        list: [
+          "App Starter — 490€ + 49€/mois : iOS & Android, design sur mesure, contenu dynamique, authentification, déploiement stores, support inclus",
+          "App Premium — 600€ + 49€/mois : Starter + paiement Stripe, notifications push, panel admin web",
+          "App Boutique — 0€ d'installation : pour les e-commerçants, 12% sur les ventes seulement — zéro risque financier",
+        ],
+      },
+      {
+        heading: "Brest et le Finistère : ma zone d'intervention principale",
+        paragraphs: [
+          "Je suis basé à Brest et je travaille avec des clients dans tout le Finistère et la Bretagne : Quimper, Landerneau, Morlaix, Brest métropole (Guipavas, Plougastel-Daoulas, Le Relecq-Kerhuon).",
+          "On peut se rencontrer pour discuter de votre projet, ou tout faire à distance selon votre préférence. Devis gratuit sous 24h — contactez-moi avec votre idée.",
         ],
       },
     ],
