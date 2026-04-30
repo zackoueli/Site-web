@@ -13,7 +13,7 @@ export async function POST(req: Request) {
 
     await resend.emails.send({
       from: "BreizhApp <onboarding@resend.dev>",
-      to: "breizhapp@outlook.fr",
+      to: "mathieu.wreizh@gmail.com",
       replyTo: email,
       subject: `Nouveau contact BreizhApp — ${name}`,
       html: `

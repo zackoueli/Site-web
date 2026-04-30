@@ -31,6 +31,7 @@ export default function OnboardingPizzeria() {
   const [form, setForm] = useState<FormData>({});
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState<string[]>([]);
 
   function set(key: string, value: string) {
     setForm((f) => ({ ...f, [key]: value }));
@@ -102,10 +103,16 @@ export default function OnboardingPizzeria() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    const errs: string[] = [];
+    if (!form["contact_nom"]?.trim()) errs.push("Le nom du restaurant est obligatoire");
+    if (!form["contact_prenom"]?.trim()) errs.push("Votre prénom est obligatoire");
+    if (!form["contact_email"]?.trim()) errs.push("L'email est obligatoire");
+    if (errs.length > 0) { setErrors(errs); return; }
+    setErrors([]);
     setLoading(true);
     try {
-      const nom = form["contact_nom"] || "Pizzeria (sans nom)";
-      const email = form["contact_email"] || "noreply@breizhapp.tech";
+      const nom = form["contact_nom"].trim();
+      const email = form["contact_email"].trim();
       const lignes = Object.entries(form)
         .filter(([k]) => k !== "contact_nom" && k !== "contact_email")
         .map(([k, v]) => `<b>${k}</b> : ${v}`)
@@ -485,6 +492,16 @@ export default function OnboardingPizzeria() {
               {field("questions_libres", "Des questions ou remarques libres ?", "Tout ce que vous voulez me dire avant qu'on démarre...", "textarea")}
             </div>
           </SectionBlock>
+
+          {/* Erreurs de validation */}
+          {errors.length > 0 && (
+            <div className="brutal-border bg-[#FF3B82] text-white p-4">
+              <p className="font-bold mb-2">⚠️ Veuillez corriger les erreurs suivantes :</p>
+              <ul className="flex flex-col gap-1">
+                {errors.map((e, i) => <li key={i} className="text-sm mono">— {e}</li>)}
+              </ul>
+            </div>
+          )}
 
           {/* Submit */}
           <div className="brutal-border brutal-shadow bg-[#0A0A0A] text-[#FFFBF0] p-8 mt-4">
