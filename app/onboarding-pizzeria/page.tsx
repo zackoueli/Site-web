@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import { CheckCircle, ChevronDown, ChevronUp } from "lucide-react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 type Section = {
   id: string;
@@ -122,6 +124,8 @@ export default function OnboardingPizzeria() {
 
   if (sent) {
     return (
+      <>
+      <Navbar />
       <main className="min-h-screen flex items-center justify-center px-4 bg-[#FFFBF0]">
         <div className="max-w-lg text-center">
           <CheckCircle className="mx-auto mb-6 text-[#00D4AA]" size={64} />
@@ -130,10 +134,14 @@ export default function OnboardingPizzeria() {
           <p className="mono text-sm text-gray-400 mt-6">// BreizhApp — Brest</p>
         </div>
       </main>
+      <Footer />
+      </>
     );
   }
 
   return (
+    <>
+    <Navbar />
     <main className="min-h-screen bg-[#FFFBF0] px-4 py-16">
       <div className="max-w-2xl mx-auto">
 
@@ -492,6 +500,8 @@ export default function OnboardingPizzeria() {
         </p>
       </div>
     </main>
+    <Footer />
+    </>
   );
 }
 
