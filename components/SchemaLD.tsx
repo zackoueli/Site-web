@@ -68,6 +68,8 @@ export default function SchemaLD() {
         sameAs: [
           "https://www.malt.fr/profile/enzoomnes",
           "https://www.instagram.com/breizhappp/",
+          "https://www.tiktok.com/@breizhapp",
+          "https://www.facebook.com/profile.php?id=61574218054349",
         ],
         knowsAbout: [
           "React Native",
