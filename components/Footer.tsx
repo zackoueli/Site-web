@@ -69,7 +69,7 @@ export default function Footer() {
           <ul className="flex flex-col gap-2 text-sm text-gray-400">
             {[
               ["Services", "/#services"],
-              ["Portfolio", "/#portfolio"],
+              ["Réalisations", "/portfolio"],
               ["Tarifs", "/#tarifs"],
               ["Blog", "/blog"],
               ["FAQ", "/#faq"],
