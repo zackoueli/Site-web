@@ -1356,6 +1356,283 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "application-mobile-artisan-commercant",
+    title: "App mobile pour artisan & commerçant : guide",
+    description:
+      "Boulanger, boucher, fleuriste : pourquoi une application mobile sur mesure dépasse Wix ou Planity pour fidéliser vos clients et booster vos ventes.",
+    date: "2026-05-09",
+    readTime: "7 min",
+    category: "Guides",
+    sections: [
+      {
+        paragraphs: [
+          "Vous êtes artisan ou commerçant de proximité. Votre boutique tourne bien, vous avez une clientèle fidèle — mais vous voyez vos concurrents gagner de nouveaux clients grâce au digital et vous vous demandez comment faire pareil sans vous ruiner.",
+          "Wix, Shopify, Planity, Instagram… on vous a peut-être conseillé ces outils. Certains sont utiles. Mais aucun ne vous donne ce qu'une application mobile sur mesure peut offrir : votre marque, vos données, votre relation client — sans intermédiaire.",
+        ],
+      },
+      {
+        heading: "Pourquoi les plateformes génériques ne suffisent plus",
+        paragraphs: [
+          "Wix et Shopify sont conçus pour tout le monde. Ce qui veut dire qu'ils ne sont vraiment adaptés à personne en particulier. Un boulanger n'a pas les mêmes besoins qu'un e-commerçant de mode. Un coiffeur ne gère pas ses rendez-vous comme un restaurant gère ses réservations.",
+        ],
+        list: [
+          "Wix : idéal pour un site vitrine, pas pour la gestion quotidienne d'une boutique de proximité",
+          "Shopify : conçu pour l'e-commerce pur, avec des commissions et des abonnements apps qui s'accumulent",
+          "Planity : limité à la prise de rendez-vous beauté, sans personnalisation de marque",
+          "Instagram : excellent pour la visibilité, mais aucune gestion des commandes ni fidélisation",
+        ],
+      },
+      {
+        heading: "Ce qu'une application mobile sur mesure apporte à un artisan",
+        paragraphs: [
+          "Une app mobile créée spécifiquement pour votre commerce intègre exactement ce dont vous avez besoin — et rien de superflu. Voici les fonctionnalités les plus demandées par les artisans et commerçants que j'accompagne :",
+        ],
+        list: [
+          "Commandes en ligne directes : sans commission à une plateforme tierce, 100% de la marge reste chez vous",
+          "Programme de fidélité numérique : tampons virtuels, points cumulés, offres exclusives pour vos clients réguliers",
+          "Notifications push personnalisées : \"Nouvelle fournée ce matin\", \"Promotions du week-end\", \"Fermeture exceptionnelle\" — vos clients sont informés en temps réel",
+          "Catalogue produits dynamique : modifiez vos produits, tarifs et disponibilités depuis un panel admin, sans repasser par un développeur",
+          "Réservation ou click-and-collect : vos clients commandent à l'avance, vous préparez sans stress",
+          "Présence sur l'App Store et Google Play : votre nom visible à côté des grandes enseignes nationales",
+        ],
+      },
+      {
+        heading: "Boulanger, boucher, fleuriste : des exemples concrets",
+        paragraphs: [
+          "Voici comment différents types d'artisans utilisent une application mobile pour développer leur activité :",
+        ],
+        list: [
+          "Boulangerie : commande en ligne la veille, click-and-collect le matin, programme de fidélité avec la 10ème baguette offerte — zéro gaspillage, zéro attente",
+          "Boucherie-charcuterie : catalogue des produits du moment, commandes de plateaux pour les fêtes, notifications pour les arrivages exceptionnels",
+          "Fleuriste : réservations de bouquets personnalisés, rappels pour les occasions (fête des mères, anniversaires), galerie photo des créations",
+          "Coiffeur / esthéticienne : prise de rendez-vous 24h/24, rappels automatiques, historique des prestations client, vente de produits en ligne",
+          "Épicerie / maraîcher : panier de saison personnalisable, abonnement hebdomadaire, géolocalisation des points de retrait",
+        ],
+      },
+      {
+        heading: "Combien coûte une application mobile pour un artisan ?",
+        paragraphs: [
+          "C'est souvent la première question — et la crainte principale. On imagine un budget de 10 000€ ou plus, réservé aux grandes entreprises. La réalité est très différente.",
+          "En tant que développeur freelance spécialisé React Native, je propose trois formules adaptées aux TPE et artisans :",
+        ],
+        list: [
+          "App Starter — 490€ + 49€/mois : iOS & Android, design aux couleurs de votre boutique, catalogue produits, authentification clients, déploiement App Store et Google Play, hébergement et support inclus",
+          "App Premium — 600€ + 49€/mois : tout le Starter + paiement en ligne Stripe, notifications push, panel d'administration web pour gérer votre catalogue",
+          "App Boutique — 0€ d'installation : pour les commerçants qui vendent en ligne, je prends 12% de commission sur les ventes — vous ne payez rien si vous ne vendez rien",
+        ],
+      },
+      {
+        heading: "Application sur mesure vs. abonnement Wix ou Shopify : le vrai calcul",
+        paragraphs: [
+          "Beaucoup de commerçants calculent seulement le prix d'entrée. Voici le coût réel sur 24 mois :",
+        ],
+        list: [
+          "Wix Business : 17€/mois × 24 mois = 408€ + apps tierces + limitations fonctionnelles",
+          "Shopify Basic : 39€/mois × 24 mois = 936€ + commissions 2% sur chaque vente + apps payantes",
+          "BreizhApp Starter : 490€ installation + 49€/mois × 24 mois = 1 666€ pour une app native iOS & Android, support humain inclus, 0% de commission sur vos ventes",
+          "Résultat : pour un commerçant qui génère 2 000€/mois de ventes en ligne, les commissions Shopify représentent 480€/an — soit plus que l'abonnement mensuel à une vraie app sur mesure",
+        ],
+      },
+      {
+        heading: "Pourquoi choisir un développeur freelance breton ?",
+        paragraphs: [
+          "Je suis basé à Brest. Je travaille avec des artisans et commerçants de Bretagne qui veulent un outil digital qui leur ressemble — pas un template générique conçu à San Francisco.",
+          "Vous avez un interlocuteur unique, joignable, qui connaît votre activité et peut faire évoluer votre application en fonction de vos besoins réels. Pas de ticket support, pas de chatbot, pas de call center.",
+          "Le devis est gratuit, la réponse sous 24h. Dites-moi ce que fait votre commerce et ce dont vous avez besoin — je vous propose une solution adaptée.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "shopify-wix-vs-application-mobile-sur-mesure",
+    title: "Shopify & Wix vs app sur mesure : comparatif",
+    description:
+      "Coûts cachés, commissions, limitations : ce que Wix et Shopify ne disent pas. Pourquoi une app mobile sur mesure est souvent plus rentable à 24 mois.",
+    date: "2026-05-09",
+    readTime: "8 min",
+    category: "Comparatifs",
+    sections: [
+      {
+        paragraphs: [
+          "Wix. Shopify. Ces deux plateformes dominent la publicité en ligne et semblent être les références incontournables pour tout commerçant ou entrepreneur qui veut se lancer sur le digital. Mais sont-elles vraiment les meilleures options ? Pour qui ? À quel prix réel ?",
+          "Je suis développeur freelance spécialisé en applications mobiles à Brest. Chaque semaine, des porteurs de projets me contactent après avoir essayé Wix ou Shopify et s'être heurtés à leurs limites. Voici ce que j'ai appris de ces échanges — chiffres et cas concrets à l'appui.",
+        ],
+      },
+      {
+        heading: "Ce que Wix peut faire (et ce qu'il ne peut pas faire)",
+        paragraphs: [
+          "Wix est excellent pour une chose : créer un site web vitrine rapidement, sans compétence technique. C'est son point fort, et il le fait bien.",
+        ],
+        list: [
+          "✅ Site vitrine multi-pages avec formulaire de contact : Wix excelle",
+          "✅ Petit catalogue produits avec paiement en ligne simple : faisable",
+          "❌ Application mobile native iOS & Android : impossible — Wix génère des pages web, pas des apps",
+          "❌ Notifications push vers vos clients : non disponible sans abonnement app tierce",
+          "❌ Personnalisation avancée de l'expérience utilisateur : limité par les templates",
+          "❌ Propriété totale de vos données clients : Wix reste propriétaire de votre infrastructure",
+        ],
+      },
+      {
+        heading: "Ce que Shopify peut faire (et ses limites réelles)",
+        paragraphs: [
+          "Shopify est la référence pour l'e-commerce en ligne. Il permet de vendre rapidement, avec une logistique bien rodée. Mais ses coûts réels sont rarement affichés clairement.",
+        ],
+        list: [
+          "✅ Boutique en ligne complète avec gestion des stocks : Shopify excelle",
+          "✅ Connexion aux grandes plateformes logistiques : Amazon, Colissimo, DHL",
+          "❌ Commission Shopify : 0,5% à 2% sur chaque vente selon l'abonnement — sur 10 000€/mois de ventes, c'est 200€ perdus chaque mois",
+          "❌ Applications payantes : la plupart des fonctionnalités avancées (fidélité, avis, bundles) nécessitent des apps à 15–50€/mois chacune",
+          "❌ Application mobile native : possible mais via Shopify Mobile — limité, peu personnalisable",
+          "❌ Indépendance : si Shopify ferme votre boutique (fraude suspectée, politique changeante), vous perdez tout",
+        ],
+      },
+      {
+        heading: "Le vrai coût de Shopify et Wix sur 24 mois",
+        paragraphs: [
+          "Voici une comparaison réaliste pour un commerce qui réalise 5 000€ de ventes mensuelles en ligne :",
+        ],
+        list: [
+          "Wix Business : 17€/mois × 24 = 408€ + apps complémentaires (~30€/mois) = 1 128€ sur 2 ans. Résultat : site web responsive, pas d'app native",
+          "Shopify Basic : 39€/mois × 24 = 936€ + commissions 2% × 5 000€ × 24 = 2 400€ + apps = environ 4 000€ sur 2 ans",
+          "App BreizhApp Premium : 600€ installation + 49€/mois × 24 = 1 776€ sur 2 ans. Résultat : application native iOS & Android, 0% de commission",
+          "Économie potentielle vs. Shopify Basic : 2 000€ à 3 000€ sur 24 mois pour un commerce à 5 000€/mois de ventes en ligne",
+        ],
+      },
+      {
+        heading: "Application mobile sur mesure : ce que les plateformes ne peuvent pas reproduire",
+        paragraphs: [
+          "Une vraie application mobile native (iOS & Android) offre des capacités que ni Wix ni Shopify ne peuvent égaler :",
+        ],
+        list: [
+          "Notifications push natives : taux d'ouverture 7× supérieur aux emails marketing — vos clients voient vos messages directement sur leur écran",
+          "Expérience utilisateur fluide : une app native est 6× plus rapide qu'un site web mobile, avec une interface optimisée pour le toucher",
+          "Fonctionnement hors ligne : votre catalogue est accessible sans connexion internet",
+          "Accès aux fonctionnalités du téléphone : caméra (scanner QR, réalité augmentée), géolocalisation, biométrie (Face ID, empreinte)",
+          "Fidélisation accrue : les utilisateurs d'apps ont des paniers moyens 2× plus élevés que les visiteurs web mobile",
+          "Identité de marque totale : votre logo, vos couleurs, votre univers — aucun logo Wix ou Shopify dans le coin",
+        ],
+      },
+      {
+        heading: "Quand choisir Wix ou Shopify quand même ?",
+        paragraphs: [
+          "Je suis honnête : Wix et Shopify ont leur place. Voici quand ils sont le bon choix :",
+        ],
+        list: [
+          "Wix : si vous avez besoin d'un site vitrine simple, rapidement, avec un budget inférieur à 200€/an et aucune ambition e-commerce ou mobile à court terme",
+          "Shopify : si vous vendez des produits physiques standardisés en grande quantité, avec des besoins logistiques complexes (multi-devises, marketplace internationale)",
+          "Application sur mesure : si vous avez une relation client à cultiver, une communauté à fidéliser, ou un service qui bénéficie d'une expérience mobile premium (restaurant, artisan, service local, jeu, app métier)",
+        ],
+      },
+      {
+        heading: "Ce que mes clients ont gagné en passant au sur-mesure",
+        paragraphs: [
+          "Les commerçants qui me contactent après une expérience Wix ou Shopify ont souvent le même constat : \"J'ai payé des abonnements pendant 2 ans et je suis encore dépendant de la plateforme pour tout.\"",
+          "Avec une application sur mesure, vous êtes propriétaire de votre outil, de votre base de données clients, et de votre expérience utilisateur. Si vous voulez changer de prestataire demain, vous pouvez. Vos données vous appartiennent.",
+          "Vous hésitez encore ? Je vous propose un devis gratuit sous 24h. Dites-moi votre projet, votre secteur d'activité, et ce que vous attendez de votre application — je vous réponds avec une proposition concrète.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "application-mobile-boutique-en-ligne",
+    title: "Boutique en ligne : app mobile vs site web",
+    description:
+      "Application mobile ou site e-commerce ? Conversion, fidélisation, coûts : le guide pour choisir la meilleure solution pour votre boutique en ligne.",
+    date: "2026-05-09",
+    readTime: "7 min",
+    category: "Guides",
+    sections: [
+      {
+        paragraphs: [
+          "Vous vendez en ligne — ou vous voulez vous lancer — et vous vous posez la question : vaut-il mieux créer un site e-commerce (Shopify, Wix, WooCommerce) ou une application mobile dédiée ?",
+          "La réponse dépend de votre situation, mais les chiffres sont clairs : les applications mobiles convertissent mieux, fidélisent plus, et génèrent des paniers plus élevés. Voici pourquoi — et comment choisir la bonne approche pour votre boutique.",
+        ],
+      },
+      {
+        heading: "Les chiffres du commerce mobile en 2025",
+        paragraphs: [
+          "Le mobile représente désormais plus de 70% du trafic e-commerce mondial. Mais il y a une nuance importante entre le mobile web et l'application mobile :",
+        ],
+        list: [
+          "78% des achats en ligne se font depuis un mobile (smartphone ou tablette)",
+          "57% des consommateurs préfèrent faire leurs achats via une application plutôt qu'un site mobile",
+          "Les applications mobiles génèrent des taux de conversion 3× supérieurs aux sites mobiles",
+          "Le panier moyen est 2× plus élevé sur une app native que sur un site web mobile",
+          "Les notifications push ont un taux d'ouverture de 7× supérieur aux emails marketing",
+          "Les utilisateurs d'apps passent en moyenne 4× plus de temps sur votre boutique que les visiteurs web",
+        ],
+      },
+      {
+        heading: "Site e-commerce vs application mobile : les différences clés",
+        paragraphs: [
+          "Un site e-commerce responsive fonctionne sur mobile via le navigateur. Une application mobile est installée sur l'appareil de votre client. Cette différence technique a des conséquences majeures sur l'expérience utilisateur et vos performances commerciales.",
+        ],
+        list: [
+          "Vitesse : une app native charge 6× plus vite qu'un site web mobile — chaque seconde de chargement en moins augmente votre taux de conversion de 7%",
+          "Notifications push : seule une application peut envoyer des notifications sur l'écran de verrouillage de vos clients (\"Votre commande est expédiée\", \"Soldes : -30% ce week-end\")",
+          "Expérience hors ligne : votre catalogue reste accessible sans connexion — idéal pour les zones avec mauvaise couverture réseau",
+          "Accès aux fonctionnalités natives : scanner de code-barres, paiement Apple Pay/Google Pay, Face ID, géolocalisation précise",
+          "Fidélisation : une app installée sur le téléphone = présence permanente dans la vie de votre client. Un site web = seulement quand il pense à y revenir",
+          "Visibilité App Store : votre boutique référencée sur l'App Store d'Apple et le Google Play Store — deux millions d'utilisateurs cherchent des apps chaque jour",
+        ],
+      },
+      {
+        heading: "Quand rester sur un site e-commerce classique ?",
+        paragraphs: [
+          "Une application mobile n'est pas toujours la meilleure première étape. Voici quand un site e-commerce suffit :",
+        ],
+        list: [
+          "Vous démarrez et testez votre marché : un site Shopify ou une boutique WooCommerce permet de valider votre offre rapidement sans investissement important",
+          "Vous vendez principalement à des professionnels (B2B) : les acheteurs B2B passent souvent commande depuis un ordinateur de bureau",
+          "Votre catalogue est très large (1 000+ produits) et peu personnalisé : les grandes marketplaces et sites de vente en gros fonctionnent bien en web",
+          "Vous avez un budget très limité (sous 500€) : dans ce cas, un site vitrine avec panier suffit pour commencer",
+        ],
+      },
+      {
+        heading: "Quand une application mobile est indispensable ?",
+        paragraphs: [
+          "L'application mobile devient la meilleure option dans ces situations :",
+        ],
+        list: [
+          "Vous avez une communauté fidèle à entretenir : programme de points, offres exclusives, contenu premium — l'app devient le canal privilégié de votre relation client",
+          "Votre boutique génère des commandes répétées : épicerie, produits consommables, abonnements — vos clients reviennent régulièrement et méritent une expérience fluide",
+          "Vous proposez un service local avec réservation ou click-and-collect : restaurant, artisan, prestataire de service — la géolocalisation et les notifications push font toute la différence",
+          "Vous êtes en concurrence avec des acteurs nationaux sur votre marché local : une app professionnelle vous positionne au même niveau que les grandes enseignes",
+          "Votre marge est serrée et vous ne pouvez pas vous permettre de perdre 2-3% sur chaque vente en commission Shopify",
+        ],
+      },
+      {
+        heading: "Peut-on avoir les deux : site web ET application mobile ?",
+        paragraphs: [
+          "Oui — et c'est souvent la meilleure stratégie à moyen terme. Voici comment combiner les deux intelligemment :",
+        ],
+        list: [
+          "Étape 1 : site e-commerce pour acquérir du trafic Google (référencement naturel, publicité) et valider votre offre",
+          "Étape 2 : application mobile pour fidéliser les clients acquis — ceux qui achètent régulièrement téléchargent l'app, les nouveaux visiteurs arrivent via le site",
+          "Résultat : double canal de vente, double présence digitale, meilleure fidélisation des meilleurs clients",
+        ],
+      },
+      {
+        heading: "Combien coûte une application mobile pour une boutique en ligne ?",
+        paragraphs: [
+          "Je propose une formule spécialement conçue pour les e-commerçants qui veulent une application mobile sans risque financier :",
+        ],
+        list: [
+          "App Boutique — 0€ d'installation : je développe votre application iOS & Android, catalogue produits, paiement Stripe, gestion des commandes, notifications push — et je prends 12% de commission sur les ventes réalisées via l'app",
+          "App Premium — 600€ + 49€/mois : si vous préférez un coût fixe prévisible, cette formule inclut tout sans commission sur vos ventes",
+          "Dans les deux cas : design aux couleurs de votre marque, déploiement sur l'App Store et Google Play, panel admin pour gérer votre catalogue, support humain inclus",
+        ],
+      },
+      {
+        heading: "Conclusion : l'application mobile, un investissement rentable",
+        paragraphs: [
+          "Pour une boutique qui génère entre 2 000€ et 10 000€ de ventes mensuelles, une application mobile sur mesure devient rentable en quelques mois : meilleure conversion, paniers plus élevés, fidélisation accrue, et des notifications push qui remplacent avantageusement des campagnes email coûteuses.",
+          "Je suis développeur freelance à Brest, spécialisé en applications mobiles pour commerçants et artisans. Devis gratuit sous 24h — dites-moi ce que vend votre boutique et je vous propose une solution adaptée à votre budget et votre ambition.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
