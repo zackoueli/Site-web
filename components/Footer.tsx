@@ -107,6 +107,7 @@ export default function Footer() {
           <a href="/mentions-legales" className="hover:text-gray-400 transition-colors">Mentions légales</a>
           <a href="/politique-de-confidentialite" className="hover:text-gray-400 transition-colors">Politique de confidentialité</a>
           <a href="/cgv" className="hover:text-gray-400 transition-colors">CGV</a>
+          <a href="/devis" className="opacity-10 hover:opacity-30 transition-opacity text-gray-800 text-xs">·</a>
         </div>
       </div>
     </footer>
