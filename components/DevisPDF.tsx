@@ -289,6 +289,63 @@ const styles = StyleSheet.create({
     color: GRAY,
     lineHeight: 1.6,
   },
+  // Signature
+  signatureSection: {
+    flexDirection: "row",
+    gap: 20,
+    marginTop: 24,
+  },
+  signatureBox: {
+    flex: 1,
+    borderWidth: 2,
+    borderColor: BLACK,
+    padding: 12,
+    minHeight: 80,
+  },
+  signatureBoxYellow: {
+    flex: 1,
+    borderWidth: 2,
+    borderColor: BLACK,
+    padding: 12,
+    minHeight: 80,
+    backgroundColor: YELLOW,
+  },
+  signatureLabel: {
+    fontFamily: "Helvetica-Bold",
+    fontSize: 7,
+    color: GRAY,
+    textTransform: "uppercase",
+    letterSpacing: 0.8,
+    marginBottom: 4,
+  },
+  signatureLabelDark: {
+    fontFamily: "Helvetica-Bold",
+    fontSize: 7,
+    color: BLACK,
+    textTransform: "uppercase",
+    letterSpacing: 0.8,
+    marginBottom: 4,
+  },
+  signatureSubtext: {
+    fontSize: 7,
+    color: GRAY,
+    marginBottom: 30,
+  },
+  signatureSubtextDark: {
+    fontSize: 7,
+    color: BLACK,
+    marginBottom: 30,
+  },
+  signatureLine: {
+    borderTopWidth: 1,
+    borderTopColor: BLACK,
+    marginTop: 4,
+  },
+  signatureLineText: {
+    fontSize: 6,
+    color: GRAY,
+    marginTop: 3,
+  },
 });
 
 export type DevisData = {
@@ -479,6 +536,27 @@ export function DevisPDF({ data }: { data: DevisData }) {
             ? `Ce devis est valable ${data.validite} jours à compter de sa date d'émission. Tout commencement de prestation vaut acceptation du devis.`
             : "Facture émise par BreizhApp, micro-entrepreneur. Paiement par virement bancaire aux coordonnées ci-dessus."}
         </Text>
+
+        {/* SIGNATURE — uniquement sur le devis */}
+        {data.type === "devis" && (
+          <View style={styles.signatureSection}>
+            <View style={styles.signatureBoxYellow}>
+              <Text style={styles.signatureLabelDark}>Émetteur</Text>
+              <Text style={styles.signatureSubtextDark}>Enzo Omnes — BreizhApp</Text>
+              <View style={styles.signatureLine} />
+              <Text style={styles.signatureLineText}>Signature</Text>
+            </View>
+            <View style={styles.signatureBox}>
+              <Text style={styles.signatureLabel}>Client — Bon pour accord</Text>
+              <Text style={styles.signatureSubtext}>
+                Nom : {data.client.nom}{"\n"}
+                Date :
+              </Text>
+              <View style={styles.signatureLine} />
+              <Text style={styles.signatureLineText}>Signature précédée de la mention « Bon pour accord »</Text>
+            </View>
+          </View>
+        )}
 
         {/* FOOTER */}
         <View style={styles.footer}>
