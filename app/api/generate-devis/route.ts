@@ -6,8 +6,9 @@ import React from "react";
 export async function POST(req: Request) {
   try {
     const data = await req.json();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const stream = await ReactPDF.renderToStream(
-      React.createElement(DevisPDF, { data })
+      React.createElement(DevisPDF, { data }) as any
     );
 
     const chunks: Buffer[] = [];
