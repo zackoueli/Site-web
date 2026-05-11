@@ -540,12 +540,6 @@ export function DevisPDF({ data }: { data: DevisData }) {
         {/* SIGNATURE — uniquement sur le devis */}
         {data.type === "devis" && (
           <View style={styles.signatureSection}>
-            <View style={styles.signatureBoxYellow}>
-              <Text style={styles.signatureLabelDark}>Émetteur</Text>
-              <Text style={styles.signatureSubtextDark}>Enzo Omnes — BreizhApp</Text>
-              <View style={styles.signatureLine} />
-              <Text style={styles.signatureLineText}>Signature</Text>
-            </View>
             <View style={styles.signatureBox}>
               <Text style={styles.signatureLabel}>Client — Bon pour accord</Text>
               <Text style={styles.signatureSubtext}>
