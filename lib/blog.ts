@@ -78,10 +78,10 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-restaurant",
-    title: "App mobile restaurant : guide complet 2025",
+    title: "App mobile restaurant : fonctionnalités 2026",
     description:
-      "Commande en ligne, carte interactive, programme de fidélité, réservation de table : les fonctionnalités indispensables d'une app mobile pour restaurant en 2025.",
-    date: "2025-03-22",
+      "Commande en ligne, fidélité, réservation : tout ce qu'une app restaurant doit avoir. Tarifs dès 490€, sans commission Uber Eats. Devis gratuit 24h.",
+    date: "2026-05-11",
     readTime: "6 min",
     category: "Restaurants",
     sections: [
@@ -127,10 +127,10 @@ export const articles: Article[] = [
   },
   {
     slug: "react-native-vs-flutter",
-    title: "React Native vs Flutter en 2025 : quel framework choisir ?",
+    title: "React Native vs Flutter 2026 : lequel choisir ?",
     description:
-      "React Native vs Flutter : performance, coût, écosystème — comparatif pour créer une app iOS & Android. Le point de vue d'un développeur freelance.",
-    date: "2025-04-01",
+      "React Native ou Flutter pour votre app iOS & Android ? Performance, coût, écosystème : le comparatif complet d'un développeur freelance en 2026.",
+    date: "2026-05-11",
     readTime: "7 min",
     category: "Tech",
     sections: [
@@ -232,10 +232,10 @@ export const articles: Article[] = [
   },
   {
     slug: "cout-reel-site-shopify",
-    title: "Shopify : le coût réel d'un site e-commerce en 2025",
+    title: "Shopify 2026 : coût réel, commissions et apps",
     description:
-      "Abonnement, commissions, thèmes, apps payantes : le coût réel d'un site Shopify comparé à une solution sur mesure développée par un freelance.",
-    date: "2026-04-15",
+      "Shopify coûte bien plus que 39€/mois. Commissions, apps payantes, thèmes : le vrai prix sur 2 ans et ce qu'une app sur mesure change pour vous.",
+    date: "2026-05-11",
     readTime: "6 min",
     category: "Comparatifs",
     sections: [
@@ -310,10 +310,10 @@ export const articles: Article[] = [
   },
   {
     slug: "cout-reel-site-wix",
-    title: "Wix : le coût réel d'un site web en 2025",
+    title: "Wix prix 2026 : combien coûte un site pro ?",
     description:
-      "Wix semble gratuit, mais un site pro avec domaine et fonctionnalités coûte bien plus cher. Analyse complète des tarifs Wix en 2025.",
-    date: "2026-04-15",
+      "Wix affiche \"gratuit\" mais un vrai site pro coûte 17€ à 35€/mois + apps. Le coût réel sur 2 ans et pourquoi une app sur mesure revient moins cher.",
+    date: "2026-05-11",
     readTime: "5 min",
     category: "Comparatifs",
     sections: [
@@ -384,75 +384,113 @@ export const articles: Article[] = [
   },
   {
     slug: "cout-reel-planity",
-    title: "Planity : coût réel pour un salon en 2025",
+    title: "Planity prix 2026 : le vrai coût pour un salon",
     description:
-      "Planity prélève une commission sur chaque réservation. Coût réel sur la durée et comparatif avec une application mobile sur mesure pour salon.",
-    date: "2026-04-15",
-    readTime: "5 min",
+      "Abonnement Planity + commissions : combien ça coûte vraiment sur 1 an ? Le calcul complet pour coiffeurs et instituts, avec une alternative moins chère.",
+    date: "2026-05-11",
+    readTime: "8 min",
     category: "Comparatifs",
     sections: [
       {
         paragraphs: [
-          "Planity est la plateforme de référence pour les réservations en ligne dans les salons de coiffure, instituts de beauté et centres bien-être. Elle est adoptée par des milliers de professionnels en France.",
-          "Mais à quel prix ? Voici l'analyse que beaucoup de professionnels auraient aimé lire avant de s'engager.",
+          "Planity est la plateforme de référence pour les réservations en ligne dans les salons de coiffure, instituts de beauté et centres bien-être. Des milliers de professionnels l'utilisent en France.",
+          "Mais combien ça coûte vraiment ? L'abonnement mensuel n'est que la partie visible. Entre les commissions sur l'annuaire, les SMS, les frais d'installation et les augmentations tarifaires régulières, la facture réelle est souvent le double de ce qu'affiche la page de pricing.",
+          "Voici le calcul complet — chiffres à l'appui — que beaucoup de coiffeurs et esthéticiennes auraient aimé lire avant de signer.",
         ],
       },
       {
-        heading: "Le modèle tarifaire Planity",
+        heading: "Combien coûte Planity par mois en 2026 ?",
         paragraphs: [
-          "Planity propose un abonnement mensuel avec différentes formules selon le nombre de praticiens et les fonctionnalités. Les tarifs varient entre 30€ et 80€/mois selon la formule choisie.",
-          "Ce qui distingue Planity des autres outils : la plateforme génère aussi des réservations via son propre annuaire (comme une marketplace). Sur ces réservations issues de l'annuaire Planity, une commission est prélevée.",
+          "Planity propose plusieurs formules d'abonnement selon le nombre de praticiens et les fonctionnalités. En 2026, les tarifs observés se situent entre 29€ et 79€/mois hors taxes :",
         ],
         list: [
-          "Abonnement mensuel : entre 30€ et 80€/mois selon la formule",
-          "Commission sur les nouvelles clientes via l'annuaire Planity : environ 20% du premier rendez-vous",
-          "Frais de rappel SMS : souvent inclus dans les plans supérieurs, limités dans les plans de base",
-          "Formation et onboarding : parfois facturés en supplément",
+          "Formule Solo (1 praticien) : 29–39€/mois — agenda en ligne, rappels automatiques, fiche salon",
+          "Formule Équipe (2–5 praticiens) : 49–69€/mois — multi-agenda, statistiques basiques",
+          "Formule Salon Pro : 69–79€/mois — fonctionnalités avancées, gestion stocks, reporting",
+          "Frais d'installation/onboarding : 0 à 150€ selon la formule et la période",
+          "Rappels SMS supplémentaires : facturés en plus sur les formules de base",
         ],
       },
       {
-        heading: "Le calcul sur 2 ans pour un salon moyen",
+        heading: "La commission Planity : ce qu'on vous dit moins",
         paragraphs: [
-          "Prenons un salon de coiffure avec 2 praticiens, 30 réservations/mois via Planity, dont 5 nouvelles clientes amenées par l'annuaire Planity à 40€ de prestation en moyenne :",
+          "Ce qui distingue Planity d'un simple logiciel de réservation, c'est son annuaire public. Planity référence votre salon et lui envoie de nouvelles clientes qui ne vous connaissaient pas. En échange, une commission est prélevée sur ces rendez-vous générés par la plateforme.",
+          "Cette commission représente environ 20% de la prestation pour les nouvelles clientes amenées via l'annuaire Planity. Sur un soin à 50€, c'est 10€ qui partent directement à Planity — en plus de votre abonnement mensuel.",
         ],
         list: [
-          "Abonnement mensuel (50€) × 24 : 1 200€",
-          "Commission annuaire (20% × 5 clientes × 40€) × 24 mois : 960€",
-          "Coût total estimé sur 2 ans : 2 160€",
-          "Et vous ne possédez ni les données clients, ni l'application, ni la relation directe avec votre clientèle",
+          "Commission annuaire : ~20% du premier rendez-vous pour chaque nouvelle cliente",
+          "Pas de commission sur vos clientes existantes qui réservent via votre lien direct",
+          "Aucun plafond de commission — plus Planity vous envoie de clientes, plus vous payez",
+          "Augmentations tarifaires régulières sans préavis important (constatées en 2024 et 2025)",
         ],
       },
       {
-        heading: "Ce que Planity vous apporte — et ce qu'il ne vous donne pas",
+        heading: "Le vrai prix de Planity sur 1 an — exemple chiffré",
         paragraphs: [
-          "Planity offre une réelle valeur : visibilité sur sa marketplace, gestion des plannings, rappels automatiques. Pour un salon qui démarre, c'est une aide concrète.",
-          "Mais sur le long terme, les limites sont importantes :",
+          "Prenons un salon de coiffure avec 2 praticiens, abonnement à 59€/mois, et 8 nouvelles clientes par mois via l'annuaire Planity à 45€ de prestation en moyenne :",
         ],
         list: [
-          "Dépendance : si Planity augmente ses tarifs ou change ses conditions, vous n'avez pas de recours",
-          "Pas d'application mobile à votre nom et à vos couleurs",
-          "Pas de programme de fidélité personnalisé",
-          "Vos clientes restent en partie clientes de Planity, pas uniquement les vôtres",
-          "Aucun contrôle sur l'expérience utilisateur et le design",
+          "Abonnement annuel : 59€ × 12 = 708€",
+          "Commissions annuaire : 20% × 8 clientes × 45€ × 12 mois = 864€",
+          "Coût Planity réel sur 1 an : 1 572€",
+          "Sur 2 ans : environ 3 144€ — sans jamais posséder quoi que ce soit",
+          "Et si vous arrêtez Planity ? Vous perdez votre visibilité annuaire du jour au lendemain",
         ],
       },
       {
-        heading: "L'alternative : votre propre application mobile",
+        heading: "Ce que l'abonnement Planity ne vous donne pas",
         paragraphs: [
-          "Pour 490€ + 49€/mois, je développe une application mobile iOS & Android à votre nom, avec votre logo, votre charte graphique — avec réservation en ligne, rappels automatiques par push, programme de fidélité et panel admin pour gérer vos créneaux.",
-          "Vous gardez 100% de vos clientes, sans commission sur aucun rendez-vous. L'app vous appartient.",
-          "Sur 2 ans, le coût est comparable à Planity — mais vous avez un actif numérique qui vous appartient, pas une location permanente.",
-          "Contactez-moi pour un devis gratuit et personnalisé.",
+          "Planity offre une valeur réelle : visibilité sur sa marketplace, gestion du planning, rappels automatiques. Pour un salon qui démarre sans clientèle, c'est une aide concrète.",
+          "Mais voici ce que vous n'avez pas, même après 2 ans et 3 000€ dépensés :",
+        ],
+        list: [
+          "Pas d'application mobile à votre nom sur l'App Store et Google Play",
+          "Pas de programme de fidélité personnalisé (tampons numériques, réductions automatiques, cadeaux)",
+          "Vos données clients appartiennent partiellement à Planity — si vous partez, vous les perdez",
+          "Aucun contrôle sur le design et l'expérience client",
+          "Dépendance totale : si Planity ferme ou double ses tarifs, vous repartez de zéro",
+          "Pas de notifications push vers vos clientes — seulement des SMS (payants)",
+        ],
+      },
+      {
+        heading: "Planity augmente ses prix : que faire ?",
+        paragraphs: [
+          "Beaucoup de salons ont découvert en 2024 et 2025 que Planity avait augmenté ses tarifs sans préavis significatif. C'est le risque de toute plateforme SaaS : vous êtes locataire, pas propriétaire.",
+          "Face à une augmentation Planity, vous avez trois options : accepter, négocier (rarement efficace), ou chercher une alternative.",
+        ],
+        list: [
+          "Alternatives gratuites ou moins chères : Fresha (commission similaire), Reservio (limité), Google Agenda (basique)",
+          "Solution intermédiaire : logiciel de caisse avec module réservation (Lightspeed, Pennylane)",
+          "Solution pérenne : votre propre application mobile — vous payez une fois, vous possédez l'outil",
+        ],
+      },
+      {
+        heading: "L'alternative à Planity : votre propre application mobile",
+        paragraphs: [
+          "Pour 490€ une fois + 49€/mois, je développe une application mobile iOS & Android à votre nom, avec votre logo et votre charte graphique : réservation en ligne, rappels automatiques par notification push, programme de fidélité numérique, panel admin pour gérer vos créneaux.",
+          "Zéro commission sur aucun rendez-vous. Vos données clients vous appartiennent à 100%. L'app reste la vôtre même si vous changez de prestataire demain.",
+          "Sur 2 ans : 490€ + (49€ × 24) = 1 666€ — contre 3 144€ chez Planity. Et vous avez un actif numérique à votre nom, pas une location permanente.",
+        ],
+      },
+      {
+        heading: "Questions fréquentes sur les tarifs Planity",
+        list: [
+          "Combien coûte Planity par mois ? Entre 29€ et 79€/mois selon la formule, hors commissions annuaire",
+          "Planity prend-il une commission ? Oui, environ 20% sur les réservations générées par son annuaire",
+          "Peut-on utiliser Planity gratuitement ? Non — il existe une période d'essai mais pas de formule gratuite durable",
+          "Planity est-il remboursable ? Les abonnements Planity sont généralement sans remboursement",
+          "Quelles sont les alternatives à Planity ? Fresha, Reservio, ou une application mobile sur mesure sans commission",
+          "Planity a-t-il augmenté ses prix en 2026 ? Des hausses ont été constatées régulièrement depuis 2024",
         ],
       },
     ],
   },
   {
     slug: "application-mobile-pas-chere",
-    title: "Application mobile pas chère : mythe ou réalité en 2025 ?",
+    title: "Application mobile pas chère : dès 490€ en 2026",
     description:
-      "Une vraie app iOS & Android professionnelle pour moins de 1 000€ : oui, c'est possible. Comment et à qui s'adresser en 2025.",
-    date: "2026-04-20",
+      "App iOS & Android pro pour moins de 1 000€ : oui, c'est possible avec un freelance React Native. Tarifs réels, pièges à éviter, devis gratuit.",
+    date: "2026-05-11",
     readTime: "6 min",
     category: "Tarifs",
     sections: [
@@ -523,79 +561,89 @@ export const articles: Article[] = [
   // --- Nouveaux articles SEO ---
   {
     slug: "planity-tarif-prix-abonnement-2025",
-    title: "Planity tarif 2025 : abonnement et commissions",
+    title: "Planity tarif 2026 : abonnement et prix réels",
     description:
-      "Planity tarif 2025 : abonnement 29€ à 79€/mois + commission sur réservations. Frais réels sur 2 ans et alternative moins chère pour votre salon.",
-    date: "2026-04-20",
-    readTime: "6 min",
+      "Planity tarif 2026 : de 29€ à 79€/mois + commission annuaire ~20%. Tous les frais cachés expliqués et comparatif avec une app mobile sur mesure.",
+    date: "2026-05-11",
+    readTime: "7 min",
     category: "Comparatifs",
     sections: [
       {
         paragraphs: [
-          "Vous cherchez à connaître le tarif de Planity avant de vous engager ? Vous avez raison de creuser. L'abonnement mensuel n'est que la partie visible de la facture. Voici tout ce que vous devez savoir sur les prix Planity en 2025, sans langue de bois.",
+          "Vous cherchez le tarif exact de Planity avant de vous engager ? Vous avez raison de creuser avant de signer. L'abonnement mensuel affiché n'est que la partie visible de la facture réelle.",
+          "Voici tout ce que vous devez savoir sur les prix Planity en 2026 — sans langue de bois, avec des exemples chiffrés.",
         ],
       },
       {
-        heading: "Quel est le prix de l'abonnement Planity en 2025 ?",
+        heading: "Prix de l'abonnement Planity en 2026",
         paragraphs: [
-          "Planity propose plusieurs formules d'abonnement en fonction du nombre de praticiens et des fonctionnalités incluses. En 2025, les tarifs Planity se situent entre 29€ et 79€/mois selon la formule choisie.",
+          "Planity propose plusieurs formules selon le nombre de praticiens et les fonctionnalités. Les tarifs 2026 observés :",
         ],
         list: [
-          "Formule Solo (1 praticien) : environ 29–39€/mois — agenda en ligne, rappels automatiques",
-          "Formule Équipe (2–5 praticiens) : environ 49–69€/mois — multi-agenda, statistiques",
-          "Formule Salon Pro : environ 69–79€/mois — fonctionnalités avancées, gestion des stocks",
-          "Frais d'installation/onboarding : parfois facturés en plus selon la formule",
+          "Solo (1 praticien) : 29–39€/mois — agenda en ligne, rappels automatiques, fiche annuaire",
+          "Équipe (2–5 praticiens) : 49–69€/mois — multi-agenda, statistiques de base",
+          "Salon Pro : 69–79€/mois — reporting avancé, gestion des stocks, fonctionnalités premium",
+          "Frais d'onboarding : 0 à 150€ selon la période et la formule",
+          "SMS de rappel supplémentaires : facturés en plus sur les plans de base",
         ],
       },
       {
-        heading: "La commission Planity : ce qu'on vous dit moins",
+        heading: "Tarif Planity Pro : ce que ça inclut vraiment",
         paragraphs: [
-          "Ce qui distingue Planity d'un simple logiciel de réservation, c'est son annuaire. Planity référence votre salon et vous envoie de nouvelles clientes. En échange, une commission est prélevée sur ces réservations générées par la plateforme.",
-          "Cette commission peut représenter 20% de la prestation pour les nouvelles clientes. Sur un soin à 50€, c'est 10€ qui part directement à Planity — en plus de votre abonnement mensuel.",
+          "La formule Planity Pro est la plus demandée par les salons avec plusieurs praticiens. Elle inclut la gestion multi-agenda, les statistiques de performance, les rappels automatiques et l'accès à l'annuaire Planity.",
+          "Ce que la formule Pro n'inclut pas : votre propre application mobile, un programme de fidélité personnalisé, et la propriété de vos données clients.",
         ],
         list: [
-          "Commission sur les nouvelles clientes via l'annuaire : ~20% du premier rendez-vous",
-          "Pas de commission sur les clientes existantes réservant via votre lien direct",
-          "Les rappels SMS peuvent être limités sur les formules de base",
-          "Augmentation de tarifs possible sans préavis important",
+          "Multi-agenda : oui, inclus",
+          "Rappels SMS automatiques : inclus (quota limité selon formule)",
+          "Notifications push vers vos clientes : non — uniquement par SMS",
+          "Application mobile à votre nom : non",
+          "Programme de fidélité sur mesure : non",
+          "Export complet de vos données clients : partiel",
         ],
       },
       {
-        heading: "Combien coûte Planity sur 1 an ? Sur 2 ans ?",
+        heading: "La commission Planity annuaire : le coût caché",
         paragraphs: [
-          "Prenons un salon avec 2 praticiens, abonnement à 59€/mois, et 8 nouvelles clientes/mois via l'annuaire Planity à 45€ de prestation en moyenne :",
+          "Planity génère aussi des réservations via son propre annuaire public (comme une marketplace beauté). Pour ces nouvelles clientes envoyées par Planity, une commission est prélevée — en plus de l'abonnement mensuel.",
         ],
         list: [
-          "Abonnement annuel : 59€ × 12 = 708€/an",
-          "Commissions annuaire (20% × 8 × 45€) × 12 mois : 864€/an",
-          "Coût réel annuel : environ 1 572€/an",
-          "Sur 2 ans : environ 3 144€ — sans jamais posséder quoi que ce soit",
+          "Commission sur les nouvelles clientes via l'annuaire : ~20% de la première prestation",
+          "Exemple : soin à 50€ → 10€ de commission Planity, directement sur votre CA",
+          "Pas de commission sur les clientes déjà connues qui réservent via votre lien direct",
+          "Aucun plafond de commission mensuel — plus Planity vous apporte de clientes, plus vous payez",
         ],
       },
       {
-        heading: "Ce que l'abonnement Planity ne vous donne pas",
-        list: [
-          "Pas d'application mobile à votre nom sur l'App Store et Google Play",
-          "Pas de programme de fidélité personnalisé (tampons numériques, réductions automatiques)",
-          "Vos données clients appartiennent en partie à Planity",
-          "Aucun contrôle sur le design et l'expérience client",
-          "Dépendance totale : si Planity ferme ou augmente ses prix, vous repartez de zéro",
-        ],
-      },
-      {
-        heading: "Vous payez Planity chaque mois — et si vous possédiez votre propre app ?",
+        heading: "Planity prix mensuel : le calcul réel sur 12 mois",
         paragraphs: [
-          "Pour 490€ une fois + 49€/mois, je développe une application mobile iOS & Android à votre nom : réservation en ligne, rappels push, programme de fidélité, panel admin. Zéro commission. Sur 2 ans : 1 666€ contre 3 144€ chez Planity — et vous possédez votre outil.",
+          "Salon de 2 praticiens, abonnement Planity à 59€/mois, 8 nouvelles clientes par mois via l'annuaire à 45€ en moyenne :",
+        ],
+        list: [
+          "Abonnement annuel : 59€ × 12 = 708€",
+          "Commissions annuaire : 20% × 8 × 45€ × 12 = 864€",
+          "Coût Planity total sur 12 mois : 1 572€",
+          "Sur 24 mois : 3 144€ — et vous ne possédez rien à l'issue",
+        ],
+      },
+      {
+        heading: "Augmentation Planity 2026 : ce qui a changé",
+        paragraphs: [
+          "Planity a procédé à plusieurs révisions tarifaires depuis 2023. Des coiffeurs et esthéticiennes ont constaté des hausses de 15 à 30% sur leurs abonnements, parfois sans préavis suffisant.",
+          "C'est le risque de toute solution en SaaS : vous êtes locataire d'un outil que vous ne possédez pas. À chaque renouvellement, vous dépendez des conditions commerciales de Planity.",
+        ],
+        list: [
+          "Hausses tarifaires constatées : +15% à +30% entre 2023 et 2026 selon les formules",
+          "Frais de service client (payants depuis certaines formules de base)",
+          "Restrictions sur l'export de données clients selon les nouvelles CGU",
+        ],
+      },
+      {
+        heading: "Alternative à Planity : votre propre application mobile",
+        paragraphs: [
+          "Pour 490€ une fois + 49€/mois, je développe une application mobile iOS & Android à votre nom : réservation en ligne 24h/24, rappels par notification push (gratuits et illimités), programme de fidélité numérique, panel admin pour gérer vos créneaux.",
+          "Zéro commission sur aucun rendez-vous. Vos données clients vous appartiennent à 100%. Sur 2 ans : 1 666€ contre 3 144€ chez Planity.",
           "Devis gratuit sous 24h — décrivez votre salon, je vous réponds rapidement.",
-        ],
-      },
-      {
-        heading: "L'alternative à Planity : votre propre application mobile",
-        paragraphs: [
-          "Pour un prix similaire à 2 ans d'abonnement Planity, je développe une application mobile iOS & Android à votre nom avec : réservation en ligne, rappels automatiques par notification push, programme de fidélité, panel admin pour gérer vos créneaux.",
-          "Tarif : 490€ une fois + 49€/mois. Zéro commission. L'app vous appartient à 100%.",
-          "Sur 2 ans, c'est 490€ + (49€ × 24) = 1 666€ — pour une solution qui vous appartient, à vos couleurs, avec vos données.",
-          "Contactez-moi pour un devis gratuit sous 24h.",
         ],
       },
     ],
