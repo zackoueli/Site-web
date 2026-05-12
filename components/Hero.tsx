@@ -25,7 +25,7 @@ export default function Hero() {
 
             {/* SEO label */}
             <p className="mono text-sm font-bold text-gray-500 mb-4">
-              // création application mobile iOS & Android · Brest, Bretagne
+              // applications mobiles · sites web · plateformes digitales · Brest, Bretagne
             </p>
 
             {/* Headline */}
@@ -41,37 +41,53 @@ export default function Hero() {
               </span>
               <br />
               <span className="bg-[#FF6B9D] text-white px-3 brutal-border inline-block mt-1">
-                Votre app.
+                Votre projet.
               </span>
             </h1>
 
-            <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-md">
-              Développeur freelance basé à <strong>Brest, Bretagne</strong>. Je crée des applications
-              iOS &amp; Android sur mesure pour restaurants, commerces et jeux.
-              De l'idée au déploiement sur l'App Store.
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-md">
+              Développeur freelance basé à <strong>Brest, Bretagne</strong>. Je conçois des <strong>applications mobiles iOS & Android</strong>, des <strong>sites web</strong> et des <strong>plateformes digitales</strong> sur mesure — de l'idée à la mise en ligne.
             </p>
+
+            {/* Offres pills */}
+            <div className="flex flex-wrap gap-2 mb-10">
+              {[
+                { label: "📱 Application mobile", href: "/services/application-mobile" },
+                { label: "🌐 Site web", href: "/services/site-web" },
+                { label: "⚙️ Plateforme & back-office", href: "/services/plateforme" },
+                { label: "🛍️ E-commerce", href: "/services/ecommerce" },
+              ].map(({ label, href }) => (
+                <a
+                  key={label}
+                  href={href}
+                  className="brutal-border bg-white px-3 py-1.5 text-xs font-bold hover:bg-[#FFE234] transition-colors"
+                >
+                  {label}
+                </a>
+              ))}
+            </div>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 mb-12">
               <a
-                href="#tarifs"
+                href="#contact"
                 className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4 text-base"
               >
                 Démarrer mon projet
               </a>
               <a
-                href="#portfolio"
+                href="/portfolio"
                 className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-8 py-4 text-base"
               >
-                Voir les apps ↓
+                Voir les réalisations ↓
               </a>
             </div>
 
             {/* Stats row */}
             <div className="flex flex-wrap gap-3">
               {[
-                { val: "3+", label: "Apps livrées" },
-                { val: "iOS & Android", label: "React Native" },
+                { val: "3+", label: "Projets livrés" },
+                { val: "Mobile & Web", label: "React Native · Next.js" },
                 { val: "Dès 400€", label: "Tarif transparent" },
               ].map(({ val, label }) => (
                 <div
