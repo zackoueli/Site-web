@@ -12,7 +12,7 @@ const features = [
   { title: "iOS & Android", desc: "Une seule codebase React Native, disponible sur les deux stores." },
   { title: "Paiement intégré", desc: "Stripe pour les paiements en ligne, abonnements et in-app purchase." },
   { title: "Notifications push", desc: "Relancez vos clients avec des notifications ciblées et programmées." },
-  { title: "Espace admin", desc: "Un panel web pour gérer vos produits, commandes et utilisateurs." },
+  { title: "Espace admin", desc: "Un espace dédié directement dans l'app pour gérer produits, commandes et utilisateurs." },
   { title: "Authentification", desc: "Connexion sécurisée par email, Google ou Apple Sign-In." },
   { title: "Déploiement inclus", desc: "Je publie l'app sur l'App Store et Google Play et je vous forme." },
 ];

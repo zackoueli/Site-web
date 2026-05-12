@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav className="brutal-border border-b-[3px] sticky top-0 z-50 bg-[#FFFBF0]">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 font-bold text-xl mono">
+        <a href="/" className="flex items-center gap-2 font-bold text-xl mono">
           <span className="bg-[#FFE234] brutal-border brutal-shadow px-2 py-0.5 text-sm">
             BREIZH
           </span>
