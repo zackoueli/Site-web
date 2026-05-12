@@ -38,7 +38,7 @@ export default function MentionsLegales() {
               <a href="mailto:breizhapp@outlook.fr" className="underline hover:text-[#0A0A0A]">
                 breizhapp@outlook.fr
               </a><br />
-              <strong>SIRET :</strong> [à compléter]<br />
+              <strong>SIRET :</strong> 10410831100010<br />
               <strong>Numéro de TVA intracommunautaire :</strong> Non assujetti à la TVA (article 293 B du CGI)
             </p>
           </section>
