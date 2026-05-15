@@ -1681,6 +1681,436 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "combien-coute-site-web-sur-mesure",
+    title: "Site web sur mesure : prix réels en 2026",
+    description: "Combien coûte un site web sur mesure en 2026 ? Vitrine, e-commerce, plateforme : tarifs réels d'un développeur freelance vs agence. Devis gratuit 48h.",
+    date: "2026-05-15",
+    readTime: "7 min",
+    category: "Tarifs",
+    sections: [
+      {
+        paragraphs: [
+          "Vous avez besoin d'un site web et vous cherchez à comprendre ce que ça coûte vraiment — sans les formules floues et les devis à rallonge. Voici les tarifs réels d'un site web sur mesure en 2026, avec ce qui est inclus à chaque niveau.",
+          "Attention : un site web sur mesure n'est pas un site Wix ou Shopify. C'est un site développé de A à Z, adapté à votre identité, sans template générique et sans abonnement mensuel à une plateforme tierce.",
+        ],
+      },
+      {
+        heading: "Site vitrine sur mesure : entre 400€ et 1 500€",
+        paragraphs: [
+          "Un site vitrine présente votre activité, vos services, vos coordonnées et un formulaire de contact. C'est le minimum indispensable pour exister en ligne de façon professionnelle.",
+        ],
+        list: [
+          "Design unique aux couleurs de votre entreprise — pas un template Wix parmi des milliers d'autres",
+          "5 à 10 pages : accueil, services, tarifs, à propos, contact",
+          "Optimisé SEO dès le départ : balises, vitesse, structure",
+          "Formulaire de contact relié à votre email",
+          "100% responsive : parfait sur mobile, tablette et desktop",
+          "Déploiement et mise en ligne inclus",
+          "Tarif BreizhApp : à partir de 490€ — livraison en 2 à 3 semaines",
+        ],
+      },
+      {
+        heading: "Site avec blog ou catalogue : entre 800€ et 2 500€",
+        paragraphs: [
+          "Si vous avez besoin de publier des articles, de présenter un catalogue de produits ou services, ou de gérer du contenu régulièrement, le site gagne en complexité — et en valeur.",
+        ],
+        list: [
+          "Blog intégré : publiez vos articles depuis un back-office simple",
+          "Catalogue produits ou portfolio avec filtres et galeries",
+          "Système de réservation ou prise de rendez-vous en ligne",
+          "Connexion à des outils tiers (Google Analytics, Mailchimp, CRM)",
+          "Espace membre basique : authentification client, espace personnel",
+          "Tarif BreizhApp : entre 800€ et 1 800€ selon les fonctionnalités",
+        ],
+      },
+      {
+        heading: "Site e-commerce sur mesure : entre 1 500€ et 5 000€",
+        paragraphs: [
+          "Une boutique en ligne sur mesure va bien au-delà de Shopify : pas de commission sur vos ventes, pas d'abonnement mensuel, un design qui vous appartient vraiment.",
+        ],
+        list: [
+          "Catalogue produits avec variantes, stocks et catégories",
+          "Tunnel d'achat optimisé : panier, livraison, paiement Stripe",
+          "Apple Pay, Google Pay, cartes bancaires",
+          "Panel admin complet : gérez vos commandes, clients et produits",
+          "Emails automatiques : confirmation de commande, suivi de livraison",
+          "SEO e-commerce : fiches produits, sitemap, rich snippets",
+          "Zéro commission sur vos ventes — contrairement à Shopify (0,5% à 2%)",
+          "Tarif BreizhApp : à partir de 1 500€",
+        ],
+      },
+      {
+        heading: "Plateforme web avec back-office : entre 2 000€ et 8 000€",
+        paragraphs: [
+          "Une plateforme digitale est une application web complète avec plusieurs niveaux d'accès : espace admin, espace client, tableau de bord, gestion des données en temps réel.",
+        ],
+        list: [
+          "Authentification multi-rôles : admin, manager, client, partenaire",
+          "Dashboard avec indicateurs clés et rapports exportables",
+          "Base de données sécurisée avec sauvegarde automatique",
+          "API REST pour connecter vos outils existants (CRM, ERP, logiciels métier)",
+          "Notifications en temps réel, messagerie interne",
+          "Tarif BreizhApp : à partir de 2 000€ selon la complexité",
+        ],
+      },
+      {
+        heading: "Sur mesure vs constructeur de site : le vrai comparatif",
+        paragraphs: [
+          "Wix, Squarespace et Shopify semblent moins chers au premier coup d'œil. Mais sur 3 ans, la réalité est différente.",
+        ],
+        list: [
+          "Wix Business : 17€/mois = 612€ sur 3 ans, sans compter les apps payantes et le design limité aux templates",
+          "Shopify Basic : 39€/mois + 2% de commission = entre 1 500€ et 4 000€ sur 3 ans selon votre chiffre d'affaires",
+          "Site sur mesure : coût unique, zéro abonnement, zéro commission — vous êtes propriétaire de votre code",
+          "Sur mesure = liberté totale : changez l'hébergeur, le design, les fonctionnalités sans contrainte de plateforme",
+        ],
+      },
+      {
+        heading: "Pourquoi choisir un développeur freelance plutôt qu'une agence ?",
+        paragraphs: [
+          "Une agence web facture généralement 3 à 5× plus cher pour le même résultat — parce qu'elle doit payer ses locaux, ses commerciaux et ses chefs de projet. Vous payez pour l'organisation, pas pour le code.",
+          "En travaillant directement avec un développeur freelance, vous avez un interlocuteur unique, des délais plus courts et un tarif transparent. Chez BreizhApp, je développe moi-même votre site de A à Z — pas de sous-traitance, pas de surprise.",
+        ],
+      },
+      {
+        heading: "Ce qui fait varier le prix d'un site web sur mesure",
+        paragraphs: [
+          "Le tarif final dépend de plusieurs facteurs que j'évalue lors du devis gratuit :",
+        ],
+        list: [
+          "Nombre de pages et de fonctionnalités",
+          "Nécessité d'un back-office ou d'un espace admin",
+          "Intégrations tierces (paiement, réservation, CRM, API)",
+          "Complexité du design (à partir d'une charte existante ou création from scratch)",
+          "Délai souhaité (livraison express possible)",
+        ],
+      },
+      {
+        heading: "Comment obtenir un devis précis ?",
+        paragraphs: [
+          "Je propose un devis gratuit sous 48h. Décrivez-moi votre projet — votre activité, ce que vous voulez que votre site fasse, votre budget indicatif — et je vous envoie une proposition concrète avec le détail des fonctionnalités et le tarif exact.",
+          "Pas de formulaire interminable : un email suffit. Je réponds à chaque demande personnellement et je prends le temps de comprendre votre activité avant de chiffrer.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "creer-plateforme-digitale-sur-mesure",
+    title: "Plateforme digitale sur mesure : guide 2026",
+    description: "Créer une plateforme digitale sur mesure : espace admin, espace client, multi-rôles. Fonctionnalités, tarifs et alternatives au no-code. Devis gratuit.",
+    date: "2026-05-15",
+    readTime: "8 min",
+    category: "Guides",
+    sections: [
+      {
+        paragraphs: [
+          "Une plateforme digitale sur mesure, c'est une application web complète qui gère vos processus métier : vos clients ont leur espace, votre équipe a le sien, et vous pilotez tout depuis un tableau de bord centralisé.",
+          "C'est le type de projet qui remplace un empilement d'outils SaaS (Notion + Airtable + Stripe + Mailchimp) par une solution unique, cohérente et propriétaire.",
+        ],
+      },
+      {
+        heading: "Qu'est-ce qu'une plateforme digitale sur mesure ?",
+        paragraphs: [
+          "Contrairement à un site vitrine ou une boutique en ligne, une plateforme digitale est une application web fonctionnelle avec une logique métier complexe. Elle peut prendre de nombreuses formes :",
+        ],
+        list: [
+          "Espace client sécurisé : chaque client se connecte pour accéder à ses données, commandes, factures ou dossiers",
+          "Back-office admin : votre équipe gère les utilisateurs, les contenus, les commandes et les statistiques depuis une interface dédiée",
+          "Plateforme de mise en relation : connectez des prestataires et des clients (type marketplace ou annuaire premium)",
+          "SaaS interne : un outil métier sur mesure pour automatiser vos processus (devis, planification, suivi de production)",
+          "Portail partenaires : vos revendeurs ou franchisés accèdent à leurs ressources, leurs commandes et leurs performances",
+        ],
+      },
+      {
+        heading: "Les fonctionnalités clés d'une plateforme bien conçue",
+        paragraphs: [
+          "Voici les briques techniques que j'intègre selon les besoins de chaque projet :",
+        ],
+        list: [
+          "Authentification multi-rôles : admin, manager, client, partenaire — chaque rôle a ses permissions et son interface",
+          "Dashboard personnalisé : graphiques, KPIs, alertes en temps réel adaptés à chaque type d'utilisateur",
+          "Gestion des utilisateurs : invitations, désactivation de comptes, historique des actions",
+          "Base de données relationnelle : stockage structuré, requêtes rapides, exports CSV/Excel",
+          "API REST : connexion avec vos outils existants — CRM, ERP, logiciels comptables, outils marketing",
+          "Notifications en temps réel : alertes dans l'interface et envoi d'emails automatiques selon les événements",
+          "Messagerie interne : communication directe entre utilisateurs sans sortir de la plateforme",
+          "Gestion des fichiers : upload de documents, images, contrats — stockés de façon sécurisée",
+          "Facturation et paiement : génération de devis et factures, paiement en ligne via Stripe",
+        ],
+      },
+      {
+        heading: "Plateforme sur mesure vs outils no-code : que choisir ?",
+        paragraphs: [
+          "Des outils comme Bubble, Glide ou Webflow permettent de créer des applications sans coder. Ils ont des avantages réels pour prototyper rapidement — mais aussi des limites importantes pour un usage professionnel à long terme.",
+        ],
+        list: [
+          "Coût no-code : Bubble facture entre 29€ et 349€/mois selon le trafic — sur 3 ans, ça représente entre 1 000€ et 12 500€ sans posséder votre code",
+          "Performance : les plateformes no-code sont plus lentes qu'une application développée sur mesure — problème pour les plateformes avec beaucoup d'utilisateurs simultanés",
+          "Personnalisation limitée : vous êtes contraint par les fonctionnalités de l'outil, impossible d'aller au-delà sans contournements complexes",
+          "Dépendance : si Bubble ferme ou change ses tarifs, votre plateforme est en danger — avec du code sur mesure, vous êtes propriétaire",
+          "Sur mesure : coût unique, performances optimales, fonctionnalités illimitées, code qui vous appartient",
+        ],
+      },
+      {
+        heading: "Combien coûte une plateforme digitale sur mesure ?",
+        paragraphs: [
+          "Le tarif varie selon la complexité fonctionnelle. Voici les fourchettes réelles pratiquées chez BreizhApp :",
+        ],
+        list: [
+          "Plateforme simple (espace client + admin basique) : entre 2 000€ et 3 500€",
+          "Plateforme intermédiaire (multi-rôles, dashboard, API, notifications) : entre 3 500€ et 6 000€",
+          "Plateforme complexe (marketplace, SaaS, logique métier avancée) : à partir de 6 000€",
+          "Dans tous les cas : devis détaillé gratuit sous 48h, paiement en 2 fois (acompte 30% au démarrage, solde à la livraison)",
+        ],
+      },
+      {
+        heading: "Les étapes de développement d'une plateforme",
+        paragraphs: [
+          "Je travaille en 4 phases pour garantir un résultat conforme à vos attentes :",
+        ],
+        list: [
+          "Phase 1 — Brief et conception : définition des rôles, des parcours utilisateurs et des fonctionnalités prioritaires. Je vous livre une maquette validée avant de coder",
+          "Phase 2 — Développement back-end : base de données, API, authentification, logique métier",
+          "Phase 3 — Développement front-end : interface admin, espace client, dashboard — design aux couleurs de votre marque",
+          "Phase 4 — Tests et livraison : recette complète, corrections, mise en ligne sur votre hébergement",
+        ],
+      },
+      {
+        heading: "Exemples de plateformes réalisées",
+        paragraphs: [
+          "Voici le type de projets que je développe régulièrement :",
+        ],
+        list: [
+          "Plateforme de gestion de commandes pour artisan : espace client pour suivre les commandes en cours, panel admin pour mettre à jour les statuts et envoyer des notifications automatiques",
+          "Portail membre pour association ou club : adhésions en ligne, espace documentaire, événements, messagerie interne",
+          "Outil de devis et facturation sur mesure : génération automatique de documents, signature électronique, suivi des paiements",
+          "Dashboard de pilotage pour commerce : suivi des ventes, des stocks et des performances par produit en temps réel",
+        ],
+      },
+      {
+        heading: "Pourquoi travailler avec BreizhApp ?",
+        paragraphs: [
+          "Je suis développeur freelance basé à Brest, spécialisé en applications mobiles et plateformes web sur mesure. Chaque projet est développé par moi directement — pas de sous-traitance, pas d'intermédiaire.",
+          "Je propose un devis gratuit et détaillé sous 48h. Décrivez-moi votre projet, les types d'utilisateurs que vous avez et ce que vous voulez qu'ils puissent faire — je vous réponds avec une proposition concrète et un tarif transparent.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "wordpress-vs-sur-mesure",
+    title: "WordPress ou sur mesure : que choisir en 2026 ?",
+    description: "WordPress ou site sur mesure : performances, coûts, SEO, sécurité. Le comparatif complet pour choisir la bonne solution selon votre projet en 2026.",
+    date: "2026-05-15",
+    readTime: "7 min",
+    category: "Comparatifs",
+    sections: [
+      {
+        paragraphs: [
+          "WordPress fait tourner 43% des sites web dans le monde. C'est le CMS le plus utilisé, le plus documenté, et souvent le premier réflexe des agences web. Mais est-ce toujours le meilleur choix pour votre projet ?",
+          "Voici un comparatif honnête entre WordPress et le développement sur mesure — sans parti pris, avec les avantages et les limites réels des deux approches.",
+        ],
+      },
+      {
+        heading: "Ce que WordPress fait bien",
+        paragraphs: [
+          "WordPress est une solution mature avec un écosystème immense. Il est pertinent dans plusieurs situations :",
+        ],
+        list: [
+          "Budget serré : un site WordPress peut être opérationnel pour moins de 500€ avec un thème premium et quelques plugins",
+          "Contenu éditorial : WordPress excelle pour les blogs, les médias et les sites avec beaucoup d'articles — c'est ce pour quoi il a été conçu à l'origine",
+          "Autonomie éditoriale : l'interface d'administration est familière et permet à n'importe qui de publier du contenu sans formation technique",
+          "Écosystème de plugins : 60 000 plugins disponibles couvrent la plupart des besoins courants (formulaires, SEO, galeries, réservation)",
+          "Communauté massive : des milliers de tutoriels, forums et développeurs disponibles pour vous aider",
+        ],
+      },
+      {
+        heading: "Les limites de WordPress en 2026",
+        paragraphs: [
+          "Malgré sa popularité, WordPress montre ses limites sur plusieurs points importants :",
+        ],
+        list: [
+          "Sécurité : WordPress est la cible n°1 des hackers — 90% des sites CMS piratés tournent sous WordPress. Les mises à jour constantes de plugins sont une contrainte réelle",
+          "Performance : un site WordPress mal optimisé charge lentement. Chaque plugin ajouté ralentit le site — et la vitesse est un facteur SEO crucial depuis 2021",
+          "Coûts cachés : thème premium (60-300€) + plugins premium (20-100€/an chacun) + hébergement adapté (10-30€/mois) + maintenance — le coût réel dépasse souvent 1 000€/an",
+          "Dette technique : les mises à jour de WordPress cassent parfois les plugins ou le thème — la maintenance devient un travail à part entière",
+          "Personnalisation limitée : si votre besoin sort des sentiers battus, vous vous retrouvez à lutter contre WordPress plutôt qu'à l'utiliser",
+          "Performances mobiles : les thèmes WordPress sont rarement optimisés pour les Core Web Vitals — ce que Google pénalise dans son classement",
+        ],
+      },
+      {
+        heading: "Les avantages du développement sur mesure",
+        paragraphs: [
+          "Un site développé sur mesure (avec Next.js, React ou une autre technologie moderne) apporte des bénéfices concrets :",
+        ],
+        list: [
+          "Performance maximale : un site Next.js obtient systématiquement des scores Lighthouse de 95-100/100 — WordPress plafonne généralement à 60-80/100 sans optimisation lourde",
+          "Sécurité renforcée : pas de surface d'attaque liée aux plugins, pas de CMS standardisé que les bots savent exploiter",
+          "Zéro dépendance : votre site ne dépend d'aucune plateforme tierce — pas de plugin qui disparaît, pas de thème abandonné",
+          "Design unique : votre site ne ressemble à aucun autre — impossible de deviner quel CMS il utilise",
+          "Fonctionnalités sur mesure : tout ce que vous voulez est possible — pas de compromis avec les limites d'un plugin",
+          "Maintenabilité : un code bien écrit est plus simple à faire évoluer qu'un enchevêtrement de plugins WordPress",
+        ],
+      },
+      {
+        heading: "Comparatif des coûts sur 3 ans",
+        paragraphs: [
+          "Voici la réalité des coûts comparés sur 3 ans, tous frais inclus :",
+        ],
+        list: [
+          "WordPress basique : thème 150€ + plugins 300€/an + hébergement 180€/an + maintenance 500€/an = environ 2 900€ sur 3 ans",
+          "WordPress avec développeur : 1 500€ de développement + 600€/an de maintenance = environ 3 300€ sur 3 ans",
+          "Site sur mesure BreizhApp : 800€ à 1 500€ de développement + hébergement Vercel gratuit ou 7€/mois = environ 1 000€ à 1 800€ sur 3 ans, zéro maintenance imposée",
+        ],
+      },
+      {
+        heading: "Quand choisir WordPress ?",
+        paragraphs: [
+          "WordPress reste pertinent dans ces cas précis :",
+        ],
+        list: [
+          "Vous avez besoin d'un site rapidement avec un budget minimal et des besoins standards",
+          "Vous voulez gérer vous-même beaucoup de contenu éditorial (blog d'actualité, magazine en ligne)",
+          "Vous avez déjà un site WordPress existant à faire évoluer — repartir de zéro n'est pas toujours justifié",
+          "Vous cherchez un développeur WordPress facilement remplaçable — la ressource est abondante",
+        ],
+      },
+      {
+        heading: "Quand choisir le développement sur mesure ?",
+        paragraphs: [
+          "Le sur mesure s'impose dans ces situations :",
+        ],
+        list: [
+          "Votre site est un outil stratégique (e-commerce, plateforme, espace client) où la performance et la sécurité sont critiques",
+          "Vous voulez un design vraiment unique qui reflète votre identité — pas un thème parmi des milliers",
+          "Vous avez des fonctionnalités spécifiques qu'aucun plugin ne couvre correctement",
+          "Vous pensez long terme : un code propre et maintenable plutôt qu'un empilement de plugins",
+          "Vous ne voulez pas dépendre de la santé d'un plugin ou d'un éditeur tiers",
+        ],
+      },
+      {
+        heading: "Mon avis de développeur",
+        paragraphs: [
+          "WordPress est un excellent outil pour ce qu'il a été conçu à faire : gérer du contenu éditorial simplement. Mais pour un site vitrine professionnel, une boutique en ligne ou une plateforme avec des fonctionnalités spécifiques, le développement sur mesure offre de meilleures performances, plus de sécurité et un coût total souvent inférieur sur 3 ans.",
+          "Je développe des sites sur mesure avec Next.js depuis plusieurs années. Si vous hésitez entre WordPress et le sur mesure pour votre projet, contactez-moi — je vous donne mon avis honnête selon votre cas précis, sans chercher à vous vendre quelque chose dont vous n'avez pas besoin.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "no-code-vs-developpeur",
+    title: "No-code vs développeur : Bubble, Glide ou sur mesure ?",
+    description: "No-code (Bubble, Glide, Adalo) ou développeur sur mesure ? Coûts, limites, performances : le comparatif complet pour créer votre app ou plateforme en 2026.",
+    date: "2026-05-15",
+    readTime: "7 min",
+    category: "Comparatifs",
+    sections: [
+      {
+        paragraphs: [
+          "Bubble, Glide, Adalo, FlutterFlow — les outils no-code promettent de créer des applications sans coder, rapidement et à moindre coût. Mais est-ce vraiment vrai ? Et quand vaut-il mieux faire appel à un développeur ?",
+          "Voici un comparatif honnête basé sur des projets réels, sans discours marketing.",
+        ],
+      },
+      {
+        heading: "Les outils no-code : ce qu'ils sont vraiment",
+        paragraphs: [
+          "Le no-code regroupe des plateformes qui permettent de construire des interfaces et des logiques applicatives en glisser-déposer, sans écrire de code. Les plus connus en 2026 :",
+        ],
+        list: [
+          "Bubble : la plateforme no-code la plus puissante pour créer des web apps complexes — marketplaces, SaaS, plateformes de gestion",
+          "Glide : idéal pour transformer une feuille Google Sheets en application mobile simple",
+          "Adalo : création d'apps mobiles iOS et Android sans code, avec des composants prêts à l'emploi",
+          "FlutterFlow : no-code basé sur Flutter, permet de générer du code exportable",
+          "Webflow : principalement pour les sites web marketing avec animations avancées",
+        ],
+      },
+      {
+        heading: "Les avantages réels du no-code",
+        paragraphs: [
+          "Le no-code a des avantages concrets pour certains cas d'usage :",
+        ],
+        list: [
+          "Rapidité de prototypage : tester une idée en quelques jours sans développeur — idéal pour valider un concept avant d'investir",
+          "Accessibilité : un entrepreneur non technique peut construire une première version de son produit lui-même",
+          "Coût initial faible : pas de développeur à payer au démarrage pour un MVP simple",
+          "Mises à jour faciles : modifier une interface ou ajouter un champ sans toucher au code",
+        ],
+      },
+      {
+        heading: "Les limites du no-code que personne ne vous dit",
+        paragraphs: [
+          "Les outils no-code ont des contraintes importantes qui deviennent bloquantes dès que le projet grandit :",
+        ],
+        list: [
+          "Coût d'abonnement permanent : Bubble coûte entre 29€ et 349€/mois selon le trafic — vous ne possédez jamais votre application, vous la louez",
+          "Performance dégradée : les applications Bubble sont notablement plus lentes qu'une application sur mesure — problème pour l'expérience utilisateur et le SEO",
+          "Dépendance totale : si Bubble change ses tarifs, ferme ou modifie ses fonctionnalités, votre application est directement impactée — vous n'avez aucun contrôle",
+          "Personnalisation limitée : impossible de sortir du cadre de la plateforme sans contournements complexes qui augmentent la dette technique",
+          "Scalabilité : dès que votre base d'utilisateurs grandit, les performances se dégradent et les coûts d'abonnement explosent",
+          "Export impossible ou partiel : sur Bubble, vous ne pouvez pas exporter votre code proprement — migration très difficile si vous voulez changer",
+          "Intégrations limitées : connecter des APIs complexes ou des logiciels métier spécifiques devient vite un casse-tête",
+        ],
+      },
+      {
+        heading: "Comparatif des coûts sur 3 ans",
+        paragraphs: [
+          "Voici la réalité financière sur 3 ans pour une plateforme web avec espace client et admin :",
+        ],
+        list: [
+          "Bubble Starter (29€/mois) : 1 044€ sur 3 ans — mais limité à 2 types d'utilisateurs et 50 000 pages vues/mois",
+          "Bubble Growth (119€/mois) : 4 284€ sur 3 ans — nécessaire dès que le trafic augmente",
+          "Bubble Team (349€/mois) : 12 564€ sur 3 ans — pour les projets avec plusieurs éditeurs",
+          "Développement sur mesure BreizhApp : 2 000€ à 4 000€ en coût unique + hébergement 7-15€/mois = environ 2 300€ à 4 500€ sur 3 ans, avec votre code en propriété",
+        ],
+      },
+      {
+        heading: "No-code pour les apps mobiles : Adalo et FlutterFlow",
+        paragraphs: [
+          "Pour les applications mobiles iOS et Android, les outils no-code ont des limites encore plus marquées :",
+        ],
+        list: [
+          "Adalo : interface simple mais performances très limitées — les apps Adalo sont lentes et les utilisateurs le ressentent immédiatement",
+          "FlutterFlow : génère du code Flutter exportable, ce qui est un avantage réel — mais le code généré est difficile à maintenir pour un développeur",
+          "Publication App Store : les outils no-code peuvent vous aider à publier, mais les révisions Apple sont plus strictes pour les apps générées automatiquement",
+          "Fonctionnalités natives : accès à la caméra, GPS, notifications push, Face ID — souvent impossible ou très limité en no-code",
+          "Une app React Native sur mesure offre des performances natives, un accès complet aux fonctionnalités du téléphone, et un code maintenable sur le long terme",
+        ],
+      },
+      {
+        heading: "Quand utiliser le no-code ?",
+        paragraphs: [
+          "Le no-code est pertinent dans ces cas précis :",
+        ],
+        list: [
+          "Vous voulez valider une idée rapidement avant d'investir dans le développement sur mesure — le no-code comme MVP",
+          "Votre besoin est simple et standardisé — un formulaire, un tableau de bord basique, une liste de contacts",
+          "Vous n'avez pas encore de revenus et devez absolument minimiser les coûts initiaux",
+          "Vous êtes à l'aise techniquement et avez du temps pour apprendre la plateforme",
+        ],
+      },
+      {
+        heading: "Quand faire appel à un développeur ?",
+        paragraphs: [
+          "Le développement sur mesure s'impose dès que :",
+        ],
+        list: [
+          "Votre application est un produit commercial destiné à vos clients — la qualité et la performance sont non négociables",
+          "Vous avez des fonctionnalités spécifiques à votre métier qu'aucun outil no-code ne couvre",
+          "Vous pensez long terme : posséder votre code, choisir votre hébergeur, faire évoluer sans contrainte de plateforme",
+          "Votre budget initial est similaire à ce que vous dépenseriez en no-code sur 2-3 ans",
+          "Vous avez besoin d'intégrations complexes avec vos outils existants",
+        ],
+      },
+      {
+        heading: "Ma recommandation",
+        paragraphs: [
+          "Si vous avez une idée et aucun budget : testez avec Glide ou Bubble pour valider le concept. Si ça marche, faites développer une version sur mesure.",
+          "Si vous avez un budget et un projet sérieux : investissez directement dans le sur mesure. Vous économiserez du temps, éviterez les frustrations des limites no-code, et posséderez un actif qui vous appartient vraiment.",
+          "Je suis développeur freelance à Brest, je crée des applications mobiles et des plateformes web sur mesure. Si vous hésitez entre no-code et développement pour votre projet, contactez-moi — je vous donne un avis honnête et un devis gratuit sous 48h.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
