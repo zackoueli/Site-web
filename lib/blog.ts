@@ -2111,6 +2111,329 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "application-mobile-coiffeur-salon",
+    title: "App mobile pour salon de coiffure : guide 2026",
+    description: "Application mobile pour salon de coiffure : réservation en ligne, fidélité, notifications. Alternative à Planity sans commission. Tarifs et fonctionnalités 2026.",
+    date: "2026-05-15",
+    readTime: "6 min",
+    category: "Secteurs",
+    sections: [
+      {
+        paragraphs: [
+          "Un salon de coiffure qui n'a pas d'application mobile en 2026 laisse de l'argent sur la table. Réservations en ligne, rappels automatiques, programme de fidélité, vente de produits — une app bien conçue transforme votre relation client et réduit les rendez-vous manqués.",
+          "Et contrairement à Planity qui prend entre 20% et 30% de commission sur les réservations apportées par son annuaire, une application sur mesure vous appartient entièrement.",
+        ],
+      },
+      {
+        heading: "Ce qu'une app mobile apporte à un salon de coiffure",
+        paragraphs: [
+          "Voici les fonctionnalités les plus utiles pour un salon de coiffure ou un institut de beauté :",
+        ],
+        list: [
+          "Réservation en ligne 24h/24 : vos clients prennent rendez-vous depuis leur téléphone, à n'importe quelle heure, sans vous appeler",
+          "Rappels automatiques : une notification push la veille et le matin du rendez-vous — les no-shows peuvent diminuer de 40%",
+          "Programme de fidélité : points cumulés à chaque visite, offres exclusives pour les clients réguliers, carte de fidélité digitale",
+          "Historique des prestations : chaque client retrouve ses dernières couleurs, coupes et soins — vous aussi depuis l'espace admin",
+          "Paiement en ligne : acompte à la réservation pour sécuriser le rendez-vous, ou paiement complet via Apple Pay / Stripe",
+          "Vente de produits : proposez vos soins et produits capillaires directement dans l'app",
+          "Notifications push ciblées : prévenez vos clients d'un créneau libéré, d'une promotion ou de l'arrivée d'un nouveau produit",
+          "Avis clients : collectez des avis directement après chaque prestation pour alimenter votre réputation Google",
+        ],
+      },
+      {
+        heading: "Pourquoi ne pas rester sur Planity ?",
+        paragraphs: [
+          "Planity est utile pour se faire connaître de nouveaux clients via son annuaire. Mais ses coûts réels méritent d'être calculés précisément :",
+        ],
+        list: [
+          "Abonnement Planity : entre 49€ et 99€/mois selon la formule, soit 588€ à 1 188€/an",
+          "Commission annuaire : Planity prend environ 20% sur les réservations apportées par sa plateforme — sur 1 000€ de chiffre d'affaires via Planity, vous perdez 200€",
+          "Vous ne possédez pas vos clients : si vous quittez Planity, vous perdez l'accès à votre historique de réservations et à la relation digitale avec vos clients",
+          "Une app sur mesure : coût unique, zéro commission, vos clients vous appartiennent — et vous gardez 100% de votre chiffre d'affaires",
+        ],
+      },
+      {
+        heading: "Combien coûte une app mobile pour un salon ?",
+        paragraphs: [
+          "Je propose deux formules adaptées aux salons de coiffure et instituts de beauté :",
+        ],
+        list: [
+          "Formule Essentiel — 790€ : réservation en ligne, rappels automatiques, historique client, espace admin pour gérer les créneaux et les prestations",
+          "Formule Premium — 1 200€ : tout l'essentiel + programme de fidélité, paiement en ligne, notifications push ciblées, vente de produits",
+          "Dans les deux cas : app iOS et Android, déploiement sur les stores, formation à la prise en main, support inclus",
+          "Comparaison : Planity vous coûte en moyenne 800€ à 1 500€/an en abonnement et commissions — votre app est rentabilisée en 6 à 12 mois",
+        ],
+      },
+      {
+        heading: "Comment ça se passe concrètement ?",
+        paragraphs: [
+          "Je vous accompagne de A à Z, même si vous n'avez aucune connaissance technique :",
+        ],
+        list: [
+          "Étape 1 : on définit ensemble vos prestations, vos horaires et vos besoins spécifiques",
+          "Étape 2 : je vous montre une maquette de l'app avant de coder — vous validez le design",
+          "Étape 3 : je développe l'app et vous la présente en vidéo à chaque étape importante",
+          "Étape 4 : publication sur l'App Store et Google Play — votre app est disponible pour vos clients",
+          "Étape 5 : formation à l'espace admin — 1h suffit pour prendre en main la gestion des réservations",
+        ],
+      },
+      {
+        heading: "Témoignage type : avant / après",
+        paragraphs: [
+          "Avant l'application : 30% des rendez-vous pris par téléphone, entre 5 et 8 no-shows par mois, aucun programme de fidélité, pas de vente de produits en dehors du salon.",
+          "Après l'application : 80% des réservations via l'app, 2 à 3 no-shows par mois grâce aux rappels automatiques, 15% du chiffre d'affaires généré par la fidélité et la vente de produits en ligne.",
+        ],
+      },
+      {
+        heading: "Demandez votre devis gratuit",
+        paragraphs: [
+          "Je suis développeur freelance spécialisé en applications mobiles pour les professionnels de la beauté et du bien-être. Devis gratuit sous 48h — décrivez-moi votre salon, vos prestations et ce que vous attendez de l'application.",
+          "Basé à Brest, j'interviens partout en France. La totalité du projet se fait à distance, avec des points réguliers en visioconférence.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "application-mobile-salle-sport-fitness",
+    title: "App mobile salle de sport : fonctionnalités 2026",
+    description: "Application mobile pour salle de sport et club fitness : abonnements, réservation de cours, suivi des séances, fidélité. Tarifs et fonctionnalités clés en 2026.",
+    date: "2026-05-15",
+    readTime: "6 min",
+    category: "Secteurs",
+    sections: [
+      {
+        paragraphs: [
+          "Une salle de sport sans application mobile en 2026, c'est une opportunité manquée chaque jour. Inscription en ligne, réservation de cours collectifs, suivi des performances, notifications de nouveaux créneaux — une app bien conçue fidélise vos membres et réduit votre charge administrative.",
+        ],
+      },
+      {
+        heading: "Fonctionnalités indispensables pour une app salle de sport",
+        paragraphs: [
+          "Voici les fonctionnalités les plus demandées par les salles de sport et clubs de fitness :",
+        ],
+        list: [
+          "Inscription et abonnement en ligne : vos prospects s'inscrivent et paient directement depuis l'app — sans passage en caisse",
+          "Réservation de cours collectifs : planning en temps réel, réservation en un clic, liste d'attente automatique si le cours est complet",
+          "Suivi des séances : vos membres enregistrent leurs entraînements, suivent leurs progrès et consultent leur historique",
+          "Contrôle d'accès : QR code dans l'app pour entrer dans la salle — fini les cartes physiques perdues",
+          "Notifications push : prévenez vos membres d'un nouveau cours, d'une modification de planning ou d'une offre promotionnelle",
+          "Programme d'entraînement personnalisé : assignez des programmes à vos membres selon leurs objectifs",
+          "Gestion des abonnements : renouvellement automatique, pause d'abonnement, changement de formule en autonomie",
+          "Espace coach : vos coachs gèrent leurs créneaux, voient leurs inscrits et communiquent avec leurs élèves",
+          "Statistiques de fréquentation : tableau de bord admin avec taux de présence, cours les plus populaires, churn des abonnés",
+        ],
+      },
+      {
+        heading: "App sur mesure vs logiciels de gestion de salle",
+        paragraphs: [
+          "Des logiciels comme Mindbody, Glofox ou Gymmaster proposent des solutions clés en main. Voici pourquoi une app sur mesure peut être plus pertinente pour une salle indépendante :",
+        ],
+        list: [
+          "Mindbody : entre 129€ et 349€/mois — soit 1 548€ à 4 188€/an, sans compter les modules supplémentaires",
+          "Glofox : entre 110€ et 300€/mois selon la taille de la salle — coût récurrent permanent",
+          "App sur mesure : investissement unique entre 1 500€ et 3 000€, hébergement à 10-20€/mois — rentabilisé en 6 à 18 mois",
+          "Votre app, vos couleurs, votre marque : une app branded renforce votre identité et fidélise mieux qu'un outil générique",
+          "Fonctionnalités sur mesure : adaptées exactement à votre offre — CrossFit, yoga, natation, arts martiaux — sans compromis",
+        ],
+      },
+      {
+        heading: "Cas d'usage : salle de sport indépendante",
+        paragraphs: [
+          "Voici ce qu'une app mobile change concrètement pour une salle de 200 à 500 membres :",
+        ],
+        list: [
+          "Réduction des no-shows aux cours collectifs : les rappels automatiques diminuent les absences de 30 à 50%",
+          "Moins d'appels entrants : 80% des demandes (inscription, planning, abonnement) traitées via l'app sans intervention humaine",
+          "Meilleure rétention : les membres qui utilisent l'app sont 2× plus fidèles que ceux qui ne l'utilisent pas",
+          "Nouveau canal de revenus : vente de programmes en ligne, coaching à distance, merchandising — accessible depuis l'app",
+        ],
+      },
+      {
+        heading: "Tarifs et délais",
+        paragraphs: [
+          "Je propose des solutions adaptées à la taille et aux besoins de chaque salle :",
+        ],
+        list: [
+          "App Essentiel — 1 200€ : inscription en ligne, réservation de cours, QR code d'accès, notifications push, espace admin",
+          "App Complète — 2 000€ : tout l'essentiel + suivi des séances, programmes personnalisés, espace coach, statistiques avancées",
+          "Délai de livraison : 4 à 8 semaines selon la formule choisie",
+          "Déploiement iOS et Android inclus, formation à l'espace admin, support 3 mois inclus",
+        ],
+      },
+      {
+        heading: "Demandez votre devis gratuit",
+        paragraphs: [
+          "Je suis développeur freelance basé à Brest, spécialisé en applications mobiles pour les professionnels du sport et du bien-être. Décrivez-moi votre salle, votre offre et vos besoins — je vous envoie un devis détaillé et gratuit sous 48h.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "site-web-artisan-sur-mesure",
+    title: "Site web pour artisan : éviter les constructeurs",
+    description: "Site web pour artisan : pourquoi éviter Wix et les constructeurs gratuits. Ce qu'un site sur mesure apporte en SEO local, devis en ligne et crédibilité. Dès 490€.",
+    date: "2026-05-15",
+    readTime: "6 min",
+    category: "Secteurs",
+    sections: [
+      {
+        paragraphs: [
+          "En tant qu'artisan — plombier, électricien, menuisier, peintre, maçon — votre site web est votre première carte de visite en ligne. Avant d'appeler, vos prospects vous cherchent sur Google. Ce qu'ils trouvent décide s'ils vous contactent ou contactent un concurrent.",
+          "Wix, Jimdo et les autres constructeurs de sites semblent pratiques. Mais ils ont des inconvénients concrets qui nuisent à votre référencement local et à votre image professionnelle.",
+        ],
+      },
+      {
+        heading: "Le problème des constructeurs de sites pour les artisans",
+        paragraphs: [
+          "Les sites créés avec Wix, Jimdo ou les offres packagées des Pages Jaunes ont des limites réelles :",
+        ],
+        list: [
+          "SEO local faible : les sites Wix sont structurellement moins bien référencés que les sites sur mesure — Google le confirme lui-même dans ses recommandations techniques",
+          "Design générique : vos prospects voient immédiatement que c'est un template standard — ça ne donne pas confiance pour confier des travaux chez soi",
+          "Lenteur sur mobile : les constructeurs de sites génèrent du code lourd qui charge lentement — or 70% de vos prospects cherchent sur smartphone",
+          "Abonnement permanent : Wix Pro coûte 17€/mois = 204€/an pour un résultat moyen — sur 5 ans, vous avez payé 1 020€ sans rien posséder",
+          "Domaine avec mention 'propulsé par Wix' sur les formules gratuites — image peu professionnelle",
+          "Impossible de se démarquer : des milliers d'artisans ont le même template que vous",
+        ],
+      },
+      {
+        heading: "Ce qu'un site sur mesure apporte à un artisan",
+        paragraphs: [
+          "Un site développé sur mesure est conçu pour votre activité, votre zone géographique et vos clients cibles :",
+        ],
+        list: [
+          "SEO local optimisé : votre site apparaît en premier sur 'plombier Brest', 'électricien Quimper', etc. — avec les bonnes balises, le bon contenu et une structure technique irréprochable",
+          "Design professionnel unique : photos de vos réalisations mises en valeur, charte graphique qui inspire confiance",
+          "Formulaire de demande de devis en ligne : vos prospects remplissent un formulaire détaillé, vous recevez une demande qualifiée directement par email",
+          "Galerie de réalisations : montrez vos chantiers terminés — avant / après, photos de qualité, descriptions",
+          "Avis clients intégrés : vos avis Google affichés directement sur votre site pour rassurer les nouveaux visiteurs",
+          "Vitesse maximale : site léger qui charge en moins d'une seconde sur mobile — facteur clé pour le référencement et le taux de contact",
+          "Pages par ville : si vous intervenez sur plusieurs communes, une page dédiée par ville pour apparaître sur chaque zone",
+        ],
+      },
+      {
+        heading: "Les pages indispensables d'un site artisan",
+        paragraphs: [
+          "Voici la structure que je recommande pour un site artisan efficace en termes de SEO et de conversion :",
+        ],
+        list: [
+          "Page d'accueil : votre activité, votre zone d'intervention, votre argument principal (rapidité, garantie, prix) et un bouton d'appel ou de devis bien visible",
+          "Page services : une page par type de prestation avec description détaillée — les mots-clés que tapent vos clients",
+          "Page réalisations : galerie photos de vos chantiers avec descriptions — rassure et prouve votre expertise",
+          "Page zones d'intervention : liste des communes où vous intervenez, avec une page dédiée pour les villes principales",
+          "Page contact / devis : formulaire simple avec les infos nécessaires (type de travaux, superficie, délai souhaité)",
+          "Page à propos : votre parcours, vos certifications, vos assurances — humanise votre activité",
+        ],
+      },
+      {
+        heading: "Combien coûte un site web pour artisan ?",
+        paragraphs: [
+          "Je propose des formules adaptées au budget et aux besoins des artisans indépendants :",
+        ],
+        list: [
+          "Site Vitrine — 490€ : 5 pages, formulaire de contact, galerie photos, SEO local, responsive mobile — livraison en 2 semaines",
+          "Site Pro — 790€ : tout le vitrine + formulaire de devis avancé, galerie réalisations avec filtres, pages par ville, blog pour le SEO — livraison en 3 semaines",
+          "Site Complet — 1 200€ : tout le Pro + espace client, suivi de chantier en ligne, devis PDF automatique — livraison en 4 à 5 semaines",
+          "Dans tous les cas : hébergement sur Vercel (rapide et fiable), nom de domaine configuré, formation à la mise à jour du contenu",
+        ],
+      },
+      {
+        heading: "Référencement local : comment apparaître en premier sur Google",
+        paragraphs: [
+          "Le SEO local est la priorité n°1 pour un artisan. Voici ce que je mets en place sur chaque site :",
+        ],
+        list: [
+          "Balises titres et descriptions optimisées pour chaque page avec les mots-clés locaux",
+          "Schema.org LocalBusiness : données structurées que Google utilise pour afficher votre activité, vos horaires et vos avis",
+          "Google Business Profile : je vous aide à créer ou optimiser votre fiche Google — c'est le levier SEO local le plus puissant",
+          "Pages de ville : une page par commune clé dans votre zone d'intervention",
+          "Vitesse de chargement : un site qui charge en moins d'une seconde est favorisé par Google sur mobile",
+        ],
+      },
+      {
+        heading: "Demandez votre devis gratuit",
+        paragraphs: [
+          "Je suis développeur freelance basé à Brest, je crée des sites web pour artisans et commerçants dans toute la Bretagne et en France. Décrivez-moi votre activité, votre zone d'intervention et votre budget — je vous envoie un devis gratuit sous 48h.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "application-mobile-hotel-hebergement",
+    title: "App mobile pour hôtel : guide complet 2026",
+    description: "Application mobile pour hôtel et hébergement : check-in digital, conciergerie, fidélité, room service. Fonctionnalités clés et tarifs 2026. Devis gratuit.",
+    date: "2026-05-15",
+    readTime: "6 min",
+    category: "Secteurs",
+    sections: [
+      {
+        paragraphs: [
+          "Les grandes chaînes hôtelières ont toutes leur application mobile — Hilton, Marriott, Accor. Mais les hôtels indépendants et les maisons d'hôtes peuvent eux aussi bénéficier des mêmes avantages, pour un investissement bien inférieur.",
+          "Une application mobile hôtelière sur mesure améliore l'expérience client, réduit la charge du personnel de réception et crée un canal de communication direct avec vos voyageurs.",
+        ],
+      },
+      {
+        heading: "Fonctionnalités clés d'une app mobile pour hôtel",
+        paragraphs: [
+          "Voici les fonctionnalités les plus impactantes pour un hôtel ou un hébergement touristique :",
+        ],
+        list: [
+          "Check-in digital : vos clients s'enregistrent depuis leur téléphone avant d'arriver — moins d'attente à la réception, meilleure première impression",
+          "Clé digitale : accès à la chambre via l'application — technologie NFC ou QR code selon votre équipement",
+          "Conciergerie digitale : vos clients commandent le room service, réservent le spa ou demandent des serviettes supplémentaires depuis l'app — sans décrocher le téléphone",
+          "Informations pratiques : horaires du petit-déjeuner, règles de l'établissement, restaurants et activités recommandés à proximité",
+          "Messagerie directe : échangez avec vos clients en temps réel — bien plus efficace que les appels entrants",
+          "Programme de fidélité : points cumulés sur chaque séjour, avantages pour les clients réguliers, tarifs préférentiels sur les réservations directes",
+          "Notifications push : rappel de l'heure de check-out, offre de late check-out, promotion sur la prochaine réservation",
+          "Réservation directe : vos clients réservent leur prochain séjour directement depuis l'app — zéro commission Booking.com",
+        ],
+      },
+      {
+        heading: "Réduire sa dépendance à Booking.com et Airbnb",
+        paragraphs: [
+          "Booking.com prend entre 15% et 20% de commission sur chaque réservation. Pour un hôtel qui génère 100 000€ de chiffre d'affaires via Booking, c'est 15 000€ à 20 000€ de commission par an.",
+          "Une application mobile qui fidélise vos clients et les incite à réserver directement peut réduire significativement cette dépendance :",
+        ],
+        list: [
+          "Réservation directe sans commission : votre app permet aux clients de réserver au même prix que sur Booking — mais vous gardez 100% du tarif",
+          "Tarif exclusif app : offrez un avantage (petit-déjeuner offert, surclassement) aux clients qui réservent via l'app — ils ont une raison concrète de le faire",
+          "Programme de fidélité : les points accumulés poussent les clients à revenir chez vous directement plutôt que de passer par une OTA",
+          "Si votre app vous fait passer de 70% de réservations OTA à 50%, sur 100 000€ de CA, vous économisez 3 000€ à 4 000€ de commission par an",
+        ],
+      },
+      {
+        heading: "App sur mesure vs solutions SaaS hôtelières",
+        paragraphs: [
+          "Des solutions comme Alice, Benbria ou Canary Technologies proposent des apps hôtelières en SaaS. Voici la comparaison avec une app sur mesure :",
+        ],
+        list: [
+          "Solutions SaaS : entre 200€ et 600€/mois selon la taille de l'hôtel et les modules choisis — soit 2 400€ à 7 200€/an",
+          "Personnalisation limitée : l'interface ressemble à celle de tous les autres hôtels sur la même plateforme — pas de différenciation",
+          "App sur mesure BreizhApp : investissement unique entre 2 000€ et 4 000€, votre design, vos couleurs, vos fonctionnalités exactes",
+          "ROI : sur 3 ans, une app sur mesure coûte moins cher qu'un abonnement SaaS, tout en offrant une meilleure expérience client",
+        ],
+      },
+      {
+        heading: "Adapté aux hôtels indépendants et maisons d'hôtes",
+        paragraphs: [
+          "Je conçois des solutions adaptées à la taille et au budget de chaque établissement :",
+        ],
+        list: [
+          "Maison d'hôtes / gîte (2 à 5 chambres) — 990€ : informations pratiques, messagerie directe, livre d'or digital, recommandations locales",
+          "Hôtel indépendant (10 à 30 chambres) — 1 800€ : check-in digital, conciergerie, room service, notifications push, réservation directe",
+          "Hôtel boutique ou résidence (30+ chambres) — 3 000€+ : tout + programme de fidélité, clé digitale, tableau de bord multi-chambres, intégration PMS",
+          "Livraison : 4 à 10 semaines selon la formule. Déploiement iOS et Android inclus.",
+        ],
+      },
+      {
+        heading: "Demandez votre devis gratuit",
+        paragraphs: [
+          "Je suis développeur freelance basé à Brest, je crée des applications mobiles pour les professionnels du tourisme et de l'hôtellerie. Décrivez-moi votre établissement, votre nombre de chambres et vos besoins prioritaires — je vous envoie un devis gratuit et détaillé sous 48h.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
