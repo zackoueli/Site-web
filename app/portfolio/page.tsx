@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -58,40 +58,37 @@ const projects = [
 
 function BrowserPreview({ url, color }: { url: string; color: string }) {
   const iframeRef = useRef<HTMLIFrameElement>(null);
-  const [scrolling, setScrolling] = useState(false);
   const animRef = useRef<number | null>(null);
   const scrollPosRef = useRef(0);
+  const pausedRef = useRef(false);
 
   function startScroll() {
-    if (scrolling) return;
-    setScrolling(true);
-    const iframe = iframeRef.current;
-    if (!iframe?.contentWindow) return;
-
+    if (animRef.current) return;
     const maxScroll = 2400;
     const step = () => {
-      if (!iframeRef.current?.contentWindow) return;
-      scrollPosRef.current += 1.2;
-      if (scrollPosRef.current >= maxScroll) scrollPosRef.current = 0;
-      iframeRef.current.contentWindow.scrollTo(0, scrollPosRef.current);
+      if (!pausedRef.current) {
+        if (!iframeRef.current?.contentWindow) return;
+        scrollPosRef.current += 1.2;
+        if (scrollPosRef.current >= maxScroll) scrollPosRef.current = 0;
+        iframeRef.current.contentWindow.scrollTo(0, scrollPosRef.current);
+      }
       animRef.current = requestAnimationFrame(step);
     };
     animRef.current = requestAnimationFrame(step);
   }
 
-  function stopScroll() {
-    setScrolling(false);
-    if (animRef.current) cancelAnimationFrame(animRef.current);
-  }
-
-  useEffect(() => () => { if (animRef.current) cancelAnimationFrame(animRef.current); }, []);
+  useEffect(() => {
+    startScroll();
+    return () => { if (animRef.current) cancelAnimationFrame(animRef.current); };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div
       className="relative w-full brutal-border overflow-hidden"
       style={{ height: 340 }}
-      onMouseEnter={startScroll}
-      onMouseLeave={stopScroll}
+      onMouseEnter={() => { pausedRef.current = true; }}
+      onMouseLeave={() => { pausedRef.current = false; }}
     >
       {/* Browser chrome */}
       <div className="flex items-center gap-2 px-3 py-2 border-b-2 border-[#0A0A0A]" style={{ backgroundColor: color }}>
@@ -117,13 +114,11 @@ function BrowserPreview({ url, color }: { url: string; color: string }) {
       />
 
       {/* Hover overlay hint */}
-      {!scrolling && (
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all pointer-events-none">
-          <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-black text-white text-xs font-bold px-3 py-1.5 brutal-border">
-            Survoler pour défiler ↕
-          </span>
-        </div>
-      )}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-black text-white text-xs font-bold px-3 py-1.5 brutal-border">
+          En pause ⏸
+        </span>
+      </div>
     </div>
   );
 }
