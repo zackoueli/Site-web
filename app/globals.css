@@ -30,10 +30,10 @@ body {
 
 /* Portfolio preview scroll */
 .iframe-scroll-wrapper {
-  transition: transform 8s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: transform 10s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 .preview-zone:hover .iframe-scroll-wrapper {
-  transform: scale(0.378) translateY(var(--scroll-distance)) !important;
+  transform: scale(0.625) translateY(var(--scroll-distance)) !important;
 }
 
 .brutal-btn {
