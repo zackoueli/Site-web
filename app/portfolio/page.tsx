@@ -1,5 +1,4 @@
 "use client";
-import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -57,34 +56,10 @@ const projects = [
 ];
 
 function BrowserPreview({ url, color }: { url: string; color: string }) {
-  const wrapperRef = useRef<HTMLDivElement>(null);
-  const [scale, setScale] = useState(0.5);
-
-  const IFRAME_W = 1280;
-  const IFRAME_H = 3000;
-  const CHROME_H = 36;
-  const CONTAINER_H = 460;
-
-  useEffect(() => {
-    function measure() {
-      if (wrapperRef.current) {
-        const w = wrapperRef.current.offsetWidth;
-        setScale(w / IFRAME_W);
-      }
-    }
-    measure();
-    window.addEventListener("resize", measure);
-    return () => window.removeEventListener("resize", measure);
-  }, []);
-
-  const PREVIEW_H = CONTAINER_H - CHROME_H;
-  const SCALED_IFRAME_H = IFRAME_H * scale;
-  const SCROLL_PX_UNSCALED = Math.round((SCALED_IFRAME_H - PREVIEW_H) / scale);
-
   return (
-    <div ref={wrapperRef} className="preview-zone relative w-full overflow-hidden cursor-ns-resize" style={{ height: CONTAINER_H }}>
+    <div className="preview-zone relative w-full overflow-hidden cursor-ns-resize" style={{ height: 340 }}>
       {/* Browser chrome */}
-      <div className="flex items-center gap-2 px-3 border-b-2 border-[#0A0A0A] relative z-10" style={{ backgroundColor: color, height: CHROME_H }}>
+      <div className="flex items-center gap-2 px-3 py-2 border-b-2 border-[#0A0A0A]" style={{ backgroundColor: color }}>
         <div className="flex gap-1.5">
           <div className="w-3 h-3 rounded-full bg-white opacity-60" />
           <div className="w-3 h-3 rounded-full bg-white opacity-60" />
@@ -95,31 +70,24 @@ function BrowserPreview({ url, color }: { url: string; color: string }) {
         </div>
       </div>
 
-      {/* Preview */}
-      <div style={{ height: PREVIEW_H, overflow: "hidden" }}>
-        <div
-          className="iframe-scroll-wrapper"
+      {/* iframe pleine largeur, réduite via zoom CSS */}
+      <div className="iframe-scroll-wrapper" style={{ ["--scroll-distance" as string]: "-2000px" }}>
+        <iframe
+          src={url}
+          className="border-none pointer-events-none block"
           style={{
+            width: "100%",
+            height: 3000,
+            zoom: 0.5,
             transformOrigin: "top left",
-            transform: `scale(${scale})`,
-            width: IFRAME_W,
-            height: IFRAME_H,
-            ["--scroll-distance" as string]: `-${SCROLL_PX_UNSCALED}px`,
-            ["--iframe-scale" as string]: `${scale}`,
           }}
-        >
-          <iframe
-            src={url}
-            className="border-none pointer-events-none block"
-            style={{ width: IFRAME_W, height: IFRAME_H }}
-            loading="lazy"
-            sandbox="allow-same-origin allow-scripts"
-            title="Aperçu du site"
-          />
-        </div>
+          loading="lazy"
+          sandbox="allow-same-origin allow-scripts"
+          title="Aperçu du site"
+        />
       </div>
 
-      <div className="absolute inset-0 z-20" style={{ top: CHROME_H }} />
+      <div className="absolute inset-0 z-20" style={{ top: 36 }} />
     </div>
   );
 }

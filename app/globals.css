@@ -33,7 +33,7 @@ body {
   transition: transform 10s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 .preview-zone:hover .iframe-scroll-wrapper {
-  transform: scale(var(--iframe-scale, 0.5)) translateY(var(--scroll-distance, 0px)) !important;
+  transform: translateY(var(--scroll-distance, 0px));
 }
 
 .brutal-btn {
