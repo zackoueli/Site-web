@@ -1,14 +1,9 @@
-import type { Metadata } from "next";
+"use client";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-export const metadata: Metadata = {
-  title: "Réalisations — Sites web & applications mobiles | BreizhApp",
-  description:
-    "Découvrez les projets créés par BreizhApp : applications mobiles iOS & Android, boutiques e-commerce, sites web artisans. Développeur freelance à Brest.",
-  alternates: { canonical: "https://breizhapp.tech/portfolio" },
-};
+import { ExternalLink, ArrowRight } from "lucide-react";
 
 const projects = [
   {
@@ -18,11 +13,14 @@ const projects = [
     category: "App mobile",
     type: "Application iOS & Android",
     color: "#F25C1F",
+    textColor: "#FFFBF0",
     badge: "bg-[#F25C1F] text-white",
     icon: "🍕",
     description:
       "Application mobile iOS pour pizzeria artisanale. Flux d'inscription 7 étapes, préférences, géolocalisation et promo de bienvenue.",
     tags: ["React Native", "iOS", "Android", "UX"],
+    previewUrl: null,
+    externalUrl: null,
   },
   {
     slug: "histoire-eternelle",
@@ -31,11 +29,14 @@ const projects = [
     category: "E-commerce",
     type: "Boutique en ligne",
     color: "#C0622D",
+    textColor: "#FFFBF0",
     badge: "bg-[#C0622D] text-white",
     icon: "💍",
     description:
       "Boutique e-commerce complète pour L'Atelier d'Anaïs. Catalogue bijoux, espace client, paiement Stripe, avis vérifiés et panel admin Firebase.",
     tags: ["Next.js", "Firebase", "Stripe", "E-commerce"],
+    previewUrl: "https://www.histoire-eternelle-l-atelier.fr/",
+    externalUrl: "https://www.histoire-eternelle-l-atelier.fr/",
   },
   {
     slug: "demo-paysagiste",
@@ -44,19 +45,133 @@ const projects = [
     category: "Site web",
     type: "Vitrine professionnelle",
     color: "#2D5016",
+    textColor: "#FFFBF0",
     badge: "bg-[#2D5016] text-white",
     icon: "🌿",
     description:
       "Site vitrine pour paysagiste avec galerie réalisations, demande de devis en ligne et back-office Firebase pour gérer les contenus sans développeur.",
     tags: ["Next.js", "Firebase", "SEO local", "Artisan"],
+    previewUrl: "https://demo.paysagiste.breizhapp.tech/",
+    externalUrl: "https://demo.paysagiste.breizhapp.tech/",
   },
 ];
+
+function BrowserPreview({ url, color }: { url: string; color: string }) {
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const [scrolling, setScrolling] = useState(false);
+  const animRef = useRef<number | null>(null);
+  const scrollPosRef = useRef(0);
+
+  function startScroll() {
+    if (scrolling) return;
+    setScrolling(true);
+    const iframe = iframeRef.current;
+    if (!iframe?.contentWindow) return;
+
+    const maxScroll = 2400;
+    const step = () => {
+      if (!iframeRef.current?.contentWindow) return;
+      scrollPosRef.current += 1.2;
+      if (scrollPosRef.current >= maxScroll) scrollPosRef.current = 0;
+      iframeRef.current.contentWindow.scrollTo(0, scrollPosRef.current);
+      animRef.current = requestAnimationFrame(step);
+    };
+    animRef.current = requestAnimationFrame(step);
+  }
+
+  function stopScroll() {
+    setScrolling(false);
+    if (animRef.current) cancelAnimationFrame(animRef.current);
+  }
+
+  useEffect(() => () => { if (animRef.current) cancelAnimationFrame(animRef.current); }, []);
+
+  return (
+    <div
+      className="relative w-full brutal-border overflow-hidden"
+      style={{ height: 340 }}
+      onMouseEnter={startScroll}
+      onMouseLeave={stopScroll}
+    >
+      {/* Browser chrome */}
+      <div className="flex items-center gap-2 px-3 py-2 border-b-2 border-[#0A0A0A]" style={{ backgroundColor: color }}>
+        <div className="flex gap-1.5">
+          <div className="w-3 h-3 rounded-full bg-white opacity-60" />
+          <div className="w-3 h-3 rounded-full bg-white opacity-60" />
+          <div className="w-3 h-3 rounded-full bg-white opacity-60" />
+        </div>
+        <div className="flex-1 bg-white bg-opacity-20 rounded-sm px-3 py-0.5 text-xs font-mono text-white opacity-80 truncate">
+          {url.replace("https://", "")}
+        </div>
+      </div>
+
+      {/* Iframe */}
+      <iframe
+        ref={iframeRef}
+        src={url}
+        className="w-full border-none pointer-events-none"
+        style={{ height: 900, transform: "scale(0.378)", transformOrigin: "top left", width: "264.5%", marginBottom: -572 }}
+        loading="lazy"
+        sandbox="allow-same-origin allow-scripts"
+        title="Aperçu du site"
+      />
+
+      {/* Hover overlay hint */}
+      {!scrolling && (
+        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all pointer-events-none">
+          <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-black text-white text-xs font-bold px-3 py-1.5 brutal-border">
+            Survoler pour défiler ↕
+          </span>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function PhonePreview({ color }: { color: string }) {
+  return (
+    <div className="relative w-full flex items-center justify-center border-b-2 border-[#0A0A0A]" style={{ height: 340, backgroundColor: color }}>
+      {/* Phone mockup */}
+      <div
+        className="bg-[#0A0A0A] brutal-border relative"
+        style={{ width: 130, height: 270, borderRadius: "1.8rem", padding: "8px 6px" }}
+      >
+        <div className="absolute top-2 left-1/2 -translate-x-1/2 w-12 h-3 bg-[#0A0A0A] z-10 flex items-center justify-center">
+          <div className="w-6 h-1.5 rounded-full bg-[#1a1a1a] border border-[#333]" />
+        </div>
+        <div className="w-full h-full bg-[#FFFBF0] overflow-hidden flex flex-col" style={{ borderRadius: "1.4rem" }}>
+          <div className="px-3 pt-5 pb-2" style={{ backgroundColor: color }}>
+            <p className="text-white text-[7px] font-bold mono opacity-70">FORNO PIZZERIA</p>
+            <p className="text-white font-bold text-[9px] mt-0.5">Bonjour 👋</p>
+          </div>
+          <div className="flex-1 p-2 flex flex-col gap-1.5 overflow-hidden">
+            {["🍕 Margherita — 12,90€", "🍕 4 Fromages — 14,50€", "🍕 Reine — 13,90€"].map((item) => (
+              <div key={item} className="brutal-border bg-white p-1.5 text-[7px] font-bold">{item}</div>
+            ))}
+            <div className="brutal-border bg-[#0A0A0A] text-white p-1 text-center text-[7px] font-bold mt-auto">Commander →</div>
+          </div>
+          <div className="border-t-2 border-black flex justify-around py-1.5 bg-white">
+            {["🏠", "🍕", "🛒", "👤"].map((e) => <span key={e} className="text-[10px]">{e}</span>)}
+          </div>
+        </div>
+        <div className="absolute -right-[3px] top-14 w-[3px] h-8 bg-[#0A0A0A] brutal-border rounded-sm" />
+        <div className="absolute -left-[3px] top-12 w-[3px] h-5 bg-[#0A0A0A] brutal-border rounded-sm" />
+        <div className="absolute -left-[3px] top-20 w-[3px] h-5 bg-[#0A0A0A] brutal-border rounded-sm" />
+      </div>
+
+      <div className="absolute bottom-3 right-3 bg-white brutal-border px-2 py-1 text-[10px] font-bold mono">
+        iOS & Android ✦
+      </div>
+    </div>
+  );
+}
 
 export default function PortfolioPage() {
   return (
     <>
       <Navbar />
       <main className="min-h-screen bg-[#FFFBF0]">
+
         {/* Header */}
         <section className="border-b-[3px] border-[#0A0A0A] py-20 px-4">
           <div className="max-w-5xl mx-auto">
@@ -72,68 +187,81 @@ export default function PortfolioPage() {
           </div>
         </section>
 
-        {/* Projects grid */}
-        <section className="max-w-5xl mx-auto px-4 py-16">
-          <div className="grid md:grid-cols-2 gap-8">
-            {projects.map((p) => (
-              <Link
-                key={p.slug}
-                href={`/portfolio/${p.slug}`}
-                className="brutal-border bg-white block hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[8px_8px_0_#0A0A0A] transition-all group overflow-hidden"
-              >
-                {/* Color banner */}
-                <div
-                  className="h-32 flex items-center justify-center text-6xl border-b-[3px] border-[#0A0A0A]"
-                  style={{ backgroundColor: p.color }}
-                >
-                  {p.icon}
-                </div>
+        {/* Projects */}
+        <section className="max-w-5xl mx-auto px-4 py-16 flex flex-col gap-12">
+          {projects.map((p) => (
+            <div
+              key={p.slug}
+              className="brutal-border bg-white overflow-hidden group"
+            >
+              {/* Preview */}
+              {p.previewUrl ? (
+                <BrowserPreview url={p.previewUrl} color={p.color} />
+              ) : (
+                <PhonePreview color={p.color} />
+              )}
 
-                <div className="p-6">
-                  <div className="flex items-center gap-2 mb-3 flex-wrap">
-                    <span className={`text-xs font-bold px-2 py-1 brutal-border ${p.badge}`}>
-                      {p.category.toUpperCase()}
-                    </span>
-                    <span className="text-xs font-bold mono text-gray-400">
-                      {p.type}
-                    </span>
-                  </div>
-
-                  <h2 className="text-3xl font-black mb-1">{p.name}</h2>
-                  <p className="text-gray-500 font-medium mb-4 italic">{p.tagline}</p>
-                  <p className="text-gray-700 text-sm leading-relaxed mb-6">{p.description}</p>
-
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {p.tags.map((t) => (
-                      <span key={t} className="brutal-border bg-[#FFFBF0] text-xs font-bold mono px-2 py-1">
-                        {t}
+              {/* Info */}
+              <div className="p-6 md:p-8">
+                <div className="flex items-start justify-between gap-4 flex-wrap mb-4">
+                  <div>
+                    <div className="flex items-center gap-2 mb-2 flex-wrap">
+                      <span className={`text-xs font-bold px-2 py-1 brutal-border ${p.badge}`}>
+                        {p.category.toUpperCase()}
                       </span>
-                    ))}
+                      <span className="text-xs font-bold mono text-gray-400">{p.type}</span>
+                    </div>
+                    <h2 className="text-3xl font-black mb-1">{p.name}</h2>
+                    <p className="text-gray-500 font-medium italic">{p.tagline}</p>
                   </div>
-
-                  <div className="flex items-center gap-2 font-bold text-sm group-hover:text-[#F25C1F] transition-colors">
-                    Voir le détail →
-                  </div>
+                  {p.externalUrl && (
+                    <a
+                      href={p.externalUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="brutal-border px-4 py-2 text-sm font-bold inline-flex items-center gap-2 hover:bg-[#FFE234] transition-colors shrink-0"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Voir le site <ExternalLink size={13} />
+                    </a>
+                  )}
                 </div>
-              </Link>
-            ))}
 
-            {/* Coming soon card */}
-            <div className="brutal-border bg-[#0A0A0A] text-[#FFFBF0] flex flex-col items-center justify-center p-12 text-center min-h-[300px]">
-              <p className="mono text-xs text-gray-500 mb-4">// en cours</p>
-              <div className="text-4xl mb-4">🔨</div>
-              <h3 className="text-xl font-black mb-2">Prochain projet</h3>
-              <p className="text-gray-500 text-sm">
-                D'autres réalisations arrivent bientôt.
-                Contactez-moi pour discuter du vôtre.
-              </p>
-              <a
-                href="/#contact"
-                className="mt-6 brutal-border bg-[#FFE234] text-[#0A0A0A] px-4 py-2 text-sm font-bold hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[4px_4px_0_#FFE234] transition-all"
-              >
-                Démarrer mon projet
-              </a>
+                <p className="text-gray-700 text-sm leading-relaxed mb-5">{p.description}</p>
+
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {p.tags.map((t) => (
+                    <span key={t} className="brutal-border bg-[#FFFBF0] text-xs font-bold mono px-2 py-1">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+
+                <Link
+                  href={`/portfolio/${p.slug}`}
+                  className="inline-flex items-center gap-2 font-bold text-sm brutal-border px-4 py-2 hover:bg-[#0A0A0A] hover:text-[#FFFBF0] transition-colors"
+                >
+                  Voir l'étude de cas <ArrowRight size={14} />
+                </Link>
+              </div>
             </div>
+          ))}
+
+          {/* Coming soon */}
+          <div className="brutal-border bg-[#0A0A0A] text-[#FFFBF0] flex flex-col items-center justify-center p-16 text-center">
+            <p className="mono text-xs text-gray-500 mb-4">// en cours</p>
+            <div className="text-4xl mb-4">🔨</div>
+            <h3 className="text-xl font-black mb-2">Prochain projet</h3>
+            <p className="text-gray-500 text-sm mb-6">
+              D'autres réalisations arrivent bientôt.
+              Contactez-moi pour discuter du vôtre.
+            </p>
+            <a
+              href="/#contact"
+              className="brutal-border bg-[#FFE234] text-[#0A0A0A] px-5 py-2.5 text-sm font-bold hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[4px_4px_0_#FFE234] transition-all"
+            >
+              Démarrer mon projet
+            </a>
           </div>
         </section>
       </main>
