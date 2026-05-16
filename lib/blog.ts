@@ -2434,6 +2434,295 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "developpeur-freelance-quimper",
+    title: "Développeur freelance à Quimper : web et mobile",
+    description: "Développeur freelance à Quimper : applications mobiles iOS & Android, sites web et plateformes digitales sur mesure. Devis gratuit sous 48h, livraison en Bretagne.",
+    date: "2026-05-16",
+    readTime: "5 min",
+    category: "Local",
+    sections: [
+      {
+        paragraphs: [
+          "Vous cherchez un développeur freelance à Quimper pour créer votre application mobile, votre site web ou votre plateforme digitale ? Je suis basé en Bretagne et j'interviens régulièrement dans le Finistère Sud — Quimper, Concarneau, Pont-l'Abbé, Douarnenez.",
+          "Devis gratuit sous 48h, développement sur mesure, livraison clé en main.",
+        ],
+      },
+      {
+        heading: "Ce que je développe pour les entreprises de Quimper",
+        paragraphs: [
+          "Je crée trois types de projets digitaux sur mesure pour les artisans, commerçants et entrepreneurs quimpérois :",
+        ],
+        list: [
+          "Applications mobiles iOS & Android : app de commande pour restaurant, app de réservation pour salon, app de fidélité pour commerce — disponible sur l'App Store et Google Play",
+          "Sites web sur mesure : vitrine professionnelle, site avec formulaire de devis, blog SEO — développé avec Next.js pour des performances maximales",
+          "Plateformes digitales : espace client sécurisé, back-office admin, outil de gestion interne — sur mesure selon votre activité",
+        ],
+      },
+      {
+        heading: "Pourquoi choisir un développeur local en Bretagne ?",
+        paragraphs: [
+          "Travailler avec un développeur basé en Bretagne plutôt qu'une agence parisienne ou un prestataire à l'étranger a des avantages concrets :",
+        ],
+        list: [
+          "Même fuseau horaire, mêmes disponibilités : on peut se parler facilement, planifier des visioconférences sans décalage",
+          "Connaissance du tissu économique local : je comprends les enjeux des commerces bretons, la saisonnalité touristique, les spécificités du marché local",
+          "Interlocuteur unique : pas de chef de projet intermédiaire, pas de sous-traitance — je développe votre projet moi-même",
+          "Tarifs freelance : sans les frais généraux d'une agence (locaux, commerciaux, managers), je peux proposer des tarifs compétitifs avec une qualité d'agence",
+          "Réactivité : un message, une réponse dans la journée — pas de ticket de support qui attend 48h",
+        ],
+      },
+      {
+        heading: "Tarifs pour les entreprises de Quimper",
+        paragraphs: [
+          "Mes tarifs sont transparents et identiques quelle que soit votre localisation en Bretagne :",
+        ],
+        list: [
+          "Site vitrine sur mesure : à partir de 490€ — livraison en 2 à 3 semaines",
+          "Application mobile iOS & Android : à partir de 790€ — livraison en 4 à 8 semaines",
+          "Plateforme digitale avec back-office : à partir de 2 000€ — livraison en 6 à 12 semaines",
+          "Devis gratuit et détaillé sous 48h pour tout projet",
+          "Paiement en 2 fois : 30% à la commande, 70% à la livraison",
+        ],
+      },
+      {
+        heading: "Comment se passe un projet à distance ?",
+        paragraphs: [
+          "100% des projets se déroulent à distance, avec des points réguliers en visioconférence. Voici comment ça fonctionne :",
+        ],
+        list: [
+          "Brief initial : on se retrouve en visio 30 à 60 minutes pour définir votre projet, vos besoins et vos objectifs",
+          "Devis détaillé : je vous envoie un devis avec le détail des fonctionnalités, le tarif et le planning prévisionnel",
+          "Développement : je code votre projet et vous partage des versions intermédiaires à valider",
+          "Livraison : mise en ligne, formation à la prise en main, support post-livraison inclus",
+        ],
+      },
+      {
+        heading: "Demandez votre devis gratuit",
+        paragraphs: [
+          "Vous êtes à Quimper ou dans le Finistère Sud et vous avez un projet digital ? Contactez-moi par email ou via le formulaire de contact. Je vous réponds sous 48h avec une proposition concrète adaptée à votre budget.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "developpeur-freelance-rennes",
+    title: "Développeur freelance à Rennes : web et mobile",
+    description: "Développeur freelance à Rennes : applications mobiles iOS & Android, sites web et plateformes sur mesure. Basé en Bretagne, devis gratuit sous 48h.",
+    date: "2026-05-16",
+    readTime: "5 min",
+    category: "Local",
+    sections: [
+      {
+        paragraphs: [
+          "Vous cherchez un développeur freelance à Rennes pour votre projet d'application mobile, de site web ou de plateforme digitale ? Je suis développeur indépendant basé en Bretagne, et j'accompagne des entreprises rennaises dans leur transformation digitale.",
+          "Devis gratuit sous 48h, développement sur mesure, interlocuteur unique du brief à la livraison.",
+        ],
+      },
+      {
+        heading: "Mes services pour les entreprises rennaises",
+        paragraphs: [
+          "Je propose trois types de développement sur mesure pour les startups, PME et indépendants de Rennes :",
+        ],
+        list: [
+          "Applications mobiles iOS & Android : de l'idée au déploiement sur les stores — React Native pour une app disponible sur iPhone et Android avec une seule codebase",
+          "Sites web sur mesure : vitrine professionnelle, e-commerce, landing page — développé avec Next.js pour des scores SEO et des performances maximales",
+          "Plateformes digitales : SaaS, espace client, back-office multi-rôles, outil de gestion interne — adapté aux besoins spécifiques de votre activité",
+        ],
+      },
+      {
+        heading: "Rennes, capitale bretonne du numérique",
+        paragraphs: [
+          "Rennes est la 5ème métropole française et abrite un écosystème tech dynamique : startups, scale-ups, grands groupes et PME innovantes. La concurrence pour attirer et fidéliser les clients est forte — un digital de qualité fait la différence.",
+        ],
+        list: [
+          "Startups rennaises : je vous aide à passer du MVP no-code à une application sur mesure scalable",
+          "Commerces et restaurants : app de fidélité, commande en ligne, réservation — pour concurrencer les grandes chaînes avec les mêmes outils",
+          "Artisans et prestataires : site vitrine SEO optimisé pour apparaître en premier sur Google Rennes",
+          "Associations et structures publiques : plateforme d'inscription, espace adhérent, gestion des événements",
+        ],
+      },
+      {
+        heading: "Freelance vs agence web à Rennes : le vrai comparatif",
+        paragraphs: [
+          "Rennes compte de nombreuses agences web. Voici pourquoi travailler directement avec un développeur freelance peut être plus avantageux :",
+        ],
+        list: [
+          "Tarif 2 à 3× inférieur à une agence : pas de frais généraux, pas de commercial, pas de chef de projet — vous payez uniquement le développement",
+          "Interlocuteur unique : vous travaillez directement avec le développeur qui code votre projet — pas de déperdition d'information",
+          "Réactivité : un message le matin, une réponse dans la journée — pas de ticket de support",
+          "Flexibilité : je m'adapte à vos contraintes de budget et de planning, pas l'inverse",
+          "Qualité identique : même stack technologique (Next.js, React Native), mêmes standards de code que les meilleures agences",
+        ],
+      },
+      {
+        heading: "Tarifs et délais",
+        paragraphs: [
+          "Mes tarifs sont transparents, sans surprise :",
+        ],
+        list: [
+          "Site vitrine sur mesure : à partir de 490€ — livraison en 2 à 3 semaines",
+          "Site e-commerce sur mesure : à partir de 1 500€ — livraison en 4 à 6 semaines",
+          "Application mobile iOS & Android : à partir de 790€ — livraison en 4 à 8 semaines",
+          "Plateforme digitale avec back-office : à partir de 2 000€ — livraison en 6 à 12 semaines",
+          "Devis gratuit et détaillé sous 48h — paiement en 2 fois (30% à la commande)",
+        ],
+      },
+      {
+        heading: "Demandez votre devis gratuit",
+        paragraphs: [
+          "Vous avez un projet digital à Rennes ou en Ille-et-Vilaine ? Contactez-moi par email ou via le formulaire de contact. Je vous réponds sous 48h avec une proposition concrète et un tarif transparent.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "creation-site-web-brest",
+    title: "Création site web à Brest : tarifs 2026",
+    description: "Création site web à Brest : vitrine, e-commerce, plateforme sur mesure. Développeur freelance local, SEO optimisé, tarifs dès 490€. Devis gratuit sous 48h.",
+    date: "2026-05-16",
+    readTime: "5 min",
+    category: "Local",
+    sections: [
+      {
+        paragraphs: [
+          "Vous cherchez à créer un site web à Brest ? Que ce soit une vitrine professionnelle, une boutique en ligne ou une plateforme avec espace client, je développe des sites sur mesure pour les entreprises brestoises depuis plusieurs années.",
+          "Développeur freelance basé à Brest, je suis votre interlocuteur unique du brief à la mise en ligne.",
+        ],
+      },
+      {
+        heading: "Pourquoi créer un site web sur mesure à Brest ?",
+        paragraphs: [
+          "Brest est une ville dynamique avec un tissu économique varié : commerce, restauration, artisanat, tourisme, maritime, tech. Quelle que soit votre activité, un site web professionnel est indispensable pour :",
+        ],
+        list: [
+          "Apparaître sur Google quand vos prospects cherchent votre activité à Brest",
+          "Montrer votre sérieux et votre professionnalisme avant même le premier contact",
+          "Recevoir des demandes de devis 24h/24 sans décrocher le téléphone",
+          "Concurrencer les grandes enseignes avec un outil digital de même qualité",
+          "Fidéliser vos clients avec un blog, des actualités ou un espace client dédié",
+        ],
+      },
+      {
+        heading: "Types de sites web que je crée à Brest",
+        paragraphs: [
+          "Je développe tous types de projets web sur mesure pour les entreprises brestoises :",
+        ],
+        list: [
+          "Site vitrine : présentation de votre activité, vos services, vos réalisations et un formulaire de contact — à partir de 490€",
+          "Site avec blog : vitrine + blog SEO pour attirer des clients via Google — à partir de 790€",
+          "Site e-commerce : boutique en ligne complète avec catalogue, panier et paiement Stripe — à partir de 1 500€",
+          "Plateforme web : espace client, back-office admin, outil de gestion — à partir de 2 000€",
+          "Landing page : page unique pour une offre ou une campagne marketing — à partir de 390€",
+        ],
+      },
+      {
+        heading: "Le référencement local à Brest : comment apparaître en premier",
+        paragraphs: [
+          "Le SEO local est crucial pour les commerces et prestataires brestois. Voici ce que j'intègre sur chaque site :",
+        ],
+        list: [
+          "Balises SEO optimisées pour Brest et ses quartiers (Recouvrance, Saint-Marc, Lambézellec, etc.)",
+          "Google Business Profile : je vous aide à créer ou optimiser votre fiche Google Maps",
+          "Schema.org LocalBusiness : données structurées pour que Google affiche correctement votre adresse, horaires et avis",
+          "Vitesse de chargement : un site qui charge en moins d'une seconde est favorisé par Google — je vise systématiquement 95+/100 sur Lighthouse",
+          "Pages de quartier ou de secteur si vous couvrez plusieurs zones du Finistère",
+        ],
+      },
+      {
+        heading: "Tarifs pour les entreprises brestoises",
+        paragraphs: [
+          "Mes tarifs sont transparents, sans frais cachés ni abonnement mensuel obligatoire :",
+        ],
+        list: [
+          "Landing page — 390€ : une page, un objectif, un bouton d'action — idéal pour tester une offre",
+          "Site vitrine — 490€ : 5 pages, formulaire de contact, SEO local, responsive — livraison en 2 semaines",
+          "Site pro avec blog — 790€ : vitrine + blog, galerie réalisations, pages de ville — livraison en 3 semaines",
+          "E-commerce — à partir de 1 500€ : boutique complète, paiement Stripe, admin — livraison en 4 à 6 semaines",
+          "Plateforme — à partir de 2 000€ : espace client, back-office, API — livraison en 6 à 10 semaines",
+        ],
+      },
+      {
+        heading: "Demandez votre devis gratuit à Brest",
+        paragraphs: [
+          "Je suis basé à Brest et je réponds personnellement à chaque demande. Décrivez-moi votre projet — votre activité, ce que vous voulez que votre site fasse, votre budget indicatif — et je vous envoie un devis détaillé et gratuit sous 48h.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "developpeur-application-mobile-bretagne",
+    title: "Développeur application mobile en Bretagne",
+    description: "Développeur application mobile en Bretagne : iOS & Android sur mesure, sites web et plateformes digitales. Basé à Brest, intervention dans tout le Finistère et la Bretagne.",
+    date: "2026-05-16",
+    readTime: "5 min",
+    category: "Local",
+    sections: [
+      {
+        paragraphs: [
+          "Vous cherchez un développeur d'application mobile en Bretagne ? Je suis basé à Brest et j'accompagne des entreprises dans tout le Finistère, le Morbihan, les Côtes-d'Armor et l'Ille-et-Vilaine dans la création de leurs outils digitaux.",
+          "Applications mobiles iOS & Android, sites web sur mesure, plateformes avec back-office — devis gratuit sous 48h.",
+        ],
+      },
+      {
+        heading: "Pourquoi la Bretagne a besoin de développeurs locaux",
+        paragraphs: [
+          "La Bretagne a un tissu économique riche et diversifié : agriculture, agroalimentaire, tourisme, commerce, artisanat, pêche, tech. Ces secteurs ont des besoins digitaux spécifiques que les agences parisiennes ou les prestataires étrangers ne comprennent pas toujours.",
+        ],
+        list: [
+          "Saisonnalité touristique : une app de réservation pour un hôtel breton doit gérer les pics de juillet-août et les creux hivernaux",
+          "Commerce de proximité : les applications de fidélité et de commande locale répondent à des habitudes de consommation spécifiques au marché breton",
+          "Agriculture et circuits courts : les apps de paniers, d'abonnements et de vente directe sont particulièrement adaptées au marché breton",
+          "Maritime et nautisme : des besoins très spécifiques (gestion de ports, applications de navigation, clubs de voile) que je comprends en tant que breton",
+        ],
+      },
+      {
+        heading: "Zones d'intervention en Bretagne",
+        paragraphs: [
+          "J'interviens dans toute la Bretagne, avec une présence renforcée dans le Finistère :",
+        ],
+        list: [
+          "Finistère (29) : Brest, Quimper, Morlaix, Landerneau, Douarnenez, Concarneau, Quimperlé, Pont-l'Abbé",
+          "Morbihan (56) : Lorient, Vannes, Auray, Pontivy, Ploërmel",
+          "Côtes-d'Armor (22) : Saint-Brieuc, Lannion, Dinan, Guingamp",
+          "Ille-et-Vilaine (35) : Rennes, Saint-Malo, Fougères, Vitré",
+          "Toute la France : 100% des projets se déroulent à distance — la localisation n'est pas une contrainte",
+        ],
+      },
+      {
+        heading: "Applications mobiles pour les secteurs bretons",
+        paragraphs: [
+          "Voici des exemples de projets adaptés aux spécificités de l'économie bretonne :",
+        ],
+        list: [
+          "App restaurant / crêperie : commande en ligne, réservation, programme de fidélité — pour concurrencer les plateformes de livraison sans leur payer de commission",
+          "App maraîcher / producteur local : paniers hebdomadaires, abonnements, points de retrait, paiement en ligne — développement des circuits courts",
+          "App hôtel / camping / gîte : réservation directe, conciergerie digitale, notifications — pour réduire la dépendance à Booking.com",
+          "App artisan / prestataire : prise de rendez-vous, devis en ligne, suivi de chantier — pour les plombiers, électriciens, menuisiers du Finistère",
+          "App nautisme / club de voile : inscription, réservation de bateaux, actualités du club, gestion des licences",
+        ],
+      },
+      {
+        heading: "Tarifs et délais",
+        paragraphs: [
+          "Mes tarifs sont identiques pour toute la Bretagne, transparents et sans surprise :",
+        ],
+        list: [
+          "Site vitrine sur mesure : à partir de 490€ — livraison en 2 à 3 semaines",
+          "Application mobile iOS & Android : à partir de 790€ — livraison en 4 à 8 semaines",
+          "Plateforme digitale avec back-office : à partir de 2 000€ — livraison en 6 à 12 semaines",
+          "Devis gratuit et détaillé sous 48h — paiement en 2 fois (30% à la commande, 70% à la livraison)",
+        ],
+      },
+      {
+        heading: "Demandez votre devis gratuit",
+        paragraphs: [
+          "Vous avez un projet digital en Bretagne ? Contactez-moi par email ou via le formulaire de contact. Je vous réponds sous 48h avec une proposition concrète, un tarif transparent et un planning réaliste.",
+          "Basé à Brest, je connais la Bretagne et ses besoins. Parlons de votre projet.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {

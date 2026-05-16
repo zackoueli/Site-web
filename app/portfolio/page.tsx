@@ -4,9 +4,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Portfolio — Réalisations applications mobiles | BreizhApp",
+  title: "Réalisations — Sites web & applications mobiles | BreizhApp",
   description:
-    "Découvrez les applications mobiles iOS & Android créées par BreizhApp : restauration, e-commerce, artisans. Développeur freelance à Brest.",
+    "Découvrez les projets créés par BreizhApp : applications mobiles iOS & Android, boutiques e-commerce, sites web artisans. Développeur freelance à Brest.",
   alternates: { canonical: "https://breizhapp.tech/portfolio" },
 };
 
@@ -15,14 +15,40 @@ const projects = [
     slug: "forno-pizzeria",
     name: "Forno",
     tagline: "La vraie pizza, livrée chaude.",
-    category: "Restauration",
-    screens: 7,
+    category: "App mobile",
+    type: "Application iOS & Android",
     color: "#F25C1F",
     badge: "bg-[#F25C1F] text-white",
     icon: "🍕",
     description:
       "Application mobile iOS pour pizzeria artisanale. Flux d'inscription 7 étapes, préférences, géolocalisation et promo de bienvenue.",
     tags: ["React Native", "iOS", "Android", "UX"],
+  },
+  {
+    slug: "histoire-eternelle",
+    name: "Histoire Eternelle",
+    tagline: "Bijoux artisanaux façonnés à la main.",
+    category: "E-commerce",
+    type: "Boutique en ligne",
+    color: "#C0622D",
+    badge: "bg-[#C0622D] text-white",
+    icon: "💍",
+    description:
+      "Boutique e-commerce complète pour L'Atelier d'Anaïs. Catalogue bijoux, espace client, paiement Stripe, avis vérifiés et panel admin Firebase.",
+    tags: ["Next.js", "Firebase", "Stripe", "E-commerce"],
+  },
+  {
+    slug: "demo-paysagiste",
+    name: "Demo Paysagiste",
+    tagline: "Votre jardin entre de bonnes mains.",
+    category: "Site web",
+    type: "Vitrine professionnelle",
+    color: "#2D5016",
+    badge: "bg-[#2D5016] text-white",
+    icon: "🌿",
+    description:
+      "Site vitrine pour paysagiste avec galerie réalisations, demande de devis en ligne et back-office Firebase pour gérer les contenus sans développeur.",
+    tags: ["Next.js", "Firebase", "SEO local", "Artisan"],
   },
 ];
 
@@ -40,8 +66,8 @@ export default function PortfolioPage() {
               <span className="bg-[#F25C1F] text-white px-2 brutal-border">projets</span>
             </h1>
             <p className="text-lg text-gray-600 max-w-xl">
-              Applications mobiles iOS & Android créées sur mesure pour des restaurateurs,
-              artisans et commerçants.
+              Applications mobiles, boutiques e-commerce et sites web créés sur mesure
+              pour des restaurateurs, artisans et commerçants.
             </p>
           </div>
         </section>
@@ -64,12 +90,12 @@ export default function PortfolioPage() {
                 </div>
 
                 <div className="p-6">
-                  <div className="flex items-center gap-2 mb-3">
+                  <div className="flex items-center gap-2 mb-3 flex-wrap">
                     <span className={`text-xs font-bold px-2 py-1 brutal-border ${p.badge}`}>
                       {p.category.toUpperCase()}
                     </span>
                     <span className="text-xs font-bold mono text-gray-400">
-                      {p.screens} écrans
+                      {p.type}
                     </span>
                   </div>
 
