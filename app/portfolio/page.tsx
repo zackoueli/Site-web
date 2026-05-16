@@ -1,5 +1,5 @@
 "use client";
-
+import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -57,53 +57,55 @@ const projects = [
 ];
 
 function BrowserPreview({ url, color }: { url: string; color: string }) {
-  // L'iframe simule un écran desktop 1280px de large
-  // On la réduit à ~800px de wide (conteneur max ~800px dans la page)
-  // scale = 800/1280 = 0.625
-  // Hauteur iframe : 3000px → après scale = 1875px visibles potentiels
-  // Conteneur visible : 380px (chrome 36px + preview 344px)
-  // Scroll disponible : 1875 - 344 = 1531px → translateY -1531px en espace scalé
-  // En espace non-scalé (pour CSS var) : -1531 / 0.625 = -2450px
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const [scale, setScale] = useState(0.5);
+
   const IFRAME_W = 1280;
   const IFRAME_H = 3000;
-  const SCALE = 0.625;
   const CHROME_H = 36;
-  const CONTAINER_H = 380;
-  const PREVIEW_H = CONTAINER_H - CHROME_H; // 344px visibles
-  const SCALED_IFRAME_H = IFRAME_H * SCALE; // 1875px
-  const SCROLL_PX_SCALED = SCALED_IFRAME_H - PREVIEW_H; // 1531px
-  const SCROLL_PX_UNSCALED = Math.round(SCROLL_PX_SCALED / SCALE); // 2450px
+  const CONTAINER_H = 460;
+
+  useEffect(() => {
+    function measure() {
+      if (wrapperRef.current) {
+        const w = wrapperRef.current.offsetWidth;
+        setScale(w / IFRAME_W);
+      }
+    }
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, []);
+
+  const PREVIEW_H = CONTAINER_H - CHROME_H;
+  const SCALED_IFRAME_H = IFRAME_H * scale;
+  const SCROLL_PX_UNSCALED = Math.round((SCALED_IFRAME_H - PREVIEW_H) / scale);
 
   return (
-    <div
-      className="preview-zone relative w-full overflow-hidden cursor-ns-resize"
-      style={{ height: CONTAINER_H }}
-    >
+    <div ref={wrapperRef} className="preview-zone relative w-full overflow-hidden cursor-ns-resize" style={{ height: CONTAINER_H }}>
       {/* Browser chrome */}
-      <div
-        className="flex items-center gap-2 px-3 py-2 border-b-2 border-[#0A0A0A] relative z-10"
-        style={{ backgroundColor: color, height: CHROME_H }}
-      >
+      <div className="flex items-center gap-2 px-3 border-b-2 border-[#0A0A0A] relative z-10" style={{ backgroundColor: color, height: CHROME_H }}>
         <div className="flex gap-1.5">
           <div className="w-3 h-3 rounded-full bg-white opacity-60" />
           <div className="w-3 h-3 rounded-full bg-white opacity-60" />
           <div className="w-3 h-3 rounded-full bg-white opacity-60" />
         </div>
-        <div className="flex-1 bg-white bg-opacity-20 rounded-sm px-3 py-0.5 text-xs font-mono text-white opacity-80 truncate">
+        <div className="flex-1 bg-white bg-opacity-20 rounded-sm px-3 py-0.5 text-xs font-mono text-white opacity-80 truncate ml-2">
           {url.replace("https://", "")}
         </div>
       </div>
 
-      {/* Zone de preview — hauteur exacte = PREVIEW_H */}
-      <div style={{ height: PREVIEW_H, overflow: "hidden", position: "relative" }}>
+      {/* Preview */}
+      <div style={{ height: PREVIEW_H, overflow: "hidden" }}>
         <div
           className="iframe-scroll-wrapper"
           style={{
             transformOrigin: "top left",
-            transform: `scale(${SCALE})`,
+            transform: `scale(${scale})`,
             width: IFRAME_W,
             height: IFRAME_H,
             ["--scroll-distance" as string]: `-${SCROLL_PX_UNSCALED}px`,
+            ["--iframe-scale" as string]: `${scale}`,
           }}
         >
           <iframe
@@ -117,7 +119,6 @@ function BrowserPreview({ url, color }: { url: string; color: string }) {
         </div>
       </div>
 
-      {/* Overlay pour bloquer les interactions avec l'iframe */}
       <div className="absolute inset-0 z-20" style={{ top: CHROME_H }} />
     </div>
   );
