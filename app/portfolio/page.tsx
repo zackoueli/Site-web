@@ -57,7 +57,7 @@ const projects = [
 
 function BrowserPreview({ url, color }: { url: string; color: string }) {
   return (
-    <div className="preview-zone relative w-full overflow-hidden cursor-ns-resize" style={{ height: 340 }}>
+    <div className="relative w-full overflow-hidden" style={{ height: 340 }}>
       {/* Browser chrome */}
       <div className="flex items-center gap-2 px-3 py-2 border-b-2 border-[#0A0A0A]" style={{ backgroundColor: color }}>
         <div className="flex gap-1.5">
@@ -70,24 +70,14 @@ function BrowserPreview({ url, color }: { url: string; color: string }) {
         </div>
       </div>
 
-      {/* iframe pleine largeur, réduite via zoom CSS */}
-      <div className="iframe-scroll-wrapper" style={{ ["--scroll-distance" as string]: "-2000px" }}>
-        <iframe
-          src={url}
-          className="border-none pointer-events-none block"
-          style={{
-            width: "100%",
-            height: 3000,
-            zoom: 0.5,
-            transformOrigin: "top left",
-          }}
-          loading="lazy"
-          sandbox="allow-same-origin allow-scripts"
-          title="Aperçu du site"
-        />
-      </div>
-
-      <div className="absolute inset-0 z-20" style={{ top: 36 }} />
+      <iframe
+        src={url}
+        className="border-none pointer-events-none block"
+        style={{ width: "100%", height: 304, zoom: 1 }}
+        loading="lazy"
+        sandbox="allow-same-origin allow-scripts"
+        title="Aperçu du site"
+      />
     </div>
   );
 }
