@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useEffect } from "react";
+
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -57,41 +57,21 @@ const projects = [
 ];
 
 function BrowserPreview({ url, color }: { url: string; color: string }) {
-  const iframeRef = useRef<HTMLIFrameElement>(null);
-  const animRef = useRef<number | null>(null);
-  const scrollPosRef = useRef(0);
-  const pausedRef = useRef(false);
-
-  function startScroll() {
-    if (animRef.current) return;
-    const maxScroll = 2400;
-    const step = () => {
-      if (!pausedRef.current) {
-        if (!iframeRef.current?.contentWindow) return;
-        scrollPosRef.current += 1.2;
-        if (scrollPosRef.current >= maxScroll) scrollPosRef.current = 0;
-        iframeRef.current.contentWindow.scrollTo(0, scrollPosRef.current);
-      }
-      animRef.current = requestAnimationFrame(step);
-    };
-    animRef.current = requestAnimationFrame(step);
-  }
-
-  useEffect(() => {
-    startScroll();
-    return () => { if (animRef.current) cancelAnimationFrame(animRef.current); };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  // Hauteur réelle simulée du site (px dans l'espace iframe non zoomé)
+  // L'iframe est zoomée à 37.8%, donc 1800px réels = ~680px visibles
+  // On translate l'iframe de 0 à -1100px (espace hors vue) au survol
+  const IFRAME_H = 1800;
+  const SCALE = 0.378;
+  const VISIBLE_H = 310; // hauteur du conteneur moins le chrome
+  const SCROLL_DISTANCE = Math.round(IFRAME_H * SCALE - VISIBLE_H); // ~370px
 
   return (
-    <div
-      className="relative w-full brutal-border overflow-hidden"
-      style={{ height: 340 }}
-      onMouseEnter={() => { pausedRef.current = true; }}
-      onMouseLeave={() => { pausedRef.current = false; }}
-    >
+    <div className="preview-zone relative w-full overflow-hidden cursor-ns-resize" style={{ height: 340 }}>
       {/* Browser chrome */}
-      <div className="flex items-center gap-2 px-3 py-2 border-b-2 border-[#0A0A0A]" style={{ backgroundColor: color }}>
+      <div
+        className="flex items-center gap-2 px-3 py-2 border-b-2 border-[#0A0A0A] relative z-10"
+        style={{ backgroundColor: color }}
+      >
         <div className="flex gap-1.5">
           <div className="w-3 h-3 rounded-full bg-white opacity-60" />
           <div className="w-3 h-3 rounded-full bg-white opacity-60" />
@@ -102,23 +82,29 @@ function BrowserPreview({ url, color }: { url: string; color: string }) {
         </div>
       </div>
 
-      {/* Iframe */}
-      <iframe
-        ref={iframeRef}
-        src={url}
-        className="w-full border-none pointer-events-none"
-        style={{ height: 900, transform: "scale(0.378)", transformOrigin: "top left", width: "264.5%", marginBottom: -572 }}
-        loading="lazy"
-        sandbox="allow-same-origin allow-scripts"
-        title="Aperçu du site"
-      />
-
-      {/* Hover overlay hint */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-black text-white text-xs font-bold px-3 py-1.5 brutal-border">
-          En pause ⏸
-        </span>
+      {/* Wrapper qui reçoit le hover et anime la translation */}
+      <div
+        className="iframe-scroll-wrapper"
+        style={{
+          width: `${100 / SCALE}%`,
+          transformOrigin: "top left",
+          transform: `scale(${SCALE})`,
+          // translateY en espace non-zoomé = SCROLL_DISTANCE / SCALE
+          ["--scroll-distance" as string]: `-${Math.round(SCROLL_DISTANCE / SCALE)}px`,
+        }}
+      >
+        <iframe
+          src={url}
+          className="w-full border-none pointer-events-none block"
+          style={{ height: IFRAME_H }}
+          loading="lazy"
+          sandbox="allow-same-origin allow-scripts"
+          title="Aperçu du site"
+        />
       </div>
+
+      {/* Overlay transparent pour capter le hover sans bloquer l'affichage */}
+      <div className="absolute inset-0 z-20 cursor-default" />
     </div>
   );
 }
@@ -187,7 +173,7 @@ export default function PortfolioPage() {
           {projects.map((p) => (
             <div
               key={p.slug}
-              className="brutal-border bg-white overflow-hidden group"
+              className="brutal-border bg-white overflow-hidden"
             >
               {/* Preview */}
               {p.previewUrl ? (

@@ -28,6 +28,14 @@ body {
 .brutal-shadow  { box-shadow: 4px 4px 0px var(--black); }
 .brutal-shadow-lg { box-shadow: 6px 6px 0px var(--black); }
 
+/* Portfolio preview scroll */
+.iframe-scroll-wrapper {
+  transition: transform 8s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.preview-zone:hover .iframe-scroll-wrapper {
+  transform: scale(0.378) translateY(var(--scroll-distance)) !important;
+}
+
 .brutal-btn {
   border: 3px solid var(--black);
   box-shadow: 4px 4px 0px var(--black);
