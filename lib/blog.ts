@@ -2723,6 +2723,436 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "creer-application-mobile-sans-coder",
+    title: "Créer une app mobile sans coder : ce qu'il faut savoir",
+    description: "No-code, low-code ou développeur ? Le guide honnête pour créer votre application mobile sans savoir coder — limites, coûts et quand faire appel à un pro.",
+    date: "2026-05-18",
+    readTime: "7 min",
+    category: "Guides",
+    sections: [
+      {
+        paragraphs: [
+          "Vous avez une idée d'application mobile mais vous ne savez pas coder. Bonne nouvelle : il existe aujourd'hui plusieurs façons de créer une app sans écrire une seule ligne de code. Mauvaise nouvelle : chacune a des limites que les outils no-code ne vous disent pas toujours clairement.",
+          "Ce guide fait le tour des options disponibles en 2026, avec leurs avantages, leurs limites réelles et le moment où il devient plus intelligent de confier le projet à un développeur.",
+        ],
+      },
+      {
+        heading: "Option 1 : les constructeurs d'apps no-code",
+        paragraphs: [
+          "Des plateformes comme Glide, Adalo, Bravo Studio ou AppGyver permettent de créer une application mobile sans code, en assemblant des blocs visuels.",
+        ],
+        list: [
+          "Glide : transforme une feuille Google Sheets en application — parfait pour un outil interne simple ou un MVP rapide à tester",
+          "Adalo : interface drag-and-drop pour créer des apps iOS et Android avec une base de données intégrée",
+          "AppGyver (SAP Build) : plus puissant, permet de créer des apps complexes sans code — courbe d'apprentissage plus élevée",
+          "Bravo Studio : transforme des maquettes Figma en application mobile — idéal si vous avez déjà un design",
+          "Avantage principal : lancer un prototype en quelques jours sans budget de développement",
+          "Limite principale : performances limitées, personnalisation restreinte, abonnement mensuel permanent",
+        ],
+      },
+      {
+        heading: "Option 2 : les plateformes low-code",
+        paragraphs: [
+          "Le low-code se situe entre le no-code et le développement traditionnel. Des plateformes comme Bubble, FlutterFlow ou Thunkable permettent d'aller plus loin avec un minimum de logique.",
+        ],
+        list: [
+          "Bubble : la référence pour créer des web apps complexes sans coder — marketplace, SaaS, espace client multi-rôles",
+          "FlutterFlow : génère du code Flutter exportable, plus proche du vrai développement",
+          "Thunkable : spécialisé dans les apps mobiles simples, bon pour les projets éducatifs ou associatifs",
+          "Avantage : fonctionnalités plus avancées qu'un pur no-code, possibilité d'intégrer des APIs",
+          "Limite : coût d'abonnement entre 30€ et 350€/mois, vous ne possédez pas votre app",
+        ],
+      },
+      {
+        heading: "Ce que le no-code ne peut pas faire",
+        paragraphs: [
+          "Avant de vous lancer sur une plateforme no-code, voici les cas où elle atteindra ses limites — parfois très vite :",
+        ],
+        list: [
+          "Accès aux fonctionnalités natives du téléphone : capteur de proximité, Bluetooth, NFC, Face ID — souvent impossible ou très limité en no-code",
+          "Performances : une app no-code est systématiquement plus lente qu'une app développée sur mesure — vos utilisateurs le ressentent",
+          "Publication App Store : Apple est plus strict avec les apps générées automatiquement, les rejets sont fréquents",
+          "Évolutivité : dès que votre base d'utilisateurs grandit, les performances se dégradent et les coûts explosent",
+          "Personnalisation avancée : chaque besoin spécifique à votre métier devient un contournement complexe",
+          "Propriété du code : sur la plupart des plateformes no-code, vous ne pouvez pas exporter votre application — si la plateforme ferme, vous repartez de zéro",
+        ],
+      },
+      {
+        heading: "Quand le no-code est le bon choix",
+        paragraphs: [
+          "Le no-code n'est pas une mauvaise option — il est simplement mal adapté si on l'utilise au mauvais moment :",
+        ],
+        list: [
+          "Valider une idée rapidement : créez un prototype no-code pour tester votre concept avec de vrais utilisateurs avant d'investir dans le développement",
+          "Budget très limité au démarrage : si vous n'avez pas encore de revenus, un outil no-code permet de commencer sans risque financier",
+          "Besoin simple et stable : si votre app ne fera jamais que 3 ou 4 choses basiques, le no-code peut suffire indéfiniment",
+          "Usage interne : un outil pour votre équipe, pas pour vos clients — les exigences de performance et de design sont moins critiques",
+        ],
+      },
+      {
+        heading: "Quand passer à un développeur sur mesure",
+        paragraphs: [
+          "Il y a un moment précis où faire appel à un développeur devient la décision la plus économique et la plus stratégique :",
+        ],
+        list: [
+          "Votre prototype no-code valide que l'idée fonctionne — il est temps de construire la vraie version",
+          "Vous avez des fonctionnalités spécifiques à votre métier que le no-code ne couvre pas",
+          "Vos utilisateurs se plaignent de la lenteur ou de bugs sur votre app actuelle",
+          "Votre abonnement no-code dépasse 50-100€/mois — vous approchez du seuil où le développement sur mesure est moins cher sur 2-3 ans",
+          "Vous voulez posséder votre application et ne plus dépendre d'une plateforme tierce",
+        ],
+      },
+      {
+        heading: "Le bon chemin pour créer votre app mobile",
+        paragraphs: [
+          "La stratégie la plus efficace en 2026 : commencez par décrire votre projet à un développeur avant même de vous lancer sur une plateforme no-code. Un devis gratuit vous donnera une idée précise du budget réel — vous pourrez alors comparer avec les coûts no-code sur 2-3 ans et choisir en connaissance de cause.",
+          "Je suis développeur freelance à Brest, spécialisé en applications mobiles iOS & Android sur mesure. Je propose un devis gratuit sous 48h — décrivez-moi votre idée, je vous dis honnêtement si le no-code suffit ou si un développement sur mesure est plus adapté à votre situation.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "application-mobile-prise-de-rdv",
+    title: "App mobile prise de RDV : guide complet 2026",
+    description: "Application mobile de prise de rendez-vous en ligne : fonctionnalités, coûts, alternatives à Doctolib et Planity. Guide complet pour professionnels en 2026.",
+    date: "2026-05-18",
+    readTime: "6 min",
+    category: "Guides",
+    sections: [
+      {
+        paragraphs: [
+          "La prise de rendez-vous en ligne est devenue un standard attendu par les clients. Coiffeurs, médecins, kinésithérapeutes, coachs, artisans — tous les professionnels qui travaillent sur rendez-vous peuvent réduire les no-shows, libérer du temps administratif et améliorer l'expérience client grâce à une application mobile dédiée.",
+          "Voici tout ce qu'il faut savoir pour choisir la bonne solution en 2026.",
+        ],
+      },
+      {
+        heading: "Ce qu'une app de prise de RDV doit faire",
+        paragraphs: [
+          "Une application de réservation efficace couvre plusieurs besoins simultanément :",
+        ],
+        list: [
+          "Calendrier en temps réel : vos clients voient vos créneaux disponibles et réservent en autonomie, 24h/24 — sans vous appeler",
+          "Rappels automatiques : notification push ou SMS la veille et le matin du rendez-vous — les no-shows peuvent diminuer de 30 à 50%",
+          "Gestion des annulations : votre client peut annuler ou déplacer lui-même son rendez-vous, le créneau est immédiatement remis à disposition",
+          "Acompte à la réservation : bloquez un paiement partiel pour sécuriser le rendez-vous — particulièrement utile pour les prestations longues",
+          "Historique client : retrouvez les prestations passées, les préférences et les notes pour chaque client",
+          "Multi-praticiens : si vous avez une équipe, chaque membre gère son propre agenda depuis la même interface",
+          "Synchronisation agenda : intégration avec Google Calendar ou Apple Calendar pour éviter les doubles réservations",
+        ],
+      },
+      {
+        heading: "Les solutions existantes et leurs limites",
+        paragraphs: [
+          "Plusieurs plateformes proposent des outils de prise de RDV en ligne. Voici un tour d'horizon honnête :",
+        ],
+        list: [
+          "Doctolib : référence pour les professionnels de santé — 139€/mois, excellent pour les médecins mais surdimensionné pour les autres métiers",
+          "Planity : conçu pour les salons de coiffure et instituts — 49 à 99€/mois + ~20% de commission sur les réservations via leur annuaire",
+          "Calendly : pratique pour les consultants et coachs — gratuit en version basique, limité à un type de rendez-vous",
+          "Acuity Scheduling : plus complet, 16 à 61€/mois, interface en anglais",
+          "Setmore / SimplyBook : solutions internationales, entre 0€ et 25€/mois, moins adaptées au marché français",
+          "Problème commun à toutes ces solutions : vous payez un abonnement permanent, vous ne possédez pas vos données client, et votre application ressemble à celle de tous vos concurrents",
+        ],
+      },
+      {
+        heading: "App sur mesure vs plateforme SaaS : le bon calcul",
+        paragraphs: [
+          "Sur 3 ans, voici ce que coûte réellement chaque option pour un salon ou un cabinet :",
+        ],
+        list: [
+          "Planity (49€/mois) : 1 764€ sur 3 ans — sans compter les commissions sur les réservations annuaire",
+          "Doctolib (139€/mois) : 5 004€ sur 3 ans",
+          "App sur mesure BreizhApp : investissement unique entre 790€ et 1 500€ — zéro abonnement, zéro commission, vos données vous appartiennent",
+          "Dès la 2ème année, une app sur mesure est moins chère que n'importe quelle solution SaaS",
+          "Bonus : votre app est aux couleurs de votre marque, pas celle de Planity ou Doctolib",
+        ],
+      },
+      {
+        heading: "Secteurs qui bénéficient le plus d'une app de RDV",
+        paragraphs: [
+          "Tous les professionnels qui travaillent par créneaux ont intérêt à digitaliser leur agenda :",
+        ],
+        list: [
+          "Coiffeurs et instituts de beauté : réservation des prestations avec durée variable, gestion des colorations longues, programme de fidélité intégré",
+          "Coachs et thérapeutes : séances individuelles ou en groupe, paiement en ligne, suivi des clients",
+          "Artisans et prestataires de service : estimation de durée par type de chantier, acompte à la réservation, confirmation automatique",
+          "Professionnels de santé : gestion des urgences, créneaux réservés, rappels de suivi",
+          "Auto-écoles : réservation des leçons de conduite, gestion des moniteurs, suivi de la progression",
+        ],
+      },
+      {
+        heading: "Créez votre app de prise de RDV sur mesure",
+        paragraphs: [
+          "Je développe des applications mobiles de prise de rendez-vous pour les professionnels indépendants et les petites équipes. Chaque app est conçue selon votre métier — pas un outil générique que vous partagez avec des milliers d'autres professionnels.",
+          "Devis gratuit sous 48h. Décrivez-moi votre activité, le nombre de praticiens et vos besoins spécifiques — je vous propose une solution adaptée à votre budget, avec un tarif transparent et un délai de livraison réaliste.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "application-mobile-fidelite-clients",
+    title: "App de fidélité clients : boostez vos ventes en 2026",
+    description: "Application mobile de fidélité clients : carte de points, offres exclusives, notifications push. Comment fidéliser sans payer de commission à une plateforme tierce.",
+    date: "2026-05-18",
+    readTime: "6 min",
+    category: "Guides",
+    sections: [
+      {
+        paragraphs: [
+          "Acquérir un nouveau client coûte 5 à 7 fois plus cher que d'en fidéliser un existant. Pourtant, la plupart des commerces et restaurants n'ont pas de programme de fidélité structuré — ou utilisent des cartes papier qui finissent au fond d'un sac.",
+          "Une application mobile de fidélité change tout : vos clients ont leur carte sur leur téléphone, vous leur envoyez des offres au bon moment, et vous construisez une relation directe sans payer de commission à une plateforme.",
+        ],
+      },
+      {
+        heading: "Pourquoi une app de fidélité plutôt qu'une carte papier",
+        paragraphs: [
+          "La carte de fidélité papier a deux problèmes majeurs : elle se perd, et vous ne pouvez pas communiquer avec vos clients entre deux visites. Une application mobile résout les deux :",
+        ],
+        list: [
+          "Toujours disponible : votre client a son téléphone sur lui — pas besoin de fouiller dans son portefeuille",
+          "Notifications push : envoyez une offre le lundi matin quand votre restaurant est vide, ou le vendredi soir pour remplir les derniers créneaux",
+          "Données client : vous savez exactement combien de fois chaque client vient, ce qu'il achète, et depuis combien de temps vous ne l'avez pas vu",
+          "Gamification : les points, niveaux et récompenses créent un engagement émotionnel que la carte papier ne peut pas reproduire",
+          "Zéro perte : un client qui change de téléphone retrouve son compte — ses points ne disparaissent pas",
+        ],
+      },
+      {
+        heading: "Les fonctionnalités d'une app de fidélité efficace",
+        paragraphs: [
+          "Voici ce qu'une bonne application de fidélité doit proposer à vos clients :",
+        ],
+        list: [
+          "Carte de points digitale : accumulation automatique à chaque achat ou visite, avec QR code ou NFC pour valider en caisse",
+          "Niveaux de fidélité : Bronze, Argent, Or — les clients progressent et débloquent des avantages croissants",
+          "Offres et réductions : coupons exclusifs envoyés par notification push, valables uniquement via l'app",
+          "Récompenses à la carte : vos clients choisissent leur récompense parmi un catalogue (boisson offerte, réduction, produit gratuit)",
+          "Historique complet : chaque client voit ses points, ses visites et ses avantages débloqués",
+          "Parrainage : vos clients fidèles recrutent leurs amis — chaque parrainage récompensé génère de nouveaux clients sans budget pub",
+          "Anniversaires : offre automatique le jour de l'anniversaire du client — le geste coûte peu, l'impact est fort",
+        ],
+      },
+      {
+        heading: "Ce que ça vous apporte côté gestion",
+        paragraphs: [
+          "Du côté de l'admin, vous disposez d'un tableau de bord complet :",
+        ],
+        list: [
+          "Segmentation : identifiez vos clients VIP, ceux qui ne sont plus venus depuis 3 mois, ceux qui ont beaucoup de points à utiliser",
+          "Campagnes ciblées : envoyez une notification uniquement aux clients qui ont visité plus de 5 fois — pas à tout le monde",
+          "Statistiques de fidélité : taux de rétention, fréquence de visite, panier moyen des clients fidèles vs nouveaux",
+          "Export des données : vos clients vous appartiennent — contrairement aux plateformes tierces qui gardent les données",
+        ],
+      },
+      {
+        heading: "Les plateformes de fidélité du marché et leurs limites",
+        paragraphs: [
+          "Des solutions comme Fidall, Stamp Me ou LoyaltyLion existent. Voici pourquoi elles ne sont pas toujours le meilleur choix :",
+        ],
+        list: [
+          "Coût récurrent : entre 30€ et 200€/mois selon la plateforme et le nombre de clients",
+          "Votre programme ressemble à celui de vos concurrents : même interface, même expérience — impossible de vous différencier",
+          "Données partagées : certaines plateformes utilisent vos données clients à des fins marketing tierces",
+          "Personnalisation limitée : impossible d'adapter les règles de fidélité exactement à votre fonctionnement",
+          "App sur mesure : coût unique, vos couleurs, vos règles, vos données — et vos clients téléchargent VOTRE app, pas celle d'une plateforme générique",
+        ],
+      },
+      {
+        heading: "Intégrer la fidélité à votre app existante",
+        paragraphs: [
+          "Si vous avez déjà une application mobile — ou si vous en faites créer une — le programme de fidélité peut être intégré directement. Pas besoin de deux apps séparées :",
+        ],
+        list: [
+          "App restaurant : commande en ligne + programme de fidélité dans la même app — vos clients accumulent des points à chaque commande",
+          "App commerce : catalogue + panier + points de fidélité — l'achat et la récompense se font au même endroit",
+          "App salon de coiffure : réservation en ligne + carte de points + historique des prestations",
+        ],
+      },
+      {
+        heading: "Mettez en place votre programme de fidélité sur mesure",
+        paragraphs: [
+          "Je développe des applications mobiles avec programme de fidélité intégré pour les commerces, restaurants et prestataires de service. Chaque solution est conçue selon votre activité et vos objectifs — pas un template générique.",
+          "Devis gratuit sous 48h. Décrivez-moi votre commerce, votre clientèle et ce que vous souhaitez récompenser — je vous propose une app de fidélité adaptée à votre budget et à votre fonctionnement.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "cout-maintenance-application-mobile",
+    title: "Maintenance application mobile : coûts réels 2026",
+    description: "Combien coûte la maintenance d'une application mobile ? Mises à jour iOS/Android, bugs, hébergement : le vrai coût après la livraison expliqué clairement.",
+    date: "2026-05-18",
+    readTime: "6 min",
+    category: "Tarifs",
+    sections: [
+      {
+        paragraphs: [
+          "Le coût de développement d'une application mobile est souvent la seule donnée mise en avant. Mais une fois livrée, votre app a besoin de maintenance. Mises à jour obligatoires, corrections de bugs, évolution des fonctionnalités — voici ce que ça coûte vraiment en 2026.",
+        ],
+      },
+      {
+        heading: "Pourquoi une app mobile a besoin de maintenance",
+        paragraphs: [
+          "Une application mobile n'est pas un site statique qu'on publie et qu'on oublie. Plusieurs facteurs imposent une maintenance régulière :",
+        ],
+        list: [
+          "Mises à jour iOS et Android : Apple et Google publient de nouvelles versions de leurs systèmes chaque année — votre app doit être compatible, sinon elle peut être retirée des stores",
+          "Évolution des librairies : React Native, Flutter et les autres frameworks se mettent à jour régulièrement — les dépendances obsolètes créent des failles de sécurité",
+          "Corrections de bugs : même avec des tests rigoureux, certains bugs n'apparaissent qu'en production avec de vrais utilisateurs sur des milliers d'appareils différents",
+          "Évolutions des APIs tierces : si votre app utilise Stripe, Firebase, Google Maps ou d'autres services, leurs APIs évoluent et peuvent casser votre intégration",
+          "Nouvelles exigences des stores : App Store et Google Play durcissent régulièrement leurs politiques de confidentialité et de sécurité",
+        ],
+      },
+      {
+        heading: "Le coût réel de la maintenance selon les cas",
+        paragraphs: [
+          "Voici une estimation réaliste des coûts de maintenance annuels selon la complexité de l'application :",
+        ],
+        list: [
+          "App simple (vitrine, catalogue, 2-3 écrans) : 200€ à 500€/an — mise à jour annuelle des dépendances, compatibilité iOS/Android",
+          "App intermédiaire (réservation, paiement, notifications) : 500€ à 1 500€/an — maintenance des intégrations Stripe/Firebase, corrections bugs",
+          "App complexe (marketplace, multi-rôles, back-office) : 1 500€ à 4 000€/an — maintenance continue, évolutions mineures, monitoring",
+          "Ces coûts sont bien inférieurs aux abonnements SaaS (Planity, Glofox, Mindbody) qui vous facturent 1 000€ à 7 000€/an pour une solution générique",
+        ],
+      },
+      {
+        heading: "Ce qui fait varier le coût de maintenance",
+        paragraphs: [
+          "Plusieurs facteurs influencent directement ce que vous payez chaque année :",
+        ],
+        list: [
+          "La qualité du code initial : une app bien architecturée coûte moins cher à maintenir qu'un code spaghetti — c'est l'un des arguments pour travailler avec un développeur sérieux dès le départ",
+          "Le nombre d'intégrations tierces : chaque API externe (paiement, carte, messagerie) est une source de maintenance supplémentaire",
+          "La fréquence des mises à jour iOS/Android : Apple sort une nouvelle version majeure chaque automne, Google plusieurs fois par an",
+          "L'évolution de vos besoins : si vous ajoutez des fonctionnalités, chaque ajout a un coût de développement séparé",
+          "Le niveau de SLA souhaité : si vous voulez une correction de bug garantie en 24h, ça coûte plus cher qu'un délai de 5 jours ouvrés",
+        ],
+      },
+      {
+        heading: "Hébergement et infrastructure : ce qu'on oublie de chiffrer",
+        paragraphs: [
+          "Au-delà du code, votre application a besoin d'infrastructure pour fonctionner :",
+        ],
+        list: [
+          "Base de données : Firebase (gratuit jusqu'à un certain volume, puis 25€/mois+), Supabase (gratuit jusqu'à 500Mo), PostgreSQL géré (10-30€/mois)",
+          "Hébergement back-end : Vercel (gratuit pour l'usage standard), Railway (5-20€/mois pour les apps avec serveur dédié)",
+          "Stockage fichiers : Firebase Storage, AWS S3 ou Cloudinary — entre 0€ et 20€/mois selon le volume",
+          "Compte développeur Apple : 99€/an obligatoire pour publier sur l'App Store",
+          "Compte développeur Google : 25€ une seule fois pour publier sur le Play Store",
+          "Total infrastructure : entre 100€ et 500€/an pour une app de taille moyenne — à intégrer dans votre calcul de ROI",
+        ],
+      },
+      {
+        heading: "Faut-il souscrire un contrat de maintenance ?",
+        paragraphs: [
+          "Deux approches existent — chacune a ses avantages :",
+        ],
+        list: [
+          "Contrat de maintenance mensuel : vous payez un forfait fixe (100€ à 400€/mois) qui couvre les mises à jour, la surveillance et les corrections — prévisible et sans surprise",
+          "Maintenance à la demande : vous ne payez que quand il y a quelque chose à faire — moins cher si votre app est stable, risqué si un bug critique survient",
+          "Ma recommandation : une mise à jour annuelle obligatoire (compatibilité iOS/Android) + maintenance à la demande pour le reste — le meilleur équilibre entre sécurité et budget",
+        ],
+      },
+      {
+        heading: "Anticipez la maintenance dès le développement",
+        paragraphs: [
+          "La meilleure façon de réduire les coûts de maintenance est de bien choisir son développeur dès le départ. Un code propre, bien documenté et avec des dépendances stables coûte 2 à 3 fois moins cher à maintenir qu'une app codée rapidement sans rigueur.",
+          "Je propose des contrats de maintenance transparents pour toutes les apps que je développe. Devis de développement et contrat de maintenance chiffrés ensemble — vous savez exactement ce que votre app vous coûtera la première année et les suivantes.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "progressive-web-app-vs-application-native",
+    title: "PWA vs application native : que choisir en 2026 ?",
+    description: "Progressive Web App ou application native iOS/Android ? Performances, coûts, App Store, offline : le comparatif complet pour choisir la bonne solution en 2026.",
+    date: "2026-05-18",
+    readTime: "7 min",
+    category: "Comparatifs",
+    sections: [
+      {
+        paragraphs: [
+          "Progressive Web App ou application native : c'est l'une des questions les plus fréquentes quand on veut créer une application mobile. Les deux approches ont des avantages réels — mais aussi des différences fondamentales que beaucoup de guides ne mentionnent pas.",
+          "Voici un comparatif honnête pour vous aider à choisir la bonne solution selon votre projet.",
+        ],
+      },
+      {
+        heading: "C'est quoi une Progressive Web App (PWA) ?",
+        paragraphs: [
+          "Une PWA est un site web qui se comporte comme une application mobile. Vous l'ajoutez à votre écran d'accueil depuis le navigateur, elle peut fonctionner hors ligne, envoyer des notifications et accéder à certaines fonctionnalités du téléphone.",
+        ],
+        list: [
+          "Accessible via une URL : pas besoin de passer par l'App Store ou le Google Play Store",
+          "Installation optionnelle : l'utilisateur peut l'ajouter à son écran d'accueil, mais ce n'est pas obligatoire",
+          "Une seule codebase : le même code fonctionne sur iOS, Android, desktop et tablette",
+          "Mise à jour instantanée : vous modifiez le code, tous les utilisateurs ont la nouvelle version immédiatement — pas de validation Apple",
+          "Exemples de grandes PWA : Twitter Lite, Starbucks, Pinterest, Uber",
+        ],
+      },
+      {
+        heading: "C'est quoi une application native ?",
+        paragraphs: [
+          "Une application native est développée spécifiquement pour iOS (Swift/React Native) ou Android (Kotlin/React Native). Elle est téléchargée depuis l'App Store ou le Google Play Store et s'installe sur l'appareil.",
+        ],
+        list: [
+          "Performances maximales : accès direct aux ressources du téléphone, animations fluides à 60fps",
+          "Accès complet aux fonctionnalités natives : Face ID, NFC, Bluetooth, GPS précis, caméra avancée, capteurs",
+          "Distribution via les stores : App Store et Google Play — vos utilisateurs trouvent l'app en cherchant dans le store",
+          "Notifications push natives : les plus fiables et les plus visibles — taux d'ouverture jusqu'à 7× supérieur aux emails",
+          "Expérience utilisateur premium : les interactions correspondent aux standards iOS et Android que vos utilisateurs connaissent",
+        ],
+      },
+      {
+        heading: "PWA vs native : le comparatif direct",
+        paragraphs: [
+          "Voici les différences clés sur les critères qui comptent vraiment pour votre projet :",
+        ],
+        list: [
+          "Performances : native gagne nettement — une PWA bien optimisée est bonne, une app native est excellente",
+          "Coût de développement : PWA moins chère (1 codebase) — native React Native aussi (1 codebase iOS + Android), Swift/Kotlin plus cher (2 codebases)",
+          "Notifications push : native bien supérieure — les PWA sur iOS ont longtemps été très limitées (Apple a amélioré ça en 2023 mais reste en retrait)",
+          "App Store : native seulement — la PWA n'est pas référencée sur les stores, ce qui limite la découvrabilité",
+          "Fonctionnalités avancées : native gagne — Bluetooth, NFC, Face ID, accès caméra avancé souvent impossible en PWA",
+          "Mise à jour : PWA instantanée — native nécessite une validation Apple (24-48h) et que l'utilisateur mette à jour",
+          "Offline : les deux peuvent fonctionner hors ligne, mais native est plus fiable",
+          "Installation : PWA facultative depuis le navigateur — native obligatoire via le store",
+        ],
+      },
+      {
+        heading: "Quand choisir une PWA",
+        paragraphs: [
+          "La PWA est pertinente dans ces situations précises :",
+        ],
+        list: [
+          "Vous avez déjà un site web et voulez l'améliorer sans créer une app from scratch",
+          "Votre budget est limité et vous voulez couvrir mobile + desktop avec un seul développement",
+          "Vous avez besoin de mises à jour fréquentes du contenu sans passer par la validation Apple",
+          "Votre app n'utilise pas de fonctionnalités natives avancées (Bluetooth, NFC, Face ID)",
+          "Votre audience est technique et à l'aise pour ajouter l'app depuis le navigateur sans passer par un store",
+        ],
+      },
+      {
+        heading: "Quand choisir une application native (React Native)",
+        paragraphs: [
+          "L'application native s'impose dans ces cas :",
+        ],
+        list: [
+          "Vous voulez être présent sur l'App Store et le Google Play Store — la visibilité store est un canal d'acquisition important",
+          "Vos utilisateurs sont des consommateurs grand public qui téléchargent des apps depuis le store naturellement",
+          "Vous avez besoin de notifications push fiables — pour la fidélité, les rappels de RDV, les promotions",
+          "Votre app utilise des fonctionnalités natives : scanner QR, Bluetooth, NFC, GPS précis, paiement Apple Pay/Google Pay",
+          "L'expérience utilisateur premium est un différenciateur important dans votre marché",
+        ],
+      },
+      {
+        heading: "Le choix de BreizhApp : React Native pour le meilleur des deux mondes",
+        paragraphs: [
+          "Je développe les applications mobiles avec React Native — un framework qui permet de créer une application iOS et Android avec une seule codebase. Résultat : les performances et les fonctionnalités d'une app native, avec les économies d'une approche cross-platform.",
+          "Si votre projet se prête mieux à une PWA, je le dis honnêtement — je préfère vous conseiller la bonne solution plutôt que de vous vendre quelque chose de surdimensionné. Devis gratuit sous 48h pour votre projet, PWA ou native.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
