@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     description:
       "Articles sur la création d'applications mobiles iOS & Android par un développeur freelance à Brest.",
     url: "https://breizhapp.tech/blog",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
 };
 

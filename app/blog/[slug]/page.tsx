@@ -82,7 +82,14 @@ export default async function ArticlePage({ params }: Props) {
   const article = getArticle(slug);
   if (!article) notFound();
 
-  const others = articles.filter((a) => a.slug !== slug).slice(0, 2);
+  // Prioritise same-category articles, fall back to different ones
+  const sameCategory = articles.filter((a) => a.slug !== slug && a.category === article.category);
+  const others = sameCategory.length >= 2
+    ? sameCategory.slice(0, 2)
+    : [
+        ...sameCategory,
+        ...articles.filter((a) => a.slug !== slug && a.category !== article.category),
+      ].slice(0, 2);
 
   return (
     <>

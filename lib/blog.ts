@@ -177,7 +177,7 @@ export const articles: Article[] = [
   },
   {
     slug: "developpeur-freelance-vs-agence",
-    title: "Freelance vs agence mobile : que choisir en 2025 ?",
+    title: "Freelance vs agence mobile : que choisir ?",
     description:
       "Comparez les avantages d'un développeur mobile freelance face à une agence digitale : prix, délais, communication, qualité. Guide pour faire le bon choix.",
     date: "2026-04-20",
@@ -724,7 +724,7 @@ export const articles: Article[] = [
   },
   {
     slug: "shopify-tarif-prix-abonnement-2025",
-    title: "Shopify tarif 2025 : coût réel d'une boutique en ligne",
+    title: "Shopify tarif 2025 : vrai coût d'une boutique en ligne",
     description:
       "Prix Shopify 2025 : abonnement Basic, Advanced, commissions et apps. Coût total réel d'une boutique Shopify et alternative sur mesure.",
     date: "2026-04-20",
@@ -1999,7 +1999,7 @@ export const articles: Article[] = [
   },
   {
     slug: "no-code-vs-developpeur",
-    title: "No-code vs développeur : Bubble, Glide ou sur mesure ?",
+    title: "No-code vs dev : Bubble, Glide ou sur mesure ?",
     description: "No-code (Bubble, Glide, Adalo) ou développeur sur mesure ? Coûts, limites, performances : le comparatif complet pour créer votre app ou plateforme en 2026.",
     date: "2026-05-15",
     readTime: "7 min",
@@ -2114,7 +2114,7 @@ export const articles: Article[] = [
   {
     slug: "application-mobile-coiffeur-salon",
     title: "App mobile pour salon de coiffure : guide 2026",
-    description: "Application mobile pour salon de coiffure : réservation en ligne, fidélité, notifications. Alternative à Planity sans commission. Tarifs et fonctionnalités 2026.",
+    description: "App mobile salon de coiffure : réservation, fidélité, notifications push. Alternative à Planity sans commission. Tarifs et fonctionnalités 2026.",
     date: "2026-05-15",
     readTime: "6 min",
     category: "Secteurs",
@@ -2197,7 +2197,7 @@ export const articles: Article[] = [
   {
     slug: "application-mobile-salle-sport-fitness",
     title: "App mobile salle de sport : fonctionnalités 2026",
-    description: "Application mobile pour salle de sport et club fitness : abonnements, réservation de cours, suivi des séances, fidélité. Tarifs et fonctionnalités clés en 2026.",
+    description: "App mobile salle de sport : abonnements, réservation de cours, suivi des séances, fidélité. Tarifs et fonctionnalités clés en 2026.",
     date: "2026-05-15",
     readTime: "6 min",
     category: "Secteurs",
@@ -2653,7 +2653,7 @@ export const articles: Article[] = [
   {
     slug: "developpeur-application-mobile-bretagne",
     title: "Développeur application mobile en Bretagne",
-    description: "Développeur application mobile en Bretagne : iOS & Android sur mesure, sites web et plateformes digitales. Basé à Brest, intervention dans tout le Finistère et la Bretagne.",
+    description: "Développeur application mobile en Bretagne : iOS & Android sur mesure, sites web, plateformes. Basé à Brest, Finistère. Devis gratuit sous 48h.",
     date: "2026-05-16",
     readTime: "5 min",
     category: "Local",
@@ -2725,7 +2725,7 @@ export const articles: Article[] = [
   },
   {
     slug: "creer-application-mobile-sans-coder",
-    title: "Créer une app mobile sans coder : ce qu'il faut savoir",
+    title: "App mobile sans coder : guide honnête 2026",
     description: "No-code, low-code ou développeur ? Le guide honnête pour créer votre application mobile sans savoir coder — limites, coûts et quand faire appel à un pro.",
     date: "2026-05-18",
     readTime: "7 min",
@@ -2892,8 +2892,8 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-fidelite-clients",
-    title: "App de fidélité clients : boostez vos ventes en 2026",
-    description: "Application mobile de fidélité clients : carte de points, offres exclusives, notifications push. Comment fidéliser sans payer de commission à une plateforme tierce.",
+    title: "App fidélité clients : boostez vos ventes 2026",
+    description: "App fidélité clients : carte de points, offres exclusives, notifications push. Fidélisez sans commission à une plateforme tierce. Tarifs dès 490€.",
     date: "2026-05-18",
     readTime: "6 min",
     category: "Guides",
@@ -2979,7 +2979,7 @@ export const articles: Article[] = [
   },
   {
     slug: "cout-maintenance-application-mobile",
-    title: "Maintenance application mobile : coûts réels 2026",
+    title: "Maintenance app mobile : coûts réels 2026",
     description: "Combien coûte la maintenance d'une application mobile ? Mises à jour iOS/Android, bugs, hébergement : le vrai coût après la livraison expliqué clairement.",
     date: "2026-05-18",
     readTime: "6 min",

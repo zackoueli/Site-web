@@ -4,8 +4,24 @@ import Footer from "@/components/Footer";
 import { LayoutDashboard, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Plateforme digitale & back-office sur mesure",
-  description: "Développement de plateformes web avec espace admin, espace client et gestion multi-rôles. Authentification, base de données, API REST. Devis gratuit sous 48h.",
+  title: "Plateforme digitale & back-office sur mesure | BreizhApp",
+  description: "Développement de plateformes web sur mesure : espace admin, espace client, multi-rôles. API REST, base de données, authentification. Basé à Brest. Devis gratuit.",
+  keywords: [
+    "plateforme digitale sur mesure",
+    "développement back-office",
+    "application web sur mesure brest",
+    "espace admin sur mesure",
+    "développeur plateforme web freelance",
+    "back-office brest",
+  ],
+  alternates: { canonical: "https://breizhapp.tech/services/plateforme" },
+  openGraph: {
+    title: "Plateforme digitale & back-office sur mesure",
+    description: "Plateformes web sur mesure : espace admin, espace client, multi-rôles. API REST, base de données. Développeur freelance à Brest.",
+    url: "https://breizhapp.tech/services/plateforme",
+    type: "website",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
 };
 
 const features = [

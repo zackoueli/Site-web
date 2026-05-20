@@ -7,23 +7,6 @@ export const metadata: Metadata = {
   title: "BreizhApp — Développeur app mobile iOS & Android",
   description:
     "Développeur freelance à Brest : je crée votre app iOS & Android sur mesure dès 490€. Restaurants, commerces, e-commerce. Devis gratuit sous 24h.",
-  keywords: [
-    "création application mobile",
-    "développeur application mobile",
-    "application mobile sur mesure",
-    "créer une app mobile",
-    "application iOS Android",
-    "développeur freelance application mobile",
-    "application mobile Brest",
-    "application mobile Bretagne",
-    "développeur mobile Brest",
-    "application restaurant",
-    "application ecommerce mobile",
-    "je veux une application mobile",
-    "React Native freelance",
-    "application mobile pas cher",
-    "développeur application mobile Finistère",
-  ],
   openGraph: {
     title: "BreizhApp — Création d'application mobile iOS & Android sur mesure",
     description:

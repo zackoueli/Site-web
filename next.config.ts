@@ -10,6 +10,16 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.breizhapp.tech" }],
+        destination: "https://breizhapp.tech/:path*",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

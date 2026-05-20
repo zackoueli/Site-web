@@ -4,8 +4,24 @@ import Footer from "@/components/Footer";
 import { ShoppingBag, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Boutique e-commerce sur mesure · BreizhApp",
-  description: "Création de boutiques en ligne sur mesure avec catalogue, panier, paiement Stripe et gestion des commandes. Alternative à Shopify sans abonnement mensuel.",
+  title: "Boutique e-commerce sur mesure · Brest | BreizhApp",
+  description: "Boutique en ligne sur mesure : catalogue, panier, paiement Stripe, gestion des commandes. Alternative à Shopify sans abonnement mensuel. Dès 0€ d'installation.",
+  keywords: [
+    "boutique en ligne sur mesure",
+    "e-commerce sur mesure brest",
+    "alternative shopify sans abonnement",
+    "développeur e-commerce freelance",
+    "création boutique en ligne brest",
+    "application mobile e-commerce",
+  ],
+  alternates: { canonical: "https://breizhapp.tech/services/ecommerce" },
+  openGraph: {
+    title: "Boutique e-commerce sur mesure · Brest",
+    description: "Boutique en ligne sur mesure : catalogue, panier, Stripe. Alternative à Shopify sans abonnement mensuel. Dès 0€ d'installation.",
+    url: "https://breizhapp.tech/services/ecommerce",
+    type: "website",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
 };
 
 const features = [

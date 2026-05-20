@@ -4,8 +4,26 @@ import Footer from "@/components/Footer";
 import { Smartphone, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Application mobile iOS & Android sur mesure",
-  description: "Développement d'applications mobiles iOS et Android avec React Native. Commande, réservation, paiement Stripe, notifications push. Devis gratuit sous 48h.",
+  title: "Développeur app mobile iOS & Android · Brest | BreizhApp",
+  description: "Développeur React Native freelance à Brest : app iOS & Android sur mesure dès 490€. Restaurants, commerces, e-commerce. Devis gratuit sous 48h.",
+  keywords: [
+    "développeur application mobile brest",
+    "création application mobile iOS Android",
+    "développeur freelance application mobile",
+    "application mobile sur mesure",
+    "React Native freelance brest",
+    "application mobile restaurant",
+    "développeur mobile finistère",
+    "créer une application mobile",
+  ],
+  alternates: { canonical: "https://breizhapp.tech/services/application-mobile" },
+  openGraph: {
+    title: "Développeur app mobile iOS & Android · Brest",
+    description: "App iOS & Android sur mesure dès 490€. Restaurants, commerces, e-commerce. Développeur React Native freelance à Brest. Devis gratuit sous 48h.",
+    url: "https://breizhapp.tech/services/application-mobile",
+    type: "website",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
 };
 
 const features = [

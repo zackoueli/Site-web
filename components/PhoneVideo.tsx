@@ -138,6 +138,7 @@ export default function PhoneVideo({ src, appName }: PhoneVideoProps) {
           loop
           muted
           playsInline
+          preload="none"
           onPlaying={() => setLoaded(true)}
           onCanPlay={() => setLoaded(true)}
           aria-label={`Démonstration ${appName}`}

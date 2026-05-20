@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 const links = [
@@ -17,32 +18,32 @@ export default function Navbar() {
     <nav className="brutal-border border-b-[3px] sticky top-0 z-50 bg-[#FFFBF0]">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2 font-bold text-xl mono">
+        <Link href="/" className="flex items-center gap-2 font-bold text-xl mono">
           <span className="bg-[#FFE234] brutal-border brutal-shadow px-2 py-0.5 text-sm">
             BREIZH
           </span>
           <span>App</span>
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <ul className="hidden md:flex items-center gap-1">
           {links.map((l) => (
             <li key={l.href}>
-              <a
+              <Link
                 href={l.href}
                 className="px-4 py-1.5 font-semibold hover:bg-black hover:text-[#FFFBF0] transition-colors rounded-sm"
               >
                 {l.label}
-              </a>
+              </Link>
             </li>
           ))}
           <li>
-            <a
+            <Link
               href="/#contact"
               className="brutal-btn bg-[#FF6B9D] text-white px-5 py-2 ml-3"
             >
               Devis gratuit →
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -62,23 +63,23 @@ export default function Navbar() {
           <ul className="flex flex-col p-4 gap-2">
             {links.map((l) => (
               <li key={l.href}>
-                <a
+                <Link
                   href={l.href}
                   className="block px-4 py-2 font-semibold brutal-border brutal-shadow bg-white"
                   onClick={() => setOpen(false)}
                 >
                   {l.label}
-                </a>
+                </Link>
               </li>
             ))}
             <li>
-              <a
+              <Link
                 href="/#contact"
                 className="brutal-btn bg-[#FF6B9D] text-white px-5 py-2 w-full justify-center"
                 onClick={() => setOpen(false)}
               >
                 Devis gratuit →
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

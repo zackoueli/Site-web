@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Smartphone, Globe, LayoutDashboard, ShoppingBag, ArrowRight } from "lucide-react";
 
 const offers = [
@@ -95,13 +96,13 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
-              <a
+              <Link
                 href={href}
                 className="mt-auto inline-flex items-center gap-2 text-sm font-bold brutal-border px-4 py-2 w-fit hover:opacity-80 transition-opacity"
                 style={{ backgroundColor: textColor, color: color }}
               >
                 En savoir plus <ArrowRight size={14} />
-              </a>
+              </Link>
             </div>
           ))}
         </div>

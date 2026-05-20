@@ -89,13 +89,15 @@ export default function Footer() {
           <p className="font-bold mb-3 text-[#FFE234]">Spécialités</p>
           <ul className="flex flex-col gap-2 text-sm text-gray-400">
             {[
-              "Application restaurant",
-              "Application e-commerce",
-              "Application maraîcher",
-              "Jeu mobile",
-              "App sur mesure",
-            ].map((s) => (
-              <li key={s}>{s}</li>
+              ["Application restaurant", "/blog/application-mobile-restaurant"],
+              ["Application e-commerce", "/services/ecommerce"],
+              ["Site web sur mesure", "/services/site-web"],
+              ["Plateforme digitale", "/services/plateforme"],
+              ["App sur mesure · Brest", "/services/application-mobile"],
+            ].map(([label, href]) => (
+              <li key={href}>
+                <a href={href} className="hover:text-[#FFFBF0] transition-colors">{label}</a>
+              </li>
             ))}
           </ul>
         </div>
