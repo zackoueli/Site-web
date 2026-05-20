@@ -99,8 +99,10 @@ export default function PhoneVideo({ src, appName }: PhoneVideoProps) {
             >
               <div
                 style={{
+                  width: "100%",
                   height: "100%",
                   background: "#FFE234",
+                  transformOrigin: "left center",
                   animation: "loading-bar 1.4s ease-in-out infinite",
                 }}
               />
@@ -122,9 +124,9 @@ export default function PhoneVideo({ src, appName }: PhoneVideoProps) {
         {/* Keyframes injectés inline */}
         <style>{`
           @keyframes loading-bar {
-            0%   { width: 0%; margin-left: 0; }
-            50%  { width: 60%; margin-left: 20%; }
-            100% { width: 0%; margin-left: 100%; }
+            0%   { transform: scaleX(0) translateX(0); }
+            50%  { transform: scaleX(0.6) translateX(33%); }
+            100% { transform: scaleX(0) translateX(167%); }
           }
           @keyframes pulse-border {
             0%, 100% { box-shadow: 3px 3px 0 #FFE234; }

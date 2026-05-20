@@ -159,13 +159,15 @@ export default function PhoneCarousel({ images, appName }: PhoneCarouselProps) {
               key={i}
               onClick={() => setCurrent(i)}
               style={{
-                width: i === current ? 20 : 6,
+                width: 20,
                 height: 6,
                 background: i === current ? "#0A0A0A" : "#ccc",
                 border: "1.5px solid #0A0A0A",
                 borderRadius: 0,
                 cursor: "pointer",
-                transition: "all 0.2s",
+                transform: i === current ? "scaleX(1)" : "scaleX(0.3)",
+                transformOrigin: "left center",
+                transition: "transform 0.2s, background 0.2s",
                 padding: 0,
               }}
               aria-label={`Écran ${i + 1}`}

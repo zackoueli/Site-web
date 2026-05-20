@@ -143,12 +143,15 @@ export default function Portfolio() {
                   <button
                     key={i}
                     onClick={() => setAppIndex(i)}
-                    className="brutal-border transition-all"
+                    className="brutal-border"
                     style={{
-                      width: i === appIndex ? 32 : 12,
+                      width: 32,
                       height: 12,
                       background: i === appIndex ? "#FFE234" : "#1a1a1a",
                       borderColor: i === appIndex ? "#FFE234" : "#444",
+                      transform: i === appIndex ? "scaleX(1)" : "scaleX(0.375)",
+                      transformOrigin: "left center",
+                      transition: "transform 0.2s, background 0.2s, border-color 0.2s",
                     }}
                     aria-label={`App ${i + 1}`}
                   />
