@@ -386,7 +386,7 @@ export const articles: Article[] = [
     slug: "cout-reel-planity",
     title: "Planity prix 2026 : le vrai coût pour un salon",
     description:
-      "Abonnement Planity : combien ça coûte vraiment sur 1 an ? Le calcul complet pour coiffeurs et instituts, avec une alternative sans abonnement croissant.",
+      "Planity : ce que comprend l'abonnement, les limites du modèle SaaS et une alternative où vous possédez votre outil.",
     date: "2026-05-11",
     readTime: "8 min",
     category: "Comparatifs",
@@ -401,15 +401,14 @@ export const articles: Article[] = [
       {
         heading: "Combien coûte Planity par mois en 2026 ?",
         paragraphs: [
-          "D'après les retours de professionnels et sources indépendantes, les tarifs observés se situent entre 70 et 110€/mois HT. Planity communique ses prix sur devis — contactez-les pour un tarif exact.",
+          "Planity ne publie pas de grille tarifaire fixe sur son site — les prix sont communiqués sur devis uniquement. Pour connaître le tarif exact selon votre profil, rendez-vous sur info.planity.com/tarifs.",
         ],
         list: [
-          "Formule Agenda seul : ~70€/mois HT",
-          "Formule Agenda + Caisse NF525 : ~90€/mois HT",
-          "Formule Agenda + Caisse + Boutique + Marque blanche : ~110€/mois HT",
-          "Terminal de paiement (option) : +20€/mois + frais de transaction",
+          "Formule Agenda seul : tarif sur devis",
+          "Formule Agenda + Caisse NF525 : tarif sur devis",
+          "Formule complète (boutique, marque blanche) : tarif sur devis",
+          "Terminal de paiement (option) : tarif sur devis + frais de transaction",
           "SMS supplémentaires au-delà du quota inclus : facturation à l'unité",
-          "Ces montants sont indicatifs — demandez un devis personnalisé sur info.planity.com/tarifs",
         ],
       },
       {
@@ -422,13 +421,13 @@ export const articles: Article[] = [
       {
         heading: "Le coût Planity sur 1 an — exemple chiffré",
         paragraphs: [
-          "Prenons un salon de coiffure avec 1 praticien sur la formule Agenda seul à ~70€/mois HT :",
+          "Exemple pour un salon de coiffure avec 1 praticien — les montants exacts dépendent du devis Planity :",
         ],
         list: [
-          "Abonnement annuel : 70€ × 12 = 840€ HT",
-          "SMS supplémentaires (estimation 50/mois au-delà du quota) : ~42€/an",
-          "Coût Planity sur 1 an : ~882€ HT",
-          "Sur 2 ans : ~1 764€ HT — sans posséder aucun outil en propre",
+          "Abonnement mensuel : tarif communiqué sur devis par Planity",
+          "SMS supplémentaires au-delà du quota : facturation à l'unité",
+          "Sur 1 an : abonnement × 12 + SMS supplémentaires",
+          "Sur 2 ans : vous payez sans jamais posséder aucun outil en propre",
           "Si vous arrêtez Planity : vous perdez votre visibilité annuaire et l'accès à l'historique de réservations hébergé sur la plateforme",
         ],
       },
@@ -464,13 +463,13 @@ export const articles: Article[] = [
         paragraphs: [
           "Pour 490€ une fois + 49€/mois, je développe une application mobile iOS & Android à votre nom, avec votre logo et votre charte graphique : réservation en ligne, rappels automatiques par notification push, programme de fidélité numérique, panel admin pour gérer vos créneaux.",
           "Zéro abonnement croissant. Vos données clients sont hébergées sur votre propre infrastructure Firebase. L'app reste la vôtre même si vous changez de prestataire demain.",
-          "Sur 2 ans : 490€ + (49€ × 24) = 1 666€ — contre ~1 764€ d'abonnement seul chez Planity. Et vous avez un actif numérique à votre nom, pas une location permanente.",
+          "Sur 2 ans : 490€ + (49€ × 24) = 1 666€ fixes — et vous avez un actif numérique à votre nom, pas une location permanente.",
         ],
       },
       {
         heading: "Questions fréquentes sur les tarifs Planity",
         list: [
-          "Combien coûte Planity par mois ? Entre 70 et 110€/mois HT selon les retours de professionnels — tarif exact sur devis",
+          "Combien coûte Planity par mois ? Planity communique ses tarifs sur devis uniquement — rendez-vous sur info.planity.com/tarifs",
           "Planity prend-il une commission ? Non, Planity communique sur un modèle sans commission sur les rendez-vous",
           "Peut-on utiliser Planity gratuitement ? Non — il existe une période d'essai mais pas de formule gratuite durable",
           "Comment résilier Planity ? Par lettre recommandée, avec un préavis de 10 jours (mensuel) ou 1 mois (annuel)",
@@ -558,7 +557,7 @@ export const articles: Article[] = [
     slug: "planity-tarif-prix-abonnement-2025",
     title: "Planity tarif 2026 : abonnement et prix réels",
     description:
-      "Planity tarif 2026 : entre 70 et 110€/mois HT d'après les retours de professionnels. Tous les frais expliqués et comparatif avec une app mobile sur mesure.",
+      "Planity tarif 2026 : tarif sur devis, modèle sans commission. Ce que comprend l'abonnement, ses limites et une alternative sur mesure.",
     date: "2026-05-11",
     readTime: "7 min",
     category: "Comparatifs",
@@ -572,15 +571,14 @@ export const articles: Article[] = [
       {
         heading: "Prix de l'abonnement Planity en 2026",
         paragraphs: [
-          "D'après les retours de professionnels et sources indépendantes, les tarifs observés se situent entre 70 et 110€/mois HT. Planity communique ses prix sur devis — contactez-les pour un tarif exact.",
+          "Planity ne publie pas de grille tarifaire fixe — les prix sont communiqués sur devis uniquement. Pour connaître le tarif selon votre profil, rendez-vous sur info.planity.com/tarifs.",
         ],
         list: [
-          "Formule Agenda seul : ~70€/mois HT",
-          "Formule Agenda + Caisse NF525 : ~90€/mois HT",
-          "Formule Agenda + Caisse + Boutique + Marque blanche : ~110€/mois HT",
-          "Terminal de paiement (option) : +20€/mois + frais de transaction",
+          "Formule Agenda seul : tarif sur devis",
+          "Formule Agenda + Caisse NF525 : tarif sur devis",
+          "Formule complète (boutique, marque blanche) : tarif sur devis",
+          "Terminal de paiement (option) : tarif sur devis + frais de transaction",
           "SMS supplémentaires au-delà du quota inclus : facturation à l'unité",
-          "Ces montants sont indicatifs — le tarif exact dépend de votre profil et de la négociation commerciale",
         ],
       },
       {
@@ -606,13 +604,13 @@ export const articles: Article[] = [
       {
         heading: "Planity prix mensuel : le calcul réel sur 12 mois",
         paragraphs: [
-          "Salon de 1 praticien sur la formule Agenda seul à ~70€/mois HT :",
+          "Exemple pour un salon avec 1 praticien — les montants exacts dépendent du devis Planity :",
         ],
         list: [
-          "Abonnement annuel : 70€ × 12 = 840€ HT",
-          "SMS supplémentaires (estimation 50/mois hors quota) : ~42€/an",
-          "Coût Planity sur 12 mois : ~882€ HT",
-          "Sur 24 mois : ~1 764€ HT — sans posséder aucun outil en propre",
+          "Abonnement mensuel : tarif communiqué sur devis par Planity",
+          "SMS supplémentaires au-delà du quota : facturation à l'unité",
+          "Sur 12 mois : abonnement × 12 + options",
+          "Sur 24 mois : vous continuez à payer sans posséder aucun outil en propre",
         ],
       },
       {
@@ -631,7 +629,7 @@ export const articles: Article[] = [
         heading: "Alternative à Planity : votre propre application mobile",
         paragraphs: [
           "Pour 490€ une fois + 49€/mois, je développe une application mobile iOS & Android à votre nom : réservation en ligne 24h/24, rappels par notification push (gratuits et illimités), programme de fidélité numérique, panel admin pour gérer vos créneaux.",
-          "Zéro abonnement croissant. Vos données sont hébergées sur votre propre infrastructure. Sur 2 ans : 1 666€ contre ~1 764€ d'abonnement seul chez Planity — et vous avez un actif numérique à votre nom.",
+          "Zéro abonnement croissant. Vos données sont hébergées sur votre propre infrastructure. Sur 2 ans : 1 666€ fixes — et vous avez un actif numérique à votre nom, pas une location permanente.",
           "Devis gratuit sous 24h — décrivez votre salon, je vous réponds rapidement.",
         ],
       },
