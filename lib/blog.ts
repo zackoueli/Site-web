@@ -463,7 +463,6 @@ export const articles: Article[] = [
         paragraphs: [
           "Pour 490€ une fois + 49€/mois, je développe une application mobile iOS & Android à votre nom, avec votre logo et votre charte graphique : réservation en ligne, rappels automatiques par notification push, programme de fidélité numérique, panel admin pour gérer vos créneaux.",
           "Zéro abonnement croissant. Vos données clients sont hébergées sur votre propre infrastructure Firebase. L'app reste la vôtre même si vous changez de prestataire demain.",
-          "Sur 2 ans : 490€ + (49€ × 24) = 1 666€ fixes — et vous avez un actif numérique à votre nom, pas une location permanente.",
         ],
       },
       {
@@ -629,7 +628,7 @@ export const articles: Article[] = [
         heading: "Alternative à Planity : votre propre application mobile",
         paragraphs: [
           "Pour 490€ une fois + 49€/mois, je développe une application mobile iOS & Android à votre nom : réservation en ligne 24h/24, rappels par notification push (gratuits et illimités), programme de fidélité numérique, panel admin pour gérer vos créneaux.",
-          "Zéro abonnement croissant. Vos données sont hébergées sur votre propre infrastructure. Sur 2 ans : 1 666€ fixes — et vous avez un actif numérique à votre nom, pas une location permanente.",
+          "Zéro abonnement croissant. Vos données sont hébergées sur votre propre infrastructure. Et vous avez un actif numérique à votre nom, pas une location permanente.",
           "Devis gratuit sous 24h — décrivez votre salon, je vous réponds rapidement.",
         ],
       },
@@ -2109,7 +2108,7 @@ export const articles: Article[] = [
       {
         paragraphs: [
           "Un salon de coiffure qui n'a pas d'application mobile en 2026 laisse de l'argent sur la table. Réservations en ligne, rappels automatiques, programme de fidélité, vente de produits — une app bien conçue transforme votre relation client et réduit les rendez-vous manqués.",
-          "Et contrairement à Planity qui prend entre 20% et 30% de commission sur les réservations apportées par son annuaire, une application sur mesure vous appartient entièrement.",
+          "Et contrairement à une plateforme SaaS en location, une application sur mesure vous appartient entièrement — aucun abonnement croissant, aucune dépendance.",
         ],
       },
       {
@@ -2134,10 +2133,10 @@ export const articles: Article[] = [
           "Planity est utile pour se faire connaître de nouveaux clients via son annuaire. Mais ses coûts réels méritent d'être calculés précisément :",
         ],
         list: [
-          "Abonnement Planity : entre 49€ et 99€/mois selon la formule, soit 588€ à 1 188€/an",
-          "Commission annuaire : Planity prend environ 20% sur les réservations apportées par sa plateforme — sur 1 000€ de chiffre d'affaires via Planity, vous perdez 200€",
-          "Vous ne possédez pas vos clients : si vous quittez Planity, vous perdez l'accès à votre historique de réservations et à la relation digitale avec vos clients",
-          "Une app sur mesure : coût unique, zéro commission, vos clients vous appartiennent — et vous gardez 100% de votre chiffre d'affaires",
+          "Abonnement Planity : tarif communiqué sur devis uniquement (info.planity.com/tarifs)",
+          "Planity communique sur un modèle sans commission sur les rendez-vous — vérifiez les conditions exactes dans leur contrat",
+          "Si vous quittez Planity : vérifiez les conditions d'export de votre historique de réservations dans leurs CGU avant de signer",
+          "Une app sur mesure : coût unique, vos données hébergées sur votre propre infrastructure, votre relation client sans intermédiaire",
         ],
       },
       {
@@ -2149,7 +2148,7 @@ export const articles: Article[] = [
           "Formule Essentiel — 790€ : réservation en ligne, rappels automatiques, historique client, espace admin pour gérer les créneaux et les prestations",
           "Formule Premium — 1 200€ : tout l'essentiel + programme de fidélité, paiement en ligne, notifications push ciblées, vente de produits",
           "Dans les deux cas : app iOS et Android, déploiement sur les stores, formation à la prise en main, support inclus",
-          "Comparaison : Planity vous coûte en moyenne 800€ à 1 500€/an en abonnement et commissions — votre app est rentabilisée en 6 à 12 mois",
+          "Une app sur mesure remplace un abonnement SaaS récurrent — coût fixe, outil en propre, rentabilisé dans le temps",
         ],
       },
       {
@@ -2835,7 +2834,7 @@ export const articles: Article[] = [
         ],
         list: [
           "Doctolib : référence pour les professionnels de santé — 139€/mois, excellent pour les médecins mais surdimensionné pour les autres métiers",
-          "Planity : conçu pour les salons de coiffure et instituts — 49 à 99€/mois + ~20% de commission sur les réservations via leur annuaire",
+          "Planity : conçu pour les salons de coiffure et instituts — tarif sur devis (info.planity.com/tarifs), modèle sans commission sur les rendez-vous",
           "Calendly : pratique pour les consultants et coachs — gratuit en version basique, limité à un type de rendez-vous",
           "Acuity Scheduling : plus complet, 16 à 61€/mois, interface en anglais",
           "Setmore / SimplyBook : solutions internationales, entre 0€ et 25€/mois, moins adaptées au marché français",
@@ -2848,7 +2847,7 @@ export const articles: Article[] = [
           "Sur 3 ans, voici ce que coûte réellement chaque option pour un salon ou un cabinet :",
         ],
         list: [
-          "Planity (49€/mois) : 1 764€ sur 3 ans — sans compter les commissions sur les réservations annuaire",
+          "Planity : abonnement SaaS récurrent sur devis — vous payez sans jamais posséder l'outil",
           "Doctolib (139€/mois) : 5 004€ sur 3 ans",
           "App sur mesure BreizhApp : investissement unique entre 790€ et 1 500€ — zéro abonnement, zéro commission, vos données vous appartiennent",
           "Dès la 2ème année, une app sur mesure est moins chère que n'importe quelle solution SaaS",
