@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { articles, getArticle } from "@/lib/blog";
+import { articles, getArticle, type Article } from "@/lib/blog";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -31,41 +31,107 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 function ArticleSchema({ article }: { article: NonNullable<ReturnType<typeof getArticle>> }) {
-  const schema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BlogPosting",
-        "@id": `https://breizhapp.tech/blog/${article.slug}#article`,
-        headline: article.title,
-        description: article.description,
-        datePublished: article.date,
-        dateModified: article.date,
-        mainEntityOfPage: `https://breizhapp.tech/blog/${article.slug}`,
-        author: {
-          "@type": "Person",
-          name: "Enzo Omnes",
-          url: "https://breizhapp.tech",
-        },
-        publisher: { "@id": "https://breizhapp.tech/#business" },
-        image: "https://breizhapp.tech/opengraph-image",
-        inLanguage: "fr-FR",
+  // Detect FAQ section (heading starts with "FAQ") and build FAQPage entity
+  const faqSection = article.sections.find(
+    (s) => s.heading?.startsWith("FAQ") && s.list && s.list.length > 0
+  );
+  const faqEntity = faqSection?.list
+    ? {
+        "@type": "FAQPage",
+        mainEntity: faqSection.list.map((item) => {
+          const sep = item.indexOf(" ? ");
+          const q = sep !== -1 ? item.slice(0, sep + 2).trim() : item.split(":")[0].trim();
+          const a = sep !== -1 ? item.slice(sep + 3).trim() : item.slice(item.indexOf(":") + 1).trim();
+          return {
+            "@type": "Question",
+            name: q,
+            acceptedAnswer: { "@type": "Answer", text: a },
+          };
+        }),
+      }
+    : null;
+
+  const graph: object[] = [
+    {
+      "@type": "BlogPosting",
+      "@id": `https://breizhapp.tech/blog/${article.slug}#article`,
+      headline: article.title,
+      description: article.description,
+      datePublished: article.date,
+      dateModified: article.lastModified ?? article.date,
+      mainEntityOfPage: `https://breizhapp.tech/blog/${article.slug}`,
+      author: {
+        "@type": "Person",
+        name: "Enzo Omnes",
+        url: "https://breizhapp.tech",
       },
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Accueil", item: "https://breizhapp.tech" },
-          { "@type": "ListItem", position: 2, name: "Blog", item: "https://breizhapp.tech/blog" },
-          { "@type": "ListItem", position: 3, name: article.title, item: `https://breizhapp.tech/blog/${article.slug}` },
-        ],
-      },
-    ],
-  };
+      publisher: { "@id": "https://breizhapp.tech/#business" },
+      image: "https://breizhapp.tech/opengraph-image",
+      inLanguage: "fr-FR",
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://breizhapp.tech" },
+        { "@type": "ListItem", position: 2, name: "Blog", item: "https://breizhapp.tech/blog" },
+        { "@type": "ListItem", position: 3, name: article.title, item: `https://breizhapp.tech/blog/${article.slug}` },
+      ],
+    },
+  ];
+  if (faqEntity) graph.push(faqEntity);
+
+  const schema = { "@context": "https://schema.org", "@graph": graph };
   return (
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
+  );
+}
+
+const serviceLinks: Record<string, { label: string; href: string }[]> = {
+  Restaurants: [
+    { label: "App mobile pour restaurant", href: "/services/secteur/restaurant" },
+    { label: "App restaurant Bretagne", href: "/blog/application-mobile-restaurant-bretagne" },
+    { label: "Site web restaurant Brest", href: "/blog/site-web-restaurant-brest" },
+  ],
+  Tarifs: [
+    { label: "Développeur app mobile Brest", href: "/services/application-mobile" },
+    { label: "Combien coûte une app mobile ?", href: "/blog/combien-coute-application-mobile" },
+    { label: "App mobile pas chère dès 490€", href: "/blog/application-mobile-pas-chere" },
+  ],
+  Comparatifs: [
+    { label: "Freelance vs Agence", href: "/blog/developpeur-freelance-vs-agence" },
+    { label: "No-code vs Développeur", href: "/blog/no-code-vs-developpeur" },
+    { label: "Nos services application mobile", href: "/services/application-mobile" },
+  ],
+  Tech: [
+    { label: "Services application mobile", href: "/services/application-mobile" },
+    { label: "Freelance vs Agence", href: "/blog/developpeur-freelance-vs-agence" },
+    { label: "Créer une app sans coder", href: "/blog/creer-application-mobile-sans-coder" },
+  ],
+  Conseils: [
+    { label: "Services application mobile", href: "/services/application-mobile" },
+    { label: "App mobile restaurant", href: "/blog/application-mobile-restaurant" },
+    { label: "Combien coûte une app mobile ?", href: "/blog/combien-coute-application-mobile" },
+  ],
+};
+
+function MidArticleCTA({ article }: { article: Article }) {
+  const links = serviceLinks[article.category] ?? serviceLinks.Conseils;
+  return (
+    <div className="my-2 brutal-border border-l-4 border-[#FFE234] bg-[#FFFBF0] p-4">
+      <p className="mono text-xs font-bold text-gray-500 mb-2">// articles liés</p>
+      <ul className="flex flex-col gap-1">
+        {links.map((l) => (
+          <li key={l.href}>
+            <Link href={l.href} className="text-sm font-semibold text-[#0A0A0A] hover:text-[#7C3AED] transition-colors underline underline-offset-2">
+              → {l.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
@@ -84,12 +150,12 @@ export default async function ArticlePage({ params }: Props) {
 
   // Prioritise same-category articles, fall back to different ones
   const sameCategory = articles.filter((a) => a.slug !== slug && a.category === article.category);
-  const others = sameCategory.length >= 2
-    ? sameCategory.slice(0, 2)
+  const others = sameCategory.length >= 4
+    ? sameCategory.slice(0, 4)
     : [
         ...sameCategory,
         ...articles.filter((a) => a.slug !== slug && a.category !== article.category),
-      ].slice(0, 2);
+      ].slice(0, 4);
 
   return (
     <>
@@ -117,11 +183,11 @@ export default async function ArticlePage({ params }: Props) {
             </span>
             <span className="mono text-xs text-gray-400">{article.readTime} de lecture</span>
             <span className="mono text-xs text-gray-400">
-              {new Date(article.date).toLocaleDateString("fr-FR", {
-                day: "numeric",
-                month: "long",
-                year: "numeric",
-              })}
+              {article.lastModified && article.lastModified !== article.date ? (
+                <>Mis à jour le {new Date(article.lastModified).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}</>
+              ) : (
+                new Date(article.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })
+              )}
             </span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">{article.title}</h1>
@@ -132,28 +198,57 @@ export default async function ArticlePage({ params }: Props) {
 
         {/* Article body */}
         <div className="flex flex-col gap-8">
-          {article.sections.map((section, i) => (
-            <section key={i}>
-              {section.heading && (
-                <h2 className="text-2xl font-bold mb-3">{section.heading}</h2>
-              )}
-              {section.paragraphs?.map((p, j) => (
-                <p key={j} className="text-gray-700 leading-relaxed mb-3">
-                  {p}
-                </p>
-              ))}
-              {section.list && (
-                <ul className="flex flex-col gap-2 mt-2">
-                  {section.list.map((item, j) => (
-                    <li key={j} className="flex gap-3 items-start">
-                      <span className="mt-1 w-3 h-3 min-w-[12px] bg-[#FFE234] brutal-border inline-block" />
-                      <span className="text-gray-700 leading-relaxed">{item}</span>
-                    </li>
+          {article.sections.map((section, i) => {
+            const isFaq = section.heading?.startsWith("FAQ");
+            return (
+              <>
+                <section key={i}>
+                  {section.heading && (
+                    isFaq ? (
+                      <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span className="bg-[#FFE234] brutal-border px-2 py-0.5 text-base mono">FAQ</span>
+                        <span>{section.heading.replace(/^FAQ\s*—?\s*/i, "")}</span>
+                      </h2>
+                    ) : (
+                      <h2 className="text-2xl font-bold mb-3">{section.heading}</h2>
+                    )
+                  )}
+                  {section.paragraphs?.map((p, j) => (
+                    <p key={j} className="text-gray-700 leading-relaxed mb-3">
+                      {p}
+                    </p>
                   ))}
-                </ul>
-              )}
-            </section>
-          ))}
+                  {section.list && (
+                    isFaq ? (
+                      <dl className="flex flex-col gap-3 mt-2">
+                        {section.list.map((item, j) => {
+                          const sep = item.indexOf(" ? ");
+                          const q = sep !== -1 ? item.slice(0, sep + 2) : item.split(":")[0];
+                          const a = sep !== -1 ? item.slice(sep + 3) : item.slice(item.indexOf(":") + 1).trim();
+                          return (
+                            <div key={j} className="brutal-border bg-white p-4">
+                              <dt className="font-bold text-sm mb-1">{q}</dt>
+                              <dd className="text-gray-700 text-sm leading-relaxed">{a}</dd>
+                            </div>
+                          );
+                        })}
+                      </dl>
+                    ) : (
+                      <ul className="flex flex-col gap-2 mt-2">
+                        {section.list.map((item, j) => (
+                          <li key={j} className="flex gap-3 items-start">
+                            <span className="mt-1 w-3 h-3 min-w-[12px] bg-[#FFE234] brutal-border inline-block" />
+                            <span className="text-gray-700 leading-relaxed">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )
+                  )}
+                </section>
+                {i === 1 && <MidArticleCTA article={article} />}
+              </>
+            );
+          })}
         </div>
 
         {/* CTA */}

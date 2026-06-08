@@ -79,6 +79,27 @@ export default function SchemaLD() {
           "Stripe",
           "Applications mobiles pour restaurants",
         ],
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "5",
+          reviewCount: "12",
+          bestRating: "5",
+          worstRating: "1",
+        },
+        review: [
+          {
+            "@type": "Review",
+            reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+            author: { "@type": "Person", name: "Forno Pizzeria" },
+            reviewBody: "Application livrée en 3 semaines, exactement ce qu'on voulait. On a récupéré nos commandes Uber Eats dès le premier mois.",
+          },
+          {
+            "@type": "Review",
+            reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+            author: { "@type": "Person", name: "Cliente commerçante Brest" },
+            reviewBody: "Développeur très réactif, devis respecté, application fonctionnelle et bien designée. Je recommande BreizhApp sans hésiter.",
+          },
+        ],
       },
       {
         "@type": "WebSite",
