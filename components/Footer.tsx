@@ -85,7 +85,6 @@ export default function Footer() {
             ["Site web sur mesure", "/services/site-web"],
             ["Application e-commerce", "/services/ecommerce"],
             ["Plateforme digitale", "/services/plateforme"],
-            ["Devis gratuit", "/devis"],
             ["Réalisations", "/portfolio"],
           ]} />
 

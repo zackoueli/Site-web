@@ -28,7 +28,9 @@ export default function DevisPage() {
   const montantSolde = totalHT - montantAcompte;
 
   function formatEur(n: number) {
-    return n.toLocaleString("fr-FR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
+    const parts = n.toFixed(2).split(".");
+    const intPart = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    return intPart + "," + parts[1] + " €";
   }
 
   function updateLigne(i: number, field: keyof Ligne, value: string | number) {
