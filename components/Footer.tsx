@@ -31,8 +31,8 @@ export default function Footer() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 py-10">
-        {/* Top row : brand + 4 columns */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 mb-10">
+        {/* Single row : brand + 4 columns */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
           {/* Brand */}
           <div className="col-span-2 sm:col-span-3 lg:col-span-1">
             <div className="font-bold text-xl mono mb-3 flex items-center gap-2">
@@ -86,6 +86,9 @@ export default function Footer() {
             ["Application e-commerce", "/services/ecommerce"],
             ["Plateforme digitale", "/services/plateforme"],
             ["Réalisations", "/portfolio"],
+            ["Blog", "/blog"],
+            ["Tarifs", "/#tarifs"],
+            ["Contact", "/#contact"],
           ]} />
 
           <FooterCol title="Par secteur" links={[
@@ -93,63 +96,35 @@ export default function Footer() {
             ["App coiffeur / salon", "/services/secteur/coiffeur"],
             ["App hôtel & hébergement", "/services/secteur/hotel"],
             ["App salle de sport", "/services/secteur/salle-de-sport"],
-            ["App maraîcher / commerce local", "/services/secteur/maraicher-commerce-local"],
+            ["App maraîcher / local", "/services/secteur/maraicher-commerce-local"],
             ["Jeu mobile", "/services/secteur/jeu-mobile"],
             ["App portfolio / vitrine", "/services/secteur/portfolio-vitrine"],
             ["App réservation / RDV", "/services/secteur/reservation-prise-de-rdv"],
-            ["App livraison / logistique", "/services/secteur/livraison-logistique"],
-            ["Réseau social sur mesure", "/services/secteur/reseau-social-communaute"],
+            ["App livraison", "/services/secteur/livraison-logistique"],
+            ["Réseau social", "/services/secteur/reseau-social-communaute"],
             ["App santé & bien-être", "/services/secteur/sante-bien-etre"],
-            ["App éducation / e-learning", "/services/secteur/education-formation"],
-            ["App événementiel & billetterie", "/services/secteur/evenementiel-billetterie"],
+            ["App e-learning", "/services/secteur/education-formation"],
+            ["App événementiel", "/services/secteur/evenementiel-billetterie"],
           ]} />
 
           <FooterCol title="Par ville" links={[
             ["Application mobile Brest", "/blog/application-mobile-brest"],
             ["Développeur Brest", "/blog/developpeur-freelance-application-mobile-brest"],
-            ["Application mobile Bretagne", "/blog/developpeur-application-mobile-bretagne"],
+            ["App mobile Bretagne", "/blog/developpeur-application-mobile-bretagne"],
             ["Développeur Quimper", "/blog/developpeur-freelance-quimper"],
             ["Développeur Rennes", "/blog/developpeur-freelance-rennes"],
             ["Création app Brest", "/blog/creation-application-mobile-brest"],
           ]} />
 
-          <FooterCol title="Comparatifs" links={[
+          <FooterCol title="Ressources" links={[
+            ["Combien coûte une app ?", "/blog/combien-coute-application-mobile"],
+            ["App mobile dès 490€", "/blog/application-mobile-pas-chere"],
             ["BreizhApp vs Planity", "/blog/cout-reel-planity"],
-            ["BreizhApp vs Wix", "/blog/cout-reel-site-wix"],
-            ["BreizhApp vs Shopify", "/blog/cout-reel-site-shopify"],
             ["Freelance vs Agence", "/blog/developpeur-freelance-vs-agence"],
             ["No-code vs Développeur", "/blog/no-code-vs-developpeur"],
             ["React Native vs Flutter", "/blog/react-native-vs-flutter"],
-          ]} />
-        </div>
-
-        {/* Bottom row : navigation + blog populaire */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 border-t border-gray-800 pt-8">
-          <FooterCol title="Navigation" links={[
-            ["Services", "/#services"],
-            ["Réalisations", "/portfolio"],
-            ["Tarifs", "/#tarifs"],
-            ["Blog", "/blog"],
-            ["FAQ", "/#faq"],
-            ["Contact", "/#contact"],
-          ]} />
-
-          <FooterCol title="Articles populaires" links={[
-            ["Combien coûte une app mobile ?", "/blog/combien-coute-application-mobile"],
-            ["App mobile pas chère dès 490€", "/blog/application-mobile-pas-chere"],
-            ["App restaurant : fonctionnalités", "/blog/application-mobile-restaurant"],
-            ["Tarif Planity 2026", "/blog/planity-tarif-prix-abonnement-2025"],
-            ["Tarif Shopify 2025", "/blog/shopify-tarif-prix-abonnement-2025"],
-            ["Site web artisan sur mesure", "/blog/site-web-artisan-sur-mesure"],
-          ]} />
-
-          <FooterCol title="Ressources" links={[
-            ["Blog BreizhApp", "/blog"],
-            ["Prise de rendez-vous", "/blog/application-mobile-prise-de-rdv"],
-            ["App fidélité clients", "/blog/application-mobile-fidelite-clients"],
-            ["Progressive Web App vs natif", "/blog/progressive-web-app-vs-application-native"],
+            ["Progressive Web App", "/blog/progressive-web-app-vs-application-native"],
             ["Créer une app sans coder", "/blog/creer-application-mobile-sans-coder"],
-            ["Tarif création site web 2025", "/blog/tarif-creation-site-internet-2025"],
           ]} />
         </div>
       </div>
