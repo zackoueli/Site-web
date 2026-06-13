@@ -3348,6 +3348,188 @@ export const articles: Article[] = [
   },
 
   {
+    slug: "developpeur-mobile-brest",
+    title: "Développeur mobile Brest : création app iOS & Android dès 490€",
+    description:
+      "Développeur mobile à Brest spécialisé React Native : création application mobile iOS & Android sur mesure dès 490€. Devis gratuit sous 24h, livraison en 3 semaines.",
+    date: "2026-06-13",
+    readTime: "5 min",
+    category: "Local",
+    sections: [
+      {
+        paragraphs: [
+          "Vous cherchez un développeur mobile à Brest pour créer votre application iOS & Android ? Je suis Enzo Omnes, développeur React Native freelance basé à Brest, et je crée des applications mobiles sur mesure dès 490€ — livraison en 2 à 5 semaines, devis gratuit sous 24h.",
+        ],
+      },
+      {
+        heading: "Développeur mobile à Brest : ce que je propose",
+        list: [
+          "Application iOS & Android en React Native — une seule base de code, disponible sur les deux stores",
+          "Design sur mesure adapté à votre image de marque",
+          "Paiement Stripe, notifications push, espace admin — tout est disponible dès 600€",
+          "Déploiement sur l'App Store Apple et Google Play inclus",
+          "Hébergement et support inclus à 49€/mois — votre app ne tombe jamais",
+          "Interlocuteur unique : vous parlez directement au développeur qui code votre app",
+        ],
+      },
+      {
+        heading: "Pourquoi choisir un développeur mobile local à Brest ?",
+        list: [
+          "Proximité : disponible pour un café ou une réunion à Brest selon votre préférence",
+          "Connaissance du tissu local : je travaille avec des restaurateurs, commerçants et artisans du Finistère",
+          "Réactivité : je réponds sous 24h, souvent le jour même — pas de délais d'agence",
+          "Tarif transparent : dès 490€ pour une vraie app iOS & Android, contre 15 000€ minimum en agence",
+          "Pas d'intermédiaire : aucun chef de projet entre vous et le code — les retours sont directs et rapides",
+        ],
+      },
+      {
+        heading: "Mes tarifs de développeur mobile à Brest",
+        list: [
+          "App Starter à 490€ + 49€/mois : app iOS & Android complète, design, authentification, contenu dynamique, déploiement",
+          "App Premium à 600€ + 49€/mois : tout le Starter + Stripe, notifications push, panel admin web",
+          "App Boutique à 0€ d'installation : pour les commerces et restaurants — 12% de commission sur les ventes, zéro risque",
+        ],
+      },
+      {
+        heading: "Exemples de projets à Brest et en Finistère",
+        list: [
+          "App de commande en ligne pour une pizzeria du centre de Brest : menu, Stripe, suivi de commande en temps réel",
+          "Application de réservation pour un salon de coiffure à Brest : agenda, rappels automatiques, fidélité",
+          "App catalogue pour un artisan du Finistère : galerie, formulaire de devis, contact direct",
+          "Application de paniers pour un maraîcher breton : abonnements hebdomadaires, livraison locale, paiement récurrent",
+        ],
+      },
+      {
+        heading: "FAQ — Développeur mobile Brest",
+        list: [
+          "Faut-il se déplacer pour travailler avec vous ? Non. Tout se passe en visio et par messages. Je peux aussi me déplacer à Brest ou en Finistère si vous le souhaitez.",
+          "Combien de temps pour livrer mon app ? Entre 2 et 5 semaines selon la complexité. Une App Starter est livrée en 2-3 semaines.",
+          "Est-ce que vous travaillez avec des clients hors Brest ? Oui — je travaille avec des clients de toute la Bretagne et de toute la France. La localisation ne change rien à la qualité du travail.",
+          "Quel est le délai de réponse pour un devis ? Je réponds sous 24h, souvent le jour même. Le devis est gratuit et sans engagement.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "creation-application-mobile-bretagne",
+    title: "Création application mobile Bretagne : développeur React Native local",
+    description:
+      "Création d'application mobile en Bretagne : développeur React Native freelance à Brest. App iOS & Android sur mesure dès 490€ pour les entreprises bretonnes.",
+    date: "2026-06-13",
+    readTime: "5 min",
+    category: "Local",
+    sections: [
+      {
+        paragraphs: [
+          "Vous cherchez à créer une application mobile en Bretagne sans passer par une agence parisienne hors budget ? Je suis développeur mobile freelance basé à Brest et je travaille avec des TPE, artisans, restaurateurs et porteurs de projets de toute la Bretagne — Finistère, Côtes-d'Armor, Morbihan, Ille-et-Vilaine.",
+        ],
+      },
+      {
+        heading: "Création d'app mobile en Bretagne : les secteurs que je couvre",
+        list: [
+          "Restaurateurs et hôteliers bretons : commande en ligne, réservation, menu digital, fidélité clients",
+          "Artisans et commerçants : catalogue produits, devis en ligne, prise de rendez-vous",
+          "Agriculture et circuits courts : paniers hebdomadaires, abonnements, livraison locale",
+          "Tourisme et loisirs bretons : billetterie, guide digital, réservation d'activités",
+          "Startups et porteurs de projets : MVP mobile pour valider une idée sur le marché breton",
+          "Associations et collectivités : app d'information, agenda, signalement",
+        ],
+      },
+      {
+        heading: "Pourquoi travailler avec un développeur mobile breton ?",
+        list: [
+          "Même fuseau horaire, même langue, même culture — les échanges sont directs et efficaces",
+          "Je connais les spécificités du marché breton : saisonnalité, circuits courts, tourisme côtier",
+          "Disponible pour se rencontrer à Brest, Quimper, Rennes ou Vannes selon votre localisation",
+          "Tarifs sans marges d'agence : dès 490€ pour une app iOS & Android complète",
+          "Réactivité locale : je réponds sous 24h et je m'adapte aux contraintes des TPE bretonnes",
+        ],
+      },
+      {
+        heading: "Tarifs pour les entreprises bretonnes",
+        list: [
+          "App Starter à 490€ + 49€/mois : idéale pour les artisans, commerçants et restaurateurs qui veulent une présence mobile sérieuse",
+          "App Premium à 600€ + 49€/mois : pour les commerces qui veulent vendre en ligne, gérer les réservations et fidéliser leurs clients",
+          "App Boutique à 0€ d'installation : pour les épiceries, maraîchers et commerces de bouche — 12% sur les ventes, zéro investissement initial",
+        ],
+      },
+      {
+        heading: "Villes bretonnes où j'interviens",
+        list: [
+          "Brest et le Finistère : Quimper, Morlaix, Landerneau, Douarnenez, Concarneau",
+          "Rennes et l'Ille-et-Vilaine : Saint-Malo, Fougères, Vitré, Redon",
+          "Vannes et le Morbihan : Lorient, Pontivy, Auray, La Baule",
+          "Saint-Brieuc et les Côtes-d'Armor : Lannion, Dinan, Guingamp",
+          "Toute la Bretagne : le travail se fait principalement en distanciel, la localisation ne change rien",
+        ],
+      },
+      {
+        heading: "FAQ — Création application mobile Bretagne",
+        list: [
+          "Travaillez-vous uniquement en Bretagne ? Non. Je travaille avec des clients de toute la France — mais ma proximité avec les entreprises bretonnes est un vrai avantage pour les échanges.",
+          "Peut-on se rencontrer ? Oui. Je suis basé à Brest et je peux me déplacer dans le Finistère. Pour les autres départements bretons, je privilégie la visio.",
+          "Les tarifs sont-ils les mêmes pour une entreprise rennaise et brestoise ? Oui, mes tarifs sont identiques quelle que soit la localisation de votre entreprise.",
+          "Combien de temps pour créer mon app ? De 2 semaines pour une app simple à 5 semaines pour une app avec paiement, admin et notifications.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "developpeur-application-mobile-finistere",
+    title: "Développeur application mobile Finistère : Brest, Quimper, Morlaix",
+    description:
+      "Développeur application mobile dans le Finistère : Brest, Quimper, Morlaix. App iOS & Android sur mesure dès 490€. Freelance local, devis gratuit 24h.",
+    date: "2026-06-13",
+    readTime: "4 min",
+    category: "Local",
+    sections: [
+      {
+        paragraphs: [
+          "Vous êtes dans le Finistère et cherchez un développeur pour créer votre application mobile ? Basé à Brest, je couvre l'ensemble du département — de Quimper à Morlaix, de Brest à Concarneau — pour la création d'applications iOS & Android sur mesure.",
+        ],
+      },
+      {
+        heading: "Développeur app mobile dans tout le Finistère",
+        list: [
+          "Brest et Brest Métropole : disponible pour des réunions en présentiel ou en visio",
+          "Quimper et le Pays Glazik : artisans, commerçants du centre-ville, restaurateurs",
+          "Morlaix et le Pays de Morlaix : TPE, tourisme, agriculture",
+          "Concarneau, Douarnenez, Audierne : pêche, tourisme côtier, commerces locaux",
+          "Landerneau, Landivisiau : industrie, agroalimentaire, PME locales",
+          "Tout le Finistère Nord et Sud : je me déplace ou travaille en remote selon votre préférence",
+        ],
+      },
+      {
+        heading: "Ce que je développe pour les entreprises du Finistère",
+        list: [
+          "App de commande en ligne pour les restaurants et pizzerias : menu, Stripe, suivi de commande",
+          "Application de réservation pour les coiffeurs, instituts et prestataires",
+          "App de paniers et abonnements pour les maraîchers et producteurs locaux",
+          "Application catalogue et devis pour les artisans du bâtiment et du nautisme",
+          "App de fidélité et programme de points pour les commerces indépendants",
+          "Application touristique pour les gîtes, campings et activités outdoor en Finistère",
+        ],
+      },
+      {
+        heading: "Mes tarifs pour les entreprises finistériennes",
+        list: [
+          "App Starter à 490€ + 49€/mois : app iOS & Android, design, contenu dynamique, déploiement stores",
+          "App Premium à 600€ + 49€/mois : paiement Stripe, notifications push, panel admin",
+          "App Boutique à 0€ d'installation : 12% de commission sur les ventes — adapté aux producteurs et restaurateurs",
+        ],
+      },
+      {
+        heading: "FAQ — Développeur application mobile Finistère",
+        list: [
+          "Vous déplacez-vous à Quimper ou Morlaix ? Oui, je peux me déplacer dans le Finistère pour un premier rendez-vous. La suite du projet se passe généralement en visio.",
+          "Travaillez-vous avec des associations et collectivités du Finistère ? Oui, je propose des tarifs adaptés pour les associations et structures publiques.",
+          "Mon app sera-t-elle disponible en breton ? Oui, la langue peut être ajoutée comme option — le breton comme langue secondaire est techniquement simple à intégrer.",
+          "Quel est votre délai de réponse pour un devis ? Sous 24h, souvent le jour même. Le devis est gratuit et sans engagement.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "j-ai-une-idee-d-application-mobile",
     title: "J'ai une idée d'application mobile : par où commencer ?",
     description:
