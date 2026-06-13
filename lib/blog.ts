@@ -3347,6 +3347,247 @@ export const articles: Article[] = [
     ],
   },
 
+  {
+    slug: "j-ai-une-idee-d-application-mobile",
+    title: "J'ai une idée d'application mobile : par où commencer ?",
+    description:
+      "Vous avez une idée d'app mobile mais vous ne savez pas comment la concrétiser ? Ce guide vous explique les étapes, les coûts et comment trouver le bon développeur.",
+    date: "2026-06-13",
+    readTime: "6 min",
+    category: "Guides",
+    sections: [
+      {
+        paragraphs: [
+          "Vous avez une idée d'application mobile. Peut-être une solution à un problème que vous vivez tous les jours, une idée de business, ou un outil qui manque dans votre secteur. La bonne nouvelle : c'est exactement comme ça que naissent les meilleures apps. La question, c'est : par où commencer ?",
+          "Ce guide vous accompagne pas à pas, de l'idée brute jusqu'à la mise en ligne sur l'App Store et Google Play.",
+        ],
+      },
+      {
+        heading: "Étape 1 : formuler votre idée clairement",
+        paragraphs: [
+          "Avant de parler à un développeur, vous devez répondre à trois questions simples :",
+        ],
+        list: [
+          "À quel problème mon app répond-elle ? Plus c'est précis, mieux c'est — une app qui fait tout fait généralement tout mal",
+          "Qui sont mes utilisateurs ? Un restaurateur qui gère ses commandes ? Des clients qui veulent commander en ligne ? Les deux sont des apps différentes",
+          "Quelle est la fonctionnalité principale ? La règle du \"un seul job\" : une app qui fait une chose très bien vaut mieux qu'une app qui fait dix choses moyennement",
+          "Existe-t-il déjà quelque chose de similaire ? Si oui, c'est une bonne nouvelle — ça prouve qu'il y a un marché. Votre différenciation sera votre avantage",
+        ],
+      },
+      {
+        heading: "Étape 2 : estimer le coût de votre application mobile",
+        paragraphs: [
+          "Le coût d'une application mobile dépend directement de sa complexité. En tant que développeur mobile freelance à Brest, voici les tarifs réels que je pratique :",
+        ],
+        list: [
+          "App Starter à 490€ : app iOS & Android avec design sur mesure, authentification, contenu dynamique — livraison en 2-3 semaines",
+          "App Premium à 600€ : tout le Starter + paiement Stripe, notifications push, panel d'administration",
+          "App Boutique à 0€ d'installation : pour les e-commerçants, je prends 12% de commission sur les ventes — zéro risque financier",
+          "Ces tarifs s'entendent pour un développeur freelance React Native. Une agence facturera 15 000€ à 80 000€ pour un résultat identique",
+        ],
+      },
+      {
+        heading: "Étape 3 : choisir entre no-code et développeur",
+        paragraphs: [
+          "Des outils comme Glide, Adalo ou Bubble permettent de créer une app sans coder. C'est tentant, mais voici ce qu'on ne vous dit pas :",
+        ],
+        list: [
+          "Les apps no-code sont refusées fréquemment par l'App Store Apple — Apple détecte les apps générées automatiquement",
+          "Vous ne possédez pas votre app — si la plateforme ferme ou augmente ses tarifs, vous êtes bloqué",
+          "Les abonnements no-code (29€ à 350€/mois) dépassent rapidement le coût d'une app sur mesure à 490€",
+          "Les fonctionnalités natives (Bluetooth, NFC, Face ID, géolocalisation avancée) sont souvent impossibles en no-code",
+          "Conclusion : le no-code est adapté pour tester une idée en quelques jours. Dès que vous voulez lancer sérieusement, un développeur vous coûtera moins cher sur le long terme",
+        ],
+      },
+      {
+        heading: "Étape 4 : trouver le bon développeur mobile",
+        paragraphs: [
+          "Trois options s'offrent à vous : une agence digitale, un freelance, ou des plateformes comme Malt ou Upwork.",
+        ],
+        list: [
+          "Agence : budget 15 000€-80 000€, délai 3-6 mois, interlocuteur qui change en cours de projet",
+          "Freelance spécialisé : budget 490€-2 000€, délai 2-5 semaines, vous parlez directement au développeur qui code votre app",
+          "Plateformes offshore : budget attractif, mais barrière de langue, fuseaux horaires et qualité variable",
+          "Ce que je recommande : choisissez un freelance spécialisé React Native pour une app iOS & Android. Une seule base de code = coût divisé par deux, et vous avez un interlocuteur unique de A à Z",
+        ],
+      },
+      {
+        heading: "Étape 5 : préparer votre brief avant le premier contact",
+        paragraphs: [
+          "Avant de contacter un développeur, préparez un brief simple. Pas besoin d'être technique — voici ce qu'il faut mentionner :",
+        ],
+        list: [
+          "Le problème que l'app résout et pour qui",
+          "La fonctionnalité principale et les fonctionnalités secondaires (si vous en avez)",
+          "Les plateformes cibles : iOS seulement, Android seulement, ou les deux",
+          "Votre budget approximatif et votre délai idéal",
+          "Des apps existantes que vous aimez, pour donner une référence visuelle",
+        ],
+      },
+      {
+        heading: "FAQ — J'ai une idée d'application mobile",
+        list: [
+          "Faut-il avoir un business plan avant de contacter un développeur ? Non. Une description claire du problème et de l'utilisateur cible suffit pour obtenir un devis. Le développeur vous aidera à affiner le périmètre.",
+          "Mon idée peut-elle être copiée si j'en parle à un développeur ? Le risque est très faible en pratique. Si vous êtes inquiet, un NDA (accord de confidentialité) peut être signé avant le brief.",
+          "Combien de temps pour développer une app mobile ? Entre 2 semaines (app simple) et 2 mois (app complexe avec backend custom). La plupart des projets que je réalise sont livrés en 3-5 semaines.",
+          "Peut-on modifier l'app après la mise en ligne ? Oui. Une app se fait évoluer — c'est d'ailleurs la bonne approche : lancer une v1 simple, mesurer l'usage, puis améliorer.",
+          "Doit-on payer l'App Store et Google Play ? Oui : 99$/an pour le compte développeur Apple et 25$ une seule fois pour Google Play. Ces frais sont à votre charge — la publication en elle-même est incluse dans mes prestations.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "faire-developper-application-mobile",
+    title: "Faire développer une application mobile : guide complet 2026",
+    description:
+      "Combien ça coûte de faire développer une application mobile ? Freelance, agence, no-code : comparatif complet pour choisir la bonne option selon votre budget.",
+    date: "2026-06-13",
+    readTime: "7 min",
+    category: "Guides",
+    sections: [
+      {
+        paragraphs: [
+          "Faire développer une application mobile iOS & Android est aujourd'hui accessible à partir de 490€ avec un développeur freelance React Native, contre 15 000€ à 80 000€ en agence. Mais comment choisir la bonne option ? Ce guide compare toutes les solutions disponibles en 2026.",
+        ],
+      },
+      {
+        heading: "Option 1 : faire appel à un développeur freelance",
+        paragraphs: [
+          "C'est la solution que je représente en tant que développeur mobile freelance à Brest. Voici ce que ça implique concrètement :",
+        ],
+        list: [
+          "Budget : 490€ à 2 000€ selon les fonctionnalités — dès 490€ pour une app iOS & Android complète",
+          "Délai : 2 à 5 semaines selon la complexité",
+          "Avantage principal : vous parlez directement au développeur qui code votre app, pas à un chef de projet qui transmet",
+          "Technologie : React Native permet de créer une seule application qui tourne sur iOS et Android — coût divisé par deux",
+          "Ce qu'il faut vérifier : le portfolio, les avis clients, et que le freelance est bien spécialisé mobile (pas un développeur web qui \"fait aussi\" du mobile)",
+        ],
+      },
+      {
+        heading: "Option 2 : passer par une agence digitale",
+        paragraphs: [
+          "Les agences digitales proposent des équipes complètes : chef de projet, designer, développeur iOS, développeur Android, testeur.",
+        ],
+        list: [
+          "Budget : 15 000€ à 80 000€ selon la complexité et la localisation de l'agence",
+          "Délai : 3 à 6 mois en moyenne",
+          "Avantage : adapted pour les projets très complexes nécessitant plusieurs développeurs en parallèle",
+          "Inconvénient : vous ne parlez pas au développeur — vous passez par un chef de projet, les allers-retours sont lents",
+          "Quand choisir une agence ? Pour des projets nécessitant une équipe de 5+ personnes et un budget de plus de 50 000€",
+        ],
+      },
+      {
+        heading: "Option 3 : le no-code (Adalo, Glide, Bubble)",
+        paragraphs: [
+          "Les outils no-code permettent de créer une app sans développeur. Voici la réalité derrière les promesses marketing :",
+        ],
+        list: [
+          "Coût apparent : gratuit ou peu cher au départ, mais abonnements de 29€ à 350€/mois à vie",
+          "Coût réel sur 3 ans : entre 1 000€ et 12 600€ en abonnements — souvent plus cher qu'un développement sur mesure",
+          "Limites techniques : accès aux fonctionnalités natives du téléphone très restreint, performances dégradées",
+          "App Store : Apple rejette fréquemment les apps générées par des outils no-code",
+          "Propriété : vous ne possédez pas votre code — si la plateforme ferme, votre app disparaît",
+          "Verdict : adapté pour un MVP très simple ou un prototype de validation — pas pour un lancement commercial sérieux",
+        ],
+      },
+      {
+        heading: "Option 4 : des plateformes comme Malt ou Upwork",
+        paragraphs: [
+          "Ces plateformes permettent de trouver des freelances du monde entier. Avantages et inconvénients :",
+        ],
+        list: [
+          "Malt : freelances français et européens, tarifs journaliers entre 300€ et 800€/jour",
+          "Upwork : freelances internationaux, tarifs très bas mais qualité très variable",
+          "Risques de l'offshore : barrière de la langue, fuseaux horaires, difficultés à suivre l'avancement, livrables parfois décevants",
+          "Ce que je recommande : si vous passez par une plateforme, choisissez un freelance avec des avis vérifiés, un portfolio mobile solide, et préférez quelqu'un dans votre fuseau horaire",
+        ],
+      },
+      {
+        heading: "Récapitulatif : quelle option choisir ?",
+        list: [
+          "Budget < 2 000€ et app standard : développeur freelance React Native — meilleur rapport qualité/prix",
+          "Budget 0€ et vous voulez tester une idée : no-code (Glide ou Adalo) pour un prototype — mais prévoyez de migrer",
+          "Budget > 50 000€ et projet très complexe : agence digitale spécialisée mobile",
+          "Vous avez du temps et des compétences techniques : apprendre React Native vous-même (6-12 mois)",
+        ],
+      },
+      {
+        heading: "FAQ — Faire développer une application mobile",
+        list: [
+          "Combien coûte une application mobile iOS & Android ? Entre 490€ chez un freelance React Native et 80 000€ en agence. La technologie cross-platform React Native permet de diviser le coût par deux.",
+          "Quelle est la différence entre une app native et une app React Native ? Une app native est développée séparément pour iOS (Swift) et Android (Kotlin). React Native utilise une seule base de code JavaScript pour les deux — même qualité, coût divisé par deux.",
+          "Combien de temps dure le développement ? De 2 semaines pour une app simple à 5 mois pour une app complexe. La plupart des projets freelance sont livrés en 3-5 semaines.",
+          "Qui est propriétaire du code après le développement ? Avec un freelance, vous êtes propriétaire à 100% du code source. Sur les plateformes no-code, vous ne l'êtes pas.",
+          "Peut-on avoir une app iOS sans app Android ? Oui, c'est possible. Mais avec React Native, développer pour les deux en même temps coûte à peine plus cher — je le recommande systématiquement.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "je-veux-creer-une-application-mobile",
+    title: "Je veux créer une application mobile : le guide pour démarrer",
+    description:
+      "Vous voulez créer une application mobile mais vous ne savez pas comment ? Étapes, coûts, technologies : tout ce qu'il faut savoir avant de vous lancer.",
+    date: "2026-06-13",
+    readTime: "5 min",
+    category: "Guides",
+    sections: [
+      {
+        paragraphs: [
+          "Vous voulez créer une application mobile. Que ce soit pour votre commerce, votre idée de startup ou un outil professionnel, la création d'une app iOS & Android est aujourd'hui accessible à partir de 490€. Voici comment démarrer concrètement.",
+        ],
+      },
+      {
+        heading: "Ce qu'il faut décider avant de créer votre app",
+        list: [
+          "iOS, Android ou les deux ? Choisissez les deux dès le départ — avec React Native, le surcoût est minime et vous touchez 100% du marché",
+          "App native ou web app ? Une app native (sur l'App Store) convertit 3× mieux qu'un site mobile — préférez-la pour un usage commercial",
+          "Quelles fonctionnalités en version 1 ? Listez 3 fonctionnalités maximum pour votre première version — vous ajouterez les autres ensuite",
+          "Quel budget ? Comptez dès 490€ pour une app simple avec un freelance React Native, contre 15 000€+ en agence",
+        ],
+      },
+      {
+        heading: "Les étapes de création d'une application mobile",
+        list: [
+          "Brief et devis : décrivez votre idée à un développeur mobile — un bon freelance vous répond sous 24h avec une estimation",
+          "Design UX/UI : les maquettes de votre app, validées écran par écran avant de coder",
+          "Développement : le développeur code l'app, vous suivez l'avancement et donnez vos retours",
+          "Tests : l'app est testée sur vrais appareils iOS et Android avant livraison",
+          "Publication : soumission sur l'App Store (Apple) et Google Play — validation en 1 à 3 jours",
+          "Maintenance : mises à jour, corrections, nouvelles fonctionnalités — prévoyez 49€/mois pour un support continu",
+        ],
+      },
+      {
+        heading: "Pourquoi choisir un développeur freelance plutôt qu'une agence",
+        paragraphs: [
+          "La différence de prix est énorme — mais elle s'explique simplement :",
+        ],
+        list: [
+          "Une agence facture 15 000€ à 80 000€ parce qu'elle a des équipes entières : chef de projet, designer, développeur iOS, développeur Android, testeur",
+          "Un freelance spécialisé React Native fait tout ça seul avec une technologie cross-platform — vous payez le travail, pas les marges et les frais de structure",
+          "Vous parlez directement à la personne qui code votre app — pas à un intermédiaire qui transmet vos retours",
+          "Le résultat est identique : une vraie app native disponible sur l'App Store et Google Play",
+        ],
+      },
+      {
+        heading: "Créer une app mobile à Brest et en Bretagne",
+        paragraphs: [
+          "Basé à Brest, je travaille avec des clients de toute la Bretagne et de toute la France. La création d'application mobile ne nécessite pas de se déplacer — tout se passe en visio, avec des points d'avancement réguliers.",
+          "Si vous êtes en Bretagne et cherchez un développeur mobile de proximité, je suis disponible pour un premier appel gratuit pour discuter de votre projet.",
+        ],
+      },
+      {
+        heading: "FAQ — Je veux créer une application mobile",
+        list: [
+          "Dois-je avoir une idée précise avant de contacter un développeur ? Non. Même une idée floue suffit pour un premier échange. Je vous aide à cadrer le projet et à prioriser les fonctionnalités.",
+          "Combien de temps pour créer mon app ? Entre 2 et 5 semaines selon la complexité. Une app Starter simple est livrée en 2-3 semaines.",
+          "Mon app sera-t-elle disponible sur iPhone et Android ? Oui, avec React Native, je développe une seule base de code qui tourne sur iOS et Android. Vous touchez 100% des utilisateurs.",
+          "Comment se passe le suivi du projet ? Je vous envoie des versions de test régulières sur votre téléphone. Vous testez, vous donnez vos retours, on ajuste — jusqu'à ce que l'app vous convienne.",
+          "Que se passe-t-il si je veux modifier l'app après la livraison ? Vous restez propriétaire du code. Je propose un support mensuel à 49€/mois qui inclut les mises à jour et l'hébergement.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {

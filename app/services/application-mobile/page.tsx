@@ -4,22 +4,25 @@ import Footer from "@/components/Footer";
 import { Smartphone, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Développeur app mobile iOS & Android · Brest | BreizhApp",
-  description: "Développeur React Native freelance à Brest : app iOS & Android sur mesure dès 490€. Restaurants, commerces, e-commerce. Devis gratuit sous 48h.",
+  title: "Création application mobile iOS & Android sur mesure · Brest | BreizhApp",
+  description: "Développeur mobile freelance à Brest : création application mobile iOS & Android sur mesure dès 490€. Vous avez une idée d'app ? Devis gratuit sous 24h.",
   keywords: [
-    "développeur application mobile brest",
+    "création application mobile",
+    "développeur mobile",
+    "développeur application mobile",
+    "je veux une application mobile",
+    "j'ai une idée d'application mobile",
+    "faire développer une application mobile",
+    "développeur application mobile freelance",
     "création application mobile iOS Android",
-    "développeur freelance application mobile",
     "application mobile sur mesure",
-    "React Native freelance brest",
-    "application mobile restaurant",
+    "développeur mobile brest",
     "développeur mobile finistère",
-    "créer une application mobile",
   ],
   alternates: { canonical: "https://breizhapp.tech/services/application-mobile" },
   openGraph: {
-    title: "Développeur app mobile iOS & Android · Brest",
-    description: "App iOS & Android sur mesure dès 490€. Restaurants, commerces, e-commerce. Développeur React Native freelance à Brest. Devis gratuit sous 48h.",
+    title: "Création application mobile iOS & Android sur mesure · Brest",
+    description: "Vous avez une idée d'application mobile ? Développeur freelance à Brest : app iOS & Android sur mesure dès 490€. Devis gratuit sous 24h.",
     url: "https://breizhapp.tech/services/application-mobile",
     type: "website",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
@@ -57,13 +60,12 @@ export default function AppMobilePage() {
                 <Smartphone size={32} />
               </div>
               <div>
-                <h1 className="text-4xl md:text-6xl font-bold leading-tight">Application mobile</h1>
-                <p className="text-xl font-bold text-gray-500 mt-1">iOS & Android · React Native</p>
+                <h1 className="text-4xl md:text-6xl font-bold leading-tight">Création application mobile</h1>
+                <p className="text-xl font-bold text-gray-500 mt-1">iOS & Android · React Native · Sur mesure</p>
               </div>
             </div>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
-              Je développe votre application mobile sur mesure, disponible sur l'App Store et Google Play.
-              De la conception UX au déploiement, je m'occupe de tout — vous n'avez qu'à valider les étapes.
+              Vous avez une idée d'application mobile ? Je suis développeur mobile freelance à Brest. Je crée votre app iOS & Android sur mesure, disponible sur l'App Store et Google Play — de la conception au déploiement, dès 490€.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
