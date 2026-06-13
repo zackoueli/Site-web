@@ -24,7 +24,7 @@ export default function Footer() {
             <p className="font-bold text-xl">Prêt à créer votre application mobile ?</p>
             <p className="text-sm">Devis gratuit · Réponse sous 24h</p>
           </div>
-          <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3">
+          <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3">
             Démarrer maintenant →
           </a>
         </div>
