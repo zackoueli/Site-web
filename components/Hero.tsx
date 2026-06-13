@@ -1,4 +1,4 @@
-import { Smartphone, Star, ArrowDown } from "lucide-react";
+import { Star, ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -116,8 +116,8 @@ export default function Hero() {
               <div
                 className="bg-[#0A0A0A] brutal-border brutal-shadow-lg relative"
                 style={{
-                  width: 240,
-                  height: 500,
+                  width: 260,
+                  height: 530,
                   borderRadius: "2.8rem",
                   padding: "14px 10px",
                 }}
@@ -128,51 +128,18 @@ export default function Hero() {
                   <div className="w-10 h-2 rounded-full bg-[#1a1a1a] border border-[#333]" />
                 </div>
 
-                {/* Screen content */}
+                {/* Screen: iframe Bunkly */}
                 <div
-                  className="w-full h-full bg-[#FFFBF0] overflow-hidden flex flex-col"
+                  className="w-full h-full overflow-hidden"
                   style={{ borderRadius: "2.2rem" }}
                 >
-                  {/* App header */}
-                  <div className="bg-[#FF6B35] px-4 pt-8 pb-4">
-                    <p className="text-white text-[10px] font-bold mono opacity-70">PIZZERIA ROMA</p>
-                    <p className="text-white font-bold text-sm mt-0.5">Bonjour, Marco 👋</p>
-                  </div>
-
-                  {/* App body */}
-                  <div className="flex-1 p-3 flex flex-col gap-2 overflow-hidden">
-                    <div className="brutal-border bg-[#FFE234] p-2.5 flex items-center gap-2">
-                      <span className="text-lg">🍕</span>
-                      <div>
-                        <p className="text-[10px] font-bold leading-none">Margherita</p>
-                        <p className="text-[9px] text-gray-600">12,90€</p>
-                      </div>
-                    </div>
-                    <div className="brutal-border bg-white p-2.5 flex items-center gap-2">
-                      <span className="text-lg">🍕</span>
-                      <div>
-                        <p className="text-[10px] font-bold leading-none">4 Fromages</p>
-                        <p className="text-[9px] text-gray-600">14,50€</p>
-                      </div>
-                    </div>
-                    <div className="brutal-border bg-white p-2.5 flex items-center gap-2">
-                      <span className="text-lg">🍕</span>
-                      <div>
-                        <p className="text-[10px] font-bold leading-none">Reine</p>
-                        <p className="text-[9px] text-gray-600">13,90€</p>
-                      </div>
-                    </div>
-                    <div className="brutal-border bg-[#0A0A0A] text-white p-2 text-center text-[10px] font-bold mt-auto">
-                      Commander →
-                    </div>
-                  </div>
-
-                  {/* Bottom nav */}
-                  <div className="border-t-[2px] border-black flex justify-around py-2 bg-white">
-                    {["🏠", "🍕", "🛒", "👤"].map((e) => (
-                      <span key={e} className="text-base">{e}</span>
-                    ))}
-                  </div>
+                  <iframe
+                    src="https://app.bunkly.co/b/NAvq6yDTOe"
+                    title="Livret d'accueil BreizhApp"
+                    className="w-full h-full border-0"
+                    loading="lazy"
+                    sandbox="allow-scripts allow-same-origin allow-popups"
+                  />
                 </div>
 
                 {/* Side buttons */}
