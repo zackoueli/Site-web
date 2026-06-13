@@ -4,8 +4,8 @@ import Footer from "@/components/Footer";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Demo Paysagiste — Site web professionnel | BreizhApp",
-  description: "Étude de cas : création d'un site web professionnel pour un paysagiste. Galerie réalisations, demande de devis en ligne, gestion des services et back-office admin via Firebase.",
+  title: "Paradis Vert — Site web professionnel artisan | BreizhApp",
+  description: "Étude de cas : création d'un site web professionnel pour Paradis Vert. Galerie réalisations, demande de devis en ligne, gestion des services et back-office admin via Firebase.",
 };
 
 const features = [
@@ -55,7 +55,7 @@ export default function DemoPaysagistePage() {
               </div>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4 text-white">
-              Demo Paysagiste
+              Paradis Vert
             </h1>
             <p className="text-xl font-medium mb-2 text-green-300">
               Site vitrine professionnel pour paysagiste — Biscarrosse, Landes
