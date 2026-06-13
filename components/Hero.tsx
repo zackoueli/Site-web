@@ -116,8 +116,8 @@ export default function Hero() {
               <div
                 className="bg-[#0A0A0A] brutal-border brutal-shadow-lg relative"
                 style={{
-                  width: 260,
-                  height: 530,
+                  width: 320,
+                  height: 620,
                   borderRadius: "2.8rem",
                   padding: "14px 10px",
                 }}
