@@ -24,11 +24,53 @@ const categoryColors: Record<string, string> = {
   Tech: "bg-[#7C3AED] text-white",
   Conseils: "bg-[#00D4AA] text-[#0A0A0A]",
   Comparatifs: "bg-[#FF3B82] text-white",
+  Guides: "bg-[#00D4AA] text-[#0A0A0A]",
+  Secteurs: "bg-[#FF6B35] text-white",
+  Local: "bg-[#0A0A0A] text-white",
 };
+
+function BlogSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Blog",
+        "@id": "https://breizhapp.tech/blog#blog",
+        name: "Blog BreizhApp",
+        description: "Conseils sur la création d'applications mobiles iOS & Android : tarifs, comparatifs techniques, guides pratiques.",
+        url: "https://breizhapp.tech/blog",
+        publisher: { "@id": "https://breizhapp.tech/#business" },
+        inLanguage: "fr-FR",
+        blogPost: articles.map((a) => ({
+          "@type": "BlogPosting",
+          headline: a.title,
+          description: a.description,
+          url: `https://breizhapp.tech/blog/${a.slug}`,
+          datePublished: a.date,
+          dateModified: a.lastModified ?? a.date,
+        })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Accueil", item: "https://breizhapp.tech" },
+          { "@type": "ListItem", position: 2, name: "Blog", item: "https://breizhapp.tech/blog" },
+        ],
+      },
+    ],
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
 
 export default function BlogPage() {
   return (
     <>
+      <BlogSchema />
       <Navbar />
       <main className="max-w-5xl mx-auto px-4 py-20">
         {/* Header */}
@@ -85,12 +127,12 @@ export default function BlogPage() {
             <p className="font-bold text-xl">Vous avez un projet d'application mobile ?</p>
             <p className="text-gray-700">Devis gratuit, réponse sous 24h.</p>
           </div>
-          <Link
+          <a
             href="/#contact"
             className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 whitespace-nowrap"
           >
             Démarrer mon projet →
-          </Link>
+          </a>
         </div>
       </main>
       <Footer />

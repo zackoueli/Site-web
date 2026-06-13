@@ -96,7 +96,7 @@ const serviceLinks: Record<string, { label: string; href: string }[]> = {
     { label: "Site web restaurant Brest", href: "/blog/site-web-restaurant-brest" },
   ],
   Tarifs: [
-    { label: "Développeur app mobile Brest", href: "/services/application-mobile" },
+    { label: "Nos services application mobile", href: "/services/application-mobile" },
     { label: "Combien coûte une app mobile ?", href: "/blog/combien-coute-application-mobile" },
     { label: "App mobile pas chère dès 490€", href: "/blog/application-mobile-pas-chere" },
   ],
@@ -106,14 +106,44 @@ const serviceLinks: Record<string, { label: string; href: string }[]> = {
     { label: "Nos services application mobile", href: "/services/application-mobile" },
   ],
   Tech: [
-    { label: "Services application mobile", href: "/services/application-mobile" },
+    { label: "Nos services application mobile", href: "/services/application-mobile" },
     { label: "Freelance vs Agence", href: "/blog/developpeur-freelance-vs-agence" },
     { label: "Créer une app sans coder", href: "/blog/creer-application-mobile-sans-coder" },
   ],
   Conseils: [
-    { label: "Services application mobile", href: "/services/application-mobile" },
+    { label: "Nos services application mobile", href: "/services/application-mobile" },
     { label: "App mobile restaurant", href: "/blog/application-mobile-restaurant" },
     { label: "Combien coûte une app mobile ?", href: "/blog/combien-coute-application-mobile" },
+  ],
+  Coiffeur: [
+    { label: "App mobile pour coiffeur", href: "/services/secteur/coiffeur" },
+    { label: "App mobile coiffeur & salon", href: "/blog/application-mobile-coiffeur-salon" },
+    { label: "App mobile prise de RDV", href: "/blog/application-mobile-prise-de-rdv" },
+  ],
+  Hôtel: [
+    { label: "App mobile pour hôtel", href: "/services/secteur/hotel" },
+    { label: "App mobile hébergement", href: "/blog/application-mobile-hotel-hebergement" },
+    { label: "Nos services application mobile", href: "/services/application-mobile" },
+  ],
+  Sport: [
+    { label: "App mobile salle de sport", href: "/services/secteur/salle-de-sport" },
+    { label: "App fidélité clients", href: "/blog/application-mobile-fidelite-clients" },
+    { label: "Combien coûte une app mobile ?", href: "/blog/combien-coute-application-mobile" },
+  ],
+  Local: [
+    { label: "Développeur app mobile Brest", href: "/blog/developpeur-freelance-application-mobile-brest" },
+    { label: "Création app mobile Brest", href: "/blog/creation-application-mobile-brest" },
+    { label: "App mobile en Bretagne", href: "/blog/developpeur-application-mobile-bretagne" },
+  ],
+  Guides: [
+    { label: "Nos services application mobile", href: "/services/application-mobile" },
+    { label: "Combien coûte une app mobile ?", href: "/blog/combien-coute-application-mobile" },
+    { label: "Créer une app sans coder", href: "/blog/creer-application-mobile-sans-coder" },
+  ],
+  Secteurs: [
+    { label: "App mobile restaurant", href: "/services/secteur/restaurant" },
+    { label: "App mobile coiffeur", href: "/services/secteur/coiffeur" },
+    { label: "App mobile salle de sport", href: "/services/secteur/salle-de-sport" },
   ],
 };
 
@@ -141,6 +171,9 @@ const categoryColors: Record<string, string> = {
   Tech: "bg-[#7C3AED] text-white",
   Conseils: "bg-[#00D4AA] text-[#0A0A0A]",
   Comparatifs: "bg-[#FF3B82] text-white",
+  Guides: "bg-[#00D4AA] text-[#0A0A0A]",
+  Secteurs: "bg-[#FF6B35] text-white",
+  Local: "bg-[#0A0A0A] text-white",
 };
 
 export default async function ArticlePage({ params }: Props) {
@@ -256,12 +289,12 @@ export default async function ArticlePage({ params }: Props) {
           <p className="mono text-xs text-[#FFE234] font-bold mb-2">// développeur freelance · Brest</p>
           <p className="text-2xl font-bold mb-2">Vous avez un projet d'application mobile ?</p>
           <p className="text-gray-400 mb-6">Devis gratuit et sans engagement — je réponds sous 24h.</p>
-          <Link
+          <a
             href="/#contact"
             className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-6 py-3 inline-flex"
           >
             Demander un devis gratuit →
-          </Link>
+          </a>
         </div>
 
         {/* Other articles */}
