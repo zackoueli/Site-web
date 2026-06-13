@@ -6,7 +6,7 @@ import { ExternalLink, ArrowRight } from "lucide-react";
 
 const projects = [
   {
-    slug: "forno-pizzeria",
+    slug: "bunkly",
     name: "Bunkly",
     tagline: "Créez votre livret d'accueil digital pour vos hôtes.",
     category: "Plateforme web",

@@ -18,6 +18,11 @@ const nextConfig: NextConfig = {
         destination: "https://breizhapp.tech/:path*",
         permanent: true,
       },
+      {
+        source: "/portfolio/forno-pizzeria",
+        destination: "/portfolio/bunkly",
+        permanent: true,
+      },
     ];
   },
 };
