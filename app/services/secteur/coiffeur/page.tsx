@@ -120,6 +120,43 @@ export default function CoiffeurPage() {
           </div>
         </section>
 
+        {/* Mockup PC — site coiffeur */}
+        <section className="py-16 px-4 border-b-[3px] border-black">
+          <div className="max-w-4xl mx-auto">
+            <p className="mono text-sm font-bold text-[#FF6B9D] mb-2">// exemple concret</p>
+            <h2 className="text-2xl font-bold mb-2">
+              Un vrai site coiffeur{" "}
+              <span className="bg-[#FFE234] brutal-border px-2">fait avec BreizhApp</span>
+            </h2>
+            <p className="text-sm text-gray-500 mono mb-8">
+              Naviguez librement — c&apos;est le site réel, pas une capture.
+            </p>
+            <div className="brutal-border brutal-shadow bg-[#1a1a1a] rounded-t-xl p-3 pb-0">
+              <div className="bg-[#2d2d2d] rounded-t-lg px-4 py-2 flex items-center gap-3">
+                <div className="flex gap-1.5">
+                  <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
+                  <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
+                  <div className="w-3 h-3 rounded-full bg-[#28c840]" />
+                </div>
+                <div className="flex-1 bg-[#3d3d3d] rounded px-3 py-1 mono text-xs text-gray-400 truncate">
+                  coiffeur.breizhapp.tech
+                </div>
+              </div>
+              <div className="w-full overflow-hidden" style={{ height: "520px" }}>
+                <iframe
+                  src="https://coiffeur.breizhapp.tech/"
+                  title="Site salon de coiffure — exemple BreizhApp"
+                  className="w-full h-full border-0 block"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div className="brutal-border border-t-0 bg-[#1a1a1a] h-4 rounded-b-sm" />
+            <div className="brutal-border border-t-0 bg-[#2d2d2d] h-3 mx-8 rounded-b-md" />
+            <div className="brutal-border border-t-0 bg-[#3d3d3d] h-2 mx-16 rounded-b-lg" />
+          </div>
+        </section>
+
         {/* Fonctionnalités */}
         <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto">

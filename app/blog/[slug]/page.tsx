@@ -229,6 +229,63 @@ export default async function ArticlePage({ params }: Props) {
           </p>
         </header>
 
+        {/* Mockup PC — articles site web / comparatifs plateformes */}
+        {[
+          "cout-reel-site-wix",
+          "cout-reel-site-shopify",
+          "cout-reel-planity",
+          "planity-tarif-prix-abonnement-2025",
+          "wix-tarif-prix-abonnement-2025",
+          "shopify-tarif-prix-abonnement-2025",
+          "squarespace-tarif-prix-2025",
+          "comparatif-createurs-site-web-prix-2025",
+          "tarif-creation-site-internet-2025",
+          "shopify-wix-vs-application-mobile-sur-mesure",
+          "combien-coute-site-web-sur-mesure",
+          "wordpress-vs-sur-mesure",
+          "no-code-vs-developpeur",
+          "site-web-artisan-sur-mesure",
+          "creation-site-web-brest",
+          "site-web-restaurant-brest",
+          "creation-site-pizzeria-brest",
+        ].includes(article.slug) && (
+          <div className="mb-12 -mx-4 sm:-mx-8 md:-mx-16 lg:-mx-32 xl:-mx-48">
+            <div className="px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48 mb-4">
+              <p className="mono text-xs font-bold text-[#FF6B9D] mb-1">// alternative à Wix</p>
+              <h2 className="text-xl font-bold mb-1">
+                Un site pro fait sur mesure —{" "}
+                <span className="bg-[#FFE234] brutal-border px-1">sans abonnement qui grimpe</span>
+              </h2>
+              <p className="text-sm text-gray-600">
+                Voici un vrai site réalisé par BreizhApp pour un salon de coiffure. Vous possédez votre site, votre code, votre domaine. Naviguez librement.
+              </p>
+            </div>
+            <div className="brutal-border brutal-shadow bg-[#1a1a1a] rounded-t-xl p-3 pb-0">
+              <div className="bg-[#2d2d2d] rounded-t-lg px-4 py-2 flex items-center gap-3">
+                <div className="flex gap-1.5">
+                  <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
+                  <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
+                  <div className="w-3 h-3 rounded-full bg-[#28c840]" />
+                </div>
+                <div className="flex-1 bg-[#3d3d3d] rounded px-3 py-1 mono text-xs text-gray-400 truncate">
+                  coiffeur.breizhapp.tech
+                </div>
+              </div>
+              <div className="w-full overflow-hidden" style={{ height: "580px" }}>
+                <iframe
+                  src="https://coiffeur.breizhapp.tech/"
+                  title="Exemple de site web BreizhApp — salon de coiffure"
+                  className="w-full h-full border-0 block"
+                  loading="eager"
+                />
+              </div>
+            </div>
+            <div className="brutal-border border-t-0 bg-[#1a1a1a] h-4 rounded-b-sm" />
+            <div className="brutal-border border-t-0 bg-[#2d2d2d] h-3 mx-8 rounded-b-md" />
+            <div className="brutal-border border-t-0 bg-[#3d3d3d] h-2 mx-16 rounded-b-lg" />
+          </div>
+        )}
+
         {/* Article body */}
         <div className="flex flex-col gap-8">
           {article.sections.map((section, i) => {
