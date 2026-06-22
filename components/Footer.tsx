@@ -81,14 +81,10 @@ export default function Footer() {
           </div>
 
           <FooterCol title="Services" links={[
-            ["App mobile · Brest", "/services/application-mobile"],
+            ["App mobile iOS & Android", "/services/application-mobile"],
             ["Site web sur mesure", "/services/site-web"],
             ["Application e-commerce", "/services/ecommerce"],
             ["Plateforme digitale", "/services/plateforme"],
-            ["Réalisations", "/portfolio"],
-            ["Blog", "/blog"],
-            ["Tarifs", "/#tarifs"],
-            ["Contact", "/#contact"],
           ]} />
 
           <FooterCol title="Par secteur" links={[

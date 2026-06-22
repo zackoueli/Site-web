@@ -72,9 +72,10 @@ export default function Services() {
         {/* Offres */}
         <div className="grid md:grid-cols-2 gap-5 mb-20">
           {offers.map(({ icon: Icon, title, subtitle, desc, features, color, textColor, href }) => (
-            <div
+            <Link
               key={title}
-              className="brutal-border brutal-shadow p-6 flex flex-col"
+              href={href}
+              className="brutal-border brutal-shadow p-6 flex flex-col hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-transform"
               style={{ backgroundColor: color }}
             >
               <div className="flex items-start justify-between mb-4">
@@ -96,14 +97,13 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
-              <Link
-                href={href}
-                className="mt-auto inline-flex items-center gap-2 text-sm font-bold brutal-border px-4 py-2 w-fit hover:opacity-80 transition-opacity"
+              <div
+                className="mt-auto inline-flex items-center gap-2 text-sm font-bold brutal-border px-4 py-2 w-fit"
                 style={{ backgroundColor: textColor, color: color }}
               >
                 En savoir plus <ArrowRight size={14} />
-              </Link>
-            </div>
+              </div>
+            </Link>
           ))}
         </div>
 
