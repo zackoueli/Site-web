@@ -3263,7 +3263,7 @@ export const articles: Article[] = [
   },
 
   {
-    slug: "comment-fidéliser-clients-application-mobile",
+    slug: "comment-fideliser-clients-application-mobile",
     title: "Fidéliser ses clients avec une app mobile : guide",
     description: "Programme de fidélité numérique via une application mobile : tampons virtuels, push ciblées, offres personnalisées. Guide complet pour commerçants.",
     date: "2026-06-01",
@@ -3412,7 +3412,7 @@ export const articles: Article[] = [
   },
   {
     slug: "creation-application-mobile-bretagne",
-    title: "Création application mobile Bretagne : développeur React Native local",
+    title: "Création application mobile en Bretagne",
     description:
       "Création d'application mobile en Bretagne : développeur React Native freelance à Brest. App iOS & Android sur mesure dès 490€ pour les entreprises bretonnes.",
     date: "2026-06-13",
@@ -3476,7 +3476,7 @@ export const articles: Article[] = [
   },
   {
     slug: "developpeur-application-mobile-finistere",
-    title: "Développeur application mobile Finistère : Brest, Quimper, Morlaix",
+    title: "Développeur app mobile Finistère — Brest, Quimper",
     description:
       "Développeur application mobile dans le Finistère : Brest, Quimper, Morlaix. App iOS & Android sur mesure dès 490€. Freelance local, devis gratuit 24h.",
     date: "2026-06-13",

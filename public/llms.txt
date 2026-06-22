@@ -1,0 +1,84 @@
+# BreizhApp
+
+> Développeur freelance spécialisé en création d'applications mobiles iOS & Android sur mesure, basé à Brest (Bretagne, France). Stack React Native. Tarifs accessibles dès 490€.
+
+## À propos
+
+BreizhApp est le nom commercial d'Enzo Omnes, développeur freelance indépendant basé à Brest. Il conçoit et développe des applications mobiles natives iOS & Android avec React Native, ainsi que des sites web sur mesure. Il travaille avec des PME, commerces et artisans en Bretagne et partout en France.
+
+## Services
+
+### Applications mobiles iOS & Android
+- Application mobile sur mesure (React Native)
+- App de réservation & prise de RDV
+- App de fidélité clients
+- App e-commerce & boutique en ligne
+- App de livraison & logistique
+- App réseau social & communauté
+- App événementiel & billetterie
+- App jeu mobile
+- App santé & bien-être
+- App e-learning & formation
+
+### Sites web sur mesure
+- Site vitrine professionnel
+- Site e-commerce
+- Site pour artisan (plombier, électricien, paysagiste, maçon...)
+- Site pour restaurant & pizzeria
+- Site pour salon de coiffure
+- Site pour commerce local & maraîcher
+- Site portfolio
+
+### Plateformes digitales & SaaS
+- Plateforme métier sur mesure
+- Tableau de bord & panel d'administration
+- API & backend sur mesure
+- Marketplace & plateforme multi-acteurs
+
+### Secteurs d'activité couverts
+- Restauration (restaurant, pizzeria, food truck, traiteur)
+- Coiffure & beauté (salon, barbier, esthéticienne)
+- Hôtellerie & hébergement (hôtel, gîte, chambre d'hôtes)
+- Sport & bien-être (salle de sport, coach, yoga, spa)
+- Artisanat & commerce local (boulangerie, maraîcher, épicerie)
+- Professions libérales & santé (médecin, kiné, psychologue)
+- Éducation & formation (école, formateur, auto-école)
+- Événementiel (concerts, festivals, associations)
+
+## Tarifs
+
+- App Starter : 490€ (design sur mesure, auth, contenu dynamique, hébergement + support 49€/mois)
+- App Premium : 600€ (Starter + paiement Stripe, notifications push, panel admin)
+- App Boutique e-commerce : 0€ d'installation + 12% de commission sur les ventes
+- Devis gratuit sous 24h
+
+## Zone géographique
+
+Brest, Quimper, Morlaix, Rennes, Nantes — et toute la France en télétravail.
+
+## Pages principales
+
+- https://breizhapp.tech — Accueil
+- https://breizhapp.tech/services/application-mobile — Services app mobile iOS & Android
+- https://breizhapp.tech/services/site-web — Services création de site web
+- https://breizhapp.tech/services/plateforme — Services plateforme & SaaS
+- https://breizhapp.tech/services/ecommerce — Services e-commerce
+- https://breizhapp.tech/services/secteur/restaurant — App & site pour restaurant
+- https://breizhapp.tech/services/secteur/coiffeur — App & site pour salon de coiffure
+- https://breizhapp.tech/services/secteur/hotel — App & site pour hôtel
+- https://breizhapp.tech/services/secteur/salle-de-sport — App pour salle de sport
+- https://breizhapp.tech/services/secteur/reservation-prise-de-rdv — App de réservation & RDV
+- https://breizhapp.tech/services/secteur/livraison-logistique — App de livraison
+- https://breizhapp.tech/services/secteur/reseau-social-communaute — App réseau social
+- https://breizhapp.tech/services/secteur/maraicher-commerce-local — App & site commerce local
+- https://breizhapp.tech/services/secteur/sante-bien-etre — App santé & bien-être
+- https://breizhapp.tech/services/secteur/education-formation — App e-learning
+- https://breizhapp.tech/services/secteur/evenementiel-billetterie — App billetterie
+- https://breizhapp.tech/portfolio — Réalisations & projets
+- https://breizhapp.tech/blog — Blog & guides
+
+## Contact
+
+- Site : https://breizhapp.tech
+- Email : breizhapp@outlook.fr
+- Devis gratuit : https://breizhapp.tech/#contact

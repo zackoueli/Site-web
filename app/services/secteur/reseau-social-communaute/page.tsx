@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Développeur application réseau social & communauté iOS & Android | BreizhApp",
+  title: "App réseau social & communauté sur mesure | BreizhApp",
   description:
     "Créez votre réseau social ou app communautaire sur mesure : profils, fil d'actualité, messagerie, groupes, notifications. Développeur freelance à Brest. Devis gratuit.",
   alternates: { canonical: "https://breizhapp.tech/services/secteur/reseau-social-communaute" },

@@ -94,56 +94,49 @@ const serviceLinks: Record<string, { label: string; href: string }[]> = {
     { label: "App mobile pour restaurant", href: "/services/secteur/restaurant" },
     { label: "App restaurant Bretagne", href: "/blog/application-mobile-restaurant-bretagne" },
     { label: "Site web restaurant Brest", href: "/blog/site-web-restaurant-brest" },
+    { label: "Créer un site pizzeria à Brest", href: "/blog/creation-site-pizzeria-brest" },
   ],
   Tarifs: [
-    { label: "Nos services application mobile", href: "/services/application-mobile" },
     { label: "Combien coûte une app mobile ?", href: "/blog/combien-coute-application-mobile" },
     { label: "App mobile pas chère dès 490€", href: "/blog/application-mobile-pas-chere" },
+    { label: "Coût maintenance app mobile", href: "/blog/cout-maintenance-application-mobile" },
+    { label: "Nos services application mobile", href: "/services/application-mobile" },
   ],
   Comparatifs: [
     { label: "Freelance vs Agence", href: "/blog/developpeur-freelance-vs-agence" },
     { label: "No-code vs Développeur", href: "/blog/no-code-vs-developpeur" },
-    { label: "Nos services application mobile", href: "/services/application-mobile" },
+    { label: "PWA vs application native", href: "/blog/progressive-web-app-vs-application-native" },
+    { label: "React Native vs Flutter", href: "/blog/react-native-vs-flutter" },
   ],
   Tech: [
-    { label: "Nos services application mobile", href: "/services/application-mobile" },
-    { label: "Freelance vs Agence", href: "/blog/developpeur-freelance-vs-agence" },
+    { label: "React Native vs Flutter", href: "/blog/react-native-vs-flutter" },
+    { label: "PWA vs application native", href: "/blog/progressive-web-app-vs-application-native" },
     { label: "Créer une app sans coder", href: "/blog/creer-application-mobile-sans-coder" },
+    { label: "No-code vs Développeur", href: "/blog/no-code-vs-developpeur" },
   ],
   Conseils: [
-    { label: "Nos services application mobile", href: "/services/application-mobile" },
-    { label: "App mobile restaurant", href: "/blog/application-mobile-restaurant" },
-    { label: "Combien coûte une app mobile ?", href: "/blog/combien-coute-application-mobile" },
-  ],
-  Coiffeur: [
-    { label: "App mobile pour coiffeur", href: "/services/secteur/coiffeur" },
-    { label: "App mobile coiffeur & salon", href: "/blog/application-mobile-coiffeur-salon" },
-    { label: "App mobile prise de RDV", href: "/blog/application-mobile-prise-de-rdv" },
-  ],
-  Hôtel: [
-    { label: "App mobile pour hôtel", href: "/services/secteur/hotel" },
-    { label: "App mobile hébergement", href: "/blog/application-mobile-hotel-hebergement" },
-    { label: "Nos services application mobile", href: "/services/application-mobile" },
-  ],
-  Sport: [
-    { label: "App mobile salle de sport", href: "/services/secteur/salle-de-sport" },
+    { label: "Fidéliser ses clients avec une app", href: "/blog/comment-fideliser-clients-application-mobile" },
     { label: "App fidélité clients", href: "/blog/application-mobile-fidelite-clients" },
-    { label: "Combien coûte une app mobile ?", href: "/blog/combien-coute-application-mobile" },
-  ],
-  Local: [
-    { label: "Développeur app mobile Brest", href: "/blog/developpeur-freelance-application-mobile-brest" },
-    { label: "Création app mobile Brest", href: "/blog/creation-application-mobile-brest" },
-    { label: "App mobile en Bretagne", href: "/blog/developpeur-application-mobile-bretagne" },
+    { label: "Faire développer une app mobile", href: "/blog/faire-developper-application-mobile" },
+    { label: "J'ai une idée d'app mobile", href: "/blog/j-ai-une-idee-d-application-mobile" },
   ],
   Guides: [
-    { label: "Nos services application mobile", href: "/services/application-mobile" },
+    { label: "Je veux créer une app mobile", href: "/blog/je-veux-creer-une-application-mobile" },
+    { label: "J'ai une idée d'app mobile", href: "/blog/j-ai-une-idee-d-application-mobile" },
+    { label: "Faire développer une app mobile", href: "/blog/faire-developper-application-mobile" },
     { label: "Combien coûte une app mobile ?", href: "/blog/combien-coute-application-mobile" },
-    { label: "Créer une app sans coder", href: "/blog/creer-application-mobile-sans-coder" },
   ],
   Secteurs: [
-    { label: "App mobile restaurant", href: "/services/secteur/restaurant" },
-    { label: "App mobile coiffeur", href: "/services/secteur/coiffeur" },
+    { label: "App mobile pour coiffeur", href: "/services/secteur/coiffeur" },
+    { label: "App mobile pour restaurant", href: "/services/secteur/restaurant" },
     { label: "App mobile salle de sport", href: "/services/secteur/salle-de-sport" },
+    { label: "App mobile pour hôtel", href: "/services/secteur/hotel" },
+  ],
+  Local: [
+    { label: "Développeur freelance à Brest", href: "/blog/developpeur-freelance-application-mobile-brest" },
+    { label: "Développeur freelance à Quimper", href: "/blog/developpeur-freelance-quimper" },
+    { label: "Développeur freelance à Rennes", href: "/blog/developpeur-freelance-rennes" },
+    { label: "App mobile en Bretagne", href: "/blog/developpeur-application-mobile-bretagne" },
   ],
 };
 
@@ -181,14 +174,27 @@ export default async function ArticlePage({ params }: Props) {
   const article = getArticle(slug);
   if (!article) notFound();
 
-  // Prioritise same-category articles, fall back to different ones
-  const sameCategory = articles.filter((a) => a.slug !== slug && a.category === article.category);
-  const others = sameCategory.length >= 4
-    ? sameCategory.slice(0, 4)
-    : [
-        ...sameCategory,
-        ...articles.filter((a) => a.slug !== slug && a.category !== article.category),
-      ].slice(0, 4);
+  // Deterministic shuffle based on slug hash so each article gets a unique rotation
+  const slugHash = slug.split("").reduce((acc, c) => acc + c.charCodeAt(0), 0);
+  const rotate = <T,>(arr: T[], n: number): T[] => {
+    const offset = n % arr.length;
+    return [...arr.slice(offset), ...arr.slice(0, offset)];
+  };
+
+  const sameCategory = rotate(
+    articles.filter((a) => a.slug !== slug && a.category === article.category),
+    slugHash
+  );
+  const different = rotate(
+    articles.filter((a) => a.slug !== slug && a.category !== article.category),
+    slugHash + 3
+  );
+
+  // Take 2 from same category + 2 from different ones for better cross-linking
+  const others = [
+    ...sameCategory.slice(0, 2),
+    ...different.slice(0, 2),
+  ].slice(0, 4);
 
   return (
     <>

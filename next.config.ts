@@ -23,6 +23,11 @@ const nextConfig: NextConfig = {
         destination: "/portfolio/bunkly",
         permanent: true,
       },
+      {
+        source: "/blog/comment-fid%C3%A9liser-clients-application-mobile",
+        destination: "/blog/comment-fideliser-clients-application-mobile",
+        permanent: true,
+      },
     ];
   },
 };
