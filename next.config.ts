@@ -28,6 +28,11 @@ const nextConfig: NextConfig = {
         destination: "/blog/comment-fideliser-clients-application-mobile",
         permanent: true,
       },
+      {
+        source: "/blog/application-photobooth-sur-mesure",
+        destination: "/blog/creer-photobooth-digital-guide-complet",
+        permanent: true,
+      },
     ];
   },
 };
