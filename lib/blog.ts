@@ -3854,9 +3854,8 @@ export const articles: Article[] = [
     ],
   },
   {
-  {
-    slug: "application-photobooth-sur-mesure",
-    title: "Application photobooth sur mesure : guide complet 2026",
+    slug: "creer-photobooth-digital-guide-complet",
+    title: "Créer un photobooth digital : guide complet 2026",
     description: "Comment mettre en place un photobooth digital pour mariage, événement d'entreprise ou soirée privée : matériel, fonctionnalités, et développement app sur mesure dès 750€.",
     date: "2026-06-23",
     readTime: "7 min",
