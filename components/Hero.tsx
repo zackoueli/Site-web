@@ -14,7 +14,7 @@ export default function Hero() {
       />
 
       <div className="max-w-6xl mx-auto px-4 py-20 md:py-32 relative">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-16 items-start">
           {/* Left */}
           <div>
             {/* Badge */}
@@ -29,7 +29,7 @@ export default function Hero() {
             </p>
 
             {/* Headline */}
-            <h1 className="text-5xl md:text-7xl font-bold leading-[1.05] mb-6 tracking-tight">
+            <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-6 tracking-tight">
               Applications mobiles
               <br />
               <span className="relative">
@@ -104,7 +104,7 @@ export default function Hero() {
           </div>
 
           {/* Right: phone stack */}
-          <div className="flex justify-center md:justify-end relative">
+          <div className="flex justify-center md:justify-end relative md:sticky md:top-24">
             {/* Floating stickers */}
             <div className="float-1 absolute -top-6 left-4 bg-[#FFE234] brutal-border brutal-shadow px-3 py-2 text-xs font-bold mono z-10">
               iOS & Android ✦
