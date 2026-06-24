@@ -3,8 +3,8 @@ import { Code2, MapPin, Zap, Users } from "lucide-react";
 const values = [
   {
     icon: Code2,
-    title: "Code propre, zéro template",
-    desc: "Chaque projet est développé from scratch. Pas de WordPress, pas de no-code — du vrai code React Native et Next.js taillé pour votre cas précis.",
+    title: "Design sur mesure, choisi ensemble",
+    desc: "Je m'inspire de références Pinterest et Dribbble pour vous proposer plusieurs directions visuelles adaptées à votre projet. On choisit ensemble avant de coder — vous savez exactement ce que vous allez recevoir.",
   },
   {
     icon: MapPin,
@@ -14,7 +14,7 @@ const values = [
   {
     icon: Zap,
     title: "Livraison rapide",
-    desc: "Un projet web en 2 à 4 semaines, une app mobile en 4 à 8 semaines. Des délais tenus, des points d'avancement réguliers.",
+    desc: "Un site web en 1 à 2 semaines, une app mobile en 2 à 8 semaines — selon la complexité du projet. Des délais tenus, des points d'avancement réguliers.",
   },
   {
     icon: Users,
@@ -46,12 +46,14 @@ export default function About() {
               <p className="font-bold text-2xl leading-snug mb-4">
                 Je m'appelle Enzo.
                 <br />
-                Je construis des outils digitaux
+                Je conçois des plateformes et des outils
                 <br />
-                qui font vraiment tourner des activités.
+                qui améliorent l'expérience client
+                <br />
+                et créent de la valeur pour votre activité.
               </p>
               <p className="text-sm leading-relaxed opacity-80">
-                Développeur freelance basé à Brest, je travaille avec des artisans, commerçants et entrepreneurs qui veulent une solution digitale sérieuse — sans passer par une agence à 15 000€ ou un no-code qui casse au premier client de trop.
+                Développeur freelance basé à Brest, je travaille avec des artisans, commerçants et entrepreneurs qui veulent une solution digitale pensée pour leur métier — pas une solution générique adaptée à la va-vite.
               </p>
             </div>
 
