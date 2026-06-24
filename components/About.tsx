@@ -53,7 +53,7 @@ export default function About() {
                 et créent de la valeur pour votre activité.
               </p>
               <p className="text-sm leading-relaxed text-gray-400">
-                Développeur freelance basé à Brest, je travaille avec des artisans, commerçants et entrepreneurs qui veulent une solution digitale pensée pour leur métier, pas une solution générique adaptée à la va-vite.
+                Développeur freelance basé à Brest, je travaille avec des artisans, commerçants et entrepreneurs qui veulent une solution digitale pensée pour leur métier.
               </p>
             </div>
 
