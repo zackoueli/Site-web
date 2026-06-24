@@ -30,10 +30,10 @@ export default function Hero() {
 
             {/* Headline */}
             <h1 className="text-5xl md:text-7xl font-bold leading-[1.05] mb-6 tracking-tight">
-              Votre idée.
+              Applications mobiles
               <br />
               <span className="relative">
-                <span className="relative z-10">Mon code.</span>
+                <span className="relative z-10">et sites web</span>
                 <span
                   className="absolute bottom-2 left-0 w-full h-4 bg-[#FFE234] -z-0 brutal-border"
                   style={{ transform: "skewX(-2deg)" }}
@@ -41,8 +41,10 @@ export default function Hero() {
               </span>
               <br />
               <span className="bg-[#FF6B9D] text-white px-3 brutal-border inline-block mt-1">
-                Votre projet.
+                sur mesure
               </span>
+              <br />
+              à Brest, Bretagne.
             </h1>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-md">
