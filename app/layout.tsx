@@ -44,6 +44,10 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         <SchemaLD />
+        <link rel="preconnect" href="https://app.bunkly.co" />
+        <link rel="preconnect" href="https://firebasestorage.googleapis.com" />
+        <link rel="dns-prefetch" href="https://app.bunkly.co" />
+        <link rel="dns-prefetch" href="https://firebasestorage.googleapis.com" />
       </head>
       <body>{children}</body>
     </html>

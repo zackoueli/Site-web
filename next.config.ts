@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Cibler les navigateurs modernes pour éviter les polyfills inutiles
+  experimental: {
+    browsersListForSwc: true,
+  },
   images: {
     remotePatterns: [
       {

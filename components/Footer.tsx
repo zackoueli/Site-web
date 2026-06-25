@@ -92,14 +92,9 @@ export default function Footer() {
             ["App coiffeur / salon", "/services/secteur/coiffeur"],
             ["App hôtel & hébergement", "/services/secteur/hotel"],
             ["App salle de sport", "/services/secteur/salle-de-sport"],
-            ["App maraîcher / local", "/services/secteur/maraicher-commerce-local"],
-            ["Jeu mobile", "/services/secteur/jeu-mobile"],
-            ["App portfolio / vitrine", "/services/secteur/portfolio-vitrine"],
             ["App réservation / RDV", "/services/secteur/reservation-prise-de-rdv"],
+            ["App maraîcher / local", "/services/secteur/maraicher-commerce-local"],
             ["App livraison", "/services/secteur/livraison-logistique"],
-            ["Réseau social", "/services/secteur/reseau-social-communaute"],
-            ["App santé & bien-être", "/services/secteur/sante-bien-etre"],
-            ["App e-learning", "/services/secteur/education-formation"],
             ["App événementiel", "/services/secteur/evenementiel-billetterie"],
           ]} />
 
