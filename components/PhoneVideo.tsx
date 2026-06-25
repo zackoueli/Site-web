@@ -129,8 +129,8 @@ export default function PhoneVideo({ src, appName }: PhoneVideoProps) {
             100% { transform: scaleX(0) translateX(167%); }
           }
           @keyframes pulse-border {
-            0%, 100% { box-shadow: 3px 3px 0 #FFE234; }
-            50%       { box-shadow: 6px 6px 0 #FF6B9D; }
+            0%, 100% { outline: 3px solid #FFE234; outline-offset: 0px; }
+            50%       { outline: 3px solid #FF6B9D; outline-offset: 3px; }
           }
         `}</style>
 

@@ -1,4 +1,5 @@
 import { Star, ArrowDown } from "lucide-react";
+import LazyIframe from "./LazyIframe";
 
 export default function Hero() {
   return (
@@ -130,19 +131,14 @@ export default function Hero() {
                   <div className="w-10 h-2 rounded-full bg-[#1a1a1a] border border-[#333]" />
                 </div>
 
-                {/* Screen: iframe Bunkly */}
-                <div
+                {/* Screen: iframe Bunkly — chargée après idle */}
+                <LazyIframe
+                  src="https://app.bunkly.co/b/NAvq6yDTOe"
+                  title="Livret d'accueil BreizhApp"
+                  sandbox="allow-scripts allow-same-origin allow-popups"
                   className="w-full h-full overflow-hidden"
                   style={{ borderRadius: "2.2rem" }}
-                >
-                  <iframe
-                    src="https://app.bunkly.co/b/NAvq6yDTOe"
-                    title="Livret d'accueil BreizhApp"
-                    className="w-full h-full border-0"
-                    loading="lazy"
-                    sandbox="allow-scripts allow-same-origin allow-popups"
-                  />
-                </div>
+                />
 
                 {/* Side buttons */}
                 <div className="absolute -right-[5px] top-24 w-[4px] h-12 bg-[#0A0A0A] brutal-border rounded-sm" />
