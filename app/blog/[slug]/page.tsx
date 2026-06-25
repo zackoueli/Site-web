@@ -252,8 +252,6 @@ export default async function ArticlePage({ params }: Props) {
           "no-code-vs-developpeur",
           "site-web-artisan-sur-mesure",
           "creation-site-web-brest",
-          "site-web-restaurant-brest",
-          "creation-site-pizzeria-brest",
         ].includes(article.slug) && (
           <div className="mb-12 -mx-4 sm:-mx-8 md:-mx-16 lg:-mx-32 xl:-mx-48">
             <div className="px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48 mb-4">
@@ -292,8 +290,13 @@ export default async function ArticlePage({ params }: Props) {
           </div>
         )}
 
-        {/* Mockup PC — article app mobile restaurant */}
-        {article.slug === "application-mobile-restaurant-bretagne" && (
+        {/* Mockup PC — articles restaurant / pizzeria */}
+        {[
+          "application-mobile-restaurant",
+          "application-mobile-restaurant-bretagne",
+          "site-web-restaurant-brest",
+          "creation-site-pizzeria-brest",
+        ].includes(article.slug) && (
           <div className="mb-12 -mx-4 sm:-mx-8 md:-mx-16 lg:-mx-32 xl:-mx-48">
             <div className="px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48 mb-4">
               <p className="mono text-xs font-bold text-[#FF6B35] mb-1">// exemple concret</p>
