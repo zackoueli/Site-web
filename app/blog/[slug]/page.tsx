@@ -292,42 +292,42 @@ export default async function ArticlePage({ params }: Props) {
           </div>
         )}
 
-        {/* Mockup Phone — articles app mobile restaurant */}
+        {/* Mockup PC — article app mobile restaurant */}
         {article.slug === "application-mobile-restaurant-bretagne" && (
-          <div className="mb-12 flex flex-col items-center">
-            <div className="mb-6 text-center">
+          <div className="mb-12 -mx-4 sm:-mx-8 md:-mx-16 lg:-mx-32 xl:-mx-48">
+            <div className="px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48 mb-4">
               <p className="mono text-xs font-bold text-[#FF6B35] mb-1">// exemple concret</p>
               <h2 className="text-xl font-bold mb-1">
-                Une vraie app pizzeria{" "}
+                Une vraie app restaurant{" "}
                 <span className="bg-[#FFE234] brutal-border px-1">faite avec BreizhApp</span>
               </h2>
               <p className="text-sm text-gray-600">
-                Naviguez librement dans la démo, c&apos;est l&apos;app réelle.
+                Naviguez librement dans la démo, c&apos;est l&apos;application réelle. Commande, menu, paiement.
               </p>
             </div>
-            <div className="relative">
-              <div
-                className="bg-[#0A0A0A] brutal-border brutal-shadow relative"
-                style={{ width: 320, height: 620, borderRadius: "2.8rem", padding: "14px 10px" }}
-              >
-                <div className="absolute top-3.5 left-1/2 -translate-x-1/2 w-20 h-5 bg-[#0A0A0A] z-10 flex items-center justify-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-[#1a1a1a] border border-[#333]" />
-                  <div className="w-10 h-2 rounded-full bg-[#1a1a1a] border border-[#333]" />
+            <div className="brutal-border brutal-shadow bg-[#1a1a1a] rounded-t-xl p-3 pb-0">
+              <div className="bg-[#2d2d2d] rounded-t-lg px-4 py-2 flex items-center gap-3">
+                <div className="flex gap-1.5">
+                  <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
+                  <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
+                  <div className="w-3 h-3 rounded-full bg-[#28c840]" />
                 </div>
-                <div className="w-full h-full overflow-hidden" style={{ borderRadius: "2.2rem" }}>
-                  <iframe
-                    src="https://demo.pizzeria.breizhapp.tech/"
-                    title="Démo application mobile pizzeria BreizhApp"
-                    className="w-full h-full border-0"
-                    loading="lazy"
-                    sandbox="allow-scripts allow-same-origin allow-popups"
-                  />
+                <div className="flex-1 bg-[#3d3d3d] rounded px-3 py-1 mono text-xs text-gray-400 truncate">
+                  demo.pizzeria.breizhapp.tech
                 </div>
-                <div className="absolute -right-[5px] top-24 w-[4px] h-12 bg-[#0A0A0A] brutal-border rounded-sm" />
-                <div className="absolute -left-[5px] top-20 w-[4px] h-8 bg-[#0A0A0A] brutal-border rounded-sm" />
-                <div className="absolute -left-[5px] top-32 w-[4px] h-8 bg-[#0A0A0A] brutal-border rounded-sm" />
+              </div>
+              <div className="w-full overflow-hidden" style={{ height: "580px" }}>
+                <iframe
+                  src="https://demo.pizzeria.breizhapp.tech/"
+                  title="Démo application restaurant BreizhApp"
+                  className="w-full h-full border-0 block"
+                  loading="eager"
+                />
               </div>
             </div>
+            <div className="brutal-border border-t-0 bg-[#1a1a1a] h-4 rounded-b-sm" />
+            <div className="brutal-border border-t-0 bg-[#2d2d2d] h-3 mx-8 rounded-b-md" />
+            <div className="brutal-border border-t-0 bg-[#3d3d3d] h-2 mx-16 rounded-b-lg" />
           </div>
         )}
 
