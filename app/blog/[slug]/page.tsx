@@ -292,6 +292,45 @@ export default async function ArticlePage({ params }: Props) {
           </div>
         )}
 
+        {/* Mockup Phone — articles app mobile restaurant */}
+        {article.slug === "application-mobile-restaurant-bretagne" && (
+          <div className="mb-12 flex flex-col items-center">
+            <div className="mb-6 text-center">
+              <p className="mono text-xs font-bold text-[#FF6B35] mb-1">// exemple concret</p>
+              <h2 className="text-xl font-bold mb-1">
+                Une vraie app pizzeria{" "}
+                <span className="bg-[#FFE234] brutal-border px-1">faite avec BreizhApp</span>
+              </h2>
+              <p className="text-sm text-gray-600">
+                Naviguez librement dans la démo, c&apos;est l&apos;app réelle.
+              </p>
+            </div>
+            <div className="relative">
+              <div
+                className="bg-[#0A0A0A] brutal-border brutal-shadow relative"
+                style={{ width: 320, height: 620, borderRadius: "2.8rem", padding: "14px 10px" }}
+              >
+                <div className="absolute top-3.5 left-1/2 -translate-x-1/2 w-20 h-5 bg-[#0A0A0A] z-10 flex items-center justify-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-[#1a1a1a] border border-[#333]" />
+                  <div className="w-10 h-2 rounded-full bg-[#1a1a1a] border border-[#333]" />
+                </div>
+                <div className="w-full h-full overflow-hidden" style={{ borderRadius: "2.2rem" }}>
+                  <iframe
+                    src="https://demo.pizzeria.breizhapp.tech/"
+                    title="Démo application mobile pizzeria BreizhApp"
+                    className="w-full h-full border-0"
+                    loading="lazy"
+                    sandbox="allow-scripts allow-same-origin allow-popups"
+                  />
+                </div>
+                <div className="absolute -right-[5px] top-24 w-[4px] h-12 bg-[#0A0A0A] brutal-border rounded-sm" />
+                <div className="absolute -left-[5px] top-20 w-[4px] h-8 bg-[#0A0A0A] brutal-border rounded-sm" />
+                <div className="absolute -left-[5px] top-32 w-[4px] h-8 bg-[#0A0A0A] brutal-border rounded-sm" />
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Article body */}
         <div className="flex flex-col gap-8">
           {article.sections.map((section, i) => {

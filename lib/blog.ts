@@ -1141,7 +1141,7 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-restaurant-bretagne",
-    title: "App mobile restaurant en Bretagne : guide 2025",
+    title: "App mobile restaurant en Bretagne : guide 2026",
     description:
       "App mobile pour restaurant en Bretagne : fonctionnalités, tarifs et retour sur investissement. Guide par un développeur freelance basé à Brest.",
     date: "2026-04-25",
@@ -1151,7 +1151,7 @@ export const articles: Article[] = [
       {
         paragraphs: [
           "Les restaurateurs bretons sont de plus en plus nombreux à sauter le pas : avoir leur propre application mobile plutôt que de dépendre de Uber Eats, TheFork ou Planity. Moins de commission, plus de fidélité client, une image plus professionnelle.",
-          "Je suis développeur freelance basé à Brest, et je travaille avec des restaurants, crêperies, bars et commerces alimentaires en Bretagne. Voici ce que vous devez savoir avant de vous lancer.",
+          "Je suis développeur freelance basé à Brest et je travaille avec des restaurants, crêperies, bars et commerces alimentaires en Bretagne. Voici ce que vous devez savoir avant de vous lancer.",
         ],
       },
       {
@@ -1160,7 +1160,7 @@ export const articles: Article[] = [
           "La Bretagne a une culture gastronomique forte — crêperies, fruits de mer, restaurants bistronomiques — et une clientèle locale fidèle. Une application mobile bien conçue transforme un client de passage en habitué.",
         ],
         list: [
-          "Notifications push : prévenez vos clients du plat du jour, d'une soirée spéciale ou d'une offre limitée — directement sur leur téléphone",
+          "Notifications push : prévenez vos clients du plat du jour, d'une soirée spéciale ou d'une offre limitée, directement sur leur téléphone",
           "Programme de fidélité numérique : tampons virtuels, réductions automatiques à la 10ème visite, cadeaux d'anniversaire",
           "Commande en ligne sans commission : gardez 100% de vos recettes au lieu de reverser 15 à 30% à Uber Eats",
           "Réservation de table 24h/24 avec confirmation automatique",
@@ -1175,7 +1175,7 @@ export const articles: Article[] = [
         list: [
           "App Starter à 490€ + 49€/mois : application iOS & Android avec menu, réservation, notifications push, panel admin",
           "App Premium à 600€ + 49€/mois : tout le Starter + commande en ligne avec paiement Stripe, programme de fidélité",
-          "App Boutique à 0€ d'installation : pour les restaurants avec livraison, 12% sur les ventes — zéro risque au départ",
+          "App Boutique à 0€ d'installation : pour les restaurants avec livraison, 12% sur les ventes, zéro risque au départ",
           "Délai de livraison : 3 à 5 semaines selon les fonctionnalités",
         ],
       },
@@ -1186,7 +1186,7 @@ export const articles: Article[] = [
           "En deux mois, ses clients réguliers avaient basculé sur l'app. Les commissions Uber Eats ont chuté de 60%. L'app était rentabilisée.",
         ],
         list: [
-          "Économie sur commissions Uber Eats/Deliveroo : 200€ à 1 000€/mois selon le volume",
+          "Économie sur commissions Uber Eats et Deliveroo : 200€ à 1 000€/mois selon le volume",
           "Augmentation de la fréquence de visite grâce aux notifications push : +15 à 25% observés",
           "Programme de fidélité : augmente la valeur client sur 12 mois",
           "Image professionnelle différenciante face aux concurrents sans app",
