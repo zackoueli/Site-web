@@ -252,6 +252,7 @@ export default async function ArticlePage({ params }: Props) {
           "no-code-vs-developpeur",
           "site-web-artisan-sur-mesure",
           "creation-site-web-brest",
+          "application-mobile-coiffeur-salon",
         ].includes(article.slug) && (
           <div className="mb-12 -mx-4 sm:-mx-8 md:-mx-16 lg:-mx-32 xl:-mx-48">
             <div className="px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48 mb-4">
