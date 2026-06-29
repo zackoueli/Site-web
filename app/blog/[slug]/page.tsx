@@ -357,6 +357,21 @@ export default async function ArticlePage({ params }: Props) {
                       {p}
                     </p>
                   ))}
+                  {section.image && (
+                    <figure className="my-6">
+                      <img
+                        src={section.image.src}
+                        alt={section.image.alt}
+                        className="brutal-border brutal-shadow w-full rounded-sm"
+                        loading="lazy"
+                      />
+                      {section.image.caption && (
+                        <figcaption className="mt-2 text-xs text-gray-500 mono text-center">
+                          {section.image.caption}
+                        </figcaption>
+                      )}
+                    </figure>
+                  )}
                   {section.list && (
                     isFaq ? (
                       <dl className="flex flex-col gap-3 mt-2">

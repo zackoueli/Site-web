@@ -13,6 +13,7 @@ type Section = {
   heading?: string;
   paragraphs?: string[];
   list?: string[];
+  image?: { src: string; alt: string; caption?: string };
 };
 
 export const articles: Article[] = [
@@ -4055,6 +4056,129 @@ export const articles: Article[] = [
           "Est-ce que je dois être à l'aise avec l'informatique ? Non. L'interface est conçue pour être utilisée sans formation technique. Si besoin, je vous accompagne lors de la livraison.",
           "Que se passe-t-il si j'ai un problème avec le panel ? Je suis joignable par WhatsApp et email. Le support est inclus dans l'abonnement mensuel.",
           "Le panel fonctionne-t-il sur téléphone ? Oui. Le panel est responsive et fonctionne sur smartphone, tablette et ordinateur.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "panel-admin-salon-coiffure",
+    title: "Panel admin salon de coiffure : gérez vos RDV, prestations et équipe sans coder",
+    description:
+      "Découvrez le panel d'administration inclus dans chaque site et application mobile BreizhApp pour les salons de coiffure. RDV, prestations, équipe, galerie et messages depuis un seul tableau de bord.",
+    date: "2026-06-29",
+    readTime: "5 min",
+    category: "Secteurs",
+    sections: [
+      {
+        paragraphs: [
+          "Chaque site web et application mobile que je développe pour un salon de coiffure inclut un panel d'administration complet. Vous gérez votre activité en autonomie totale, depuis n'importe quel appareil, sans jamais avoir besoin de me recontacter pour une modification.",
+          "Voici exactement ce que contient ce panel, capture par capture.",
+        ],
+      },
+      {
+        heading: "Tableau de bord : votre activité en un coup d'oeil",
+        paragraphs: [
+          "La première page du panel admin affiche les indicateurs clés de votre semaine : le chiffre d'affaires confirmé, le nombre de rendez-vous en attente de validation, le coiffeur le plus demandé et la prestation la plus réservée.",
+          "Vous voyez aussi la répartition des rendez-vous par membre de l'équipe et le classement de vos top prestations sur la période.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/coiffeur-60625.firebasestorage.app/o/image%201.png?alt=media&token=7b42d1a9-def3-461c-b2d8-f874d3b3ee81",
+          alt: "Tableau de bord panel admin salon de coiffure BreizhApp",
+          caption: "Tableau de bord : CA semaine, RDV en attente, top coiffeur et top prestation",
+        },
+      },
+      {
+        heading: "Gestion des rendez-vous : confirmer, refuser, suivre",
+        paragraphs: [
+          "La section Rendez-vous liste toutes les demandes reçues avec le nom du client, la prestation demandée, le coiffeur souhaité, la date et l'heure. Vous confirmez ou refusez en un clic. Le client reçoit une notification automatique.",
+          "Vous pouvez filtrer par coiffeur, par date ou par statut pour ne jamais rater une demande.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/coiffeur-60625.firebasestorage.app/o/image%202.png?alt=media&token=0d1dd08a-f5b7-4fa4-b229-edbb4c5fbd70",
+          alt: "Gestion des rendez-vous panel admin coiffeur BreizhApp",
+          caption: "Vue Rendez-vous : liste, statuts et confirmation en un clic",
+        },
+      },
+      {
+        heading: "Prestations : gérez votre catalogue de services",
+        paragraphs: [
+          "Depuis la section Prestations, vous ajoutez, modifiez ou supprimez chaque service proposé par votre salon : nom, description, durée, prix, coiffeur(s) associé(s).",
+          "Vous pouvez activer ou désactiver une prestation sans la supprimer, utile si une offre est temporairement indisponible.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/coiffeur-60625.firebasestorage.app/o/image%203.png?alt=media&token=fab4712a-7c4f-4fdd-a13d-8c9448bc1d7c",
+          alt: "Gestion des prestations panel admin salon de coiffure",
+          caption: "Catalogue de prestations : durée, prix et coiffeurs associés",
+        },
+      },
+      {
+        heading: "Équipe : gérez vos coiffeurs et leurs accès",
+        paragraphs: [
+          "La section Équipe vous permet d'ajouter ou de retirer un membre du personnel, de définir ses créneaux de disponibilité et de lui attribuer les prestations qu'il ou elle réalise.",
+          "Chaque coiffeur peut avoir son propre accès au panel pour gérer son agenda sans voir les données des autres.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/coiffeur-60625.firebasestorage.app/o/image%204.png?alt=media&token=a73bb391-d8e0-4a54-9a6c-c1e4ae5d93dc",
+          alt: "Gestion de l'équipe panel admin coiffeur BreizhApp",
+          caption: "Section Équipe : membres, disponibilités et prestations attribuées",
+        },
+      },
+      {
+        heading: "Galerie : mettez à jour vos photos en autonomie",
+        paragraphs: [
+          "La galerie vous permet d'ajouter ou de supprimer des photos de vos réalisations directement depuis le panel. Aucun développeur nécessaire pour rafraîchir votre portfolio.",
+          "Les photos sont stockées sur Firebase et s'affichent instantanément sur votre site ou application.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/coiffeur-60625.firebasestorage.app/o/image%205.png?alt=media&token=b3277470-57d7-4f7b-8532-9cc2a69677a1",
+          alt: "Gestion galerie photos panel admin salon de coiffure",
+          caption: "Galerie : ajout et suppression de photos de réalisations",
+        },
+      },
+      {
+        heading: "Messages : recevez les demandes de vos clients",
+        paragraphs: [
+          "Tous les messages envoyés depuis le formulaire de contact de votre site ou application arrivent directement dans cette section. Vous gardez une trace de chaque demande sans passer par votre boîte mail.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/coiffeur-60625.firebasestorage.app/o/image%206.png?alt=media&token=735d357f-4414-4e7d-b784-0bd5ec1a5443",
+          alt: "Messagerie panel admin coiffeur BreizhApp",
+          caption: "Messagerie : tous les messages clients centralisés",
+        },
+      },
+      {
+        heading: "Fermetures : bloquez vos congés et jours exceptionnels",
+        paragraphs: [
+          "La section Fermetures vous permet de bloquer des périodes d'indisponibilité : congés, jours fériés, fermetures exceptionnelles. Aucune réservation ne sera possible sur ces créneaux.",
+          "Vos clients voient directement les disponibilités réelles quand ils prennent rendez-vous.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/coiffeur-60625.firebasestorage.app/o/image%207.png?alt=media&token=c8ff0d91-37de-4b12-8e99-fbf6fcb81dec",
+          alt: "Gestion des fermetures panel admin salon de coiffure",
+          caption: "Fermetures : congés et jours exceptionnels bloqués automatiquement",
+        },
+      },
+      {
+        heading: "Ce panel est inclus dans chaque projet coiffeur",
+        paragraphs: [
+          "Ce panel d'administration est livré avec chaque site web ou application mobile que je développe pour un salon de coiffure. Il est inclus dans le tarif, sans supplément.",
+        ],
+        list: [
+          "Accessible depuis ordinateur, tablette ou smartphone",
+          "Interface pensée pour une utilisation quotidienne sans formation",
+          "Accès multi-utilisateurs : un compte par coiffeur si besoin",
+          "Données sécurisées et sauvegardées sur Firebase",
+          "Support inclus dans l'abonnement mensuel",
+        ],
+      },
+      {
+        heading: "FAQ — Panel admin coiffeur BreizhApp",
+        list: [
+          "Le panel est-il inclus dans le prix ? Oui. Le panel d'administration complet est inclus dans toutes les offres BreizhApp pour les salons de coiffure.",
+          "Mes coiffeurs peuvent-ils avoir leur propre accès ? Oui. Je crée un compte par membre de l'équipe avec les droits adaptés.",
+          "Puis-je modifier mes tarifs moi-même ? Oui. Vous modifiez vos prestations et leurs prix depuis la section Prestations, sans faire appel à un développeur.",
+          "Les clients sont-ils notifiés quand je confirme un RDV ? Oui. Une notification push ou un email est envoyé automatiquement au client à chaque changement de statut.",
+          "Le panel fonctionne-t-il sur téléphone ? Oui. Le panel est responsive et fonctionne sur tous les écrans.",
         ],
       },
     ],
