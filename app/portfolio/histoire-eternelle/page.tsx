@@ -126,6 +126,38 @@ export default function HistoireEternellePage() {
           </div>
         </section>
 
+        {/* Panel admin */}
+        <section className="py-16 px-4" style={{ backgroundColor: "#F0E6D8" }}>
+          <div className="max-w-4xl mx-auto">
+            <p className="mono text-sm font-bold text-gray-500 mb-2">// inclus dans le projet</p>
+            <h2 className="text-2xl font-bold mb-2" style={{ color: "#2C1A0E" }}>
+              Panel admin <span className="bg-[#FFE234] brutal-border px-2">complet</span>
+            </h2>
+            <p className="text-gray-600 text-sm mb-8">
+              Anaïs gère sa boutique en totale autonomie depuis son tableau de bord. Aucun développeur nécessaire pour modifier un produit, traiter une commande ou répondre à un client.
+            </p>
+            <div className="flex flex-col gap-6">
+              {[
+                { src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20171.png?alt=media&token=0b58df62-b2a0-4154-9d5f-37028df9a118", caption: "Dashboard : CA, commandes et produits actifs en temps réel" },
+                { src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20231.png?alt=media&token=7a678b6e-9968-4496-8566-9c53b16fa0c9", caption: "Produits : ajout, modification, prix et disponibilité" },
+                { src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/Group%20256.png?alt=media&token=def1d244-a682-4f31-b171-393225977ccc", caption: "Commandes : suivi et traitement en temps réel" },
+                { src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/Group%20257.png?alt=media&token=a3445f31-8795-42df-9e71-11fa1802c81e", caption: "Codes promo : réductions paramétrables" },
+                { src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20235.png?alt=media&token=e3a5d0a0-3eef-4de7-ba09-9f6b5d5e098a", caption: "Avis clients : modération avant publication" },
+              ].map(({ src, caption }) => (
+                <figure key={caption}>
+                  <img src={src} alt={caption} className="brutal-border brutal-shadow w-full" loading="lazy" />
+                  <figcaption className="mt-2 text-xs text-gray-500 mono text-center">{caption}</figcaption>
+                </figure>
+              ))}
+            </div>
+            <div className="mt-8">
+              <a href="/blog/panel-admin-boutique-ecommerce" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-5 py-3 text-sm font-bold inline-flex">
+                Voir le détail du panel admin boutique →
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Stack technique */}
         <section className="py-16 px-4 bg-[#0A0A0A]">
           <div className="max-w-4xl mx-auto">

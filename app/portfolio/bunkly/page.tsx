@@ -172,6 +172,35 @@ export default function BunklyPortfolioPage() {
           </div>
         </section>
 
+        {/* Dashboard propriétaire */}
+        <section className="py-16 px-4 bg-[#0A0A0A]">
+          <div className="max-w-4xl mx-auto">
+            <p className="mono text-sm font-bold text-[#FF6B35] mb-2">// inclus dans la plateforme</p>
+            <h2 className="text-2xl font-bold text-white mb-2">
+              Dashboard <span className="bg-[#FF6B35] brutal-border px-2">propriétaire</span>
+            </h2>
+            <p className="text-gray-400 text-sm mb-8">
+              Chaque propriétaire dispose d'un espace d'administration pour créer et gérer ses livrets sans toucher au code.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {[
+                { icon: "📖", label: "Création de livrets", desc: "Création d'un livret en quelques minutes avec sections personnalisables" },
+                { icon: "🎨", label: "Choix du template", desc: "Plusieurs modèles visuels disponibles selon le style de l'hébergement" },
+                { icon: "🌍", label: "Traduction automatique", desc: "Le contenu est traduit automatiquement dans la langue de chaque hôte" },
+                { icon: "🔗", label: "QR code & lien unique", desc: "Génération automatique d'un QR code et d'un lien de partage par livret" },
+                { icon: "✏️", label: "Édition en temps réel", desc: "Modification des sections, photos et infos pratiques à tout moment" },
+                { icon: "📊", label: "Gestion multi-livrets", desc: "Un même compte peut gérer plusieurs hébergements depuis le même dashboard" },
+              ].map(({ icon, label, desc }) => (
+                <div key={label} className="border-2 border-gray-800 p-5 hover:border-[#FF6B35] transition-colors">
+                  <div className="text-2xl mb-3">{icon}</div>
+                  <h3 className="font-bold mb-1 text-sm text-[#FFFBF0]">{label}</h3>
+                  <p className="text-xs text-gray-400 leading-relaxed">{desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Stack technique */}
         <section className="py-16 px-4 bg-[#0A0A0A]">
           <div className="max-w-4xl mx-auto">

@@ -123,6 +123,35 @@ export default function DemoPaysagistePage() {
           </div>
         </section>
 
+        {/* Panel admin */}
+        <section className="py-16 px-4 bg-[#FFFBF0]">
+          <div className="max-w-4xl mx-auto">
+            <p className="mono text-sm font-bold text-gray-500 mb-2">// inclus dans le projet</p>
+            <h2 className="text-2xl font-bold mb-2">
+              Panel admin <span className="bg-[#A8D05A] brutal-border px-2">inclus</span>
+            </h2>
+            <p className="text-gray-600 text-sm mb-8">
+              Le paysagiste gère son site en autonomie totale depuis son back-office Firebase. Pas besoin de faire appel au développeur pour modifier une photo, mettre à jour un service ou publier une actualité.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {[
+                { icon: "🖼️", label: "Galerie réalisations", desc: "Ajout et suppression de photos de chantiers en temps réel" },
+                { icon: "🛠️", label: "Services", desc: "Modification des prestations, descriptions et photos depuis le panel" },
+                { icon: "🎥", label: "Vidéo héro", desc: "Mise à jour de la vidéo de la page d'accueil via une URL" },
+                { icon: "📰", label: "Blog & actualités", desc: "Publication d'articles pour alimenter le référencement" },
+                { icon: "📝", label: "Demandes de devis", desc: "Réception et consultation des demandes clients dans le panel" },
+                { icon: "📍", label: "Informations", desc: "Coordonnées, zones d'intervention et textes modifiables à tout moment" },
+              ].map(({ icon, label, desc }) => (
+                <div key={label} className="brutal-border bg-white p-5">
+                  <div className="text-2xl mb-3">{icon}</div>
+                  <h3 className="font-bold mb-1 text-sm">{label}</h3>
+                  <p className="text-xs text-gray-600 leading-relaxed">{desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Stack technique */}
         <section className="py-16 px-4 bg-[#0A0A0A]">
           <div className="max-w-4xl mx-auto">
