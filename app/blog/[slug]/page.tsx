@@ -115,8 +115,8 @@ const serviceLinks: Record<string, { label: string; href: string }[]> = {
     { label: "No-code vs Développeur", href: "/blog/no-code-vs-developpeur" },
   ],
   Conseils: [
+    { label: "Panel admin inclus dans chaque projet", href: "/blog/panel-admin-site-web-application-mobile" },
     { label: "Fidéliser ses clients avec une app", href: "/blog/comment-fideliser-clients-application-mobile" },
-    { label: "App fidélité clients", href: "/blog/application-mobile-fidelite-clients" },
     { label: "Faire développer une app mobile", href: "/blog/faire-developper-application-mobile" },
     { label: "J'ai une idée d'app mobile", href: "/blog/j-ai-une-idee-d-application-mobile" },
   ],

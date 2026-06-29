@@ -3972,6 +3972,93 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "panel-admin-site-web-application-mobile",
+    title: "Panel admin : gérez votre site ou application mobile sans toucher au code",
+    description:
+      "Chaque site et application mobile BreizhApp inclut un panel d'administration sur mesure. Modifiez votre menu, gérez vos commandes, suivez vos stats — en autonomie totale.",
+    date: "2026-06-29",
+    readTime: "6 min",
+    category: "Conseils",
+    sections: [
+      {
+        paragraphs: [
+          "Quand je livre un site web ou une application mobile, je ne livre pas juste un écran. Je livre aussi un outil de gestion complet, accessible depuis n'importe quel navigateur, que vous pouvez utiliser seul sans jamais me recontacter pour une modification.",
+          "C'est ce qu'on appelle le panel d'administration, ou back-office. Voici ce qu'il contient concrètement, et pourquoi c'est l'un des éléments les plus importants d'un projet digital.",
+        ],
+      },
+      {
+        heading: "Qu'est-ce qu'un panel admin ?",
+        paragraphs: [
+          "Le panel admin est une interface web privée, accessible uniquement par vous (et les membres de votre équipe si besoin). Il vous permet de piloter votre activité en temps réel : ajouter un produit, confirmer une commande, voir vos revenus de la semaine, gérer vos rendez-vous.",
+          "Il est développé sur mesure pour votre projet. Ce n'est pas un outil générique comme Shopify ou WordPress que vous devez apprivoiser. C'est un tableau de bord pensé pour votre cas précis, avec uniquement les fonctionnalités dont vous avez besoin.",
+        ],
+      },
+      {
+        heading: "Ce que contient le panel admin selon votre activité",
+        paragraphs: [
+          "Les fonctionnalités varient selon le type de projet, mais voici les modules les plus courants.",
+        ],
+        list: [
+          "Dashboard : chiffre d'affaires de la semaine, nombre de commandes ou de rendez-vous, produit ou prestation le plus demandé",
+          "Gestion des produits ou du menu : ajouter, modifier, supprimer des articles, changer les prix, activer ou désactiver un produit en un clic",
+          "Gestion des commandes : voir les commandes en temps réel, changer leur statut, contacter le client",
+          "Gestion des rendez-vous : confirmer ou refuser une demande, voir la répartition par membre de l'équipe, bloquer des créneaux",
+          "Codes promo : créer des réductions en pourcentage ou en montant fixe, définir une date d'expiration",
+          "Messagerie : recevoir les messages de contact envoyés depuis le site ou l'app",
+          "Galerie photos : ajouter ou supprimer des visuels sans faire appel à un développeur",
+          "Gestion de l'équipe : ajouter un collaborateur, définir ses accès, voir ses performances",
+          "Statistiques : volume de commandes par période, top produits, revenus mensuels",
+        ],
+      },
+      {
+        heading: "Exemple concret : le panel d'un salon de coiffure",
+        paragraphs: [
+          "Pour Aurum Studio, un salon de coiffure, le panel admin affiche en temps réel le chiffre d'affaires confirmé de la semaine, le nombre de rendez-vous en attente de confirmation, le coiffeur le plus demandé et la prestation la plus réservée.",
+          "Depuis le panel, le gérant peut confirmer ou refuser des rendez-vous, gérer les prestations proposées et leurs tarifs, bloquer des créneaux de fermeture exceptionnelle, et consulter la répartition des rendez-vous par membre de l'équipe.",
+          "Tout ça depuis un navigateur, sur téléphone ou ordinateur, sans jamais ouvrir de code.",
+        ],
+      },
+      {
+        heading: "Exemple concret : le panel d'une pizzeria",
+        paragraphs: [
+          "Pour une pizzeria, le panel admin va plus loin. Il centralise la gestion du menu (40 produits répartis en catégories : Pizzas, Pastas, Antipasti, Desserts, Boissons), les commandes en temps réel avec statut de préparation, les réservations de table, les horaires d'ouverture, les codes promo, les livreurs et les statistiques de vente.",
+          "Chaque produit peut être activé ou désactivé en un clic — utile quand un ingrédient est en rupture. Un plat peut être mis en avant sur la page d'accueil sans retoucher le site.",
+        ],
+      },
+      {
+        heading: "Exemple concret : le panel d'une boutique e-commerce",
+        paragraphs: [
+          "Pour Histoire Eternelle, une bijouterie en ligne, le panel admin permet de gérer le catalogue produits par catégories, de suivre les commandes et leur statut, de créer des codes promo, de répondre aux messages clients et de gérer les photos de la boutique.",
+          "L'objectif est simple : le client gère son activité en totale autonomie. Pas besoin de m'appeler pour changer un prix ou ajouter une photo.",
+        ],
+      },
+      {
+        heading: "Pourquoi c'est inclus dans chaque projet BreizhApp",
+        paragraphs: [
+          "Un site ou une application sans panel admin, c'est un outil dont vous dépendez entièrement du développeur pour la moindre modification. C'est chronophage, coûteux, et ça freine votre réactivité.",
+          "Je construis tous mes projets avec un back-office dès le départ, parce que votre autonomie est non négociable. Vous payez une fois pour avoir votre outil, et vous le gérez comme vous le souhaitez.",
+        ],
+        list: [
+          "Aucune modification facturée pour changer un prix, un texte ou une photo",
+          "Accès depuis n'importe quel appareil, aucune installation requise",
+          "Interface simple, pensée pour des non-développeurs",
+          "Accès multi-utilisateurs si vous avez une équipe",
+          "Données stockées sur Firebase, sécurisées et sauvegardées",
+        ],
+      },
+      {
+        heading: "FAQ — Panel admin BreizhApp",
+        list: [
+          "Est-ce que le panel admin est compris dans le prix ? Oui. Le panel d'administration est inclus dans toutes les offres BreizhApp, sans supplément.",
+          "Puis-je donner accès à un employé ? Oui. Je peux créer plusieurs comptes avec des niveaux d'accès différents selon votre organisation.",
+          "Est-ce que je dois être à l'aise avec l'informatique ? Non. L'interface est conçue pour être utilisée sans formation technique. Si besoin, je vous accompagne lors de la livraison.",
+          "Que se passe-t-il si j'ai un problème avec le panel ? Je suis joignable par WhatsApp et email. Le support est inclus dans l'abonnement mensuel.",
+          "Le panel fonctionne-t-il sur téléphone ? Oui. Le panel est responsive et fonctionne sur smartphone, tablette et ordinateur.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
