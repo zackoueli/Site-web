@@ -22,9 +22,9 @@ const STATIC_PAGES: MetadataRoute.Sitemap = [
   { url: "https://breizhapp.tech/services/secteur/education-formation",           lastModified: new Date("2026-06-13"), changeFrequency: "monthly", priority: 0.85 },
   { url: "https://breizhapp.tech/services/secteur/evenementiel-billetterie",      lastModified: new Date("2026-06-13"), changeFrequency: "monthly", priority: 0.85 },
   { url: "https://breizhapp.tech/portfolio",                              lastModified: new Date("2026-05-01"), changeFrequency: "monthly", priority: 0.75 },
-  { url: "https://breizhapp.tech/portfolio/bunkly",                       lastModified: new Date("2026-06-13"), changeFrequency: "monthly", priority: 0.7 },
-  { url: "https://breizhapp.tech/portfolio/histoire-eternelle",           lastModified: new Date("2026-05-01"), changeFrequency: "monthly", priority: 0.7 },
-  { url: "https://breizhapp.tech/portfolio/demo-paysagiste",              lastModified: new Date("2026-05-01"), changeFrequency: "monthly", priority: 0.7 },
+  { url: "https://breizhapp.tech/portfolio/bunkly",                       lastModified: new Date("2026-06-29"), changeFrequency: "monthly", priority: 0.7 },
+  { url: "https://breizhapp.tech/portfolio/histoire-eternelle",           lastModified: new Date("2026-06-29"), changeFrequency: "monthly", priority: 0.7 },
+  { url: "https://breizhapp.tech/portfolio/demo-paysagiste",              lastModified: new Date("2026-06-29"), changeFrequency: "monthly", priority: 0.7 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
