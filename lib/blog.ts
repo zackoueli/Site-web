@@ -4335,6 +4335,135 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "panel-admin-boutique-ecommerce",
+    title: "Panel admin boutique e-commerce : gérez produits, commandes et avis sans coder",
+    description:
+      "Découvrez le panel d'administration inclus dans chaque boutique en ligne BreizhApp. Produits, catégories, commandes, codes promo, messagerie, avis clients et photos depuis un seul tableau de bord.",
+    date: "2026-06-29",
+    readTime: "5 min",
+    category: "Secteurs",
+    sections: [
+      {
+        paragraphs: [
+          "Chaque boutique en ligne que je développe inclut un panel d'administration complet. Vous gérez votre catalogue, vos commandes et vos clients en totale autonomie, sans jamais avoir besoin de faire appel à un développeur pour la moindre modification.",
+          "Voici les 8 modules du panel, capture par capture.",
+        ],
+      },
+      {
+        heading: "Dashboard : votre boutique en un coup d'œil",
+        paragraphs: [
+          "La page d'accueil du panel affiche vos indicateurs clés : chiffre d'affaires, nombre de commandes et nombre de produits actifs. Les dernières commandes sont listées directement sur le tableau de bord pour que vous puissiez les traiter sans naviguer.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20171.png?alt=media&token=0b58df62-b2a0-4154-9d5f-37028df9a118",
+          alt: "Dashboard panel admin boutique e-commerce BreizhApp",
+          caption: "Dashboard : CA, commandes, produits et dernières ventes en temps réel",
+        },
+      },
+      {
+        heading: "Produits : gérez votre catalogue en autonomie",
+        paragraphs: [
+          "La section Produits liste l'intégralité de votre catalogue. Pour chaque article, vous modifiez le nom, la description, le prix, les photos, le stock et la catégorie. Vous activez ou désactivez un produit en un clic sans le supprimer.",
+          "Besoin d'ajouter un nouveau bijou ou une nouvelle collection ? Vous le faites directement depuis le panel, sans passer par un développeur.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20231.png?alt=media&token=7a678b6e-9968-4496-8566-9c53b16fa0c9",
+          alt: "Gestion des produits panel admin boutique en ligne BreizhApp",
+          caption: "Produits : ajout, modification, prix et disponibilité en autonomie totale",
+        },
+      },
+      {
+        heading: "Catégories : organisez votre catalogue",
+        paragraphs: [
+          "La section Catégories vous permet de créer et d'organiser les familles de produits de votre boutique. Chaque catégorie s'affiche dans la navigation de votre site pour guider vos clients vers ce qu'ils cherchent.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20232.png?alt=media&token=84bf1909-e871-45e4-afcf-2fc63f78f0bf",
+          alt: "Gestion des catégories panel admin e-commerce BreizhApp",
+          caption: "Catégories : organisation du catalogue et navigation client",
+        },
+      },
+      {
+        heading: "Commandes : traitez chaque vente en temps réel",
+        paragraphs: [
+          "La section Commandes centralise toutes les ventes avec le détail de chaque commande, le statut de traitement, le mode de livraison et les coordonnées de l'acheteur. Vous mettez à jour le statut et le client est notifié automatiquement.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/Group%20256.png?alt=media&token=def1d244-a682-4f31-b171-393225977ccc",
+          alt: "Gestion des commandes panel admin boutique e-commerce BreizhApp",
+          caption: "Commandes : suivi en temps réel avec statut et notification client automatique",
+        },
+      },
+      {
+        heading: "Codes promo : créez vos offres promotionnelles",
+        paragraphs: [
+          "Créez des codes de réduction en pourcentage ou en montant fixe, avec une date d'expiration et un nombre d'utilisations maximum. Idéal pour une offre de lancement, une vente flash ou une récompense client fidèle.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/Group%20257.png?alt=media&token=a3445f31-8795-42df-9e71-11fa1802c81e",
+          alt: "Codes promo panel admin boutique en ligne BreizhApp",
+          caption: "Codes promo : réduction en % ou montant fixe, durée et limite d'utilisation",
+        },
+      },
+      {
+        heading: "Messagerie : répondez à vos clients depuis le panel",
+        paragraphs: [
+          "Tous les messages envoyés depuis votre boutique arrivent dans la messagerie du panel. Vous centralisez vos échanges sans jongler entre différentes boîtes mail ou outils.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20173.png?alt=media&token=2983ac78-a682-4c00-8d7c-e6e358c5a971",
+          alt: "Messagerie panel admin boutique e-commerce BreizhApp",
+          caption: "Messagerie : échanges clients centralisés dans le panel",
+        },
+      },
+      {
+        heading: "Avis clients : gérez votre réputation",
+        paragraphs: [
+          "La section Avis centralise les avis laissés par vos clients sur vos produits. Vous les modérez depuis le panel avant publication, pour garder le contrôle sur ce qui s'affiche sur votre boutique.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20235.png?alt=media&token=e3a5d0a0-3eef-4de7-ba09-9f6b5d5e098a",
+          alt: "Avis clients panel admin boutique en ligne BreizhApp",
+          caption: "Avis clients : modération avant publication pour garder le contrôle",
+        },
+      },
+      {
+        heading: "Photos : mettez à jour vos visuels en autonomie",
+        paragraphs: [
+          "Ajoutez ou supprimez des photos de votre boutique, de vos produits ou de votre univers de marque directement depuis le panel. Les visuels s'affichent instantanément sur votre site.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20236.png?alt=media&token=d6341f5b-3948-4132-a4ff-eeaa5aeee829",
+          alt: "Photos panel admin boutique e-commerce BreizhApp",
+          caption: "Photos : upload et gestion des visuels sans faire appel au développeur",
+        },
+      },
+      {
+        heading: "Ce panel est inclus dans chaque boutique BreizhApp",
+        paragraphs: [
+          "Ce panel d'administration est livré avec chaque boutique en ligne que je développe. Inclus dans le tarif, sans supplément.",
+        ],
+        list: [
+          "Accessible depuis ordinateur, tablette ou smartphone",
+          "Interface pensée pour une utilisation quotidienne sans formation",
+          "Paiement sécurisé via Stripe intégré nativement",
+          "Données sécurisées sur Firebase",
+          "Support inclus dans l'abonnement mensuel",
+        ],
+      },
+      {
+        heading: "FAQ — Panel admin boutique e-commerce BreizhApp",
+        list: [
+          "Le panel est-il inclus dans le prix ? Oui. Le panel d'administration complet est inclus dans toutes les offres BreizhApp pour les boutiques en ligne.",
+          "Puis-je ajouter des produits moi-même ? Oui. Vous ajoutez, modifiez et supprimez des produits depuis la section Produits, sans faire appel à un développeur.",
+          "Les clients sont-ils notifiés quand je traite leur commande ? Oui. Une notification ou un email est envoyé automatiquement au client à chaque changement de statut de commande.",
+          "Puis-je modérer les avis avant qu'ils s'affichent ? Oui. Chaque avis passe par la section Avis du panel avant d'être publié sur votre boutique.",
+          "Le panel fonctionne-t-il sur téléphone ? Oui. Le panel est responsive et fonctionne sur tous les écrans.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {

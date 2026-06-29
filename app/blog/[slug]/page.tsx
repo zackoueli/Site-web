@@ -423,6 +423,12 @@ export default async function ArticlePage({ params }: Props) {
               >
                 Panel admin restaurant →
               </Link>
+              <Link
+                href="/blog/panel-admin-boutique-ecommerce"
+                className="brutal-btn bg-[#FF6B9D] text-white px-5 py-3 text-sm font-bold"
+              >
+                Panel admin boutique →
+              </Link>
             </div>
           </div>
         )}
