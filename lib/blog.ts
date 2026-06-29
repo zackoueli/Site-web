@@ -4183,6 +4183,158 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "panel-admin-restaurant-pizzeria",
+    title: "Panel admin restaurant et pizzeria : gérez menu, commandes et livreurs sans coder",
+    description:
+      "Découvrez le panel d'administration inclus dans chaque site et application mobile BreizhApp pour les restaurants et pizzerias. Menu, commandes, réservations, horaires, codes promo, livreurs et statistiques.",
+    date: "2026-06-29",
+    readTime: "6 min",
+    category: "Secteurs",
+    sections: [
+      {
+        paragraphs: [
+          "Chaque application mobile et site web que je développe pour un restaurant ou une pizzeria inclut un panel d'administration complet. Vous pilotez votre activité en temps réel depuis n'importe quel appareil, sans avoir besoin de faire appel à un développeur pour la moindre modification.",
+          "Voici les 10 modules du panel, capture par capture.",
+        ],
+      },
+      {
+        heading: "Commandes : suivez chaque commande en temps réel",
+        paragraphs: [
+          "La section Commandes centralise toutes les commandes passées depuis votre application ou votre site. Vous voyez le détail de chaque commande, le statut de préparation, le mode de livraison et les coordonnées du client.",
+          "Vous mettez à jour le statut en un clic : reçue, en préparation, en livraison, livrée.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%208.png?alt=media&token=92d7ca24-a6e5-45f6-bc2d-b481d87e4349",
+          alt: "Gestion des commandes panel admin pizzeria BreizhApp",
+          caption: "Commandes : suivi en temps réel avec statut et détail client",
+        },
+      },
+      {
+        heading: "Menu : modifiez vos produits, prix et disponibilités",
+        paragraphs: [
+          "La section Menu liste l'intégralité de votre catalogue, réparti par catégories : Pizzas, Pastas, Antipasti, Desserts, Boissons, Suppléments. Pour chaque produit, vous pouvez modifier le nom, la description, le prix, la photo, activer ou désactiver la disponibilité et le mettre en avant sur la page d'accueil.",
+          "Un produit en rupture d'ingrédient ? Vous le désactivez en un toggle. Il disparaît du menu client immédiatement.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%209.png?alt=media&token=6250154b-d30c-4111-9d3d-7a1b53697a52",
+          alt: "Gestion du menu panel admin restaurant BreizhApp",
+          caption: "Menu : 40 produits, toggle disponibilité et mise en avant en un clic",
+        },
+      },
+      {
+        heading: "Réservations : gérez les tables et les groupes",
+        paragraphs: [
+          "La section Réservations liste toutes les demandes de table reçues avec le nombre de couverts, la date, l'heure et les coordonnées du client. Vous confirmez ou refusez chaque demande, le client est notifié automatiquement.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%2010.png?alt=media&token=c9830477-4c1d-4192-9324-bf646ca7c979",
+          alt: "Gestion des réservations panel admin restaurant BreizhApp",
+          caption: "Réservations : confirmation ou refus avec notification automatique au client",
+        },
+      },
+      {
+        heading: "Horaires : mettez à jour vos horaires d'ouverture",
+        paragraphs: [
+          "Vous définissez vos horaires d'ouverture jour par jour depuis cette section. Les horaires s'affichent en temps réel sur votre site et dans votre application. Fermeture exceptionnelle ? Vous bloquez le créneau en quelques secondes.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%2011.png?alt=media&token=7727e288-5dd9-496f-b1b3-4fcd428829bd",
+          alt: "Gestion des horaires panel admin restaurant BreizhApp",
+          caption: "Horaires : ouverture jour par jour, mis à jour en temps réel sur le site",
+        },
+      },
+      {
+        heading: "Codes promo : créez vos offres en quelques clics",
+        paragraphs: [
+          "La section Codes promo vous permet de créer des réductions en pourcentage ou en montant fixe, avec une date d'expiration et un nombre d'utilisations maximum. Idéal pour une offre de lancement, une promotion du weekend ou une récompense client.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%2012.png?alt=media&token=3c49f102-3be5-43cf-be02-8624faef6d1c",
+          alt: "Codes promo panel admin pizzeria BreizhApp",
+          caption: "Codes promo : réduction en % ou montant fixe, date d'expiration paramétrable",
+        },
+      },
+      {
+        heading: "Livreurs : gérez votre équipe de livraison",
+        paragraphs: [
+          "Si vous proposez la livraison à domicile, la section Livreurs vous permet d'ajouter vos livreurs, de leur attribuer des commandes et de suivre leur activité. Chaque livreur peut accéder à l'application depuis son téléphone pour voir ses livraisons du jour.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%2013.png?alt=media&token=d1603c4a-1952-4cbc-9ab8-6286c97c4994",
+          alt: "Gestion des livreurs panel admin restaurant BreizhApp",
+          caption: "Livreurs : gestion de l'équipe et attribution des commandes",
+        },
+      },
+      {
+        heading: "Statistiques : analysez votre activité",
+        paragraphs: [
+          "La section Statistiques affiche vos données de vente sur la période de votre choix : nombre de commandes, chiffre d'affaires, produits les plus commandés, heures de pointe. Ces données vous aident à ajuster votre menu et vos horaires.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%2014.png?alt=media&token=e3140706-626a-435d-9feb-bfbf9f8c2482",
+          alt: "Statistiques panel admin restaurant pizzeria BreizhApp",
+          caption: "Statistiques : CA, commandes et top produits sur la période choisie",
+        },
+      },
+      {
+        heading: "Messagerie : centralisez vos échanges clients",
+        paragraphs: [
+          "Tous les messages envoyés depuis votre site ou application arrivent dans la messagerie du panel. Vous répondez directement depuis l'interface, sans jongler entre différentes boîtes mail.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%2015.png?alt=media&token=163b5c12-a423-43fc-8862-2c10877cf095",
+          alt: "Messagerie panel admin restaurant BreizhApp",
+          caption: "Messagerie : tous les échanges clients centralisés dans le panel",
+        },
+      },
+      {
+        heading: "Photos : mettez à jour vos visuels en autonomie",
+        paragraphs: [
+          "Ajoutez ou supprimez des photos de votre restaurant, de vos plats ou de votre équipe directement depuis le panel. Les visuels s'affichent instantanément sur votre site et dans votre application.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%2016.png?alt=media&token=999da8b8-c263-4142-8b20-6dd232d33ba7",
+          alt: "Galerie photos panel admin pizzeria BreizhApp",
+          caption: "Photos : upload et suppression de visuels sans faire appel au développeur",
+        },
+      },
+      {
+        heading: "À propos : personnalisez la présentation de votre établissement",
+        paragraphs: [
+          "La section À propos vous permet de modifier le texte de présentation de votre restaurant, vos coordonnées, votre adresse et les informations qui s'affichent sur la page de présentation de votre site ou application.",
+        ],
+        image: {
+          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%2017.png?alt=media&token=7bb95b3f-9ed1-4fb6-a414-2df423b4344d",
+          alt: "Section à propos panel admin restaurant BreizhApp",
+          caption: "À propos : présentation, coordonnées et adresse modifiables en autonomie",
+        },
+      },
+      {
+        heading: "Ce panel est inclus dans chaque projet restaurant",
+        paragraphs: [
+          "Ce panel d'administration est livré avec chaque site web ou application mobile que je développe pour un restaurant ou une pizzeria. Inclus dans le tarif, sans supplément.",
+        ],
+        list: [
+          "Accessible depuis ordinateur, tablette ou smartphone",
+          "Interface pensée pour une utilisation quotidienne sans formation",
+          "Notifications en temps réel à chaque nouvelle commande ou réservation",
+          "Données sécurisées sur Firebase",
+          "Support inclus dans l'abonnement mensuel",
+        ],
+      },
+      {
+        heading: "FAQ — Panel admin restaurant BreizhApp",
+        list: [
+          "Le panel est-il inclus dans le prix ? Oui. Le panel d'administration complet est inclus dans toutes les offres BreizhApp pour les restaurants.",
+          "Puis-je modifier mon menu moi-même ? Oui. Vous ajoutez, modifiez et supprimez des produits depuis la section Menu, sans faire appel à un développeur.",
+          "Les clients sont-ils notifiés quand je confirme leur commande ? Oui. Une notification push est envoyée automatiquement au client à chaque changement de statut.",
+          "Mes livreurs peuvent-ils accéder au panel ? Oui. Chaque livreur a son propre accès limité à ses livraisons du jour.",
+          "Le panel fonctionne-t-il sur téléphone ? Oui. Le panel est responsive et fonctionne sur tous les écrans.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
