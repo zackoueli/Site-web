@@ -58,27 +58,34 @@ Brest, Quimper, Morlaix, Rennes, Nantes — et toute la France en télétravail.
 
 ## Pages principales
 
-- https://breizhapp.tech — Accueil
-- https://breizhapp.tech/services/application-mobile — Services app mobile iOS & Android
-- https://breizhapp.tech/services/site-web — Services création de site web
-- https://breizhapp.tech/services/plateforme — Services plateforme & SaaS
-- https://breizhapp.tech/services/ecommerce — Services e-commerce
-- https://breizhapp.tech/services/secteur/restaurant — App & site pour restaurant
-- https://breizhapp.tech/services/secteur/coiffeur — App & site pour salon de coiffure
-- https://breizhapp.tech/services/secteur/hotel — App & site pour hôtel
-- https://breizhapp.tech/services/secteur/salle-de-sport — App pour salle de sport
-- https://breizhapp.tech/services/secteur/reservation-prise-de-rdv — App de réservation & RDV
-- https://breizhapp.tech/services/secteur/livraison-logistique — App de livraison
-- https://breizhapp.tech/services/secteur/reseau-social-communaute — App réseau social
-- https://breizhapp.tech/services/secteur/maraicher-commerce-local — App & site commerce local
-- https://breizhapp.tech/services/secteur/sante-bien-etre — App santé & bien-être
-- https://breizhapp.tech/services/secteur/education-formation — App e-learning
-- https://breizhapp.tech/services/secteur/evenementiel-billetterie — App billetterie
-- https://breizhapp.tech/portfolio — Réalisations & projets
-- https://breizhapp.tech/blog — Blog & guides
+- [Accueil](https://breizhapp.tech)
+- [Services app mobile iOS & Android](https://breizhapp.tech/services/application-mobile)
+- [Services création de site web](https://breizhapp.tech/services/site-web)
+- [Services plateforme & SaaS](https://breizhapp.tech/services/plateforme)
+- [Services e-commerce](https://breizhapp.tech/services/ecommerce)
+- [App & site pour restaurant](https://breizhapp.tech/services/secteur/restaurant)
+- [App & site pour salon de coiffure](https://breizhapp.tech/services/secteur/coiffeur)
+- [App & site pour hôtel](https://breizhapp.tech/services/secteur/hotel)
+- [App pour salle de sport](https://breizhapp.tech/services/secteur/salle-de-sport)
+- [App de réservation & RDV](https://breizhapp.tech/services/secteur/reservation-prise-de-rdv)
+- [App de livraison](https://breizhapp.tech/services/secteur/livraison-logistique)
+- [App réseau social](https://breizhapp.tech/services/secteur/reseau-social-communaute)
+- [App & site commerce local](https://breizhapp.tech/services/secteur/maraicher-commerce-local)
+- [App santé & bien-être](https://breizhapp.tech/services/secteur/sante-bien-etre)
+- [App e-learning](https://breizhapp.tech/services/secteur/education-formation)
+- [App billetterie](https://breizhapp.tech/services/secteur/evenementiel-billetterie)
+- [Réalisations & projets](https://breizhapp.tech/portfolio)
+- [Bunkly — Plateforme livrets d'accueil](https://breizhapp.tech/portfolio/bunkly)
+- [Histoire Eternelle — Boutique e-commerce bijoux](https://breizhapp.tech/portfolio/histoire-eternelle)
+- [Paradis Vert — Site paysagiste](https://breizhapp.tech/portfolio/demo-paysagiste)
+- [Blog & guides](https://breizhapp.tech/blog)
+- [Panel admin site web & application mobile](https://breizhapp.tech/blog/panel-admin-site-web-application-mobile)
+- [Panel admin salon de coiffure](https://breizhapp.tech/blog/panel-admin-salon-coiffure)
+- [Panel admin restaurant & pizzeria](https://breizhapp.tech/blog/panel-admin-restaurant-pizzeria)
+- [Panel admin boutique e-commerce](https://breizhapp.tech/blog/panel-admin-boutique-ecommerce)
 
 ## Contact
 
-- Site : https://breizhapp.tech
+- [Site web](https://breizhapp.tech)
+- [Devis gratuit](https://breizhapp.tech/#contact)
 - Email : breizhapp@outlook.fr
-- Devis gratuit : https://breizhapp.tech/#contact
