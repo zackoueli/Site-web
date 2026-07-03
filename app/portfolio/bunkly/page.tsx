@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import LazyIframe from "@/components/LazyIframe";
 import { ExternalLink, ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -63,42 +64,77 @@ export default function BunklyPortfolioPage() {
 
         {/* Hero */}
         <section className="border-b-[3px] border-[#0A0A0A] bg-[#FF6B35]">
-          <div className="max-w-4xl mx-auto px-4 py-20">
-            <a href="/portfolio" className="inline-flex items-center gap-2 text-sm font-bold mb-8 hover:underline text-white opacity-80">
-              <ArrowLeft size={14} /> Retour aux réalisations
-            </a>
-            <p className="mono text-sm font-bold text-orange-200 mb-4">// réalisation · plateforme SaaS</p>
-            <div className="flex items-center gap-3 mb-6 flex-wrap">
-              <div className="brutal-border px-3 py-1 text-xs font-bold bg-white text-[#FF6B35]">PLATEFORME WEB</div>
-              <div className="brutal-border px-3 py-1 text-xs font-bold bg-[#0A0A0A] text-white">SAAS</div>
-              <div className="brutal-border px-3 py-1 text-xs font-bold bg-[#FFE234] text-[#0A0A0A]">DISPONIBLE</div>
+          <div className="max-w-6xl mx-auto px-4 py-20 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <a href="/portfolio" className="inline-flex items-center gap-2 text-sm font-bold mb-8 hover:underline text-white opacity-80">
+                <ArrowLeft size={14} /> Retour aux réalisations
+              </a>
+              <p className="mono text-sm font-bold text-orange-200 mb-4">// réalisation · plateforme SaaS</p>
+              <div className="flex items-center gap-3 mb-6 flex-wrap">
+                <div className="brutal-border px-3 py-1 text-xs font-bold bg-white text-[#FF6B35]">PLATEFORME WEB</div>
+                <div className="brutal-border px-3 py-1 text-xs font-bold bg-[#0A0A0A] text-white">SAAS</div>
+                <div className="brutal-border px-3 py-1 text-xs font-bold bg-[#FFE234] text-[#0A0A0A]">DISPONIBLE</div>
+              </div>
+              <h1 className="text-5xl md:text-7xl font-black leading-tight mb-4 text-white">
+                <a href="https://bunkly.co" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  Bunkly
+                </a>
+              </h1>
+              <p className="text-xl font-medium mb-2 text-orange-100">
+                Créez votre livret d'accueil digital pour vos hôtes
+              </p>
+              <p className="text-orange-100 leading-relaxed max-w-2xl mb-8">
+                Plateforme SaaS développée en 2 semaines : les propriétaires de locations, hôtels et gîtes créent leur livret d'accueil digital en quelques minutes. Traduction automatique, templates design, dashboard complet.
+              </p>
+              <div className="flex flex-wrap gap-4 mb-6">
+                <a
+                  href="https://bunkly.co"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="brutal-btn px-6 py-3 font-bold inline-flex items-center gap-2 bg-white text-[#FF6B35]"
+                >
+                  Voir la plateforme <ExternalLink size={14} />
+                </a>
+                <a
+                  href="https://app.bunkly.co/b/NAvq6yDTOe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="brutal-btn px-6 py-3 font-bold inline-flex items-center gap-2 bg-[#0A0A0A] text-white"
+                >
+                  Voir un livret démo <ExternalLink size={14} />
+                </a>
+              </div>
+              <p className="text-sm text-orange-100">
+                Projet réalisé en collaboration avec{" "}
+                <a
+                  href="https://agence-web-armor.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold underline hover:text-white inline-flex items-center gap-1"
+                >
+                  Agence Web Armor <ExternalLink size={12} />
+                </a>
+              </p>
             </div>
-            <h1 className="text-5xl md:text-7xl font-black leading-tight mb-4 text-white">
-              Bunkly
-            </h1>
-            <p className="text-xl font-medium mb-2 text-orange-100">
-              Créez votre livret d'accueil digital pour vos hôtes
-            </p>
-            <p className="text-orange-100 leading-relaxed max-w-2xl mb-8">
-              Plateforme SaaS développée en 2 semaines : les propriétaires de locations, hôtels et gîtes créent leur livret d'accueil digital en quelques minutes. Traduction automatique, templates design, dashboard complet.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="https://app.bunkly.co"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="brutal-btn px-6 py-3 font-bold inline-flex items-center gap-2 bg-white text-[#FF6B35]"
-              >
-                Voir la plateforme <ExternalLink size={14} />
-              </a>
-              <a
-                href="https://app.bunkly.co/b/NAvq6yDTOe"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="brutal-btn px-6 py-3 font-bold inline-flex items-center gap-2 bg-[#0A0A0A] text-white"
-              >
-                Voir un livret démo <ExternalLink size={14} />
-              </a>
+
+            <div className="brutal-border brutal-shadow bg-white overflow-hidden">
+              <div className="flex items-center gap-2 px-3 py-2 border-b-2 border-[#0A0A0A] bg-[#FF6B35]">
+                <div className="flex gap-1.5">
+                  <div className="w-3 h-3 rounded-full bg-white opacity-60" />
+                  <div className="w-3 h-3 rounded-full bg-white opacity-60" />
+                  <div className="w-3 h-3 rounded-full bg-white opacity-60" />
+                </div>
+                <div className="flex-1 bg-white bg-opacity-20 rounded-sm px-3 py-0.5 text-xs font-mono text-white opacity-90 truncate ml-2">
+                  bunkly.co
+                </div>
+              </div>
+              <LazyIframe
+                src="https://app.bunkly.co/b/NAvq6yDTOe"
+                title="Démo Bunkly — livret d'accueil"
+                className="w-full"
+                style={{ height: 500 }}
+                sandbox="allow-scripts allow-same-origin allow-popups"
+              />
             </div>
           </div>
         </section>
@@ -118,37 +154,6 @@ export default function BunklyPortfolioPage() {
                   <div className="text-xs font-bold text-gray-400 mono mt-1">{label}</div>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Aperçu iframe */}
-        <section className="py-16 px-4 bg-[#F5F0E8]">
-          <div className="max-w-4xl mx-auto">
-            <p className="mono text-sm font-bold text-gray-500 mb-2">// démo live</p>
-            <h2 className="text-2xl font-bold mb-6">
-              Aperçu d'un livret <span className="bg-[#FF6B35] text-white px-2 brutal-border">en direct</span>
-            </h2>
-            <div className="brutal-border brutal-shadow bg-white overflow-hidden">
-              {/* Browser bar */}
-              <div className="flex items-center gap-2 px-3 py-2 border-b-2 border-[#0A0A0A] bg-[#FF6B35]">
-                <div className="flex gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-white opacity-60" />
-                  <div className="w-3 h-3 rounded-full bg-white opacity-60" />
-                  <div className="w-3 h-3 rounded-full bg-white opacity-60" />
-                </div>
-                <div className="flex-1 bg-white bg-opacity-20 rounded-sm px-3 py-0.5 text-xs font-mono text-white opacity-90 truncate ml-2">
-                  app.bunkly.co/b/NAvq6yDTOe
-                </div>
-              </div>
-              <iframe
-                src="https://app.bunkly.co/b/NAvq6yDTOe"
-                title="Démo Bunkly — livret d'accueil"
-                className="w-full border-0"
-                style={{ height: 500 }}
-                loading="lazy"
-                sandbox="allow-scripts allow-same-origin allow-popups"
-              />
             </div>
           </div>
         </section>
