@@ -206,6 +206,30 @@ export default function BunklyPortfolioPage() {
           </div>
         </section>
 
+        {/* Captures d'écran */}
+        <section className="py-16 px-4 bg-[#F5F0E8]">
+          <div className="max-w-4xl mx-auto">
+            <p className="mono text-sm font-bold text-gray-500 mb-2">// aperçu de la plateforme</p>
+            <h2 className="text-2xl font-bold mb-8">
+              Le dashboard <span className="bg-[#FF6B35] text-white px-2 brutal-border">en images</span>
+            </h2>
+            <div className="flex flex-col gap-6">
+              {[
+                { src: "https://firebasestorage.googleapis.com/v0/b/livret-d-accueil-b98ba.firebasestorage.app/o/image%2022.png?alt=media&token=ef050d7a-0e53-4b32-802c-180de481b910", caption: "Mes livrets : vue d'ensemble des hébergements, statut de publication et statistiques de vues" },
+                { src: "https://firebasestorage.googleapis.com/v0/b/livret-d-accueil-b98ba.firebasestorage.app/o/image%2023.png?alt=media&token=e64c2445-0e94-4b84-b925-a0f17acd1dac", caption: "Édition d'un module (Arrivée & Départ) avec aperçu mobile en temps réel" },
+                { src: "https://firebasestorage.googleapis.com/v0/b/livret-d-accueil-b98ba.firebasestorage.app/o/image%2024.png?alt=media&token=6840d98e-e79b-4e1e-864f-80ad245a7f90", caption: "Modules du livret : glisser-déposer pour réorganiser, activer ou masquer chaque section" },
+                { src: "https://firebasestorage.googleapis.com/v0/b/livret-d-accueil-b98ba.firebasestorage.app/o/image%2025.png?alt=media&token=2f7d5256-39de-46b7-9ef7-fd10b3b49c02", caption: "Traduction automatique du livret en plusieurs langues en un clic" },
+                { src: "https://firebasestorage.googleapis.com/v0/b/livret-d-accueil-b98ba.firebasestorage.app/o/image%2026.png?alt=media&token=5b4ff726-f0c3-4791-8543-120caae1db09", caption: "Import IA : remplissage automatique du livret depuis une annonce Airbnb, Booking ou VRBO" },
+              ].map(({ src, caption }) => (
+                <figure key={caption}>
+                  <img src={src} alt={caption} className="brutal-border brutal-shadow w-full" loading="lazy" />
+                  <figcaption className="mt-2 text-xs text-gray-500 mono text-center">{caption}</figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Stack technique */}
         <section className="py-16 px-4 bg-[#0A0A0A]">
           <div className="max-w-4xl mx-auto">
