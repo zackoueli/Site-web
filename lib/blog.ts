@@ -4464,6 +4464,353 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "notifications-push-application-mobile",
+    title: "Notifications push : comment elles font revenir vos clients dans votre app",
+    description:
+      "Notifications push mobile : fonctionnement, exemples concrets par secteur, bonnes pratiques et pourquoi c'est la fonctionnalité qui fait la différence entre une app utilisée et une app oubliée.",
+    date: "2026-07-03",
+    readTime: "5 min",
+    category: "Tech",
+    sections: [
+      {
+        paragraphs: [
+          "Une application mobile sans notifications push, c'est un commerce qui n'a jamais le numéro de téléphone de ses clients. Vous pouvez avoir la plus belle app du monde : si personne n'y repense après le premier téléchargement, elle finit oubliée dans un dossier.",
+          "Les notifications push sont le seul canal qui rappelle votre existence à l'utilisateur sans qu'il ait besoin d'ouvrir l'app de lui-même. C'est la fonctionnalité qui transforme une app installée une fois en un outil utilisé chaque semaine.",
+        ],
+      },
+      {
+        heading: "Qu'est-ce qu'une notification push, concrètement ?",
+        paragraphs: [
+          "Une notification push est un message qui s'affiche sur l'écran de verrouillage ou en haut de l'écran du téléphone, même quand l'application est fermée. Contrairement à un SMS ou un email, elle est gratuite à l'envoi (pas de coût par message) et son taux d'ouverture est nettement supérieur — souvent 3 à 5 fois plus élevé qu'un email marketing.",
+          "Techniquement, l'app s'enregistre auprès d'un service de notification (Firebase Cloud Messaging pour Android et iOS) dès l'installation. Le propriétaire de l'app peut ensuite déclencher un envoi manuellement depuis son panel d'administration, ou automatiquement selon un événement (nouvelle commande, rendez-vous à venir, promotion du jour).",
+        ],
+      },
+      {
+        heading: "Des exemples concrets par secteur",
+        paragraphs: [
+          "Le bon message au bon moment fait toute la différence. Voici comment j'intègre les notifications push selon le métier de mes clients.",
+        ],
+        list: [
+          "Restaurant : « Votre commande est prête ! » envoyé automatiquement au client dès le changement de statut dans le panel admin",
+          "Coiffeur / institut : rappel de rendez-vous 24h avant, pour réduire les no-show sans passer un coup de fil",
+          "Boutique e-commerce : alerte sur une promotion flash ou un retour en stock d'un produit mis en favori",
+          "Salle de sport : notification de fin d'abonnement ou rappel de séance programmée",
+          "Hôtel / location saisonnière : rappel des horaires de check-in la veille de l'arrivée",
+        ],
+      },
+      {
+        heading: "Pourquoi c'est plus efficace qu'un post Instagram ou un email",
+        paragraphs: [
+          "Un post sur les réseaux sociaux dépend d'un algorithme qui décide qui le voit. Un email arrive dans une boîte de réception saturée, souvent en spam. La notification push, elle, s'affiche directement sur l'écran verrouillé du téléphone de votre client — sans intermédiaire, sans algorithme à contourner.",
+          "C'est aussi un canal que vous possédez : une fois l'app installée, vous n'êtes plus dépendant d'une plateforme tierce pour recontacter vos clients.",
+        ],
+      },
+      {
+        heading: "Les bonnes pratiques pour ne pas être désinstallé",
+        list: [
+          "Personnalisez le message : « Votre commande #482 est prête » convertit mieux qu'« Une notification vous attend »",
+          "Limitez la fréquence : 1 à 2 notifications par semaine maximum hors transactionnel, sous peine de désinstallation",
+          "Segmentez : n'envoyez pas la même promo à tous vos utilisateurs si votre app le permet",
+          "Priorisez le transactionnel (confirmation, rappel de RDV) qui a toujours plus de valeur perçue que le promotionnel",
+          "Testez l'heure d'envoi : une notif à 8h du matin ou en plein repas a moins de chances d'être bien reçue",
+        ],
+      },
+      {
+        heading: "Comment j'intègre les notifications push dans vos projets",
+        paragraphs: [
+          "Chaque application mobile que je développe en React Native peut intégrer les notifications push via Firebase Cloud Messaging, la solution la plus fiable et gratuite pour iOS et Android. L'envoi se pilote directement depuis le panel d'administration inclus dans votre projet — vous rédigez et envoyez vos notifications sans aucune compétence technique.",
+          "Le devis est gratuit et sans engagement. Contactez-moi avec votre projet, même flou — je vous réponds sous 24h.",
+        ],
+      },
+      {
+        heading: "FAQ — Notifications push application mobile",
+        list: [
+          "Les notifications push sont-elles payantes ? Non, l'envoi via Firebase Cloud Messaging est gratuit, quel que soit le volume envoyé.",
+          "Puis-je envoyer une notification à un seul client ou à tous mes clients ? Les deux : selon la configuration de votre panel admin, vous ciblez un utilisateur précis ou l'ensemble de votre base.",
+          "Les notifications fonctionnent-elles si l'app est fermée ? Oui, c'est justement leur intérêt : elles s'affichent même quand l'application n'est pas ouverte.",
+          "Combien coûte l'intégration des notifications push dans mon app ? Elles sont incluses dans mon offre App Premium à 600€, ou disponibles en option (+50€) sur l'offre Starter.",
+          "Les utilisateurs peuvent-ils désactiver les notifications ? Oui, à tout moment depuis les réglages de leur téléphone — d'où l'importance de ne pas en abuser.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "ux-ui-application-mobile-reussie",
+    title: "UX/UI application mobile : ce qui fait qu'un client reste ou s'en va",
+    description:
+      "Les principes UX/UI d'une application mobile réussie : navigation intuitive, temps de chargement, cohérence visuelle. Ce que je conçois pour que vos clients ne repartent pas au bout de 10 secondes.",
+    date: "2026-07-03",
+    readTime: "6 min",
+    category: "Tech",
+    sections: [
+      {
+        paragraphs: [
+          "Un utilisateur décide de rester ou de désinstaller une application dans les 10 premières secondes. Ce jugement instantané ne repose pas sur les fonctionnalités, mais sur l'expérience : est-ce clair, est-ce rapide, est-ce agréable à utiliser ?",
+          "L'UX (expérience utilisateur) et l'UI (interface utilisateur) sont souvent la vraie différence entre une app qui génère des réservations et une app installée puis oubliée.",
+        ],
+      },
+      {
+        heading: "UX et UI : deux choses différentes mais indissociables",
+        paragraphs: [
+          "L'UI, c'est ce que l'œil voit : les couleurs, les boutons, la typographie, les icônes. L'UX, c'est ce que l'utilisateur ressent en utilisant l'app : est-ce que je trouve facilement ce que je cherche, est-ce que je comprends où cliquer, est-ce que ça répond vite.",
+          "Une app peut être esthétiquement réussie (bonne UI) mais frustrante à utiliser (mauvaise UX) — et inversement. Les deux doivent être pensées ensemble dès la conception.",
+        ],
+      },
+      {
+        heading: "Les principes qui font une bonne expérience mobile",
+        list: [
+          "Navigation à un pouce : les actions principales doivent être atteignables sans changer sa prise en main du téléphone",
+          "Maximum 3 clics pour atteindre une action clé (réserver, commander, contacter)",
+          "Temps de chargement sous 2 secondes — au-delà, le taux d'abandon grimpe fortement",
+          "Cohérence visuelle : mêmes couleurs, mêmes boutons, mêmes comportements sur tous les écrans",
+          "Feedback visuel immédiat à chaque action (bouton qui réagit au clic, chargement visible, confirmation claire)",
+          "Textes courts et lisibles, hiérarchie visuelle claire entre titre, contenu et actions",
+        ],
+      },
+      {
+        heading: "Les erreurs qui font fuir les utilisateurs",
+        paragraphs: [
+          "Certaines erreurs reviennent très souvent sur des apps développées à la va-vite ou avec des outils no-code génériques.",
+        ],
+        list: [
+          "Formulaires trop longs dès l'inscription — demandez le strict nécessaire, complétez le profil plus tard",
+          "Trop d'options sur un même écran, qui noient l'action principale",
+          "Absence de retour visuel : l'utilisateur clique et ne sait pas si ça a fonctionné",
+          "Polices ou tailles de texte trop petites, illisibles sur un petit écran",
+          "Navigation incohérente entre les écrans (bouton retour qui change de place, gestes différents)",
+        ],
+      },
+      {
+        heading: "Comment je conçois l'UX/UI de vos projets",
+        paragraphs: [
+          "Avant de coder le moindre écran, je définis le parcours utilisateur : quelle est l'action que je veux que le client fasse en priorité (réserver, commander, appeler) et je construis l'interface autour de cet objectif.",
+          "Chaque application que je développe en React Native suit les guidelines natives d'iOS (Human Interface Guidelines) et d'Android (Material Design), pour que l'app soit intuitive dès la première ouverture — sans que l'utilisateur ait besoin d'apprendre à s'en servir.",
+          "Le devis est gratuit et sans engagement. Décrivez-moi votre projet, même flou — je vous réponds sous 24h.",
+        ],
+      },
+      {
+        heading: "FAQ — UX/UI d'une application mobile",
+        list: [
+          "Quelle est la différence entre UX et UI ? L'UI concerne l'apparence visuelle (couleurs, boutons), l'UX concerne le ressenti et la facilité d'utilisation globale de l'app.",
+          "Pourquoi le temps de chargement est-il si important ? Au-delà de 2 à 3 secondes de chargement, une grande partie des utilisateurs quitte l'application avant même de voir le contenu.",
+          "Une app développée en no-code a-t-elle une bonne UX ? Rarement : les templates génériques ne s'adaptent pas à votre parcours client spécifique et donnent souvent une expérience impersonnelle.",
+          "L'UX/UI est-elle incluse dans le prix de développement ? Oui, la conception de l'interface et du parcours utilisateur est incluse dans toutes mes offres, dès l'App Starter à 490€.",
+          "Combien de temps prend la conception UX/UI d'une app ? Comptez 3 à 5 jours pour définir le parcours et les écrans avant le développement, selon la complexité du projet.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "captures-ecran-app-store-play-store",
+    title: "Captures d'écran App Store & Play Store : celles qui font télécharger votre app",
+    description:
+      "Comment créer des captures d'écran qui convertissent sur l'App Store et le Google Play Store : formats requis, bonnes pratiques et erreurs à éviter pour maximiser vos téléchargements.",
+    date: "2026-07-03",
+    readTime: "5 min",
+    category: "Guides",
+    sections: [
+      {
+        paragraphs: [
+          "Avant de télécharger une application, un utilisateur regarde en moyenne 3 à 5 captures d'écran sur la fiche de l'App Store ou du Google Play Store. C'est souvent la seule chose qui détermine s'il clique sur « Installer » ou passe à l'app concurrente juste en dessous.",
+          "Des captures d'écran mal cadrées, sans contexte ou juste des screenshots bruts de l'application font perdre des téléchargements — même quand l'app elle-même est excellente.",
+        ],
+      },
+      {
+        heading: "Les formats requis par plateforme",
+        paragraphs: [
+          "Apple et Google imposent des formats précis, différents selon la taille d'écran des appareils.",
+        ],
+        list: [
+          "App Store (iOS) : captures obligatoires pour iPhone 6.9\" (1320 x 2868 px) et iPhone 6.5\", plus iPad si l'app est compatible tablette",
+          "Google Play Store (Android) : minimum 2 captures, format libre entre 320px et 3840px, ratio conseillé 16:9 ou 9:16",
+          "Les deux stores acceptent entre 2 et 10 captures d'écran — utilisez cet espace en entier, ne vous arrêtez pas à 2",
+          "Une vidéo de présentation (15-30 secondes) est acceptée sur les deux plateformes et augmente sensiblement le taux de conversion",
+        ],
+      },
+      {
+        heading: "Ce qui distingue une bonne capture d'une capture qui ne convertit pas",
+        paragraphs: [
+          "La différence ne se joue pas sur la qualité de l'app, mais sur la mise en scène de ses écrans.",
+        ],
+        list: [
+          "Ajoutez un titre court au-dessus de chaque écran (« Réservez en 2 clics », « Suivez votre commande en temps réel ») plutôt qu'un simple screenshot nu",
+          "Racontez une histoire sur la séquence : la première capture doit donner envie, les suivantes détaillent les bénéfices clés",
+          "Mettez en avant le bénéfice, pas la fonctionnalité technique : « Ne ratez plus un rendez-vous » plutôt que « Notifications push activées »",
+          "Utilisez un mockup de téléphone plutôt qu'un screenshot plein cadre, pour donner un rendu plus professionnel",
+          "Restez cohérent avec votre identité visuelle : mêmes couleurs et polices que votre logo et votre site",
+        ],
+      },
+      {
+        heading: "Les erreurs qui font fuir avant même le téléchargement",
+        list: [
+          "Captures floues ou en basse résolution — rédhibitoire sur un écran Retina",
+          "Textes trop longs illisibles en miniature dans les résultats de recherche",
+          "Captures qui ne montrent pas l'écran d'accueil réel de l'app — l'utilisateur se sent trompé après téléchargement",
+          "Absence de captures orientées vers l'action principale de l'app (réserver, commander, acheter)",
+        ],
+      },
+      {
+        heading: "Comment je gère ça pour mes clients",
+        paragraphs: [
+          "La création des captures d'écran optimisées pour l'App Store et le Google Play Store est incluse dans le processus de publication de chaque application que je développe. Je prépare les visuels aux bons formats, avec les titres et la mise en scène adaptés à votre secteur, avant la soumission aux deux stores.",
+          "Le devis est gratuit et sans engagement. Contactez-moi avec votre projet — je vous réponds sous 24h.",
+        ],
+      },
+      {
+        heading: "FAQ — Captures d'écran App Store et Play Store",
+        list: [
+          "Combien de captures d'écran dois-je fournir ? Entre 2 et 10 par plateforme — je recommande d'en utiliser au moins 5 pour raconter une histoire complète.",
+          "Puis-je utiliser les mêmes captures pour l'App Store et le Google Play Store ? Les tailles diffèrent, mais le contenu et la mise en scène peuvent rester identiques, juste redimensionnés.",
+          "Faut-il ajouter du texte sur les captures ? Oui, un court titre par capture augmente nettement le taux de conversion par rapport à des screenshots nus.",
+          "La création des captures est-elle incluse dans le prix de développement ? Oui, dans toutes mes offres — la publication sur les stores inclut la préparation des visuels.",
+          "Une vidéo de présentation est-elle nécessaire ? Pas obligatoire, mais recommandée : elle augmente généralement le taux de téléchargement par rapport aux captures seules.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "publier-application-app-store",
+    title: "Publier son application sur l'App Store : le guide complet 2026",
+    description:
+      "Comment publier une application iOS sur l'App Store d'Apple : compte développeur, délais de validation, règles de conformité et erreurs qui font rejeter une app. Guide par un développeur freelance.",
+    date: "2026-07-03",
+    readTime: "6 min",
+    category: "Guides",
+    sections: [
+      {
+        paragraphs: [
+          "Publier une application sur l'App Store est plus strict que sur le Google Play Store. Apple valide manuellement chaque application avant publication, et environ 40% des premières soumissions sont rejetées pour des raisons évitables.",
+          "Voici les étapes réelles, telles que je les gère pour chaque client, du compte développeur à la mise en ligne.",
+        ],
+      },
+      {
+        heading: "Étape 1 : créer un compte développeur Apple",
+        paragraphs: [
+          "Un compte Apple Developer Program coûte 99$ par an, à la charge du propriétaire de l'app (c'est votre compte, votre app vous appartient). L'inscription nécessite un numéro D-U-N-S si vous publiez en tant qu'entreprise, ce qui peut prendre plusieurs jours à obtenir — c'est souvent l'étape la plus longue du processus.",
+        ],
+      },
+      {
+        heading: "Étape 2 : préparer la fiche App Store Connect",
+        paragraphs: [
+          "Une fois le compte validé, la publication se prépare dans App Store Connect, le back-office d'Apple.",
+        ],
+        list: [
+          "Nom de l'application (30 caractères max) et sous-titre (30 caractères)",
+          "Description complète, mots-clés de recherche, catégorie de l'app",
+          "Captures d'écran aux formats requis pour iPhone (et iPad si compatible)",
+          "Politique de confidentialité — obligatoire, même pour une app simple",
+          "Coordonnées de contact et informations de test pour les vérificateurs Apple",
+        ],
+      },
+      {
+        heading: "Étape 3 : la validation par Apple (Review)",
+        paragraphs: [
+          "Apple examine manuellement chaque application avant publication. Le délai moyen est de 24 à 48h, mais peut grimper à une semaine en cas de rejet et de nouvelle soumission.",
+          "Les vérificateurs testent l'app comme un utilisateur réel : ils créent un compte, naviguent dans les écrans, testent le paiement si l'app en propose. Toute fonctionnalité cassée ou trompeuse entraîne un rejet immédiat.",
+        ],
+      },
+      {
+        heading: "Les raisons de rejet les plus fréquentes",
+        list: [
+          "App qui plante ou bug bloquant lors du test par le vérificateur Apple",
+          "Contenu incomplet : écrans vides, boutons qui ne mènent nulle part, texte de type « Lorem ipsum »",
+          "Absence de politique de confidentialité ou lien cassé",
+          "Système de paiement externe à Apple Pay pour du contenu numérique (Apple exige sa propre commission de 15 à 30% sur ce type de contenu)",
+          "Fonctionnalité annoncée dans la description mais absente de l'app",
+          "Design qui ressemble trop à une simple coquille autour d'un site web (Apple rejette les « WebView » trop basiques)",
+        ],
+      },
+      {
+        heading: "Comment je gère la publication pour mes clients",
+        paragraphs: [
+          "La publication sur l'App Store est incluse dans toutes mes offres. Je prépare la fiche complète, les captures d'écran, et je gère les échanges avec Apple en cas de demande de clarification pendant la review. Vous ne payez que les 99$/an du compte développeur, qui reste à votre nom.",
+          "Comme je développe en React Native avec une vraie logique applicative (et non une simple coquille web), le taux d'acceptation dès la première soumission est nettement plus élevé qu'avec un outil no-code générique.",
+          "Le devis est gratuit et sans engagement. Contactez-moi avec votre projet — je vous réponds sous 24h.",
+        ],
+      },
+      {
+        heading: "FAQ — Publier une application sur l'App Store",
+        list: [
+          "Combien coûte la publication sur l'App Store ? Le compte développeur Apple coûte 99$/an. La publication elle-même est incluse dans mes offres de développement.",
+          "Combien de temps prend la validation Apple ? En moyenne 24 à 48h, jusqu'à une semaine en cas de rejet et de correction.",
+          "Pourquoi mon app a-t-elle été rejetée ? Les causes les plus fréquentes sont les bugs, le contenu incomplet ou l'absence de politique de confidentialité.",
+          "Puis-je publier une app no-code sur l'App Store ? C'est possible mais risqué : Apple rejette de plus en plus les applications qui ressemblent à une simple coquille de site web.",
+          "Qui est propriétaire du compte développeur et de l'app publiée ? Vous. Le compte est ouvert à votre nom et reste votre propriété, même après la fin de notre collaboration.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "publier-application-google-play-store",
+    title: "Publier son application sur le Google Play Store : le guide complet 2026",
+    description:
+      "Comment publier une application Android sur le Google Play Store : compte développeur, fiche Play Console, délais de validation et bonnes pratiques pour une publication sans rejet.",
+    date: "2026-07-03",
+    readTime: "5 min",
+    category: "Guides",
+    sections: [
+      {
+        paragraphs: [
+          "Publier une application sur le Google Play Store est globalement plus rapide et moins strict que sur l'App Store d'Apple, mais quelques étapes méritent d'être anticipées pour éviter les mauvaises surprises.",
+          "Voici le processus complet, tel que je le mène pour chaque projet.",
+        ],
+      },
+      {
+        heading: "Étape 1 : créer un compte développeur Google Play",
+        paragraphs: [
+          "Le compte Google Play Console coûte 25$, payés une seule fois (contrairement à Apple qui facture 99$ chaque année). L'inscription se fait en quelques minutes avec un compte Google, mais Google exige depuis 2023 une phase de test fermé avec au moins 12 testeurs actifs pendant 14 jours avant d'autoriser la publication publique pour les nouveaux comptes développeurs.",
+        ],
+      },
+      {
+        heading: "Étape 2 : préparer la fiche Play Store",
+        paragraphs: [
+          "La fiche se construit dans la Google Play Console, l'équivalent d'App Store Connect côté Android.",
+        ],
+        list: [
+          "Titre (30 caractères), description courte (80 caractères) et description complète (4000 caractères)",
+          "Captures d'écran (minimum 2, jusqu'à 8 recommandées) et icône haute résolution",
+          "Catégorie de l'application et classification de contenu (questionnaire obligatoire)",
+          "Politique de confidentialité, obligatoire dès que l'app collecte la moindre donnée utilisateur",
+          "Fiche de sécurité des données (Data Safety) détaillant les données collectées et leur usage",
+        ],
+      },
+      {
+        heading: "Étape 3 : la validation par Google",
+        paragraphs: [
+          "Contrairement à Apple, la validation de Google est majoritairement automatisée. Elle est généralement plus rapide — souvent quelques heures pour une mise à jour, jusqu'à 7 jours pour une toute première publication depuis un nouveau compte.",
+          "Google surveille aussi l'application après publication : un pic de désinstallations, des avis négatifs groupés ou un comportement suspect peuvent déclencher une revue a posteriori.",
+        ],
+      },
+      {
+        heading: "Les raisons de rejet ou de suspension les plus fréquentes",
+        list: [
+          "Fiche de sécurité des données (Data Safety) incomplète ou incohérente avec le comportement réel de l'app",
+          "Demandes de permissions excessives par rapport aux fonctionnalités réelles de l'app (accès caméra sans fonction photo, par exemple)",
+          "Politique de confidentialité absente ou lien invalide",
+          "Contenu trompeur dans la fiche (captures ne correspondant pas à l'app réelle)",
+          "Application qui redirige uniquement vers un site web sans valeur ajoutée mobile propre",
+        ],
+      },
+      {
+        heading: "Comment je gère la publication pour mes clients",
+        paragraphs: [
+          "La publication sur le Google Play Store est incluse dans toutes mes offres. Je prépare la fiche Play Console complète, gère la phase de test fermé obligatoire et la fiche de sécurité des données. Le compte développeur reste à votre nom et sous votre contrôle — vous ne payez que les 25$ à Google, une seule fois.",
+          "Le devis est gratuit et sans engagement. Contactez-moi avec votre projet — je vous réponds sous 24h.",
+        ],
+      },
+      {
+        heading: "FAQ — Publier une application sur le Google Play Store",
+        list: [
+          "Combien coûte la publication sur le Google Play Store ? Le compte développeur Google coûte 25$, payés une seule fois. La publication elle-même est incluse dans mes offres.",
+          "Combien de temps prend la validation Google ? Quelques heures pour une mise à jour, jusqu'à 7 jours pour une première publication.",
+          "Qu'est-ce que la phase de test fermé obligatoire ? Depuis 2023, Google impose 12 testeurs actifs pendant 14 jours minimum avant d'autoriser un nouveau compte à publier publiquement.",
+          "La publication sur Google Play est-elle plus simple que sur l'App Store ? Globalement oui, la validation est plus automatisée et moins stricte que celle d'Apple.",
+          "Qui est propriétaire du compte développeur Google Play ? Vous. Le compte est ouvert à votre nom et reste votre propriété.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
