@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import LazyIframe from "@/components/LazyIframe";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -38,44 +39,66 @@ export default function HistoireEternellePage() {
 
         {/* Hero */}
         <section className="border-b-[3px] border-black" style={{ backgroundColor: "#FAF7F2" }}>
-          <div className="max-w-4xl mx-auto px-4 py-20">
-            <a href="/portfolio" className="inline-flex items-center gap-2 text-sm font-bold mb-8 hover:underline">
-              <ArrowLeft size={14} /> Retour aux réalisations
-            </a>
-            <p className="mono text-sm font-bold text-gray-400 mb-4">// réalisation · e-commerce</p>
-            <div className="flex items-center gap-4 mb-6 flex-wrap">
-              <div className="brutal-border px-3 py-1 text-xs font-bold" style={{ backgroundColor: "#C0622D", color: "white" }}>
-                E-COMMERCE
+          <div className="max-w-6xl mx-auto px-4 py-20 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <a href="/portfolio" className="inline-flex items-center gap-2 text-sm font-bold mb-8 hover:underline">
+                <ArrowLeft size={14} /> Retour aux réalisations
+              </a>
+              <p className="mono text-sm font-bold text-gray-400 mb-4">// réalisation · e-commerce</p>
+              <div className="flex items-center gap-4 mb-6 flex-wrap">
+                <div className="brutal-border px-3 py-1 text-xs font-bold" style={{ backgroundColor: "#C0622D", color: "white" }}>
+                  E-COMMERCE
+                </div>
+                <div className="brutal-border px-3 py-1 text-xs font-bold bg-white">
+                  SITE WEB
+                </div>
+                <div className="brutal-border px-3 py-1 text-xs font-bold bg-white">
+                  FIREBASE
+                </div>
               </div>
-              <div className="brutal-border px-3 py-1 text-xs font-bold bg-white">
-                SITE WEB
-              </div>
-              <div className="brutal-border px-3 py-1 text-xs font-bold bg-white">
-                FIREBASE
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4" style={{ color: "#2C1A0E" }}>
+                Histoire Eternelle
+              </h1>
+              <p className="text-xl font-medium mb-2" style={{ color: "#6B4835" }}>
+                L'Atelier d'Anaïs — Bijoux artisanaux façonnés à la main
+              </p>
+              <p className="text-gray-600 leading-relaxed max-w-2xl mb-8">
+                Boutique e-commerce complète pour une créatrice de bijoux artisanaux. Catalogue de pièces uniques, espace client, paiement Stripe, système d'avis et panel admin — une boutique qui reflète l'élégance et l'authenticité de l'atelier.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="https://www.histoire-eternelle-l-atelier.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="brutal-btn px-6 py-3 font-bold inline-flex items-center gap-2"
+                  style={{ backgroundColor: "#C0622D", color: "white" }}
+                >
+                  Voir le site en ligne <ExternalLink size={14} />
+                </a>
+                <a href="/#contact" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-6 py-3 font-bold">
+                  Un projet similaire ?
+                </a>
               </div>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4" style={{ color: "#2C1A0E" }}>
-              Histoire Eternelle
-            </h1>
-            <p className="text-xl font-medium mb-2" style={{ color: "#6B4835" }}>
-              L'Atelier d'Anaïs — Bijoux artisanaux façonnés à la main
-            </p>
-            <p className="text-gray-600 leading-relaxed max-w-2xl mb-8">
-              Boutique e-commerce complète pour une créatrice de bijoux artisanaux. Catalogue de pièces uniques, espace client, paiement Stripe, système d'avis et panel admin — une boutique qui reflète l'élégance et l'authenticité de l'atelier.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="https://www.histoire-eternelle-l-atelier.fr/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="brutal-btn px-6 py-3 font-bold inline-flex items-center gap-2"
-                style={{ backgroundColor: "#C0622D", color: "white" }}
-              >
-                Voir le site en ligne <ExternalLink size={14} />
-              </a>
-              <a href="/#contact" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-6 py-3 font-bold">
-                Un projet similaire ?
-              </a>
+
+            <div className="brutal-border brutal-shadow bg-white overflow-hidden">
+              <div className="flex items-center gap-2 px-3 py-2 border-b-2 border-black" style={{ backgroundColor: "#C0622D" }}>
+                <div className="flex gap-1.5">
+                  <div className="w-3 h-3 rounded-full bg-white opacity-60" />
+                  <div className="w-3 h-3 rounded-full bg-white opacity-60" />
+                  <div className="w-3 h-3 rounded-full bg-white opacity-60" />
+                </div>
+                <div className="flex-1 bg-white bg-opacity-20 rounded-sm px-3 py-0.5 text-xs font-mono text-white opacity-90 truncate ml-2">
+                  histoire-eternelle-l-atelier.fr
+                </div>
+              </div>
+              <LazyIframe
+                src="https://www.histoire-eternelle-l-atelier.fr/"
+                title="Aperçu du site Histoire Eternelle"
+                className="w-full"
+                style={{ height: 500 }}
+                sandbox="allow-scripts allow-same-origin allow-popups"
+              />
             </div>
           </div>
         </section>

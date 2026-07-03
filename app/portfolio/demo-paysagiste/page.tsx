@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import LazyIframe from "@/components/LazyIframe";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -38,43 +39,65 @@ export default function DemoPaysagistePage() {
 
         {/* Hero */}
         <section className="border-b-[3px] border-black bg-[#2D5016]">
-          <div className="max-w-4xl mx-auto px-4 py-20">
-            <a href="/portfolio" className="inline-flex items-center gap-2 text-sm font-bold mb-8 hover:underline text-[#A8D05A]">
-              <ArrowLeft size={14} /> Retour aux réalisations
-            </a>
-            <p className="mono text-sm font-bold text-green-400 mb-4">// réalisation · site web professionnel</p>
-            <div className="flex items-center gap-4 mb-6 flex-wrap">
-              <div className="brutal-border px-3 py-1 text-xs font-bold bg-[#A8D05A] text-[#1a3a08]">
-                SITE WEB
+          <div className="max-w-6xl mx-auto px-4 py-20 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <a href="/portfolio" className="inline-flex items-center gap-2 text-sm font-bold mb-8 hover:underline text-[#A8D05A]">
+                <ArrowLeft size={14} /> Retour aux réalisations
+              </a>
+              <p className="mono text-sm font-bold text-green-400 mb-4">// réalisation · site web professionnel</p>
+              <div className="flex items-center gap-4 mb-6 flex-wrap">
+                <div className="brutal-border px-3 py-1 text-xs font-bold bg-[#A8D05A] text-[#1a3a08]">
+                  SITE WEB
+                </div>
+                <div className="brutal-border px-3 py-1 text-xs font-bold bg-white text-[#0A0A0A]">
+                  ARTISAN
+                </div>
+                <div className="brutal-border px-3 py-1 text-xs font-bold bg-white text-[#0A0A0A]">
+                  FIREBASE
+                </div>
               </div>
-              <div className="brutal-border px-3 py-1 text-xs font-bold bg-white text-[#0A0A0A]">
-                ARTISAN
-              </div>
-              <div className="brutal-border px-3 py-1 text-xs font-bold bg-white text-[#0A0A0A]">
-                FIREBASE
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4 text-white">
+                Paradis Vert
+              </h1>
+              <p className="text-xl font-medium mb-2 text-green-300">
+                Site vitrine professionnel pour paysagiste — Biscarrosse, Landes
+              </p>
+              <p className="text-green-100 leading-relaxed max-w-2xl mb-8">
+                Site web complet pour un paysagiste professionnel : présentation des services, galerie de réalisations, demande de devis en ligne et panel admin Firebase pour tout gérer sans développeur.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="https://demo.paysagiste.breizhapp.tech/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="brutal-btn px-6 py-3 font-bold inline-flex items-center gap-2 bg-[#A8D05A] text-[#1a3a08]"
+                >
+                  Voir le site en ligne <ExternalLink size={14} />
+                </a>
+                <a href="/#contact" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-6 py-3 font-bold">
+                  Un projet similaire ?
+                </a>
               </div>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4 text-white">
-              Paradis Vert
-            </h1>
-            <p className="text-xl font-medium mb-2 text-green-300">
-              Site vitrine professionnel pour paysagiste — Biscarrosse, Landes
-            </p>
-            <p className="text-green-100 leading-relaxed max-w-2xl mb-8">
-              Site web complet pour un paysagiste professionnel : présentation des services, galerie de réalisations, demande de devis en ligne et panel admin Firebase pour tout gérer sans développeur.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="https://demo.paysagiste.breizhapp.tech/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="brutal-btn px-6 py-3 font-bold inline-flex items-center gap-2 bg-[#A8D05A] text-[#1a3a08]"
-              >
-                Voir le site en ligne <ExternalLink size={14} />
-              </a>
-              <a href="/#contact" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-6 py-3 font-bold">
-                Un projet similaire ?
-              </a>
+
+            <div className="brutal-border brutal-shadow bg-white overflow-hidden">
+              <div className="flex items-center gap-2 px-3 py-2 border-b-2 border-black bg-[#A8D05A]">
+                <div className="flex gap-1.5">
+                  <div className="w-3 h-3 rounded-full bg-white opacity-60" />
+                  <div className="w-3 h-3 rounded-full bg-white opacity-60" />
+                  <div className="w-3 h-3 rounded-full bg-white opacity-60" />
+                </div>
+                <div className="flex-1 bg-white bg-opacity-30 rounded-sm px-3 py-0.5 text-xs font-mono text-[#1a3a08] opacity-90 truncate ml-2">
+                  demo.paysagiste.breizhapp.tech
+                </div>
+              </div>
+              <LazyIframe
+                src="https://demo.paysagiste.breizhapp.tech/"
+                title="Aperçu du site Paradis Vert"
+                className="w-full"
+                style={{ height: 500 }}
+                sandbox="allow-scripts allow-same-origin allow-popups"
+              />
             </div>
           </div>
         </section>
