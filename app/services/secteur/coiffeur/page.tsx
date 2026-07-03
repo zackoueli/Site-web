@@ -237,7 +237,7 @@ export default function CoiffeurPage() {
             <h2 className="text-xl font-bold mb-6">À lire aussi</h2>
             <div className="grid sm:grid-cols-3 gap-4">
               {[
-                { title: "Tarif réel Planity 2026", href: "/blog/planity-tarif-prix-abonnement-2025" },
+                { title: "Tarif réel Planity 2026", href: "/blog/cout-reel-planity" },
                 { title: "App prise de rendez-vous", href: "/blog/application-mobile-prise-de-rdv" },
                 { title: "App fidélité clients", href: "/blog/application-mobile-fidelite-clients" },
               ].map(({ title, href }) => (

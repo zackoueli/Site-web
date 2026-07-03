@@ -133,7 +133,7 @@ const serviceLinks: Record<string, { label: string; href: string }[]> = {
     { label: "App mobile pour hôtel", href: "/services/secteur/hotel" },
   ],
   Local: [
-    { label: "Développeur freelance à Brest", href: "/blog/developpeur-freelance-application-mobile-brest" },
+    { label: "Développeur freelance à Brest", href: "/blog/application-mobile-brest" },
     { label: "Développeur freelance à Quimper", href: "/blog/developpeur-freelance-quimper" },
     { label: "Développeur freelance à Rennes", href: "/blog/developpeur-freelance-rennes" },
     { label: "App mobile en Bretagne", href: "/blog/developpeur-application-mobile-bretagne" },
@@ -240,9 +240,6 @@ export default async function ArticlePage({ params }: Props) {
           "cout-reel-site-wix",
           "cout-reel-site-shopify",
           "cout-reel-planity",
-          "planity-tarif-prix-abonnement-2025",
-          "wix-tarif-prix-abonnement-2025",
-          "shopify-tarif-prix-abonnement-2025",
           "squarespace-tarif-prix-2025",
           "comparatif-createurs-site-web-prix-2025",
           "tarif-creation-site-internet-2025",

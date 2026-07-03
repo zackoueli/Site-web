@@ -100,11 +100,10 @@ export default function Footer() {
 
           <FooterCol title="Par ville" links={[
             ["Application mobile Brest", "/blog/application-mobile-brest"],
-            ["Développeur Brest", "/blog/developpeur-freelance-application-mobile-brest"],
             ["App mobile Bretagne", "/blog/developpeur-application-mobile-bretagne"],
+            ["Développeur Finistère", "/blog/developpeur-application-mobile-finistere"],
             ["Développeur Quimper", "/blog/developpeur-freelance-quimper"],
             ["Développeur Rennes", "/blog/developpeur-freelance-rennes"],
-            ["Création app Brest", "/blog/creation-application-mobile-brest"],
           ]} />
 
           <FooterCol title="Ressources" links={[
