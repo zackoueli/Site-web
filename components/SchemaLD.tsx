@@ -11,7 +11,8 @@ export default function SchemaLD() {
         url: "https://breizhapp.tech",
         telephone: "+33642354886",
         priceRange: "€€",
-        image: "https://breizhapp.tech/og-image.png",
+        image: "https://breizhapp.tech/logo.jpg",
+        logo: "https://breizhapp.tech/logo.jpg",
         address: {
           "@type": "PostalAddress",
           addressLocality: "Brest",
