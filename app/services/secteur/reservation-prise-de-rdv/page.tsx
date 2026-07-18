@@ -49,7 +49,7 @@ export default function ReservationPage() {
               <span className="bg-[#00D4AA] text-[#0A0A0A] brutal-border px-2">prise de rendez-vous</span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
-              Calendly coûte entre 8€ et 16€ par mois sans jamais vous appartenir. Une app sur mesure, c'est votre agenda, votre marque, vos données — pour 490€ et sans abonnement à une plateforme tierce.
+              Calendly coûte entre 8€ et 16€ par mois sans jamais vous appartenir. Une app sur mesure, c'est votre agenda, votre marque, vos données — sans abonnement à une plateforme tierce.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
@@ -104,7 +104,7 @@ export default function ReservationPage() {
             <h2 className="text-2xl font-bold mb-8">Questions fréquentes</h2>
             <div className="flex flex-col gap-4">
               {[
-                { q: "Pourquoi ne pas utiliser Calendly ou Doctolib ?", a: "Ces plateformes prennent une commission sur chaque réservation ou facturent un abonnement mensuel croissant avec votre activité. Une app sur mesure coûte 490€ une fois, puis 49€/mois d'hébergement et support — vos données vous appartiennent et vous ne dépendez d'aucune plateforme." },
+                { q: "Pourquoi ne pas utiliser Calendly ou Doctolib ?", a: "Ces plateformes prennent une commission sur chaque réservation ou facturent un abonnement mensuel croissant avec votre activité. Une app sur mesure vous appartient et vous ne dépendez d'aucune plateforme." },
                 { q: "Les clients doivent-ils créer un compte pour réserver ?", a: "C'est configurable. Vous pouvez permettre la réservation en tant qu'invité (email uniquement) ou imposer la création d'un compte pour accéder à l'historique et aux rappels push." },
                 { q: "L'app peut-elle gérer les annulations et remboursements ?", a: "Oui. Vous définissez votre politique d'annulation (délai, remboursement partiel ou total) et l'app l'applique automatiquement via Stripe." },
                 { q: "Combien de temps pour développer l'app ?", a: "Une app de réservation complète est livrée en 3 à 5 semaines selon la complexité. Si vous avez plusieurs praticiens ou des fonctionnalités spécifiques, prévoyez plutôt 4 à 6 semaines." },

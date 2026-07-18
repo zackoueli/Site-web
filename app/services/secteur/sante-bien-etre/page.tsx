@@ -7,7 +7,7 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Application mobile santé & bien-être iOS & Android | BreizhApp",
   description:
-    "Créez votre app santé ou bien-être sur mesure : suivi patient, journal de bord, séances en ligne, prise de RDV, rappels. Développeur freelance à Brest. Dès 490€.",
+    "Créez votre app santé ou bien-être sur mesure : suivi patient, journal de bord, séances en ligne, prise de RDV, rappels. Développeur freelance à Brest.",
   alternates: { canonical: "https://breizhapp.tech/services/secteur/sante-bien-etre" },
   openGraph: {
     title: "Application mobile santé & bien-être | BreizhApp",
@@ -107,7 +107,7 @@ export default function SantePage() {
                 { q: "Les données de santé de mes patients sont-elles sécurisées ?", a: "Oui. Je travaille avec Firebase ou Supabase qui respectent les standards de sécurité (chiffrement des données, authentification sécurisée). Pour les apps avec des données de santé sensibles, je vous conseille d'intégrer un DPO et d'éventuellement déclarer l'app à la CNIL selon son usage." },
                 { q: "Peut-on proposer des séances en visio depuis l'app ?", a: "Oui, en intégrant une solution de visioconférence comme Daily.co ou Whereby. Vos clients réservent leur séance et rejoignent l'appel directement depuis l'app sans installer quoi que ce soit." },
                 { q: "L'app peut-elle envoyer des rappels de prise de médicaments ?", a: "Oui. Les notifications push programmables permettent d'envoyer des rappels à des horaires définis — quotidiennement, plusieurs fois par jour, ou selon un planning personnalisé par l'utilisateur." },
-                { q: "Combien coûte ce type d'app ?", a: "À partir de 490€ pour une app de prise de RDV avec suivi simple. Les fonctionnalités avancées (messagerie, programmes, visio) sont dans la fourchette 600€ à 1 500€ selon la complexité. Je vous envoie une estimation détaillée sous 24h." },
+                { q: "Combien coûte ce type d'app ?", a: "Le tarif dépend des fonctionnalités : prise de RDV, suivi, messagerie, programmes, visio. Je vous envoie une estimation détaillée sous 24h." },
               ].map(({ q, a }) => (
                 <div key={q} className="brutal-border bg-white p-5">
                   <h3 className="font-bold mb-2">{q}</h3>

@@ -98,7 +98,7 @@ const serviceLinks: Record<string, { label: string; href: string }[]> = {
   ],
   Tarifs: [
     { label: "Combien coûte une app mobile ?", href: "/blog/combien-coute-application-mobile" },
-    { label: "App mobile pas chère dès 490€", href: "/blog/application-mobile-pas-chere" },
+    { label: "App mobile pas chère", href: "/blog/application-mobile-pas-chere" },
     { label: "Coût maintenance app mobile", href: "/blog/cout-maintenance-application-mobile" },
     { label: "Nos services application mobile", href: "/services/application-mobile" },
   ],

@@ -7,7 +7,7 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Application mobile portfolio & vitrine professionnelle | BreizhApp",
   description:
-    "Créez votre app vitrine iOS & Android : galerie de réalisations, présentation de services, contact direct, panel admin. Développeur freelance à Brest. Dès 490€.",
+    "Créez votre app vitrine iOS & Android : galerie de réalisations, présentation de services, contact direct, panel admin. Développeur freelance à Brest.",
   alternates: { canonical: "https://breizhapp.tech/services/secteur/portfolio-vitrine" },
   openGraph: {
     title: "Application mobile portfolio & vitrine professionnelle | BreizhApp",
@@ -58,7 +58,6 @@ export default function PortfolioVitrinePage() {
             <div className="flex flex-wrap gap-4 mono text-sm text-gray-500">
               <span className="brutal-border px-3 py-1 bg-white">✓ iOS & Android</span>
               <span className="brutal-border px-3 py-1 bg-white">✓ Panel admin inclus</span>
-              <span className="brutal-border px-3 py-1 bg-white">✓ Dès 490€</span>
               <span className="brutal-border px-3 py-1 bg-white">✓ Livraison 2-3 semaines</span>
             </div>
           </div>
@@ -106,8 +105,8 @@ export default function PortfolioVitrinePage() {
               {[
                 { q: "Une app vitrine, c'est vraiment utile par rapport à un site web ?", a: "Les deux se complètent. Un site web capte le trafic Google, une app mobile convertit les clients acquis grâce aux notifications push et à l'expérience plus fluide. Pour un artisan ou un freelance, l'app crée une présence mémorable que peu de concurrents ont." },
                 { q: "Puis-je modifier mon portfolio moi-même ?", a: "Oui, c'est l'un des points clés. Le panel admin vous permet d'ajouter des projets, des photos et des descriptions depuis votre téléphone — sans passer par moi à chaque nouveau chantier." },
-                { q: "Combien ça coûte ?", a: "À partir de 490€ pour une app vitrine iOS & Android complète avec panel admin, galerie et formulaire de contact. La formule Premium à 600€ ajoute les notifications push pour tenir vos clients informés." },
-                { q: "L'app peut-elle intégrer un système de prise de rendez-vous ?", a: "Oui. La prise de rendez-vous en ligne est une fonctionnalité que j'intègre régulièrement — créneaux disponibles, confirmation automatique, rappels push. C'est inclus dans la formule Premium." },
+                { q: "Combien ça coûte ?", a: "Le tarif dépend des fonctionnalités souhaitées : panel admin, galerie, formulaire de contact, notifications push. Contactez-moi pour un devis gratuit et personnalisé." },
+                { q: "L'app peut-elle intégrer un système de prise de rendez-vous ?", a: "Oui. La prise de rendez-vous en ligne est une fonctionnalité que j'intègre régulièrement — créneaux disponibles, confirmation automatique, rappels push." },
               ].map(({ q, a }) => (
                 <div key={q} className="brutal-border bg-white p-5">
                   <h3 className="font-bold mb-2">{q}</h3>

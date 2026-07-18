@@ -5,7 +5,7 @@ import { Globe, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Création site web sur mesure · Brest | BreizhApp",
-  description: "Création de sites web vitrine, landing page et blog avec Next.js. Design sur mesure, SEO optimisé, livraison en 2 à 4 semaines. Basé à Brest, dès 490€.",
+  description: "Création de sites web vitrine, landing page et blog avec Next.js. Design sur mesure, SEO optimisé, livraison en 2 à 4 semaines. Basé à Brest.",
   keywords: [
     "création site web brest",
     "création site web sur mesure",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://breizhapp.tech/services/site-web" },
   openGraph: {
     title: "Création site web sur mesure · Brest",
-    description: "Sites web vitrine, landing page et blog sur mesure avec Next.js. SEO optimisé, responsive, livraison en 2-4 semaines. Dès 490€.",
+    description: "Sites web vitrine, landing page et blog sur mesure avec Next.js. SEO optimisé, responsive, livraison en 2-4 semaines.",
     url: "https://breizhapp.tech/services/site-web",
     type: "website",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

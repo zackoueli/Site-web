@@ -7,10 +7,10 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Application mobile salle de sport & fitness iOS & Android | BreizhApp",
   description:
-    "Application mobile sur mesure pour salles de sport et studios fitness : réservation de cours, suivi d'entraînement, abonnements Stripe. Dès 490€. Développeur Brest.",
+    "Application mobile sur mesure pour salles de sport et studios fitness : réservation de cours, suivi d'entraînement, abonnements Stripe. Développeur Brest.",
   alternates: { canonical: "https://breizhapp.tech/services/secteur/salle-de-sport" },
   openGraph: {
-    title: "Application mobile salle de sport & fitness dès 490€",
+    title: "Application mobile salle de sport & fitness sur mesure",
     description:
       "App sport iOS & Android : réservation de cours, abonnements, suivi entraînement, push. Freelance à Brest, devis gratuit sous 24h.",
     url: "https://breizhapp.tech/services/secteur/salle-de-sport",
@@ -29,7 +29,6 @@ const schema = {
       description:
         "Création d'application mobile pour salles de sport et studios fitness : réservation de cours, abonnements, suivi d'entraînement.",
       provider: { "@id": "https://breizhapp.tech/#business" },
-      offers: [{ "@type": "Offer", name: "App Premium", price: "600", priceCurrency: "EUR" }],
     },
     {
       "@type": "BreadcrumbList",
@@ -129,22 +128,6 @@ export default function SalleDesSportPage() {
                   <p className="text-sm text-gray-400 group-hover:text-gray-700 leading-relaxed">{desc}</p>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Tarif */}
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8">Tarif</h2>
-            <div className="max-w-sm">
-              <div className="brutal-border bg-[#FFE234] p-6">
-                <p className="mono text-xs font-bold mb-2">// recommandé</p>
-                <h3 className="font-bold text-xl mb-1">App Premium</h3>
-                <p className="text-3xl font-bold mb-1">600€</p>
-                <p className="mono text-xs text-gray-600 mb-4">+ 49€/mois</p>
-                <p className="text-sm leading-relaxed">Réservation de cours, abonnements Stripe, notifications push, espace coach, panel admin, iOS & Android.</p>
-              </div>
             </div>
           </div>
         </section>

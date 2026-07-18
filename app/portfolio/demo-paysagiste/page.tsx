@@ -217,7 +217,7 @@ export default function DemoPaysagistePage() {
           <div className="max-w-4xl mx-auto brutal-border brutal-shadow bg-[#2D5016] p-8 flex flex-wrap items-center justify-between gap-6">
             <div>
               <h2 className="text-2xl font-bold text-white">Vous êtes artisan ou prestataire ?</h2>
-              <p className="text-sm mt-1 text-green-300">Site vitrine sur mesure dès 490€ — devis gratuit sous 48h</p>
+              <p className="text-sm mt-1 text-green-300">Site vitrine sur mesure — devis gratuit sous 48h</p>
             </div>
             <a href="/#contact" className="brutal-btn bg-[#A8D05A] text-[#1a3a08] px-6 py-3 font-bold inline-flex items-center gap-2">
               Démarrer mon projet →

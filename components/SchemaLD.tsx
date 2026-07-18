@@ -36,32 +36,17 @@ export default function SchemaLD() {
             {
               "@type": "Offer",
               name: "App basique iOS & Android",
-              price: "490",
-              priceCurrency: "EUR",
               description: "Application mobile sur mesure iOS et Android, hébergement et support inclus.",
             },
             {
               "@type": "Offer",
               name: "App premium iOS & Android",
-              price: "600",
-              priceCurrency: "EUR",
               description: "Application mobile complète avec paiement Stripe, panel admin, notifications push.",
             },
             {
               "@type": "Offer",
               name: "App boutique e-commerce",
-              description: "Application boutique sans frais d'installation, 12% de commission sur les ventes.",
-              priceSpecification: {
-                "@type": "UnitPriceSpecification",
-                price: "0",
-                priceCurrency: "EUR",
-                referenceQuantity: {
-                  "@type": "QuantitativeValue",
-                  value: "12",
-                  unitCode: "P1",
-                  unitText: "% de commission sur les ventes",
-                },
-              },
+              description: "Application boutique sans frais d'installation, commission sur les ventes.",
             },
           ],
         },

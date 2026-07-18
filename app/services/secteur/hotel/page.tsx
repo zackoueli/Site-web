@@ -7,10 +7,10 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Application mobile hôtel & hébergement iOS & Android | BreizhApp",
   description:
-    "Application mobile sur mesure pour hôtels, chambres d'hôtes et hébergements : réservation en ligne, conciergerie, notifications push. Dès 490€. Développeur freelance Brest.",
+    "Application mobile sur mesure pour hôtels, chambres d'hôtes et hébergements : réservation en ligne, conciergerie, notifications push. Développeur freelance Brest.",
   alternates: { canonical: "https://breizhapp.tech/services/secteur/hotel" },
   openGraph: {
-    title: "Application mobile hôtel & hébergement dès 490€",
+    title: "Application mobile hôtel & hébergement sur mesure",
     description:
       "App hôtel iOS & Android : réservation directe, conciergerie, notifications. Zéro commission Booking. Freelance à Brest, devis gratuit sous 24h.",
     url: "https://breizhapp.tech/services/secteur/hotel",
@@ -29,7 +29,6 @@ const schema = {
       description:
         "Création d'application mobile pour hôtels, chambres d'hôtes et gîtes : réservation directe, conciergerie digitale, notifications push.",
       provider: { "@id": "https://breizhapp.tech/#business" },
-      offers: [{ "@type": "Offer", name: "App Premium", price: "600", priceCurrency: "EUR" }],
     },
     {
       "@type": "BreadcrumbList",
@@ -128,22 +127,6 @@ export default function HotelPage() {
                   <p className="text-xs text-gray-400 mt-1">{sub}</p>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Tarif */}
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8">Tarif</h2>
-            <div className="max-w-sm">
-              <div className="brutal-border bg-[#FFE234] p-6">
-                <p className="mono text-xs font-bold mb-2">// recommandé</p>
-                <h3 className="font-bold text-xl mb-1">App Premium</h3>
-                <p className="text-3xl font-bold mb-1">600€</p>
-                <p className="mono text-xs text-gray-600 mb-4">+ 49€/mois</p>
-                <p className="text-sm leading-relaxed">Réservation directe, paiement Stripe, conciergerie digitale, notifications push, panel admin, iOS & Android.</p>
-              </div>
             </div>
           </div>
         </section>

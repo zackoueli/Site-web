@@ -7,7 +7,7 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Application mobile événementiel & billetterie iOS & Android | BreizhApp",
   description:
-    "Créez votre app événementielle sur mesure : billetterie, QR code d'entrée, programme, networking, notifications. Sans commission Eventbrite. Dès 490€.",
+    "Créez votre app événementielle sur mesure : billetterie, QR code d'entrée, programme, networking, notifications. Sans commission Eventbrite.",
   alternates: { canonical: "https://breizhapp.tech/services/secteur/evenementiel-billetterie" },
   openGraph: {
     title: "Application mobile événementiel & billetterie | BreizhApp",
@@ -49,11 +49,11 @@ export default function EvenementielPage() {
               <span className="bg-[#FF3B82] text-white brutal-border px-2">événementiel & billetterie</span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
-              Eventbrite prend entre 3,5% et 6,5% sur chaque billet vendu. Pour un événement à 1 000 participants à 30€, c'est entre 1 000€ et 2 000€ de commission envolés. Votre propre app de billetterie, c'est 490€ une fois — et vous gardez tout.
+              Eventbrite prend entre 3,5% et 6,5% sur chaque billet vendu. Pour un événement à 1 000 participants à 30€, c'est entre 1 000€ et 2 000€ de commission envolés. Votre propre app de billetterie vous appartient — et vous gardez tout.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
-              <Link href="/blog/combien-coute-application-mobile" className="brutal-btn bg-[#FF3B82] text-white px-8 py-4">Voir les tarifs →</Link>
+              <Link href="/blog/combien-coute-application-mobile" className="brutal-btn bg-[#FF3B82] text-white px-8 py-4">En savoir plus →</Link>
             </div>
             <div className="flex flex-wrap gap-4 mono text-sm text-gray-500">
               <span className="brutal-border px-3 py-1 bg-white">✓ Sans commission Eventbrite</span>

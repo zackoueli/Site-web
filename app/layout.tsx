@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://breizhapp.tech"),
   title: "BreizhApp — Développeur app mobile iOS & Android",
   description:
-    "Développeur freelance à Brest : je crée votre app iOS & Android sur mesure dès 490€. Restaurants, commerces, e-commerce. Devis gratuit sous 24h.",
+    "Développeur freelance à Brest : je crée votre app iOS & Android sur mesure. Restaurants, commerces, e-commerce. Devis gratuit sous 24h.",
   openGraph: {
     title: "BreizhApp — Création d'application mobile iOS & Android sur mesure",
     description:
-      "Développeur freelance à Brest : app iOS & Android sur mesure dès 490€. Restaurants, commerces, e-commerce. Devis gratuit sous 24h.",
+      "Développeur freelance à Brest : app iOS & Android sur mesure. Restaurants, commerces, e-commerce. Devis gratuit sous 24h.",
     type: "website",
     locale: "fr_FR",
     url: "https://breizhapp.tech",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "BreizhApp — Création d'application mobile iOS & Android sur mesure",
     description:
-      "Développeur freelance à Brest : app iOS & Android sur mesure dès 490€. Restaurants, commerces, jeux. Devis gratuit sous 24h.",
+      "Développeur freelance à Brest : app iOS & Android sur mesure. Restaurants, commerces, jeux. Devis gratuit sous 24h.",
     images: ["/opengraph-image"],
   },
   robots: { index: true, follow: true },

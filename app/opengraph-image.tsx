@@ -83,7 +83,7 @@ export default function OgImage() {
             maxWidth: 700,
           }}
         >
-          Application mobile iOS &amp; Android sur mesure. Restaurants, commerces, jeux. Dès 490€.
+          Application mobile iOS &amp; Android sur mesure. Restaurants, commerces, jeux.
         </div>
 
         {/* Footer */}

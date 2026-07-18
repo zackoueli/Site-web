@@ -125,7 +125,7 @@ export default function JeuMobilePage() {
             <h2 className="text-2xl font-bold mb-8">Questions fréquentes</h2>
             <div className="flex flex-col gap-4">
               {[
-                { q: "Combien coûte le développement d'un jeu mobile ?", a: "Le tarif dépend de la complexité du gameplay. Un jeu simple (quiz, puzzle à niveaux) démarre à partir de 600€. Un jeu plus complexe avec multijoueur et économie virtuelle sera sur devis personnalisé. Je vous envoie une estimation sous 24h après avoir discuté de votre concept." },
+                { q: "Combien coûte le développement d'un jeu mobile ?", a: "Le tarif dépend de la complexité du gameplay : un jeu simple (quiz, puzzle à niveaux) ou un jeu plus complexe avec multijoueur et économie virtuelle. Je vous envoie une estimation sous 24h après avoir discuté de votre concept." },
                 { q: "Mon jeu sera-t-il accepté sur l'App Store Apple ?", a: "Oui, à condition de respecter les guidelines Apple — ce que je fais systématiquement. Les jeux développés sur mesure passent bien mieux la validation que les apps générées par des outils no-code." },
                 { q: "Peut-on monétiser le jeu avec de la publicité ?", a: "Oui. Je peux intégrer AdMob (Google) pour des publicités interstitielles ou des rewarded ads — le format le mieux accepté par les joueurs car il est volontaire. La monétisation par in-app purchase est aussi possible en parallèle." },
                 { q: "Est-ce que vous pouvez reprendre un jeu déjà commencé ?", a: "Oui, si le code est accessible et documenté. Chaque reprise commence par une analyse du code existant — je vous dis honnêtement si c'est faisable ou s'il vaut mieux repartir proprement." },

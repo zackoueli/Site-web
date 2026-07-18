@@ -7,7 +7,7 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Application mobile éducation & formation iOS & Android | BreizhApp",
   description:
-    "Créez votre app e-learning sur mesure : cours en ligne, quiz, progression, certificats, messagerie formateur. Développeur freelance à Brest. Dès 490€.",
+    "Créez votre app e-learning sur mesure : cours en ligne, quiz, progression, certificats, messagerie formateur. Développeur freelance à Brest.",
   alternates: { canonical: "https://breizhapp.tech/services/secteur/education-formation" },
   openGraph: {
     title: "Application mobile éducation & formation | BreizhApp",
@@ -107,7 +107,7 @@ export default function EducationPage() {
                 { q: "Peut-on intégrer des vidéos dans l'app ?", a: "Oui. Les vidéos sont hébergées sur YouTube (privé) ou Vimeo et intégrées dans l'app. C'est la solution la plus économique et performante — pas besoin d'héberger les fichiers vidéo vous-même." },
                 { q: "Comment les apprenants accèdent-ils aux cours payants ?", a: "Via Stripe : achat unique du cours ou abonnement mensuel. L'accès est accordé automatiquement après paiement et révoqué en cas d'annulation d'abonnement." },
                 { q: "Peut-on avoir à la fois du contenu gratuit et payant ?", a: "Oui, c'est le modèle freemium. Vous définissez quels modules sont accessibles gratuitement et lesquels nécessitent un achat ou un abonnement actif." },
-                { q: "Combien ça coûte de développer une app e-learning ?", a: "Une app e-learning simple (cours, quiz, progression) démarre autour de 600€ à 900€. Avec abonnements, messagerie et certificats, comptez entre 900€ et 1 500€ selon la complexité. Je vous envoie une estimation précise après un premier échange." },
+                { q: "Combien ça coûte de développer une app e-learning ?", a: "Le tarif dépend des fonctionnalités : cours, quiz, progression, abonnements, messagerie, certificats. Je vous envoie une estimation précise après un premier échange." },
               ].map(({ q, a }) => (
                 <div key={q} className="brutal-border bg-white p-5">
                   <h3 className="font-bold mb-2">{q}</h3>

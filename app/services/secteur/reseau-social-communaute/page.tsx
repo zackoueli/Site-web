@@ -104,7 +104,7 @@ export default function ReseauSocialPage() {
             <h2 className="text-2xl font-bold mb-8">Questions fréquentes</h2>
             <div className="flex flex-col gap-4">
               {[
-                { q: "Combien coûte le développement d'une app communautaire ?", a: "C'est un projet sur devis car la complexité varie beaucoup. Une app communautaire simple (profils, fil, messagerie) commence autour de 800€ à 1 200€. Une plateforme avec groupes, modération avancée et monétisation sera plus proche de 2 000€ à 3 000€. Je vous envoie une estimation précise après un premier échange." },
+                { q: "Combien coûte le développement d'une app communautaire ?", a: "C'est un projet sur devis car la complexité varie beaucoup selon les fonctionnalités : profils, fil, messagerie, groupes, modération avancée, monétisation. Je vous envoie une estimation précise après un premier échange." },
                 { q: "Peut-on monétiser l'accès à la communauté ?", a: "Oui. Abonnement mensuel via Stripe, accès premium à certains groupes, contenu exclusif payant — plusieurs modèles sont possibles et je peux les implémenter directement dans l'app." },
                 { q: "Comment gérer les membres toxiques ou les contenus inappropriés ?", a: "L'app inclut un système de signalement par les utilisateurs et des outils de modération pour les admins : bannissement temporaire ou définitif, suppression de contenu, mise en liste noire." },
                 { q: "L'app peut-elle gérer des dizaines de milliers de membres ?", a: "Oui. J'utilise Firebase ou Supabase comme backend — des infrastructures conçues pour scaler automatiquement. Les coûts d'hébergement augmentent avec l'usage mais restent très compétitifs." },

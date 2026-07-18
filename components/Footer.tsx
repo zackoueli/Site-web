@@ -108,7 +108,7 @@ export default function Footer() {
 
           <FooterCol title="Ressources" links={[
             ["Combien coûte une app ?", "/blog/combien-coute-application-mobile"],
-            ["App mobile dès 490€", "/blog/application-mobile-pas-chere"],
+            ["App mobile pas chère", "/blog/application-mobile-pas-chere"],
             ["BreizhApp vs Planity", "/blog/cout-reel-planity"],
             ["Freelance vs Agence", "/blog/developpeur-freelance-vs-agence"],
             ["No-code vs Développeur", "/blog/no-code-vs-developpeur"],

@@ -29,11 +29,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/blog/application-photobooth-sur-mesure",
-        destination: "/blog/creer-photobooth-digital-guide-complet",
-        permanent: true,
-      },
-      {
         source: "/blog/planity-tarif-prix-abonnement-2025",
         destination: "/blog/cout-reel-planity",
         permanent: true,

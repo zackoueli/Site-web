@@ -7,7 +7,7 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Application mobile maraîcher & commerce local iOS & Android | BreizhApp",
   description:
-    "Créez l'app de votre commerce local : paniers hebdomadaires, abonnements, paiement en ligne, gestion des livraisons. Développeur freelance à Brest. Dès 490€.",
+    "Créez l'app de votre commerce local : paniers hebdomadaires, abonnements, paiement en ligne, gestion des livraisons. Développeur freelance à Brest.",
   alternates: { canonical: "https://breizhapp.tech/services/secteur/maraicher-commerce-local" },
   openGraph: {
     title: "Application mobile maraîcher & commerce local | BreizhApp",
@@ -26,10 +26,6 @@ const schema = {
       name: "Application mobile maraîcher et commerce local",
       description: "Création d'application mobile sur mesure pour maraîchers, épiceries et commerces de proximité : paniers hebdomadaires, abonnements, paiement Stripe.",
       provider: { "@id": "https://breizhapp.tech/#business" },
-      offers: [
-        { "@type": "Offer", name: "App Starter", price: "490", priceCurrency: "EUR" },
-        { "@type": "Offer", name: "App Premium", price: "600", priceCurrency: "EUR" },
-      ],
     },
     {
       "@type": "BreadcrumbList",
@@ -49,30 +45,6 @@ const features = [
   { title: "Livraisons & créneaux", desc: "Définissez vos zones de livraison, vos créneaux et vos tarifs. L'app gère les plannings et envoie les confirmations automatiquement." },
   { title: "Notifications de disponibilité", desc: "Informez vos abonnés de l'arrivée de nouveaux produits ou des changements de paniers par notification push." },
   { title: "Click & collect", desc: "Vos clients commandent en ligne et récupèrent leur panier au marché ou à votre ferme au créneau de leur choix." },
-];
-
-const pricing = [
-  {
-    name: "App Starter",
-    price: "490€",
-    monthly: "+ 49€/mois",
-    desc: "Catalogue produits, commande en ligne, click & collect, panel admin. Idéal pour démarrer.",
-    highlight: false,
-  },
-  {
-    name: "App Premium",
-    price: "600€",
-    monthly: "+ 49€/mois",
-    desc: "Tout le Starter et en plus les abonnements Stripe récurrents, notifications push et gestion des créneaux de livraison.",
-    highlight: true,
-  },
-  {
-    name: "App Boutique",
-    price: "0€",
-    monthly: "12% sur les ventes",
-    desc: "Zéro frais d'installation. Vous payez uniquement une commission sur ce que vous vendez via l'app.",
-    highlight: false,
-  },
 ];
 
 export default function MaraicherPage() {
@@ -98,11 +70,11 @@ export default function MaraicherPage() {
               <span className="bg-[#FFE234] brutal-border px-2">maraîcher & circuit court</span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
-              Vendre en direct sans passer par une plateforme, fidéliser ses clients et gérer ses paniers depuis son téléphone — c'est ce que permet une app sur mesure. Dès 490€, livrée en 3 semaines.
+              Vendre en direct sans passer par une plateforme, fidéliser ses clients et gérer ses paniers depuis son téléphone — c'est ce que permet une app sur mesure, livrée en 3 semaines.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
-              <Link href="/blog/combien-coute-application-mobile" className="brutal-btn bg-[#00D4AA] text-[#0A0A0A] px-8 py-4">Voir les tarifs →</Link>
+              <Link href="/blog/combien-coute-application-mobile" className="brutal-btn bg-[#00D4AA] text-[#0A0A0A] px-8 py-4">En savoir plus →</Link>
             </div>
             <div className="flex flex-wrap gap-4 mono text-sm text-gray-500">
               <span className="brutal-border px-3 py-1 bg-white">✓ Zéro commission plateforme</span>
@@ -141,23 +113,6 @@ export default function MaraicherPage() {
                   <p className="text-3xl font-bold text-[#FFE234] mb-1">{value}</p>
                   <p className="text-sm text-[#FFFBF0] font-bold">{label}</p>
                   <p className="text-xs text-gray-400 mt-1">{sub}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8">Tarifs</h2>
-            <div className="grid sm:grid-cols-3 gap-4">
-              {pricing.map(({ name, price, monthly, desc, highlight }) => (
-                <div key={name} className={`brutal-border p-6 ${highlight ? "bg-[#FFE234]" : "bg-white"}`}>
-                  {highlight && <p className="mono text-xs font-bold mb-2">// recommandé</p>}
-                  <h3 className="font-bold text-xl mb-1">{name}</h3>
-                  <p className="text-3xl font-bold mb-1">{price}</p>
-                  <p className="mono text-xs text-gray-600 mb-4">{monthly}</p>
-                  <p className="text-sm leading-relaxed">{desc}</p>
                 </div>
               ))}
             </div>

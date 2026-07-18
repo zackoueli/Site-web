@@ -5,12 +5,12 @@ import Footer from "@/components/Footer";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Application mobile restaurant iOS & Android dès 490€ | BreizhApp",
+  title: "Application mobile restaurant iOS & Android | BreizhApp",
   description:
     "Créez l'app de votre restaurant : commande en ligne, programme de fidélité, notifications push. Sans Uber Eats, sans commission. Développeur freelance à Brest. Devis gratuit.",
   alternates: { canonical: "https://breizhapp.tech/services/secteur/restaurant" },
   openGraph: {
-    title: "Application mobile restaurant iOS & Android dès 490€",
+    title: "Application mobile restaurant iOS & Android sur mesure",
     description:
       "App restaurant sur mesure : commande en ligne Stripe, fidélité, push. Zéro commission plateforme. Freelance à Brest, devis gratuit sous 24h.",
     url: "https://breizhapp.tech/services/secteur/restaurant",
@@ -30,10 +30,6 @@ const schema = {
         "Création d'application mobile sur mesure pour restaurants : commande en ligne, fidélité, notifications push. Sans commission Uber Eats.",
       provider: { "@id": "https://breizhapp.tech/#business" },
       areaServed: [{ "@type": "City", name: "Brest" }, { "@type": "AdministrativeArea", name: "Bretagne" }],
-      offers: [
-        { "@type": "Offer", name: "App Starter", price: "490", priceCurrency: "EUR" },
-        { "@type": "Offer", name: "App Premium", price: "600", priceCurrency: "EUR" },
-      ],
     },
     {
       "@type": "BreadcrumbList",
@@ -46,14 +42,6 @@ const schema = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        {
-          "@type": "Question",
-          name: "Combien coûte une application mobile pour un restaurant ?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Une application mobile restaurant iOS & Android coûte à partir de 490€ avec BreizhApp. La formule Premium avec commande en ligne et paiement Stripe est à 600€ + 49€/mois d'hébergement et support.",
-          },
-        },
         {
           "@type": "Question",
           name: "Est-ce que l'app remplace Uber Eats ?",
@@ -84,30 +72,6 @@ const features = [
   { title: "iOS & Android", desc: "L'app est publiée sur l'App Store et Google Play — accessible à tous vos clients." },
 ];
 
-const pricing = [
-  {
-    name: "App Starter",
-    price: "490€",
-    monthly: "+ 49€/mois",
-    desc: "Application iOS & Android, menu dynamique, réservation en ligne, panel admin, déploiement stores inclus.",
-    highlight: false,
-  },
-  {
-    name: "App Premium",
-    price: "600€",
-    monthly: "+ 49€/mois",
-    desc: "Tout le Starter + commande en ligne Stripe, notifications push, programme de fidélité numérique.",
-    highlight: true,
-  },
-  {
-    name: "App Boutique",
-    price: "0€",
-    monthly: "12% sur les ventes",
-    desc: "Pour les restaurants avec livraison : zéro frais d'installation, commission uniquement sur les ventes.",
-    highlight: false,
-  },
-];
-
 export default function RestaurantPage() {
   return (
     <>
@@ -134,7 +98,7 @@ export default function RestaurantPage() {
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
               Reprenez le contrôle face à Uber Eats et Deliveroo. Votre propre application iOS & Android
-              avec commande en ligne, programme de fidélité et notifications push — dès 490€, sans commission.
+              avec commande en ligne, programme de fidélité et notifications push — sans commission.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
@@ -189,35 +153,12 @@ export default function RestaurantPage() {
           </div>
         </section>
 
-        {/* Tarifs */}
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8">Tarifs application restaurant</h2>
-            <div className="grid sm:grid-cols-3 gap-4">
-              {pricing.map(({ name, price, monthly, desc, highlight }) => (
-                <div key={name} className={`brutal-border p-6 ${highlight ? "bg-[#FFE234]" : "bg-white"}`}>
-                  {highlight && <p className="mono text-xs font-bold mb-2">// recommandé</p>}
-                  <h3 className="font-bold text-xl mb-1">{name}</h3>
-                  <p className="text-3xl font-bold mb-1">{price}</p>
-                  <p className="mono text-xs text-gray-600 mb-4">{monthly}</p>
-                  <p className="text-sm leading-relaxed">{desc}</p>
-                </div>
-              ))}
-            </div>
-            <p className="text-sm text-gray-500 mt-4 mono">* Hébergement Firebase inclus · Support réactif · Mises à jour incluses</p>
-          </div>
-        </section>
-
         {/* FAQ */}
         <section className="py-16 px-4 bg-gray-50 brutal-border border-t-[3px]">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold mb-8">Questions fréquentes</h2>
             <div className="flex flex-col gap-4">
               {[
-                {
-                  q: "Combien coûte une application mobile pour un restaurant ?",
-                  a: "À partir de 490€ pour une application iOS & Android complète. La formule Premium avec commande en ligne Stripe et programme de fidélité est à 600€ + 49€/mois.",
-                },
                 {
                   q: "Est-ce que l'app remplace Uber Eats ?",
                   a: "Oui. La commande en ligne avec paiement Stripe est intégrée directement dans votre app. Vous ne payez aucune commission sur vos ventes — vos clients commandent et vous payez directement.",

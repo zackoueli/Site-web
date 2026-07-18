@@ -7,10 +7,10 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Application mobile salon de coiffure iOS & Android | BreizhApp",
   description:
-    "Application mobile sur mesure pour votre salon de coiffure : réservation en ligne, programme de fidélité, notifications push. Alternative à Planity dès 490€. Devis gratuit.",
+    "Application mobile sur mesure pour votre salon de coiffure : réservation en ligne, programme de fidélité, notifications push. Alternative à Planity. Devis gratuit.",
   alternates: { canonical: "https://breizhapp.tech/services/secteur/coiffeur" },
   openGraph: {
-    title: "Application mobile salon de coiffure dès 490€",
+    title: "Application mobile salon de coiffure sur mesure",
     description:
       "App coiffeur iOS & Android : réservation 24h/24, fidélité, push. Alternative à Planity sans abonnement croissant. Freelance à Brest, devis gratuit.",
     url: "https://breizhapp.tech/services/secteur/coiffeur",
@@ -29,10 +29,6 @@ const schema = {
       description:
         "Création d'application mobile pour salons de coiffure et instituts de beauté : réservation en ligne, fidélité, notifications push. Alternative à Planity.",
       provider: { "@id": "https://breizhapp.tech/#business" },
-      offers: [
-        { "@type": "Offer", name: "App Starter", price: "490", priceCurrency: "EUR" },
-        { "@type": "Offer", name: "App Premium", price: "600", priceCurrency: "EUR" },
-      ],
     },
     {
       "@type": "BreadcrumbList",
@@ -192,39 +188,6 @@ export default function CoiffeurPage() {
                     <span className={breizh ? "text-[#00D4AA]" : "text-gray-600"}>BreizhApp {breizh ? "✓" : "✗"}</span>
                     <span className={planity ? "text-[#00D4AA]" : "text-gray-600"}>Planity {planity ? "✓" : "✗"}</span>
                   </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Tarifs */}
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8">Tarifs</h2>
-            <div className="grid sm:grid-cols-2 gap-4 max-w-2xl">
-              {[
-                {
-                  name: "App Starter",
-                  price: "490€",
-                  monthly: "+ 49€/mois",
-                  desc: "Réservation en ligne, galerie portfolio, panel admin, notifications push, iOS & Android.",
-                  highlight: false,
-                },
-                {
-                  name: "App Premium",
-                  price: "600€",
-                  monthly: "+ 49€/mois",
-                  desc: "Tout le Starter + paiement en ligne (Stripe), programme de fidélité numérique complet.",
-                  highlight: true,
-                },
-              ].map(({ name, price, monthly, desc, highlight }) => (
-                <div key={name} className={`brutal-border p-6 ${highlight ? "bg-[#FFE234]" : "bg-white"}`}>
-                  {highlight && <p className="mono text-xs font-bold mb-2">// recommandé</p>}
-                  <h3 className="font-bold text-xl mb-1">{name}</h3>
-                  <p className="text-3xl font-bold mb-1">{price}</p>
-                  <p className="mono text-xs text-gray-600 mb-4">{monthly}</p>
-                  <p className="text-sm leading-relaxed">{desc}</p>
                 </div>
               ))}
             </div>
