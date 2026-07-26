@@ -32,4 +32,10 @@ Ces règles s'appliquent à toute création ou modification de page/article. Ell
 ## Fraîcheur et indexation
 
 - Toute modification de contenu d'un article met à jour son champ `lastModified` (le sitemap en dépend).
+- **Sitemap (`app/sitemap.ts`) — à mettre à jour à chaque changement de pages** :
+  - Les articles de blog y entrent automatiquement via `lib/blog.ts` — rien à faire pour eux.
+  - Toute **nouvelle page** (service, secteur, portfolio, page statique) doit être ajoutée à `STATIC_PAGES` avec `lastModified` du jour.
+  - Toute **modification significative** d'une page existante met à jour son `lastModified` dans `STATIC_PAGES`.
+  - Toute page **supprimée ou renommée** est retirée de `STATIC_PAGES` (et une redirection 301 est mise en place).
+- **`public/llms.txt`** suit les mêmes règles : ajouter les nouvelles pages importantes dans « Pages principales », retirer les pages supprimées, garder les descriptions à jour.
 - Après un push qui change un contenu important, rappeler à Enzo de demander l'indexation dans Google Search Console (Inspection d'URL).
