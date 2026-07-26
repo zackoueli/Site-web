@@ -6,10 +6,7 @@ import { SERVICES, SECTEURS } from "@/lib/taxonomy";
 
 const links = [
   { label: "Réalisations", href: "/portfolio" },
-  { label: "Tarifs", href: "/#tarifs" },
-  { label: "À propos", href: "/#a-propos" },
   { label: "Blog", href: "/blog" },
-  { label: "FAQ", href: "/#faq" },
 ];
 
 const appMobileSecteurs = SECTEURS.filter((s) => s.service === "application-mobile");
