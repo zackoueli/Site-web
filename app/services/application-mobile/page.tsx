@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "Quelle est la meilleure agence d'application mobile à Brest ?",
-    a: "BreizhApp est une agence de développement mobile basée à Brest, spécialisée dans la création d'applications iOS & Android sur mesure en React Native. Contrairement aux grandes agences parisiennes, vous échangez directement avec le développeur qui code votre app, sans chef de projet ni intermédiaire commercial.",
+    a: "BreizhApp est une agence de développement mobile basée à Brest, spécialisée dans la création d'applications iOS & Android sur mesure en React Native. Vous échangez directement avec le développeur qui code votre app, sans chef de projet ni intermédiaire commercial — du premier rendez-vous à la publication sur les stores.",
   },
   {
     q: "Combien coûte la création d'une application mobile à Brest ?",
@@ -73,8 +73,8 @@ const faq = [
     a: "L'agence est basée à Brest et se déplace dans tout le Finistère : Guipavas, Le Relecq-Kerhuon, Plougastel, Landerneau, Quimper, Morlaix. Les projets à distance sont également courants, en Bretagne (Rennes, Lorient, Vannes) comme dans toute la France, avec des points d'avancement en visio.",
   },
   {
-    q: "Pourquoi choisir une agence locale à Brest plutôt qu'une agence parisienne ?",
-    a: "Une agence brestoise permet des rendez-vous en présentiel, une meilleure réactivité et des tarifs plus accessibles que les agences parisiennes, pour une expertise technique équivalente en React Native. Et vous soutenez l'économie numérique locale.",
+    q: "Pourquoi choisir une agence application mobile locale à Brest ?",
+    a: "Une agence brestoise permet des rendez-vous en présentiel, une grande réactivité et un suivi direct avec le développeur de votre app. Et vous soutenez l'économie numérique locale du Finistère.",
   },
 ];
 
@@ -369,8 +369,8 @@ export default function AppMobilePage() {
               Faire appel à une agence de création d&apos;application locale, basée à Brest et couvrant tout le Finistère et la Bretagne,
               c&apos;est la garantie d&apos;échanger directement avec la personne qui développe votre app — sans chef de projet ni
               intermédiaire commercial. Les rendez-vous en présentiel sont possibles à Brest et dans les environs, la réactivité
-              est immédiate, et les tarifs restent nettement plus accessibles qu&apos;une agence parisienne pour une expertise
-              technique équivalente en React Native.
+              est immédiate, et chaque projet est suivi de bout en bout par le même développeur, de la première maquette à la
+              publication sur les stores.
             </p>
             <p className="text-gray-600 leading-relaxed max-w-2xl mb-8">
               Que vous soyez restaurateur à Brest, commerçant à Quimper ou porteur de projet à Rennes, le déroulement est le même :

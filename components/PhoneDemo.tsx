@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface PhoneDemoProps {
   src: string;
@@ -12,6 +12,13 @@ const H = Math.round(W * (2208 / 1242));
 /** Mockup iPhone affichant un site/app réel dans un iframe — même cadre que PhoneVideo. */
 export default function PhoneDemo({ src, title }: PhoneDemoProps) {
   const [loaded, setLoaded] = useState(false);
+
+  // L'événement load de l'iframe peut partir avant l'hydratation React (SSR) :
+  // sans ce fallback, le skeleton resterait affiché indéfiniment.
+  useEffect(() => {
+    const timer = setTimeout(() => setLoaded(true), 2500);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div
@@ -135,7 +142,7 @@ export default function PhoneDemo({ src, title }: PhoneDemoProps) {
         <iframe
           src={src}
           title={title}
-          loading="lazy"
+          loading="eager"
           onLoad={() => setLoaded(true)}
           style={{
             width: "100%",
