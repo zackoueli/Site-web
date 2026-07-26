@@ -1,6 +1,6 @@
 # BreizhApp
 
-> Développeur freelance spécialisé en création d'applications mobiles iOS & Android sur mesure, basé à Brest (Bretagne, France). Stack React Native. Tarifs accessibles dès 490€.
+> Développeur freelance spécialisé en création d'applications mobiles iOS & Android sur mesure, basé à Brest (Bretagne, France). Stack React Native. Devis gratuit sous 24h.
 
 ## À propos
 
@@ -47,14 +47,13 @@ BreizhApp est le nom commercial d'Enzo Omnes, développeur freelance indépendan
 
 ## Tarifs
 
-- App Starter : 490€ (design sur mesure, auth, contenu dynamique, hébergement + support 49€/mois)
-- App Premium : 600€ (Starter + paiement Stripe, notifications push, panel admin)
-- App Boutique e-commerce : 0€ d'installation + 12% de commission sur les ventes
-- Devis gratuit sous 24h
+- Devis gratuit, personnalisé et sans engagement, envoyé sous 24h
+- Le tarif dépend des fonctionnalités : paiement en ligne, notifications push, panel admin, réservation
+- Hébergement, support et publication sur les stores inclus dans chaque projet
 
 ## Zone géographique
 
-Brest, Quimper, Morlaix, Rennes, Nantes — et toute la France en télétravail.
+Brest, Quimper, Morlaix, Rennes, Nantes — et toute la France.
 
 ## Pages principales
 

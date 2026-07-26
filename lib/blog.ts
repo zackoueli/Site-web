@@ -97,9 +97,9 @@ export const articles: Article[] = [
     service: "restaurant",
     title: "Application mobile restaurant : guide complet 2026",
     description:
-      "Commande en ligne, fidélité, réservation : tout ce qu'une app restaurant doit avoir. Tarifs dès 490€, sans commission Uber Eats. Devis gratuit 24h.",
+      "Commande en ligne, fidélité, réservation : tout ce qu'une application restaurant doit avoir, sans commission Uber Eats. Devis gratuit sous 24h.",
     date: "2026-05-11",
-    lastModified: "2026-06-01",
+    lastModified: "2026-07-26",
     readTime: "6 min",
     category: "Restaurants",
     sections: [
@@ -277,9 +277,9 @@ export const articles: Article[] = [
     service: "ecommerce",
     title: "Shopify 2026 : coût réel, commissions et apps",
     description:
-      "Shopify coûte bien plus que 39€/mois. Commissions, apps payantes, thèmes : le vrai prix sur 2 ans et ce qu'une app sur mesure change pour vous.",
+      "Shopify coûte bien plus que son abonnement de base. Commissions, apps payantes, thèmes : le vrai prix sur 2 ans et ce qu'une app sur mesure change pour vous.",
     date: "2026-05-11",
-    lastModified: "2026-06-22",
+    lastModified: "2026-07-26",
     readTime: "8 min",
     category: "Comparatifs",
     sections: [
@@ -380,8 +380,9 @@ export const articles: Article[] = [
     service: "site-web",
     title: "Wix prix 2026 : combien coûte un site pro ?",
     description:
-      "Wix affiche \"gratuit\" mais un vrai site pro coûte 17€ à 35€/mois + apps. Le coût réel sur 2 ans et pourquoi une app sur mesure revient moins cher.",
+      "Wix affiche \"gratuit\" mais le prix d'un vrai site pro grimpe vite : abonnement, apps, options. Le coût réel sur 2 ans et l'alternative sur mesure.",
     date: "2026-05-11",
+    lastModified: "2026-07-26",
     readTime: "5 min",
     category: "Comparatifs",
     sections: [
@@ -455,9 +456,9 @@ export const articles: Article[] = [
     service: "coiffeur",
     title: "Planity prix 2026 : le vrai coût pour un salon",
     description:
-      "Planity : ce que comprend l'abonnement, les limites du modèle SaaS et une alternative où vous possédez votre outil.",
+      "Planity : ce que comprend l'abonnement, les limites du modèle SaaS pour votre salon, et l'alternative où vous possédez votre outil de réservation.",
     date: "2026-05-11",
-    lastModified: "2026-06-01",
+    lastModified: "2026-07-26",
     readTime: "8 min",
     category: "Comparatifs",
     sections: [
@@ -551,11 +552,11 @@ export const articles: Article[] = [
   {
     slug: "application-mobile-pas-chere",
     service: "application-mobile",
-    title: "Application mobile pas chère : dès 490€ iOS & Android",
+    title: "Application mobile pas chère : le guide iOS & Android",
     description:
-      "App iOS & Android pro pour moins de 1 000€ : oui, c'est possible avec un freelance React Native. Tarifs réels, pièges à éviter, devis gratuit.",
+      "Une app iOS & Android professionnelle à petit prix : c'est possible avec un freelance React Native. Vrais leviers d'économie, pièges à éviter, devis gratuit.",
     date: "2026-05-11",
-    lastModified: "2026-06-01",
+    lastModified: "2026-07-26",
     readTime: "6 min",
     category: "Tarifs",
     sections: [
@@ -2058,8 +2059,9 @@ export const articles: Article[] = [
     slug: "site-web-artisan-sur-mesure",
     service: "site-web",
     title: "Site web pour artisan : éviter les constructeurs",
-    description: "Site web pour artisan : pourquoi éviter Wix et les constructeurs gratuits. Ce qu'un site sur mesure apporte en SEO local, devis en ligne et crédibilité. Dès 490€.",
+    description: "Site web pour artisan : pourquoi éviter Wix et les constructeurs gratuits. Ce qu'un site sur mesure apporte en SEO local, devis en ligne et crédibilité.",
     date: "2026-05-15",
+    lastModified: "2026-07-26",
     readTime: "6 min",
     category: "Secteurs",
     sections: [
@@ -2389,8 +2391,9 @@ export const articles: Article[] = [
     slug: "creation-site-web-brest",
     service: "site-web",
     title: "Création site web à Brest : tarifs 2026",
-    description: "Création site web à Brest : vitrine, e-commerce, plateforme sur mesure. Développeur freelance local, SEO optimisé, tarifs dès 490€. Devis gratuit sous 48h.",
+    description: "Création site web à Brest : vitrine, e-commerce, plateforme sur mesure. Développeur freelance local, SEO optimisé. Devis gratuit sous 24h.",
     date: "2026-05-16",
+    lastModified: "2026-07-26",
     readTime: "5 min",
     category: "Local",
     sections: [
@@ -2707,8 +2710,9 @@ export const articles: Article[] = [
     slug: "application-mobile-fidelite-clients",
     service: "application-mobile",
     title: "App fidélité clients : boostez vos ventes 2026",
-    description: "App fidélité clients : carte de points, offres exclusives, notifications push. Fidélisez sans commission à une plateforme tierce. Tarifs dès 490€.",
+    description: "App fidélité clients : carte de points, offres exclusives, notifications push. Fidélisez vos clients sans commission à une plateforme tierce. Devis gratuit.",
     date: "2026-05-18",
+    lastModified: "2026-07-26",
     readTime: "6 min",
     category: "Guides",
     sections: [
@@ -2974,9 +2978,9 @@ export const articles: Article[] = [
     slug: "application-mobile-coiffeur",
     service: "coiffeur",
     title: "Application mobile coiffeur : réservation & fidélité",
-    description: "App iOS & Android pour salon de coiffure : réservation 24h/24, programme de fidélité, push. Alternative Planity dès 490€. Développeur freelance Brest.",
+    description: "App iOS & Android pour salon de coiffure : réservation 24h/24, programme de fidélité, notifications push. L'alternative à Planity. Freelance à Brest.",
     date: "2026-06-01",
-    lastModified: "2026-06-22",
+    lastModified: "2026-07-26",
     readTime: "7 min",
     category: "Guides",
     sections: [
@@ -3119,8 +3123,9 @@ export const articles: Article[] = [
     service: "application-mobile",
     title: "Création application mobile en Bretagne",
     description:
-      "Création d'application mobile en Bretagne : développeur React Native freelance à Brest. App iOS & Android sur mesure dès 490€ pour les entreprises bretonnes.",
+      "Création d'application mobile en Bretagne : développeur React Native freelance à Brest. App iOS & Android sur mesure pour les entreprises bretonnes. Devis 24h.",
     date: "2026-06-13",
+    lastModified: "2026-07-26",
     readTime: "5 min",
     category: "Local",
     sections: [
@@ -3184,8 +3189,9 @@ export const articles: Article[] = [
     service: "application-mobile",
     title: "Développeur app mobile Finistère — Brest, Quimper",
     description:
-      "Développeur application mobile dans le Finistère : Brest, Quimper, Morlaix. App iOS & Android sur mesure dès 490€. Freelance local, devis gratuit 24h.",
+      "Développeur application mobile dans le Finistère : Brest, Quimper, Morlaix. App iOS & Android sur mesure. Freelance local, devis gratuit sous 24h.",
     date: "2026-06-13",
+    lastModified: "2026-07-26",
     readTime: "4 min",
     category: "Local",
     sections: [
@@ -3416,10 +3422,11 @@ export const articles: Article[] = [
   {
     slug: "je-veux-creer-une-application-mobile",
     service: "application-mobile",
-    title: "Je veux créer une application mobile : le guide pour démarrer",
+    title: "Je veux créer une application mobile : guide pour démarrer",
     description:
       "Vous voulez créer une application mobile mais vous ne savez pas comment ? Étapes, coûts, technologies : tout ce qu'il faut savoir avant de vous lancer.",
     date: "2026-06-13",
+    lastModified: "2026-07-26",
     readTime: "5 min",
     category: "Guides",
     sections: [
@@ -3482,9 +3489,10 @@ export const articles: Article[] = [
   {
     slug: "creer-photobooth-digital-guide-complet",
     service: "plateforme",
-    title: "Photobooth digital : logiciel, application et définition (guide 2026)",
-    description: "Photobooth achat ou location : comment fonctionne un photobooth digital, quel logiciel choisir, et comment une application sur mesure équipe les loueurs et photographes professionnels.",
+    title: "Photobooth digital : logiciel, application et guide 2026",
+    description: "Photobooth digital : fonctionnement, achat ou location, choix du logiciel, et comment une application sur mesure équipe loueurs et photographes pros.",
     date: "2026-06-23",
+    lastModified: "2026-07-26",
     readTime: "7 min",
     category: "Guides",
     sections: [
@@ -3616,10 +3624,11 @@ export const articles: Article[] = [
   {
     slug: "panel-admin-site-web-application-mobile",
     service: "application-mobile",
-    title: "Panel admin : gérez votre site ou application mobile sans toucher au code",
+    title: "Panel admin site web & application mobile : le guide",
     description:
-      "Chaque site et application mobile BreizhApp inclut un panel d'administration sur mesure. Modifiez votre menu, gérez vos commandes, suivez vos stats — en autonomie totale.",
+      "Chaque site et application BreizhApp inclut un panel d'administration sur mesure : menu, commandes, statistiques — gérez tout en autonomie totale.",
     date: "2026-06-29",
+    lastModified: "2026-07-26",
     readTime: "6 min",
     category: "Conseils",
     sections: [
@@ -3704,10 +3713,11 @@ export const articles: Article[] = [
   {
     slug: "panel-admin-salon-coiffure",
     service: "coiffeur",
-    title: "Panel admin salon de coiffure : gérez vos RDV, prestations et équipe sans coder",
+    title: "Panel admin salon de coiffure : RDV, prestations, équipe",
     description:
-      "Découvrez le panel d'administration inclus dans chaque site et application mobile BreizhApp pour les salons de coiffure. RDV, prestations, équipe, galerie et messages depuis un seul tableau de bord.",
+      "Le panel d'administration inclus pour les salons de coiffure : rendez-vous, prestations, équipe, galerie et messages depuis un seul tableau de bord.",
     date: "2026-06-29",
+    lastModified: "2026-07-26",
     readTime: "5 min",
     category: "Secteurs",
     sections: [
@@ -3828,10 +3838,11 @@ export const articles: Article[] = [
   {
     slug: "panel-admin-restaurant-pizzeria",
     service: "restaurant",
-    title: "Panel admin restaurant et pizzeria : gérez menu, commandes et livreurs sans coder",
+    title: "Panel admin restaurant & pizzeria : menu et commandes",
     description:
-      "Découvrez le panel d'administration inclus dans chaque site et application mobile BreizhApp pour les restaurants et pizzerias. Menu, commandes, réservations, horaires, codes promo, livreurs et statistiques.",
+      "Le panel d'administration inclus pour restaurants et pizzerias : menu, commandes, réservations, horaires, codes promo, livreurs et statistiques.",
     date: "2026-06-29",
+    lastModified: "2026-07-26",
     readTime: "6 min",
     category: "Secteurs",
     sections: [
@@ -3981,10 +3992,11 @@ export const articles: Article[] = [
   {
     slug: "panel-admin-boutique-ecommerce",
     service: "ecommerce",
-    title: "Panel admin boutique e-commerce : gérez produits, commandes et avis sans coder",
+    title: "Panel admin e-commerce : produits, commandes et avis",
     description:
-      "Découvrez le panel d'administration inclus dans chaque boutique en ligne BreizhApp. Produits, catégories, commandes, codes promo, messagerie, avis clients et photos depuis un seul tableau de bord.",
+      "Le panel d'administration inclus dans chaque boutique en ligne : produits, commandes, codes promo, avis clients et messagerie depuis un seul tableau de bord.",
     date: "2026-06-29",
+    lastModified: "2026-07-26",
     readTime: "5 min",
     category: "Secteurs",
     sections: [
@@ -4111,10 +4123,11 @@ export const articles: Article[] = [
   {
     slug: "notifications-push-application-mobile",
     service: "application-mobile",
-    title: "Notifications push : comment elles font revenir vos clients dans votre app",
+    title: "Notifications push : faire revenir vos clients dans l'app",
     description:
-      "Notifications push mobile : fonctionnement, exemples concrets par secteur, bonnes pratiques et pourquoi c'est la fonctionnalité qui fait la différence entre une app utilisée et une app oubliée.",
+      "Notifications push mobile : fonctionnement, exemples par secteur et bonnes pratiques — la fonctionnalité qui sépare une app utilisée d'une app oubliée.",
     date: "2026-07-03",
+    lastModified: "2026-07-26",
     readTime: "5 min",
     category: "Tech",
     sections: [
@@ -4183,10 +4196,11 @@ export const articles: Article[] = [
   {
     slug: "ux-ui-application-mobile-reussie",
     service: "application-mobile",
-    title: "UX/UI application mobile : ce qui fait qu'un client reste ou s'en va",
+    title: "UX/UI application mobile : ce qui fait rester vos clients",
     description:
-      "Les principes UX/UI d'une application mobile réussie : navigation intuitive, temps de chargement, cohérence visuelle. Ce que je conçois pour que vos clients ne repartent pas au bout de 10 secondes.",
+      "Les principes UX/UI d'une application mobile réussie : navigation intuitive, rapidité, cohérence visuelle. Pour que vos clients restent au-delà de 10 secondes.",
     date: "2026-07-03",
+    lastModified: "2026-07-26",
     readTime: "6 min",
     category: "Tech",
     sections: [
@@ -4250,10 +4264,11 @@ export const articles: Article[] = [
   {
     slug: "captures-ecran-app-store-play-store",
     service: "application-mobile",
-    title: "Captures d'écran App Store & Play Store : celles qui font télécharger votre app",
+    title: "Captures d'écran App Store & Play Store : le guide",
     description:
-      "Comment créer des captures d'écran qui convertissent sur l'App Store et le Google Play Store : formats requis, bonnes pratiques et erreurs à éviter pour maximiser vos téléchargements.",
+      "Créer des captures d'écran qui convertissent sur l'App Store et Google Play : formats requis, bonnes pratiques et erreurs à éviter pour être téléchargé.",
     date: "2026-07-03",
+    lastModified: "2026-07-26",
     readTime: "5 min",
     category: "Guides",
     sections: [
@@ -4319,10 +4334,11 @@ export const articles: Article[] = [
   {
     slug: "publier-application-app-store",
     service: "application-mobile",
-    title: "Publier son application sur l'App Store : le guide complet 2026",
+    title: "Publier son application sur l'App Store : guide 2026",
     description:
-      "Comment publier une application iOS sur l'App Store d'Apple : compte développeur, délais de validation, règles de conformité et erreurs qui font rejeter une app. Guide par un développeur freelance.",
+      "Publier une application iOS sur l'App Store : compte développeur, délais de validation, règles Apple et erreurs qui font rejeter une app.",
     date: "2026-07-03",
+    lastModified: "2026-07-26",
     readTime: "6 min",
     category: "Guides",
     sections: [
@@ -4392,10 +4408,11 @@ export const articles: Article[] = [
   {
     slug: "publier-application-google-play-store",
     service: "application-mobile",
-    title: "Publier son application sur le Google Play Store : le guide complet 2026",
+    title: "Publier son application sur Google Play : guide 2026",
     description:
-      "Comment publier une application Android sur le Google Play Store : compte développeur, fiche Play Console, délais de validation et bonnes pratiques pour une publication sans rejet.",
+      "Publier une application Android sur le Google Play Store : compte développeur, fiche Play Console, délais de validation et publication sans rejet.",
     date: "2026-07-03",
+    lastModified: "2026-07-26",
     readTime: "5 min",
     category: "Guides",
     sections: [
@@ -4463,10 +4480,11 @@ export const articles: Article[] = [
   {
     slug: "avantages-developpement-application-mobile-cross-platform",
     service: "application-mobile",
-    title: "Les avantages du développement application mobile cross-platform",
+    title: "Application mobile cross-platform : les avantages",
     description:
-      "Découvrez les avantages du développement d'applications mobiles cross-platform. Économisez temps et ressources tout en offrant une expérience utilisateur optimale. En savoir plus !",
+      "Les avantages du développement cross-platform : une seule base de code pour iOS et Android, des délais réduits et une expérience utilisateur optimale.",
     date: "2026-07-18",
+    lastModified: "2026-07-26",
     readTime: "6 min",
     category: "Tech",
     sections: [
