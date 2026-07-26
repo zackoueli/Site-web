@@ -66,9 +66,15 @@ export default function BunklyPortfolioPage() {
         <section className="border-b-[3px] border-[#0A0A0A] bg-[#FF6B35]">
           <div className="max-w-6xl mx-auto px-4 py-20 grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <a href="/portfolio" className="inline-flex items-center gap-2 text-sm font-bold mb-8 hover:underline text-white opacity-80">
-                <ArrowLeft size={14} /> Retour aux réalisations
-              </a>
+              <nav className="mono text-sm mb-8 flex items-center gap-2 text-white opacity-80 flex-wrap">
+                <a href="/" className="hover:underline">Accueil</a>
+                <span>/</span>
+                <a href="/services/plateforme" className="hover:underline">Plateforme digitale</a>
+                <span>/</span>
+                <a href="/portfolio" className="inline-flex items-center gap-1 hover:underline">
+                  <ArrowLeft size={12} /> Réalisations
+                </a>
+              </nav>
               <p className="mono text-sm font-bold text-orange-200 mb-4">// réalisation · plateforme SaaS</p>
               <div className="flex items-center gap-3 mb-6 flex-wrap">
                 <div className="brutal-border px-3 py-1 text-xs font-bold bg-white text-[#FF6B35]">PLATEFORME WEB</div>

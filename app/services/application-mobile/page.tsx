@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import RelatedArticles from "@/components/RelatedArticles";
 import { Smartphone, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -272,6 +273,8 @@ export default function AppMobilePage() {
             </a>
           </div>
         </section>
+
+        <RelatedArticles service="application-mobile" />
 
       </main>
       <Footer />

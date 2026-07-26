@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { articles, getArticle, type Article } from "@/lib/blog";
+import { articles, getArticle, getArticlesForService, type Article } from "@/lib/blog";
+import { resolveTaxonomySlug } from "@/lib/taxonomy";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -71,11 +72,7 @@ function ArticleSchema({ article }: { article: NonNullable<ReturnType<typeof get
     },
     {
       "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://breizhapp.tech" },
-        { "@type": "ListItem", position: 2, name: "Blog", item: "https://breizhapp.tech/blog" },
-        { "@type": "ListItem", position: 3, name: article.title, item: `https://breizhapp.tech/blog/${article.slug}` },
-      ],
+      itemListElement: buildBreadcrumbItems(article),
     },
   ];
   if (faqEntity) graph.push(faqEntity);
@@ -89,59 +86,42 @@ function ArticleSchema({ article }: { article: NonNullable<ReturnType<typeof get
   );
 }
 
-const serviceLinks: Record<string, { label: string; href: string }[]> = {
-  Restaurants: [
-    { label: "App mobile pour restaurant", href: "/services/secteur/restaurant" },
-    { label: "App restaurant Bretagne", href: "/blog/application-mobile-restaurant-bretagne" },
-    { label: "Site web restaurant Brest", href: "/blog/site-web-restaurant-brest" },
-    { label: "Créer un site pizzeria à Brest", href: "/blog/creation-site-pizzeria-brest" },
-  ],
-  Tarifs: [
-    { label: "Combien coûte une app mobile ?", href: "/blog/combien-coute-application-mobile" },
-    { label: "App mobile pas chère", href: "/blog/application-mobile-pas-chere" },
-    { label: "Coût maintenance app mobile", href: "/blog/cout-maintenance-application-mobile" },
-    { label: "Nos services application mobile", href: "/services/application-mobile" },
-  ],
-  Comparatifs: [
-    { label: "Freelance vs Agence", href: "/blog/developpeur-freelance-vs-agence" },
-    { label: "No-code vs Développeur", href: "/blog/no-code-vs-developpeur" },
-    { label: "PWA vs application native", href: "/blog/progressive-web-app-vs-application-native" },
-    { label: "React Native vs Flutter", href: "/blog/react-native-vs-flutter" },
-  ],
-  Tech: [
-    { label: "React Native vs Flutter", href: "/blog/react-native-vs-flutter" },
-    { label: "PWA vs application native", href: "/blog/progressive-web-app-vs-application-native" },
-    { label: "Créer une app sans coder", href: "/blog/creer-application-mobile-sans-coder" },
-    { label: "No-code vs Développeur", href: "/blog/no-code-vs-developpeur" },
-  ],
-  Conseils: [
-    { label: "Panel admin inclus dans chaque projet", href: "/blog/panel-admin-site-web-application-mobile" },
-    { label: "Fidéliser ses clients avec une app", href: "/blog/comment-fideliser-clients-application-mobile" },
-    { label: "Faire développer une app mobile", href: "/blog/faire-developper-application-mobile" },
-    { label: "J'ai une idée d'app mobile", href: "/blog/j-ai-une-idee-d-application-mobile" },
-  ],
-  Guides: [
-    { label: "Je veux créer une app mobile", href: "/blog/je-veux-creer-une-application-mobile" },
-    { label: "J'ai une idée d'app mobile", href: "/blog/j-ai-une-idee-d-application-mobile" },
-    { label: "Faire développer une app mobile", href: "/blog/faire-developper-application-mobile" },
-    { label: "Combien coûte une app mobile ?", href: "/blog/combien-coute-application-mobile" },
-  ],
-  Secteurs: [
-    { label: "App mobile pour coiffeur", href: "/services/secteur/coiffeur" },
-    { label: "App mobile pour restaurant", href: "/services/secteur/restaurant" },
-    { label: "App mobile salle de sport", href: "/services/secteur/salle-de-sport" },
-    { label: "App mobile pour hôtel", href: "/services/secteur/hotel" },
-  ],
-  Local: [
-    { label: "Développeur freelance à Brest", href: "/blog/application-mobile-brest" },
-    { label: "Développeur freelance à Quimper", href: "/blog/developpeur-freelance-quimper" },
-    { label: "Développeur freelance à Rennes", href: "/blog/developpeur-freelance-rennes" },
-    { label: "App mobile en Bretagne", href: "/blog/developpeur-application-mobile-bretagne" },
-  ],
-};
+function buildBreadcrumbItems(article: Article) {
+  const taxon = resolveTaxonomySlug(article.service);
+  const items = [
+    { "@type": "ListItem", position: 1, name: "Accueil", item: "https://breizhapp.tech" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://breizhapp.tech/blog" },
+  ];
+  if (taxon) {
+    items.push({
+      "@type": "ListItem",
+      position: 3,
+      name: taxon.label,
+      item: `https://breizhapp.tech${taxon.href}`,
+    });
+  }
+  items.push({
+    "@type": "ListItem",
+    position: items.length + 1,
+    name: article.title,
+    item: `https://breizhapp.tech/blog/${article.slug}`,
+  });
+  return items;
+}
 
 function MidArticleCTA({ article }: { article: Article }) {
-  const links = serviceLinks[article.category] ?? serviceLinks.Conseils;
+  const taxon = resolveTaxonomySlug(article.service);
+  const relatedArticles = getArticlesForService(article.service)
+    .filter((a) => a.slug !== article.slug)
+    .slice(0, 3);
+
+  const links = [
+    ...(taxon ? [{ label: `Découvrir ${taxon.label}`, href: taxon.href }] : []),
+    ...relatedArticles.map((a) => ({ label: a.title, href: `/blog/${a.slug}` })),
+  ];
+
+  if (links.length === 0) return null;
+
   return (
     <div className="my-2 brutal-border border-l-4 border-[#FFE234] bg-[#FFFBF0] p-4">
       <p className="mono text-xs font-bold text-gray-500 mb-2">// articles liés</p>
@@ -175,6 +155,8 @@ export default async function ArticlePage({ params }: Props) {
   if (!article) notFound();
 
   // Deterministic shuffle based on slug hash so each article gets a unique rotation
+  const taxon = resolveTaxonomySlug(article.service);
+
   const slugHash = slug.split("").reduce((acc, c) => acc + c.charCodeAt(0), 0);
   const rotate = <T,>(arr: T[], n: number): T[] => {
     const offset = n % arr.length;
@@ -202,10 +184,16 @@ export default async function ArticlePage({ params }: Props) {
       <Navbar />
       <main className="max-w-3xl mx-auto px-4 py-20">
         {/* Breadcrumb */}
-        <nav className="mono text-sm text-gray-500 mb-10 flex items-center gap-2">
+        <nav className="mono text-sm text-gray-500 mb-10 flex items-center gap-2 flex-wrap">
           <Link href="/" className="hover:text-black transition-colors">Accueil</Link>
           <span>/</span>
           <Link href="/blog" className="hover:text-black transition-colors">Blog</Link>
+          {taxon && (
+            <>
+              <span>/</span>
+              <Link href={taxon.href} className="hover:text-black transition-colors">{taxon.label}</Link>
+            </>
+          )}
           <span>/</span>
           <span className="text-black font-bold truncate">{article.title}</span>
         </nav>

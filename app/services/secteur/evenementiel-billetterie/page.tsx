@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import RelatedArticles from "@/components/RelatedArticles";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -129,6 +130,8 @@ export default function EvenementielPage() {
             </a>
           </div>
         </section>
+
+        <RelatedArticles service="evenementiel-billetterie" />
 
       </main>
       <Footer />

@@ -1,8 +1,10 @@
+import { SERVICES, SECTEURS } from "@/lib/taxonomy";
+
 function FooterCol({ title, links }: { title: string; links: [string, string][] }) {
   return (
     <div>
       <p className="font-bold mb-3 text-[#FFE234]">{title}</p>
-      <ul className="flex flex-col gap-2 text-sm text-gray-400">
+      <ul className="flex flex-col gap-2 text-sm text-gray-400 max-h-64 overflow-y-auto pr-1">
         {links.map(([label, href]) => (
           <li key={href}>
             <a href={href} className="hover:text-[#FFFBF0] transition-colors">{label}</a>
@@ -31,8 +33,8 @@ export default function Footer() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 py-10">
-        {/* Single row : brand + 4 columns */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
+        {/* Single row : brand + 3 columns */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-2 sm:col-span-3 lg:col-span-1">
             <div className="font-bold text-xl mono mb-3 flex items-center gap-2">
@@ -80,33 +82,17 @@ export default function Footer() {
             </div>
           </div>
 
-          <FooterCol title="Services" links={[
-            ["App mobile iOS & Android", "/services/application-mobile"],
-            ["Site web sur mesure", "/services/site-web"],
-            ["Application e-commerce", "/services/ecommerce"],
-            ["Plateforme digitale", "/services/plateforme"],
-          ]} />
+          <FooterCol
+            title="Services"
+            links={SERVICES.map((s): [string, string] => [s.label, s.href])}
+          />
 
-          <FooterCol title="Par secteur" links={[
-            ["App restaurant", "/services/secteur/restaurant"],
-            ["App coiffeur / salon", "/services/secteur/coiffeur"],
-            ["App hôtel & hébergement", "/services/secteur/hotel"],
-            ["App salle de sport", "/services/secteur/salle-de-sport"],
-            ["App réservation / RDV", "/services/secteur/reservation-prise-de-rdv"],
-            ["App maraîcher / local", "/services/secteur/maraicher-commerce-local"],
-            ["App livraison", "/services/secteur/livraison-logistique"],
-            ["App événementiel", "/services/secteur/evenementiel-billetterie"],
-          ]} />
+          <FooterCol
+            title="Par secteur"
+            links={SECTEURS.map((s): [string, string] => [s.label, s.href])}
+          />
 
-          <FooterCol title="Par ville" links={[
-            ["Application mobile Brest", "/blog/application-mobile-brest"],
-            ["App mobile Bretagne", "/blog/developpeur-application-mobile-bretagne"],
-            ["Développeur Finistère", "/blog/developpeur-application-mobile-finistere"],
-            ["Développeur Quimper", "/blog/developpeur-freelance-quimper"],
-            ["Développeur Rennes", "/blog/developpeur-freelance-rennes"],
-          ]} />
-
-          <FooterCol title="Ressources" links={[
+          <FooterCol title="Blog & ressources" links={[
             ["Combien coûte une app ?", "/blog/combien-coute-application-mobile"],
             ["App mobile pas chère", "/blog/application-mobile-pas-chere"],
             ["BreizhApp vs Planity", "/blog/cout-reel-planity"],
@@ -115,6 +101,9 @@ export default function Footer() {
             ["React Native vs Flutter", "/blog/react-native-vs-flutter"],
             ["Progressive Web App", "/blog/progressive-web-app-vs-application-native"],
             ["Créer une app sans coder", "/blog/creer-application-mobile-sans-coder"],
+            ["Application mobile Brest", "/blog/application-mobile-brest"],
+            ["Développeur Quimper", "/blog/developpeur-freelance-quimper"],
+            ["Développeur Rennes", "/blog/developpeur-freelance-rennes"],
           ]} />
         </div>
       </div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import RelatedArticles from "@/components/RelatedArticles";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -194,23 +195,6 @@ export default function CoiffeurPage() {
           </div>
         </section>
 
-        {/* Articles liés */}
-        <section className="py-12 px-4 bg-gray-50 brutal-border border-t-[3px]">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-xl font-bold mb-6">À lire aussi</h2>
-            <div className="grid sm:grid-cols-3 gap-4">
-              {[
-                { title: "Tarif réel Planity 2026", href: "/blog/cout-reel-planity" },
-                { title: "App prise de rendez-vous", href: "/blog/application-mobile-prise-de-rdv" },
-                { title: "App fidélité clients", href: "/blog/application-mobile-fidelite-clients" },
-              ].map(({ title, href }) => (
-                <Link key={href} href={href} className="brutal-border bg-white p-4 hover:bg-[#FFE234] transition-colors block">
-                  <p className="font-bold text-sm leading-snug">{title} →</p>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* CTA */}
         <section className="py-16 px-4">
@@ -224,6 +208,8 @@ export default function CoiffeurPage() {
             </a>
           </div>
         </section>
+
+        <RelatedArticles service="coiffeur" />
 
       </main>
       <Footer />

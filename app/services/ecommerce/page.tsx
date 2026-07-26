@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import RelatedArticles from "@/components/RelatedArticles";
+import RelatedProjects from "@/components/RelatedProjects";
 import { ShoppingBag, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -138,6 +140,10 @@ export default function EcommercePage() {
             </a>
           </div>
         </section>
+
+        <RelatedProjects service="ecommerce" />
+
+        <RelatedArticles service="ecommerce" />
 
       </main>
       <Footer />

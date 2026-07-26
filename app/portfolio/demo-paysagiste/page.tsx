@@ -41,9 +41,15 @@ export default function DemoPaysagistePage() {
         <section className="border-b-[3px] border-black bg-[#2D5016]">
           <div className="max-w-6xl mx-auto px-4 py-20 grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <a href="/portfolio" className="inline-flex items-center gap-2 text-sm font-bold mb-8 hover:underline text-[#A8D05A]">
-                <ArrowLeft size={14} /> Retour aux réalisations
-              </a>
+              <nav className="mono text-sm mb-8 flex items-center gap-2 text-[#A8D05A] flex-wrap">
+                <a href="/" className="hover:underline">Accueil</a>
+                <span>/</span>
+                <a href="/services/site-web" className="hover:underline">Site web</a>
+                <span>/</span>
+                <a href="/portfolio" className="inline-flex items-center gap-1 hover:underline">
+                  <ArrowLeft size={12} /> Réalisations
+                </a>
+              </nav>
               <p className="mono text-sm font-bold text-green-400 mb-4">// réalisation · site web professionnel</p>
               <div className="flex items-center gap-4 mb-6 flex-wrap">
                 <div className="brutal-border px-3 py-1 text-xs font-bold bg-[#A8D05A] text-[#1a3a08]">

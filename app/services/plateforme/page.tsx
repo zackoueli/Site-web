@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import RelatedArticles from "@/components/RelatedArticles";
+import RelatedProjects from "@/components/RelatedProjects";
 import { LayoutDashboard, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -118,6 +120,10 @@ export default function PlateformePage() {
             </a>
           </div>
         </section>
+
+        <RelatedProjects service="plateforme" />
+
+        <RelatedArticles service="plateforme" />
 
       </main>
       <Footer />

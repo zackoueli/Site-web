@@ -6,6 +6,7 @@ export type Article = {
   lastModified?: string;
   readTime: string;
   category: string;
+  service: string;
   sections: Section[];
 };
 
@@ -19,6 +20,7 @@ type Section = {
 export const articles: Article[] = [
   {
     slug: "combien-coute-application-mobile",
+    service: "application-mobile",
     title: "Application mobile : combien ça coûte en 2026 ?",
     description:
       "Prix d'une app iOS & Android selon les fonctionnalités : paiement Stripe, notifications push. Grille tarifaire réelle d'un développeur freelance à Brest.",
@@ -92,6 +94,7 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-restaurant",
+    service: "restaurant",
     title: "Application mobile restaurant : guide complet 2026",
     description:
       "Commande en ligne, fidélité, réservation : tout ce qu'une app restaurant doit avoir. Tarifs dès 490€, sans commission Uber Eats. Devis gratuit 24h.",
@@ -153,6 +156,7 @@ export const articles: Article[] = [
   },
   {
     slug: "react-native-vs-flutter",
+    service: "application-mobile",
     title: "React Native vs Flutter 2026 : lequel choisir ?",
     description:
       "React Native ou Flutter pour votre app iOS & Android ? Performance, coût, écosystème : le comparatif complet d'un développeur freelance en 2026.",
@@ -203,6 +207,7 @@ export const articles: Article[] = [
   },
   {
     slug: "developpeur-freelance-vs-agence",
+    service: "application-mobile",
     title: "Freelance vs agence app mobile : lequel choisir ?",
     description:
       "Freelance ou agence pour votre application mobile ? Prix, délais, communication : le comparatif complet pour choisir selon votre budget et votre projet.",
@@ -269,6 +274,7 @@ export const articles: Article[] = [
   },
   {
     slug: "cout-reel-site-shopify",
+    service: "ecommerce",
     title: "Shopify 2026 : coût réel, commissions et apps",
     description:
       "Shopify coûte bien plus que 39€/mois. Commissions, apps payantes, thèmes : le vrai prix sur 2 ans et ce qu'une app sur mesure change pour vous.",
@@ -371,6 +377,7 @@ export const articles: Article[] = [
   },
   {
     slug: "cout-reel-site-wix",
+    service: "site-web",
     title: "Wix prix 2026 : combien coûte un site pro ?",
     description:
       "Wix affiche \"gratuit\" mais un vrai site pro coûte 17€ à 35€/mois + apps. Le coût réel sur 2 ans et pourquoi une app sur mesure revient moins cher.",
@@ -445,6 +452,7 @@ export const articles: Article[] = [
   },
   {
     slug: "cout-reel-planity",
+    service: "coiffeur",
     title: "Planity prix 2026 : le vrai coût pour un salon",
     description:
       "Planity : ce que comprend l'abonnement, les limites du modèle SaaS et une alternative où vous possédez votre outil.",
@@ -542,6 +550,7 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-pas-chere",
+    service: "application-mobile",
     title: "Application mobile pas chère : dès 490€ iOS & Android",
     description:
       "App iOS & Android pro pour moins de 1 000€ : oui, c'est possible avec un freelance React Native. Tarifs réels, pièges à éviter, devis gratuit.",
@@ -627,6 +636,7 @@ export const articles: Article[] = [
   // --- Nouveaux articles SEO ---
   {
     slug: "squarespace-tarif-prix-2025",
+    service: "site-web",
     title: "Squarespace tarif 2025 : prix et vraie valeur",
     description:
       "Prix Squarespace 2025 : plans Personal, Business, Commerce — ce que coûte vraiment Squarespace pour un site pro. Comparatif avec une solution sur mesure.",
@@ -690,6 +700,7 @@ export const articles: Article[] = [
   },
   {
     slug: "comparatif-createurs-site-web-prix-2025",
+    service: "site-web",
     title: "Wix, Squarespace, Webflow : comparatif prix 2025",
     description:
       "Comparatif prix 2025 : Wix, Squarespace, Webflow, Jimdo. Quel constructeur de site web est le moins cher et quelle alternative choisir ?",
@@ -754,6 +765,7 @@ export const articles: Article[] = [
   },
   {
     slug: "tarif-creation-site-internet-2025",
+    service: "site-web",
     title: "Tarif création site internet 2025 : le vrai prix",
     description:
       "Quel est le prix d'un site internet en 2025 ? Freelance, agence, constructeur DIY (Wix, Squarespace) — comparatif complet des tarifs de création de site web.",
@@ -838,6 +850,7 @@ export const articles: Article[] = [
   },
   {
     slug: "site-web-restaurant-brest",
+    service: "restaurant",
     title: "Site web pour restaurant à Brest : guide 2025",
     description:
       "Menu en ligne, réservation, commande à emporter : tout ce qu'un site web de restaurant à Brest doit avoir en 2025. Tarifs et conseils d'un développeur local.",
@@ -905,6 +918,7 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-restaurant-bretagne",
+    service: "restaurant",
     title: "App mobile restaurant en Bretagne : guide 2026",
     description:
       "App mobile pour restaurant en Bretagne : fonctionnalités, tarifs et retour sur investissement. Guide par un développeur freelance basé à Brest.",
@@ -981,6 +995,7 @@ export const articles: Article[] = [
   },
   {
     slug: "creation-site-pizzeria-brest",
+    service: "restaurant",
     title: "Site web pizzeria à Brest : tarifs et guide 2025",
     description:
       "Site web pour votre pizzeria à Brest : commande en ligne, menu digital, référencement local. Tarifs et conseils d'un développeur freelance brestois.",
@@ -1053,6 +1068,7 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-brest",
+    service: "application-mobile",
     title: "Application mobile Brest : création iOS & Android dès 490€",
     description:
       "Création d'application mobile à Brest : iOS & Android sur mesure dès 490€. Restaurateurs, commerçants, artisans. Développeur freelance local, devis gratuit.",
@@ -1118,6 +1134,7 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-artisan-commercant",
+    service: "site-web",
     title: "App mobile pour artisan & commerçant : guide",
     description:
       "Boulanger, boucher, fleuriste : pourquoi une application mobile sur mesure dépasse Wix ou Planity pour fidéliser vos clients et booster vos ventes.",
@@ -1206,6 +1223,7 @@ export const articles: Article[] = [
   },
   {
     slug: "shopify-wix-vs-application-mobile-sur-mesure",
+    service: "ecommerce",
     title: "Shopify & Wix vs app sur mesure : comparatif",
     description:
       "Coûts cachés, commissions, limitations : ce que Wix et Shopify ne disent pas. Pourquoi une app mobile sur mesure est souvent plus rentable à 24 mois.",
@@ -1296,6 +1314,7 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-boutique-en-ligne",
+    service: "ecommerce",
     title: "Boutique en ligne : app mobile vs site web",
     description:
       "Application mobile ou site e-commerce ? Conversion, fidélisation, coûts : le guide pour choisir la meilleure solution pour votre boutique en ligne.",
@@ -1404,6 +1423,7 @@ export const articles: Article[] = [
   },
   {
     slug: "combien-coute-site-web-sur-mesure",
+    service: "site-web",
     title: "Site web sur mesure : prix réels en 2026",
     description: "Combien coûte un site web sur mesure en 2026 ? Vitrine, e-commerce, plateforme : tarifs réels d'un développeur freelance vs agence. Devis gratuit 48h.",
     date: "2026-05-15",
@@ -1518,6 +1538,7 @@ export const articles: Article[] = [
   },
   {
     slug: "creer-plateforme-digitale-sur-mesure",
+    service: "plateforme",
     title: "Plateforme digitale sur mesure : guide 2026",
     description: "Créer une plateforme digitale sur mesure : espace admin, espace client, multi-rôles. Fonctionnalités, tarifs et alternatives au no-code. Devis gratuit.",
     date: "2026-05-15",
@@ -1620,6 +1641,7 @@ export const articles: Article[] = [
   },
   {
     slug: "wordpress-vs-sur-mesure",
+    service: "site-web",
     title: "WordPress vs sur mesure : comparatif complet 2026",
     description: "WordPress ou site sur mesure : performances, coûts, SEO, sécurité. Le comparatif complet pour choisir la bonne solution selon votre projet en 2026.",
     date: "2026-05-15",
@@ -1730,6 +1752,7 @@ export const articles: Article[] = [
   },
   {
     slug: "no-code-vs-developpeur",
+    service: "application-mobile",
     title: "No-code vs dev : Bubble, Glide ou sur mesure ?",
     description: "No-code (Bubble, Glide, Adalo) ou développeur sur mesure ? Coûts, limites, performances : le comparatif complet pour créer votre app ou plateforme en 2026.",
     date: "2026-05-15",
@@ -1844,6 +1867,7 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-coiffeur-salon",
+    service: "coiffeur",
     title: "App mobile pour salon de coiffure : guide 2026",
     description: "App mobile salon de coiffure : réservation, fidélité, notifications push. Alternative à Planity sans commission. Tarifs et fonctionnalités 2026.",
     date: "2026-05-15",
@@ -1927,6 +1951,7 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-salle-sport-fitness",
+    service: "salle-de-sport",
     title: "App mobile salle de sport : fonctionnalités 2026",
     description: "App mobile salle de sport : abonnements, réservation de cours, suivi des séances, fidélité. Tarifs et fonctionnalités clés en 2026.",
     date: "2026-05-15",
@@ -2002,6 +2027,7 @@ export const articles: Article[] = [
   },
   {
     slug: "site-web-artisan-sur-mesure",
+    service: "site-web",
     title: "Site web pour artisan : éviter les constructeurs",
     description: "Site web pour artisan : pourquoi éviter Wix et les constructeurs gratuits. Ce qu'un site sur mesure apporte en SEO local, devis en ligne et crédibilité. Dès 490€.",
     date: "2026-05-15",
@@ -2092,6 +2118,7 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-hotel-hebergement",
+    service: "hotel",
     title: "App mobile pour hôtel : guide complet 2026",
     description: "Application mobile pour hôtel et hébergement : check-in digital, conciergerie, fidélité, room service. Fonctionnalités clés et tarifs 2026. Devis gratuit.",
     date: "2026-05-15",
@@ -2187,6 +2214,7 @@ export const articles: Article[] = [
   },
   {
     slug: "developpeur-freelance-quimper",
+    service: "application-mobile",
     title: "Développeur freelance à Quimper : web et mobile",
     description: "Développeur freelance à Quimper : applications mobiles iOS & Android, sites web et plateformes digitales sur mesure. Devis gratuit sous 48h, livraison en Bretagne.",
     date: "2026-05-16",
@@ -2258,6 +2286,7 @@ export const articles: Article[] = [
   },
   {
     slug: "developpeur-freelance-rennes",
+    service: "application-mobile",
     title: "Développeur freelance à Rennes : web et mobile",
     description: "Développeur freelance à Rennes : applications mobiles iOS & Android, sites web et plateformes sur mesure. Basé en Bretagne, devis gratuit sous 48h.",
     date: "2026-05-16",
@@ -2329,6 +2358,7 @@ export const articles: Article[] = [
   },
   {
     slug: "creation-site-web-brest",
+    service: "site-web",
     title: "Création site web à Brest : tarifs 2026",
     description: "Création site web à Brest : vitrine, e-commerce, plateforme sur mesure. Développeur freelance local, SEO optimisé, tarifs dès 490€. Devis gratuit sous 48h.",
     date: "2026-05-16",
@@ -2403,6 +2433,7 @@ export const articles: Article[] = [
   },
   {
     slug: "developpeur-application-mobile-bretagne",
+    service: "application-mobile",
     title: "Développeur application mobile en Bretagne",
     description: "Développeur application mobile en Bretagne : iOS & Android sur mesure, sites web, plateformes. Basé à Brest, Finistère. Devis gratuit sous 48h.",
     date: "2026-05-16",
@@ -2476,6 +2507,7 @@ export const articles: Article[] = [
   },
   {
     slug: "creer-application-mobile-sans-coder",
+    service: "application-mobile",
     title: "App mobile sans coder : guide honnête 2026",
     description: "No-code, low-code ou développeur ? Le guide honnête pour créer votre application mobile sans savoir coder — limites, coûts et quand faire appel à un pro.",
     date: "2026-05-18",
@@ -2565,6 +2597,7 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-prise-de-rdv",
+    service: "reservation-prise-de-rdv",
     title: "App mobile prise de RDV : guide complet 2026",
     description: "Application mobile de prise de rendez-vous en ligne : fonctionnalités, coûts, alternatives à Doctolib et Planity. Guide complet pour professionnels en 2026.",
     date: "2026-05-18",
@@ -2643,6 +2676,7 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-fidelite-clients",
+    service: "application-mobile",
     title: "App fidélité clients : boostez vos ventes 2026",
     description: "App fidélité clients : carte de points, offres exclusives, notifications push. Fidélisez sans commission à une plateforme tierce. Tarifs dès 490€.",
     date: "2026-05-18",
@@ -2730,6 +2764,7 @@ export const articles: Article[] = [
   },
   {
     slug: "cout-maintenance-application-mobile",
+    service: "application-mobile",
     title: "Maintenance app mobile : coûts réels 2026",
     description: "Combien coûte la maintenance d'une application mobile ? Mises à jour iOS/Android, bugs, hébergement : le vrai coût après la livraison expliqué clairement.",
     date: "2026-05-18",
@@ -2815,6 +2850,7 @@ export const articles: Article[] = [
   },
   {
     slug: "progressive-web-app-vs-application-native",
+    service: "application-mobile",
     title: "PWA vs application native : que choisir en 2026 ?",
     description: "Progressive Web App ou application native iOS/Android ? Performances, coûts, App Store, offline : le comparatif complet pour choisir la bonne solution en 2026.",
     date: "2026-05-18",
@@ -2907,6 +2943,7 @@ export const articles: Article[] = [
 
   {
     slug: "application-mobile-coiffeur",
+    service: "coiffeur",
     title: "Application mobile coiffeur : réservation & fidélité",
     description: "App iOS & Android pour salon de coiffure : réservation 24h/24, programme de fidélité, push. Alternative Planity dès 490€. Développeur freelance Brest.",
     date: "2026-06-01",
@@ -2999,6 +3036,7 @@ export const articles: Article[] = [
 
   {
     slug: "comment-fideliser-clients-application-mobile",
+    service: "application-mobile",
     title: "Fidéliser ses clients avec une app mobile : guide",
     description: "Programme de fidélité numérique via une application mobile : tampons virtuels, push ciblées, offres personnalisées. Guide complet pour commerçants.",
     date: "2026-06-01",
@@ -3049,6 +3087,7 @@ export const articles: Article[] = [
 
   {
     slug: "creation-application-mobile-bretagne",
+    service: "application-mobile",
     title: "Création application mobile en Bretagne",
     description:
       "Création d'application mobile en Bretagne : développeur React Native freelance à Brest. App iOS & Android sur mesure dès 490€ pour les entreprises bretonnes.",
@@ -3113,6 +3152,7 @@ export const articles: Article[] = [
   },
   {
     slug: "developpeur-application-mobile-finistere",
+    service: "application-mobile",
     title: "Développeur app mobile Finistère — Brest, Quimper",
     description:
       "Développeur application mobile dans le Finistère : Brest, Quimper, Morlaix. App iOS & Android sur mesure dès 490€. Freelance local, devis gratuit 24h.",
@@ -3168,6 +3208,7 @@ export const articles: Article[] = [
   },
   {
     slug: "j-ai-une-idee-d-application-mobile",
+    service: "application-mobile",
     title: "J'ai une idée d'application mobile : par où commencer ?",
     description:
       "Vous avez une idée d'app mobile mais vous ne savez pas comment la concrétiser ? Ce guide vous explique les étapes, les coûts et comment trouver le bon développeur.",
@@ -3257,6 +3298,7 @@ export const articles: Article[] = [
   },
   {
     slug: "faire-developper-application-mobile",
+    service: "application-mobile",
     title: "Faire développer une application mobile : guide complet 2026",
     description:
       "Combien ça coûte de faire développer une application mobile ? Freelance, agence, no-code : comparatif complet pour choisir la bonne option selon votre budget.",
@@ -3344,6 +3386,7 @@ export const articles: Article[] = [
   },
   {
     slug: "je-veux-creer-une-application-mobile",
+    service: "application-mobile",
     title: "Je veux créer une application mobile : le guide pour démarrer",
     description:
       "Vous voulez créer une application mobile mais vous ne savez pas comment ? Étapes, coûts, technologies : tout ce qu'il faut savoir avant de vous lancer.",
@@ -3409,6 +3452,7 @@ export const articles: Article[] = [
   },
   {
     slug: "creer-photobooth-digital-guide-complet",
+    service: "plateforme",
     title: "Photobooth digital : logiciel, application et définition (guide 2026)",
     description: "Photobooth achat ou location : comment fonctionne un photobooth digital, quel logiciel choisir, et comment une application sur mesure équipe les loueurs et photographes professionnels.",
     date: "2026-06-23",
@@ -3542,6 +3586,7 @@ export const articles: Article[] = [
   },
   {
     slug: "panel-admin-site-web-application-mobile",
+    service: "application-mobile",
     title: "Panel admin : gérez votre site ou application mobile sans toucher au code",
     description:
       "Chaque site et application mobile BreizhApp inclut un panel d'administration sur mesure. Modifiez votre menu, gérez vos commandes, suivez vos stats — en autonomie totale.",
@@ -3629,6 +3674,7 @@ export const articles: Article[] = [
   },
   {
     slug: "panel-admin-salon-coiffure",
+    service: "coiffeur",
     title: "Panel admin salon de coiffure : gérez vos RDV, prestations et équipe sans coder",
     description:
       "Découvrez le panel d'administration inclus dans chaque site et application mobile BreizhApp pour les salons de coiffure. RDV, prestations, équipe, galerie et messages depuis un seul tableau de bord.",
@@ -3752,6 +3798,7 @@ export const articles: Article[] = [
   },
   {
     slug: "panel-admin-restaurant-pizzeria",
+    service: "restaurant",
     title: "Panel admin restaurant et pizzeria : gérez menu, commandes et livreurs sans coder",
     description:
       "Découvrez le panel d'administration inclus dans chaque site et application mobile BreizhApp pour les restaurants et pizzerias. Menu, commandes, réservations, horaires, codes promo, livreurs et statistiques.",
@@ -3904,6 +3951,7 @@ export const articles: Article[] = [
   },
   {
     slug: "panel-admin-boutique-ecommerce",
+    service: "ecommerce",
     title: "Panel admin boutique e-commerce : gérez produits, commandes et avis sans coder",
     description:
       "Découvrez le panel d'administration inclus dans chaque boutique en ligne BreizhApp. Produits, catégories, commandes, codes promo, messagerie, avis clients et photos depuis un seul tableau de bord.",
@@ -4033,6 +4081,7 @@ export const articles: Article[] = [
   },
   {
     slug: "notifications-push-application-mobile",
+    service: "application-mobile",
     title: "Notifications push : comment elles font revenir vos clients dans votre app",
     description:
       "Notifications push mobile : fonctionnement, exemples concrets par secteur, bonnes pratiques et pourquoi c'est la fonctionnalité qui fait la différence entre une app utilisée et une app oubliée.",
@@ -4104,6 +4153,7 @@ export const articles: Article[] = [
   },
   {
     slug: "ux-ui-application-mobile-reussie",
+    service: "application-mobile",
     title: "UX/UI application mobile : ce qui fait qu'un client reste ou s'en va",
     description:
       "Les principes UX/UI d'une application mobile réussie : navigation intuitive, temps de chargement, cohérence visuelle. Ce que je conçois pour que vos clients ne repartent pas au bout de 10 secondes.",
@@ -4170,6 +4220,7 @@ export const articles: Article[] = [
   },
   {
     slug: "captures-ecran-app-store-play-store",
+    service: "application-mobile",
     title: "Captures d'écran App Store & Play Store : celles qui font télécharger votre app",
     description:
       "Comment créer des captures d'écran qui convertissent sur l'App Store et le Google Play Store : formats requis, bonnes pratiques et erreurs à éviter pour maximiser vos téléchargements.",
@@ -4238,6 +4289,7 @@ export const articles: Article[] = [
   },
   {
     slug: "publier-application-app-store",
+    service: "application-mobile",
     title: "Publier son application sur l'App Store : le guide complet 2026",
     description:
       "Comment publier une application iOS sur l'App Store d'Apple : compte développeur, délais de validation, règles de conformité et erreurs qui font rejeter une app. Guide par un développeur freelance.",
@@ -4310,6 +4362,7 @@ export const articles: Article[] = [
   },
   {
     slug: "publier-application-google-play-store",
+    service: "application-mobile",
     title: "Publier son application sur le Google Play Store : le guide complet 2026",
     description:
       "Comment publier une application Android sur le Google Play Store : compte développeur, fiche Play Console, délais de validation et bonnes pratiques pour une publication sans rejet.",
@@ -4380,6 +4433,7 @@ export const articles: Article[] = [
   },
   {
     slug: "avantages-developpement-application-mobile-cross-platform",
+    service: "application-mobile",
     title: "Les avantages du développement application mobile cross-platform",
     description:
       "Découvrez les avantages du développement d'applications mobiles cross-platform. Économisez temps et ressources tout en offrant une expérience utilisateur optimale. En savoir plus !",
@@ -4457,4 +4511,9 @@ export const articles: Article[] = [
 
 export function getArticle(slug: string): Article | undefined {
   return articles.find((a) => a.slug === slug);
+}
+
+/** Articles rattachés à un service ou secteur donné (slug de lib/taxonomy.ts). */
+export function getArticlesForService(service: string): Article[] {
+  return articles.filter((a) => a.service === service);
 }

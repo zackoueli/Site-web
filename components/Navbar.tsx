@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
+import { SERVICES, SECTEURS } from "@/lib/taxonomy";
 
 const links = [
-  { label: "Services", href: "/#services" },
   { label: "Réalisations", href: "/portfolio" },
   { label: "Tarifs", href: "/#tarifs" },
   { label: "À propos", href: "/#a-propos" },
@@ -12,8 +12,12 @@ const links = [
   { label: "FAQ", href: "/#faq" },
 ];
 
+const appMobileSecteurs = SECTEURS.filter((s) => s.service === "application-mobile");
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileSecteursOpen, setMobileSecteursOpen] = useState(false);
 
   return (
     <nav className="brutal-border border-b-[3px] sticky top-0 z-50 bg-[#FFFBF0]">
@@ -28,6 +32,56 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <ul className="hidden md:flex items-center gap-1">
+          {/* Services dropdown */}
+          <li
+            className="relative"
+            onMouseEnter={() => setServicesOpen(true)}
+            onMouseLeave={() => setServicesOpen(false)}
+          >
+            <button
+              className="px-4 py-1.5 font-semibold hover:bg-black hover:text-[#FFFBF0] transition-colors rounded-sm inline-flex items-center gap-1"
+              aria-expanded={servicesOpen}
+            >
+              Services <ChevronDown size={14} />
+            </button>
+            {servicesOpen && (
+              <div className="absolute top-full left-0 pt-2 w-[560px]">
+                <div className="brutal-border brutal-shadow bg-white p-4 grid grid-cols-2 gap-4">
+                  <div>
+                    <p className="mono text-xs font-bold text-gray-400 mb-2 px-2">// nos services</p>
+                    <ul className="flex flex-col gap-1">
+                      {SERVICES.map((s) => (
+                        <li key={s.slug}>
+                          <Link
+                            href={s.href}
+                            className="block px-2 py-1.5 font-semibold text-sm hover:bg-[#FFE234] rounded-sm transition-colors"
+                          >
+                            {s.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="mono text-xs font-bold text-gray-400 mb-2 px-2">// par secteur</p>
+                    <ul className="flex flex-col gap-1 max-h-64 overflow-y-auto">
+                      {appMobileSecteurs.map((s) => (
+                        <li key={s.slug}>
+                          <Link
+                            href={s.href}
+                            className="block px-2 py-1.5 text-sm hover:bg-[#FFE234] rounded-sm transition-colors"
+                          >
+                            {s.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            )}
+          </li>
+
           {links.map((l) => (
             <li key={l.href}>
               <Link
@@ -75,6 +129,44 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden brutal-border border-t-[3px] bg-[#FFFBF0]">
           <ul className="flex flex-col p-4 gap-2">
+            {/* Services accordion */}
+            <li className="brutal-border bg-white">
+              <button
+                className="w-full flex items-center justify-between px-4 py-2 font-semibold"
+                onClick={() => setMobileSecteursOpen(!mobileSecteursOpen)}
+                aria-expanded={mobileSecteursOpen}
+              >
+                Services
+                <ChevronDown size={16} className={mobileSecteursOpen ? "rotate-180 transition-transform" : "transition-transform"} />
+              </button>
+              {mobileSecteursOpen && (
+                <div className="border-t-2 border-black p-3 flex flex-col gap-1">
+                  <p className="mono text-xs font-bold text-gray-400 px-1 mt-1 mb-1">// nos services</p>
+                  {SERVICES.map((s) => (
+                    <Link
+                      key={s.slug}
+                      href={s.href}
+                      className="px-2 py-1.5 text-sm font-semibold hover:bg-[#FFE234] rounded-sm"
+                      onClick={() => setOpen(false)}
+                    >
+                      {s.label}
+                    </Link>
+                  ))}
+                  <p className="mono text-xs font-bold text-gray-400 px-1 mt-2 mb-1">// par secteur</p>
+                  {appMobileSecteurs.map((s) => (
+                    <Link
+                      key={s.slug}
+                      href={s.href}
+                      className="px-2 py-1.5 text-sm hover:bg-[#FFE234] rounded-sm"
+                      onClick={() => setOpen(false)}
+                    >
+                      {s.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </li>
+
             {links.map((l) => (
               <li key={l.href}>
                 <Link

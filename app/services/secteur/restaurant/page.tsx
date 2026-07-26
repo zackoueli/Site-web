@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import RelatedArticles from "@/components/RelatedArticles";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -181,23 +182,6 @@ export default function RestaurantPage() {
           </div>
         </section>
 
-        {/* Articles liés */}
-        <section className="py-12 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-xl font-bold mb-6">À lire aussi</h2>
-            <div className="grid sm:grid-cols-3 gap-4">
-              {[
-                { title: "App mobile restaurant : fonctionnalités 2026", href: "/blog/application-mobile-restaurant" },
-                { title: "App restaurant Bretagne : guide 2025", href: "/blog/application-mobile-restaurant-bretagne" },
-                { title: "Site web restaurant Brest", href: "/blog/site-web-restaurant-brest" },
-              ].map(({ title, href }) => (
-                <Link key={href} href={href} className="brutal-border bg-white p-4 hover:bg-[#FFE234] transition-colors block">
-                  <p className="font-bold text-sm leading-snug">{title} →</p>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* CTA */}
         <section className="py-16 px-4">
@@ -211,6 +195,8 @@ export default function RestaurantPage() {
             </a>
           </div>
         </section>
+
+        <RelatedArticles service="restaurant" />
 
       </main>
       <Footer />

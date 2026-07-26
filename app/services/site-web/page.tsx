@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import RelatedArticles from "@/components/RelatedArticles";
+import RelatedProjects from "@/components/RelatedProjects";
 import { Globe, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -119,6 +121,10 @@ export default function SiteWebPage() {
             </a>
           </div>
         </section>
+
+        <RelatedProjects service="site-web" />
+
+        <RelatedArticles service="site-web" />
 
       </main>
       <Footer />

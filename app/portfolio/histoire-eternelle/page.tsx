@@ -41,9 +41,15 @@ export default function HistoireEternellePage() {
         <section className="border-b-[3px] border-black" style={{ backgroundColor: "#FAF7F2" }}>
           <div className="max-w-6xl mx-auto px-4 py-20 grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <a href="/portfolio" className="inline-flex items-center gap-2 text-sm font-bold mb-8 hover:underline">
-                <ArrowLeft size={14} /> Retour aux réalisations
-              </a>
+              <nav className="mono text-sm mb-8 flex items-center gap-2 flex-wrap" style={{ color: "#6B4835" }}>
+                <a href="/" className="hover:underline">Accueil</a>
+                <span>/</span>
+                <a href="/services/ecommerce" className="hover:underline">E-commerce</a>
+                <span>/</span>
+                <a href="/portfolio" className="inline-flex items-center gap-1 hover:underline">
+                  <ArrowLeft size={12} /> Réalisations
+                </a>
+              </nav>
               <p className="mono text-sm font-bold text-gray-400 mb-4">// réalisation · e-commerce</p>
               <div className="flex items-center gap-4 mb-6 flex-wrap">
                 <div className="brutal-border px-3 py-1 text-xs font-bold" style={{ backgroundColor: "#C0622D", color: "white" }}>
