@@ -7,6 +7,7 @@ import { ArrowLeft, ExternalLink } from "lucide-react";
 export const metadata: Metadata = {
   title: "Histoire Eternelle — Boutique e-commerce bijoux | BreizhApp",
   description: "Étude de cas : création d'une boutique e-commerce sur mesure pour Histoire Eternelle - L'Atelier d'Anaïs. Catalogue bijoux, panier, paiement Stripe, espace client, panel admin.",
+  alternates: { canonical: "https://breizhapp.tech/portfolio/histoire-eternelle" },
 };
 
 const features = [

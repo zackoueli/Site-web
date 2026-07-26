@@ -7,6 +7,7 @@ import { ArrowLeft, ExternalLink } from "lucide-react";
 export const metadata: Metadata = {
   title: "Paradis Vert — Site web professionnel artisan | BreizhApp",
   description: "Étude de cas : création d'un site web professionnel pour Paradis Vert. Galerie réalisations, demande de devis en ligne, gestion des services et back-office admin via Firebase.",
+  alternates: { canonical: "https://breizhapp.tech/portfolio/demo-paysagiste" },
 };
 
 const features = [

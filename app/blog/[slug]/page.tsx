@@ -111,9 +111,12 @@ function buildBreadcrumbItems(article: Article) {
 
 function MidArticleCTA({ article }: { article: Article }) {
   const taxon = resolveTaxonomySlug(article.service);
-  const relatedArticles = getArticlesForService(article.service)
-    .filter((a) => a.slug !== article.slug)
-    .slice(0, 3);
+  const pool = getArticlesForService(article.service).filter((a) => a.slug !== article.slug);
+  // Rotation déterministe par article : chaque article lie des voisins différents,
+  // ce qui distribue le maillage interne sur tout le pool du service
+  const hash = article.slug.split("").reduce((acc, c) => acc + c.charCodeAt(0), 0);
+  const offset = pool.length ? hash % pool.length : 0;
+  const relatedArticles = [...pool.slice(offset), ...pool.slice(0, offset)].slice(0, 3);
 
   const links = [
     ...(taxon ? [{ label: `Découvrir ${taxon.label}`, href: taxon.href }] : []),

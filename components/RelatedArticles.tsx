@@ -2,7 +2,11 @@ import Link from "next/link";
 import { getArticlesForService } from "@/lib/blog";
 
 export default function RelatedArticles({ service }: { service: string }) {
-  const articles = getArticlesForService(service).slice(0, 3);
+  const pool = getArticlesForService(service);
+  // Rotation déterministe par service pour ne pas toujours lier les 3 mêmes articles
+  const hash = service.split("").reduce((acc, c) => acc + c.charCodeAt(0), 0);
+  const offset = pool.length ? hash % pool.length : 0;
+  const articles = [...pool.slice(offset), ...pool.slice(0, offset)].slice(0, 3);
   if (articles.length === 0) return null;
 
   return (

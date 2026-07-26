@@ -4,7 +4,7 @@ import { articles } from "@/lib/blog";
 const STATIC_PAGES: MetadataRoute.Sitemap = [
   { url: "https://breizhapp.tech/",                                       lastModified: new Date("2026-06-11"), changeFrequency: "weekly",  priority: 1.0 },
   { url: "https://breizhapp.tech/blog",                                   lastModified: new Date("2026-06-11"), changeFrequency: "weekly",  priority: 0.9 },
-  { url: "https://breizhapp.tech/services/application-mobile",            lastModified: new Date("2026-05-01"), changeFrequency: "monthly", priority: 0.9 },
+  { url: "https://breizhapp.tech/services/application-mobile",            lastModified: new Date("2026-07-26"), changeFrequency: "monthly", priority: 0.9 },
   { url: "https://breizhapp.tech/services/site-web",                      lastModified: new Date("2026-05-01"), changeFrequency: "monthly", priority: 0.8 },
   { url: "https://breizhapp.tech/services/plateforme",                    lastModified: new Date("2026-05-01"), changeFrequency: "monthly", priority: 0.8 },
   { url: "https://breizhapp.tech/services/ecommerce",                     lastModified: new Date("2026-05-01"), changeFrequency: "monthly", priority: 0.8 },
@@ -25,6 +25,9 @@ const STATIC_PAGES: MetadataRoute.Sitemap = [
   { url: "https://breizhapp.tech/portfolio/bunkly",                       lastModified: new Date("2026-06-29"), changeFrequency: "monthly", priority: 0.7 },
   { url: "https://breizhapp.tech/portfolio/histoire-eternelle",           lastModified: new Date("2026-06-29"), changeFrequency: "monthly", priority: 0.7 },
   { url: "https://breizhapp.tech/portfolio/demo-paysagiste",              lastModified: new Date("2026-06-29"), changeFrequency: "monthly", priority: 0.7 },
+  { url: "https://breizhapp.tech/mentions-legales",                       lastModified: new Date("2026-07-26"), changeFrequency: "yearly",  priority: 0.3 },
+  { url: "https://breizhapp.tech/politique-de-confidentialite",           lastModified: new Date("2026-07-26"), changeFrequency: "yearly",  priority: 0.3 },
+  { url: "https://breizhapp.tech/cgv",                                    lastModified: new Date("2026-07-26"), changeFrequency: "yearly",  priority: 0.3 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
