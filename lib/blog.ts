@@ -1069,65 +1069,94 @@ export const articles: Article[] = [
   {
     slug: "application-mobile-brest",
     service: "application-mobile",
-    title: "Application mobile Brest : création iOS & Android dès 490€",
+    title: "Application mobile à Brest : le guide pour créer votre app",
     description:
-      "Création d'application mobile à Brest : iOS & Android sur mesure dès 490€. Restaurateurs, commerçants, artisans. Développeur freelance local, devis gratuit.",
+      "Créer une application mobile à Brest : à qui confier votre projet, les étapes de A à Z, la bonne technologie et les erreurs à éviter. Guide par un développeur local.",
     date: "2026-04-30",
-    lastModified: "2026-06-01",
-    readTime: "5 min",
-    category: "Tarifs",
+    lastModified: "2026-07-26",
+    readTime: "7 min",
+    category: "Local",
     sections: [
       {
         paragraphs: [
-          "Créer une application mobile à Brest coûte entre 490€ et 600€ chez BreizhApp, développeur freelance React Native basé localement. Les agences web brestoises facturent le même service 15 000€ à 60 000€. Devis gratuit sous 24h, rencontre possible à Brest.",
+          "Vous êtes restaurateur rue de Siam, coiffeur à Saint-Marc, commerçant aux Halles Saint-Louis ou porteur de projet dans la French Tech Brest ? Une application mobile n'est plus réservée aux grandes enseignes : c'est devenu l'outil le plus direct pour toucher vos clients — leur téléphone.",
+          "Ce guide couvre tout ce qu'il faut savoir pour créer une application mobile à Brest : à qui confier votre projet, comment se déroule la création, quelle technologie choisir et quels pièges éviter. Par un développeur d'applications basé à Brest.",
         ],
       },
       {
-        heading: "Qui peut créer votre application mobile à Brest ?",
-        list: [
-          "Une agence web brestoise : budget 15 000€ à 60 000€, délais 3 à 9 mois — adapté aux grandes entreprises",
-          "Un développeur freelance local (BreizhApp) : budget 490€ à 2 000€, délais 2 à 8 semaines — adapté aux TPE, restaurateurs, artisans",
-          "Une plateforme no-code : résultat souvent refusé par l'App Store Apple, très limité fonctionnellement",
-          "Un freelance en ligne (Fiverr, Malt) : variable — attention à la qualité et à l'absence de suivi local",
-        ],
-      },
-      {
-        heading: "Ce qu'une application mobile peut faire pour votre activité à Brest",
-        list: [
-          "Commande en ligne directe : plus de 25% de commission à Uber Eats ou Just Eat",
-          "Réservation 24h/24 : vos clients réservent depuis leur canapé, vous recevez une confirmation automatique",
-          "Notifications push : \"Offre spéciale ce vendredi\", \"Nouveau menu disponible\" — vos clients reçoivent l'info directement",
-          "Programme de fidélité numérique : tampons virtuels, réductions automatiques, cadeaux",
-          "Présence sur l'App Store et Google Play : votre marque visible à côté des grandes enseignes",
-          "Panel admin : modifiez vos prix, votre menu, vos horaires sans repasser par un développeur",
-        ],
-      },
-      {
-        heading: "Tarifs pour une application mobile à Brest",
+        heading: "Pourquoi créer une application mobile pour votre activité brestoise ?",
         paragraphs: [
-          "Mes trois formules couvrent la grande majorité des besoins :",
+          "Vos clients passent plusieurs heures par jour sur leur smartphone, et l'essentiel de ce temps se passe dans des applications — pas dans un navigateur. Être présent sur leur écran d'accueil, c'est être présent dans leur quotidien.",
         ],
         list: [
-          "App Starter — 490€ + 49€/mois : iOS & Android, design sur mesure, contenu dynamique, authentification, déploiement stores, support inclus",
-          "App Premium — 600€ + 49€/mois : Starter + paiement Stripe, notifications push, panel admin web",
-          "App Boutique — 0€ d'installation : pour les e-commerçants, 12% sur les ventes seulement — zéro risque financier",
+          "Commande et réservation en direct : vos clients commandent ou réservent depuis votre app, sans commission de plateforme et sans intermédiaire entre vous et eux",
+          "Notifications push : \"Offre spéciale ce vendredi\", \"Nouveau menu disponible\" — l'information arrive directement sur le téléphone, avec un taux de lecture incomparable à l'email",
+          "Programme de fidélité numérique : tampons virtuels, réductions automatiques, offres d'anniversaire — la carte papier qui ne se perd jamais",
+          "Présence sur l'App Store et Google Play : votre marque visible et téléchargeable à côté des grandes enseignes",
+          "Autonomie totale : un panel admin vous permet de modifier menu, horaires et contenus vous-même, sans repasser par un développeur",
         ],
       },
       {
-        heading: "Brest et le Finistère : ma zone d'intervention principale",
+        heading: "À qui confier la création de votre application à Brest ?",
+        paragraphs: [
+          "Quatre options s'offrent à vous, avec des philosophies très différentes :",
+        ],
+        list: [
+          "L'agence structurée : équipe complète (chef de projet, designers, développeurs), adaptée aux projets d'envergure des grandes entreprises — avec le budget et les délais qui vont avec",
+          "Le développeur local indépendant : un interlocuteur unique qui conçoit, code et publie votre app, des délais courts et un suivi direct — le format le plus adapté aux TPE, restaurateurs, artisans et commerçants",
+          "La plateforme no-code : séduisante sur le papier, mais les applications générées sont régulièrement refusées par l'App Store d'Apple, limitées fonctionnellement et dépendantes d'un abonnement à vie",
+          "Le freelance en ligne (Fiverr, Malt) : qualité très variable, pas de rencontre possible, et un suivi après livraison souvent inexistant",
+        ],
+      },
+      {
+        heading: "Les étapes de création d'une application mobile, de l'idée aux stores",
+        paragraphs: [
+          "Un projet d'application bien mené suit toujours le même chemin. Le connaître vous permet de dialoguer d'égal à égal avec le professionnel que vous choisirez :",
+        ],
+        list: [
+          "1. Le cadrage : on définit qui sont vos utilisateurs, quel problème l'app résout et quelles fonctionnalités sont réellement indispensables au lancement — c'est l'étape qui évite 80% des dérapages",
+          "2. Les maquettes : chaque écran est dessiné et validé avec vous avant d'écrire la moindre ligne de code — modifier une maquette prend des minutes, modifier une app codée prend des jours",
+          "3. Le développement : l'application prend vie, avec des points d'avancement réguliers et des versions de test installées sur votre propre téléphone",
+          "4. Les tests : l'app est éprouvée sur de vrais appareils iOS et Android, dans de vraies conditions (connexion lente, écrans variés, cas limites)",
+          "5. La publication : soumission sur l'App Store et Google Play, avec leurs règles de validation respectives — une étape technique souvent sous-estimée",
+          "6. Le suivi : mises à jour de compatibilité avec les nouvelles versions d'iOS et d'Android, corrections et évolutions — une app vivante est une app qui dure",
+        ],
+      },
+      {
+        heading: "Quelle technologie choisir pour votre application ?",
+        paragraphs: [
+          "C'est la question technique qui a le plus d'impact sur votre budget et vos délais. Le développement \"natif\" consiste à créer deux applications distinctes — une pour iOS, une pour Android — avec deux bases de code à maintenir en parallèle.",
+          "Le développement cross-platform, avec React Native (la technologie créée par Meta et utilisée par Instagram, Airbnb ou Discord), permet de créer une seule application qui fonctionne sur les deux systèmes. Résultat : un projet deux fois plus rapide à développer et à faire évoluer, pour des performances proches du natif.",
+          "Pour la quasi-totalité des projets de commerces, restaurants et services, le cross-platform est aujourd'hui le choix évident. Le natif pur ne se justifie que pour des besoins très spécifiques, comme les jeux 3D exigeants.",
+        ],
+      },
+      {
+        heading: "Les erreurs à éviter quand on lance son application",
+        list: [
+          "Vouloir tout, tout de suite : les meilleures applications lancent avec peu de fonctionnalités très bien faites, puis évoluent avec les retours des vrais utilisateurs",
+          "Négliger le panel d'administration : sans lui, chaque changement de menu ou d'horaire nécessite un développeur — exigez de pouvoir gérer vos contenus vous-même",
+          "Choisir le no-code pour \"tester\" : entre les refus de l'App Store et l'abonnement mensuel perpétuel, le test devient vite plus cher qu'une app sur mesure",
+          "Oublier l'après-livraison : demandez toujours ce qui est prévu pour l'hébergement, le support et les mises à jour de compatibilité",
+          "Copier l'app d'un concurrent : une application réussie résout un problème concret de vos clients, elle ne coche pas des cases",
+        ],
+      },
+      {
+        heading: "Brest et le Finistère : un accompagnement de proximité",
         paragraphs: [
           "Je suis basé à Brest et je travaille avec des clients dans tout le Finistère et la Bretagne : Quimper, Landerneau, Morlaix, Brest métropole (Guipavas, Plougastel-Daoulas, Le Relecq-Kerhuon).",
-          "On peut se rencontrer pour discuter de votre projet, ou tout faire à distance selon votre préférence. Devis gratuit sous 24h — contactez-moi avec votre idée.",
+          "Travailler avec un développeur local, c'est pouvoir se rencontrer autour d'un café pour poser votre idée, montrer l'avancement de vive voix et ajuster rapidement. Et pour ceux qui préfèrent, tout peut aussi se faire à distance — appels vidéo, démos en ligne, livraison numérique.",
+          "Vous avez une idée d'application, même floue ? Contactez-moi : le devis est gratuit, sans engagement, et je réponds sous 24h.",
         ],
       },
       {
         heading: "FAQ — Application mobile à Brest",
         list: [
           "Où êtes-vous basé à Brest ? Je travaille depuis Brest (Finistère, 29200). Je peux me déplacer pour vous rencontrer dans toute la Brest métropole : Guipavas, Plougastel-Daoulas, Le Relecq-Kerhuon, Landerneau.",
-          "Peut-on travailler à distance sans se rencontrer ? Oui. La majorité de mes clients sont suivis entièrement à distance — appels vidéo, démos en ligne, livraison numérique. La rencontre est un plus, pas une obligation.",
-          "Y a-t-il des développeurs d'app mobile moins chers à Brest ? Les agences web brestoises facturent généralement 15 000€ à 60 000€. Il n'existe pas d'autre freelance React Native basé à Brest proposant des apps natives iOS & Android à ce tarif.",
+          "Peut-on travailler à distance sans se rencontrer ? Oui. Une partie de mes clients est suivie entièrement à distance — appels vidéo, démos en ligne, livraison numérique. La rencontre est un plus, pas une obligation.",
+          "Combien de temps faut-il pour créer une application mobile ? Entre 2 et 5 semaines selon la complexité, de la conception à la publication sur l'App Store et Google Play.",
+          "Combien coûte une application mobile à Brest ? Cela dépend des fonctionnalités : paiement en ligne, notifications push, réservation, panel admin. Contactez-moi pour un devis gratuit et détaillé sous 24h, adapté à votre projet.",
           "Intervenez-vous en dehors de Brest ? Oui : Quimper, Morlaix, Landerneau, Rennes, et partout en France à distance.",
-          "Quelle est la différence entre un développeur à Brest et un freelance en ligne ? La proximité géographique : on peut se rencontrer, je connais le tissu économique local, et je suis disponible avec le même fuseau horaire et la même langue sans ambiguïté.",
+          "Quelle est la différence entre un développeur à Brest et un freelance en ligne ? La proximité : on peut se rencontrer, je connais le tissu économique local, et je suis joignable sur le même fuseau horaire, dans la même langue, sans ambiguïté.",
         ],
       },
     ],
