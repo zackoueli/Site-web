@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
+import PhoneDemo from "@/components/PhoneDemo";
 import { SECTEURS } from "@/lib/taxonomy";
 import { Smartphone, CheckCircle2, ArrowRight, MapPin, Quote } from "lucide-react";
 
@@ -297,36 +298,31 @@ export default function AppMobilePage() {
 
         {/* Démo réelle */}
         <section className="py-16 px-4 border-y-[3px] border-black bg-gray-50">
-          <div className="max-w-4xl mx-auto">
-            <p className="mono text-sm font-bold text-[#FF6B35] mb-2">// exemple concret</p>
-            <h2 className="text-2xl font-bold mb-2">
-              Une vraie application <span className="bg-[#FFE234] brutal-border px-2">créée par l&apos;agence</span>
-            </h2>
-            <p className="text-sm text-gray-500 mono mb-8">
-              Naviguez librement dans la démo — c&apos;est l&apos;application réelle d&apos;un restaurant : commande, menu, paiement.
-            </p>
-            <div className="brutal-border brutal-shadow bg-[#1a1a1a] rounded-t-xl p-3 pb-0">
-              <div className="bg-[#2d2d2d] rounded-t-lg px-4 py-2 flex items-center gap-3">
-                <div className="flex gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
-                  <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
-                  <div className="w-3 h-3 rounded-full bg-[#28c840]" />
-                </div>
-                <div className="flex-1 bg-[#3d3d3d] rounded px-3 py-1 mono text-xs text-gray-400 truncate">
-                  demo.pizzeria.breizhapp.tech
-                </div>
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="mono text-sm font-bold text-[#FF6B35] mb-2">// exemple concret</p>
+              <h2 className="text-2xl font-bold mb-2">
+                Une vraie application <span className="bg-[#FFE234] brutal-border px-2">créée par l&apos;agence</span>
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Naviguez librement dans la démo — c&apos;est l&apos;application réelle d&apos;un restaurant :
+                commande en ligne, menu dynamique, panier et paiement.
+              </p>
+              <div className="flex flex-col gap-2 mono text-sm text-gray-500 mb-6">
+                <span className="brutal-border px-3 py-1 bg-white w-fit">✓ Commande & paiement Stripe</span>
+                <span className="brutal-border px-3 py-1 bg-white w-fit">✓ Menu modifiable depuis le panel admin</span>
+                <span className="brutal-border px-3 py-1 bg-white w-fit">✓ iOS & Android</span>
               </div>
-              <div className="w-full overflow-hidden" style={{ height: "520px" }}>
-                <iframe
-                  src="https://demo.pizzeria.breizhapp.tech/"
-                  title="Démo application restaurant créée par l'agence BreizhApp à Brest"
-                  className="w-full h-full border-0 block"
-                  loading="lazy"
-                />
-              </div>
+              <a href="/portfolio" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
+                Voir toutes les réalisations <ArrowRight size={16} />
+              </a>
             </div>
-            <div className="brutal-border border-t-0 bg-[#1a1a1a] h-4 rounded-b-sm" />
-            <div className="brutal-border border-t-0 bg-[#2d2d2d] h-3 mx-8 rounded-b-md" />
+            <div className="flex justify-center">
+              <PhoneDemo
+                src="https://demo.pizzeria.breizhapp.tech/"
+                title="Démo application restaurant créée par l'agence BreizhApp à Brest"
+              />
+            </div>
           </div>
         </section>
 
