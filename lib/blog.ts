@@ -3652,73 +3652,81 @@ export const articles: Article[] = [
     ],
   },
   {
-    slug: "je-veux-creer-une-application-mobile",
+    slug: "comment-creer-une-application-mobile",
     image: {
       src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Hand_holding_Smartphone.jpg/960px-Hand_holding_Smartphone.jpg",
       alt: "Main tenant un smartphone",
       credit: "Photo : Mictlancihuatl — CC BY-SA 4.0, via Wikimedia Commons",
     },
     service: "application-mobile",
-    title: "Je veux créer une application mobile : guide pour démarrer",
+    title: "Comment créer une application mobile : le guide 2026",
     description:
-      "Vous voulez créer une application mobile mais vous ne savez pas comment ? Étapes, coûts, technologies : tout ce qu'il faut savoir avant de vous lancer.",
+      "Les étapes concrètes pour créer une application mobile iOS & Android : cadrage, design, développement, tests, publication.",
     date: "2026-06-13",
-    lastModified: "2026-07-31",
-    readTime: "5 min",
+    lastModified: "2026-08-01",
+    readTime: "6 min",
     category: "Guides",
     sections: [
       {
         paragraphs: [
-          "Vous voulez créer une application mobile. Que ce soit pour votre commerce, votre idée de startup ou un outil professionnel, la création d'une app iOS & Android est aujourd'hui accessible à partir de 490€. Voici comment démarrer concrètement.",
+          "Vous voulez créer une application mobile pour votre commerce, votre idée de projet ou un outil professionnel, mais vous ne savez pas par où commencer. Bonne nouvelle : le processus est balisé et ne demande aucune compétence technique de votre part.",
+          "Voici, étape par étape, comment se déroule concrètement la création d'une application mobile iOS & Android, de l'idée jusqu'à sa publication sur l'App Store et Google Play.",
         ],
       },
       {
-        heading: "Ce qu'il faut décider avant de créer votre app",
-        list: [
-          "iOS, Android ou les deux ? Choisissez les deux dès le départ — avec React Native, le surcoût est minime et vous touchez 100% du marché",
-          "App native ou web app ? Une app native (sur l'App Store) convertit 3× mieux qu'un site mobile — préférez-la pour un usage commercial",
-          "Quelles fonctionnalités en version 1 ? Listez 3 fonctionnalités maximum pour votre première version — vous ajouterez les autres ensuite",
-          "Quel budget ? Comptez dès 490€ pour une app simple avec un freelance React Native, contre 15 000€+ en agence",
-        ],
-      },
-      {
-        heading: "Les étapes de création d'une application mobile",
-        list: [
-          "Brief et devis : décrivez votre idée à un développeur mobile — un bon freelance vous répond sous 24h avec une estimation",
-          "Design UX/UI : les maquettes de votre app, validées écran par écran avant de coder",
-          "Développement : le développeur code l'app, vous suivez l'avancement et donnez vos retours",
-          "Tests : l'app est testée sur vrais appareils iOS et Android avant livraison",
-          "Publication : soumission sur l'App Store (Apple) et Google Play — validation en 1 à 3 jours",
-          "Maintenance : mises à jour, corrections, nouvelles fonctionnalités — prévoyez 49€/mois pour un support continu",
-        ],
-      },
-      {
-        heading: "Pourquoi choisir un développeur freelance plutôt qu'une agence",
+        heading: "Les questions à trancher avant de vous lancer",
         paragraphs: [
-          "La différence de prix est énorme — mais elle s'explique simplement :",
+          "Avant même de contacter un développeur, quelques décisions simplifient tout le projet :",
         ],
         list: [
-          "Une agence facture 15 000€ à 80 000€ parce qu'elle a des équipes entières : chef de projet, designer, développeur iOS, développeur Android, testeur",
-          "Un freelance spécialisé React Native fait tout ça seul avec une technologie cross-platform — vous payez le travail, pas les marges et les frais de structure",
-          "Vous parlez directement à la personne qui code votre app — pas à un intermédiaire qui transmet vos retours",
-          "Le résultat est identique : une vraie app native disponible sur l'App Store et Google Play",
+          "iOS, Android ou les deux ? Viser les deux plateformes dès le départ évite de refaire le travail plus tard — les technologies cross-platform actuelles permettent de développer une seule fois pour toucher tous les utilisateurs",
+          "App native ou simple site mobile ? Une vraie application, présente sur l'App Store et le Google Play Store, inspire davantage confiance et se relance plus facilement qu'un site consulté une fois puis oublié",
+          "Quelles fonctionnalités pour la première version ? Mieux vaut lister 2 à 3 fonctionnalités essentielles pour démarrer, et enrichir l'app progressivement une fois lancée",
+          "Qui va s'en occuper ? Un développeur freelance spécialisé ou une agence — le choix dépend de la taille du projet et du budget disponible",
         ],
       },
       {
-        heading: "Créer une app mobile à Brest et en Bretagne",
+        heading: "Les 6 étapes de création d'une application mobile",
+        list: [
+          "1. Cadrage du projet : vous décrivez votre idée, même de façon imprécise, à un développeur mobile. Un échange permet de clarifier les fonctionnalités et de définir un périmètre réaliste pour la première version",
+          "2. Devis et validation : le développeur vous propose une estimation précise du délai et du contenu du projet, avant tout engagement",
+          "3. Design UX/UI : les écrans de l'application sont maquettés et validés avec vous un par un, avant que la moindre ligne de code ne soit écrite",
+          "4. Développement : le développeur code l'application. Vous recevez des versions de test régulières sur votre téléphone pour suivre l'avancement et donner vos retours",
+          "5. Tests : l'application est testée sur de vrais appareils iOS et Android pour vérifier que tout fonctionne correctement avant la mise en ligne",
+          "6. Publication : l'app est soumise à l'App Store et au Google Play Store. Comptez au minimum 14 jours pour la validation",
+        ],
+      },
+      {
+        heading: "Les erreurs à éviter",
+        list: [
+          "Vouloir tout inclure dès la version 1 : une app trop ambitieuse au départ prend plus de temps à livrer et complique les premiers retours utilisateurs",
+          "Négliger les maquettes : passer directement au développement sans valider le design en amont entraîne des retouches coûteuses en temps plus tard",
+          "Choisir une techno uniquement native iOS ou Android : cela double le travail pour toucher les deux plateformes, alors que le cross-platform permet de développer une seule fois",
+          "Oublier la maintenance : une application a besoin de mises à jour régulières (compatibilité avec les nouvelles versions d'iOS et Android, corrections, nouvelles fonctionnalités) — anticipez ce suivi dès le départ",
+        ],
+      },
+      {
+        heading: "Développeur freelance ou agence : que choisir",
         paragraphs: [
-          "Basé à Brest, je travaille avec des clients de toute la Bretagne et de toute la France. La création d'application mobile ne nécessite pas de se déplacer — tout se passe en visio, avec des points d'avancement réguliers.",
-          "Si vous êtes en Bretagne et cherchez un développeur mobile de proximité, je suis disponible pour un premier appel gratuit pour discuter de votre projet.",
+          "Une agence mobilise une équipe complète — chef de projet, designer, développeur iOS, développeur Android, testeur — ce qui a un coût de structure important.",
+          "Un développeur freelance spécialisé en cross-platform réalise le même travail seul, avec une seule base de code pour les deux plateformes. Vous échangez directement avec la personne qui développe votre application, sans intermédiaire.",
         ],
       },
       {
-        heading: "FAQ — Je veux créer une application mobile",
+        heading: "Créer votre application mobile à Brest et partout en France",
+        paragraphs: [
+          "Basé à Brest, j'accompagne des porteurs de projet dans toute la Bretagne et dans toute la France. La création d'une application mobile ne nécessite aucun déplacement : le cadrage, les validations et le suivi se font en visio ou par échange écrit.",
+          "Vous avez une idée d'application, même encore floue ? Contactez-moi pour un premier échange — devis gratuit et sans engagement, réponse sous 24h.",
+        ],
+      },
+      {
+        heading: "FAQ — Comment créer une application mobile",
         list: [
-          "Dois-je avoir une idée précise avant de contacter un développeur ? Non. Même une idée floue suffit pour un premier échange. Je vous aide à cadrer le projet et à prioriser les fonctionnalités.",
-          "Combien de temps pour créer mon app ? Entre 2 et 5 semaines selon la complexité. Une app Starter simple est livrée en 2-3 semaines.",
-          "Mon app sera-t-elle disponible sur iPhone et Android ? Oui, avec React Native, je développe une seule base de code qui tourne sur iOS et Android. Vous touchez 100% des utilisateurs.",
-          "Comment se passe le suivi du projet ? Je vous envoie des versions de test régulières sur votre téléphone. Vous testez, vous donnez vos retours, on ajuste — jusqu'à ce que l'app vous convienne.",
-          "Que se passe-t-il si je veux modifier l'app après la livraison ? Vous restez propriétaire du code. Je propose un support mensuel à 49€/mois qui inclut les mises à jour et l'hébergement.",
+          "Faut-il avoir une idée précise avant de contacter un développeur ? Non. Une idée générale suffit pour un premier échange — le cadrage sert justement à préciser et prioriser les fonctionnalités.",
+          "Combien de temps prend la création d'une application mobile ? Cela dépend du nombre de fonctionnalités et de leur complexité — un développeur vous donne un délai précis après le cadrage du projet.",
+          "Mon application sera-t-elle disponible sur iPhone et Android ? Avec une technologie cross-platform comme React Native, une seule base de code peut tourner sur iOS et Android, ce qui permet de toucher tous les utilisateurs sans double développement.",
+          "Comment se déroule le suivi pendant le développement ? Vous recevez des versions de test régulières sur votre téléphone, vous donnez vos retours, et les ajustements sont faits jusqu'à ce que l'application vous convienne.",
+          "Que se passe-t-il après la publication de l'app ? Un suivi de maintenance permet de garder l'application compatible avec les nouvelles versions d'iOS et Android, de corriger les éventuels bugs et d'ajouter de nouvelles fonctionnalités.",
         ],
       },
     ],

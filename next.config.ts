@@ -63,6 +63,11 @@ const nextConfig: NextConfig = {
         destination: "/blog/application-mobile-boutique-en-ligne",
         permanent: true,
       },
+      {
+        source: "/blog/je-veux-creer-une-application-mobile",
+        destination: "/blog/comment-creer-une-application-mobile",
+        permanent: true,
+      },
     ];
   },
 };
