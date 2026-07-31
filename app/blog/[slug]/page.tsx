@@ -67,7 +67,7 @@ function ArticleSchema({ article }: { article: NonNullable<ReturnType<typeof get
         url: "https://breizhapp.tech",
       },
       publisher: { "@id": "https://breizhapp.tech/#business" },
-      image: "https://breizhapp.tech/opengraph-image",
+      image: article.image?.src ?? "https://breizhapp.tech/opengraph-image",
       inLanguage: "fr-FR",
     },
     {
@@ -225,6 +225,23 @@ export default async function ArticlePage({ params }: Props) {
             {article.description}
           </p>
         </header>
+
+        {/* Image d'illustration */}
+        {article.image && (
+          <figure className="mb-12">
+            <img
+              src={article.image.src}
+              alt={article.image.alt}
+              className="brutal-border brutal-shadow w-full max-h-96 object-cover rounded-sm"
+              loading="eager"
+            />
+            {article.image.credit && (
+              <figcaption className="mt-2 text-xs text-gray-400 mono text-right">
+                {article.image.credit}
+              </figcaption>
+            )}
+          </figure>
+        )}
 
         {/* Mockup PC — articles site web / comparatifs plateformes */}
         {[

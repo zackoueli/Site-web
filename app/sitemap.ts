@@ -3,7 +3,7 @@ import { articles } from "@/lib/blog";
 
 const STATIC_PAGES: MetadataRoute.Sitemap = [
   { url: "https://breizhapp.tech/",                                       lastModified: new Date("2026-06-11"), changeFrequency: "weekly",  priority: 1.0 },
-  { url: "https://breizhapp.tech/blog",                                   lastModified: new Date("2026-06-11"), changeFrequency: "weekly",  priority: 0.9 },
+  { url: "https://breizhapp.tech/blog",                                   lastModified: new Date("2026-07-31"), changeFrequency: "weekly",  priority: 0.9 },
   { url: "https://breizhapp.tech/services/application-mobile",            lastModified: new Date("2026-07-26"), changeFrequency: "monthly", priority: 0.9 },
   { url: "https://breizhapp.tech/services/site-web",                      lastModified: new Date("2026-05-01"), changeFrequency: "monthly", priority: 0.8 },
   { url: "https://breizhapp.tech/services/plateforme",                    lastModified: new Date("2026-05-01"), changeFrequency: "monthly", priority: 0.8 },

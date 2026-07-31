@@ -7,6 +7,8 @@ export type Article = {
   readTime: string;
   category: string;
   service: string;
+  /** Image d'illustration (vignette blog + en-tête d'article). Le crédit est requis pour les photos Wikimedia Commons. */
+  image?: { src: string; alt: string; credit?: string };
   sections: Section[];
 };
 
@@ -20,12 +22,17 @@ type Section = {
 export const articles: Article[] = [
   {
     slug: "combien-coute-application-mobile",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Hand_holding_smartphone_with_blank_white_screen.jpg/960px-Hand_holding_smartphone_with_blank_white_screen.jpg",
+      alt: "Main tenant un smartphone à écran blanc",
+      credit: "Photo : Santeri Viinamäki — CC BY-SA 4.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Application mobile : combien ça coûte en 2026 ?",
     description:
       "Prix d'une app iOS & Android selon les fonctionnalités : paiement Stripe, notifications push. Grille tarifaire réelle d'un développeur freelance à Brest.",
     date: "2025-03-15",
-    lastModified: "2026-06-01",
+    lastModified: "2026-07-31",
     readTime: "5 min",
     category: "Tarifs",
     sections: [
@@ -94,12 +101,17 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-restaurant",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Empty_restaurant_interior_HC08164.jpg/960px-Empty_restaurant_interior_HC08164.jpg",
+      alt: "Salle de restaurant avec tables dressées",
+      credit: "Photo : Community Archives — CC0, via Wikimedia Commons",
+    },
     service: "restaurant",
     title: "Application mobile restaurant : guide complet 2026",
     description:
       "Commande en ligne, fidélité, réservation : tout ce qu'une application restaurant doit avoir, sans commission Uber Eats. Devis gratuit sous 24h.",
     date: "2026-05-11",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "6 min",
     category: "Restaurants",
     sections: [
@@ -156,11 +168,17 @@ export const articles: Article[] = [
   },
   {
     slug: "react-native-vs-flutter",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/VS_Code_Screenshot.png/960px-VS_Code_Screenshot.png",
+      alt: "Éditeur de code Visual Studio Code affichant du code source",
+      credit: "Image : Cycling2 — CC0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "React Native vs Flutter 2026 : lequel choisir ?",
     description:
       "React Native ou Flutter pour votre app iOS & Android ? Performance, coût, écosystème : le comparatif complet d'un développeur freelance en 2026.",
     date: "2026-05-11",
+    lastModified: "2026-07-31",
     readTime: "7 min",
     category: "Tech",
     sections: [
@@ -207,12 +225,17 @@ export const articles: Article[] = [
   },
   {
     slug: "developpeur-freelance-vs-agence",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Desks_in_an_open_office_space_%28Unsplash%29.jpg/960px-Desks_in_an_open_office_space_%28Unsplash%29.jpg",
+      alt: "Open space d'agence avec bureaux et ordinateurs",
+      credit: "Photo : Crew — CC0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Freelance vs agence app mobile : lequel choisir ?",
     description:
       "Freelance ou agence pour votre application mobile ? Prix, délais, communication : le comparatif complet pour choisir selon votre budget et votre projet.",
     date: "2026-04-20",
-    lastModified: "2026-06-01",
+    lastModified: "2026-07-31",
     readTime: "5 min",
     category: "Conseils",
     sections: [
@@ -274,12 +297,17 @@ export const articles: Article[] = [
   },
   {
     slug: "cout-reel-site-shopify",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Mini_shopping_cart_placed_on_a_table_next_to_a_laptop_in_a_modern_office_setting.jpg/960px-Mini_shopping_cart_placed_on_a_table_next_to_a_laptop_in_a_modern_office_setting.jpg",
+      alt: "Mini caddie posé à côté d'un ordinateur portable",
+      credit: "Photo : Shixart1985 — CC BY 2.0, via Wikimedia Commons",
+    },
     service: "ecommerce",
     title: "Shopify 2026 : coût réel, commissions et apps",
     description:
       "Shopify coûte bien plus que son abonnement de base. Commissions, apps payantes, thèmes : le vrai prix sur 2 ans et ce qu'une app sur mesure change pour vous.",
     date: "2026-05-11",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "8 min",
     category: "Comparatifs",
     sections: [
@@ -377,12 +405,17 @@ export const articles: Article[] = [
   },
   {
     slug: "cout-reel-site-wix",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Close-up_of_a_woman_looking_at_a_credit_card_while_working_on_her_laptop.jpg/960px-Close-up_of_a_woman_looking_at_a_credit_card_while_working_on_her_laptop.jpg",
+      alt: "Personne examinant une carte bancaire devant son ordinateur portable",
+      credit: "Photo : Shixart1985 — CC BY 2.0, via Wikimedia Commons",
+    },
     service: "site-web",
     title: "Wix prix 2026 : combien coûte un site pro ?",
     description:
       "Wix affiche \"gratuit\" mais le prix d'un vrai site pro grimpe vite : abonnement, apps, options. Le coût réel sur 2 ans et l'alternative sur mesure.",
     date: "2026-05-11",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "5 min",
     category: "Comparatifs",
     sections: [
@@ -453,12 +486,17 @@ export const articles: Article[] = [
   },
   {
     slug: "cout-reel-planity",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Hair_salon_-_Arlington%2C_MA.jpg/960px-Hair_salon_-_Arlington%2C_MA.jpg",
+      alt: "Intérieur d'un salon de coiffure",
+      credit: "Photo : Daderot — CC0, via Wikimedia Commons",
+    },
     service: "coiffeur",
     title: "Planity prix 2026 : le vrai coût pour un salon",
     description:
       "Planity : ce que comprend l'abonnement, les limites du modèle SaaS pour votre salon, et l'alternative où vous possédez votre outil de réservation.",
     date: "2026-05-11",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "8 min",
     category: "Comparatifs",
     sections: [
@@ -551,12 +589,17 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-pas-chere",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Smartphone_Use.jpg/960px-Smartphone_Use.jpg",
+      alt: "Personne utilisant un smartphone",
+      credit: "Photo : Océanos y dados — CC0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Application mobile pas chère : le guide iOS & Android",
     description:
       "Une app iOS & Android professionnelle à petit prix : c'est possible avec un freelance React Native. Vrais leviers d'économie, pièges à éviter, devis gratuit.",
     date: "2026-05-11",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "6 min",
     category: "Tarifs",
     sections: [
@@ -637,11 +680,17 @@ export const articles: Article[] = [
   // --- Nouveaux articles SEO ---
   {
     slug: "squarespace-tarif-prix-2025",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Close-up_view_of_a_laptop_keyboard_while_in_use%2C_showcasing_detailed_key_layout_and_lighting_effects.jpg/960px-Close-up_view_of_a_laptop_keyboard_while_in_use%2C_showcasing_detailed_key_layout_and_lighting_effects.jpg",
+      alt: "Clavier d'ordinateur portable en cours d'utilisation",
+      credit: "Photo : Shixart1985 — CC BY 2.0, via Wikimedia Commons",
+    },
     service: "site-web",
     title: "Squarespace tarif 2025 : prix et vraie valeur",
     description:
       "Prix Squarespace 2025 : plans Personal, Business, Commerce — ce que coûte vraiment Squarespace pour un site pro. Comparatif avec une solution sur mesure.",
     date: "2026-04-20",
+    lastModified: "2026-07-31",
     readTime: "5 min",
     category: "Comparatifs",
     sections: [
@@ -701,11 +750,17 @@ export const articles: Article[] = [
   },
   {
     slug: "comparatif-createurs-site-web-prix-2025",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Business_professional_engages_in_online_shopping_from_home_workspace_while_using_credit_card.jpg/960px-Business_professional_engages_in_online_shopping_from_home_workspace_while_using_credit_card.jpg",
+      alt: "Comparaison d'offres en ligne depuis un bureau à domicile",
+      credit: "Photo : Shixart1985 — CC BY 2.0, via Wikimedia Commons",
+    },
     service: "site-web",
     title: "Wix, Squarespace, Webflow : comparatif prix 2025",
     description:
       "Comparatif prix 2025 : Wix, Squarespace, Webflow, Jimdo. Quel constructeur de site web est le moins cher et quelle alternative choisir ?",
     date: "2026-04-20",
+    lastModified: "2026-07-31",
     readTime: "8 min",
     category: "Comparatifs",
     sections: [
@@ -766,11 +821,17 @@ export const articles: Article[] = [
   },
   {
     slug: "tarif-creation-site-internet-2025",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Educaci%C3%B3n_y_TIC.jpg",
+      alt: "Bureau avec ordinateur portable, smartphone et carnet de notes",
+      credit: "Photo : FirmBee — CC0, via Wikimedia Commons",
+    },
     service: "site-web",
     title: "Tarif création site internet 2025 : le vrai prix",
     description:
       "Quel est le prix d'un site internet en 2025 ? Freelance, agence, constructeur DIY (Wix, Squarespace) — comparatif complet des tarifs de création de site web.",
     date: "2026-04-20",
+    lastModified: "2026-07-31",
     readTime: "7 min",
     category: "Tarifs",
     sections: [
@@ -851,11 +912,17 @@ export const articles: Article[] = [
   },
   {
     slug: "site-web-restaurant-brest",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Restaurant_table_at_Amantaka_luxury_Resort_%26_Hotel_in_Luang_Prabang_Laos.jpg/960px-Restaurant_table_at_Amantaka_luxury_Resort_%26_Hotel_in_Luang_Prabang_Laos.jpg",
+      alt: "Table de restaurant dressée",
+      credit: "Photo : Basile Morin — CC BY-SA 4.0, via Wikimedia Commons",
+    },
     service: "restaurant",
     title: "Site web pour restaurant à Brest : guide 2025",
     description:
       "Menu en ligne, réservation, commande à emporter : tout ce qu'un site web de restaurant à Brest doit avoir en 2025. Tarifs et conseils d'un développeur local.",
     date: "2026-04-25",
+    lastModified: "2026-07-31",
     readTime: "6 min",
     category: "Restaurants",
     sections: [
@@ -919,11 +986,17 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-restaurant-bretagne",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Cr%C3%AAperie_bretonne_Anna%C3%ADk_%2836634955503%29.jpg/960px-Cr%C3%AAperie_bretonne_Anna%C3%ADk_%2836634955503%29.jpg",
+      alt: "Devanture d'une crêperie bretonne",
+      credit: "Photo : Jorge Franganillo — CC BY 2.0, via Wikimedia Commons",
+    },
     service: "restaurant",
     title: "App mobile restaurant en Bretagne : guide 2026",
     description:
       "App mobile pour restaurant en Bretagne : fonctionnalités, tarifs et retour sur investissement. Guide par un développeur freelance basé à Brest.",
     date: "2026-04-25",
+    lastModified: "2026-07-31",
     readTime: "7 min",
     category: "Restaurants",
     sections: [
@@ -996,11 +1069,17 @@ export const articles: Article[] = [
   },
   {
     slug: "creation-site-pizzeria-brest",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Pizza_in_oven.jpg/960px-Pizza_in_oven.jpg",
+      alt: "Pizza en cuisson dans un four",
+      credit: "Photo : Dimitri Neyt — domaine public, via Wikimedia Commons",
+    },
     service: "restaurant",
     title: "Site web pizzeria à Brest : tarifs et guide 2025",
     description:
       "Site web pour votre pizzeria à Brest : commande en ligne, menu digital, référencement local. Tarifs et conseils d'un développeur freelance brestois.",
     date: "2026-04-25",
+    lastModified: "2026-07-31",
     readTime: "6 min",
     category: "Restaurants",
     sections: [
@@ -1069,12 +1148,17 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-brest",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Brest_Pont_de_Recouvrance_3.jpg/960px-Brest_Pont_de_Recouvrance_3.jpg",
+      alt: "Pont de Recouvrance à Brest",
+      credit: "Photo : Zairon — CC BY-SA 4.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Application mobile à Brest : le guide pour créer votre app",
     description:
       "Créer une application mobile à Brest : à qui confier votre projet, les étapes de A à Z, la bonne technologie et les erreurs à éviter. Guide par un développeur local.",
     date: "2026-04-30",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "7 min",
     category: "Local",
     sections: [
@@ -1164,11 +1248,17 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-artisan-commercant",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Vienna_-_Carpenter_workshop_tools_-_0027.jpg/960px-Vienna_-_Carpenter_workshop_tools_-_0027.jpg",
+      alt: "Outils dans un atelier d'artisan menuisier",
+      credit: "Photo : Jorge Royan — CC BY-SA 3.0, via Wikimedia Commons",
+    },
     service: "site-web",
     title: "App mobile pour artisan & commerçant : guide",
     description:
       "Boulanger, boucher, fleuriste : pourquoi une application mobile sur mesure dépasse Wix ou Planity pour fidéliser vos clients et booster vos ventes.",
     date: "2026-05-09",
+    lastModified: "2026-07-31",
     readTime: "7 min",
     category: "Guides",
     sections: [
@@ -1253,11 +1343,17 @@ export const articles: Article[] = [
   },
   {
     slug: "shopify-wix-vs-application-mobile-sur-mesure",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Woman_shops_online_with_a_small_shopping_cart_and_cash_in_a_modern_office_setting_during_the_afternoon.jpg/960px-Woman_shops_online_with_a_small_shopping_cart_and_cash_in_a_modern_office_setting_during_the_afternoon.jpg",
+      alt: "Achat en ligne avec mini caddie devant un ordinateur",
+      credit: "Photo : Shixart1985 — CC BY 2.0, via Wikimedia Commons",
+    },
     service: "ecommerce",
     title: "Shopify & Wix vs app sur mesure : comparatif",
     description:
       "Coûts cachés, commissions, limitations : ce que Wix et Shopify ne disent pas. Pourquoi une app mobile sur mesure est souvent plus rentable à 24 mois.",
     date: "2026-05-09",
+    lastModified: "2026-07-31",
     readTime: "8 min",
     category: "Comparatifs",
     sections: [
@@ -1344,11 +1440,17 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-boutique-en-ligne",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Signing_for_a_parcel_delivery_on_a_phone.jpg/960px-Signing_for_a_parcel_delivery_on_a_phone.jpg",
+      alt: "Signature d'une livraison de colis sur smartphone",
+      credit: "Photo : Meanwell Packaging — CC BY 2.0, via Wikimedia Commons",
+    },
     service: "ecommerce",
     title: "Boutique en ligne : app mobile vs site web",
     description:
       "Application mobile ou site e-commerce ? Conversion, fidélisation, coûts : le guide pour choisir la meilleure solution pour votre boutique en ligne.",
     date: "2026-05-09",
+    lastModified: "2026-07-31",
     readTime: "7 min",
     category: "Guides",
     sections: [
@@ -1453,10 +1555,16 @@ export const articles: Article[] = [
   },
   {
     slug: "combien-coute-site-web-sur-mesure",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Programming_code.jpg/960px-Programming_code.jpg",
+      alt: "Code source affiché à l'écran",
+      credit: "Photo : Martin Vorel — CC BY-SA 4.0, via Wikimedia Commons",
+    },
     service: "site-web",
     title: "Site web sur mesure : prix réels en 2026",
     description: "Combien coûte un site web sur mesure en 2026 ? Vitrine, e-commerce, plateforme : tarifs réels d'un développeur freelance vs agence. Devis gratuit 48h.",
     date: "2026-05-15",
+    lastModified: "2026-07-31",
     readTime: "7 min",
     category: "Tarifs",
     sections: [
@@ -1568,10 +1676,16 @@ export const articles: Article[] = [
   },
   {
     slug: "creer-plateforme-digitale-sur-mesure",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Grafana_screenshot_%282018%29.png/960px-Grafana_screenshot_%282018%29.png",
+      alt: "Tableau de bord de supervision d'une plateforme digitale",
+      credit: "Image : Joel Kennedy — domaine public, via Wikimedia Commons",
+    },
     service: "plateforme",
     title: "Plateforme digitale sur mesure : guide 2026",
     description: "Créer une plateforme digitale sur mesure : espace admin, espace client, multi-rôles. Fonctionnalités, tarifs et alternatives au no-code. Devis gratuit.",
     date: "2026-05-15",
+    lastModified: "2026-07-31",
     readTime: "8 min",
     category: "Guides",
     sections: [
@@ -1671,11 +1785,16 @@ export const articles: Article[] = [
   },
   {
     slug: "wordpress-vs-sur-mesure",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/WordPress_Dashboard.png/960px-WordPress_Dashboard.png",
+      alt: "Tableau de bord d'administration WordPress",
+      credit: "Image : WordPress.org — GPL, via Wikimedia Commons",
+    },
     service: "site-web",
     title: "WordPress vs sur mesure : comparatif complet 2026",
     description: "WordPress ou site sur mesure : performances, coûts, SEO, sécurité. Le comparatif complet pour choisir la bonne solution selon votre projet en 2026.",
     date: "2026-05-15",
-    lastModified: "2026-06-01",
+    lastModified: "2026-07-31",
     readTime: "7 min",
     category: "Comparatifs",
     sections: [
@@ -1782,10 +1901,16 @@ export const articles: Article[] = [
   },
   {
     slug: "no-code-vs-developpeur",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Screen-python-code-matplotlib-physics-simulation.jpg/960px-Screen-python-code-matplotlib-physics-simulation.jpg",
+      alt: "Écran d'ordinateur affichant du code de programmation",
+      credit: "Photo : MikeRun — CC BY-SA 4.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "No-code vs dev : Bubble, Glide ou sur mesure ?",
     description: "No-code (Bubble, Glide, Adalo) ou développeur sur mesure ? Coûts, limites, performances : le comparatif complet pour créer votre app ou plateforme en 2026.",
     date: "2026-05-15",
+    lastModified: "2026-07-31",
     readTime: "7 min",
     category: "Comparatifs",
     sections: [
@@ -1897,10 +2022,16 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-coiffeur-salon",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Salon_z_perukami_Hair_Lux_%E2%80%93_wn%C4%99trze.jpg/960px-Salon_z_perukami_Hair_Lux_%E2%80%93_wn%C4%99trze.jpg",
+      alt: "Intérieur d'un salon de coiffure moderne",
+      credit: "Photo : Tabrus — CC BY-SA 4.0, via Wikimedia Commons",
+    },
     service: "coiffeur",
     title: "App mobile pour salon de coiffure : guide 2026",
     description: "App mobile salon de coiffure : réservation, fidélité, notifications push. Alternative à Planity sans commission. Tarifs et fonctionnalités 2026.",
     date: "2026-05-15",
+    lastModified: "2026-07-31",
     readTime: "6 min",
     category: "Secteurs",
     sections: [
@@ -1981,10 +2112,16 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-salle-sport-fitness",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Health_club_in_Gothenburg_Sweden_in_March_2025.jpg/960px-Health_club_in_Gothenburg_Sweden_in_March_2025.jpg",
+      alt: "Salle de sport avec équipements de fitness",
+      credit: "Photo : R. Henrik Nilsson — CC BY 4.0, via Wikimedia Commons",
+    },
     service: "salle-de-sport",
     title: "App mobile salle de sport : fonctionnalités 2026",
     description: "App mobile salle de sport : abonnements, réservation de cours, suivi des séances, fidélité. Tarifs et fonctionnalités clés en 2026.",
     date: "2026-05-15",
+    lastModified: "2026-07-31",
     readTime: "6 min",
     category: "Secteurs",
     sections: [
@@ -2057,11 +2194,16 @@ export const articles: Article[] = [
   },
   {
     slug: "site-web-artisan-sur-mesure",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Werkstatt_eines_Schiffszimmerers_im_Altonaer_Museum_IMG_5128_edit.jpg/960px-Werkstatt_eines_Schiffszimmerers_im_Altonaer_Museum_IMG_5128_edit.jpg",
+      alt: "Atelier d'artisan avec outils de menuiserie",
+      credit: "Photo : Christoph Braun — CC0, via Wikimedia Commons",
+    },
     service: "site-web",
     title: "Site web pour artisan : éviter les constructeurs",
     description: "Site web pour artisan : pourquoi éviter Wix et les constructeurs gratuits. Ce qu'un site sur mesure apporte en SEO local, devis en ligne et crédibilité.",
     date: "2026-05-15",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "6 min",
     category: "Secteurs",
     sections: [
@@ -2149,11 +2291,16 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-hotel-hebergement",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Reception_desk_at_Hotel_Esplanade_in_Stockholm.jpg/960px-Reception_desk_at_Hotel_Esplanade_in_Stockholm.jpg",
+      alt: "Comptoir de réception d'un hôtel",
+      credit: "Photo : JIP — CC BY-SA 4.0, via Wikimedia Commons",
+    },
     service: "hotel",
     title: "App mobile pour hôtel : guide complet 2026",
     description: "Application mobile pour hôtel et hébergement : check-in digital, conciergerie, fidélité, room service. Fonctionnalités clés et tarifs 2026. Devis gratuit.",
     date: "2026-05-15",
-    lastModified: "2026-06-22",
+    lastModified: "2026-07-31",
     readTime: "8 min",
     category: "Secteurs",
     sections: [
@@ -2245,10 +2392,16 @@ export const articles: Article[] = [
   },
   {
     slug: "developpeur-freelance-quimper",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Exterior_of_the_Cath%C3%A9drale_of_Quimper.jpg/960px-Exterior_of_the_Cath%C3%A9drale_of_Quimper.jpg",
+      alt: "Cathédrale Saint-Corentin de Quimper",
+      credit: "Photo : PtiBzh — CC0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Développeur freelance à Quimper : web et mobile",
     description: "Développeur freelance à Quimper : applications mobiles iOS & Android, sites web et plateformes digitales sur mesure. Devis gratuit sous 48h, livraison en Bretagne.",
     date: "2026-05-16",
+    lastModified: "2026-07-31",
     readTime: "5 min",
     category: "Local",
     sections: [
@@ -2317,10 +2470,16 @@ export const articles: Article[] = [
   },
   {
     slug: "developpeur-freelance-rennes",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Vue_sud_de_la_place_du_parlement_de_Bretagne%2C_Rennes%2C_France.jpg/960px-Vue_sud_de_la_place_du_parlement_de_Bretagne%2C_Rennes%2C_France.jpg",
+      alt: "Place du Parlement de Bretagne à Rennes",
+      credit: "Photo : Édouard Hue — CC BY-SA 3.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Développeur freelance à Rennes : web et mobile",
     description: "Développeur freelance à Rennes : applications mobiles iOS & Android, sites web et plateformes sur mesure. Basé en Bretagne, devis gratuit sous 48h.",
     date: "2026-05-16",
+    lastModified: "2026-07-31",
     readTime: "5 min",
     category: "Local",
     sections: [
@@ -2389,11 +2548,16 @@ export const articles: Article[] = [
   },
   {
     slug: "creation-site-web-brest",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Brest_-_Port_de_plaisance_du_Ch%C3%A2teau2.jpg/960px-Brest_-_Port_de_plaisance_du_Ch%C3%A2teau2.jpg",
+      alt: "Port de plaisance du Château à Brest",
+      credit: "Photo : Kev22 — CC BY-SA 4.0, via Wikimedia Commons",
+    },
     service: "site-web",
     title: "Création site web à Brest : tarifs 2026",
     description: "Création site web à Brest : vitrine, e-commerce, plateforme sur mesure. Développeur freelance local, SEO optimisé. Devis gratuit sous 24h.",
     date: "2026-05-16",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "5 min",
     category: "Local",
     sections: [
@@ -2465,10 +2629,16 @@ export const articles: Article[] = [
   },
   {
     slug: "developpeur-application-mobile-bretagne",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/00_5181_Bretagne_-_C%C3%B4te_de_Granit_Rose.jpg/960px-00_5181_Bretagne_-_C%C3%B4te_de_Granit_Rose.jpg",
+      alt: "Côte de granit rose en Bretagne",
+      credit: "Photo : W. Bulach — CC BY-SA 4.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Développeur application mobile en Bretagne",
     description: "Développeur application mobile en Bretagne : iOS & Android sur mesure, sites web, plateformes. Basé à Brest, Finistère. Devis gratuit sous 48h.",
     date: "2026-05-16",
+    lastModified: "2026-07-31",
     readTime: "5 min",
     category: "Local",
     sections: [
@@ -2539,10 +2709,16 @@ export const articles: Article[] = [
   },
   {
     slug: "creer-application-mobile-sans-coder",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/OnePlus_Nord_smartphone_displaying_Android_home_screen.jpg/960px-OnePlus_Nord_smartphone_displaying_Android_home_screen.jpg",
+      alt: "Smartphone affichant un écran d'accueil avec applications",
+      credit: "Photo : Gannu03 — CC BY-SA 4.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "App mobile sans coder : guide honnête 2026",
     description: "No-code, low-code ou développeur ? Le guide honnête pour créer votre application mobile sans savoir coder — limites, coûts et quand faire appel à un pro.",
     date: "2026-05-18",
+    lastModified: "2026-07-31",
     readTime: "7 min",
     category: "Guides",
     sections: [
@@ -2629,10 +2805,16 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-prise-de-rdv",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Business_and_technology_concept_hand_holding_smartphone_and_search_bar_%2852917310335%29.jpg/960px-Business_and_technology_concept_hand_holding_smartphone_and_search_bar_%2852917310335%29.jpg",
+      alt: "Main tenant un smartphone avec interface de recherche",
+      credit: "Photo : Jernej Furman — CC BY 2.0, via Wikimedia Commons",
+    },
     service: "reservation-prise-de-rdv",
     title: "App mobile prise de RDV : guide complet 2026",
     description: "Application mobile de prise de rendez-vous en ligne : fonctionnalités, coûts, alternatives à Doctolib et Planity. Guide complet pour professionnels en 2026.",
     date: "2026-05-18",
+    lastModified: "2026-07-31",
     readTime: "6 min",
     category: "Guides",
     sections: [
@@ -2708,11 +2890,16 @@ export const articles: Article[] = [
   },
   {
     slug: "application-mobile-fidelite-clients",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Barista_prepares_espresso_at_coffee_shop.jpg/960px-Barista_prepares_espresso_at_coffee_shop.jpg",
+      alt: "Barista préparant un café dans un coffee shop",
+      credit: "Photo : Shixart1985 — CC BY 2.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "App fidélité clients : boostez vos ventes 2026",
     description: "App fidélité clients : carte de points, offres exclusives, notifications push. Fidélisez vos clients sans commission à une plateforme tierce. Devis gratuit.",
     date: "2026-05-18",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "6 min",
     category: "Guides",
     sections: [
@@ -2797,10 +2984,16 @@ export const articles: Article[] = [
   },
   {
     slug: "cout-maintenance-application-mobile",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/USB_port_solder_points_on_laptop_motherboard.JPG/960px-USB_port_solder_points_on_laptop_motherboard.JPG",
+      alt: "Réparation d'une carte mère d'ordinateur portable",
+      credit: "Photo : Disk Depot Ltd. — CC BY-SA 4.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Maintenance app mobile : coûts réels 2026",
     description: "Combien coûte la maintenance d'une application mobile ? Mises à jour iOS/Android, bugs, hébergement : le vrai coût après la livraison expliqué clairement.",
     date: "2026-05-18",
+    lastModified: "2026-07-31",
     readTime: "6 min",
     category: "Tarifs",
     sections: [
@@ -2883,10 +3076,16 @@ export const articles: Article[] = [
   },
   {
     slug: "progressive-web-app-vs-application-native",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Responsive_Web_Design_for_Desktop%2C_Notebook%2C_Tablet_and_Mobile_Phone.png/960px-Responsive_Web_Design_for_Desktop%2C_Notebook%2C_Tablet_and_Mobile_Phone.png",
+      alt: "Design web responsive sur ordinateur, tablette et mobile",
+      credit: "Image : Muhammad Rafizeldi — CC BY-SA 3.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "PWA vs application native : que choisir en 2026 ?",
     description: "Progressive Web App ou application native iOS/Android ? Performances, coûts, App Store, offline : le comparatif complet pour choisir la bonne solution en 2026.",
     date: "2026-05-18",
+    lastModified: "2026-07-31",
     readTime: "7 min",
     category: "Comparatifs",
     sections: [
@@ -2976,11 +3175,16 @@ export const articles: Article[] = [
 
   {
     slug: "application-mobile-coiffeur",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Barber_shop%2C_Quebec_city%2C_Canada.jpg/960px-Barber_shop%2C_Quebec_city%2C_Canada.jpg",
+      alt: "Intérieur d'un salon de barbier",
+      credit: "Photo : Wilfredor — CC0, via Wikimedia Commons",
+    },
     service: "coiffeur",
     title: "Application mobile coiffeur : réservation & fidélité",
     description: "App iOS & Android pour salon de coiffure : réservation 24h/24, programme de fidélité, notifications push. L'alternative à Planity. Freelance à Brest.",
     date: "2026-06-01",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "7 min",
     category: "Guides",
     sections: [
@@ -3069,10 +3273,16 @@ export const articles: Article[] = [
 
   {
     slug: "comment-fideliser-clients-application-mobile",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Serving_coffee_in_a_cafe_during_the_morning_hours_with_a_waiter_carrying_a_tray_of_drinks_for_customers.jpg/960px-Serving_coffee_in_a_cafe_during_the_morning_hours_with_a_waiter_carrying_a_tray_of_drinks_for_customers.jpg",
+      alt: "Service du café dans un établissement avec clients",
+      credit: "Photo : Shixart1985 — CC BY 2.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Fidéliser ses clients avec une app mobile : guide",
     description: "Programme de fidélité numérique via une application mobile : tampons virtuels, push ciblées, offres personnalisées. Guide complet pour commerçants.",
     date: "2026-06-01",
+    lastModified: "2026-07-31",
     readTime: "5 min",
     category: "Guides",
     sections: [
@@ -3120,12 +3330,17 @@ export const articles: Article[] = [
 
   {
     slug: "creation-application-mobile-bretagne",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/.00_0934_Felsgebilde_an_der_Rosa-Granit-K%C3%BCste_%28C%C3%B4te_de_Granit_Rose%29.jpg/960px-.00_0934_Felsgebilde_an_der_Rosa-Granit-K%C3%BCste_%28C%C3%B4te_de_Granit_Rose%29.jpg",
+      alt: "Rochers de la côte de granit rose en Bretagne",
+      credit: "Photo : W. Bulach — CC BY-SA 4.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Création application mobile en Bretagne",
     description:
       "Création d'application mobile en Bretagne : développeur React Native freelance à Brest. App iOS & Android sur mesure pour les entreprises bretonnes. Devis 24h.",
     date: "2026-06-13",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "5 min",
     category: "Local",
     sections: [
@@ -3186,12 +3401,17 @@ export const articles: Article[] = [
   },
   {
     slug: "developpeur-application-mobile-finistere",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Pointe_du_Raz_bei_Sonnenuntergang.jpg/960px-Pointe_du_Raz_bei_Sonnenuntergang.jpg",
+      alt: "Pointe du Raz au coucher du soleil, Finistère",
+      credit: "Photo : Stephan Sprinz — CC BY 4.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Développeur app mobile Finistère — Brest, Quimper",
     description:
       "Développeur application mobile dans le Finistère : Brest, Quimper, Morlaix. App iOS & Android sur mesure. Freelance local, devis gratuit sous 24h.",
     date: "2026-06-13",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "4 min",
     category: "Local",
     sections: [
@@ -3243,11 +3463,17 @@ export const articles: Article[] = [
   },
   {
     slug: "j-ai-une-idee-d-application-mobile",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Busy_people_at_a_coffee_shop_%28Unsplash%29.jpg/960px-Busy_people_at_a_coffee_shop_%28Unsplash%29.jpg",
+      alt: "Personnes travaillant dans un café",
+      credit: "Photo : Tim Gouw — CC0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "J'ai une idée d'application mobile : par où commencer ?",
     description:
       "Vous avez une idée d'app mobile mais vous ne savez pas comment la concrétiser ? Ce guide vous explique les étapes, les coûts et comment trouver le bon développeur.",
     date: "2026-06-13",
+    lastModified: "2026-07-31",
     readTime: "6 min",
     category: "Guides",
     sections: [
@@ -3333,11 +3559,17 @@ export const articles: Article[] = [
   },
   {
     slug: "faire-developper-application-mobile",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Working_Late_%28Unsplash%29.jpg/960px-Working_Late_%28Unsplash%29.jpg",
+      alt: "Développeur travaillant sur un ordinateur portable",
+      credit: "Photo : Muhammad Raufan Yusup — CC0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Faire développer une application mobile : guide complet 2026",
     description:
       "Combien ça coûte de faire développer une application mobile ? Freelance, agence, no-code : comparatif complet pour choisir la bonne option selon votre budget.",
     date: "2026-06-13",
+    lastModified: "2026-07-31",
     readTime: "7 min",
     category: "Guides",
     sections: [
@@ -3421,12 +3653,17 @@ export const articles: Article[] = [
   },
   {
     slug: "je-veux-creer-une-application-mobile",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Hand_holding_Smartphone.jpg/960px-Hand_holding_Smartphone.jpg",
+      alt: "Main tenant un smartphone",
+      credit: "Photo : Mictlancihuatl — CC BY-SA 4.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Je veux créer une application mobile : guide pour démarrer",
     description:
       "Vous voulez créer une application mobile mais vous ne savez pas comment ? Étapes, coûts, technologies : tout ce qu'il faut savoir avant de vous lancer.",
     date: "2026-06-13",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "5 min",
     category: "Guides",
     sections: [
@@ -3488,11 +3725,16 @@ export const articles: Article[] = [
   },
   {
     slug: "creer-photobooth-digital-guide-complet",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Photo_Booth_in_Malaga.jpg/960px-Photo_Booth_in_Malaga.jpg",
+      alt: "Cabine photobooth dans une rue",
+      credit: "Photo : Daniel Capilla — CC BY-SA 4.0, via Wikimedia Commons",
+    },
     service: "plateforme",
     title: "Photobooth digital : logiciel, application et guide 2026",
     description: "Photobooth digital : fonctionnement, achat ou location, choix du logiciel, et comment une application sur mesure équipe loueurs et photographes pros.",
     date: "2026-06-23",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "7 min",
     category: "Guides",
     sections: [
@@ -3623,12 +3865,17 @@ export const articles: Article[] = [
   },
   {
     slug: "panel-admin-site-web-application-mobile",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Grafana_dashboard_%282016%29.png/960px-Grafana_dashboard_%282016%29.png",
+      alt: "Tableau de bord d'administration avec graphiques et statistiques",
+      credit: "Image : Linux Screenshots — CC BY 2.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Panel admin site web & application mobile : le guide",
     description:
       "Chaque site et application BreizhApp inclut un panel d'administration sur mesure : menu, commandes, statistiques — gérez tout en autonomie totale.",
     date: "2026-06-29",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "6 min",
     category: "Conseils",
     sections: [
@@ -3712,12 +3959,17 @@ export const articles: Article[] = [
   },
   {
     slug: "panel-admin-salon-coiffure",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Inside_the_Hair_Salon_%285577833869%29.jpg/960px-Inside_the_Hair_Salon_%285577833869%29.jpg",
+      alt: "Intérieur d'un salon de coiffure avec fauteuils",
+      credit: "Photo : johnrosman — CC BY 2.0, via Wikimedia Commons",
+    },
     service: "coiffeur",
     title: "Panel admin salon de coiffure : RDV, prestations, équipe",
     description:
       "Le panel d'administration inclus pour les salons de coiffure : rendez-vous, prestations, équipe, galerie et messages depuis un seul tableau de bord.",
     date: "2026-06-29",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "5 min",
     category: "Secteurs",
     sections: [
@@ -3837,12 +4089,17 @@ export const articles: Article[] = [
   },
   {
     slug: "panel-admin-restaurant-pizzeria",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Wood-fired_Pizza_Oven_at_Baronessa_Italian_Restaurant.jpg/960px-Wood-fired_Pizza_Oven_at_Baronessa_Italian_Restaurant.jpg",
+      alt: "Four à pizza au feu de bois dans un restaurant italien",
+      credit: "Photo : Zacatillo1 — CC BY-SA 4.0, via Wikimedia Commons",
+    },
     service: "restaurant",
     title: "Panel admin restaurant & pizzeria : menu et commandes",
     description:
       "Le panel d'administration inclus pour restaurants et pizzerias : menu, commandes, réservations, horaires, codes promo, livreurs et statistiques.",
     date: "2026-06-29",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "6 min",
     category: "Secteurs",
     sections: [
@@ -3991,12 +4248,17 @@ export const articles: Article[] = [
   },
   {
     slug: "panel-admin-boutique-ecommerce",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Luxer_One_Parcel_Lockers_-_Package_Delivery_%2854123579861%29.jpg/960px-Luxer_One_Parcel_Lockers_-_Package_Delivery_%2854123579861%29.jpg",
+      alt: "Casiers de retrait de colis e-commerce",
+      credit: "Photo : Tony Webster — CC BY 2.0, via Wikimedia Commons",
+    },
     service: "ecommerce",
     title: "Panel admin e-commerce : produits, commandes et avis",
     description:
       "Le panel d'administration inclus dans chaque boutique en ligne : produits, commandes, codes promo, avis clients et messagerie depuis un seul tableau de bord.",
     date: "2026-06-29",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "5 min",
     category: "Secteurs",
     sections: [
@@ -4122,12 +4384,17 @@ export const articles: Article[] = [
   },
   {
     slug: "notifications-push-application-mobile",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Blackview_A60_Smartphone_Android_mobile_phone_front_face_lock_screen.jpg/960px-Blackview_A60_Smartphone_Android_mobile_phone_front_face_lock_screen.jpg",
+      alt: "Écran de verrouillage d'un smartphone Android",
+      credit: "Photo : Acabashi — CC BY-SA 4.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Notifications push : faire revenir vos clients dans l'app",
     description:
       "Notifications push mobile : fonctionnement, exemples par secteur et bonnes pratiques — la fonctionnalité qui sépare une app utilisée d'une app oubliée.",
     date: "2026-07-03",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "5 min",
     category: "Tech",
     sections: [
@@ -4195,12 +4462,17 @@ export const articles: Article[] = [
   },
   {
     slug: "ux-ui-application-mobile-reussie",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Sketch_of_a_more_radical_interface_update_for_the_Desktop_improvements_project.png/960px-Sketch_of_a_more_radical_interface_update_for_the_Desktop_improvements_project.png",
+      alt: "Croquis de conception d'interface utilisateur",
+      credit: "Image : AHollender (WMF) — CC BY-SA 4.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "UX/UI application mobile : ce qui fait rester vos clients",
     description:
       "Les principes UX/UI d'une application mobile réussie : navigation intuitive, rapidité, cohérence visuelle. Pour que vos clients restent au-delà de 10 secondes.",
     date: "2026-07-03",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "6 min",
     category: "Tech",
     sections: [
@@ -4263,12 +4535,17 @@ export const articles: Article[] = [
   },
   {
     slug: "captures-ecran-app-store-play-store",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Trading_apps_on_an_iPhone_screen.jpg/960px-Trading_apps_on_an_iPhone_screen.jpg",
+      alt: "Applications affichées sur l'écran d'un iPhone",
+      credit: "Photo : forextime.com — CC BY 2.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Captures d'écran App Store & Play Store : le guide",
     description:
       "Créer des captures d'écran qui convertissent sur l'App Store et Google Play : formats requis, bonnes pratiques et erreurs à éviter pour être téléchargé.",
     date: "2026-07-03",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "5 min",
     category: "Guides",
     sections: [
@@ -4333,12 +4610,17 @@ export const articles: Article[] = [
   },
   {
     slug: "publier-application-app-store",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Wikipedia_iPhone_App.jpg/960px-Wikipedia_iPhone_App.jpg",
+      alt: "iPhone posé sur un bureau avec une application ouverte",
+      credit: "Photo : Benjamin Child — CC0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Publier son application sur l'App Store : guide 2026",
     description:
       "Publier une application iOS sur l'App Store : compte développeur, délais de validation, règles Apple et erreurs qui font rejeter une app.",
     date: "2026-07-03",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "6 min",
     category: "Guides",
     sections: [
@@ -4407,12 +4689,17 @@ export const articles: Article[] = [
   },
   {
     slug: "publier-application-google-play-store",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Samsung_Phone_with_Android_Robot_icon.jpg/960px-Samsung_Phone_with_Android_Robot_icon.jpg",
+      alt: "Smartphone avec le logo robot Android à l'écran",
+      credit: "Photo : Intel Free Press — CC BY-SA 2.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Publier son application sur Google Play : guide 2026",
     description:
       "Publier une application Android sur le Google Play Store : compte développeur, fiche Play Console, délais de validation et publication sans rejet.",
     date: "2026-07-03",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "5 min",
     category: "Guides",
     sections: [
@@ -4479,12 +4766,17 @@ export const articles: Article[] = [
   },
   {
     slug: "avantages-developpement-application-mobile-cross-platform",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Responsive-web-design-devices.jpg/960px-Responsive-web-design-devices.jpg",
+      alt: "Application affichée sur ordinateur, tablette et smartphone",
+      credit: "Image : Muhammad Rafizeldi — CC BY-SA 3.0, via Wikimedia Commons",
+    },
     service: "application-mobile",
     title: "Application mobile cross-platform : les avantages",
     description:
       "Les avantages du développement cross-platform : une seule base de code pour iOS et Android, des délais réduits et une expérience utilisateur optimale.",
     date: "2026-07-18",
-    lastModified: "2026-07-26",
+    lastModified: "2026-07-31",
     readTime: "6 min",
     category: "Tech",
     sections: [
