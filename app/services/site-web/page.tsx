@@ -155,12 +155,12 @@ export default function SiteWebPage() {
                       <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
                       <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]" />
                     </div>
-                    <div className="relative w-full aspect-[16/10] overflow-hidden">
+                    <div className="relative w-full aspect-[16/9] overflow-hidden">
                       <iframe
                         src={url}
                         title={`Démo ${title}`}
                         loading="lazy"
-                        className="absolute top-0 left-0 border-0 w-[250%] h-[250%] origin-top-left scale-[0.4]"
+                        className="absolute top-0 left-0 border-0 w-[222%] h-[222%] origin-top-left scale-[0.45]"
                       />
                     </div>
                   </div>
