@@ -7,7 +7,7 @@ import { Globe, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Création site web sur mesure · Brest | BreizhApp",
-  description: "Création de sites web vitrine, landing page et blog avec Next.js. Design sur mesure, SEO optimisé, livraison en 2 à 4 semaines. Basé à Brest.",
+  description: "Création de sites web vitrine, landing page et blog avec Next.js. Panel admin, dashboard, SEO optimisé, livraison en 2 à 4 semaines. Basé à Brest.",
   keywords: [
     "création site web brest",
     "création site web sur mesure",
@@ -16,15 +16,67 @@ export const metadata: Metadata = {
     "site web professionnel next.js",
     "site web restaurant brest",
     "création site internet brest",
+    "panel admin site web",
+    "dashboard sur mesure",
+    "SEO optimisé site web",
   ],
   alternates: { canonical: "https://breizhapp.tech/services/site-web" },
   openGraph: {
     title: "Création site web sur mesure · Brest",
-    description: "Sites web vitrine, landing page et blog sur mesure avec Next.js. SEO optimisé, responsive, livraison en 2-4 semaines.",
+    description: "Sites web vitrine, landing page et blog sur mesure avec Next.js. Panel admin, dashboard, SEO optimisé, livraison en 2-4 semaines.",
     url: "https://breizhapp.tech/services/site-web",
     type: "website",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
+};
+
+const faq = [
+  {
+    q: "Comment se déroule la création d'un site web sur mesure ?",
+    a: "Le projet se déroule en 4 étapes : cadrage de vos besoins et de votre cible, maquettes et design validés avec vous, développement avec Next.js, puis tests, SEO et mise en ligne. Vous suivez l'avancement à chaque étape, sans intermédiaire.",
+  },
+  {
+    q: "Combien de temps pour créer un site web professionnel ?",
+    a: "Entre 2 et 4 semaines selon la complexité. Un site vitrine simple (présentation, contact) est livré en 2 semaines. Un site avec blog, panel admin ou dashboard prend 3 à 4 semaines.",
+  },
+  {
+    q: "Le site est-il livré avec un panel admin ?",
+    a: "Oui, sur demande. Un panel admin vous permet de modifier vos textes, images, tarifs ou articles de blog vous-même, sans toucher au code et sans dépendre d'un développeur. Une formation à l'outil est incluse à la livraison.",
+  },
+  {
+    q: "Qu'est-ce qu'un dashboard et pourquoi en avoir un ?",
+    a: "Un dashboard est un tableau de bord qui centralise vos données clés : demandes de contact, statistiques de visite, commandes ou réservations. Il est utile dès que votre site collecte des informations que vous devez suivre au quotidien (formulaires, avis, réservations).",
+  },
+  {
+    q: "Le site sera-t-il vraiment bien référencé sur Google (SEO) ?",
+    a: "Chaque site est construit avec Next.js, un framework pensé pour le SEO : chargement rapide, structure HTML sémantique, balises meta et Open Graph optimisées, sitemap et données structurées. Le contenu de vos pages est également rédigé en tenant compte des mots-clés recherchés par vos clients.",
+  },
+  {
+    q: "Quelles fonctionnalités sont possibles sur mon site ?",
+    a: "Formulaire de contact, blog intégré, prise de rendez-vous, panel admin, dashboard de suivi, paiement en ligne, espace client, multilingue, ou connexion à des outils tiers (CRM, newsletter). Chaque fonctionnalité est développée sur mesure selon vos besoins réels.",
+  },
+  {
+    q: "Le site sera-t-il bien affiché sur mobile ?",
+    a: "Oui, tous les sites sont 100% responsive : ils s'adaptent automatiquement à toutes les tailles d'écran (mobile, tablette, desktop) et sont testés sur les principaux navigateurs et appareils avant la mise en ligne.",
+  },
+  {
+    q: "Que se passe-t-il après la mise en ligne du site ?",
+    a: "Le site est déployé sur votre hébergement ou sur Vercel, avec votre nom de domaine configuré. Le support, les mises à jour de sécurité et les évolutions futures sont assurés en continu si vous le souhaitez.",
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      mainEntity: faq.map(({ q, a }) => ({
+        "@type": "Question",
+        name: q,
+        acceptedAnswer: { "@type": "Answer", text: a },
+      })),
+    },
+  ],
 };
 
 const features = [
@@ -34,6 +86,22 @@ const features = [
   { title: "Blog intégré", desc: "Publiez vos articles et actualités pour alimenter votre référencement naturel." },
   { title: "Formulaire de contact", desc: "Recevez les demandes directement par email, sans outil tiers payant." },
   { title: "Déploiement inclus", desc: "Mise en ligne sur votre hébergement ou sur Vercel, domaine configuré." },
+];
+
+const advancedFeatures = [
+  { title: "Panel admin", desc: "Un espace privé pour modifier vos textes, images, tarifs ou articles vous-même, sans écrire une ligne de code." },
+  { title: "Dashboard de suivi", desc: "Tableau de bord centralisant vos demandes de contact, statistiques de visite, réservations ou commandes." },
+  { title: "SEO technique avancé", desc: "Vitesse de chargement optimisée, données structurées, sitemap automatique et balises Open Graph pour un bon classement Google." },
+  { title: "Prise de rendez-vous", desc: "Système de réservation en ligne relié à votre agenda ou envoyé par email." },
+  { title: "Paiement en ligne", desc: "Intégration Stripe pour vendre des produits, services ou abonnements directement sur le site." },
+  { title: "Espace client", desc: "Zone connectée où vos clients suivent leurs commandes, factures ou documents." },
+];
+
+const process = [
+  { step: "01", title: "Cadrage du projet", desc: "On échange sur votre activité, votre cible et les fonctionnalités utiles (panel admin, dashboard, paiement...). Devis détaillé sous 24h." },
+  { step: "02", title: "Design & maquettes", desc: "Wireframes puis interface soignée aux couleurs de votre marque, validée avec vous avant le développement." },
+  { step: "03", title: "Développement Next.js", desc: "Code sur mesure, structure pensée pour le SEO dès le départ, points d'avancement réguliers." },
+  { step: "04", title: "SEO, tests & mise en ligne", desc: "Optimisation des balises et du contenu, tests sur tous les appareils, déploiement et formation au panel admin si inclus." },
 ];
 
 const demoSites = [
@@ -51,6 +119,7 @@ const useCases = [
 export default function SiteWebPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Navbar />
       <main className="bg-[#FFFBF0] min-h-screen">
 
@@ -138,6 +207,43 @@ export default function SiteWebPage() {
           </div>
         </section>
 
+        {/* Fonctionnalités avancées */}
+        <section className="py-16 px-4 bg-gray-50 brutal-border border-t-[3px] border-b-[3px]">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold mb-2">Fonctionnalités <span className="bg-[#FFE234] px-2 brutal-border">avancées</span> possibles</h2>
+            <p className="text-gray-600 mb-8 max-w-2xl">
+              Au-delà du site vitrine simple, chaque fonctionnalité ci-dessous peut être ajoutée selon les besoins réels de votre activité.
+            </p>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+              {advancedFeatures.map(({ title, desc }) => (
+                <div key={title} className="brutal-border bg-white p-5">
+                  <h3 className="font-bold mb-1">{title}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">{desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Processus */}
+        <section className="py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold mb-2">Comment se déroule la <span className="bg-[#FFE234] px-2 brutal-border">création de votre site</span></h2>
+            <p className="text-gray-600 mb-8 max-w-2xl">
+              Un processus clair en 4 étapes, de votre besoin initial à la mise en ligne.
+            </p>
+            <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+              {process.map(({ step, title, desc }) => (
+                <div key={step} className="brutal-border bg-white p-5">
+                  <p className="mono text-xs font-bold text-gray-400 mb-2">{step}</p>
+                  <h3 className="font-bold mb-1">{title}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">{desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Cas d'usage */}
         <section className="py-16 px-4 bg-[#0A0A0A]">
           <div className="max-w-4xl mx-auto">
@@ -148,6 +254,21 @@ export default function SiteWebPage() {
                   <div className="text-3xl mb-3">{emoji}</div>
                   <h3 className="font-bold text-[#FFFBF0] group-hover:text-[#0A0A0A] mb-1">{title}</h3>
                   <p className="text-sm text-gray-400 group-hover:text-gray-700 leading-relaxed">{desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="py-16 px-4 bg-[#0A0A0A]">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-[#FFE234] mb-8">Questions fréquentes — création de site web</h2>
+            <div className="flex flex-col gap-4">
+              {faq.map(({ q, a }) => (
+                <div key={q} className="border-2 border-gray-800 p-5">
+                  <h3 className="font-bold text-[#FFFBF0] mb-2">{q}</h3>
+                  <p className="text-sm text-gray-400 leading-relaxed">{a}</p>
                 </div>
               ))}
             </div>
