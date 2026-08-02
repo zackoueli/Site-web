@@ -296,6 +296,71 @@ export default function AppMobilePage() {
           </div>
         </section>
 
+        {/* Contenu détaillé */}
+        <section className="py-16 px-4 bg-gray-50 brutal-border border-t-[3px] border-b-[3px]">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold mb-2">Créer une <span className="bg-[#FFE234] px-2 brutal-border">application mobile sur mesure</span></h2>
+            <p className="text-gray-600 mb-10 max-w-2xl">
+              Une application mobile sur mesure ne se résume pas à un design sur smartphone : voici ce qu&apos;implique
+              concrètement sa conception, de la première maquette à la publication sur les stores.
+            </p>
+
+            <div className="space-y-10">
+              <div>
+                <h3 className="text-xl font-bold mb-3">React Native : une seule application pour iOS et Android</h3>
+                <p className="text-gray-700 leading-relaxed mb-3">
+                  React Native permet de développer une seule base de code qui fonctionne à la fois sur iPhone et sur
+                  Android, avec des performances proches du natif. Pour la grande majorité des projets — commerces,
+                  restaurants, services, réservation — c&apos;est le choix le plus pertinent : il divise le coût de
+                  développement par deux par rapport à deux applications natives séparées, tout en garantissant une
+                  expérience fluide et des mises à jour synchronisées sur les deux plateformes.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold mb-3">Panel d&apos;administration</h3>
+                <p className="text-gray-700 leading-relaxed mb-3">
+                  Chaque application inclut un panel d&apos;administration, un espace privé accessible depuis un
+                  navigateur, où vous gérez vos produits, vos commandes, vos horaires ou le contenu affiché dans
+                  l&apos;application, sans dépendre d&apos;un développeur ni republier l&apos;app sur les stores à
+                  chaque modification. Une formation à l&apos;outil est incluse à la livraison, pour que vous restiez
+                  autonome sur la gestion quotidienne de votre application.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold mb-3">Paiement en ligne et notifications push</h3>
+                <p className="text-gray-700 leading-relaxed mb-3">
+                  Le paiement en ligne est intégré via Stripe : achats, abonnements ou in-app purchase, avec une
+                  conformité PCI-DSS garantie. Les notifications push permettent de relancer vos utilisateurs avec des
+                  messages ciblés — promotion, rappel de panier abandonné, mise à jour d&apos;une commande — directement
+                  sur leur téléphone, un canal bien plus efficace que l&apos;email pour capter l&apos;attention.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold mb-3">Authentification sécurisée</h3>
+                <p className="text-gray-700 leading-relaxed mb-3">
+                  La connexion à l&apos;application peut se faire par email et mot de passe, Google Sign-In ou Apple
+                  Sign-In selon les habitudes de vos utilisateurs. Les données de connexion sont chiffrées et les
+                  sessions sécurisées, pour protéger les comptes de vos clients dès le premier lancement de
+                  l&apos;application.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold mb-3">Publication sur l&apos;App Store et Google Play</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  La publication sur les stores est un processus à part entière, avec ses propres exigences techniques
+                  et éditoriales (comptes développeur, fiches store, règles de validation Apple et Google). Cette étape
+                  est prise en charge de A à Z : création des fiches store, captures d&apos;écran, soumission et suivi
+                  de la validation, jusqu&apos;à ce que votre application soit disponible au téléchargement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Démo réelle */}
         <section className="py-16 px-4 border-y-[3px] border-black bg-gray-50">
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-center">
