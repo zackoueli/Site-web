@@ -82,6 +82,46 @@ export default function SiteWebPage() {
           </div>
         </section>
 
+        {/* Exemples en direct */}
+        <section className="py-16 px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-2xl font-bold mb-8">Exemples en <span className="bg-[#FFE234] px-2 brutal-border">direct</span></h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              {demoSites.map(({ title, desc, url }) => (
+                <div key={title} className="brutal-border brutal-shadow bg-white overflow-hidden">
+                  <div className="border-b-[3px] border-black bg-[#0A0A0A]">
+                    <div className="flex items-center gap-1.5 px-3 py-2 border-b-[3px] border-black bg-[#1a1a1a]">
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]" />
+                    </div>
+                    <div className="relative w-full aspect-[16/10] overflow-hidden">
+                      <iframe
+                        src={url}
+                        title={`Démo ${title}`}
+                        loading="lazy"
+                        className="absolute top-0 left-0 border-0 w-[250%] h-[250%] origin-top-left scale-[0.4]"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-5">
+                    <h3 className="font-bold mb-1">{title}</h3>
+                    <p className="text-sm text-gray-600 leading-relaxed mb-4">{desc}</p>
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-4 py-2 text-sm inline-flex items-center gap-2"
+                    >
+                      Voir en plein écran <ArrowRight size={14} />
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Fonctionnalités */}
         <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto">
@@ -108,39 +148,6 @@ export default function SiteWebPage() {
                   <div className="text-3xl mb-3">{emoji}</div>
                   <h3 className="font-bold text-[#FFFBF0] group-hover:text-[#0A0A0A] mb-1">{title}</h3>
                   <p className="text-sm text-gray-400 group-hover:text-gray-700 leading-relaxed">{desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Exemples en direct */}
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8">Exemples en <span className="bg-[#FFE234] px-2 brutal-border">direct</span></h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              {demoSites.map(({ title, desc, url }) => (
-                <div key={title} className="brutal-border brutal-shadow bg-white overflow-hidden">
-                  <div className="border-b-[3px] border-black bg-[#0A0A0A] aspect-[4/3]">
-                    <iframe
-                      src={url}
-                      title={`Démo ${title}`}
-                      loading="lazy"
-                      className="w-full h-full"
-                    />
-                  </div>
-                  <div className="p-5">
-                    <h3 className="font-bold mb-1">{title}</h3>
-                    <p className="text-sm text-gray-600 leading-relaxed mb-4">{desc}</p>
-                    <a
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-4 py-2 text-sm inline-flex items-center gap-2"
-                    >
-                      Voir en plein écran <ArrowRight size={14} />
-                    </a>
-                  </div>
                 </div>
               ))}
             </div>
