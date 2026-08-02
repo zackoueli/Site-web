@@ -89,9 +89,9 @@ export default function Hero() {
             {/* Stats row */}
             <div className="flex flex-wrap gap-3">
               {[
-                { val: "3+", label: "Projets livrés" },
+                { val: "15+", label: "Projets livrés" },
                 { val: "Mobile & Web", label: "React Native · Next.js" },
-                { val: "Dès 400€", label: "Tarif transparent" },
+                { val: "2 à 8 semaines", label: "Livraison" },
               ].map(({ val, label }) => (
                 <div
                   key={label}
