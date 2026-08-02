@@ -88,15 +88,6 @@ const features = [
   { title: "Déploiement inclus", desc: "Mise en ligne sur votre hébergement ou sur Vercel, domaine configuré." },
 ];
 
-const advancedFeatures = [
-  { title: "Panel admin", desc: "Un espace privé pour modifier vos textes, images, tarifs ou articles vous-même, sans écrire une ligne de code." },
-  { title: "Dashboard de suivi", desc: "Tableau de bord centralisant vos demandes de contact, statistiques de visite, réservations ou commandes." },
-  { title: "SEO technique avancé", desc: "Vitesse de chargement optimisée, données structurées, sitemap automatique et balises Open Graph pour un bon classement Google." },
-  { title: "Prise de rendez-vous", desc: "Système de réservation en ligne relié à votre agenda ou envoyé par email." },
-  { title: "Paiement en ligne", desc: "Intégration Stripe pour vendre des produits, services ou abonnements directement sur le site." },
-  { title: "Espace client", desc: "Zone connectée où vos clients suivent leurs commandes, factures ou documents." },
-];
-
 const process = [
   { step: "01", title: "Cadrage du projet", desc: "On échange sur votre activité, votre cible et les fonctionnalités utiles (panel admin, dashboard, paiement...). Devis détaillé sous 24h." },
   { step: "02", title: "Design & maquettes", desc: "Wireframes puis interface soignée aux couleurs de votre marque, validée avec vous avant le développement." },
@@ -211,16 +202,84 @@ export default function SiteWebPage() {
         <section className="py-16 px-4 bg-gray-50 brutal-border border-t-[3px] border-b-[3px]">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold mb-2">Fonctionnalités <span className="bg-[#FFE234] px-2 brutal-border">avancées</span> possibles</h2>
-            <p className="text-gray-600 mb-8 max-w-2xl">
-              Au-delà du site vitrine simple, chaque fonctionnalité ci-dessous peut être ajoutée selon les besoins réels de votre activité.
+            <p className="text-gray-600 mb-10 max-w-2xl">
+              Au-delà du site vitrine simple, chaque site web peut intégrer les fonctionnalités suivantes, développées sur mesure
+              selon les besoins réels de votre activité.
             </p>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-              {advancedFeatures.map(({ title, desc }) => (
-                <div key={title} className="brutal-border bg-white p-5">
-                  <h3 className="font-bold mb-1">{title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{desc}</p>
-                </div>
-              ))}
+
+            <div className="space-y-10">
+              <div>
+                <h3 className="text-xl font-bold mb-3">Panel admin</h3>
+                <p className="text-gray-700 leading-relaxed mb-3">
+                  Le panel admin est un espace privé, accessible par identifiants, depuis lequel vous gérez le contenu de votre
+                  site web sans écrire une seule ligne de code. Vous modifiez vos textes, vos images, vos tarifs, vos horaires ou
+                  publiez vos articles de blog directement depuis une interface simple, pensée pour être utilisable par tout le
+                  monde, développeur ou non. C&apos;est la fonctionnalité indispensable pour rester autonome sur votre site après
+                  la livraison : plus besoin de me solliciter pour changer un prix ou ajouter une photo. Une formation à l&apos;outil
+                  est incluse au moment de la mise en ligne, et le panel admin est développé sur mesure en fonction du type de
+                  contenu que vous avez besoin de modifier — catalogue produits, menu de restaurant, actualités, portfolio de
+                  réalisations, etc.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold mb-3">Dashboard de suivi</h3>
+                <p className="text-gray-700 leading-relaxed mb-3">
+                  Un dashboard est un tableau de bord qui centralise, en un seul coup d&apos;œil, les données importantes générées
+                  par votre site : nombre de demandes de contact reçues, statistiques de visite, liste des réservations ou des
+                  commandes en cours, avis clients, ou encore suivi des conversions issues de vos campagnes marketing. Il devient
+                  particulièrement utile dès que votre site web collecte des informations que vous devez traiter ou suivre au
+                  quotidien : formulaires de devis, prises de rendez-vous, ventes en ligne. Plutôt que de consulter votre boîte
+                  mail ou plusieurs outils séparés, vous retrouvez tout au même endroit, avec des indicateurs clairs et actualisés
+                  en temps réel.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold mb-3">SEO technique avancé</h3>
+                <p className="text-gray-700 leading-relaxed mb-3">
+                  Un site bien référencé sur Google ne se résume pas à un joli design : il repose sur des fondations techniques
+                  solides. Chaque site que je développe est construit avec Next.js, un framework spécifiquement reconnu pour ses
+                  performances SEO — rendu côté serveur, temps de chargement très rapide, structure HTML sémantique et propre.
+                  J&apos;optimise également les balises meta title et meta description de chaque page, les données structurées
+                  (Schema.org) pour améliorer l&apos;affichage dans les résultats de recherche, les balises Open Graph pour un bon
+                  rendu au partage sur les réseaux sociaux, ainsi que le sitemap XML soumis automatiquement à Google Search
+                  Console. Le contenu rédactionnel de vos pages est également pensé en fonction des mots-clés réellement
+                  recherchés par vos futurs clients, pour maximiser vos chances d&apos;apparaître en première page.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold mb-3">Prise de rendez-vous en ligne</h3>
+                <p className="text-gray-700 leading-relaxed mb-3">
+                  Si votre activité repose sur des rendez-vous ou des réservations (coiffeur, coach, artisan, consultant),
+                  je peux intégrer un système de prise de rendez-vous directement sur votre site. Vos visiteurs choisissent un
+                  créneau disponible et réservent en quelques clics, sans appel téléphonique. Selon vos besoins, le système peut
+                  être relié à votre agenda Google, envoyer une confirmation par email ou SMS, et bloquer automatiquement les
+                  créneaux déjà pris.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold mb-3">Paiement en ligne</h3>
+                <p className="text-gray-700 leading-relaxed mb-3">
+                  Pour vendre des produits, des services ou des abonnements directement depuis votre site, j&apos;intègre Stripe,
+                  la solution de paiement en ligne la plus utilisée et sécurisée du marché. Elle gère les paiements par carte
+                  bancaire, les abonnements récurrents et respecte les normes de sécurité PCI-DSS, sans que vous ayez à manipuler
+                  vous-même les données bancaires de vos clients.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold mb-3">Espace client</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Un espace client est une zone connectée, accessible uniquement à vos clients identifiés, depuis laquelle ils
+                  peuvent suivre l&apos;avancement de leurs commandes, consulter leurs factures ou télécharger des documents.
+                  Cette fonctionnalité est particulièrement adaptée aux activités de services ou aux entreprises qui souhaitent
+                  offrir un suivi transparent et professionnel à leurs clients, sans passer par des échanges d&apos;emails
+                  dispersés.
+                </p>
+              </div>
             </div>
           </div>
         </section>
