@@ -169,26 +169,6 @@ export default function EcommercePage() {
           </div>
         </section>
 
-        {/* Comparatif rapide */}
-        <section className="py-12 px-4 border-b-[3px] border-black bg-[#FFE234]">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-xl font-bold mb-6">Pourquoi ne pas utiliser Shopify ?</h2>
-            <div className="grid sm:grid-cols-3 gap-4">
-              {[
-                { label: "Shopify Basic", cost: "~40€/mois", note: "+ 2% de commission + apps payantes" },
-                { label: "Shopify Standard", cost: "~105€/mois", note: "+ 1% de commission + apps payantes" },
-                { label: "BreizhApp sur mesure", cost: "Achat unique", note: "0 commission · 0 abonnement · votre code" },
-              ].map(({ label, cost, note }) => (
-                <div key={label} className="brutal-border bg-white p-4">
-                  <div className="font-bold text-sm mb-1">{label}</div>
-                  <div className="text-xl font-bold mb-1">{cost}</div>
-                  <div className="text-xs text-gray-600">{note}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Fonctionnalités */}
         <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto">
