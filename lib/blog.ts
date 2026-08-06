@@ -4854,6 +4854,95 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "mettre-en-place-paiement-en-ligne-commerce",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Credit-cards.jpg/960px-Credit-cards.jpg",
+      alt: "Cartes bancaires utilisées pour un paiement en ligne",
+      credit: "Photo : Sebastiaan ter Burg — CC BY 2.0, via Wikimedia Commons",
+    },
+    service: "ecommerce",
+    title: "Paiement en ligne pour commerce : Stripe, SumUp ou autre ?",
+    description:
+      "Comparatif Stripe vs SumUp pour encaisser en ligne : commissions, fonctionnement, intégration sur un site web ou une application mobile.",
+    date: "2026-08-06",
+    lastModified: "2026-08-06",
+    readTime: "7 min",
+    category: "Comparatifs",
+    sections: [
+      {
+        paragraphs: [
+          "Accepter le paiement en ligne, c'est souvent le déclic qui transforme une simple présence web en véritable outil de vente. Un client qui peut payer en deux clics depuis son téléphone commande plus facilement qu'un client qui doit appeler ou passer en boutique.",
+          "Mais entre Stripe, SumUp, PayPal et les autres solutions, difficile de savoir laquelle choisir, ni comment elle s'intègre concrètement à votre site web ou à votre application mobile. Voici comment j'aborde la question pour chaque commerce que j'accompagne.",
+        ],
+      },
+      {
+        heading: "Pourquoi mettre en place un paiement en ligne ?",
+        paragraphs: [
+          "Pour un commerce, un système de paiement en ligne répond à plusieurs besoins concrets : vendre à distance sans dépendre d'une plateforme tierce, sécuriser un acompte pour une réservation, ou simplement fluidifier le passage en caisse depuis un smartphone. C'est aussi le meilleur moyen de s'affranchir des commissions élevées prélevées par les plateformes de livraison ou de réservation généralistes, en gardant la relation directe avec le client.",
+        ],
+      },
+      {
+        heading: "Stripe, SumUp, PayPal : quelle différence ?",
+        paragraphs: [
+          "Ces trois solutions permettent d'encaisser une carte bancaire en ligne, mais elles ne répondent pas exactement aux mêmes usages.",
+        ],
+        list: [
+          "Stripe : la solution la plus flexible pour un développeur. Elle s'intègre directement dans le code d'un site web ou d'une application mobile, gère les paiements uniques, les abonnements récurrents et les remboursements, et respecte la norme de sécurité PCI-DSS. C'est la solution que j'utilise le plus souvent, car elle offre le meilleur contrôle sur l'expérience de paiement.",
+          "SumUp : historiquement connue pour ses terminaux de paiement physiques (le petit boîtier posé en caisse), SumUp propose aussi des liens de paiement et une intégration e-commerce, plus simple à mettre en place mais moins personnalisable qu'une intégration Stripe sur mesure.",
+          "PayPal : très reconnu par les clients particuliers, PayPal reste une bonne option complémentaire, notamment pour rassurer les acheteurs peu habitués au paiement par carte directe. Il s'intègre généralement en complément de Stripe plutôt qu'en remplacement.",
+        ],
+      },
+      {
+        heading: "Comment fonctionnent les commissions",
+        paragraphs: [
+          "Chaque solution prélève une commission sur chaque transaction, généralement composée d'un pourcentage du montant plus un montant fixe. Ce mode de fonctionnement est commun à Stripe, SumUp et PayPal : aucune de ces solutions ne facture d'abonnement obligatoire pour encaisser en ligne, contrairement à certaines plateformes e-commerce clé en main.",
+          "À titre indicatif, on retrouve généralement des commissions de l'ordre de 1,5 % à 2,9 % du montant de la transaction, parfois complétées de quelques centimes fixes par paiement, pour une carte bancaire française ou européenne standard. Le taux réel dépend du volume de transactions, du type de carte (française, européenne, internationale), du canal (en ligne, terminal physique) et des options activées (abonnements, protection contre la fraude).",
+          "Ces chiffres évoluent régulièrement et varient d'un prestataire à l'autre : je recommande toujours de vérifier la grille tarifaire à jour directement sur le site officiel de Stripe, SumUp ou PayPal au moment de la mise en place, plutôt que de se fier à un ordre de grandeur figé.",
+        ],
+      },
+      {
+        heading: "Intégrer le paiement en ligne sur un site web",
+        paragraphs: [
+          "Sur un site web, l'intégration de Stripe se fait au niveau du code : un tunnel de paiement sécurisé s'affiche directement sur votre site, sans rediriger le client vers une page externe qui casse la confiance. Le client entre ses coordonnées bancaires, valide, et vous recevez la notification de commande instantanément — avec, si besoin, un email de confirmation automatique.",
+          "Cette intégration peut couvrir un paiement simple (produit, service, acompte), un panier e-commerce complet avec plusieurs articles, ou un système d'abonnement récurrent pour un service facturé chaque mois.",
+        ],
+      },
+      {
+        heading: "Intégrer le paiement en ligne dans une application mobile",
+        paragraphs: [
+          "Dans une application mobile iOS et Android, le principe est similaire mais l'intégration technique diffère : le paiement passe par le SDK Stripe adapté au mobile, avec la possibilité d'ajouter Apple Pay et Google Pay pour un paiement en un seul geste, sans ressaisir de carte bancaire.",
+          "C'est particulièrement utile pour une application de commande en ligne, de réservation avec acompte, ou de vente de produits, où la rapidité du paiement influence directement le taux de conversion : plus le geste est simple, plus le client va au bout de sa commande.",
+        ],
+      },
+      {
+        heading: "Les erreurs à éviter",
+        list: [
+          "Rediriger le client vers un site externe non personnalisé : cela casse la confiance et augmente l'abandon de panier. Un tunnel de paiement intégré à votre design inspire davantage confiance.",
+          "Ne proposer qu'un seul moyen de paiement : ajouter Apple Pay et Google Pay en complément de la carte bancaire réduit nettement les abandons, surtout sur mobile.",
+          "Négliger la conformité PCI-DSS : ne jamais stocker vous-même les numéros de carte bancaire. Stripe et SumUp s'en chargent, à condition d'utiliser leurs outils d'intégration officiels plutôt qu'un formulaire fait maison.",
+          "Oublier la confirmation automatique : un email ou une notification de confirmation immédiate rassure le client et réduit les demandes de support.",
+        ],
+      },
+      {
+        heading: "Comment je mets en place votre système de paiement",
+        paragraphs: [
+          "Je m'occupe de bout en bout de l'intégration du paiement en ligne, que ce soit sur un site web, une application mobile, ou les deux à la fois : création du compte Stripe, intégration technique sécurisée, configuration d'Apple Pay et Google Pay si besoin, et tests réels avant la mise en ligne. Vous restez propriétaire de votre compte de paiement et de vos données financières — je ne fais que le connecter proprement à votre site ou votre application.",
+          "Basé à Brest, j'accompagne aussi bien des commerces locaux que des projets partout en France, avec un devis gratuit et détaillé sous 24h.",
+        ],
+      },
+      {
+        heading: "FAQ — Paiement en ligne pour un commerce",
+        list: [
+          "Stripe ou SumUp, lequel choisir ? Stripe convient mieux à une intégration sur mesure sur un site web ou une application mobile. SumUp est pertinent si vous utilisez déjà son terminal de paiement physique en boutique et souhaitez une solution simple en complément.",
+          "Le paiement en ligne est-il obligatoire pour vendre sur internet ? Non, mais c'est ce qui transforme un site vitrine en véritable outil de vente : sans lui, le client doit vous contacter pour finaliser sa commande, ce qui réduit fortement le taux de conversion.",
+          "Puis-je proposer Apple Pay et Google Pay sur mon site ou mon app ? Oui, ces deux moyens de paiement s'ajoutent facilement à une intégration Stripe, aussi bien sur un site web que dans une application mobile.",
+          "Est-ce sécurisé de faire gérer le paiement par un développeur freelance ? Oui, à condition que l'intégration passe par les outils officiels de Stripe ou SumUp : à aucun moment le développeur ne manipule ou ne stocke vos données bancaires, tout transite de façon chiffrée par le prestataire de paiement.",
+          "Combien de temps prend la mise en place d'un paiement en ligne ? Quelques jours suffisent pour une intégration simple sur un site existant. Sur un projet neuf (site ou application), le paiement est généralement intégré directement dans le planning de développement global.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
