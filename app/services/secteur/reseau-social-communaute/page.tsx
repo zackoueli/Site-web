@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
+import Contact from "@/components/Contact";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -53,7 +54,7 @@ export default function ReseauSocialPage() {
               Vous voulez créer votre propre communauté digitale — sans dépendre de Facebook ou Discord ? Une app sur mesure vous donne le contrôle total : vos données, vos règles, votre expérience utilisateur.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
-              <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Discuter de mon projet</a>
+              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Discuter de mon projet</a>
               <Link href="/blog/creer-plateforme-digitale-sur-mesure" className="brutal-btn bg-[#7C3AED] text-white px-8 py-4">Guide plateforme →</Link>
             </div>
             <div className="flex flex-wrap gap-4 mono text-sm text-gray-500">
@@ -125,13 +126,15 @@ export default function ReseauSocialPage() {
               <h2 className="text-2xl font-bold text-white">Créez votre communauté digitale</h2>
               <p className="text-sm mt-1 text-purple-200">Devis gratuit · Réponse sous 24h · Sans engagement</p>
             </div>
-            <a href="/#contact" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-6 py-3 inline-flex items-center gap-2">
+            <a href="#contact" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-6 py-3 inline-flex items-center gap-2">
               En parler maintenant <ArrowRight size={16} />
             </a>
           </div>
         </section>
 
         <RelatedArticles service="reseau-social-communaute" />
+
+        <Contact />
 
       </main>
       <Footer />

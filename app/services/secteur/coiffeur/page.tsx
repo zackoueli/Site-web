@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
+import Contact from "@/components/Contact";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -101,7 +102,7 @@ export default function CoiffeurPage() {
               et notifications push. L&apos;alternative à Planity où vous possédez vraiment votre outil.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
-              <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
+              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
                 Devis gratuit sous 24h
               </a>
               <Link href="/blog/cout-reel-planity" className="brutal-btn bg-[#FF6B9D] text-white px-8 py-4">
@@ -203,13 +204,15 @@ export default function CoiffeurPage() {
               <h2 className="text-2xl font-bold">Votre app salon de coiffure vous attend</h2>
               <p className="text-sm mt-1">Devis gratuit · Réponse sous 24h · Basé à Brest</p>
             </div>
-            <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
+            <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
               Demander un devis <ArrowRight size={16} />
             </a>
           </div>
         </section>
 
         <RelatedArticles service="coiffeur" />
+
+        <Contact />
 
       </main>
       <Footer />

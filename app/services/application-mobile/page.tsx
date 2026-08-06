@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
+import Contact from "@/components/Contact";
 import PhoneDemo from "@/components/PhoneDemo";
 import { SECTEURS } from "@/lib/taxonomy";
 import { Smartphone, CheckCircle2, ArrowRight, MapPin, Quote } from "lucide-react";
@@ -204,7 +205,7 @@ export default function AppMobilePage() {
               du premier rendez-vous à la mise en ligne.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
-              <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
+              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
                 Demander un devis gratuit
               </a>
               <a href="/portfolio" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-8 py-4">
@@ -476,13 +477,15 @@ export default function AppMobilePage() {
               <h2 className="text-2xl font-bold">Prêt à lancer votre application mobile ?</h2>
               <p className="text-sm mt-1">Devis gratuit · Réponse sous 24h · Sans engagement · Agence basée à Brest</p>
             </div>
-            <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
+            <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
               Démarrer maintenant <ArrowRight size={16} />
             </a>
           </div>
         </section>
 
         <RelatedArticles service="application-mobile" />
+
+        <Contact />
 
       </main>
       <Footer />

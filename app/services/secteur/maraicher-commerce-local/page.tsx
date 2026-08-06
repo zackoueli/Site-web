@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
+import Contact from "@/components/Contact";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -74,7 +75,7 @@ export default function MaraicherPage() {
               Vendre en direct sans passer par une plateforme, fidéliser ses clients et gérer ses paniers depuis son téléphone — c'est ce que permet une app sur mesure, livrée en 3 semaines.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
-              <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
+              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
               <Link href="/blog/combien-coute-application-mobile" className="brutal-btn bg-[#00D4AA] text-[#0A0A0A] px-8 py-4">En savoir plus →</Link>
             </div>
             <div className="flex flex-wrap gap-4 mono text-sm text-gray-500">
@@ -145,13 +146,15 @@ export default function MaraicherPage() {
               <h2 className="text-2xl font-bold">Lancez l'app de votre commerce local</h2>
               <p className="text-sm mt-1">Devis gratuit · Réponse sous 24h · Sans engagement · Basé à Brest</p>
             </div>
-            <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
+            <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
               Demander un devis <ArrowRight size={16} />
             </a>
           </div>
         </section>
 
         <RelatedArticles service="maraicher-commerce-local" />
+
+        <Contact />
 
       </main>
       <Footer />

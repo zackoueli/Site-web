@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
+import Contact from "@/components/Contact";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -53,7 +54,7 @@ export default function EducationPage() {
               Teachizy, Thinkific ou Kajabi coûtent entre 30€ et 200€ par mois sans jamais vous appartenir. Une app e-learning sur mesure, c'est votre contenu, votre marque et vos revenus — sans dépendre d'une plateforme tierce.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
-              <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
+              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
               <Link href="/blog/creer-plateforme-digitale-sur-mesure" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-8 py-4">Guide plateforme →</Link>
             </div>
             <div className="flex flex-wrap gap-4 mono text-sm text-gray-500">
@@ -125,13 +126,15 @@ export default function EducationPage() {
               <h2 className="text-2xl font-bold">Votre plateforme de formation sur mesure</h2>
               <p className="text-sm mt-1">Devis gratuit · Réponse sous 24h · Sans engagement · Basé à Brest</p>
             </div>
-            <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
+            <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
               Demander un devis <ArrowRight size={16} />
             </a>
           </div>
         </section>
 
         <RelatedArticles service="education-formation" />
+
+        <Contact />
 
       </main>
       <Footer />

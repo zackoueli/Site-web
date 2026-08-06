@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
+import Contact from "@/components/Contact";
 import RelatedProjects from "@/components/RelatedProjects";
 import { LayoutDashboard, CheckCircle2, ArrowRight } from "lucide-react";
 
@@ -123,7 +124,7 @@ export default function PlateformePage() {
               disposent chacun de leur espace dédié — tout est centralisé, sécurisé et facile à gérer.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
+              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
                 Demander un devis gratuit
               </a>
               <a href="/portfolio" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-8 py-4">
@@ -317,7 +318,7 @@ export default function PlateformePage() {
               <h2 className="text-2xl font-bold text-white">Votre outil métier sur mesure</h2>
               <p className="text-sm mt-1 text-purple-200">Devis gratuit · Réponse sous 48h · Sans engagement</p>
             </div>
-            <a href="/#contact" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-6 py-3 inline-flex items-center gap-2 font-bold">
+            <a href="#contact" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-6 py-3 inline-flex items-center gap-2 font-bold">
               Démarrer maintenant <ArrowRight size={16} />
             </a>
           </div>
@@ -326,6 +327,8 @@ export default function PlateformePage() {
         <RelatedProjects service="plateforme" />
 
         <RelatedArticles service="plateforme" />
+
+        <Contact />
 
       </main>
       <Footer />

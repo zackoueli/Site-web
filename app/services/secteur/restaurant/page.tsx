@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
+import Contact from "@/components/Contact";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -102,7 +103,7 @@ export default function RestaurantPage() {
               avec commande en ligne, programme de fidélité et notifications push — sans commission.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
-              <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
+              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
                 Devis gratuit sous 24h
               </a>
               <Link href="/blog/application-mobile-restaurant" className="brutal-btn bg-[#FF6B35] text-white px-8 py-4">
@@ -190,13 +191,15 @@ export default function RestaurantPage() {
               <h2 className="text-2xl font-bold">Lancez l&apos;app de votre restaurant</h2>
               <p className="text-sm mt-1">Devis gratuit · Réponse sous 24h · Sans engagement · Basé à Brest</p>
             </div>
-            <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
+            <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
               Demander un devis <ArrowRight size={16} />
             </a>
           </div>
         </section>
 
         <RelatedArticles service="restaurant" />
+
+        <Contact />
 
       </main>
       <Footer />

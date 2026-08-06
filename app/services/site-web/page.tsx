@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
+import Contact from "@/components/Contact";
 import RelatedProjects from "@/components/RelatedProjects";
 import { Globe, CheckCircle2, ArrowRight } from "lucide-react";
 
@@ -132,7 +133,7 @@ export default function SiteWebPage() {
               Design unique, contenu optimisé SEO, livraison en 2 à 4 semaines.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
+              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
                 Demander un devis gratuit
               </a>
               <a href="/portfolio" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-8 py-4">
@@ -341,7 +342,7 @@ export default function SiteWebPage() {
               <h2 className="text-2xl font-bold">Votre site web en 4 semaines</h2>
               <p className="text-sm mt-1">Devis gratuit · Réponse sous 48h · Sans engagement</p>
             </div>
-            <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
+            <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
               Démarrer maintenant <ArrowRight size={16} />
             </a>
           </div>
@@ -350,6 +351,8 @@ export default function SiteWebPage() {
         <RelatedProjects service="site-web" />
 
         <RelatedArticles service="site-web" />
+
+        <Contact />
 
       </main>
       <Footer />

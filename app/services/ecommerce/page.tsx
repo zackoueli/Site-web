@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
+import Contact from "@/components/Contact";
 import RelatedProjects from "@/components/RelatedProjects";
 import { ShoppingBag, CheckCircle2, ArrowRight } from "lucide-react";
 
@@ -119,7 +120,7 @@ export default function EcommercePage() {
               Design unique, paiement Stripe, gestion des commandes intégrée.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
+              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
                 Demander un devis gratuit
               </a>
               <a href="/portfolio" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-8 py-4">
@@ -307,7 +308,7 @@ export default function EcommercePage() {
               <h2 className="text-2xl font-bold text-white">Lancez votre boutique en ligne</h2>
               <p className="text-sm mt-1 text-pink-100">Devis gratuit · Réponse sous 48h · Sans engagement</p>
             </div>
-            <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2 font-bold">
+            <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2 font-bold">
               Démarrer maintenant <ArrowRight size={16} />
             </a>
           </div>
@@ -316,6 +317,8 @@ export default function EcommercePage() {
         <RelatedProjects service="ecommerce" />
 
         <RelatedArticles service="ecommerce" />
+
+        <Contact />
 
       </main>
       <Footer />

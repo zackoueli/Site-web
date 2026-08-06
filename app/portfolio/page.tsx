@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Contact from "@/components/Contact";
 import { ExternalLink, ArrowRight } from "lucide-react";
 import { projects } from "@/lib/portfolio";
 
@@ -161,7 +162,7 @@ export default function PortfolioPage() {
               Contactez-moi pour discuter du vôtre.
             </p>
             <a
-              href="/#contact"
+              href="#contact"
               className="brutal-border bg-[#FFE234] text-[#0A0A0A] px-5 py-2.5 text-sm font-bold hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[4px_4px_0_#FFE234] transition-all"
             >
               Démarrer mon projet
@@ -169,6 +170,7 @@ export default function PortfolioPage() {
           </div>
         </section>
       </main>
+      <Contact />
       <Footer />
     </>
   );

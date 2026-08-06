@@ -5,6 +5,7 @@ import { articles, getArticle, getArticlesForService, type Article } from "@/lib
 import { resolveTaxonomySlug } from "@/lib/taxonomy";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Contact from "@/components/Contact";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -444,7 +445,7 @@ export default async function ArticlePage({ params }: Props) {
           <p className="text-2xl font-bold mb-2">Vous avez un projet d'application mobile ?</p>
           <p className="text-gray-400 mb-6">Devis gratuit et sans engagement — je réponds sous 24h.</p>
           <a
-            href="/#contact"
+            href="#contact"
             className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-6 py-3 inline-flex"
           >
             Demander un devis gratuit →
@@ -474,6 +475,7 @@ export default async function ArticlePage({ params }: Props) {
           </div>
         )}
       </main>
+      <Contact />
       <Footer />
     </>
   );

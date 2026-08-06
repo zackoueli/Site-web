@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
+import Contact from "@/components/Contact";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -53,7 +54,7 @@ export default function SantePage() {
               Qu'il s'agisse d'un suivi patient pour un praticien de santé, d'une app de coaching bien-être ou d'un outil de suivi personnel, je développe votre application sur mesure avec les fonctionnalités dont vous avez vraiment besoin.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
-              <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
+              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
               <Link href="/blog/application-mobile-fidelite-clients" className="brutal-btn bg-[#00D4AA] text-[#0A0A0A] px-8 py-4">Fidélisation clients →</Link>
             </div>
             <div className="flex flex-wrap gap-4 mono text-sm text-gray-500">
@@ -125,13 +126,15 @@ export default function SantePage() {
               <h2 className="text-2xl font-bold">Votre app santé sur mesure</h2>
               <p className="text-sm mt-1">Devis gratuit · Réponse sous 24h · Sans engagement · Basé à Brest</p>
             </div>
-            <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
+            <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
               Demander un devis <ArrowRight size={16} />
             </a>
           </div>
         </section>
 
         <RelatedArticles service="sante-bien-etre" />
+
+        <Contact />
 
       </main>
       <Footer />

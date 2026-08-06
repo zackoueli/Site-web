@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
+import Contact from "@/components/Contact";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -80,7 +81,7 @@ export default function SalleDesSportPage() {
               Sans dépendance à des plateformes tierces — votre marque, vos données, votre croissance.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
-              <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
+              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
                 Devis gratuit sous 24h
               </a>
               <Link href="/blog/application-mobile-salle-sport-fitness" className="brutal-btn bg-[#00D4AA] text-[#0A0A0A] px-8 py-4">
@@ -141,13 +142,15 @@ export default function SalleDesSportPage() {
               <h2 className="text-2xl font-bold">Lancez l&apos;app de votre salle de sport</h2>
               <p className="text-sm mt-1">Devis gratuit · Réponse sous 24h · Basé à Brest</p>
             </div>
-            <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
+            <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
               Demander un devis <ArrowRight size={16} />
             </a>
           </div>
         </section>
 
         <RelatedArticles service="salle-de-sport" />
+
+        <Contact />
 
       </main>
       <Footer />

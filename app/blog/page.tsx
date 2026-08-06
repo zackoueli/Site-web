@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { articles } from "@/lib/blog";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Contact from "@/components/Contact";
 
 const ARTICLES_PER_PAGE = 9;
 
@@ -271,13 +272,14 @@ export default async function BlogPage({ searchParams }: Props) {
             <p className="text-gray-700">Devis gratuit, réponse sous 24h.</p>
           </div>
           <a
-            href="/#contact"
+            href="#contact"
             className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 whitespace-nowrap"
           >
             Démarrer mon projet →
           </a>
         </div>
       </main>
+      <Contact />
       <Footer />
     </>
   );

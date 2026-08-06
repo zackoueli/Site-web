@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
+import Contact from "@/components/Contact";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -53,7 +54,7 @@ export default function ReservationPage() {
               Calendly coûte entre 8€ et 16€ par mois sans jamais vous appartenir. Une app sur mesure, c'est votre agenda, votre marque, vos données — sans abonnement à une plateforme tierce.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
-              <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
+              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
               <Link href="/blog/application-mobile-prise-de-rdv" className="brutal-btn bg-[#00D4AA] text-[#0A0A0A] px-8 py-4">Guide app RDV →</Link>
             </div>
             <div className="flex flex-wrap gap-4 mono text-sm text-gray-500">
@@ -125,13 +126,15 @@ export default function ReservationPage() {
               <h2 className="text-2xl font-bold">Votre agenda en ligne sans abonnement tiers</h2>
               <p className="text-sm mt-1">Devis gratuit · Réponse sous 24h · Sans engagement · Basé à Brest</p>
             </div>
-            <a href="/#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
+            <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
               Demander un devis <ArrowRight size={16} />
             </a>
           </div>
         </section>
 
         <RelatedArticles service="reservation-prise-de-rdv" />
+
+        <Contact />
 
       </main>
       <Footer />
