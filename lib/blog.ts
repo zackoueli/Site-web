@@ -4857,9 +4857,9 @@ export const articles: Article[] = [
   {
     slug: "mettre-en-place-paiement-en-ligne-commerce",
     image: {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Credit-cards.jpg/960px-Credit-cards.jpg",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Credit-cards.jpg/960px-Credit-cards.jpg",
       alt: "Cartes bancaires utilisées pour un paiement en ligne",
-      credit: "Photo : Sebastiaan ter Burg — CC BY 2.0, via Wikimedia Commons",
+      credit: "Photo : Lotus Head — CC BY-SA 2.5, via Wikimedia Commons",
     },
     service: "ecommerce",
     title: "Paiement en ligne pour commerce : Stripe, SumUp ou autre ?",
