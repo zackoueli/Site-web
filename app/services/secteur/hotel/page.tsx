@@ -7,14 +7,14 @@ import Contact from "@/components/Contact";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Application mobile hôtel & hébergement iOS & Android | BreizhApp",
+  title: "Application mobile hôtel & livret d'accueil digital | BreizhApp",
   description:
-    "Application mobile sur mesure pour hôtels, chambres d'hôtes et hébergements : réservation en ligne, conciergerie, notifications push. Développeur freelance Brest.",
+    "Application mobile et livret d'accueil digital pour hôtels, chambres d'hôtes, gîtes et locations saisonnières : réservation en ligne, conciergerie digitale, notifications push. Développeur freelance Brest.",
   alternates: { canonical: "https://breizhapp.tech/services/secteur/hotel" },
   openGraph: {
-    title: "Application mobile hôtel & hébergement sur mesure",
+    title: "Application mobile hôtel & livret d'accueil digital sur mesure",
     description:
-      "App hôtel iOS & Android : réservation directe, conciergerie, notifications. Zéro commission Booking. Freelance à Brest, devis gratuit sous 24h.",
+      "App hôtel iOS & Android + livret d'accueil digital : réservation directe, conciergerie, notifications. Zéro commission Booking. Freelance à Brest, devis gratuit sous 24h.",
     url: "https://breizhapp.tech/services/secteur/hotel",
     type: "website",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
@@ -38,6 +38,51 @@ const schema = {
         { "@type": "ListItem", position: 1, name: "Accueil", item: "https://breizhapp.tech" },
         { "@type": "ListItem", position: 2, name: "Services", item: "https://breizhapp.tech/services/application-mobile" },
         { "@type": "ListItem", position: 3, name: "App hôtel", item: "https://breizhapp.tech/services/secteur/hotel" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Qu'est-ce qu'un livret d'accueil digital pour hôtel ou location ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "C'est la version numérique du classeur papier posé dans la chambre : codes wifi, règles de la maison, guide des équipements, recommandations locales (restaurants, activités, transports) et contacts utiles. Vos voyageurs y accèdent depuis leur téléphone, sans rien installer, en scannant un QR code ou via votre application.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Livret d'accueil digital ou application mobile : quelle différence ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Le livret d'accueil digital est une page web consultable immédiatement, idéale pour informer vos voyageurs pendant leur séjour. L'application mobile va plus loin : réservation directe, conciergerie interactive, notifications push et fidélisation entre deux séjours. Beaucoup d'hôtels et de conciergeries de location combinent les deux.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Peut-on intégrer un livret d'accueil existant (Bunkly, etc.) dans notre app hôtel ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Oui. Le livret d'accueil peut être intégré directement dans votre application (via webview ou API) ou rester accessible en marque blanche à part. Je m'adapte à l'outil que vous utilisez déjà ou j'en construis un sur mesure selon vos besoins.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Une application mobile est-elle utile pour une conciergerie de locations saisonnières ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Oui, particulièrement pour gérer plusieurs biens : un livret d'accueil digital par logement, des instructions de check-in/check-out sans contact, des notifications automatiques (code d'accès, rappel de départ) et une conciergerie centralisée pour tous vos voyageurs.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Combien de temps pour créer une app hôtel avec livret d'accueil digital ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Comptez 3 à 5 semaines pour une application hôtel complète avec réservation directe et conciergerie digitale. L'intégration d'un livret d'accueil existant ou une version simplifiée peut être livrée en 2 à 3 semaines.",
+          },
+        },
       ],
     },
   ],
@@ -113,6 +158,67 @@ export default function HotelPage() {
           </div>
         </section>
 
+        {/* Livret d'accueil digital - démo iframe */}
+        <section className="py-16 px-4 bg-white brutal-border border-t-[3px] border-b-[3px]">
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="mono text-sm font-bold text-[#7C3AED] mb-3">// livret d&apos;accueil digital</p>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                Votre <span className="bg-[#FFE234] px-2 brutal-border">livret d&apos;accueil digital</span> intégré à l&apos;app
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Fini le classeur papier posé sur la table de chevet. Vos voyageurs accèdent en un scan à
+                toutes les informations utiles : codes wifi, guide des équipements, règles de la maison,
+                recommandations de restaurants et d&apos;activités locales, instructions de check-in et check-out.
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Ce livret d&apos;accueil numérique peut être intégré directement dans votre application mobile
+                hôtel ou votre app de conciergerie pour locations saisonnières — une seule expérience,
+                accessible sans rien installer.
+              </p>
+              <div className="flex flex-wrap gap-4 mono text-sm text-gray-500">
+                <span className="brutal-border px-3 py-1 bg-[#FFFBF0]">✓ Sans contact</span>
+                <span className="brutal-border px-3 py-1 bg-[#FFFBF0]">✓ Multi-hébergements</span>
+                <span className="brutal-border px-3 py-1 bg-[#FFFBF0]">✓ Accessible par QR code</span>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="brutal-border brutal-shadow bg-[#0A0A0A] p-3 rounded-[2rem]">
+                <iframe
+                  src="https://app.bunkly.co/b/NAvq6yDTOe"
+                  title="Démo livret d'accueil digital pour hôtel et location"
+                  className="rounded-[1.5rem] border-0"
+                  style={{ width: 320, height: 640, maxWidth: "100%" }}
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contenu SEO - locations saisonnières & conciergerie */}
+        <section className="py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold mb-6">
+              App mobile pour hôtels, chambres d&apos;hôtes et <span className="bg-[#FFE234] px-2 brutal-border">locations saisonnières</span>
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8 text-gray-600 leading-relaxed">
+              <p>
+                Que vous gériez un hôtel indépendant, une chambre d&apos;hôtes, un gîte ou plusieurs
+                logements en location saisonnière, une application mobile dédiée vous permet de reprendre
+                la main sur la relation client : réservation directe sans commission, communication avant,
+                pendant et après le séjour, et un livret d&apos;accueil digital toujours à jour.
+              </p>
+              <p>
+                Pour les <strong>conciergeries de location</strong> qui gèrent plusieurs biens, l&apos;application
+                centralise l&apos;ensemble des voyageurs : codes d&apos;accès envoyés automatiquement, instructions
+                de check-in/check-out sans contact, et un livret d&apos;accueil numérique propre à chaque
+                logement — le tout piloté depuis un seul panel d&apos;administration.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* ROI */}
         <section className="py-16 px-4 bg-[#0A0A0A]">
           <div className="max-w-4xl mx-auto">
@@ -127,6 +233,43 @@ export default function HotelPage() {
                   <p className="text-3xl font-bold text-[#FFE234] mb-1">{value}</p>
                   <p className="text-sm text-[#FFFBF0] font-bold">{label}</p>
                   <p className="text-xs text-gray-400 mt-1">{sub}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+
+        {/* FAQ */}
+        <section className="py-16 px-4 bg-gray-50 brutal-border border-t-[3px]">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold mb-8">Questions fréquentes</h2>
+            <div className="flex flex-col gap-4">
+              {[
+                {
+                  q: "Qu'est-ce qu'un livret d'accueil digital pour hôtel ou location ?",
+                  a: "C'est la version numérique du classeur papier posé dans la chambre : codes wifi, règles de la maison, guide des équipements, recommandations locales et contacts utiles. Vos voyageurs y accèdent depuis leur téléphone, sans rien installer, en scannant un QR code ou via votre application.",
+                },
+                {
+                  q: "Livret d'accueil digital ou application mobile : quelle différence ?",
+                  a: "Le livret d'accueil digital est une page consultable immédiatement, idéale pour informer vos voyageurs pendant leur séjour. L'application mobile va plus loin : réservation directe, conciergerie interactive, notifications push et fidélisation entre deux séjours.",
+                },
+                {
+                  q: "Peut-on intégrer un livret d'accueil existant dans notre app hôtel ?",
+                  a: "Oui. Le livret peut être intégré directement dans votre application ou rester accessible à part. Je m'adapte à l'outil que vous utilisez déjà ou j'en construis un sur mesure.",
+                },
+                {
+                  q: "Une application mobile est-elle utile pour une conciergerie de locations saisonnières ?",
+                  a: "Oui, particulièrement pour gérer plusieurs biens : un livret d'accueil digital par logement, des instructions de check-in/check-out sans contact, des notifications automatiques et une conciergerie centralisée pour tous vos voyageurs.",
+                },
+                {
+                  q: "Combien de temps pour créer une app hôtel avec livret d'accueil digital ?",
+                  a: "Comptez 3 à 5 semaines pour une application hôtel complète avec réservation directe et conciergerie digitale. L'intégration d'un livret existant peut être livrée en 2 à 3 semaines.",
+                },
+              ].map(({ q, a }) => (
+                <div key={q} className="brutal-border bg-white p-5">
+                  <h3 className="font-bold mb-2">{q}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
                 </div>
               ))}
             </div>
