@@ -419,7 +419,7 @@ export function DevisPDF({ data }: { data: DevisData }) {
             <Text style={styles.partyDetail}>Enzo Omnes</Text>
             <Text style={styles.partyDetail}>121 Kerhernic</Text>
             <Text style={styles.partyDetail}>29870 Lannilis, France</Text>
-            <Text style={styles.partyDetail}>enzo.omnes@gmail.com</Text>
+            <Text style={styles.partyDetail}>breizhapp@outlook.fr</Text>
             <Text style={styles.partyDetail}>breizhapp.tech</Text>
             <Text style={styles.partyDetail}>SIRET : 10410831100010</Text>
           </View>
@@ -556,7 +556,7 @@ export function DevisPDF({ data }: { data: DevisData }) {
 
         {/* FOOTER */}
         <View style={styles.footer}>
-          <Text style={styles.footerText}>BreizhApp — breizhapp.tech — enzo.omnes@gmail.com</Text>
+          <Text style={styles.footerText}>BreizhApp — breizhapp.tech — breizhapp@outlook.fr</Text>
           <Text style={styles.footerText}>{docLabel} N° {data.numero} — {data.date}</Text>
         </View>
 

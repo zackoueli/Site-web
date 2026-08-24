@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
+import { useRouter } from "next/navigation";
 
 type Ligne = {
   titre: string;
@@ -8,20 +9,42 @@ type Ligne = {
   prixHT: number;
 };
 
+type DevisRecord = {
+  id: string;
+  type: "devis" | "acompte" | "solde";
+  numero: string;
+  date: string;
+  validite?: number;
+  client: { nom: string; email: string; adresse: string; ville: string; siret?: string };
+  lignes: Ligne[];
+  acompte: number;
+  delai: string;
+  devisRef?: string;
+  updatedAt: string;
+};
+
 const defaultLigne = (): Ligne => ({ titre: "", description: "", quantite: 1, prixHT: 0 });
+const defaultClient = { nom: "", email: "", adresse: "", ville: "", siret: "" };
 
 export default function DevisPage() {
+  const router = useRouter();
+
+  const [editingId, setEditingId] = useState<string | null>(null);
   const [type, setType] = useState<"devis" | "acompte" | "solde">("devis");
   const [numero, setNumero] = useState("");
   const [date, setDate] = useState(new Date().toISOString().slice(0, 10));
   const [validite, setValidite] = useState(30);
   const [devisRef, setDevisRef] = useState("");
-  const [client, setClient] = useState({ nom: "", email: "", adresse: "", ville: "", siret: "" });
+  const [client, setClient] = useState(defaultClient);
   const [lignes, setLignes] = useState<Ligne[]>([defaultLigne()]);
   const [acompte, setAcompte] = useState(30);
   const [delai, setDelai] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
+  const [devisList, setDevisList] = useState<DevisRecord[]>([]);
+  const [listLoading, setListLoading] = useState(true);
+  const [listError, setListError] = useState("");
 
   const totalHT = lignes.reduce((s, l) => s + l.quantite * l.prixHT, 0);
   const montantAcompte = totalHT * (acompte / 100);
@@ -29,9 +52,28 @@ export default function DevisPage() {
 
   function formatEur(n: number) {
     const parts = n.toFixed(2).split(".");
-    const intPart = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    const intPart = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     return intPart + "," + parts[1] + " €";
   }
+
+  const loadDevisList = useCallback(async () => {
+    setListLoading(true);
+    setListError("");
+    try {
+      const res = await fetch("/api/devis");
+      if (!res.ok) throw new Error();
+      const { items } = await res.json();
+      setDevisList(items);
+    } catch {
+      setListError("Impossible de charger les anciens devis.");
+    } finally {
+      setListLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    loadDevisList();
+  }, [loadDevisList]);
 
   function updateLigne(i: number, field: keyof Ligne, value: string | number) {
     setLignes((prev) => prev.map((l, idx) => idx === i ? { ...l, [field]: value } : l));
@@ -45,6 +87,52 @@ export default function DevisPage() {
     setLignes((prev) => prev.filter((_, idx) => idx !== i));
   }
 
+  function resetForm() {
+    setEditingId(null);
+    setType("devis");
+    setNumero("");
+    setDate(new Date().toISOString().slice(0, 10));
+    setValidite(30);
+    setDevisRef("");
+    setClient(defaultClient);
+    setLignes([defaultLigne()]);
+    setAcompte(30);
+    setDelai("");
+    setError("");
+  }
+
+  function loadIntoForm(d: DevisRecord) {
+    setEditingId(d.id);
+    setType(d.type);
+    setNumero(d.numero);
+    setDate(d.date);
+    setValidite(d.validite ?? 30);
+    setDevisRef(d.devisRef ?? "");
+    setClient({ ...defaultClient, ...d.client });
+    setLignes(d.lignes.length ? d.lignes : [defaultLigne()]);
+    setAcompte(d.acompte);
+    setDelai(d.delai);
+    setError("");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  async function deleteDevis(id: string) {
+    if (!confirm("Supprimer ce devis ?")) return;
+    try {
+      await fetch(`/api/devis/${id}`, { method: "DELETE" });
+      if (editingId === id) resetForm();
+      loadDevisList();
+    } catch {
+      alert("Erreur lors de la suppression.");
+    }
+  }
+
+  async function logout() {
+    await fetch("/api/devis/logout", { method: "POST" });
+    router.push("/devis/login");
+    router.refresh();
+  }
+
   async function generate() {
     setError("");
     if (!numero || !client.nom || !client.email || !delai || lignes.some(l => !l.titre)) {
@@ -52,13 +140,38 @@ export default function DevisPage() {
       return;
     }
     setLoading(true);
+    const payload = {
+      type,
+      numero,
+      date,
+      validite: type === "devis" ? validite : undefined,
+      client,
+      lignes,
+      acompte,
+      delai,
+      devisRef: devisRef || undefined,
+    };
     try {
+      // Sauvegarde (création ou mise à jour)
+      const saveRes = await fetch(editingId ? `/api/devis/${editingId}` : "/api/devis", {
+        method: editingId ? "PUT" : "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!saveRes.ok) throw new Error("save");
+      if (!editingId) {
+        const { id } = await saveRes.json();
+        setEditingId(id);
+      }
+      loadDevisList();
+
+      // Génération du PDF
       const res = await fetch("/api/generate-devis", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ type, numero, date, validite: type === "devis" ? validite : undefined, client, lignes, acompte, delai, devisRef: devisRef || undefined }),
+        body: JSON.stringify(payload),
       });
-      if (!res.ok) throw new Error("Erreur serveur");
+      if (!res.ok) throw new Error("pdf");
       const blob = await res.blob();
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
@@ -79,10 +192,65 @@ export default function DevisPage() {
   return (
     <main className="min-h-screen bg-[#FFFBF0] px-4 py-10">
       <div className="max-w-3xl mx-auto">
-        <div className="brutal-border border-[3px] p-6 mb-8 bg-[#FFE234]">
-          <h1 className="text-2xl font-bold">Générateur de devis</h1>
-          <p className="text-sm mt-1">BreizhApp · Usage interne</p>
+        <div className="brutal-border border-[3px] p-6 mb-8 bg-[#FFE234] flex items-center justify-between">
+          <div>
+            <h1 className="text-2xl font-bold">Générateur de devis</h1>
+            <p className="text-sm mt-1">BreizhApp · Usage interne</p>
+          </div>
+          <button onClick={logout} className="brutal-border px-3 py-1.5 text-xs font-bold bg-white hover:bg-red-100">
+            Déconnexion
+          </button>
         </div>
+
+        {/* Anciens devis */}
+        <section className="brutal-border border-[2px] p-5 mb-5 bg-white">
+          <h2 className="font-bold mb-4 uppercase text-sm tracking-wider">Anciens devis</h2>
+          {listLoading && <p className="text-sm text-gray-500">Chargement...</p>}
+          {listError && <p className="text-sm text-red-600 font-bold">{listError}</p>}
+          {!listLoading && !listError && devisList.length === 0 && (
+            <p className="text-sm text-gray-500">Aucun devis enregistré pour le moment.</p>
+          )}
+          <div className="flex flex-col gap-2">
+            {devisList.map((d) => (
+              <div
+                key={d.id}
+                className={`brutal-border border-[2px] p-3 flex items-center justify-between gap-3 ${editingId === d.id ? "bg-[#FFE234]" : "bg-[#FFFBF0]"}`}
+              >
+                <div className="min-w-0">
+                  <p className="font-bold text-sm truncate">
+                    {d.numero} · {d.type === "devis" ? "Devis" : d.type === "acompte" ? "Acompte" : "Solde"}
+                  </p>
+                  <p className="text-xs text-gray-600 truncate">{d.client?.nom} — {d.date}</p>
+                </div>
+                <div className="flex gap-2 shrink-0">
+                  <button
+                    onClick={() => loadIntoForm(d)}
+                    className="brutal-border px-3 py-1.5 text-xs font-bold bg-white hover:bg-[#FFE234]"
+                  >
+                    Modifier
+                  </button>
+                  <button
+                    onClick={() => deleteDevis(d.id)}
+                    className="brutal-border px-3 py-1.5 text-xs font-bold bg-white hover:bg-red-100"
+                  >
+                    Supprimer
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+          {editingId && (
+            <button onClick={resetForm} className="brutal-btn mt-4 px-4 py-2 bg-white text-sm font-bold">
+              + Nouveau devis (vider le formulaire)
+            </button>
+          )}
+        </section>
+
+        {editingId && (
+          <div className="brutal-border border-[2px] border-[#0A0A0A] p-3 mb-5 bg-[#FFE234] text-sm font-bold">
+            Modification du document {numero} — la génération mettra à jour ce devis existant.
+          </div>
+        )}
 
         {/* Type de document */}
         <section className="brutal-border border-[2px] p-5 mb-5 bg-white">
@@ -232,7 +400,7 @@ export default function DevisPage() {
           disabled={loading}
           className="brutal-btn w-full py-4 bg-[#FFE234] text-[#0A0A0A] font-bold text-lg disabled:opacity-50"
         >
-          {loading ? "Génération en cours..." : "Générer le PDF →"}
+          {loading ? "Génération en cours..." : editingId ? "Mettre à jour et générer le PDF →" : "Générer le PDF →"}
         </button>
       </div>
     </main>

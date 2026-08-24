@@ -13,7 +13,7 @@ export async function POST(req: Request) {
 
     await resend.emails.send({
       from: "BreizhApp <noreply@breizhapp.tech>",
-      to: "enzo.omnes@gmail.com",
+      to: "breizhapp@outlook.fr",
       replyTo: email,
       subject: `Nouveau contact BreizhApp — ${name}`,
       html: `
