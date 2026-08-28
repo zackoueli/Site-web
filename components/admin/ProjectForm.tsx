@@ -107,8 +107,9 @@ async function uploadFile(file: File, folder: string): Promise<string> {
   fd.append("folder", folder);
   const res = await fetch("/api/admin/upload", { method: "POST", body: fd });
   if (!res.ok) {
-    const { error } = await res.json().catch(() => ({ error: "Upload échoué" }));
-    throw new Error(error || "Upload échoué");
+    const body = await res.json().catch(() => ({}));
+    const msg = [body.error, body.detail].filter(Boolean).join(" — ");
+    throw new Error(msg || `Upload échoué (HTTP ${res.status})`);
   }
   const { url } = await res.json();
   return url as string;
