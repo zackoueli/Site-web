@@ -1,6 +1,7 @@
 import "server-only";
 import { cert, getApps, initializeApp } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
+import { getStorage } from "firebase-admin/storage";
 
 function getAdminApp() {
   const apps = getApps();
@@ -16,9 +17,16 @@ function getAdminApp() {
 
   return initializeApp({
     credential: cert({ projectId, clientEmail, privateKey }),
+    storageBucket:
+      process.env.FIREBASE_STORAGE_BUCKET || `${projectId}.appspot.com`,
   });
 }
 
 export function getDb() {
   return getFirestore(getAdminApp());
+}
+
+/** Bucket Storage par défaut du projet (Admin SDK — bypass des règles Storage). */
+export function getBucket() {
+  return getStorage(getAdminApp()).bucket();
 }

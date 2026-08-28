@@ -1,5 +1,9 @@
 import type { MetadataRoute } from "next";
 import { articles } from "@/lib/blog";
+import { getAllProjects } from "@/lib/portfolioStore";
+
+// Régénéré à chaque requête pour refléter les projets ajoutés via /admin
+export const dynamic = "force-dynamic";
 
 const STATIC_PAGES: MetadataRoute.Sitemap = [
   { url: "https://breizhapp.tech/",                                       lastModified: new Date("2026-06-11"), changeFrequency: "weekly",  priority: 1.0 },
@@ -22,15 +26,12 @@ const STATIC_PAGES: MetadataRoute.Sitemap = [
   { url: "https://breizhapp.tech/services/secteur/education-formation",           lastModified: new Date("2026-06-13"), changeFrequency: "monthly", priority: 0.85 },
   { url: "https://breizhapp.tech/services/secteur/evenementiel-billetterie",      lastModified: new Date("2026-06-13"), changeFrequency: "monthly", priority: 0.85 },
   { url: "https://breizhapp.tech/portfolio",                              lastModified: new Date("2026-05-01"), changeFrequency: "monthly", priority: 0.75 },
-  { url: "https://breizhapp.tech/portfolio/bunkly",                       lastModified: new Date("2026-06-29"), changeFrequency: "monthly", priority: 0.7 },
-  { url: "https://breizhapp.tech/portfolio/histoire-eternelle",           lastModified: new Date("2026-06-29"), changeFrequency: "monthly", priority: 0.7 },
-  { url: "https://breizhapp.tech/portfolio/demo-paysagiste",              lastModified: new Date("2026-06-29"), changeFrequency: "monthly", priority: 0.7 },
   { url: "https://breizhapp.tech/mentions-legales",                       lastModified: new Date("2026-07-26"), changeFrequency: "yearly",  priority: 0.3 },
   { url: "https://breizhapp.tech/politique-de-confidentialite",           lastModified: new Date("2026-07-26"), changeFrequency: "yearly",  priority: 0.3 },
   { url: "https://breizhapp.tech/cgv",                                    lastModified: new Date("2026-07-26"), changeFrequency: "yearly",  priority: 0.3 },
 ];
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const blogArticles = articles.map((a) => ({
     url: `https://breizhapp.tech/blog/${a.slug}`,
     lastModified: new Date(a.lastModified ?? a.date),
@@ -38,5 +39,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...STATIC_PAGES, ...blogArticles];
+  const projects = await getAllProjects();
+  const projectPages: MetadataRoute.Sitemap = projects.map((p) => ({
+    url: `https://breizhapp.tech/portfolio/${p.slug}`,
+    lastModified: new Date(p.updatedAt ?? p.createdAt ?? Date.now()),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  return [...STATIC_PAGES, ...projectPages, ...blogArticles];
 }

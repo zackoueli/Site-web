@@ -19,6 +19,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/devis",
+        destination: "/admin/devis",
+        permanent: false,
+      },
+      {
         source: "/portfolio/forno-pizzeria",
         destination: "/portfolio/bunkly",
         permanent: true,

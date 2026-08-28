@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { getProjectsForService } from "@/lib/portfolio";
+import { getProjectsForService } from "@/lib/portfolioStore";
 
-export default function RelatedProjects({ service }: { service: string }) {
-  const items = getProjectsForService(service);
+export default async function RelatedProjects({ service }: { service: string }) {
+  const items = await getProjectsForService(service);
   if (items.length === 0) return null;
 
   return (

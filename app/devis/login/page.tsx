@@ -23,7 +23,7 @@ function LoginForm() {
         setError("Mot de passe incorrect.");
         return;
       }
-      router.push(searchParams.get("next") || "/devis");
+      router.push(searchParams.get("next") || "/admin");
       router.refresh();
     } catch {
       setError("Erreur de connexion.");

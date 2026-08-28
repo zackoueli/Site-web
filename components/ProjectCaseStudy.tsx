@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, ArrowRight, Volume2, VolumeX } from "lucide-react";
-import { projects, getProjectsForService, type Project } from "@/lib/portfolio";
+import type { Project } from "@/lib/portfolio";
 import { SERVICES } from "@/lib/taxonomy";
 import { useSiteAudio } from "@/components/AudioProvider";
 
@@ -13,7 +13,14 @@ import { useSiteAudio } from "@/components/AudioProvider";
  * titre & infos → média(s) → panneau « Projet suivant ».
  * Piloté par les données de lib/portfolio.ts.
  */
-export default function ProjectCaseStudy({ project: p }: { project: Project }) {
+export default function ProjectCaseStudy({
+  project: p,
+  allProjects,
+}: {
+  project: Project;
+  /** Tous les projets (pour « projet suivant »). */
+  allProjects: Project[];
+}) {
   const viewportRef = useRef<HTMLDivElement>(null);
   const laneRef = useRef<HTMLDivElement>(null);
   const [progress, setProgress] = useState(0);
@@ -34,10 +41,14 @@ export default function ProjectCaseStudy({ project: p }: { project: Project }) {
     SERVICES.find((s) => s.slug === p.service)?.label ?? p.category;
 
   // Projet suivant : d'abord dans le même service, sinon le suivant dans la liste globale
-  const sameService = getProjectsForService(p.service).filter((x) => x.slug !== p.slug);
-  const globalIdx = projects.findIndex((x) => x.slug === p.slug);
+  const sameService = allProjects.filter(
+    (x) => x.service === p.service && x.slug !== p.slug
+  );
+  const globalIdx = allProjects.findIndex((x) => x.slug === p.slug);
   const nextProject =
-    sameService[0] ?? projects[(globalIdx + 1) % projects.length];
+    sameService[0] ??
+    allProjects[(globalIdx + 1) % Math.max(allProjects.length, 1)] ??
+    p;
 
   // ── Défilement horizontal fluide (desktop uniquement) ──
   useEffect(() => {

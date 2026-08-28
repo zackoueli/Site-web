@@ -39,5 +39,11 @@ export async function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/devis/:path*", "/api/devis/:path*"],
+  matcher: [
+    "/devis/:path*",
+    "/api/devis/:path*",
+    "/api/generate-devis",
+    "/admin/:path*",
+    "/api/admin/:path*",
+  ],
 };
