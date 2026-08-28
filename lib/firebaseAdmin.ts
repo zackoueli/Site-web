@@ -18,7 +18,7 @@ function getAdminApp() {
   return initializeApp({
     credential: cert({ projectId, clientEmail, privateKey }),
     storageBucket:
-      process.env.FIREBASE_STORAGE_BUCKET || `${projectId}.appspot.com`,
+      process.env.FIREBASE_STORAGE_BUCKET || `${projectId}.firebasestorage.app`,
   });
 }
 
