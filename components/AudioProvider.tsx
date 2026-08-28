@@ -40,17 +40,40 @@ function writePref(v: "on" | "off") {
 
 export default function AudioProvider({ children }: { children: React.ReactNode }) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const fadeRef = useRef<number | null>(null);
   const [playing, setPlaying] = useState(false);
 
+  // Fondu linéaire du volume (ms), annule un fondu en cours
+  const fade = useCallback((to: number, ms: number, onDone?: () => void) => {
+    const el = audioRef.current;
+    if (!el) return;
+    if (fadeRef.current) cancelAnimationFrame(fadeRef.current);
+    const from = el.volume;
+    const t0 = performance.now();
+    const step = (now: number) => {
+      const k = Math.min(1, (now - t0) / ms);
+      el.volume = from + (to - from) * k;
+      if (k < 1) {
+        fadeRef.current = requestAnimationFrame(step);
+      } else {
+        fadeRef.current = null;
+        onDone?.();
+      }
+    };
+    fadeRef.current = requestAnimationFrame(step);
+  }, []);
+
+  // Lance la lecture avec un fondu d'entrée (~1,4 s) depuis le silence
   const play = useCallback(() => {
     const el = audioRef.current;
     if (!el) return Promise.reject(new Error("no <audio>"));
-    el.volume = TARGET_VOLUME;
+    el.volume = 0;
     const pr = el.play();
-    return pr ?? Promise.resolve();
-  }, []);
+    const done = pr ?? Promise.resolve();
+    return done.then(() => { fade(TARGET_VOLUME, 1400); });
+  }, [fade]);
 
-  // Bouton son : bascule et mémorise le choix explicite
+  // Bouton son : bascule et mémorise le choix explicite (avec fondus)
   const toggle = useCallback(() => {
     const el = audioRef.current;
     if (!el) return;
@@ -59,11 +82,14 @@ export default function AudioProvider({ children }: { children: React.ReactNode 
         .then(() => { setPlaying(true); writePref("on"); })
         .catch((e) => console.warn("[audio] play refusé:", e?.name));
     } else {
-      el.pause();
-      setPlaying(false);
-      writePref("off");
+      // fondu de sortie (~0,5 s) puis pause
+      fade(0, 500, () => {
+        el.pause();
+        setPlaying(false);
+        writePref("off");
+      });
     }
-  }, [play]);
+  }, [play, fade]);
 
   // Précharge le fichier dès que possible (sauf si coupé explicitement)
   useEffect(() => {
