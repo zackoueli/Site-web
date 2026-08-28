@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Volume2, VolumeX } from "lucide-react";
 import { SERVICES, SECTEURS } from "@/lib/taxonomy";
+import { useSiteAudio } from "@/components/AudioProvider";
 
 const links = [
   { label: "Réalisations", href: "/portfolio" },
@@ -15,6 +16,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileSecteursOpen, setMobileSecteursOpen] = useState(false);
+  const { playing, toggle: toggleMusic } = useSiteAudio();
 
   return (
     <nav className="brutal-border border-b-[3px] sticky top-0 z-50 bg-[#FFFBF0]">
@@ -197,6 +199,24 @@ export default function Navbar() {
               >
                 Devis gratuit →
               </a>
+            </li>
+            <li>
+              <button
+                type="button"
+                onClick={toggleMusic}
+                aria-pressed={playing}
+                className="brutal-border bg-white w-full flex items-center justify-between px-4 py-2 font-semibold"
+              >
+                <span className="flex items-center gap-2">
+                  {playing ? <Volume2 size={18} /> : <VolumeX size={18} />}
+                  Musique {playing ? "activée" : "coupée"}
+                </span>
+                <span
+                  className={`w-10 h-6 rounded-full border-2 border-black flex items-center px-0.5 transition-colors ${playing ? "bg-[#FFE234] justify-end" : "bg-gray-200 justify-start"}`}
+                >
+                  <span className="w-4 h-4 rounded-full bg-black" />
+                </span>
+              </button>
             </li>
           </ul>
         </div>

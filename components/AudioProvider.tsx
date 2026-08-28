@@ -10,12 +10,11 @@ import {
 
 const TRACK_SRC = "/lofcosmos-cloudy-skies-and-coffee-vibes-509784.mp3";
 const TARGET_VOLUME = 0.35;
-const STORAGE_KEY = "ba-music-on";
+// "on"  = l'utilisateur veut la musique  |  "off" = il l'a coupée  |  absent = jamais choisi
+const PREF_KEY = "ba-music-pref";
 
 type AudioCtx = {
-  /** true si la musique joue */
   playing: boolean;
-  /** bascule lecture / pause (l'appel doit venir d'un geste utilisateur) */
   toggle: () => void;
 };
 
@@ -27,130 +26,102 @@ export function useSiteAudio() {
   return ctx;
 }
 
+function readPref(): "on" | "off" | null {
+  try {
+    const v = localStorage.getItem(PREF_KEY);
+    return v === "on" || v === "off" ? v : null;
+  } catch {
+    return null;
+  }
+}
+function writePref(v: "on" | "off") {
+  try { localStorage.setItem(PREF_KEY, v); } catch {}
+}
+
 export default function AudioProvider({ children }: { children: React.ReactNode }) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [playing, setPlaying] = useState(false);
 
-  // Fondu du volume pour éviter les à-coups
-  const fadeTo = useCallback((el: HTMLAudioElement, to: number, done?: () => void) => {
-    const from = el.volume;
-    const start = performance.now();
-    const dur = 450;
-    function step(now: number) {
-      const t = Math.min(1, (now - start) / dur);
-      el.volume = from + (to - from) * t;
-      if (t < 1) requestAnimationFrame(step);
-      else done?.();
-    }
-    requestAnimationFrame(step);
+  const play = useCallback(() => {
+    const el = audioRef.current;
+    if (!el) return Promise.reject(new Error("no <audio>"));
+    el.volume = TARGET_VOLUME;
+    const pr = el.play();
+    return pr ?? Promise.resolve();
   }, []);
 
+  // Bouton son : bascule et mémorise le choix explicite
   const toggle = useCallback(() => {
     const el = audioRef.current;
     if (!el) return;
     if (el.paused) {
-      el.volume = 0;
-      el.play()
-        .then(() => {
-          setPlaying(true);
-          try { localStorage.setItem(STORAGE_KEY, "1"); } catch {}
-          fadeTo(el, TARGET_VOLUME);
-        })
-        .catch(() => setPlaying(false));
+      play()
+        .then(() => { setPlaying(true); writePref("on"); })
+        .catch((e) => console.warn("[audio] play refusé:", e?.name));
     } else {
-      fadeTo(el, 0, () => {
-        el.pause();
-        setPlaying(false);
-        try { localStorage.setItem(STORAGE_KEY, "0"); } catch {}
-      });
+      el.pause();
+      setPlaying(false);
+      writePref("off");
     }
-  }, [fadeTo]);
+  }, [play]);
 
-  // Démarrage automatique au tout premier geste de l'utilisateur.
-  // Les navigateurs interdisent l'autoplay audio avant interaction : on ne peut
-  // pas lancer au chargement, mais on part dès la 1re interaction.
-  // Exception : si l'utilisateur a explicitement coupé la musique, on respecte.
+  // Précharge le fichier dès que possible (sauf si coupé explicitement)
   useEffect(() => {
-    let stopped = false;
-    try { stopped = localStorage.getItem(STORAGE_KEY) === "0"; } catch {}
-    if (stopped) return;
+    const el = audioRef.current;
+    if (!el || readPref() === "off") return;
+    el.preload = "auto";
+    el.load();
+  }, []);
 
-    // pointerdown/keydown/pointerup/click sont fiables pour débloquer l'autoplay ;
-    // touchstart/wheel/scroll aident sur mobile. On garde les listeners tant que
-    // la lecture n'a pas réellement démarré (un scroll seul peut être rejeté).
-    const events = [
-      "pointerdown", "pointerup", "click", "keydown", "touchstart", "touchend", "wheel", "scroll",
-    ] as const;
-    let done = false;
+  // Démarrage auto : au 1er geste utilisateur, sauf si coupé explicitement.
+  // Les listeners RESTENT tant que la lecture n'a pas réussi (scroll seul souvent rejeté).
+  useEffect(() => {
+    if (readPref() === "off") return;
+
+    const events: (keyof WindowEventMap)[] = [
+      "pointerdown", "pointerup", "click", "keydown",
+      "touchstart", "touchend", "wheel", "scroll",
+    ];
+    let started = false;
 
     const cleanup = () => {
-      events.forEach((ev) => {
-        window.removeEventListener(ev, start, true);
-        document.removeEventListener(ev, start, true);
-      });
+      events.forEach((ev) => document.removeEventListener(ev, onGesture, true));
     };
-    const start = () => {
-      if (done) return;
+    const onGesture = (e: Event) => {
+      if (started || readPref() === "off") { cleanup(); return; }
       const el = audioRef.current;
-      if (!el) return;
-      if (!el.paused) { done = true; cleanup(); return; }
-      el.volume = 0;
-      const pr = el.play();
-      if (pr === undefined) {
-        // vieux navigateurs : play() ne renvoie pas de promesse
-        done = true;
-        setPlaying(true);
-        el.volume = TARGET_VOLUME;
-        cleanup();
-        return;
-      }
-      pr.then(() => {
-        done = true;
-        setPlaying(true);
-        try { localStorage.setItem(STORAGE_KEY, "1"); } catch {}
-        el.volume = TARGET_VOLUME;   // valeur sûre immédiate
-        fadeTo(el, TARGET_VOLUME);   // + fondu depuis le point courant
-        cleanup();
-      }).catch(() => {
-        // rejeté (ex. scroll seul, fichier pas prêt) → on retentera au geste suivant
-      });
+      if (!el || !el.paused) { started = true; cleanup(); return; }
+      play()
+        .then(() => {
+          started = true;
+          setPlaying(true);
+          writePref("on");
+          cleanup();
+          console.info("[audio] auto-start via", e.type);
+        })
+        .catch((err) => {
+          console.warn("[audio] auto-start refusé sur", e.type, "→", err?.name);
+        });
     };
 
-    // capture:true → on attrape l'événement même si un composant fait stopPropagation
-    events.forEach((ev) => {
-      window.addEventListener(ev, start, { capture: true, passive: true });
-      document.addEventListener(ev, start, { capture: true, passive: true });
-    });
+    events.forEach((ev) =>
+      document.addEventListener(ev, onGesture, { capture: true, passive: true })
+    );
     return cleanup;
-  }, [fadeTo]);
+  }, [play]);
 
-  // Filet de sécurité : si `loop` ne reboucle pas (certains navigateurs),
-  // on relance manuellement à la fin de la piste — SAUF si l'utilisateur a coupé.
+  // Rebouclage manuel si `loop` échoue (sauf si coupé)
   useEffect(() => {
     const el = audioRef.current;
     if (!el) return;
     const onEnded = () => {
-      let stopped = false;
-      try { stopped = localStorage.getItem(STORAGE_KEY) === "0"; } catch {}
-      if (stopped) return;
+      if (readPref() === "off") return;
       el.currentTime = 0;
-      el.play().then(() => setPlaying(true)).catch(() => {});
+      play().then(() => setPlaying(true)).catch(() => {});
     };
     el.addEventListener("ended", onEnded);
     return () => el.removeEventListener("ended", onEnded);
-  }, []);
-
-  // Précharge le fichier dès le montage : sinon play() doit d'abord télécharger
-  // ~7 Mo et le "user gesture" expire → lecture refusée au 1er geste.
-  useEffect(() => {
-    const el = audioRef.current;
-    if (!el) return;
-    let stopped = false;
-    try { stopped = localStorage.getItem(STORAGE_KEY) === "0"; } catch {}
-    if (stopped) return;
-    el.preload = "auto";
-    el.load();
-  }, []);
+  }, [play]);
 
   return (
     <Ctx.Provider value={{ playing, toggle }}>

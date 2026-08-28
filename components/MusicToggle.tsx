@@ -15,13 +15,14 @@ export default function MusicToggle() {
   const isCaseStudy = /^\/portfolio\/[^/]+$/.test(pathname ?? "");
   if (isCaseStudy) return null;
 
+  // Bouton flottant sur desktop uniquement ; sur mobile le contrôle est dans le menu Navbar
   return (
     <button
       type="button"
       onClick={toggle}
       aria-label={playing ? "Couper la musique" : "Activer la musique"}
       aria-pressed={playing}
-      className="fixed bottom-5 right-5 z-40 w-12 h-12 rounded-full brutal-border bg-[#FFFBF0] text-[#0A0A0A] flex items-center justify-center shadow-[3px_3px_0_#0A0A0A] hover:bg-[#FFE234] transition-colors"
+      className="hidden md:flex fixed bottom-5 right-5 z-[70] w-12 h-12 rounded-full brutal-border bg-[#FFFBF0] text-[#0A0A0A] items-center justify-center shadow-[3px_3px_0_#0A0A0A] hover:bg-[#FFE234] transition-colors"
     >
       {playing ? <Volume2 size={18} /> : <VolumeX size={18} />}
       {playing && (
