@@ -68,30 +68,50 @@ export default function AudioProvider({ children }: { children: React.ReactNode 
 
   // Démarrage automatique au tout premier geste de l'utilisateur.
   // Les navigateurs interdisent l'autoplay audio avant interaction : on ne peut
-  // pas lancer au chargement, mais on part dès le 1er clic / touche / scroll.
+  // pas lancer au chargement, mais on part dès la 1re interaction.
   // Exception : si l'utilisateur a explicitement coupé la musique, on respecte.
   useEffect(() => {
     let stopped = false;
     try { stopped = localStorage.getItem(STORAGE_KEY) === "0"; } catch {}
     if (stopped) return;
 
-    const events = ["pointerdown", "keydown", "touchstart", "wheel", "scroll"] as const;
-    const start = () => {
-      const el = audioRef.current;
-      if (el && el.paused) {
-        el.volume = 0;
-        el.play().then(() => {
-          setPlaying(true);
-          try { localStorage.setItem(STORAGE_KEY, "1"); } catch {}
-          fadeTo(el, TARGET_VOLUME);
-        }).catch(() => {});
-      }
-      events.forEach((ev) => window.removeEventListener(ev, start));
+    // pointerdown/keydown/pointerup/click sont fiables pour débloquer l'autoplay ;
+    // touchstart/wheel/scroll aident sur mobile. On garde les listeners tant que
+    // la lecture n'a pas réellement démarré (un scroll seul peut être rejeté).
+    const events = [
+      "pointerdown", "pointerup", "click", "keydown", "touchstart", "touchend", "wheel", "scroll",
+    ] as const;
+    let done = false;
+
+    const cleanup = () => {
+      events.forEach((ev) => {
+        window.removeEventListener(ev, start, true);
+        document.removeEventListener(ev, start, true);
+      });
     };
-    events.forEach((ev) =>
-      window.addEventListener(ev, start, { once: true, passive: true })
-    );
-    return () => events.forEach((ev) => window.removeEventListener(ev, start));
+    const start = () => {
+      if (done) return;
+      const el = audioRef.current;
+      if (!el) return;
+      if (!el.paused) { done = true; cleanup(); return; }
+      el.volume = 0;
+      el.play().then(() => {
+        done = true;
+        setPlaying(true);
+        try { localStorage.setItem(STORAGE_KEY, "1"); } catch {}
+        fadeTo(el, TARGET_VOLUME);
+        cleanup();
+      }).catch(() => {
+        // rejeté (ex. scroll seul) → on retentera au prochain geste
+      });
+    };
+
+    // capture:true → on attrape l'événement même si un composant fait stopPropagation
+    events.forEach((ev) => {
+      window.addEventListener(ev, start, { capture: true, passive: true });
+      document.addEventListener(ev, start, { capture: true, passive: true });
+    });
+    return cleanup;
   }, [fadeTo]);
 
   // Filet de sécurité : si `loop` ne reboucle pas (certains navigateurs),
