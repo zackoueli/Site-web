@@ -95,14 +95,24 @@ export default function AudioProvider({ children }: { children: React.ReactNode 
       if (!el) return;
       if (!el.paused) { done = true; cleanup(); return; }
       el.volume = 0;
-      el.play().then(() => {
+      const pr = el.play();
+      if (pr === undefined) {
+        // vieux navigateurs : play() ne renvoie pas de promesse
+        done = true;
+        setPlaying(true);
+        el.volume = TARGET_VOLUME;
+        cleanup();
+        return;
+      }
+      pr.then(() => {
         done = true;
         setPlaying(true);
         try { localStorage.setItem(STORAGE_KEY, "1"); } catch {}
-        fadeTo(el, TARGET_VOLUME);
+        el.volume = TARGET_VOLUME;   // valeur sûre immédiate
+        fadeTo(el, TARGET_VOLUME);   // + fondu depuis le point courant
         cleanup();
       }).catch(() => {
-        // rejeté (ex. scroll seul) → on retentera au prochain geste
+        // rejeté (ex. scroll seul, fichier pas prêt) → on retentera au geste suivant
       });
     };
 
@@ -130,9 +140,21 @@ export default function AudioProvider({ children }: { children: React.ReactNode 
     return () => el.removeEventListener("ended", onEnded);
   }, []);
 
+  // Précharge le fichier dès le montage : sinon play() doit d'abord télécharger
+  // ~7 Mo et le "user gesture" expire → lecture refusée au 1er geste.
+  useEffect(() => {
+    const el = audioRef.current;
+    if (!el) return;
+    let stopped = false;
+    try { stopped = localStorage.getItem(STORAGE_KEY) === "0"; } catch {}
+    if (stopped) return;
+    el.preload = "auto";
+    el.load();
+  }, []);
+
   return (
     <Ctx.Provider value={{ playing, toggle }}>
-      <audio ref={audioRef} src={TRACK_SRC} loop preload="none" />
+      <audio ref={audioRef} src={TRACK_SRC} loop preload="auto" />
       {children}
     </Ctx.Provider>
   );
