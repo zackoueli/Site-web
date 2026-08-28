@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SchemaLD from "@/components/SchemaLD";
+import AudioProvider from "@/components/AudioProvider";
+import MusicToggle from "@/components/MusicToggle";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://breizhapp.tech"),
@@ -49,7 +51,12 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://app.bunkly.co" />
         <link rel="dns-prefetch" href="https://firebasestorage.googleapis.com" />
       </head>
-      <body>{children}</body>
+      <body>
+        <AudioProvider>
+          {children}
+          <MusicToggle />
+        </AudioProvider>
+      </body>
     </html>
   );
 }
