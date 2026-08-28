@@ -75,6 +75,140 @@ body {
 .float-2 { animation: float2 5s ease-in-out infinite; }
 .float-3 { animation: float3 3.5s ease-in-out infinite; }
 
+/* ── Portfolio : grille visuelle façon Lusion ── */
+.portfolio-media {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.portfolio-card:hover .portfolio-media {
+  transform: translateY(-4px);
+}
+.portfolio-card .portfolio-img {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+  will-change: transform, filter;
+}
+.portfolio-card:hover .portfolio-img {
+  transform: scale(1.045);
+}
+.portfolio-card h2 {
+  transition: opacity 0.2s ease;
+}
+.portfolio-card:hover h2 {
+  opacity: 0.55;
+}
+
+/* Coup de flou + tremblement bref à l'entrée du survol, puis retour au net */
+@keyframes portfolioGlitch {
+  0% {
+    filter: blur(6px) saturate(1.3);
+    transform: scale(1.045) translate(0, 0);
+  }
+  15% {
+    filter: blur(4px);
+    transform: scale(1.045) translate(-4px, 2px) skewX(-1.5deg);
+  }
+  30% {
+    filter: blur(3px);
+    transform: scale(1.045) translate(4px, -2px) skewX(1.5deg);
+  }
+  45% {
+    filter: blur(2px);
+    transform: scale(1.045) translate(-3px, -1px);
+  }
+  60% {
+    filter: blur(1px);
+    transform: scale(1.045) translate(2px, 1px);
+  }
+  100% {
+    filter: blur(0) saturate(1);
+    transform: scale(1.045) translate(0, 0);
+  }
+}
+.portfolio-card:hover .portfolio-img {
+  animation: portfolioGlitch 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Clic sur un projet : la carte grandit jusqu'au plein écran (« on entre dedans ») */
+.portfolio-enter-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  pointer-events: none;
+}
+.portfolio-enter-card {
+  position: fixed;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(10, 10, 10, 0.35);
+  transition:
+    top 0.6s cubic-bezier(0.7, 0, 0.2, 1),
+    left 0.6s cubic-bezier(0.7, 0, 0.2, 1),
+    width 0.6s cubic-bezier(0.7, 0, 0.2, 1),
+    height 0.6s cubic-bezier(0.7, 0, 0.2, 1),
+    border-radius 0.6s cubic-bezier(0.7, 0, 0.2, 1);
+  will-change: top, left, width, height;
+}
+.portfolio-enter-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  animation: portfolioEnterZoom 0.6s cubic-bezier(0.7, 0, 0.2, 1) forwards;
+}
+@keyframes portfolioEnterZoom {
+  0%   { transform: scale(1);    filter: blur(0); }
+  60%  { transform: scale(1.12); filter: blur(1px); }
+  100% { transform: scale(1.22); filter: blur(3px); }
+}
+
+/* Étude de cas : page à défilement horizontal plein écran (translate3d piloté en JS) */
+.case-lane { backface-visibility: hidden; }
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* Menu de l'étude de cas : apparition douce en cascade */
+@keyframes caseMenuIn {
+  from { opacity: 0; transform: translateY(-8px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+.case-menu > * {
+  animation: caseMenuIn 0.32s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.case-menu > *:nth-child(2) { animation-delay: 0.05s; }
+.case-menu > *:nth-child(3) { animation-delay: 0.1s; }
+
+/* Révélation subtile d'une figure de galerie à l'entrée dans le viewport :
+   elle démarre plus petite et légèrement voilée, puis grandit jusqu'à sa taille
+   pendant qu'elle glisse vers le centre (transition longue = animation visible). */
+.case-figure {
+  opacity: 0.35;
+  transform: scale(0.82);
+  transform-origin: left center;
+  transition:
+    opacity 1.1s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.case-figure.is-revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+/* Mobile : pas de scroll horizontal ni d'IntersectionObserver → figures pleinement visibles */
+@media (max-width: 1023px) {
+  .case-figure { opacity: 1; transform: none; transition: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-media,
+  .portfolio-card:hover .portfolio-media,
+  .portfolio-card .portfolio-img,
+  .portfolio-card:hover .portfolio-img { transform: none; animation: none; }
+  .portfolio-enter-card { transition: none; }
+  .portfolio-enter-img { animation: none; }
+  /* En mode réduit : la lane redevient une bande scrollable native */
+  .case-viewport { overflow-x: auto; overflow-y: hidden; }
+  .case-lane { transform: none !important; }
+  .case-figure { opacity: 1; transform: none; transition: none; }
+}
+
 /* ── Scrollbar ── */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--cream); }
