@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SchemaLD from "@/components/SchemaLD";
 import AudioProvider from "@/components/AudioProvider";
+import SfxProvider from "@/components/SfxProvider";
 import MusicToggle from "@/components/MusicToggle";
 
 export const metadata: Metadata = {
@@ -53,8 +54,10 @@ export default function RootLayout({
       </head>
       <body>
         <AudioProvider>
-          {children}
-          <MusicToggle />
+          <SfxProvider>
+            {children}
+            <MusicToggle />
+          </SfxProvider>
         </AudioProvider>
       </body>
     </html>

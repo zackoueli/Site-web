@@ -9,7 +9,7 @@ import {
 } from "react";
 
 const TRACK_SRC = "/lofcosmos-cloudy-skies-and-coffee-vibes-509784.mp3";
-const TARGET_VOLUME = 0.35;
+const TARGET_VOLUME = 0.3; // -15 % (0.35 -> 0.30)
 // "on"  = l'utilisateur veut la musique  |  "off" = il l'a coupée  |  absent = jamais choisi
 const PREF_KEY = "ba-music-pref";
 
