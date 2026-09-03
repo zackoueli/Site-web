@@ -5029,6 +5029,82 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "analyse-technique-site-zevent",
+    image: {
+      src: "/blog/analyse-technique-site-zevent.jpg",
+      alt: "Trois développeurs devant plusieurs écrans affichant un audit technique du site ZEVENT, avec relevés de structure et de contraste",
+    },
+    service: "site-web",
+    title: "J'ai audité le site de ZEVENT : ce qui est bien fait",
+    description:
+      "Analyse technique du site zevent.fr par un développeur freelance : stack, performance, design. Ce qui fonctionne et ce qui pourrait être amélioré.",
+    date: "2026-09-03",
+    lastModified: "2026-09-03",
+    readTime: "6 min",
+    category: "Tech",
+    sections: [
+      {
+        paragraphs: [
+          "Je regarde régulièrement comment sont construits les sites qui gèrent beaucoup de trafic sur un temps très court. ZEVENT en fait partie : un pic massif de visiteurs pendant trois jours, un compteur de dons qui doit rester juste à la seconde près, des centaines de streamers à afficher en même temps. C'est un bon cas d'étude.",
+          "J'ai regardé le code envoyé par le navigateur, les fichiers chargés, et le comportement de la page. Voici ce que j'en retiens, dans l'ordre où je l'ai remarqué.",
+        ],
+      },
+      {
+        heading: "La stack technique en un coup d'œil",
+        paragraphs: [
+          "Le site tourne sur React, avec React Router pour la navigation entre les pages, et Vite comme outil de build. C'est le trio le plus courant en 2026 pour ce type de projet : rapide à développer, rapide à charger une fois compilé.",
+          "Le code est découpé en petits morceaux chargés à la demande (un fichier séparé pour la page concert, un pour les streamers, un pour la boutique). Résultat : quand vous arrivez sur l'accueil, votre navigateur ne télécharge pas le code de la page zPlace que vous ne visiterez peut-être jamais.",
+        ],
+      },
+      {
+        heading: "Ce qui est vraiment bien fait",
+        paragraphs: [
+          "Trois choix techniques sortent du lot.",
+        ],
+        list: [
+          "UnoCSS plutôt que Tailwind classique : un moteur de CSS \"atomique\" plus récent, qui ne génère que les styles réellement utilisés sur la page. Sur un site qui doit tenir sous forte charge, chaque kilo-octet économisé compte",
+          "Umami comme outil d'analyse au lieu de Google Analytics : un script léger, sans cookie tiers, qui respecte le visiteur sans le pister à travers dix autres sites",
+          "Cloudflare devant tout le site : cache agressif (24h sur le HTML), HTTP/3 activé, protection anti-bot. Sur un événement qui reçoit un pic de trafic ponctuel et massif, c'est exactement l'architecture qu'il faut",
+        ],
+      },
+      {
+        heading: "Ce qui pourrait être amélioré",
+        paragraphs: [
+          "Rien n'est parfait, et deux points m'ont sauté aux yeux.",
+        ],
+        list: [
+          "Le contenu est entièrement rendu côté client : la page arrive quasiment vide au navigateur, puis React construit tout en JavaScript. Pour un visiteur avec une connexion lente ou un vieux téléphone, ça veut dire un écran noir de plus, le temps que le script se charge et s'exécute",
+          "Sans rendu côté serveur, chaque page dépend fortement du JavaScript pour exister aux yeux d'un moteur de recherche. Sur un site orienté communauté existante plutôt que recherche Google, ce n'est pas dramatique. Sur un site qui vit du référencement naturel, ce choix coûterait cher en visibilité",
+        ],
+      },
+      {
+        heading: "Le design : simple et efficace",
+        paragraphs: [
+          "Fond noir, vert néon (#00BD00) en accent, une police custom (Switzer) au style graffiti pour le logo. Rien de sophistiqué, mais tout est cohérent avec l'identité gaming/streaming de l'événement.",
+          "Le bouton \"Faire un don\" est en dégradé doré, seul élément chaud sur un fond froid : impossible de le manquer. Sur mobile, la barre de navigation en bas d'écran reprend les codes d'une application native plutôt que d'un site web classique — un choix pertinent puisque l'essentiel du trafic pendant l'événement vient du mobile, en parallèle du stream regardé sur un autre écran.",
+        ],
+      },
+      {
+        heading: "Ce que j'en retiens pour un projet client",
+        paragraphs: [
+          "Cette architecture est taillée pour un cas précis : un pic de trafic éphémère, un public déjà acquis (les fans suivent l'événement via Twitter, Twitch, Discord, pas via Google), et un besoin de rapidité de développement plutôt que de référencement à long terme.",
+          "Pour un artisan ou un commerçant qui veut être trouvé sur la durée par de nouveaux clients via une recherche Google, ce choix technique ne conviendrait pas : le rendu côté serveur devient indispensable pour bien référencer chaque page. C'est tout l'intérêt d'adapter la stack au vrai objectif du site plutôt que de suivre une mode technique.",
+          "Si vous avez un site ou une application et que vous vous demandez si son architecture est adaptée à votre objectif, je peux y jeter un œil. Devis gratuit sous 24h.",
+        ],
+      },
+      {
+        heading: "FAQ — Analyse technique d'un site web",
+        list: [
+          "Qu'est-ce que le rendu côté client (CSR) ? C'est quand la page arrive quasiment vide au navigateur, et que le contenu est ensuite construit par du JavaScript exécuté localement. Rapide à développer, mais plus lent à afficher pour le visiteur et moins bien vu des moteurs de recherche.",
+          "Pourquoi le référencement naturel est-il plus difficile sur un site en React pur ? Parce que les robots des moteurs de recherche doivent exécuter le JavaScript pour voir le contenu réel, ce qui complique et ralentit l'indexation par rapport à une page HTML déjà complète à l'arrivée.",
+          "Cloudflare, à quoi ça sert concrètement ? C'est un réseau de serveurs répartis dans le monde qui met en cache le site et le protège des pics de trafic ou des attaques. Le visiteur reçoit la page depuis le serveur le plus proche de lui, plus vite.",
+          "Faut-il toujours utiliser React pour un site web professionnel ? Non. Pour un site qui vit du référencement local (artisan, commerçant, restaurateur), une architecture avec rendu côté serveur est presque toujours préférable : elle affiche du contenu déjà lisible par Google dès la première requête.",
+          "Comment savoir si mon site a les mêmes limites techniques ? Un audit rapide du code source et du temps de chargement suffit à le voir. Contactez-moi avec l'adresse de votre site, je vous donne un retour concret.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
