@@ -4,7 +4,6 @@ export type Article = {
   description: string;
   date: string;
   lastModified?: string;
-  readTime: string;
   category: string;
   service: string;
   /** Image d'illustration (vignette blog + en-tête d'article). Le crédit est requis pour les photos Wikimedia Commons. */
@@ -33,7 +32,6 @@ export const articles: Article[] = [
       "Prix d'une app iOS & Android selon les fonctionnalités : paiement Stripe, notifications push. Grille tarifaire réelle d'un développeur freelance à Brest.",
     date: "2025-03-15",
     lastModified: "2026-08-30",
-    readTime: "5 min",
     category: "Tarifs",
     sections: [
       {
@@ -112,7 +110,6 @@ export const articles: Article[] = [
       "Commande en ligne, fidélité, réservation : tout ce qu'une application restaurant doit avoir, sans commission Uber Eats. Devis gratuit sous 24h.",
     date: "2026-05-11",
     lastModified: "2026-08-30",
-    readTime: "6 min",
     category: "Restaurants",
     sections: [
       {
@@ -179,7 +176,6 @@ export const articles: Article[] = [
       "React Native ou Flutter pour votre app iOS & Android ? Performance, coût, écosystème : le comparatif complet d'un développeur freelance en 2026.",
     date: "2026-05-11",
     lastModified: "2026-08-30",
-    readTime: "7 min",
     category: "Tech",
     sections: [
       {
@@ -236,7 +232,6 @@ export const articles: Article[] = [
       "Freelance ou agence pour votre application mobile ? Prix, délais, communication : le comparatif complet pour choisir selon votre budget et votre projet.",
     date: "2026-04-20",
     lastModified: "2026-08-30",
-    readTime: "5 min",
     category: "Conseils",
     sections: [
       {
@@ -308,7 +303,6 @@ export const articles: Article[] = [
       "Shopify coûte bien plus que son abonnement de base. Commissions, apps payantes, thèmes : le vrai prix sur 2 ans et ce qu'une app sur mesure change pour vous.",
     date: "2026-05-11",
     lastModified: "2026-08-30",
-    readTime: "8 min",
     category: "Comparatifs",
     sections: [
       {
@@ -416,7 +410,6 @@ export const articles: Article[] = [
       "Wix affiche \"gratuit\" mais le prix d'un vrai site pro grimpe vite : abonnement, apps, options. Le coût réel sur 2 ans et l'alternative sur mesure.",
     date: "2026-05-11",
     lastModified: "2026-08-30",
-    readTime: "5 min",
     category: "Comparatifs",
     sections: [
       {
@@ -497,7 +490,6 @@ export const articles: Article[] = [
       "Planity : ce que comprend l'abonnement, les limites du modèle SaaS pour votre salon, et l'alternative où vous possédez votre outil de réservation.",
     date: "2026-05-11",
     lastModified: "2026-08-30",
-    readTime: "8 min",
     category: "Comparatifs",
     sections: [
       {
@@ -600,7 +592,6 @@ export const articles: Article[] = [
       "Une app iOS & Android professionnelle à petit prix : c'est possible avec un freelance React Native. Vrais leviers d'économie, pièges à éviter, devis gratuit.",
     date: "2026-05-11",
     lastModified: "2026-08-30",
-    readTime: "6 min",
     category: "Tarifs",
     sections: [
       {
@@ -691,7 +682,6 @@ export const articles: Article[] = [
       "Prix Squarespace 2025 : plans Personal, Business, Commerce — ce que coûte vraiment Squarespace pour un site pro. Comparatif avec une solution sur mesure.",
     date: "2026-04-20",
     lastModified: "2026-08-30",
-    readTime: "5 min",
     category: "Comparatifs",
     sections: [
       {
@@ -761,7 +751,6 @@ export const articles: Article[] = [
       "Comparatif prix 2025 : Wix, Squarespace, Webflow, Jimdo. Quel constructeur de site web est le moins cher et quelle alternative choisir ?",
     date: "2026-04-20",
     lastModified: "2026-08-30",
-    readTime: "8 min",
     category: "Comparatifs",
     sections: [
       {
@@ -832,7 +821,6 @@ export const articles: Article[] = [
       "Quel est le prix d'un site internet en 2025 ? Freelance, agence, constructeur DIY (Wix, Squarespace) — comparatif complet des tarifs de création de site web.",
     date: "2026-04-20",
     lastModified: "2026-08-30",
-    readTime: "7 min",
     category: "Tarifs",
     sections: [
       {
@@ -923,7 +911,6 @@ export const articles: Article[] = [
       "Menu en ligne, réservation, commande à emporter : tout ce qu'un site web de restaurant à Brest doit avoir en 2025. Tarifs et conseils d'un développeur local.",
     date: "2026-04-25",
     lastModified: "2026-08-30",
-    readTime: "6 min",
     category: "Restaurants",
     sections: [
       {
@@ -997,7 +984,6 @@ export const articles: Article[] = [
       "App mobile pour restaurant en Bretagne : fonctionnalités, tarifs et retour sur investissement. Guide par un développeur freelance basé à Brest.",
     date: "2026-04-25",
     lastModified: "2026-08-30",
-    readTime: "7 min",
     category: "Restaurants",
     sections: [
       {
@@ -1080,7 +1066,6 @@ export const articles: Article[] = [
       "Site web pour votre pizzeria à Brest : commande en ligne, menu digital, référencement local. Tarifs et conseils d'un développeur freelance brestois.",
     date: "2026-04-25",
     lastModified: "2026-07-31",
-    readTime: "6 min",
     category: "Restaurants",
     sections: [
       {
@@ -1159,7 +1144,6 @@ export const articles: Article[] = [
       "Créer une application mobile à Brest : à qui confier votre projet, les étapes de A à Z, la bonne technologie et les erreurs à éviter. Guide par un développeur local.",
     date: "2026-04-30",
     lastModified: "2026-08-30",
-    readTime: "7 min",
     category: "Local",
     sections: [
       {
@@ -1259,7 +1243,6 @@ export const articles: Article[] = [
       "Boulanger, boucher, fleuriste : pourquoi une application mobile sur mesure dépasse Wix ou Planity pour fidéliser vos clients et booster vos ventes.",
     date: "2026-05-09",
     lastModified: "2026-08-30",
-    readTime: "7 min",
     category: "Guides",
     sections: [
       {
@@ -1354,7 +1337,6 @@ export const articles: Article[] = [
       "Coûts cachés, commissions, limitations : ce que Wix et Shopify ne disent pas. Pourquoi une app mobile sur mesure est souvent plus rentable à 24 mois.",
     date: "2026-05-09",
     lastModified: "2026-08-30",
-    readTime: "8 min",
     category: "Comparatifs",
     sections: [
       {
@@ -1451,7 +1433,6 @@ export const articles: Article[] = [
       "Application mobile ou site e-commerce ? Conversion, fidélisation, coûts : le guide pour choisir la meilleure solution pour votre boutique en ligne.",
     date: "2026-05-09",
     lastModified: "2026-08-30",
-    readTime: "7 min",
     category: "Guides",
     sections: [
       {
@@ -1565,7 +1546,6 @@ export const articles: Article[] = [
     description: "Combien coûte un site web sur mesure en 2026 ? Vitrine, e-commerce, plateforme : tarifs réels d'un développeur freelance vs agence. Devis gratuit 48h.",
     date: "2026-05-15",
     lastModified: "2026-08-30",
-    readTime: "7 min",
     category: "Tarifs",
     sections: [
       {
@@ -1686,7 +1666,6 @@ export const articles: Article[] = [
     description: "Créer une plateforme digitale sur mesure : espace admin, espace client, multi-rôles. Fonctionnalités, tarifs et alternatives au no-code. Devis gratuit.",
     date: "2026-05-15",
     lastModified: "2026-08-30",
-    readTime: "8 min",
     category: "Guides",
     sections: [
       {
@@ -1795,7 +1774,6 @@ export const articles: Article[] = [
     description: "WordPress ou site sur mesure : performances, coûts, SEO, sécurité. Le comparatif complet pour choisir la bonne solution selon votre projet en 2026.",
     date: "2026-05-15",
     lastModified: "2026-08-30",
-    readTime: "7 min",
     category: "Comparatifs",
     sections: [
       {
@@ -1911,7 +1889,6 @@ export const articles: Article[] = [
     description: "No-code (Bubble, Glide, Adalo) ou développeur sur mesure ? Coûts, limites, performances : le comparatif complet pour créer votre app ou plateforme en 2026.",
     date: "2026-05-15",
     lastModified: "2026-08-30",
-    readTime: "7 min",
     category: "Comparatifs",
     sections: [
       {
@@ -2032,7 +2009,6 @@ export const articles: Article[] = [
     description: "App mobile salon de coiffure : réservation, fidélité, notifications push. Alternative à Planity sans commission. Tarifs et fonctionnalités 2026.",
     date: "2026-05-15",
     lastModified: "2026-08-30",
-    readTime: "6 min",
     category: "Secteurs",
     sections: [
       {
@@ -2122,7 +2098,6 @@ export const articles: Article[] = [
     description: "App mobile salle de sport : abonnements, réservation de cours, suivi des séances, fidélité. Tarifs et fonctionnalités clés en 2026.",
     date: "2026-05-15",
     lastModified: "2026-08-30",
-    readTime: "6 min",
     category: "Secteurs",
     sections: [
       {
@@ -2204,7 +2179,6 @@ export const articles: Article[] = [
     description: "Site web pour artisan : pourquoi éviter Wix et les constructeurs gratuits. Ce qu'un site sur mesure apporte en SEO local, devis en ligne et crédibilité.",
     date: "2026-05-15",
     lastModified: "2026-08-30",
-    readTime: "6 min",
     category: "Secteurs",
     sections: [
       {
@@ -2301,7 +2275,6 @@ export const articles: Article[] = [
     description: "Application mobile pour hôtel et hébergement : check-in digital, conciergerie, fidélité, room service. Fonctionnalités clés et tarifs 2026. Devis gratuit.",
     date: "2026-05-15",
     lastModified: "2026-08-30",
-    readTime: "8 min",
     category: "Secteurs",
     sections: [
       {
@@ -2402,7 +2375,6 @@ export const articles: Article[] = [
     description: "Développeur freelance à Quimper : applications mobiles iOS & Android, sites web et plateformes digitales sur mesure. Devis gratuit sous 48h, livraison en Bretagne.",
     date: "2026-05-16",
     lastModified: "2026-08-30",
-    readTime: "5 min",
     category: "Local",
     sections: [
       {
@@ -2480,7 +2452,6 @@ export const articles: Article[] = [
     description: "Développeur freelance à Rennes : applications mobiles iOS & Android, sites web et plateformes sur mesure. Basé en Bretagne, devis gratuit sous 48h.",
     date: "2026-05-16",
     lastModified: "2026-08-30",
-    readTime: "5 min",
     category: "Local",
     sections: [
       {
@@ -2558,7 +2529,6 @@ export const articles: Article[] = [
     description: "Création site web à Brest : vitrine, e-commerce, plateforme sur mesure. Développeur freelance local, SEO optimisé. Devis gratuit sous 24h.",
     date: "2026-05-16",
     lastModified: "2026-08-30",
-    readTime: "5 min",
     category: "Local",
     sections: [
       {
@@ -2639,7 +2609,6 @@ export const articles: Article[] = [
     description: "Développeur application mobile en Bretagne : iOS & Android sur mesure, sites web, plateformes. Basé à Brest, Finistère. Devis gratuit sous 48h.",
     date: "2026-05-16",
     lastModified: "2026-08-30",
-    readTime: "5 min",
     category: "Local",
     sections: [
       {
@@ -2719,7 +2688,6 @@ export const articles: Article[] = [
     description: "No-code, low-code ou développeur ? Le guide honnête pour créer votre application mobile sans savoir coder — limites, coûts et quand faire appel à un pro.",
     date: "2026-05-18",
     lastModified: "2026-08-30",
-    readTime: "7 min",
     category: "Guides",
     sections: [
       {
@@ -2815,7 +2783,6 @@ export const articles: Article[] = [
     description: "Application mobile de prise de rendez-vous en ligne : fonctionnalités, coûts, alternatives à Doctolib et Planity. Guide complet pour professionnels en 2026.",
     date: "2026-05-18",
     lastModified: "2026-08-30",
-    readTime: "6 min",
     category: "Guides",
     sections: [
       {
@@ -2900,7 +2867,6 @@ export const articles: Article[] = [
     description: "App fidélité clients : carte de points, offres exclusives, notifications push. Fidélisez vos clients sans commission à une plateforme tierce. Devis gratuit.",
     date: "2026-05-18",
     lastModified: "2026-08-30",
-    readTime: "6 min",
     category: "Guides",
     sections: [
       {
@@ -2994,7 +2960,6 @@ export const articles: Article[] = [
     description: "Combien coûte la maintenance d'une application mobile ? Mises à jour iOS/Android, bugs, hébergement : le vrai coût après la livraison expliqué clairement.",
     date: "2026-05-18",
     lastModified: "2026-08-30",
-    readTime: "6 min",
     category: "Tarifs",
     sections: [
       {
@@ -3086,7 +3051,6 @@ export const articles: Article[] = [
     description: "Progressive Web App ou application native iOS/Android ? Performances, coûts, App Store, offline : le comparatif complet pour choisir la bonne solution en 2026.",
     date: "2026-05-18",
     lastModified: "2026-08-30",
-    readTime: "7 min",
     category: "Comparatifs",
     sections: [
       {
@@ -3185,7 +3149,6 @@ export const articles: Article[] = [
     description: "App iOS & Android pour salon de coiffure : réservation 24h/24, programme de fidélité, notifications push. L'alternative à Planity. Freelance à Brest.",
     date: "2026-06-01",
     lastModified: "2026-08-30",
-    readTime: "7 min",
     category: "Guides",
     sections: [
       {
@@ -3283,7 +3246,6 @@ export const articles: Article[] = [
     description: "Programme de fidélité numérique via une application mobile : tampons virtuels, push ciblées, offres personnalisées. Guide complet pour commerçants.",
     date: "2026-06-01",
     lastModified: "2026-08-30",
-    readTime: "5 min",
     category: "Guides",
     sections: [
       {
@@ -3341,7 +3303,6 @@ export const articles: Article[] = [
       "Création d'application mobile en Bretagne : développeur React Native freelance à Brest. App iOS & Android sur mesure pour les entreprises bretonnes. Devis 24h.",
     date: "2026-06-13",
     lastModified: "2026-08-30",
-    readTime: "5 min",
     category: "Local",
     sections: [
       {
@@ -3412,7 +3373,6 @@ export const articles: Article[] = [
       "Développeur application mobile dans le Finistère : Brest, Quimper, Morlaix. App iOS & Android sur mesure. Freelance local, devis gratuit sous 24h.",
     date: "2026-06-13",
     lastModified: "2026-08-30",
-    readTime: "4 min",
     category: "Local",
     sections: [
       {
@@ -3474,7 +3434,6 @@ export const articles: Article[] = [
       "Vous avez une idée d'app mobile mais vous ne savez pas comment la concrétiser ? Ce guide vous explique les étapes, les coûts et comment trouver le bon développeur.",
     date: "2026-06-13",
     lastModified: "2026-08-30",
-    readTime: "6 min",
     category: "Guides",
     sections: [
       {
@@ -3570,7 +3529,6 @@ export const articles: Article[] = [
       "Combien ça coûte de faire développer une application mobile ? Freelance, agence, no-code : comparatif complet pour choisir la bonne option selon votre budget.",
     date: "2026-06-13",
     lastModified: "2026-08-30",
-    readTime: "7 min",
     category: "Guides",
     sections: [
       {
@@ -3663,14 +3621,27 @@ export const articles: Article[] = [
     description:
       "Les étapes concrètes pour créer une application mobile iOS & Android : cadrage, design, développement, tests, publication.",
     date: "2026-06-13",
-    lastModified: "2026-08-30",
-    readTime: "6 min",
+    lastModified: "2026-09-03",
     category: "Guides",
     sections: [
       {
         paragraphs: [
           "Vous voulez créer une application mobile pour votre commerce, votre idée de projet ou un outil professionnel, mais vous ne savez pas par où commencer. Bonne nouvelle : le processus est balisé et ne demande aucune compétence technique de votre part.",
           "Voici, étape par étape, comment se déroule concrètement la création d'une application mobile iOS & Android, de l'idée jusqu'à sa publication sur l'App Store et Google Play.",
+        ],
+      },
+      {
+        heading: "Valider votre idée avant de foncer",
+        paragraphs: [
+          "Avoir une idée est facile. Ce qui est difficile, c'est de la transformer en une application que des gens utilisent vraiment. La différence se joue dans la façon dont vous la mettez en place, pas dans l'idée elle-même.",
+          "Avant de penser aux écrans ou aux fonctionnalités, posez-vous une seule question : à quelle problématique concrète votre application répond-elle ? S'il n'y a pas de vrai besoin derrière, ou si vous ne savez pas identifier qui a ce besoin, le reste du projet part sur des bases fragiles.",
+        ],
+        list: [
+          "Identifiez la demande : qui a ce problème, à quelle fréquence, et que fait cette personne aujourd'hui pour le résoudre sans votre app",
+          "Cherchez l'inspiration côté design sur Pinterest, Dribbble ou Refero — repérez une direction visuelle qui correspond à votre projet, plutôt que de partir d'une page blanche",
+          "Construisez une V1 volontairement simple, centrée sur la réponse à ce besoin, et lancez-la sans attendre d'avoir tout prévu",
+          "Une fois les 4 ou 5 premiers utilisateurs actifs, demandez-leur directement ce qui leur manque et quelles fonctionnalités les aideraient",
+          "Ajoutez ces retours un par un, puis répétez : les meilleures idées de fonctionnalités viennent de vos utilisateurs, parce qu'elles répondent à un besoin qu'ils ont réellement rencontré",
         ],
       },
       {
@@ -3743,7 +3714,6 @@ export const articles: Article[] = [
     description: "Photobooth digital : fonctionnement, achat ou location, choix du logiciel, et comment une application sur mesure équipe loueurs et photographes pros.",
     date: "2026-06-23",
     lastModified: "2026-08-30",
-    readTime: "7 min",
     category: "Guides",
     sections: [
       {
@@ -3884,7 +3854,6 @@ export const articles: Article[] = [
       "Chaque site et application BreizhApp inclut un panel d'administration sur mesure : menu, commandes, statistiques — gérez tout en autonomie totale.",
     date: "2026-06-29",
     lastModified: "2026-07-31",
-    readTime: "6 min",
     category: "Conseils",
     sections: [
       {
@@ -3978,7 +3947,6 @@ export const articles: Article[] = [
       "Le panel d'administration inclus pour les salons de coiffure : rendez-vous, prestations, équipe, galerie et messages depuis un seul tableau de bord.",
     date: "2026-06-29",
     lastModified: "2026-07-31",
-    readTime: "5 min",
     category: "Secteurs",
     sections: [
       {
@@ -4108,7 +4076,6 @@ export const articles: Article[] = [
       "Le panel d'administration inclus pour restaurants et pizzerias : menu, commandes, réservations, horaires, codes promo, livreurs et statistiques.",
     date: "2026-06-29",
     lastModified: "2026-07-31",
-    readTime: "6 min",
     category: "Secteurs",
     sections: [
       {
@@ -4267,7 +4234,6 @@ export const articles: Article[] = [
       "Le panel d'administration inclus dans chaque boutique en ligne : produits, commandes, codes promo, avis clients et messagerie depuis un seul tableau de bord.",
     date: "2026-06-29",
     lastModified: "2026-07-31",
-    readTime: "5 min",
     category: "Secteurs",
     sections: [
       {
@@ -4403,7 +4369,6 @@ export const articles: Article[] = [
       "Notifications push mobile : fonctionnement, exemples par secteur et bonnes pratiques — la fonctionnalité qui sépare une app utilisée d'une app oubliée.",
     date: "2026-07-03",
     lastModified: "2026-08-30",
-    readTime: "5 min",
     category: "Tech",
     sections: [
       {
@@ -4481,7 +4446,6 @@ export const articles: Article[] = [
       "Les principes UX/UI d'une application mobile réussie : navigation intuitive, rapidité, cohérence visuelle. Pour que vos clients restent au-delà de 10 secondes.",
     date: "2026-07-03",
     lastModified: "2026-08-30",
-    readTime: "6 min",
     category: "Tech",
     sections: [
       {
@@ -4554,7 +4518,6 @@ export const articles: Article[] = [
       "Créer des captures d'écran qui convertissent sur l'App Store et Google Play : formats requis, bonnes pratiques et erreurs à éviter pour être téléchargé.",
     date: "2026-07-03",
     lastModified: "2026-08-30",
-    readTime: "5 min",
     category: "Guides",
     sections: [
       {
@@ -4629,7 +4592,6 @@ export const articles: Article[] = [
       "Publier une application iOS sur l'App Store : compte développeur, délais de validation, règles Apple et erreurs qui font rejeter une app.",
     date: "2026-07-03",
     lastModified: "2026-08-30",
-    readTime: "6 min",
     category: "Guides",
     sections: [
       {
@@ -4708,7 +4670,6 @@ export const articles: Article[] = [
       "Publier une application Android sur le Google Play Store : compte développeur, fiche Play Console, délais de validation et publication sans rejet.",
     date: "2026-07-03",
     lastModified: "2026-08-30",
-    readTime: "5 min",
     category: "Guides",
     sections: [
       {
@@ -4785,7 +4746,6 @@ export const articles: Article[] = [
       "Les avantages du développement cross-platform : une seule base de code pour iOS et Android, des délais réduits et une expérience utilisateur optimale.",
     date: "2026-07-18",
     lastModified: "2026-08-30",
-    readTime: "6 min",
     category: "Tech",
     sections: [
       {
@@ -4867,7 +4827,6 @@ export const articles: Article[] = [
       "Comparatif Stripe vs SumUp pour encaisser en ligne : commissions, fonctionnement, intégration sur un site web ou une application mobile.",
     date: "2026-08-06",
     lastModified: "2026-08-30",
-    readTime: "7 min",
     category: "Comparatifs",
     sections: [
       {
@@ -4955,7 +4914,6 @@ export const articles: Article[] = [
       "Vitesse de chargement, parcours client, mobile : les leviers concrets pour qu'un site web pro convertisse vraiment. Guide pratique, sans jargon technique.",
     date: "2026-09-03",
     lastModified: "2026-09-03",
-    readTime: "6 min",
     category: "Guides",
     sections: [
       {
@@ -5041,7 +4999,6 @@ export const articles: Article[] = [
       "Analyse technique du site zevent.fr par un développeur freelance : stack, performance, design. Ce qui fonctionne et ce qui pourrait être amélioré.",
     date: "2026-09-03",
     lastModified: "2026-09-03",
-    readTime: "6 min",
     category: "Tech",
     sections: [
       {

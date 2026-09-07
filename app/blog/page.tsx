@@ -215,7 +215,7 @@ export default async function BlogPage({ searchParams }: Props) {
                   />
                 )}
                 <div className="p-6 flex flex-col gap-4 flex-1">
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center">
                     <span
                       className={`mono text-xs font-bold px-2 py-1 brutal-border ${
                         categoryColors[article.category] ?? "bg-white"
@@ -223,7 +223,6 @@ export default async function BlogPage({ searchParams }: Props) {
                     >
                       {article.category}
                     </span>
-                    <span className="mono text-xs text-gray-400">{article.readTime} de lecture</span>
                   </div>
 
                   <div className="flex-1">

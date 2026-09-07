@@ -212,7 +212,6 @@ export default async function ArticlePage({ params }: Props) {
             >
               {article.category}
             </span>
-            <span className="mono text-xs text-gray-400">{article.readTime} de lecture</span>
             <span className="mono text-xs text-gray-400">
               {article.lastModified && article.lastModified !== article.date ? (
                 <>Mis à jour le {new Date(article.lastModified).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}</>
