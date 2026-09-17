@@ -65,6 +65,16 @@ export default function Contact() {
               </div>
             ))}
           </div>
+
+          <p className="mt-8 text-sm text-gray-700">
+            Vous préférez m'écrire directement ?{" "}
+            <a
+              href="mailto:breizhapp@outlook.fr"
+              className="font-bold underline decoration-2 underline-offset-2 hover:text-[#FF6B9D]"
+            >
+              breizhapp@outlook.fr
+            </a>
+          </p>
         </div>
 
         {/* Right form */}
