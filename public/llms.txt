@@ -29,8 +29,8 @@ BreizhApp est le nom commercial d'Enzo Omnes, développeur freelance indépendan
 - Site pour commerce local & maraîcher
 - Site portfolio
 
-### Plateformes digitales & SaaS
-- Plateforme métier sur mesure
+### Web apps & SaaS
+- Web app métier sur mesure
 - Tableau de bord & panel d'administration
 - API & backend sur mesure
 - Marketplace & plateforme multi-acteurs
@@ -60,7 +60,7 @@ Brest, Quimper, Morlaix, Rennes, Nantes — et toute la France.
 - [Accueil](https://breizhapp.tech)
 - [Services app mobile iOS & Android](https://breizhapp.tech/services/application-mobile)
 - [Services création de site web](https://breizhapp.tech/services/site-web)
-- [Services plateforme & SaaS](https://breizhapp.tech/services/plateforme)
+- [Services web app & SaaS](https://breizhapp.tech/services/web-app)
 - [Services e-commerce](https://breizhapp.tech/services/ecommerce)
 - [App & site pour restaurant](https://breizhapp.tech/services/secteur/restaurant)
 - [App & site pour salon de coiffure](https://breizhapp.tech/services/secteur/coiffeur)

@@ -35,9 +35,9 @@ export const projects: Project[] = [
   {
     slug: "bunkly",
     name: "Bunkly",
-    service: "plateforme",
+    service: "web-app",
     tagline: "Créez votre livret d'accueil digital pour vos hôtes.",
-    category: "Plateforme web",
+    category: "Web app",
     type: "SaaS · Livret d'accueil",
     color: "#FF6B35",
     textColor: "#FFFBF0",

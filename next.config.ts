@@ -73,6 +73,11 @@ const nextConfig: NextConfig = {
         destination: "/blog/comment-creer-une-application-mobile",
         permanent: true,
       },
+      {
+        source: "/services/plateforme",
+        destination: "/services/web-app",
+        permanent: true,
+      },
     ];
   },
 };

@@ -1061,16 +1061,16 @@ export const articles: Article[] = [
       credit: "Photo : Dimitri Neyt — domaine public, via Wikimedia Commons",
     },
     service: "restaurant",
-    title: "Site web pizzeria à Brest : tarifs et guide 2025",
+    title: "Créer un site web professionnel pour pizzeria à Brest : guide 2026",
     description:
-      "Site web pour votre pizzeria à Brest : commande en ligne, menu digital, référencement local. Tarifs et conseils d'un développeur freelance brestois.",
+      "Développeur freelance à Brest : je crée votre site web professionnel de pizzeria — commande en ligne, menu digital, référencement local. Guide complet.",
     date: "2026-04-25",
-    lastModified: "2026-07-31",
+    lastModified: "2026-09-20",
     category: "Restaurants",
     sections: [
       {
         paragraphs: [
-          "Vous avez une pizzeria à Brest et vous voulez récupérer vos commandes en ligne sans payer 25% à Uber Eats ou Just Eat ? Ou simplement apparaître en premier quand quelqu'un cherche \"pizzeria Brest\" sur Google ? Ce guide vous explique exactement ce qu'il faut faire — et ce que ça coûte.",
+          "Vous êtes propriétaire d'une pizzeria à Brest et vous cherchez un développeur pour créer votre site web professionnel ? Ce guide s'adresse aux restaurateurs qui veulent récupérer leurs commandes en ligne sans payer 25% à Uber Eats ou Just Eat, et apparaître en premier quand un client cherche \"pizzeria Brest\" sur Google. Voici exactement ce qu'un site professionnel doit contenir — et comment un développeur local peut vous accompagner.",
         ],
       },
       {
@@ -1117,15 +1117,41 @@ export const articles: Article[] = [
         ],
       },
       {
-        heading: "Tarifs pour la création d'un site de pizzeria à Brest",
+        heading: "5 astuces concrètes pour vendre plus de pizzas en ligne",
+        paragraphs: [
+          "Avoir un site ne suffit pas : quelques réglages font une vraie différence sur le nombre de commandes. Voici ce qui fonctionne le mieux chez les pizzerias que j'accompagne :",
+        ],
+        list: [
+          "Photographiez vos pizzas en lumière naturelle, de dessus et à 45°, juste après cuisson : les photos prises au flash le soir en cuisine font fuir plus qu'elles n'attirent — une seule bonne séance photo (même au smartphone) suffit pour tout le menu",
+          "Limitez le menu en ligne à vos 10-15 meilleures ventes plutôt que d'afficher toute la carte : un client qui doit scroller 40 pizzas sur son téléphone abandonne plus souvent qu'un client face à un choix restreint et clair",
+          "Proposez une suggestion automatique à l'ajout au panier (\"+ boisson\", \"+ dessert\") : c'est le levier qui augmente le plus le panier moyen, sans effort de vente de votre part",
+          "Fixez une heure de coupure des commandes en ligne 30 minutes avant la fermeture réelle du four : évite les commandes prises trop tard que l'équipe doit refuser au téléphone, source n°1 d'avis négatifs",
+          "Affichez un temps d'attente réaliste plutôt qu'optimiste : un client prévenu de 35 minutes qui est servi en 30 est content ; un client à qui on a promis 20 minutes et qui attend 35 laisse un avis 2 étoiles",
+        ],
+      },
+      {
+        heading: "Fidéliser sans y passer vos soirées : ce qui marche vraiment",
+        paragraphs: [
+          "La fidélisation d'une pizzeria de quartier ne se joue pas sur des outils complexes, mais sur la régularité de quelques actions simples :",
+        ],
+        list: [
+          "Envoyez une notification ou un SMS le jeudi ou vendredi en fin d'après-midi : c'est le moment où la décision \"on commande ce soir\" se prend, viser le mardi ou mercredi produit beaucoup moins de conversions",
+          "Segmentez vos clients \"inactifs depuis 30 jours\" pour leur envoyer une offre ciblée plutôt qu'un message à toute votre base : un client qui commandait chaque semaine et a disparu réagit mieux à \"on vous a manqué\" qu'à une promo générique",
+          "Mettez en avant une pizza \"du moment\" qui change chaque mois : ça donne une raison de revenir aux clients réguliers et alimente vos publications Google/Instagram sans effort créatif supplémentaire",
+          "Récoltez les avis juste après la livraison, pas le lendemain : un lien d'avis envoyé par SMS 15 minutes après réception génère nettement plus de réponses qu'un email générique envoyé le jour suivant",
+          "Gardez le programme de fidélité simple et visible dans l'app : un système à plus de 2 règles (points + paliers + exceptions) est ignoré par la majorité des clients, un compteur \"9/10 pizzas\" bien visible fonctionne mieux",
+        ],
+      },
+      {
+        heading: "Des formules adaptées à votre pizzeria à Brest",
         paragraphs: [
           "Je propose des formules adaptées aux pizzerias et restaurants indépendants :",
         ],
         list: [
-          "Site vitrine + menu en ligne : à partir de 490€ — idéal pour apparaître sur Google et présenter votre carte",
-          "Site + commande en ligne avec paiement Stripe : à partir de 800€ — vos clients commandent directement, vous recevez les commandes sur votre écran",
-          "Application mobile iOS & Android : à partir de 490€ + 49€/mois — notifications push, programme de fidélité, commande intégrée",
-          "Pack site + app mobile : à partir de 900€ — la solution complète pour s'affranchir des plateformes",
+          "Site vitrine + menu en ligne : idéal pour apparaître sur Google et présenter votre carte",
+          "Site + commande en ligne avec paiement Stripe : vos clients commandent directement, vous recevez les commandes sur votre écran",
+          "Application mobile iOS & Android : notifications push, programme de fidélité, commande intégrée",
+          "Pack site + app mobile : la solution complète pour s'affranchir des plateformes",
           "Devis gratuit sous 24h — je suis à Brest et je peux vous rencontrer pour discuter de votre projet",
         ],
       },
@@ -1661,7 +1687,7 @@ export const articles: Article[] = [
       alt: "Écran affichant un tableau de bord avec graphiques et statistiques, clavier et carnet sur un bureau moderne",
       credit: "Image : Artlist",
     },
-    service: "plateforme",
+    service: "web-app",
     title: "Plateforme digitale sur mesure : guide 2026",
     description: "Créer une plateforme digitale sur mesure : espace admin, espace client, multi-rôles. Fonctionnalités, tarifs et alternatives au no-code. Devis gratuit.",
     date: "2026-05-15",
@@ -3709,7 +3735,7 @@ export const articles: Article[] = [
       alt: "Borne photobooth élégante avec anneau lumineux et tablette lors d'un événement festif, bokeh coloré, personnes en arrière-plan flou",
       credit: "Image : Artlist",
     },
-    service: "plateforme",
+    service: "web-app",
     title: "Photobooth digital : logiciel, application et guide 2026",
     description: "Photobooth digital : fonctionnement, achat ou location, choix du logiciel, et comment une application sur mesure équipe loueurs et photographes pros.",
     date: "2026-06-23",

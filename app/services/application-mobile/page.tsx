@@ -9,9 +9,9 @@ import { SECTEURS } from "@/lib/taxonomy";
 import { Smartphone, CheckCircle2, ArrowRight, MapPin, Quote } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Agence application mobile à Brest — iOS & Android | BreizhApp",
+  title: "Développeur d'application mobile à Brest, iOS & Android - BreizhApp",
   description:
-    "Agence application mobile à Brest : création d'app iOS & Android sur mesure en React Native. De l'idée au déploiement sur l'App Store et Google Play. Devis gratuit sous 24h.",
+    "Je suis développeur indépendant à Brest, vous échangez directement avec moi, du premier rendez-vous jusqu'à la publication de votre app iOS & Android sur les stores. Devis gratuit sous 24h.",
   keywords: [
     "agence application mobile Brest",
     "agence application mobile",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://breizhapp.tech/services/application-mobile" },
   openGraph: {
-    title: "Agence application mobile à Brest — iOS & Android | BreizhApp",
+    title: "Développeur d'application mobile à Brest, iOS & Android - BreizhApp",
     description:
-      "Vous avez une idée d'application mobile ? Agence mobile à Brest : app iOS & Android sur mesure en React Native, publiée sur les stores. Devis gratuit sous 24h.",
+      "Je suis développeur indépendant à Brest, vous échangez directement avec moi, du premier rendez-vous jusqu'à la publication de votre app iOS & Android sur les stores. Devis gratuit sous 24h.",
     url: "https://breizhapp.tech/services/application-mobile",
     type: "website",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
@@ -51,7 +51,7 @@ const faq = [
   },
   {
     q: "Combien coûte la création d'une application mobile à Brest ?",
-    a: "Le tarif dépend des fonctionnalités souhaitées : paiement en ligne, notifications push, espace admin, authentification, réservation. Une application simple coûte nettement moins cher qu'un projet avec paiement et back-office complet. Contactez BreizhApp pour un devis gratuit et personnalisé sous 24h.",
+    a: "À partir de 4 000 €, pour une application iOS & Android avec panel admin et authentification. Le tarif final dépend des fonctionnalités souhaitées : paiement en ligne, notifications push, réservation. Contactez BreizhApp pour un devis gratuit et personnalisé sous 24h.",
   },
   {
     q: "Combien de temps pour développer une application mobile ?",
@@ -388,6 +388,29 @@ export default function AppMobilePage() {
                 src="https://demo.pizzeria.breizhapp.tech/"
                 title="Démo application restaurant créée par l'agence BreizhApp à Brest"
               />
+            </div>
+          </div>
+        </section>
+
+        {/* Budget */}
+        <section className="py-16 px-4 bg-gray-50 brutal-border border-t-[3px] border-b-[3px]">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold mb-2">Combien coûte une <span className="bg-[#FFE234] px-2 brutal-border">application mobile sur mesure</span> ?</h2>
+            <p className="text-gray-600 mb-8 max-w-2xl">
+              Le prix dépend des fonctionnalités réellement nécessaires à votre activité, pas d&apos;un forfait figé. La fourchette ci-dessous sert de repère : le devis détaillé arrive sous 24h après notre échange.
+            </p>
+            <div className="brutal-border brutal-shadow bg-white p-8 max-w-md">
+              <p className="mono text-sm font-bold text-gray-400 mb-2">Application mobile sur mesure</p>
+              <p className="text-4xl font-bold mb-1">À partir de 4 000 €</p>
+              <p className="text-sm text-gray-500 mb-4">Livrée en 2 à 5 semaines selon la complexité</p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li className="flex items-start gap-2"><CheckCircle2 size={16} className="text-[#00D4AA] mt-0.5 shrink-0" /> iOS & Android, panel admin et authentification inclus</li>
+                <li className="flex items-start gap-2"><CheckCircle2 size={16} className="text-[#00D4AA] mt-0.5 shrink-0" /> Publication sur l&apos;App Store et Google Play incluse</li>
+                <li className="flex items-start gap-2"><CheckCircle2 size={16} className="text-[#00D4AA] mt-0.5 shrink-0" /> Paiement en ligne et notifications push en option</li>
+              </ul>
+              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2 mt-6">
+                Demander ce devis <ArrowRight size={16} />
+              </a>
             </div>
           </div>
         </section>

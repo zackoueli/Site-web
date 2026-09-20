@@ -285,6 +285,29 @@ export default function SiteWebPage() {
           </div>
         </section>
 
+        {/* Budget */}
+        <section className="py-16 px-4 bg-gray-50 brutal-border border-t-[3px] border-b-[3px]">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold mb-2">Combien coûte un <span className="bg-[#FFE234] px-2 brutal-border">site web sur mesure</span> ?</h2>
+            <p className="text-gray-600 mb-8 max-w-2xl">
+              Le prix dépend des fonctionnalités réellement nécessaires à votre activité, pas d&apos;un forfait figé. La fourchette ci-dessous sert de repère : le devis détaillé arrive sous 24 à 48h après notre échange.
+            </p>
+            <div className="brutal-border brutal-shadow bg-white p-8 max-w-md">
+              <p className="mono text-sm font-bold text-gray-400 mb-2">Site web sur mesure</p>
+              <p className="text-4xl font-bold mb-1">À partir de 1 500 €</p>
+              <p className="text-sm text-gray-500 mb-4">Livré en 2 à 4 semaines selon la complexité</p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li className="flex items-start gap-2"><CheckCircle2 size={16} className="text-[#00D4AA] mt-0.5 shrink-0" /> Design sur mesure et SEO optimisé</li>
+                <li className="flex items-start gap-2"><CheckCircle2 size={16} className="text-[#00D4AA] mt-0.5 shrink-0" /> Formulaire de contact et déploiement inclus</li>
+                <li className="flex items-start gap-2"><CheckCircle2 size={16} className="text-[#00D4AA] mt-0.5 shrink-0" /> Panel admin, dashboard ou paiement en ligne en option</li>
+              </ul>
+              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2 mt-6">
+                Demander ce devis <ArrowRight size={16} />
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Processus */}
         <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto">

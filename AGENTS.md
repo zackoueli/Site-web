@@ -10,7 +10,7 @@ Ces règles s'appliquent à toute création ou modification de page/article. Ell
 
 ## Contenu
 
-- **Jamais de prix en dehors de la page d'accueil** : ni dans les titles, ni dans les meta descriptions, ni dans le corps des pages services et articles de blog. Les questions de coût renvoient vers le devis gratuit sous 24h.
+- **Prix** : autorisés uniquement dans le corps des pages `/services/**`, sous forme de tarif ("à partir de X€") lié directement au service précis de la page. Jamais dans les titles ni les meta descriptions. Jamais sur les articles de blog (`lib/blog.ts`) ni ailleurs — ces pages renvoient vers le devis gratuit sous 24h.
 - **Jamais de génération en masse** : maximum 1 article par session, cadence cible 1-2 articles/semaine. Google pénalise les publications en lot.
 - **Relecture humaine obligatoire** : tout nouveau contenu (article, page) est présenté à Enzo pour validation AVANT commit/push. Pas d'exception.
 - **Anti-cannibalisation** : avant de créer un contenu, vérifier dans `lib/blog.ts` (slugs, titles, descriptions) et `app/services/**` qu'aucune page ne vise déjà le même mot-clé. Si oui, proposer d'améliorer la page existante plutôt que d'en créer une nouvelle.

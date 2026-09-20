@@ -1,4 +1,4 @@
-export type ServiceSlug = "application-mobile" | "site-web" | "ecommerce" | "plateforme";
+export type ServiceSlug = "application-mobile" | "site-web" | "ecommerce" | "web-app";
 
 export type Service = {
   slug: ServiceSlug;
@@ -17,7 +17,7 @@ export const SERVICES: Service[] = [
   { slug: "application-mobile", href: "/services/application-mobile", label: "Application mobile" },
   { slug: "site-web", href: "/services/site-web", label: "Site web" },
   { slug: "ecommerce", href: "/services/ecommerce", label: "E-commerce" },
-  { slug: "plateforme", href: "/services/plateforme", label: "Plateforme digitale" },
+  { slug: "web-app", href: "/services/web-app", label: "Web app" },
 ];
 
 export const SECTEURS: Secteur[] = [

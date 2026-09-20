@@ -72,6 +72,10 @@ const faq = [
     a: "Entre 3 et 6 semaines selon la taille du catalogue et les fonctionnalités souhaitées (espace client, avis, messagerie). Une boutique simple avec catalogue et paiement est livrée en 3 semaines, une boutique complète avec espace client et panel admin avancé en 5 à 6 semaines.",
   },
   {
+    q: "Combien coûte une boutique e-commerce sur mesure ?",
+    a: "À partir de 2 500 €, pour une boutique avec catalogue produits, paiement Stripe et panel admin. Le tarif final dépend de la taille du catalogue et des fonctionnalités souhaitées — devis détaillé sous 24h après le cadrage.",
+  },
+  {
     q: "La boutique sera-t-elle bien référencée sur Google ?",
     a: "Oui. Chaque fiche produit est structurée pour le SEO e-commerce : balises optimisées, données structurées produit, sitemap automatique et temps de chargement rapide grâce à Next.js, pour maximiser la visibilité de vos produits dans les résultats de recherche.",
   },
@@ -263,6 +267,29 @@ export default function EcommercePage() {
                   d&apos;apparaître plus facilement dans les résultats de recherche et le Google Shopping.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Budget */}
+        <section className="py-16 px-4 bg-gray-50 brutal-border border-t-[3px] border-b-[3px]">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold mb-2">Combien coûte une <span className="bg-[#FFE234] px-2 brutal-border">boutique e-commerce sur mesure</span> ?</h2>
+            <p className="text-gray-600 mb-8 max-w-2xl">
+              Le prix dépend de la taille du catalogue et des fonctionnalités souhaitées, pas d&apos;un forfait figé. La fourchette ci-dessous sert de repère : le devis détaillé arrive sous 24h après le cadrage.
+            </p>
+            <div className="brutal-border brutal-shadow bg-white p-8 max-w-md">
+              <p className="mono text-sm font-bold text-gray-400 mb-2">Boutique e-commerce sur mesure</p>
+              <p className="text-4xl font-bold mb-1">À partir de 2 500 €</p>
+              <p className="text-sm text-gray-500 mb-4">Livrée en 3 à 6 semaines selon le catalogue</p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li className="flex items-start gap-2"><CheckCircle2 size={16} className="text-[#FF6B9D] mt-0.5 shrink-0" /> Catalogue produits et paiement Stripe inclus</li>
+                <li className="flex items-start gap-2"><CheckCircle2 size={16} className="text-[#FF6B9D] mt-0.5 shrink-0" /> Panel admin pour gérer commandes et stocks</li>
+                <li className="flex items-start gap-2"><CheckCircle2 size={16} className="text-[#FF6B9D] mt-0.5 shrink-0" /> Espace client et avis vérifiés en option</li>
+              </ul>
+              <a href="#contact" className="brutal-btn bg-[#FF6B9D] text-white px-6 py-3 inline-flex items-center gap-2 mt-6">
+                Demander ce devis <ArrowRight size={16} />
+              </a>
             </div>
           </div>
         </section>

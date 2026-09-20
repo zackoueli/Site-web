@@ -24,13 +24,13 @@ const offers = [
   },
   {
     icon: LayoutDashboard,
-    title: "Plateforme digitale",
+    title: "Web app",
     subtitle: "Back-office & multi-rôles",
-    desc: "Une plateforme web avec plusieurs niveaux d'accès : espace admin, espace client, tableau de bord, gestion des données.",
+    desc: "Une web app avec plusieurs niveaux d'accès : espace admin, espace client, tableau de bord, gestion des données.",
     features: ["Authentification multi-rôles", "Panel admin", "Espace client", "Base de données", "API REST"],
     color: "#7C3AED",
     textColor: "#FFFBF0",
-    href: "/services/plateforme",
+    href: "/services/web-app",
   },
   {
     icon: ShoppingBag,
