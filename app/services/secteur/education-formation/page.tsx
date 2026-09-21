@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 const features = [
   { title: "Cours & modules structurés", desc: "Organisez votre contenu en chapitres, leçons et modules. Vos apprenants progressent à leur rythme, avec leur avancement sauvegardé automatiquement." },
-  { title: "Quiz & exercices interactifs", desc: "Questions à choix multiples, vrai/faux, textes à compléter — des formats variés pour tester les connaissances et rendre l'apprentissage moins passif." },
+  { title: "Quiz & exercices interactifs", desc: "Questions à choix multiples, vrai/faux, textes à compléter : des formats variés pour tester les connaissances et rendre l'apprentissage moins passif." },
   { title: "Suivi de progression", desc: "Chaque apprenant voit son pourcentage de complétion, ses scores et ses points forts. Vous voyez depuis le dashboard qui avance et qui décroche." },
   { title: "Certificats de complétion", desc: "Générez et envoyez automatiquement un certificat PDF personnalisé quand un apprenant termine une formation." },
   { title: "Messagerie formateur-apprenant", desc: "Canal direct pour les questions, les feedbacks et les encouragements. L'accompagnement humain qui fait la différence dans la rétention." },
@@ -51,7 +51,7 @@ export default function EducationPage() {
               <span className="bg-[#FFE234] brutal-border px-2">éducation & e-learning</span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
-              Teachizy, Thinkific ou Kajabi coûtent entre 30€ et 200€ par mois sans jamais vous appartenir. Une app e-learning sur mesure, c'est votre contenu, votre marque et vos revenus — sans dépendre d'une plateforme tierce.
+              Teachizy, Thinkific ou Kajabi coûtent entre 30€ et 200€ par mois sans jamais vous appartenir. Une app e-learning sur mesure, c'est votre contenu, votre marque et vos revenus, sans dépendre d'une plateforme tierce.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
@@ -86,10 +86,10 @@ export default function EducationPage() {
             <h2 className="text-2xl font-bold text-[#FFE234] mb-6">Pour qui c'est fait ?</h2>
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { emoji: "👩‍🏫", label: "Formateurs & consultants", desc: "Monétisez votre expertise avec votre propre app — sans payer d'abonnement à Teachizy ou Thinkific." },
+                { emoji: "👩‍🏫", label: "Formateurs & consultants", desc: "Monétisez votre expertise avec votre propre app, sans payer d'abonnement à Teachizy ou Thinkific." },
                 { emoji: "🎓", label: "Écoles & organismes de formation", desc: "Complétez votre offre présentielle avec une app mobile qui accompagne vos apprenants entre les sessions." },
-                { emoji: "🌍", label: "Applications de langues", desc: "Apprentissage d'une langue avec fiches, audio, quiz et progression gamifiée — votre alternative à Duolingo." },
-                { emoji: "🔬", label: "Formations techniques & certifiantes", desc: "Préparation à des examens, formations certifiantes, quiz d'entraînement — avec suivi de progression détaillé." },
+                { emoji: "🌍", label: "Applications de langues", desc: "Apprentissage d'une langue avec fiches, audio, quiz et progression gamifiée : votre alternative à Duolingo." },
+                { emoji: "🔬", label: "Formations techniques & certifiantes", desc: "Préparation à des examens, formations certifiantes, quiz d'entraînement, avec suivi de progression détaillé." },
               ].map(({ emoji, label, desc }) => (
                 <div key={label} className="border-2 border-gray-800 p-5 hover:border-[#FFE234] transition-colors">
                   <div className="text-3xl mb-3">{emoji}</div>
@@ -106,7 +106,7 @@ export default function EducationPage() {
             <h2 className="text-2xl font-bold mb-8">Questions fréquentes</h2>
             <div className="flex flex-col gap-4">
               {[
-                { q: "Peut-on intégrer des vidéos dans l'app ?", a: "Oui. Les vidéos sont hébergées sur YouTube (privé) ou Vimeo et intégrées dans l'app. C'est la solution la plus économique et performante — pas besoin d'héberger les fichiers vidéo vous-même." },
+                { q: "Peut-on intégrer des vidéos dans l'app ?", a: "Oui. Les vidéos sont hébergées sur YouTube (privé) ou Vimeo et intégrées dans l'app. C'est la solution la plus économique et performante, pas besoin d'héberger les fichiers vidéo vous-même." },
                 { q: "Comment les apprenants accèdent-ils aux cours payants ?", a: "Via Stripe : achat unique du cours ou abonnement mensuel. L'accès est accordé automatiquement après paiement et révoqué en cas d'annulation d'abonnement." },
                 { q: "Peut-on avoir à la fois du contenu gratuit et payant ?", a: "Oui, c'est le modèle freemium. Vous définissez quels modules sont accessibles gratuitement et lesquels nécessitent un achat ou un abonnement actif." },
                 { q: "Combien ça coûte de développer une app e-learning ?", a: "Le tarif dépend des fonctionnalités : cours, quiz, progression, abonnements, messagerie, certificats. Je vous envoie une estimation précise après un premier échange." },

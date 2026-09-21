@@ -15,6 +15,7 @@ Ces règles s'appliquent à toute création ou modification de page/article. Ell
 - **Relecture humaine obligatoire** : tout nouveau contenu (article, page) est présenté à Enzo pour validation AVANT commit/push. Pas d'exception.
 - **Anti-cannibalisation** : avant de créer un contenu, vérifier dans `lib/blog.ts` (slugs, titles, descriptions) et `app/services/**` qu'aucune page ne vise déjà le même mot-clé. Si oui, proposer d'améliorer la page existante plutôt que d'en créer une nouvelle.
 - Langue : français, vouvoiement du lecteur. Le site parle à des TPE, restaurateurs, artisans et commerçants — vocabulaire concret, pas de jargon technique non expliqué.
+- **Jamais de tiret cadratin (—)** dans les textes du site (pages, articles de blog, meta descriptions...). Utiliser une virgule, un point, ou reformuler la phrase.
 
 ## Structure de page (template durable)
 

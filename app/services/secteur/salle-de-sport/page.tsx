@@ -44,8 +44,8 @@ const schema = {
 };
 
 const features = [
-  { title: "Réservation de cours", desc: "Vos membres réservent leurs créneaux depuis l'app — capacité gérée automatiquement." },
-  { title: "Abonnements Stripe", desc: "Mensualités, packs de cours, offres annuelles — tout géré via paiement Stripe intégré." },
+  { title: "Réservation de cours", desc: "Vos membres réservent leurs créneaux depuis l'app, capacité gérée automatiquement." },
+  { title: "Abonnements Stripe", desc: "Mensualités, packs de cours, offres annuelles : tout géré via paiement Stripe intégré." },
   { title: "Suivi d'entraînement", desc: "Programmes personnalisés, historique de séances, progression et objectifs." },
   { title: "Notifications push", desc: "Rappel de cours, nouveaux programmes, promotions d'abonnement, événements." },
   { title: "Espace coach", desc: "Les coachs gèrent leurs créneaux, programmes et messages clients depuis l'app." },
@@ -78,7 +78,7 @@ export default function SalleDesSportPage() {
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
               Votre propre application iOS & Android pour gérer vos membres, réservations de cours et abonnements.
-              Sans dépendance à des plateformes tierces — votre marque, vos données, votre croissance.
+              Sans dépendance à des plateformes tierces : votre marque, vos données, votre croissance.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">

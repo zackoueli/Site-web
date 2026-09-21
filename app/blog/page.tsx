@@ -20,15 +20,15 @@ function parsePage(raw: string | undefined): number {
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
   const page = parsePage((await searchParams).page);
-  const suffix = page > 1 ? ` — page ${page}` : "";
+  const suffix = page > 1 ? `, page ${page}` : "";
   const canonical = page > 1 ? `https://breizhapp.tech/blog?page=${page}` : "https://breizhapp.tech/blog";
   return {
-    title: `Blog — Conseils développement application mobile${suffix} | BreizhApp`,
+    title: `Blog, conseils développement application mobile${suffix} | BreizhApp`,
     description:
       "Articles sur la création d'apps mobiles iOS & Android : tarifs, comparatifs techniques, conseils. Par BreizhApp, développeur freelance à Brest.",
     alternates: { canonical },
     openGraph: {
-      title: "Blog BreizhApp — Conseils application mobile",
+      title: "Blog BreizhApp, conseils application mobile",
       description:
         "Articles sur la création d'applications mobiles iOS & Android par un développeur freelance à Brest.",
       url: canonical,
@@ -55,7 +55,7 @@ const faqItems = [
   },
   {
     q: "Combien coûte une application mobile ou un site web ?",
-    a: "Chaque projet est différent : le budget dépend des fonctionnalités, du nombre d'écrans et des intégrations souhaitées. Le plus simple est de demander un devis gratuit et sans engagement — je réponds sous 24h avec une estimation précise.",
+    a: "Chaque projet est différent : le budget dépend des fonctionnalités, du nombre d'écrans et des intégrations souhaitées. Le plus simple est de demander un devis gratuit et sans engagement, je réponds sous 24h avec une estimation précise.",
   },
   {
     q: "En combien de temps une application mobile est-elle livrée ?",
@@ -169,7 +169,7 @@ function Pagination({ current }: { current: number }) {
         )}
       </div>
       <p className="mono text-xs text-gray-400 text-center mt-4">
-        Page {current} sur {totalPages} — {sortedArticles.length} articles
+        Page {current} sur {totalPages}, {sortedArticles.length} articles
       </p>
     </nav>
   );
@@ -197,7 +197,7 @@ export default async function BlogPage({ searchParams }: Props) {
             <span className="bg-[#FFE234] px-2 brutal-border">conseils</span>
           </h1>
           <p className="text-lg text-gray-600 max-w-xl">
-            Tout ce que vous devez savoir sur la création d'applications mobiles iOS & Android — tarifs, fonctionnalités, choix techniques.
+            Tout ce que vous devez savoir sur la création d'applications mobiles iOS & Android : tarifs, fonctionnalités, choix techniques.
           </p>
         </div>
 

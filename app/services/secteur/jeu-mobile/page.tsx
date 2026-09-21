@@ -46,7 +46,7 @@ const features = [
   { title: "Leaderboard & classements", desc: "Classements en temps réel, scores globaux ou entre amis. Le côté compétitif augmente significativement la rétention des joueurs." },
   { title: "In-app purchase", desc: "Monétisation par achat intégré : vies supplémentaires, skins, niveaux premium, pass saisonnier. Validé App Store et Google Play." },
   { title: "Récompenses & achievements", desc: "Succès débloqués, streaks quotidiens, récompenses à la connexion. Des mécaniques éprouvées pour garder vos joueurs actifs." },
-  { title: "iOS & Android natif", desc: "Publication sur l'App Store et Google Play. L'app est optimisée pour les performances — animations fluides même sur les appareils anciens." },
+  { title: "iOS & Android natif", desc: "Publication sur l'App Store et Google Play. L'app est optimisée pour les performances : animations fluides même sur les appareils anciens." },
 ];
 
 export default function JeuMobilePage() {
@@ -72,7 +72,7 @@ export default function JeuMobilePage() {
               <span className="bg-[#7C3AED] text-white brutal-border px-2">jeu mobile</span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
-              Vous avez une idée de jeu mobile ? Puzzle, quiz, arcade, jeu de cartes — je développe votre concept de A à Z, publiable sur l'App Store et Google Play. Le jeu mobile est le secteur avec le meilleur potentiel de monétisation sur mobile.
+              Vous avez une idée de jeu mobile ? Puzzle, quiz, arcade, jeu de cartes, je développe votre concept de A à Z, publiable sur l'App Store et Google Play. Le jeu mobile est le secteur avec le meilleur potentiel de monétisation sur mobile.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Discuter de mon projet</a>
@@ -107,10 +107,10 @@ export default function JeuMobilePage() {
             <h2 className="text-2xl font-bold text-[#FFE234] mb-6">Types de jeux que je développe</h2>
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { emoji: "🧩", label: "Puzzle & réflexion", desc: "Sudoku, jeux de mots, labyrinthes, casse-têtes visuels — gameplay addictif et sessions courtes." },
+                { emoji: "🧩", label: "Puzzle & réflexion", desc: "Sudoku, jeux de mots, labyrinthes, casse-têtes visuels : gameplay addictif et sessions courtes." },
                 { emoji: "❓", label: "Quiz & culture", desc: "Quiz multijoueur, questions thématiques, championnats hebdomadaires, mode défi entre amis." },
                 { emoji: "🃏", label: "Jeux de cartes", desc: "Belote, Uno-like, jeux de collection de cartes avec deck building et matchmaking." },
-                { emoji: "🕹️", label: "Arcade & action", desc: "Jeux de réflexes, runner, shoot'em up — mécaniques simples, rejouabilité maximale." },
+                { emoji: "🕹️", label: "Arcade & action", desc: "Jeux de réflexes, runner, shoot'em up : mécaniques simples, rejouabilité maximale." },
               ].map(({ emoji, label, desc }) => (
                 <div key={label} className="border-2 border-gray-800 p-5 hover:border-[#7C3AED] transition-colors">
                   <div className="text-3xl mb-3">{emoji}</div>
@@ -128,9 +128,9 @@ export default function JeuMobilePage() {
             <div className="flex flex-col gap-4">
               {[
                 { q: "Combien coûte le développement d'un jeu mobile ?", a: "Le tarif dépend de la complexité du gameplay : un jeu simple (quiz, puzzle à niveaux) ou un jeu plus complexe avec multijoueur et économie virtuelle. Je vous envoie une estimation sous 24h après avoir discuté de votre concept." },
-                { q: "Mon jeu sera-t-il accepté sur l'App Store Apple ?", a: "Oui, à condition de respecter les guidelines Apple — ce que je fais systématiquement. Les jeux développés sur mesure passent bien mieux la validation que les apps générées par des outils no-code." },
-                { q: "Peut-on monétiser le jeu avec de la publicité ?", a: "Oui. Je peux intégrer AdMob (Google) pour des publicités interstitielles ou des rewarded ads — le format le mieux accepté par les joueurs car il est volontaire. La monétisation par in-app purchase est aussi possible en parallèle." },
-                { q: "Est-ce que vous pouvez reprendre un jeu déjà commencé ?", a: "Oui, si le code est accessible et documenté. Chaque reprise commence par une analyse du code existant — je vous dis honnêtement si c'est faisable ou s'il vaut mieux repartir proprement." },
+                { q: "Mon jeu sera-t-il accepté sur l'App Store Apple ?", a: "Oui, à condition de respecter les guidelines Apple, ce que je fais systématiquement. Les jeux développés sur mesure passent bien mieux la validation que les apps générées par des outils no-code." },
+                { q: "Peut-on monétiser le jeu avec de la publicité ?", a: "Oui. Je peux intégrer AdMob (Google) pour des publicités interstitielles ou des rewarded ads, le format le mieux accepté par les joueurs car il est volontaire. La monétisation par in-app purchase est aussi possible en parallèle." },
+                { q: "Est-ce que vous pouvez reprendre un jeu déjà commencé ?", a: "Oui, si le code est accessible et documenté. Chaque reprise commence par une analyse du code existant, je vous dis honnêtement si c'est faisable ou s'il vaut mieux repartir proprement." },
               ].map(({ q, a }) => (
                 <div key={q} className="brutal-border bg-white p-5">
                   <h3 className="font-bold mb-2">{q}</h3>

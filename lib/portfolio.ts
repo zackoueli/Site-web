@@ -81,7 +81,7 @@ export const projects: Project[] = [
     previewUrl: "https://www.histoire-eternelle-l-atelier.fr/",
     externalUrl: "https://www.histoire-eternelle-l-atelier.fr/",
     caseIntro:
-      "Histoire Eternelle est la boutique en ligne de L'Atelier d'Anaïs, créatrice de bijoux artisanaux en résine façonnés à la main en Bretagne. Le site marie une direction artistique élégante — serif Playfair Display, palette terracotta et crème — à un socle e-commerce complet : catalogue de pièces uniques avec variantes, panier et tunnel d'achat, paiement Stripe (CB, Apple Pay, Google Pay), espace client avec historique et liste de souhaits, avis vérifiés et messagerie pour les commandes sur mesure. Anaïs gère toute sa boutique en autonomie depuis un panel admin Firebase : produits, commandes, codes promo et modération des avis.",
+      "Histoire Eternelle est la boutique en ligne de L'Atelier d'Anaïs, créatrice de bijoux artisanaux en résine façonnés à la main en Bretagne. Le site marie une direction artistique élégante (serif Playfair Display, palette terracotta et crème) à un socle e-commerce complet : catalogue de pièces uniques avec variantes, panier et tunnel d'achat, paiement Stripe (CB, Apple Pay, Google Pay), espace client avec historique et liste de souhaits, avis vérifiés et messagerie pour les commandes sur mesure. Anaïs gère toute sa boutique en autonomie depuis un panel admin Firebase : produits, commandes, codes promo et modération des avis.",
     year: "2024",
     role: "Direction artistique & développement e-commerce",
     services: ["Concept", "Direction artistique", "Développement e-commerce", "Intégration Stripe", "Panel admin", "SEO"],
@@ -111,7 +111,7 @@ export const projects: Project[] = [
     previewUrl: "https://demo.paysagiste.breizhapp.tech/",
     externalUrl: "https://demo.paysagiste.breizhapp.tech/",
     caseIntro:
-      "Paradis Vert est un site vitrine complet conçu pour un paysagiste professionnel intervenant à Biscarrosse et dans les Landes. Vidéo héro plein écran, direction éditoriale serif (Instrument Serif), présentation des prestations avec photos, galerie de chantiers réalisés, blog d'actualités et formulaire de devis détaillé qui arrive directement dans la boîte mail de l'artisan. L'ensemble du contenu — textes, photos, services, réalisations, vidéo d'accueil — se pilote depuis un panel admin Firebase, sans aucune intervention du développeur. Le référencement local est optimisé pour ressortir sur les recherches de la zone.",
+      "Paradis Vert est un site vitrine complet conçu pour un paysagiste professionnel intervenant à Biscarrosse et dans les Landes. Vidéo héro plein écran, direction éditoriale serif (Instrument Serif), présentation des prestations avec photos, galerie de chantiers réalisés, blog d'actualités et formulaire de devis détaillé qui arrive directement dans la boîte mail de l'artisan. L'ensemble du contenu (textes, photos, services, réalisations, vidéo d'accueil) se pilote depuis un panel admin Firebase, sans aucune intervention du développeur. Le référencement local est optimisé pour ressortir sur les recherches de la zone.",
     year: "2024",
     role: "Conception, développement & SEO local",
     services: ["Concept", "Direction éditoriale", "Développement web", "Panel admin Firebase", "SEO local", "Déploiement"],

@@ -72,7 +72,7 @@ export default function MaraicherPage() {
               <span className="bg-[#FFE234] brutal-border px-2">maraîcher & circuit court</span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
-              Vendre en direct sans passer par une plateforme, fidéliser ses clients et gérer ses paniers depuis son téléphone — c'est ce que permet une app sur mesure, livrée en 3 semaines.
+              Vendre en direct sans passer par une plateforme, fidéliser ses clients et gérer ses paniers depuis son téléphone : c'est ce que permet une app sur mesure, livrée en 3 semaines.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
@@ -127,7 +127,7 @@ export default function MaraicherPage() {
             <div className="flex flex-col gap-4">
               {[
                 { q: "Mon app fonctionnera-t-elle pour un AMAP ou une épicerie associative ?", a: "Oui. Le système d'abonnements et de paniers est parfaitement adapté au modèle AMAP : les membres s'abonnent, choisissent leur formule et paient automatiquement chaque semaine ou chaque mois." },
-                { q: "Puis-je gérer plusieurs points de retrait ?", a: "Oui. Vous définissez autant de points de retrait que nécessaire — marché, ferme, dépôt en ville — avec leurs créneaux respectifs. Vos clients choisissent celui qui les arrange." },
+                { q: "Puis-je gérer plusieurs points de retrait ?", a: "Oui. Vous définissez autant de points de retrait que nécessaire (marché, ferme, dépôt en ville) avec leurs créneaux respectifs. Vos clients choisissent celui qui les arrange." },
                 { q: "Est-ce que mes clients doivent télécharger l'app ?", a: "Oui, l'application est publiée sur l'App Store et Google Play. Le téléchargement est gratuit pour vos clients. C'est ce qui permet les notifications push et une expérience fluide." },
                 { q: "En combien de temps l'app est-elle prête ?", a: "Comptez 3 à 4 semaines pour une app complète avec abonnements et livraisons. Une version plus simple (catalogue + click & collect) est livrée en 2 semaines." },
               ].map(({ q, a }) => (

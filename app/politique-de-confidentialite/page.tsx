@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité — BreizhApp",
+  title: "Politique de confidentialité | BreizhApp",
   description: "Politique de confidentialité et gestion des données personnelles de BreizhApp.",
   alternates: { canonical: "https://breizhapp.tech/politique-de-confidentialite" },
   robots: { index: false, follow: false },
@@ -30,7 +30,7 @@ export default function PolitiqueConfidentialite() {
             <h2 className="text-xl font-bold mb-3 border-l-4 border-[#FFE234] pl-3">1. Responsable du traitement</h2>
             <p className="text-gray-700 leading-relaxed">
               Le responsable du traitement des données personnelles collectées via ce site est :<br /><br />
-              <strong>Enzo Omnes</strong> — Auto-entrepreneur<br />
+              <strong>Enzo Omnes</strong>, Auto-entrepreneur<br />
               Activité : Développement d'applications mobiles (BreizhApp)<br />
               Brest, Bretagne, France<br />
               Contact : <a href="mailto:breizhapp@outlook.fr" className="underline hover:text-[#0A0A0A]">breizhapp@outlook.fr</a>

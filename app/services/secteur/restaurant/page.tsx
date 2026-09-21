@@ -49,7 +49,7 @@ const schema = {
           name: "Est-ce que l'app remplace Uber Eats ?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Oui. L'application intègre la commande en ligne avec paiement Stripe directement sur votre app. Vous ne payez aucune commission sur vos ventes — contrairement à Uber Eats (20-30%) ou Deliveroo.",
+            text: "Oui. L'application intègre la commande en ligne avec paiement Stripe directement sur votre app. Vous ne payez aucune commission sur vos ventes, contrairement à Uber Eats (20-30%) ou Deliveroo.",
           },
         },
         {
@@ -66,12 +66,12 @@ const schema = {
 };
 
 const features = [
-  { title: "Commande en ligne", desc: "Paiement Stripe intégré. Vos clients commandent et paient depuis l'app — vous recevez la commande instantanément." },
+  { title: "Commande en ligne", desc: "Paiement Stripe intégré. Vos clients commandent et paient depuis l'app, vous recevez la commande instantanément." },
   { title: "Programme de fidélité", desc: "Tampons numériques, réductions automatiques à la 10ème visite, offres d'anniversaire." },
   { title: "Notifications push", desc: "Envoyez \"Offre spéciale ce soir\" ou \"Nouveau menu\" directement sur le téléphone de vos clients." },
-  { title: "Carte & menu dynamique", desc: "Modifiez votre menu en temps réel depuis votre panel admin — sans passer par un développeur." },
+  { title: "Carte & menu dynamique", desc: "Modifiez votre menu en temps réel depuis votre panel admin, sans passer par un développeur." },
   { title: "Réservation de table", desc: "Formulaire de réservation avec créneaux, confirmation automatique par email et notification push." },
-  { title: "iOS & Android", desc: "L'app est publiée sur l'App Store et Google Play — accessible à tous vos clients." },
+  { title: "iOS & Android", desc: "L'app est publiée sur l'App Store et Google Play, accessible à tous vos clients." },
 ];
 
 export default function RestaurantPage() {
@@ -100,7 +100,7 @@ export default function RestaurantPage() {
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
               Reprenez le contrôle face à Uber Eats et Deliveroo. Votre propre application iOS & Android
-              avec commande en ligne, programme de fidélité et notifications push — sans commission.
+              avec commande en ligne, programme de fidélité et notifications push, sans commission.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
@@ -163,7 +163,7 @@ export default function RestaurantPage() {
               {[
                 {
                   q: "Est-ce que l'app remplace Uber Eats ?",
-                  a: "Oui. La commande en ligne avec paiement Stripe est intégrée directement dans votre app. Vous ne payez aucune commission sur vos ventes — vos clients commandent et vous payez directement.",
+                  a: "Oui. La commande en ligne avec paiement Stripe est intégrée directement dans votre app. Vous ne payez aucune commission sur vos ventes, vos clients commandent et vous payez directement.",
                 },
                 {
                   q: "En combien de temps l'application est-elle livrée ?",

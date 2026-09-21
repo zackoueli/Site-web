@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "BreizhApp — Développeur application mobile iOS & Android à Brest",
+        alt: "BreizhApp, développeur application mobile iOS & Android à Brest",
       },
     ],
   },

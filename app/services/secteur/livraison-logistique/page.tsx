@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 const features = [
-  { title: "Suivi de commande en temps réel", desc: "Vos clients voient l'avancement de leur commande en direct — statut préparation, en route, livré. Zéro appel pour savoir où en est le livreur." },
+  { title: "Suivi de commande en temps réel", desc: "Vos clients voient l'avancement de leur commande en direct : statut préparation, en route, livré. Zéro appel pour savoir où en est le livreur." },
   { title: "Gestion des livreurs", desc: "Chaque livreur a son propre espace dans l'app : il reçoit ses commandes, confirme les livraisons et documente les incidents." },
   { title: "Zones de livraison & tarifs", desc: "Définissez vos zones géographiques avec des tarifs différenciés. L'app calcule automatiquement les frais de livraison à la commande." },
   { title: "Paiement Stripe à la commande", desc: "Paiement sécurisé au moment de la commande, avec gestion des remboursements en cas de problème de livraison." },
@@ -51,7 +51,7 @@ export default function LivraisonPage() {
               <span className="bg-[#FF6B35] text-white brutal-border px-2">livraison & logistique</span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
-              Uber Eats prend entre 20 et 30% de commission sur chaque commande. Votre propre application de livraison vous appartient — et vous gardez 100% de vos revenus à partir du premier mois.
+              Uber Eats prend entre 20 et 30% de commission sur chaque commande. Votre propre application de livraison vous appartient, et vous gardez 100% de vos revenus à partir du premier mois.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
@@ -107,7 +107,7 @@ export default function LivraisonPage() {
               {[
                 { q: "Mon app peut-elle gérer plusieurs livreurs en même temps ?", a: "Oui. Chaque livreur a son propre espace dans l'app avec ses commandes assignées. Vous pouvez suivre en temps réel qui livre quoi et intervenir si nécessaire." },
                 { q: "Peut-on créer une app similaire à Uber Eats ou Glovo ?", a: "Oui, c'est techniquement faisable. Pour une marketplace multi-restaurants avec système de mise en relation, le projet est plus complexe et fera l'objet d'un devis personnalisé. Pour une app de livraison propre à votre restaurant ou commerce, contactez-moi pour une estimation." },
-                { q: "L'app fonctionne-t-elle hors ligne pour les livreurs ?", a: "Partiellement. L'app peut stocker les informations de livraison en cache et les synchroniser quand la connexion revient — utile en zone blanche." },
+                { q: "L'app fonctionne-t-elle hors ligne pour les livreurs ?", a: "Partiellement. L'app peut stocker les informations de livraison en cache et les synchroniser quand la connexion revient, utile en zone blanche." },
                 { q: "En combien de temps l'app est-elle prête ?", a: "Entre 4 et 6 semaines pour une app de livraison complète avec suivi temps réel, gestion des livreurs et Stripe. Le délai dépend de la complexité des zones et de la gestion des livreurs." },
               ].map(({ q, a }) => (
                 <div key={q} className="brutal-border bg-white p-5">

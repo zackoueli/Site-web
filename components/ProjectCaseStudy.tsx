@@ -186,7 +186,7 @@ export default function ProjectCaseStudy({
       {
         "@type": "CreativeWork",
         name: p.name,
-        headline: `${p.name} — ${p.tagline}`,
+        headline: `${p.name} : ${p.tagline}`,
         description: p.caseIntro ?? p.description,
         url: `https://breizhapp.tech/portfolio/${p.slug}`,
         image: p.image ? `https://breizhapp.tech${p.image}` : undefined,
@@ -215,7 +215,7 @@ export default function ProjectCaseStudy({
       {/* Barre supérieure — sticky sur mobile, fixe sur desktop */}
       <header className="sticky lg:absolute top-0 left-0 right-0 z-30 flex items-center justify-between gap-3 px-4 md:px-8 h-20 lg:h-28 bg-[#0A0A0A]/80 lg:bg-transparent backdrop-blur lg:backdrop-blur-0">
         {/* Logo */}
-        <Link href="/portfolio" className="hover:opacity-70 transition-opacity shrink-0" aria-label="BreizhApp — retour aux réalisations">
+        <Link href="/portfolio" className="hover:opacity-70 transition-opacity shrink-0" aria-label="BreizhApp, retour aux réalisations">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/logo.jpg" alt="BreizhApp" className="h-9 lg:h-12 w-auto rounded-lg" />
         </Link>

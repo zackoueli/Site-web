@@ -21,11 +21,11 @@ export async function generateMetadata({
     `Étude de cas : ${p.name} par BreizhApp, développeur freelance à Brest.`;
   const url = `https://breizhapp.tech/portfolio/${p.slug}`;
   return {
-    title: `${p.name} — ${p.category || "Réalisation"} | BreizhApp`,
+    title: `${p.name}, ${p.category || "Réalisation"} | BreizhApp`,
     description: desc,
     alternates: { canonical: url },
     openGraph: {
-      title: `${p.name} — ${p.category || "Réalisation"}`,
+      title: `${p.name}, ${p.category || "Réalisation"}`,
       description: desc,
       url,
       type: "article",

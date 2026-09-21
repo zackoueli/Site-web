@@ -24,8 +24,8 @@ const features = [
   { title: "Suivi & journal de bord", desc: "Vos patients ou clients notent leurs séances, symptômes, humeur ou progression. Vous accédez à un historique complet avant chaque consultation." },
   { title: "Prise de rendez-vous intégrée", desc: "Agenda en ligne, créneaux disponibles en temps réel, confirmation automatique et rappels push 24h avant. Fini les no-shows." },
   { title: "Programmes personnalisés", desc: "Créez des programmes de soins, d'exercices ou de suivi alimentaire et assignez-les à vos clients. Ils les suivent depuis l'app à leur rythme." },
-  { title: "Messagerie praticien-client", desc: "Canal de communication direct et sécurisé entre vous et vos clients. Questions entre séances, feedback, encouragements — tout dans l'app." },
-  { title: "Contenu éducatif", desc: "Articles, vidéos, exercices guidés — partagez du contenu pédagogique avec vos clients directement depuis votre panel admin." },
+  { title: "Messagerie praticien-client", desc: "Canal de communication direct et sécurisé entre vous et vos clients. Questions entre séances, feedback, encouragements : tout dans l'app." },
+  { title: "Contenu éducatif", desc: "Articles, vidéos, exercices guidés : partagez du contenu pédagogique avec vos clients directement depuis votre panel admin." },
   { title: "Rappels & routines", desc: "Notifications push programmables pour rappeler une prise de traitement, un exercice quotidien ou un moment de méditation." },
 ];
 
@@ -86,8 +86,8 @@ export default function SantePage() {
             <h2 className="text-2xl font-bold text-[#FFE234] mb-6">Pour qui c'est fait ?</h2>
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { emoji: "🩺", label: "Praticiens de santé", desc: "Ostéopathes, kinés, naturopathes, nutritionnistes — un outil professionnel pour le suivi de vos patients." },
-                { emoji: "🧘", label: "Coachs & thérapeutes", desc: "Coachs de vie, psychologues, hypnothérapeutes — accompagnez vos clients entre les séances avec une app dédiée." },
+                { emoji: "🩺", label: "Praticiens de santé", desc: "Ostéopathes, kinés, naturopathes, nutritionnistes : un outil professionnel pour le suivi de vos patients." },
+                { emoji: "🧘", label: "Coachs & thérapeutes", desc: "Coachs de vie, psychologues, hypnothérapeutes : accompagnez vos clients entre les séances avec une app dédiée." },
                 { emoji: "💪", label: "Coachs sportifs", desc: "Programmes d'entraînement, suivi des performances, messagerie coach-client, photos avant/après." },
                 { emoji: "🌿", label: "Bien-être & méditation", desc: "Apps de méditation guidée, de cohérence cardiaque, de suivi du sommeil ou de gestion du stress." },
               ].map(({ emoji, label, desc }) => (
@@ -108,7 +108,7 @@ export default function SantePage() {
               {[
                 { q: "Les données de santé de mes patients sont-elles sécurisées ?", a: "Oui. Je travaille avec Firebase ou Supabase qui respectent les standards de sécurité (chiffrement des données, authentification sécurisée). Pour les apps avec des données de santé sensibles, je vous conseille d'intégrer un DPO et d'éventuellement déclarer l'app à la CNIL selon son usage." },
                 { q: "Peut-on proposer des séances en visio depuis l'app ?", a: "Oui, en intégrant une solution de visioconférence comme Daily.co ou Whereby. Vos clients réservent leur séance et rejoignent l'appel directement depuis l'app sans installer quoi que ce soit." },
-                { q: "L'app peut-elle envoyer des rappels de prise de médicaments ?", a: "Oui. Les notifications push programmables permettent d'envoyer des rappels à des horaires définis — quotidiennement, plusieurs fois par jour, ou selon un planning personnalisé par l'utilisateur." },
+                { q: "L'app peut-elle envoyer des rappels de prise de médicaments ?", a: "Oui. Les notifications push programmables permettent d'envoyer des rappels à des horaires définis : quotidiennement, plusieurs fois par jour, ou selon un planning personnalisé par l'utilisateur." },
                 { q: "Combien coûte ce type d'app ?", a: "Le tarif dépend des fonctionnalités : prise de RDV, suivi, messagerie, programmes, visio. Je vous envoie une estimation détaillée sous 24h." },
               ].map(({ q, a }) => (
                 <div key={q} className="brutal-border bg-white p-5">

@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Conditions Générales de Vente — BreizhApp",
+  title: "Conditions Générales de Vente | BreizhApp",
   description: "Conditions générales de vente des prestations de développement d'applications mobiles BreizhApp.",
   alternates: { canonical: "https://breizhapp.tech/cgv" },
   robots: { index: false, follow: false },

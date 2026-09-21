@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "Quelle est la meilleure agence d'application mobile à Brest ?",
-    a: "BreizhApp est une agence de développement mobile basée à Brest, spécialisée dans la création d'applications iOS & Android sur mesure en React Native. Vous échangez directement avec le développeur qui code votre app, sans chef de projet ni intermédiaire commercial — du premier rendez-vous à la publication sur les stores.",
+    a: "BreizhApp est une agence de développement mobile basée à Brest, spécialisée dans la création d'applications iOS & Android sur mesure en React Native. Vous échangez directement avec le développeur qui code votre app, sans chef de projet ni intermédiaire commercial, du premier rendez-vous à la publication sur les stores.",
   },
   {
     q: "Combien coûte la création d'une application mobile à Brest ?",
@@ -85,7 +85,7 @@ const schema = {
     {
       "@type": "Service",
       "@id": "https://breizhapp.tech/services/application-mobile#service",
-      name: "Agence application mobile à Brest — création iOS & Android",
+      name: "Agence application mobile à Brest, création iOS & Android",
       description:
         "Agence application mobile à Brest : création d'applications iOS & Android sur mesure en React Native, de la conception au déploiement sur l'App Store et Google Play.",
       provider: { "@id": "https://breizhapp.tech/#business" },
@@ -143,7 +143,7 @@ const secteurEmojis: Record<string, string> = {
 };
 
 const technologies = [
-  { name: "React Native", desc: "Framework mobile de Meta — une codebase, deux plateformes" },
+  { name: "React Native", desc: "Framework mobile de Meta, une codebase, deux plateformes" },
   { name: "Expo", desc: "Builds, mises à jour OTA et déploiement accéléré" },
   { name: "TypeScript", desc: "Code typé, robuste et maintenable dans la durée" },
   { name: "Firebase", desc: "Base de données temps réel, authentification, stockage" },
@@ -200,7 +200,7 @@ export default function AppMobilePage() {
             </div>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
               Vous avez une idée d&apos;application mobile ? BreizhApp est une agence de développement mobile basée à Brest, en Finistère.
-              Je conçois et développe votre application iOS & Android sur mesure — design, fonctionnalités, paiement, notifications push —
+              Je conçois et développe votre application iOS & Android sur mesure (design, fonctionnalités, paiement, notifications push)
               et je la publie sur l&apos;App Store et Google Play. Vous échangez directement avec le développeur qui code votre app,
               du premier rendez-vous à la mise en ligne.
             </p>
@@ -243,7 +243,7 @@ export default function AppMobilePage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold mb-2">Ce qui est <span className="bg-[#FFE234] px-2 brutal-border">inclus</span> dans votre application</h2>
             <p className="text-gray-600 mb-8 max-w-2xl">
-              Chaque création d&apos;application mobile BreizhApp comprend les fonctionnalités essentielles à un lancement réussi — sans option cachée.
+              Chaque création d&apos;application mobile BreizhApp comprend les fonctionnalités essentielles à un lancement réussi, sans option cachée.
             </p>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
               {features.map(({ title, desc }) => (
@@ -284,7 +284,7 @@ export default function AppMobilePage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold mb-2">Les <span className="bg-[#FFE234] px-2 brutal-border">technologies</span> de l&apos;agence</h2>
             <p className="text-gray-600 mb-8 max-w-2xl">
-              Un stack moderne et éprouvé, le même que celui des grandes applications que vous utilisez au quotidien — pas de solution no-code fragile ni de template générique.
+              Un stack moderne et éprouvé, le même que celui des grandes applications que vous utilisez au quotidien, pas de solution no-code fragile ni de template générique.
             </p>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
               {technologies.map(({ name, desc }) => (
@@ -311,8 +311,8 @@ export default function AppMobilePage() {
                 <h3 className="text-xl font-bold mb-3">React Native : une seule application pour iOS et Android</h3>
                 <p className="text-gray-700 leading-relaxed mb-3">
                   React Native permet de développer une seule base de code qui fonctionne à la fois sur iPhone et sur
-                  Android, avec des performances proches du natif. Pour la grande majorité des projets — commerces,
-                  restaurants, services, réservation — c&apos;est le choix le plus pertinent : il divise le coût de
+                  Android, avec des performances proches du natif. Pour la grande majorité des projets (commerces,
+                  restaurants, services, réservation), c&apos;est le choix le plus pertinent : il divise le coût de
                   développement par deux par rapport à deux applications natives séparées, tout en garantissant une
                   expérience fluide et des mises à jour synchronisées sur les deux plateformes.
                 </p>
@@ -334,7 +334,7 @@ export default function AppMobilePage() {
                 <p className="text-gray-700 leading-relaxed mb-3">
                   Le paiement en ligne est intégré via Stripe : achats, abonnements ou in-app purchase, avec une
                   conformité PCI-DSS garantie. Les notifications push permettent de relancer vos utilisateurs avec des
-                  messages ciblés — promotion, rappel de panier abandonné, mise à jour d&apos;une commande — directement
+                  messages ciblés (promotion, rappel de panier abandonné, mise à jour d&apos;une commande) directement
                   sur leur téléphone, un canal bien plus efficace que l&apos;email pour capter l&apos;attention.
                 </p>
               </div>
@@ -371,7 +371,7 @@ export default function AppMobilePage() {
                 Une vraie application <span className="bg-[#FFE234] brutal-border px-2">créée par l&apos;agence</span>
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Naviguez librement dans la démo — c&apos;est l&apos;application réelle d&apos;un restaurant :
+                Naviguez librement dans la démo, c&apos;est l&apos;application réelle d&apos;un restaurant :
                 commande en ligne, menu dynamique, panier et paiement.
               </p>
               <div className="flex flex-col gap-2 mono text-sm text-gray-500 mb-6">
@@ -443,7 +443,7 @@ export default function AppMobilePage() {
                 <div key={author} className="border-2 border-gray-800 p-6 hover:border-[#FFE234] transition-colors">
                   <Quote size={20} className="text-[#FFE234] mb-3" />
                   <p className="text-[#FFFBF0] leading-relaxed mb-4">{text}</p>
-                  <p className="mono text-xs font-bold text-gray-400">— {author}</p>
+                  <p className="mono text-xs font-bold text-gray-400">{author}</p>
                 </div>
               ))}
             </div>
@@ -456,7 +456,7 @@ export default function AppMobilePage() {
             <h2 className="text-2xl font-bold mb-6">Pourquoi choisir une <span className="bg-[#FFE234] px-2 brutal-border">agence application mobile à Brest</span> ?</h2>
             <p className="text-gray-600 leading-relaxed max-w-2xl mb-4">
               Faire appel à une agence de création d&apos;application locale, basée à Brest et couvrant tout le Finistère et la Bretagne,
-              c&apos;est la garantie d&apos;échanger directement avec la personne qui développe votre app — sans chef de projet ni
+              c&apos;est la garantie d&apos;échanger directement avec la personne qui développe votre app, sans chef de projet ni
               intermédiaire commercial. Les rendez-vous en présentiel sont possibles à Brest et dans les environs, la réactivité
               est immédiate, et chaque projet est suivi de bout en bout par le même développeur, de la première maquette à la
               publication sur les stores.
@@ -481,7 +481,7 @@ export default function AppMobilePage() {
         {/* FAQ */}
         <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8">Questions fréquentes — agence application mobile à Brest</h2>
+            <h2 className="text-2xl font-bold mb-8">Questions fréquentes : agence application mobile à Brest</h2>
             <div className="flex flex-col gap-4">
               {faq.map(({ q, a }) => (
                 <div key={q} className="brutal-border bg-white p-5">

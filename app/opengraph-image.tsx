@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "BreizhApp — Développeur application mobile iOS & Android à Brest";
+export const alt = "BreizhApp, développeur application mobile iOS & Android à Brest";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

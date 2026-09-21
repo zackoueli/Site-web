@@ -144,7 +144,7 @@ export default function OnboardingPizzeria() {
           <CheckCircle className="mx-auto mb-6 text-[#00D4AA]" size={64} />
           <h1 className="text-4xl font-bold mb-4">Merci !</h1>
           <p className="text-gray-600 text-lg">Vos réponses ont bien été envoyées. Je reviens vers vous sous 24h avec une synthèse et les prochaines étapes.</p>
-          <p className="mono text-sm text-gray-400 mt-6">// BreizhApp — Brest</p>
+          <p className="mono text-sm text-gray-400 mt-6">// BreizhApp, Brest</p>
         </div>
       </main>
       <Footer />
@@ -167,7 +167,7 @@ export default function OnboardingPizzeria() {
           </h1>
           <p className="text-gray-600 leading-relaxed">
             Ce formulaire me permet de cadrer précisément votre projet avant de démarrer le développement.
-            Prenez le temps de répondre — plus c'est précis, plus l'app sera adaptée à votre réalité quotidienne.
+            Prenez le temps de répondre, plus c'est précis, plus l'app sera adaptée à votre réalité quotidienne.
           </p>
           <div className="mt-4 brutal-border bg-[#FFE234] px-4 py-3 text-sm font-bold">
             ⏱ Temps estimé : 10 à 15 minutes
@@ -498,7 +498,7 @@ export default function OnboardingPizzeria() {
             <div className="brutal-border bg-[#FF3B82] text-white p-4">
               <p className="font-bold mb-2">⚠️ Veuillez corriger les erreurs suivantes :</p>
               <ul className="flex flex-col gap-1">
-                {errors.map((e, i) => <li key={i} className="text-sm mono">— {e}</li>)}
+                {errors.map((e, i) => <li key={i} className="text-sm mono">• {e}</li>)}
               </ul>
             </div>
           )}

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 };
 
 const features = [
-  { title: "Multi-rôles", desc: "Admin, manager, client, partenaire — chaque utilisateur voit ce qu'il doit voir." },
+  { title: "Multi-rôles", desc: "Admin, manager, client, partenaire : chaque utilisateur voit ce qu'il doit voir." },
   { title: "Panel admin", desc: "Tableau de bord complet pour gérer vos données, utilisateurs et contenus." },
   { title: "Espace client", desc: "Chaque client dispose d'un accès personnel pour suivre ses commandes ou dossiers." },
   { title: "Base de données", desc: "Stockage sécurisé de vos données avec sauvegarde automatique." },
@@ -60,7 +60,7 @@ const process = [
 const faq = [
   {
     q: "Qu'est-ce qu'une web app sur mesure ?",
-    a: "C'est une application web qui centralise plusieurs espaces utilisateurs distincts — admin, équipe, client, partenaire — reliés à une même base de données. Contrairement à un site vitrine, elle gère des données dynamiques : commandes, dossiers, utilisateurs, permissions, en temps réel.",
+    a: "C'est une application web qui centralise plusieurs espaces utilisateurs distincts (admin, équipe, client, partenaire) reliés à une même base de données. Contrairement à un site vitrine, elle gère des données dynamiques : commandes, dossiers, utilisateurs, permissions, en temps réel.",
   },
   {
     q: "Comment fonctionne la gestion multi-rôles ?",
@@ -88,7 +88,7 @@ const faq = [
   },
   {
     q: "Combien coûte une web app sur mesure ?",
-    a: "À partir de 3 000 €, pour une web app avec espace admin, espace client et gestion des rôles de base. Le tarif final dépend du nombre de rôles, de modules et d'intégrations nécessaires — devis détaillé sous 24h après le cadrage.",
+    a: "À partir de 3 000 €, pour une web app avec espace admin, espace client et gestion des rôles de base. Le tarif final dépend du nombre de rôles, de modules et d'intégrations nécessaires, devis détaillé sous 24h après le cadrage.",
   },
   {
     q: "Faut-il une agence de développement, ou un freelance suffit-il ?",
@@ -132,7 +132,7 @@ export default function WebAppPage() {
               </div>
               <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
                 Une application web complète avec plusieurs niveaux d'accès. Vos équipes et vos clients
-                disposent chacun de leur espace dédié — tout est centralisé, sécurisé et facile à gérer.
+                disposent chacun de leur espace dédié, tout est centralisé, sécurisé et facile à gérer.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
@@ -204,77 +204,6 @@ export default function WebAppPage() {
           </div>
         </section>
 
-        {/* Étude de cas */}
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-2">Une <span className="bg-[#FFE234] px-2 brutal-border">web app que j&apos;ai développée</span></h2>
-            <p className="text-gray-600 mb-8 max-w-2xl">
-              Un projet livré, avec son contexte de départ, le périmètre exact et les technologies employées. Les autres sont sur la page réalisations.
-            </p>
-            <div className="brutal-border brutal-shadow bg-white p-6 md:p-8 mb-8">
-              <p className="mono text-xs font-bold text-[#7C3AED] mb-3">// étude de cas — Hébergement · SaaS</p>
-              <h3 className="text-2xl font-bold mb-4">Bunkly</h3>
-              <div className="grid sm:grid-cols-2 gap-6 mb-4">
-                <div>
-                  <p className="text-xs font-bold text-gray-400 uppercase mb-1">Contexte</p>
-                  <p className="text-sm text-gray-700 leading-relaxed">
-                    Les propriétaires de locations, hôtels et gîtes rédigent leur livret d&apos;accueil dans des documents PDF statiques, jamais traduits, jamais mis à jour, et impossibles à personnaliser rapidement pour chaque hébergement.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-xs font-bold text-gray-400 uppercase mb-1">Ce que j&apos;ai livré</p>
-                  <p className="text-sm text-gray-700 leading-relaxed">
-                    Une plateforme SaaS où le propriétaire gère plusieurs hébergements depuis un dashboard, réorganise les modules du livret en glisser-déposer, et importe une annonce Airbnb, Booking ou VRBO pour un remplissage automatique par IA. Le livret se traduit automatiquement dans la langue du voyageur et se partage par lien ou QR code.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-gray-200">
-                <div className="flex flex-wrap gap-2">
-                  {["Next.js", "SaaS", "Multi-langue", "Dashboard"].map((tech) => (
-                    <span key={tech} className="mono text-xs brutal-border px-2 py-1 bg-gray-50">{tech}</span>
-                  ))}
-                </div>
-                <a href="/portfolio/bunkly" className="brutal-btn bg-[#7C3AED] text-white px-4 py-2 text-sm inline-flex items-center gap-2">
-                  Voir l&apos;étude de cas complète <ArrowRight size={14} />
-                </a>
-              </div>
-            </div>
-            <div className="grid gap-8">
-              {demoSites.map(({ title, desc, url }) => (
-                <div key={title} className="brutal-border brutal-shadow bg-white overflow-hidden">
-                  <div className="border-b-[3px] border-black bg-[#0A0A0A]">
-                    <div className="flex items-center gap-1.5 px-3 py-2 border-b-[3px] border-black bg-[#1a1a1a]">
-                      <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]" />
-                      <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
-                      <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]" />
-                    </div>
-                    <div className="relative w-full aspect-[16/9] overflow-hidden">
-                      <iframe
-                        src={url}
-                        title={`Démo ${title}`}
-                        loading="lazy"
-                        className="absolute top-0 left-0 border-0 w-[222%] h-[222%] origin-top-left scale-[0.45]"
-                      />
-                    </div>
-                  </div>
-                  <div className="p-5">
-                    <h3 className="font-bold mb-1">{title}</h3>
-                    <p className="text-sm text-gray-600 leading-relaxed mb-4">{desc}</p>
-                    <a
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="brutal-btn bg-[#7C3AED] text-white px-4 py-2 text-sm inline-flex items-center gap-2"
-                    >
-                      Voir en plein écran <ArrowRight size={14} />
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Fonctionnalités */}
         <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto">
@@ -324,7 +253,7 @@ export default function WebAppPage() {
                 <h3 className="text-xl font-bold mb-3">Gestion multi-rôles</h3>
                 <p className="text-gray-700 leading-relaxed mb-3">
                   La gestion multi-rôles est le cœur d&apos;une web app. Chaque utilisateur se connecte avec un
-                  compte relié à un rôle précis — administrateur, manager, employé, client, partenaire — et n&apos;a accès
+                  compte relié à un rôle précis (administrateur, manager, employé, client, partenaire) et n&apos;a accès
                   qu&apos;aux données et fonctionnalités correspondant à ce rôle. Un client ne voit que son propre espace et
                   ses propres dossiers, un manager accède à la vue de son équipe, tandis que l&apos;administrateur dispose
                   d&apos;une vue complète sur l&apos;ensemble du logiciel. Cette architecture est pensée dès la conception :
@@ -338,7 +267,7 @@ export default function WebAppPage() {
                 <p className="text-gray-700 leading-relaxed mb-3">
                   Le panel admin est l&apos;espace central depuis lequel vous ou votre équipe pilotez le logiciel au
                   quotidien : gestion des utilisateurs, des commandes, des contenus, des paramètres métier. Il est construit
-                  sur mesure autour de vos processus réels, et non calqué sur un back-office générique — les écrans, les
+                  sur mesure autour de vos processus réels, et non calqué sur un back-office générique : les écrans, les
                   filtres et les actions disponibles correspondent exactement à la façon dont vous travaillez. C&apos;est ce
                   qui distingue un back-office sur mesure d&apos;un outil no-code standard : chaque module répond à un besoin
                   métier précis plutôt qu&apos;à une fonctionnalité générique inutilisée.
@@ -370,7 +299,7 @@ export default function WebAppPage() {
               <div>
                 <h3 className="text-xl font-bold mb-3">Base de données et sécurité</h3>
                 <p className="text-gray-700 leading-relaxed mb-3">
-                  Toutes les données de votre web app — utilisateurs, transactions, contenus — sont stockées dans une
+                  Toutes les données de votre web app (utilisateurs, transactions, contenus) sont stockées dans une
                   base de données sécurisée avec sauvegarde automatique. L&apos;authentification prend en charge la connexion
                   par email, Google ou SSO selon vos besoins, avec des mots de passe chiffrés et des sessions sécurisées.
                   Les permissions par rôle garantissent qu&apos;aucun utilisateur ne peut accéder à des données ou des
@@ -452,12 +381,83 @@ export default function WebAppPage() {
         {/* FAQ */}
         <section className="py-16 px-4 bg-[#0A0A0A]">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#FFE234] mb-8">Questions fréquentes — web app & logiciel sur mesure</h2>
+            <h2 className="text-2xl font-bold text-[#FFE234] mb-8">Questions fréquentes : web app & logiciel sur mesure</h2>
             <div className="flex flex-col gap-4">
               {faq.map(({ q, a }) => (
                 <div key={q} className="border-2 border-gray-800 p-5">
                   <h3 className="font-bold text-[#FFFBF0] mb-2">{q}</h3>
                   <p className="text-sm text-gray-400 leading-relaxed">{a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Étude de cas */}
+        <section className="py-16 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold mb-2">Une <span className="bg-[#FFE234] px-2 brutal-border">web app que j&apos;ai développée</span></h2>
+            <p className="text-gray-600 mb-8 max-w-2xl">
+              Un projet livré, avec son contexte de départ, le périmètre exact et les technologies employées. Les autres sont sur la page réalisations.
+            </p>
+            <div className="brutal-border brutal-shadow bg-white p-6 md:p-8 mb-8">
+              <p className="mono text-xs font-bold text-[#7C3AED] mb-3">// étude de cas : Hébergement · SaaS</p>
+              <h3 className="text-2xl font-bold mb-4">Bunkly</h3>
+              <div className="grid sm:grid-cols-2 gap-6 mb-4">
+                <div>
+                  <p className="text-xs font-bold text-gray-400 uppercase mb-1">Contexte</p>
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    Les propriétaires de locations, hôtels et gîtes rédigent leur livret d&apos;accueil dans des documents PDF statiques, jamais traduits, jamais mis à jour, et impossibles à personnaliser rapidement pour chaque hébergement.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs font-bold text-gray-400 uppercase mb-1">Ce que j&apos;ai livré</p>
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    Une plateforme SaaS où le propriétaire gère plusieurs hébergements depuis un dashboard, réorganise les modules du livret en glisser-déposer, et importe une annonce Airbnb, Booking ou VRBO pour un remplissage automatique par IA. Le livret se traduit automatiquement dans la langue du voyageur et se partage par lien ou QR code.
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-gray-200">
+                <div className="flex flex-wrap gap-2">
+                  {["Next.js", "SaaS", "Multi-langue", "Dashboard"].map((tech) => (
+                    <span key={tech} className="mono text-xs brutal-border px-2 py-1 bg-gray-50">{tech}</span>
+                  ))}
+                </div>
+                <a href="/portfolio/bunkly" className="brutal-btn bg-[#7C3AED] text-white px-4 py-2 text-sm inline-flex items-center gap-2">
+                  Voir l&apos;étude de cas complète <ArrowRight size={14} />
+                </a>
+              </div>
+            </div>
+            <div className="grid gap-8">
+              {demoSites.map(({ title, desc, url }) => (
+                <div key={title} className="brutal-border brutal-shadow bg-white overflow-hidden">
+                  <div className="border-b-[3px] border-black bg-[#0A0A0A]">
+                    <div className="flex items-center gap-1.5 px-3 py-2 border-b-[3px] border-black bg-[#1a1a1a]">
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]" />
+                    </div>
+                    <div className="relative w-full aspect-[16/9] overflow-hidden">
+                      <iframe
+                        src={url}
+                        title={`Démo ${title}`}
+                        loading="lazy"
+                        className="absolute top-0 left-0 border-0 w-[222%] h-[222%] origin-top-left scale-[0.45]"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-5">
+                    <h3 className="font-bold mb-1">{title}</h3>
+                    <p className="text-sm text-gray-600 leading-relaxed mb-4">{desc}</p>
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="brutal-btn bg-[#7C3AED] text-white px-4 py-2 text-sm inline-flex items-center gap-2"
+                    >
+                      Voir en plein écran <ArrowRight size={14} />
+                    </a>
+                  </div>
                 </div>
               ))}
             </div>

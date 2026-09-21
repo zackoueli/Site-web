@@ -263,7 +263,7 @@ export default async function ArticlePage({ params }: Props) {
             <div className="px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48 mb-4">
               <p className="mono text-xs font-bold text-[#FF6B9D] mb-1">// alternative à Wix</p>
               <h2 className="text-xl font-bold mb-1">
-                Un site pro fait sur mesure —{" "}
+                Un site pro fait sur mesure,{" "}
                 <span className="bg-[#FFE234] brutal-border px-1">sans abonnement qui grimpe</span>
               </h2>
               <p className="text-sm text-gray-600">
@@ -284,7 +284,7 @@ export default async function ArticlePage({ params }: Props) {
               <div className="w-full overflow-hidden" style={{ height: "580px" }}>
                 <iframe
                   src="https://coiffeur.breizhapp.tech/"
-                  title="Exemple de site web BreizhApp — salon de coiffure"
+                  title="Exemple de site web BreizhApp, salon de coiffure"
                   className="w-full h-full border-0 block"
                   loading="eager"
                 />
@@ -442,7 +442,7 @@ export default async function ArticlePage({ params }: Props) {
         <div className="mt-16 brutal-border brutal-shadow bg-[#0A0A0A] text-[#FFFBF0] p-8">
           <p className="mono text-xs text-[#FFE234] font-bold mb-2">// développeur freelance · Brest</p>
           <p className="text-2xl font-bold mb-2">Vous avez un projet d'application mobile ?</p>
-          <p className="text-gray-400 mb-6">Devis gratuit et sans engagement — je réponds sous 24h.</p>
+          <p className="text-gray-400 mb-6">Devis gratuit et sans engagement, je réponds sous 24h.</p>
           <a
             href="#contact"
             className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-6 py-3 inline-flex"

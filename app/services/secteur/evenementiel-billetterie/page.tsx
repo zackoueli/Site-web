@@ -21,12 +21,12 @@ export const metadata: Metadata = {
 };
 
 const features = [
-  { title: "Billetterie intégrée", desc: "Vente de billets directement dans l'app via Stripe. Tarifs multiples, codes promo, capacités limitées — tout est géré automatiquement." },
+  { title: "Billetterie intégrée", desc: "Vente de billets directement dans l'app via Stripe. Tarifs multiples, codes promo, capacités limitées : tout est géré automatiquement." },
   { title: "QR codes d'entrée", desc: "Chaque billet génère un QR code unique. À l'entrée, vous scannez depuis votre téléphone pour valider en une seconde." },
-  { title: "Programme & planning", desc: "Horaires, intervenants, salles, descriptions de sessions — vos participants ont tout le programme dans leur poche et reçoivent les changements en temps réel." },
+  { title: "Programme & planning", desc: "Horaires, intervenants, salles, descriptions de sessions : vos participants ont tout le programme dans leur poche et reçoivent les changements en temps réel." },
   { title: "Notifications live", desc: "Informez vos participants en temps réel : début de session, changement de salle, annonce surprise. Plus besoin de sonorisation pour les messages d'organisation." },
-  { title: "Networking entre participants", desc: "Profils des participants, messagerie interne, échange de contacts — transformez votre événement en opportunité de rencontres professionnelles." },
-  { title: "Statistiques & contrôle", desc: "Taux de scan, billets vendus par type, heure de pointe des entrées — suivez vos données en temps réel depuis votre dashboard." },
+  { title: "Networking entre participants", desc: "Profils des participants, messagerie interne, échange de contacts : transformez votre événement en opportunité de rencontres professionnelles." },
+  { title: "Statistiques & contrôle", desc: "Taux de scan, billets vendus par type, heure de pointe des entrées : suivez vos données en temps réel depuis votre dashboard." },
 ];
 
 export default function EvenementielPage() {
@@ -51,7 +51,7 @@ export default function EvenementielPage() {
               <span className="bg-[#FF3B82] text-white brutal-border px-2">événementiel & billetterie</span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
-              Eventbrite prend entre 3,5% et 6,5% sur chaque billet vendu. Pour un événement à 1 000 participants à 30€, c'est entre 1 000€ et 2 000€ de commission envolés. Votre propre app de billetterie vous appartient — et vous gardez tout.
+              Eventbrite prend entre 3,5% et 6,5% sur chaque billet vendu. Pour un événement à 1 000 participants à 30€, c'est entre 1 000€ et 2 000€ de commission envolés. Votre propre app de billetterie vous appartient, et vous gardez tout.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
@@ -106,10 +106,10 @@ export default function EvenementielPage() {
             <h2 className="text-2xl font-bold mb-8">Questions fréquentes</h2>
             <div className="flex flex-col gap-4">
               {[
-                { q: "Le scan des QR codes fonctionne-t-il sans connexion internet ?", a: "Partiellement. L'app peut télécharger la liste des billets valides en amont et les valider en mode hors ligne. Les données sont synchronisées quand la connexion revient — utile dans des lieux avec une mauvaise couverture réseau." },
+                { q: "Le scan des QR codes fonctionne-t-il sans connexion internet ?", a: "Partiellement. L'app peut télécharger la liste des billets valides en amont et les valider en mode hors ligne. Les données sont synchronisées quand la connexion revient, utile dans des lieux avec une mauvaise couverture réseau." },
                 { q: "Peut-on avoir plusieurs types de billets (VIP, early bird, standard) ?", a: "Oui. Vous créez autant de types de billets que nécessaire avec leurs prix, leurs quotas et leurs dates de vente. L'app gère les ruptures automatiquement et passe au tarif suivant." },
                 { q: "Comment gérer les remboursements de billets ?", a: "Via Stripe. Vous définissez votre politique de remboursement et les remboursements se font en quelques clics depuis votre dashboard. Le délai de traitement dépend de la banque du client (5 à 10 jours ouvrés en général)." },
-                { q: "L'app peut-elle être réutilisée pour plusieurs éditions de l'événement ?", a: "Oui, c'est l'intérêt d'une app sur mesure. Vous payez le développement une fois et vous réutilisez l'app à chaque nouvelle édition — vous mettez à jour le programme et la billetterie depuis votre dashboard." },
+                { q: "L'app peut-elle être réutilisée pour plusieurs éditions de l'événement ?", a: "Oui, c'est l'intérêt d'une app sur mesure. Vous payez le développement une fois et vous réutilisez l'app à chaque nouvelle édition, vous mettez à jour le programme et la billetterie depuis votre dashboard." },
               ].map(({ q, a }) => (
                 <div key={q} className="brutal-border bg-white p-5">
                   <h3 className="font-bold mb-2">{q}</h3>

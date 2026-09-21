@@ -487,7 +487,7 @@ export function DevisPDF({ data }: { data: DevisData }) {
         {data.type === "acompte" && (
           <View style={styles.acompteSection}>
             <View>
-              <Text style={styles.acompteLabel}>Acompte {data.acompte}% — ref. devis {data.devisRef}</Text>
+              <Text style={styles.acompteLabel}>Acompte {data.acompte}% (ref. devis {data.devisRef})</Text>
               <Text style={styles.acompteDetail}>Solde restant dû à la livraison : {formatEur(montantSolde)}</Text>
             </View>
             <Text style={styles.acompteAmount}>{formatEur(montantAcompte)}</Text>
@@ -497,7 +497,7 @@ export function DevisPDF({ data }: { data: DevisData }) {
         {data.type === "solde" && (
           <View style={styles.acompteSection}>
             <View>
-              <Text style={styles.acompteLabel}>Solde — ref. devis {data.devisRef}</Text>
+              <Text style={styles.acompteLabel}>Solde (ref. devis {data.devisRef})</Text>
               <Text style={styles.acompteDetail}>Acompte de {data.acompte}% ({formatEur(montantAcompte)}) déjà réglé</Text>
             </View>
             <Text style={styles.acompteAmount}>{formatEur(montantSolde)}</Text>
@@ -533,7 +533,7 @@ export function DevisPDF({ data }: { data: DevisData }) {
 
         {/* MENTION LÉGALE */}
         <Text style={styles.mention}>
-          TVA non applicable — Article 293 B du CGI.{"\n"}
+          TVA non applicable, Article 293 B du CGI.{"\n"}
           {data.type === "devis"
             ? `Ce devis est valable ${data.validite} jours à compter de sa date d'émission. Tout commencement de prestation vaut acceptation du devis.`
             : "Facture émise par BreizhApp, micro-entrepreneur. Paiement par virement bancaire aux coordonnées ci-dessus."}
@@ -543,7 +543,7 @@ export function DevisPDF({ data }: { data: DevisData }) {
         {data.type === "devis" && (
           <View style={styles.signatureSection}>
             <View style={styles.signatureBox}>
-              <Text style={styles.signatureLabel}>Client — Bon pour accord</Text>
+              <Text style={styles.signatureLabel}>Client, bon pour accord</Text>
               <Text style={styles.signatureSubtext}>
                 Nom : {data.client.nom}{"\n"}
                 Date :
@@ -556,8 +556,8 @@ export function DevisPDF({ data }: { data: DevisData }) {
 
         {/* FOOTER */}
         <View style={styles.footer}>
-          <Text style={styles.footerText}>BreizhApp — breizhapp.tech — breizhapp@outlook.fr</Text>
-          <Text style={styles.footerText}>{docLabel} N° {data.numero} — {data.date}</Text>
+          <Text style={styles.footerText}>BreizhApp · breizhapp.tech · breizhapp@outlook.fr</Text>
+          <Text style={styles.footerText}>{docLabel} N° {data.numero} du {data.date}</Text>
         </View>
 
       </Page>

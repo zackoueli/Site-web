@@ -49,7 +49,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-md">
-              Développeur freelance basé à <strong>Brest, Bretagne</strong>. Je conçois des <strong>applications mobiles iOS & Android</strong>, des <strong>sites web</strong> et des <strong>web apps</strong> sur mesure — de l'idée à la mise en ligne.
+              Développeur freelance basé à <strong>Brest, Bretagne</strong>. Je conçois des <strong>applications mobiles iOS & Android</strong>, des <strong>sites web</strong> et des <strong>web apps</strong> sur mesure, de l'idée à la mise en ligne.
             </p>
 
             {/* Offres pills */}

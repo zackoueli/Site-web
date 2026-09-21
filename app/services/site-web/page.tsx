@@ -83,7 +83,7 @@ const schema = {
 const features = [
   { title: "Design sur mesure", desc: "Un design unique adapté à votre identité visuelle, pas un template générique." },
   { title: "SEO optimisé", desc: "Structure, balises et contenu pensés pour apparaître dans Google dès le lancement." },
-  { title: "100% responsive", desc: "Parfait sur mobile, tablette et desktop — testé sur tous les appareils." },
+  { title: "100% responsive", desc: "Parfait sur mobile, tablette et desktop, testé sur tous les appareils." },
   { title: "Blog intégré", desc: "Publiez vos articles et actualités pour alimenter votre référencement naturel." },
   { title: "Formulaire de contact", desc: "Recevez les demandes directement par email, sans outil tiers payant." },
   { title: "Déploiement inclus", desc: "Mise en ligne sur votre hébergement ou sur Vercel, domaine configuré." },
@@ -218,7 +218,7 @@ export default function SiteWebPage() {
                   monde, développeur ou non. C&apos;est la fonctionnalité indispensable pour rester autonome sur votre site après
                   la livraison : plus besoin de me solliciter pour changer un prix ou ajouter une photo. Une formation à l&apos;outil
                   est incluse au moment de la mise en ligne, et le panel admin est développé sur mesure en fonction du type de
-                  contenu que vous avez besoin de modifier — catalogue produits, menu de restaurant, actualités, portfolio de
+                  contenu que vous avez besoin de modifier : catalogue produits, menu de restaurant, actualités, portfolio de
                   réalisations, etc.
                 </p>
               </div>
@@ -241,7 +241,7 @@ export default function SiteWebPage() {
                 <p className="text-gray-700 leading-relaxed mb-3">
                   Un site bien référencé sur Google ne se résume pas à un joli design : il repose sur des fondations techniques
                   solides. Chaque site que je développe est construit avec Next.js, un framework spécifiquement reconnu pour ses
-                  performances SEO — rendu côté serveur, temps de chargement très rapide, structure HTML sémantique et propre.
+                  performances SEO : rendu côté serveur, temps de chargement très rapide, structure HTML sémantique et propre.
                   J&apos;optimise également les balises meta title et meta description de chaque page, les données structurées
                   (Schema.org) pour améliorer l&apos;affichage dans les résultats de recherche, les balises Open Graph pour un bon
                   rendu au partage sur les réseaux sociaux, ainsi que le sitemap XML soumis automatiquement à Google Search
@@ -346,7 +346,7 @@ export default function SiteWebPage() {
         {/* FAQ */}
         <section className="py-16 px-4 bg-[#0A0A0A]">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#FFE234] mb-8">Questions fréquentes — création de site web</h2>
+            <h2 className="text-2xl font-bold text-[#FFE234] mb-8">Questions fréquentes : création de site web</h2>
             <div className="flex flex-col gap-4">
               {faq.map(({ q, a }) => (
                 <div key={q} className="border-2 border-gray-800 p-5">

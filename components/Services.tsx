@@ -6,7 +6,7 @@ const offers = [
     icon: Smartphone,
     title: "Application mobile",
     subtitle: "iOS & Android",
-    desc: "Une app native ou hybride pour votre activité. Commande, réservation, fidélité, notifications push — disponible sur l'App Store et Google Play.",
+    desc: "Une app native ou hybride pour votre activité. Commande, réservation, fidélité, notifications push, disponible sur l'App Store et Google Play.",
     features: ["React Native", "iOS & Android", "App Store & Play Store", "Notifications push", "Paiement Stripe"],
     color: "#FFE234",
     textColor: "#0A0A0A",

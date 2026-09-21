@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const features = [
   { title: "Galerie de réalisations", desc: "Présentez vos projets avec photos, descriptions et catégories. Vos clients voient la qualité de votre travail avant même de vous contacter." },
   { title: "Présentation des services", desc: "Chaque prestation détaillée avec ses spécificités, sa fourchette de prix et ses avantages. Clair, structuré, convaincant." },
-  { title: "Formulaire de devis intégré", desc: "Vos prospects remplissent un formulaire depuis l'app — vous recevez leur demande par email avec toutes les infos nécessaires pour répondre." },
+  { title: "Formulaire de devis intégré", desc: "Vos prospects remplissent un formulaire depuis l'app, vous recevez leur demande par email avec toutes les infos nécessaires pour répondre." },
   { title: "Témoignages clients", desc: "Avis et témoignages affichés directement dans l'app. La preuve sociale est le levier de conversion le plus puissant." },
   { title: "Panel admin pour tout gérer", desc: "Ajoutez des projets, modifiez vos services et mettez à jour vos tarifs depuis votre téléphone. Sans développeur, sans technique." },
   { title: "Notifications push ciblées", desc: "Informez vos clients de vos nouvelles réalisations, de vos disponibilités ou d'une offre ponctuelle." },
@@ -106,9 +106,9 @@ export default function PortfolioVitrinePage() {
             <div className="flex flex-col gap-4">
               {[
                 { q: "Une app vitrine, c'est vraiment utile par rapport à un site web ?", a: "Les deux se complètent. Un site web capte le trafic Google, une app mobile convertit les clients acquis grâce aux notifications push et à l'expérience plus fluide. Pour un artisan ou un freelance, l'app crée une présence mémorable que peu de concurrents ont." },
-                { q: "Puis-je modifier mon portfolio moi-même ?", a: "Oui, c'est l'un des points clés. Le panel admin vous permet d'ajouter des projets, des photos et des descriptions depuis votre téléphone — sans passer par moi à chaque nouveau chantier." },
+                { q: "Puis-je modifier mon portfolio moi-même ?", a: "Oui, c'est l'un des points clés. Le panel admin vous permet d'ajouter des projets, des photos et des descriptions depuis votre téléphone, sans passer par moi à chaque nouveau chantier." },
                 { q: "Combien ça coûte ?", a: "Le tarif dépend des fonctionnalités souhaitées : panel admin, galerie, formulaire de contact, notifications push. Contactez-moi pour un devis gratuit et personnalisé." },
-                { q: "L'app peut-elle intégrer un système de prise de rendez-vous ?", a: "Oui. La prise de rendez-vous en ligne est une fonctionnalité que j'intègre régulièrement — créneaux disponibles, confirmation automatique, rappels push." },
+                { q: "L'app peut-elle intégrer un système de prise de rendez-vous ?", a: "Oui. La prise de rendez-vous en ligne est une fonctionnalité que j'intègre régulièrement : créneaux disponibles, confirmation automatique, rappels push." },
               ].map(({ q, a }) => (
                 <div key={q} className="brutal-border bg-white p-5">
                   <h3 className="font-bold mb-2">{q}</h3>

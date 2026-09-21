@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Mentions légales — BreizhApp",
+  title: "Mentions légales | BreizhApp",
   description: "Mentions légales du site BreizhApp, développeur d'applications mobiles à Brest.",
   alternates: { canonical: "https://breizhapp.tech/mentions-legales" },
   robots: { index: false, follow: false },
@@ -46,7 +46,7 @@ export default function MentionsLegales() {
           <section>
             <h2 className="text-xl font-bold mb-3 border-l-4 border-[#FFE234] pl-3">2. Directeur de la publication</h2>
             <p className="text-gray-700 leading-relaxed">
-              Enzo Omnes — <a href="mailto:breizhapp@outlook.fr" className="underline">breizhapp@outlook.fr</a>
+              Enzo Omnes, <a href="mailto:breizhapp@outlook.fr" className="underline">breizhapp@outlook.fr</a>
             </p>
           </section>
 

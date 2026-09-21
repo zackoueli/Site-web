@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 const features = [
   { title: "Profils utilisateurs", desc: "Chaque membre crée son profil : photo, bio, centres d'intérêt. La base de toute communauté engagée." },
-  { title: "Fil d'actualité", desc: "Publications, photos, vidéos — vos membres partagent du contenu et interagissent avec les publications des autres." },
+  { title: "Fil d'actualité", desc: "Publications, photos, vidéos : vos membres partagent du contenu et interagissent avec les publications des autres." },
   { title: "Messagerie privée", desc: "Conversations directes entre membres, avec notifications push à chaque nouveau message. Le cœur des interactions communautaires." },
   { title: "Groupes & espaces thématiques", desc: "Organisez votre communauté en sous-groupes par intérêt, localisation ou niveau. Chaque groupe a son fil et sa modération propres." },
   { title: "Système de modération", desc: "Outils de signalement, de bannissement et de modération pour les administrateurs. Gardez le contrôle de votre communauté." },
@@ -51,7 +51,7 @@ export default function ReseauSocialPage() {
               <span className="bg-[#7C3AED] text-white brutal-border px-2">réseau social sur mesure</span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
-              Vous voulez créer votre propre communauté digitale — sans dépendre de Facebook ou Discord ? Une app sur mesure vous donne le contrôle total : vos données, vos règles, votre expérience utilisateur.
+              Vous voulez créer votre propre communauté digitale, sans dépendre de Facebook ou Discord ? Une app sur mesure vous donne le contrôle total : vos données, vos règles, votre expérience utilisateur.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Discuter de mon projet</a>
@@ -86,10 +86,10 @@ export default function ReseauSocialPage() {
             <h2 className="text-2xl font-bold text-[#FFE234] mb-6">Types de communautés que je développe</h2>
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { emoji: "🎯", label: "Communautés d'intérêt", desc: "Sport, hobby, passion, culture — rassemblez des gens qui partagent un centre d'intérêt commun dans votre propre espace." },
-                { emoji: "🏫", label: "Plateformes associatives", desc: "Associations sportives, clubs, amicales — gérez membres, actualités et événements depuis une app dédiée." },
-                { emoji: "💼", label: "Réseaux professionnels de niche", desc: "Alternative à LinkedIn sur un secteur précis — mettez en relation des pros d'un même domaine." },
-                { emoji: "📍", label: "Communautés locales", desc: "Quartier, ville, région — créez le lien digital d'une communauté géographique." },
+                { emoji: "🎯", label: "Communautés d'intérêt", desc: "Sport, hobby, passion, culture : rassemblez des gens qui partagent un centre d'intérêt commun dans votre propre espace." },
+                { emoji: "🏫", label: "Plateformes associatives", desc: "Associations sportives, clubs, amicales : gérez membres, actualités et événements depuis une app dédiée." },
+                { emoji: "💼", label: "Réseaux professionnels de niche", desc: "Alternative à LinkedIn sur un secteur précis : mettez en relation des pros d'un même domaine." },
+                { emoji: "📍", label: "Communautés locales", desc: "Quartier, ville, région : créez le lien digital d'une communauté géographique." },
               ].map(({ emoji, label, desc }) => (
                 <div key={label} className="border-2 border-gray-800 p-5 hover:border-[#7C3AED] transition-colors">
                   <div className="text-3xl mb-3">{emoji}</div>
@@ -107,9 +107,9 @@ export default function ReseauSocialPage() {
             <div className="flex flex-col gap-4">
               {[
                 { q: "Combien coûte le développement d'une app communautaire ?", a: "C'est un projet sur devis car la complexité varie beaucoup selon les fonctionnalités : profils, fil, messagerie, groupes, modération avancée, monétisation. Je vous envoie une estimation précise après un premier échange." },
-                { q: "Peut-on monétiser l'accès à la communauté ?", a: "Oui. Abonnement mensuel via Stripe, accès premium à certains groupes, contenu exclusif payant — plusieurs modèles sont possibles et je peux les implémenter directement dans l'app." },
+                { q: "Peut-on monétiser l'accès à la communauté ?", a: "Oui. Abonnement mensuel via Stripe, accès premium à certains groupes, contenu exclusif payant : plusieurs modèles sont possibles et je peux les implémenter directement dans l'app." },
                 { q: "Comment gérer les membres toxiques ou les contenus inappropriés ?", a: "L'app inclut un système de signalement par les utilisateurs et des outils de modération pour les admins : bannissement temporaire ou définitif, suppression de contenu, mise en liste noire." },
-                { q: "L'app peut-elle gérer des dizaines de milliers de membres ?", a: "Oui. J'utilise Firebase ou Supabase comme backend — des infrastructures conçues pour scaler automatiquement. Les coûts d'hébergement augmentent avec l'usage mais restent très compétitifs." },
+                { q: "L'app peut-elle gérer des dizaines de milliers de membres ?", a: "Oui. J'utilise Firebase ou Supabase comme backend, des infrastructures conçues pour scaler automatiquement. Les coûts d'hébergement augmentent avec l'usage mais restent très compétitifs." },
               ].map(({ q, a }) => (
                 <div key={q} className="brutal-border bg-white p-5">
                   <h3 className="font-bold mb-2">{q}</h3>

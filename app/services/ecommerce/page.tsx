@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 const features = [
   { title: "Catalogue produits", desc: "Gérez vos produits, variantes, stocks et catégories depuis votre panel admin." },
   { title: "Panier & commandes", desc: "Tunnel d'achat fluide, récapitulatif de commande, emails automatiques." },
-  { title: "Paiement Stripe", desc: "Carte bancaire, Apple Pay, Google Pay — sécurisé et conforme PCI-DSS." },
+  { title: "Paiement Stripe", desc: "Carte bancaire, Apple Pay, Google Pay, sécurisé et conforme PCI-DSS." },
   { title: "Panel admin", desc: "Gérez vos commandes, stocks et clients depuis une interface simple et claire." },
   { title: "SEO e-commerce", desc: "Fiches produits optimisées, sitemap automatique, temps de chargement rapide." },
   { title: "Sans abonnement", desc: "Pas de commission sur les ventes, pas d'abonnement mensuel à une plateforme." },
@@ -73,7 +73,7 @@ const faq = [
   },
   {
     q: "Combien coûte une boutique e-commerce sur mesure ?",
-    a: "À partir de 2 500 €, pour une boutique avec catalogue produits, paiement Stripe et panel admin. Le tarif final dépend de la taille du catalogue et des fonctionnalités souhaitées — devis détaillé sous 24h après le cadrage.",
+    a: "À partir de 2 500 €, pour une boutique avec catalogue produits, paiement Stripe et panel admin. Le tarif final dépend de la taille du catalogue et des fonctionnalités souhaitées, devis détaillé sous 24h après le cadrage.",
   },
   {
     q: "La boutique sera-t-elle bien référencée sur Google ?",
@@ -120,7 +120,7 @@ export default function EcommercePage() {
               </div>
             </div>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
-              Une boutique en ligne qui vous appartient vraiment — sans abonnement mensuel à Shopify ou commission sur chaque vente.
+              Une boutique en ligne qui vous appartient vraiment, sans abonnement mensuel à Shopify ou commission sur chaque vente.
               Design unique, paiement Stripe, gestion des commandes intégrée.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -316,7 +316,7 @@ export default function EcommercePage() {
         {/* FAQ */}
         <section className="py-16 px-4 bg-[#0A0A0A]">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#FFE234] mb-8">Questions fréquentes — boutique e-commerce sur mesure</h2>
+            <h2 className="text-2xl font-bold text-[#FFE234] mb-8">Questions fréquentes : boutique e-commerce sur mesure</h2>
             <div className="flex flex-col gap-4">
               {faq.map(({ q, a }) => (
                 <div key={q} className="border-2 border-gray-800 p-5">

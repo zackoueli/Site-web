@@ -89,8 +89,8 @@ const schema = {
 };
 
 const features = [
-  { title: "Réservation directe", desc: "Vos clients réservent directement dans l'app — zéro commission Booking ou Airbnb." },
-  { title: "Conciergerie digitale", desc: "Recommandations locales, services en chambre, demandes spéciales — tout depuis l'app." },
+  { title: "Réservation directe", desc: "Vos clients réservent directement dans l'app, zéro commission Booking ou Airbnb." },
+  { title: "Conciergerie digitale", desc: "Recommandations locales, services en chambre, demandes spéciales, tout depuis l'app." },
   { title: "Check-in / Check-out", desc: "Simplifiez l'arrivée et le départ avec des processus digitaux fluides." },
   { title: "Notifications push", desc: "Informez vos clients : heure de disponibilité de la chambre, offres spa, événements locaux." },
   { title: "Galerie & visites virtuelles", desc: "Présentez vos chambres et équipements avec photos optimisées et contenu dynamique." },
@@ -173,7 +173,7 @@ export default function HotelPage() {
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
                 Ce livret d&apos;accueil numérique peut être intégré directement dans votre application mobile
-                hôtel ou votre app de conciergerie pour locations saisonnières — une seule expérience,
+                hôtel ou votre app de conciergerie pour locations saisonnières, pour une seule expérience,
                 accessible sans rien installer.
               </p>
               <div className="flex flex-wrap gap-4 mono text-sm text-gray-500">
@@ -213,7 +213,7 @@ export default function HotelPage() {
                 Pour les <strong>conciergeries de location</strong> qui gèrent plusieurs biens, l&apos;application
                 centralise l&apos;ensemble des voyageurs : codes d&apos;accès envoyés automatiquement, instructions
                 de check-in/check-out sans contact, et un livret d&apos;accueil numérique propre à chaque
-                logement — le tout piloté depuis un seul panel d&apos;administration.
+                logement, le tout piloté depuis un seul panel d&apos;administration.
               </p>
             </div>
           </div>

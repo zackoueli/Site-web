@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "Qu'est-ce qui est inclus dans le suivi après livraison ?",
-    a: "Je reste disponible après livraison — mon objectif est que l'app soit un outil qui vous convient vraiment. Corrections de bugs, ajustements, nouvelles fonctionnalités : on en discute au fil du temps selon vos besoins. Pas de contrat forcé, juste une collaboration continue.",
+    a: "Je reste disponible après livraison, mon objectif est que l'app soit un outil qui vous convient vraiment. Corrections de bugs, ajustements, nouvelles fonctionnalités : on en discute au fil du temps selon vos besoins. Pas de contrat forcé, juste une collaboration continue.",
   },
   {
     q: "Est-ce que je peux avoir un exemple de ce que vous avez déjà réalisé ?",

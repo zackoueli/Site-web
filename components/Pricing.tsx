@@ -334,7 +334,7 @@ export default function Pricing() {
             <span className="bg-[#FFE234] px-3 brutal-border">app</span>
           </h2>
           <p className="text-gray-600 mt-4 max-w-xl">
-            Sélectionnez ce dont vous avez besoin — le prix s'ajuste automatiquement. Pas de jargon, que des fonctionnalités concrètes.
+            Sélectionnez ce dont vous avez besoin, le prix s'ajuste automatiquement. Pas de jargon, que des fonctionnalités concrètes.
           </p>
         </div>
 

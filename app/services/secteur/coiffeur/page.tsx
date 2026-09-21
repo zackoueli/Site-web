@@ -48,7 +48,7 @@ const schema = {
           name: "Quelle est la différence entre BreizhApp et Planity pour un salon de coiffure ?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Avec BreizhApp, vous obtenez une application mobile à votre nom sur l'App Store et Google Play. Avec Planity, vous accédez à leur plateforme via abonnement. BreizhApp vous donne la propriété de votre outil — votre code, vos données, votre app.",
+            text: "Avec BreizhApp, vous obtenez une application mobile à votre nom sur l'App Store et Google Play. Avec Planity, vous accédez à leur plateforme via abonnement. BreizhApp vous donne la propriété de votre outil : votre code, vos données, votre app.",
           },
         },
         {
@@ -65,8 +65,8 @@ const schema = {
 };
 
 const features = [
-  { title: "Réservation 24h/24", desc: "Vos clientes réservent depuis leur téléphone à n'importe quelle heure — vous recevez une notification immédiate." },
-  { title: "Programme de fidélité", desc: "Tampons numériques, remises automatiques, offres d'anniversaire — sans carte papier à perdre." },
+  { title: "Réservation 24h/24", desc: "Vos clientes réservent depuis leur téléphone à n'importe quelle heure, vous recevez une notification immédiate." },
+  { title: "Programme de fidélité", desc: "Tampons numériques, remises automatiques, offres d'anniversaire, sans carte papier à perdre." },
   { title: "Notifications push", desc: "Rappel de rendez-vous 24h avant, promotion du moment, nouveau produit disponible." },
   { title: "Galerie & portfolio", desc: "Présentez vos créations coiffure directement dans l'app pour inspirer et convertir." },
   { title: "Panel admin", desc: "Gérez vos créneaux, vos prestations et vos tarifs depuis votre tableau de bord web." },
@@ -98,7 +98,7 @@ export default function CoiffeurPage() {
               <span className="bg-[#FFE234] brutal-border px-2">salon de coiffure</span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
-              Votre propre application iOS & Android à votre nom — réservation en ligne, programme de fidélité
+              Votre propre application iOS & Android à votre nom : réservation en ligne, programme de fidélité
               et notifications push. L&apos;alternative à Planity où vous possédez vraiment votre outil.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
@@ -127,7 +127,7 @@ export default function CoiffeurPage() {
               <span className="bg-[#FFE234] brutal-border px-2">fait avec BreizhApp</span>
             </h2>
             <p className="text-sm text-gray-500 mono mb-8">
-              Naviguez librement — c&apos;est le site réel, pas une capture.
+              Naviguez librement, c&apos;est le site réel, pas une capture.
             </p>
             <div className="brutal-border brutal-shadow bg-[#1a1a1a] rounded-t-xl p-3 pb-0">
               <div className="bg-[#2d2d2d] rounded-t-lg px-4 py-2 flex items-center gap-3">
@@ -143,7 +143,7 @@ export default function CoiffeurPage() {
               <div className="w-full overflow-hidden" style={{ height: "520px" }}>
                 <iframe
                   src="https://coiffeur.breizhapp.tech/"
-                  title="Site salon de coiffure — exemple BreizhApp"
+                  title="Site salon de coiffure : exemple BreizhApp"
                   className="w-full h-full border-0 block"
                   loading="lazy"
                 />

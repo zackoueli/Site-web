@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 const features = [
-  { title: "Agenda en temps réel", desc: "Vos disponibilités s'affichent instantanément. Quand un créneau est pris, il disparaît pour tous les autres clients — fini les doubles réservations." },
+  { title: "Agenda en temps réel", desc: "Vos disponibilités s'affichent instantanément. Quand un créneau est pris, il disparaît pour tous les autres clients, fini les doubles réservations." },
   { title: "Rappels automatiques", desc: "SMS ou notifications push envoyés automatiquement 24h et 1h avant le rendez-vous. Les no-shows diminuent de 60% en moyenne." },
   { title: "Paiement à la réservation", desc: "Stripe intégré pour l'acompte ou le paiement complet au moment de la réservation. Sécurise vos créneaux et évite les annulations de dernière minute." },
   { title: "Gestion multi-prestataires", desc: "Si vous avez plusieurs praticiens ou plusieurs salles, chacun a son propre agenda. Les clients choisissent la personne et le créneau." },
@@ -51,7 +51,7 @@ export default function ReservationPage() {
               <span className="bg-[#00D4AA] text-[#0A0A0A] brutal-border px-2">prise de rendez-vous</span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
-              Calendly coûte entre 8€ et 16€ par mois sans jamais vous appartenir. Une app sur mesure, c'est votre agenda, votre marque, vos données — sans abonnement à une plateforme tierce.
+              Calendly coûte entre 8€ et 16€ par mois sans jamais vous appartenir. Une app sur mesure, c'est votre agenda, votre marque, vos données, sans abonnement à une plateforme tierce.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
@@ -86,7 +86,7 @@ export default function ReservationPage() {
             <h2 className="text-2xl font-bold text-[#FFE234] mb-6">Secteurs qui utilisent ce type d'app</h2>
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { emoji: "💇", label: "Coiffeurs & salons de beauté", desc: "L'app remplace Planity ou Treatwell — sans payer de commission sur chaque prestation." },
+                { emoji: "💇", label: "Coiffeurs & salons de beauté", desc: "L'app remplace Planity ou Treatwell, sans payer de commission sur chaque prestation." },
                 { emoji: "🏋️", label: "Coaches sportifs & salles de sport", desc: "Réservation de séances individuelles, abonnements, gestion des cours collectifs." },
                 { emoji: "🩺", label: "Praticiens & thérapeutes", desc: "Ostéopathes, kinés, psychologues : agenda sécurisé avec rappels et paiement sécurisé." },
                 { emoji: "🏡", label: "Locations & hébergements", desc: "Gîtes, salles de réception, espaces de coworking : disponibilité en temps réel et réservation instantanée." },
