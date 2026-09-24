@@ -2521,31 +2521,59 @@ export const articles: Article[] = [
       credit: "Image : Artlist",
     },
     service: "reservation-prise-de-rdv",
-    title: "App mobile prise de RDV : guide complet 2026",
-    description: "Application mobile de prise de rendez-vous en ligne : fonctionnalités, coûts, alternatives à Doctolib et Planity. Guide complet pour professionnels en 2026.",
+    title: "App prise de RDV : fini les appels pour réserver",
+    description:
+      "Vos clients doivent toujours vous appeler pour réserver ? Avec une application de prise de rendez-vous, ils réservent seuls, 24h/24, avec rappels automatiques.",
     date: "2026-05-18",
     lastModified: "2026-09-24",
     category: "Guides",
     sections: [
       {
         paragraphs: [
-          "La prise de rendez-vous en ligne est devenue un standard attendu par les clients. Coiffeurs, médecins, kinésithérapeutes, coachs, artisans — tous les professionnels qui travaillent sur rendez-vous peuvent réduire les no-shows, libérer du temps administratif et améliorer l'expérience client grâce à une application mobile dédiée.",
-          "Voici tout ce qu'il faut savoir pour choisir la bonne solution en 2026.",
+          "« Mes clients doivent toujours m'appeler pour réserver. » C'est l'une des phrases que j'entends le plus souvent chez les coiffeurs, coachs, thérapeutes et artisans. Le téléphone sonne en pleine prestation, les messages s'accumulent, et le soir vous rappelez les clients un par un pour caler un créneau.",
+          "Une application de prise de rendez-vous règle ce problème : vos clients voient vos disponibilités et réservent seuls, à toute heure, pendant que vous travaillez. Dans ce guide, je vous explique ce qu'elle doit faire, les solutions existantes, et comment je crée la vôtre.",
+        ],
+      },
+      {
+        heading: "Le vrai coût des réservations par téléphone",
+        paragraphs: [
+          "Prendre les rendez-vous par téléphone paraît gratuit. En réalité, cela vous coûte du temps et des clients :",
+        ],
+        list: [
+          "Vous êtes interrompu en plein travail : chaque appel coupe une prestation, une séance ou un chantier",
+          "Les appels manqués sont des clients perdus : un client qui tombe sur la messagerie appelle souvent le concurrent suivant",
+          "Vos clients réservent quand vous êtes fermé : le soir, le dimanche, pendant leur pause déjeuner, justement quand vous ne pouvez pas décrocher",
+          "Le temps administratif s'accumule : rappeler, noter, confirmer, déplacer, c'est du temps que vous ne facturez pas",
+          "Les oublis coûtent cher : sans rappel automatique, un client qui oublie son rendez-vous laisse un créneau vide",
+          "L'agenda papier fait des erreurs : doubles réservations, créneau mal noté, rendez-vous impossible à retrouver",
         ],
       },
       {
         heading: "Ce qu'une app de prise de RDV doit faire",
         paragraphs: [
-          "Une application de réservation efficace couvre plusieurs besoins simultanément :",
+          "Une application de réservation efficace couvre plusieurs besoins à la fois :",
         ],
         list: [
-          "Calendrier en temps réel : vos clients voient vos créneaux disponibles et réservent en autonomie, 24h/24 — sans vous appeler",
-          "Rappels automatiques : notification push ou SMS la veille et le matin du rendez-vous — les no-shows peuvent diminuer de 30 à 50%",
-          "Gestion des annulations : votre client peut annuler ou déplacer lui-même son rendez-vous, le créneau est immédiatement remis à disposition",
-          "Acompte à la réservation : bloquez un paiement partiel pour sécuriser le rendez-vous — particulièrement utile pour les prestations longues",
-          "Historique client : retrouvez les prestations passées, les préférences et les notes pour chaque client",
+          "Calendrier en temps réel : vos clients voient vos créneaux disponibles et réservent en autonomie, 24h/24, sans vous appeler",
+          "Rappels automatiques : une notification push la veille et le matin du rendez-vous, les absences peuvent diminuer de 30 à 50%",
+          "Gestion des annulations : votre client annule ou déplace lui-même son rendez-vous, le créneau est aussitôt remis à disposition",
+          "Acompte à la réservation : bloquez un paiement partiel pour sécuriser les prestations longues",
+          "Historique client : retrouvez les prestations passées, les préférences et vos notes pour chaque client",
           "Multi-praticiens : si vous avez une équipe, chaque membre gère son propre agenda depuis la même interface",
-          "Synchronisation agenda : intégration avec Google Calendar ou Apple Calendar pour éviter les doubles réservations",
+          "Synchronisation agenda : intégration avec Google Agenda ou le calendrier Apple pour éviter les doubles réservations",
+        ],
+      },
+      {
+        heading: "Comment ça se passe pour vos clients (et pour vous)",
+        paragraphs: [
+          "Une bonne application de réservation se prend en main en quelques secondes. Côté client :",
+        ],
+        list: [
+          "1. Il ouvre l'application de votre entreprise, à votre nom et à vos couleurs",
+          "2. Il choisit sa prestation et, si besoin, la personne avec qui il veut son rendez-vous",
+          "3. Il voit uniquement les créneaux réellement libres et confirme en un geste",
+          "4. Il reçoit un rappel la veille, et peut déplacer son rendez-vous lui-même si un imprévu arrive",
+          "Côté vous : une notification pour chaque nouvelle réservation, un agenda toujours à jour sur votre téléphone, et des journées sans interruption",
         ],
       },
       {
@@ -2554,25 +2582,25 @@ export const articles: Article[] = [
           "Plusieurs plateformes proposent des outils de prise de RDV en ligne. Voici un tour d'horizon honnête :",
         ],
         list: [
-          "Doctolib : référence pour les professionnels de santé — 139€/mois, excellent pour les médecins mais surdimensionné pour les autres métiers",
-          "Planity : conçu pour les salons de coiffure et instituts — tarif sur devis (info.planity.com/tarifs), modèle sans commission sur les rendez-vous",
-          "Calendly : pratique pour les consultants et coachs — gratuit en version basique, limité à un type de rendez-vous",
-          "Acuity Scheduling : plus complet, 16 à 61€/mois, interface en anglais",
-          "Setmore / SimplyBook : solutions internationales, entre 0€ et 25€/mois, moins adaptées au marché français",
-          "Problème commun à toutes ces solutions : vous payez un abonnement permanent, vous ne possédez pas vos données client, et votre application ressemble à celle de tous vos concurrents",
+          "Doctolib : la référence pour les professionnels de santé, environ 139€/mois, excellent pour les médecins mais surdimensionné pour les autres métiers",
+          "Planity : conçu pour les salons de coiffure et instituts, tarif sur devis, sans commission sur les rendez-vous",
+          "Calendly : pratique pour les consultants et coachs, gratuit en version basique, mais limité à un type de rendez-vous",
+          "Acuity Scheduling : plus complet, abonnement mensuel, interface pensée pour le marché anglophone",
+          "Setmore, SimplyBook : solutions internationales, moins adaptées au marché français",
+          "Problème commun à toutes ces solutions : vous payez un abonnement permanent, vos données clients sont chez eux, et votre outil ressemble à celui de tous vos concurrents",
         ],
       },
       {
-        heading: "App sur mesure vs plateforme SaaS : le bon calcul",
+        heading: "App sur mesure vs plateforme : le bon calcul",
         paragraphs: [
           "Sur 3 ans, voici ce que coûte réellement chaque option pour un salon ou un cabinet :",
         ],
         list: [
-          "Planity : abonnement SaaS récurrent sur devis — vous payez sans jamais posséder l'outil",
-          "Doctolib (139€/mois) : 5 004€ sur 3 ans",
-          "App sur mesure : un investissement unique, zéro abonnement, zéro commission, vos données vous appartiennent",
+          "Planity : abonnement récurrent sur devis, vous payez sans jamais posséder l'outil",
+          "Doctolib (environ 139€/mois) : plus de 5 000€ sur 3 ans",
+          "App sur mesure : un investissement unique, zéro abonnement de plateforme, zéro commission, vos données vous appartiennent",
           "Sur quelques années, une app sur mesure revient moins cher qu'un abonnement qui ne s'arrête jamais",
-          "Bonus : votre app est aux couleurs de votre marque, pas celle de Planity ou Doctolib",
+          "Bonus : l'application est à votre nom, vos clients ne passent pas par un annuaire où vos concurrents sont à un clic",
         ],
       },
       {
@@ -2581,18 +2609,40 @@ export const articles: Article[] = [
           "Tous les professionnels qui travaillent par créneaux ont intérêt à digitaliser leur agenda :",
         ],
         list: [
-          "Coiffeurs et instituts de beauté : réservation des prestations avec durée variable, gestion des colorations longues, programme de fidélité intégré",
+          "Coiffeurs et instituts de beauté : prestations de durée variable, colorations longues, programme de fidélité intégré",
           "Coachs et thérapeutes : séances individuelles ou en groupe, paiement en ligne, suivi des clients",
-          "Artisans et prestataires de service : estimation de durée par type de chantier, acompte à la réservation, confirmation automatique",
-          "Professionnels de santé : gestion des urgences, créneaux réservés, rappels de suivi",
-          "Auto-écoles : réservation des leçons de conduite, gestion des moniteurs, suivi de la progression",
+          "Artisans et prestataires de service : durée par type d'intervention, acompte à la réservation, confirmation automatique",
+          "Professionnels de santé : créneaux réservés, gestion des urgences, rappels de suivi",
+          "Auto-écoles : réservation des leçons, gestion des moniteurs, suivi de la progression",
         ],
       },
       {
-        heading: "Créez votre app de prise de RDV sur mesure",
+        heading: "Les erreurs à éviter",
+        list: [
+          "Ne pas en parler à vos clients : une application que personne ne connaît ne sert à rien. Affichez un QR code au comptoir, ajoutez le lien dans vos messages et sur votre site",
+          "Oublier le répondeur : un message du type « réservez en 30 secondes sur notre application » transforme chaque appel manqué en réservation",
+          "Demander trop d'informations : nom, téléphone, prestation, créneau. Chaque champ en plus fait abandonner des clients",
+          "Se passer des rappels : c'est la fonctionnalité qui réduit le plus les rendez-vous manqués",
+          "Couper le téléphone du jour au lendemain : certains clients, souvent les plus âgés, continueront d'appeler, et c'est normal. L'app réduit les appels, elle ne les interdit pas",
+        ],
+      },
+      {
+        heading: "Je crée votre application de prise de rendez-vous",
         paragraphs: [
-          "Je développe des applications mobiles de prise de rendez-vous pour les professionnels indépendants et les petites équipes. Chaque app est conçue selon votre métier — pas un outil générique que vous partagez avec des milliers d'autres professionnels.",
-          "Devis gratuit sous 48h. Décrivez-moi votre activité, le nombre de praticiens et vos besoins spécifiques — je vous propose une solution adaptée à votre budget, avec un tarif transparent et un délai de livraison réaliste.",
+          "Je suis développeur freelance à Brest, spécialisé en applications mobiles iOS & Android. Je conçois des applications de réservation pour les indépendants et les petites équipes, pensées pour votre métier : vos prestations, vos durées, vos règles d'annulation. Pas un outil générique partagé avec des milliers d'autres professionnels.",
+          "Vous me parlez directement, du premier échange à la publication sur l'App Store et Google Play. Je configure l'application avec vous, je vous montre comment gérer votre agenda en quelques minutes, et je reste disponible après le lancement.",
+          "Mes tarifs sont affichés sur la page Application mobile du site. Décrivez-moi votre activité et le nombre de personnes qui prennent des rendez-vous : je vous envoie un devis gratuit sous 24h.",
+        ],
+      },
+      {
+        heading: "FAQ : application de prise de rendez-vous",
+        list: [
+          "Mes clients vont-ils vraiment réserver sur une application ? Oui, surtout ceux qui réservent régulièrement : ils gagnent du temps et peuvent le faire le soir ou le week-end. Un QR code au comptoir et un message sur votre répondeur suffisent généralement à lancer le mouvement.",
+          "Et les clients qui préfèrent appeler ? Vous gardez le téléphone. Vous ajoutez simplement leur rendez-vous vous-même dans l'agenda de l'application, qui reste votre agenda unique.",
+          "Puis-je bloquer des créneaux ou prendre des congés ? Oui. Vous fermez les créneaux que vous voulez depuis votre téléphone, ils disparaissent aussitôt de l'application.",
+          "Que se passe-t-il si un client ne vient pas ? Les rappels automatiques limitent les oublis. Pour les prestations longues, vous pouvez demander un acompte à la réservation.",
+          "Un site web avec un formulaire ne suffit-il pas ? Un formulaire vous oblige encore à rappeler le client pour confirmer. Une application montre les créneaux réellement libres, confirme automatiquement et envoie les rappels.",
+          "Combien coûte une application de prise de rendez-vous ? Cela dépend du nombre de praticiens et des options (acompte, fidélité). Mes tarifs sont affichés sur la page Application mobile, avec un devis gratuit sous 24h.",
         ],
       },
     ],
@@ -2883,7 +2933,7 @@ export const articles: Article[] = [
         list: [
           "Les essentiels : réservation en ligne, galerie avant/après, catalogue prestations, rappels push, panel admin, iOS & Android",
           "En option : paiement d'acompte Stripe, programme de fidélité numérique complet, messagerie client",
-          "Mes tarifs sont affichés sur la page Coiffeur & salon du site, devis gratuit sous 24h",
+          "Mes tarifs sont affichés sur la page Application mobile du site, devis gratuit sous 24h",
           "Délai de livraison : 3 à 5 semaines — déploiement App Store et Google Play inclus",
         ],
       },
@@ -2891,7 +2941,7 @@ export const articles: Article[] = [
         heading: "FAQ — Application mobile salon de coiffure",
         list: [
           "Une app peut-elle vraiment remplacer Planity ? Pour la prise de rendez-vous et la fidélisation, oui. L'app BreizhApp est à votre nom, vos données vous appartiennent, et les notifications push sont illimitées — des avantages impossibles avec Planity.",
-          "Combien coûte l'app par rapport à Planity ? Planity ne publie pas ses tarifs et se paie chaque mois, sans fin. L'app sur mesure est un investissement unique + hébergement, et elle vous appartient. Mes tarifs sont affichés sur la page Coiffeur & salon.",
+          "Combien coûte l'app par rapport à Planity ? Planity ne publie pas ses tarifs et se paie chaque mois, sans fin. L'app sur mesure est un investissement unique + hébergement, et elle vous appartient. Mes tarifs sont affichés sur la page Application mobile.",
           "Mes clientes devront-elles télécharger une nouvelle app ? Oui — elles recherchent le nom de votre salon sur l'App Store ou Google Play. Un QR code affiché en salon et une story Instagram suffisent généralement à convertir 60 à 70 % de votre base en 30 jours.",
           "L'app gère-t-elle plusieurs coiffeurs ? Oui. Le panel admin permet de gérer plusieurs praticiens, leurs agendas respectifs et leurs statistiques individuelles.",
           "L'app est-elle conforme au RGPD ? Oui. Les données sont hébergées en Europe (Firebase EU) et vous restez propriétaire de votre base clients. Une politique de confidentialité et un bandeau de consentement sont inclus.",
@@ -3003,7 +3053,7 @@ export const articles: Article[] = [
     service: "application-mobile",
     title: "Comment créer une application mobile : le guide 2026",
     description:
-      "Les étapes concrètes pour créer une application mobile iOS & Android : valider l'idée, préparer le brief, choisir qui la développe, design, tests, publication.",
+      "Créer une application mobile iOS & Android étape par étape : valider l'idée, lancer un MVP, préparer le brief, choisir qui la développe, jusqu'à la publication.",
     date: "2026-06-13",
     lastModified: "2026-09-24",
     category: "Guides",
@@ -3026,6 +3076,20 @@ export const articles: Article[] = [
           "Construisez une V1 volontairement simple, centrée sur la réponse à ce besoin, et lancez-la sans attendre d'avoir tout prévu",
           "Une fois les 4 ou 5 premiers utilisateurs actifs, demandez-leur directement ce qui leur manque et quelles fonctionnalités les aideraient",
           "Ajoutez ces retours un par un, puis répétez : les meilleures idées de fonctionnalités viennent de vos utilisateurs, parce qu'elles répondent à un besoin qu'ils ont réellement rencontré",
+        ],
+      },
+      {
+        heading: "J'ai une idée de service : commencer par un MVP",
+        paragraphs: [
+          "« J'ai une idée de service, mais je ne sais pas comment la lancer. » Dans ce cas, je conseille presque toujours la même chose : ne pas construire l'application complète tout de suite, mais un MVP (Minimum Viable Product, ou produit minimum viable).",
+          "Un MVP, c'est la version la plus simple de votre application qui rend déjà le service promis à de vrais utilisateurs. Pas une maquette, pas un prototype : une vraie application publiée, mais réduite à l'essentiel. Par exemple, pour une app de réservation de cours de sport, le MVP permet de voir le planning et de réserver sa place. Le paiement en ligne, les abonnements et le classement des membres viendront ensuite.",
+        ],
+        list: [
+          "Vous testez votre idée sur le terrain : ce sont vos premiers utilisateurs qui vous disent si le service répond à un vrai besoin",
+          "Vous limitez le risque : vous n'investissez pas dans dix fonctionnalités avant de savoir lesquelles seront utilisées",
+          "Vous lancez plus vite : quelques semaines au lieu de plusieurs mois, et vous commencez à apprendre de vos utilisateurs",
+          "Vous construisez sur du solide : chaque nouvelle fonctionnalité est ajoutée parce qu'elle a été demandée, pas devinée",
+          "Mon rôle : vous aider à trier ce qui doit être dans la première version et ce qui peut attendre. C'est souvent la décision la plus importante du projet",
         ],
       },
       {
@@ -3097,6 +3161,7 @@ export const articles: Article[] = [
         heading: "FAQ — Comment créer une application mobile",
         list: [
           "Faut-il avoir une idée précise avant de contacter un développeur ? Non. Une idée générale suffit pour un premier échange — le cadrage sert justement à préciser et prioriser les fonctionnalités.",
+          "Qu'est-ce qu'un MVP d'application mobile ? C'est la première version de votre application, réduite aux fonctionnalités indispensables, publiée pour de vrais utilisateurs. Elle permet de valider votre idée rapidement avant d'investir dans une version complète.",
           "Faut-il un business plan avant de contacter un développeur ? Non. Une description claire du problème et de l'utilisateur cible suffit pour obtenir un devis.",
           "Mon idée peut-elle être copiée si j'en parle à un développeur ? Le risque est très faible en pratique. Si vous êtes inquiet, un accord de confidentialité (NDA) peut être signé avant le brief.",
           "Faut-il payer l'App Store et Google Play ? Oui : 99$ par an pour le compte développeur Apple et 25$ une seule fois pour Google Play. La publication elle-même est incluse dans mes prestations.",
@@ -4464,6 +4529,139 @@ export const articles: Article[] = [
           "Cloudflare, à quoi ça sert concrètement ? C'est un réseau de serveurs répartis dans le monde qui met en cache le site et le protège des pics de trafic ou des attaques. Le visiteur reçoit la page depuis le serveur le plus proche de lui, plus vite.",
           "Faut-il toujours utiliser React pour un site web professionnel ? Non. Pour un site qui vit du référencement local (artisan, commerçant, restaurateur), une architecture avec rendu côté serveur est presque toujours préférable : elle affiche du contenu déjà lisible par Google dès la première requête.",
           "Comment savoir si mon site a les mêmes limites techniques ? Un audit rapide du code source et du temps de chargement suffit à le voir. Contactez-moi avec l'adresse de votre site, je vous donne un retour concret.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "transformer-site-web-en-application-mobile",
+    service: "application-mobile",
+    title: "Transformer son site web en application mobile",
+    description:
+      "Vous avez un site et voulez une application ? PWA, app « coquille », hybride ou native : les options pour transformer votre site, et comment bien choisir.",
+    date: "2026-09-24",
+    lastModified: "2026-09-24",
+    category: "Guides",
+    sections: [
+      {
+        paragraphs: [
+          "« J'ai un site, mais j'aimerais avoir une application. » C'est une phrase que j'entends souvent de la part de commerçants, restaurateurs et indépendants. Vos clients vous trouvent sur Google, mais une fois la page fermée, ils vous oublient.",
+          "Bonne nouvelle : vous ne repartez pas de zéro. Votre site contient déjà l'essentiel : vos contenus, votre catalogue, vos clients. Dans ce guide, je vous explique les différentes façons de le transformer en application, celle que je recommande, et comment je m'y prends concrètement avec mes clients.",
+        ],
+      },
+      {
+        heading: "Avant tout : avez-vous vraiment besoin d'une application ?",
+        paragraphs: [
+          "C'est la première question que je pose, et je préfère être honnête : toutes les entreprises n'ont pas besoin d'une application. Si votre site est une simple vitrine (présentation, horaires, contact), vos clients ne l'installeront pas, et Apple risque même de la refuser. Dans ce cas, je vous conseillerai plutôt d'améliorer votre site.",
+          "En revanche, une application devient un vrai levier si vous vous reconnaissez dans au moins un de ces cas :",
+        ],
+        list: [
+          "Vos clients reviennent souvent : ils commandent, réservent, rachètent chaque semaine ou chaque mois",
+          "Vous voulez les recontacter facilement : promotions, nouveautés, créneaux libérés, rappels de rendez-vous",
+          "Vous avez des comptes clients : historique de commandes, points de fidélité, abonnements",
+          "Vous avez besoin des fonctions du téléphone : appareil photo, géolocalisation, scan de QR code, Face ID",
+          "Votre application doit fonctionner là où le réseau est faible : sur un chantier, en magasin, en déplacement",
+        ],
+      },
+      {
+        heading: "Ce qu'une application apporte que votre site ne peut pas faire",
+        paragraphs: [
+          "Un site sert à être trouvé. Une application sert à faire revenir. Les deux sont complémentaires : le site vous amène de nouveaux clients via Google, l'application les fidélise. Voici ce qu'elle change concrètement :",
+        ],
+        list: [
+          "Une place sur l'écran d'accueil : votre logo est sur le téléphone de vos clients, à un geste de votre offre, là où un site est vite oublié",
+          "Les notifications push : vous prévenez vos clients d'une promotion ou d'un créneau libre, directement sur leur écran, sans passer par un email qu'ils ne liront pas",
+          "Les fonctions du téléphone : scanner un QR code en boutique, envoyer une photo, trouver le point de retrait le plus proche, se connecter avec Face ID",
+          "Un accès hors ligne : le catalogue, la carte de fidélité ou les informations pratiques restent consultables sans réseau",
+          "Un espace à vous, sans distraction : pas d'onglets ni de publicités autour, l'attention de votre client reste sur votre offre",
+          "La confiance des stores : être présent sur l'App Store et Google Play donne une image sérieuse et professionnelle",
+        ],
+      },
+      {
+        heading: "Les façons de transformer votre site en application",
+        paragraphs: [
+          "Il existe plusieurs approches, de la plus légère à la plus complète. Elles ne donnent pas du tout le même résultat pour vos clients :",
+        ],
+        list: [
+          "La PWA (Progressive Web App) : votre site est adapté pour s'installer sur l'écran d'accueil comme une app. C'est la solution la plus légère, mais elle n'est pas sur l'App Store, et sur iPhone les notifications ne fonctionnent que si le client a ajouté le site à son écran d'accueil, ce que peu de gens font",
+          "L'app « coquille » : des outils en ligne (Appy Pie, webtoapp, PandaSuite…) affichent votre site à l'intérieur d'une application, contre un abonnement mensuel. C'est rapide, mais vos clients retrouvent exactement votre site, en moins fluide, et Apple refuse les applications qui ne vont pas au-delà d'un site web reconditionné (règle 4.2 de l'App Store)",
+          "L'app hybride (Capacitor, Cordova) : le code web est placé dans un conteneur d'application, avec des modules pour accéder au téléphone. Plus solide qu'une coquille, mais l'expérience reste souvent celle d'un site",
+          "L'app native cross-platform (React Native) : une vraie application, pensée pour le mobile, qui fonctionne sur iPhone et Android avec un seul développement, et qui se connecte aux données de votre site. C'est l'approche que j'utilise",
+          "L'app 100 % native (Swift pour iPhone, Kotlin pour Android) : les meilleures performances, mais deux applications à développer et à maintenir, donc un budget doublé, réservé aux très gros projets",
+        ],
+      },
+      {
+        heading: "Pourquoi je recommande React Native pour transformer votre site",
+        paragraphs: [
+          "Après avoir testé les différentes approches, je développe mes applications en React Native, un framework créé par Meta. Pour une TPE ou un commerce, c'est le meilleur équilibre :",
+        ],
+        list: [
+          "iPhone et Android en même temps : un seul développement pour les deux stores, vous n'avez pas à choisir une plateforme au départ",
+          "Une vraie application : fluide, pensée pour le pouce, qui passe sans difficulté la validation d'Apple et de Google",
+          "Connectée à votre site : l'app récupère vos produits, vos contenus et vos comptes clients, vous ne saisissez rien deux fois",
+          "Accès complet au téléphone : notifications, appareil photo, géolocalisation, paiement Apple Pay et Google Pay",
+          "Facile à faire évoluer : on lance une première version simple, puis on ajoute des fonctionnalités selon les retours de vos clients",
+        ],
+      },
+      {
+        heading: "Ce que vous gardez de votre site, et ce que je refais",
+        paragraphs: [
+          "Transformer votre site en application ne veut pas dire le jeter. Au contraire, l'application s'appuie dessus :",
+        ],
+        list: [
+          "Vous gardez votre site et votre nom de domaine : il continue de vous amener des clients via Google",
+          "Vous gardez vos contenus et vos données : produits, articles, base clients et commandes restent les mêmes, l'app s'y connecte",
+          "Je refais l'interface : les écrans sont pensés pour le petit écran, avec une barre de navigation en bas, facile à atteindre avec le pouce",
+          "Je fais le tri : l'historique de votre entreprise ou vos mentions légales n'ont pas leur place en première page d'une app, seul ce qui sert vraiment à vos clients y figure",
+          "Je garde votre identité : vos couleurs, votre logo et votre ton, dans un design adapté au mobile plutôt qu'une copie du site",
+          "J'ajoute ce que le site ne sait pas faire : notifications push, fidélité, connexion rapide, mode hors ligne",
+        ],
+      },
+      {
+        heading: "Comment je transforme votre site en application, étape par étape",
+        paragraphs: [
+          "Vous n'avez besoin d'aucune compétence technique, ni d'un cahier des charges : je m'en occupe avec vous.",
+        ],
+        list: [
+          "1. Audit de votre site : j'analyse sa technologie (WordPress, Shopify, sur mesure…), ce que vos clients y font le plus, et comment l'application pourra récupérer vos données",
+          "2. Choix des fonctionnalités : on définit ensemble ce que l'app doit faire de plus que le site, en commençant par 2 ou 3 fonctionnalités vraiment utiles",
+          "3. Maquettes : je dessine les écrans de l'application et vous les validez un par un, avant d'écrire la moindre ligne de code",
+          "4. Développement : je construis l'application et la connecte à votre site. Vous testez des versions intermédiaires directement sur votre téléphone",
+          "5. Tests : l'app est vérifiée sur de vrais iPhone et Android avant la mise en ligne",
+          "6. Publication : je prépare les fiches App Store et Google Play (captures d'écran, description, politique de confidentialité) et je gère les échanges avec Apple et Google jusqu'à la validation",
+          "7. Lancement et suivi : QR code en boutique, message sur votre site et vos réseaux pour faire télécharger l'app, puis mises à jour pour suivre les nouvelles versions d'iOS et Android",
+        ],
+      },
+      {
+        heading: "Les erreurs que je vois souvent",
+        list: [
+          "Recopier le site tel quel : une app qui affiche les mêmes pages que le site n'apporte rien à vos clients, et risque d'être refusée par Apple",
+          "Abandonner le site : c'est lui qui vous amène de nouveaux clients via Google, l'application sert surtout à les fidéliser",
+          "Faire une app déconnectée du site : si vous devez saisir vos produits ou vos horaires deux fois, vous abandonnerez vite l'une des deux",
+          "Vouloir tout mettre dans la première version : trop de fonctionnalités perdent l'utilisateur. Mieux vaut lancer simple, puis enrichir",
+          "Abuser des notifications : une notification par jour, et votre app est désinstallée. Quelques messages utiles, et vos clients vous remercient",
+          "Oublier la maintenance : iOS et Android évoluent chaque année, une application doit être mise à jour pour continuer à fonctionner",
+        ],
+      },
+      {
+        heading: "Pourquoi me confier la transformation de votre site",
+        paragraphs: [
+          "Je suis développeur freelance à Brest, spécialisé en applications mobiles iOS & Android. Avec moi, vous parlez directement à la personne qui conçoit et développe votre application, du premier échange à la publication, sans chef de projet entre nous.",
+          "Je pars de votre site existant pour créer une application connectée à vos données, sans double saisie. Je vous dis honnêtement si une application vaut le coup pour votre activité, je m'occupe de la publication sur les stores et je reste disponible après le lancement. Vous pouvez voir des exemples de mes réalisations sur la page Portfolio.",
+          "Mes tarifs sont affichés sur la page Application mobile du site. Envoyez-moi l'adresse de votre site : je vous fais un premier retour et un devis gratuit sous 24h. J'accompagne des clients à Brest, dans toute la Bretagne et partout en France.",
+        ],
+      },
+      {
+        heading: "FAQ : transformer son site en application mobile",
+        list: [
+          "Faut-il garder mon site web si j'ai une application ? Oui. Le site vous amène de nouveaux clients via Google, l'application les fait revenir. Les deux fonctionnent ensemble et partagent les mêmes données.",
+          "Mon site WordPress ou Shopify peut-il devenir une application ? Oui, dans la plupart des cas. Ces plateformes permettent de récupérer les contenus et les produits pour les afficher dans une application. Un rapide audit de votre site permet de le confirmer.",
+          "Apple peut-il refuser mon application ? Oui, si elle se contente d'afficher votre site : la règle 4.2 de l'App Store demande qu'une application aille au-delà d'un site web reconditionné. Une vraie application pensée pour le mobile ne pose pas ce problème, et je gère la validation pour vous.",
+          "Une PWA ou un simple raccourci sur l'écran d'accueil suffit-il ? Pour un besoin simple, parfois oui, et je vous le dirai. Mais sans présence sur l'App Store et avec des notifications limitées sur iPhone, une PWA fidélise moins bien qu'une vraie application.",
+          "Faut-il commencer par iPhone ou par Android ? Avec React Native, pas besoin de choisir : la même application est publiée sur l'App Store et sur Google Play.",
+          "Faut-il un cahier des charges ? Non. Une description de votre activité et l'adresse de votre site suffisent. Je définis le périmètre avec vous pendant l'audit.",
+          "Combien de temps faut-il pour transformer mon site en application ? Quelques semaines selon les fonctionnalités. Le délai précis est donné dans le devis, après l'audit de votre site.",
+          "Combien ça coûte ? Cela dépend des fonctionnalités et de la technologie de votre site. Mes tarifs sont affichés sur la page Application mobile, avec un devis gratuit et détaillé sous 24h.",
         ],
       },
     ],
