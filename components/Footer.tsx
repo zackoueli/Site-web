@@ -94,13 +94,13 @@ export default function Footer() {
 
           <FooterCol title="Blog & ressources" links={[
             ["Combien coûte une app ?", "/blog/combien-coute-application-mobile"],
-            ["App mobile pas chère", "/blog/application-mobile-pas-chere"],
+            ["Créer une application mobile", "/blog/comment-creer-une-application-mobile"],
             ["BreizhApp vs Planity", "/blog/cout-reel-planity"],
             ["Freelance vs Agence", "/blog/developpeur-freelance-vs-agence"],
             ["No-code vs Développeur", "/blog/no-code-vs-developpeur"],
             ["React Native vs Flutter", "/blog/react-native-vs-flutter"],
             ["Progressive Web App", "/blog/progressive-web-app-vs-application-native"],
-            ["Créer une app sans coder", "/blog/creer-application-mobile-sans-coder"],
+            ["Développeur app Bretagne", "/blog/developpeur-application-mobile-bretagne"],
             ["Application mobile Brest", "/blog/application-mobile-brest"],
             ["Développeur Quimper", "/blog/developpeur-freelance-quimper"],
             ["Développeur Rennes", "/blog/developpeur-freelance-rennes"],

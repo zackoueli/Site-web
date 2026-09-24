@@ -29,15 +29,15 @@ export const articles: Article[] = [
     service: "application-mobile",
     title: "Application mobile : combien ça coûte en 2026 ?",
     description:
-      "Prix d'une app iOS & Android selon les fonctionnalités : paiement Stripe, notifications push. Grille tarifaire réelle d'un développeur freelance à Brest.",
+      "Combien coûte une application iOS & Android en 2026 ? Ce qui fait varier le prix, freelance ou agence, pièges des apps pas chères et frais après la création.",
     date: "2025-03-15",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Tarifs",
     sections: [
       {
         paragraphs: [
-          "Une application mobile iOS & Android sur mesure coûte entre 490€ et 2 000€ chez un développeur freelance React Native, contre 15 000€ à 80 000€ en agence. L'écart s'explique par la technologie cross-platform (une seule base de code pour iOS et Android) et l'absence de marges d'agence.",
-          "Voici une grille tarifaire réelle basée sur les projets que je réalise en tant que développeur freelance à Brest.",
+          "Le prix d'une application mobile iOS & Android varie énormément selon qui la développe : quelques milliers d'euros chez un développeur freelance, 15 000€ à 80 000€ en agence. L'écart s'explique par la technologie cross-platform (une seule base de code pour iOS et Android), la taille de l'équipe et les marges d'agence.",
+          "Voici ce qui fait réellement varier le prix, et comment payer moins sans sacrifier la qualité.",
         ],
       },
       {
@@ -46,29 +46,18 @@ export const articles: Article[] = [
           "Une application mobile se compose de plusieurs briques : l'interface (ce que voit l'utilisateur), la logique métier (ce que fait l'app), et le backend (la base de données, les APIs). Chaque brique a un coût.",
         ],
         list: [
-          "Interface & design : 100–200€ selon la complexité des écrans",
-          "Authentification (connexion/inscription) : inclus dans toutes mes offres",
-          "Paiement Stripe intégré : +100€",
-          "Notifications push : +50€",
-          "Panel d'administration web : +150€",
-          "Déploiement App Store + Google Play : inclus",
-        ],
-      },
-      {
-        heading: "Mes grilles tarifaires",
-        paragraphs: [
-          "Je propose trois formules principales adaptées à la majorité des projets que je rencontre.",
-        ],
-        list: [
-          "App Starter à 490€ : application iOS & Android avec design sur mesure, authentification, contenu dynamique, hébergement et support inclus à 49€/mois",
-          "App Premium à 600€ : tout le Starter + paiement Stripe, notifications push, panel admin web",
-          "App Boutique à 0€ d'installation : pour les e-commerçants, je prends 12% de commission sur les ventes — zéro risque financier au départ",
+          "Interface et design : le nombre d'écrans et leur complexité",
+          "Authentification : connexion, inscription, comptes clients",
+          "Paiement en ligne : Stripe, Apple Pay, Google Pay",
+          "Notifications push : rappels, promotions, alertes",
+          "Panel d'administration web : pour modifier le contenu de l'app sans développeur",
+          "Backend, hébergement et publication sur l'App Store et Google Play",
         ],
       },
       {
         heading: "Ce qui fait vraiment varier le prix",
         paragraphs: [
-          "Au-delà des fonctionnalités, deux facteurs influencent fortement le coût final :",
+          "Au-delà des fonctionnalités, trois facteurs influencent fortement le coût final :",
         ],
         list: [
           "La complexité de la logique métier : une app de réservation avec créneaux horaires et rappels automatiques demande plus de travail qu'un simple catalogue produits",
@@ -77,22 +66,69 @@ export const articles: Article[] = [
         ],
       },
       {
-        heading: "Agence vs freelance : pourquoi l'écart de prix est énorme",
+        heading: "Pourquoi les agences facturent-elles si cher ?",
         paragraphs: [
-          "Une agence digitale facture généralement entre 15 000€ et 80 000€ pour une application mobile. Ce n'est pas du vol : il y a un chef de projet, un designer, un développeur iOS, un développeur Android, des frais de structure.",
-          "En tant que freelance spécialisé React Native, je fais tout ça seul avec une technologie cross-platform. Une seule base de code tourne sur iOS et Android. Résultat : vous obtenez la même qualité pour 30 à 60 fois moins cher.",
-          "Le devis est gratuit et sans engagement. Contactez-moi avec votre idée, même floue — je vous réponds sous 24h.",
+          "Ce n'est pas une arnaque. Une agence emploie plusieurs personnes : chef de projet, UX designer, développeur iOS (Swift), développeur Android (Kotlin), développeur backend, testeur. Chaque personne est facturée à la journée, et les frais de structure s'ajoutent.",
+        ],
+        list: [
+          "Chef de projet : 400 à 600€/jour",
+          "UX designer : 350 à 500€/jour",
+          "Développeur iOS natif : 500 à 700€/jour",
+          "Développeur Android natif : 500 à 700€/jour",
+          "Développeur backend : 450 à 650€/jour",
+          "3 mois × 5 personnes = facilement 50 000€ à 80 000€",
+        ],
+      },
+      {
+        heading: "Pourquoi un freelance React Native coûte moins cher",
+        paragraphs: [
+          "React Native est un framework développé par Meta qui permet de créer une seule base de code qui fonctionne à la fois sur iOS et Android. Plus besoin d'un développeur iOS et d'un développeur Android.",
+          "Un développeur freelance spécialisé maîtrise toute la chaîne : design, développement, backend, publication sur les stores. Même qualité de code, sans intermédiaire ni marge d'agence.",
+        ],
+        list: [
+          "Une seule base de code pour iOS et Android, donc deux fois moins de développement",
+          "Pas de frais de structure ni de marges d'agence",
+          "Technologies modernes et éprouvées : React Native, Expo, Firebase",
+          "Un seul interlocuteur, du devis à la publication sur l'App Store et Google Play",
+        ],
+      },
+      {
+        heading: "Application mobile pas chère : les pièges à éviter",
+        paragraphs: [
+          "Payer moins ne doit pas vouloir dire une app bâclée. Voici les offres à fuir :",
+        ],
+        list: [
+          "Les constructeurs d'apps no-code (Glide, Adalo, Bubble) : souvent des sites web déguisés en app, fréquemment refusés par Apple et très limités",
+          "Les freelances à 50€ sur Fiverr : du code copié-collé, sans support ni publication réelle sur les stores",
+          "Les devis sans maquette : sans validation du design avant de coder, les retouches coûtent cher ensuite",
+          "Une app React Native développée sur mesure est une vraie application native : elle passe les validations Apple et Google, elle est publiée sur les stores, elle fonctionne hors ligne",
+        ],
+      },
+      {
+        heading: "Les frais à prévoir après la création",
+        list: [
+          "Hébergement, maintenance et support : généralement un abonnement mensuel, qui couvre les mises à jour iOS et Android et les corrections",
+          "Compte développeur Apple : 99$ par an, obligatoire pour publier sur l'App Store",
+          "Compte développeur Google Play : 25$, payés une seule fois",
+          "Évolutions : nouvelles fonctionnalités ajoutées au fil de l'eau, selon vos besoins",
+        ],
+      },
+      {
+        heading: "Mes tarifs",
+        paragraphs: [
+          "Mes tarifs sont affichés sur la page Application mobile du site, avec le détail de ce qui est inclus. Chaque projet reste unique : décrivez-moi votre idée, même floue, et je vous envoie un devis gratuit et détaillé sous 24h.",
         ],
       },
       {
         heading: "FAQ — Prix d'une application mobile en 2026",
         list: [
-          "Combien coûte une application mobile pour un restaurant ? Entre 490€ (App Starter) et 600€ (App Premium avec commande Stripe) chez BreizhApp, contre 15 000€ à 40 000€ en agence.",
-          "Quel est le prix d'une application iOS & Android ? Dès 490€ avec un développeur React Native freelance — la technologie cross-platform divise le coût de développement par deux.",
-          "Y a-t-il des frais mensuels en plus du prix de création ? Oui : 49€/mois d'hébergement et support. C'est inclus dans toutes les formules BreizhApp.",
-          "Combien coûte la publication sur l'App Store et Google Play ? La publication est incluse dans toutes les formules. Les frais de compte développeur (99$/an Apple, 25$ Google) sont à votre charge.",
-          "Une application no-code est-elle moins chère ? Au départ oui, mais les abonnements mensuels (Bubble : 29–349€/mois) dépassent rapidement le coût d'une app sur mesure. Et les apps no-code sont souvent refusées par l'App Store Apple.",
-          "En combien de temps une application mobile est-elle livrée ? Entre 2 et 5 semaines selon les fonctionnalités. Une App Starter simple est livrée en 2-3 semaines.",
+          "Combien coûte une application mobile en agence ? Entre 15 000€ et 80 000€ selon la complexité, avec des délais de 3 à 12 mois. Chez un développeur freelance React Native, le budget est bien plus bas pour une qualité de code équivalente.",
+          "Pourquoi une application coûte-t-elle moins cher chez un freelance ? Une seule personne, une seule base de code pour iOS et Android, pas de marge d'agence. C'est la structure qui coûte moins, pas la qualité.",
+          "Y a-t-il des frais mensuels en plus du prix de création ? Oui : l'hébergement, la maintenance et le support font généralement l'objet d'un abonnement mensuel.",
+          "Combien coûte la publication sur l'App Store et Google Play ? La publication est incluse dans mes prestations. Les frais de compte développeur (99$/an chez Apple, 25$ une fois chez Google) sont à votre charge.",
+          "Une application no-code est-elle moins chère ? Au départ oui, mais les abonnements (Bubble : de 29$ à 349$/mois) se paient à vie et vous ne possédez jamais votre app. Et les apps no-code sont souvent refusées par l'App Store Apple.",
+          "Peut-on avoir une vraie application pour quelques centaines d'euros ? Pas une vraie application native iOS & Android publiée sur les stores. À ce prix, vous êtes dans le no-code ou le travail offshore sans garantie.",
+          "En combien de temps une application mobile est-elle livrée ? Quelques semaines selon les fonctionnalités chez un freelance, contre plusieurs mois en agence.",
         ],
       },
     ],
@@ -109,12 +145,12 @@ export const articles: Article[] = [
     description:
       "Commande en ligne, fidélité, réservation : tout ce qu'une application restaurant doit avoir, sans commission Uber Eats. Devis gratuit sous 24h.",
     date: "2026-05-11",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Restaurants",
     sections: [
       {
         paragraphs: [
-          "Une application mobile restaurant iOS & Android coûte à partir de 490€ et permet de récupérer vos commandes sans payer 20 à 30% de commission à Uber Eats ou Deliveroo. Elle s'amortit en 1 à 2 mois pour un restaurant actif.",
+          "Une application mobile restaurant iOS & Android permet de récupérer vos commandes sans payer 20 à 30% de commission à Uber Eats ou Deliveroo. Pour un restaurant actif, elle s'amortit en quelques mois.",
           "J'ai développé plusieurs applications pour des restaurateurs et commerçants en Bretagne. Voici ce qui fonctionne vraiment.",
         ],
       },
@@ -139,7 +175,7 @@ export const articles: Article[] = [
       {
         heading: "Combien ça coûte pour un restaurant ?",
         paragraphs: [
-          "Pour un restaurant, je propose typiquement l'offre App Starter (490€ + 49€/mois) ou App Premium (600€ + 49€/mois) selon si vous avez besoin de la commande en ligne avec paiement.",
+          "Le prix dépend surtout de deux choses : la commande en ligne avec paiement intégré, et le programme de fidélité. Mes tarifs sont affichés sur la page Application mobile du site, et je vous envoie un devis détaillé gratuit sous 24h.",
           "Comparé aux 15 à 30% prélevés par Uber Eats sur chaque commande, une app maison s'amortit dès vos premières semaines d'utilisation.",
         ],
       },
@@ -151,10 +187,23 @@ export const articles: Article[] = [
         ],
       },
       {
+        heading: "Crêperie, bar, food truck : une app adaptée à chaque établissement",
+        paragraphs: [
+          "Je travaille avec des restaurateurs à Brest, Quimper, Rennes et partout en Bretagne. Chaque type d'établissement a ses priorités :",
+        ],
+        list: [
+          "Restaurants et brasseries : commande sur place via QR code, vente à emporter, programme de fidélité",
+          "Crêperies : menu saisonnier modifiable en temps réel, réservation de groupe",
+          "Restaurants de fruits de mer : disponibilité en temps réel, commande de plateaux à emporter",
+          "Bars et bistrots : événements, soirées à thème, préventes de billets via l'app",
+          "Traiteurs et food trucks : planning de présence, commande à l'avance, paiement en ligne",
+        ],
+      },
+      {
         heading: "FAQ — Application mobile pour restaurant",
         list: [
           "Une application mobile restaurant remplace-t-elle Uber Eats ? Oui : elle intègre la commande en ligne avec paiement Stripe. Vos clients commandent directement dans votre app, sans commission à une plateforme tierce.",
-          "Combien coûte une app pour un restaurant ? À partir de 490€ (App Starter) ou 600€ (App Premium avec commande Stripe et programme de fidélité) + 49€/mois d'hébergement.",
+          "Combien coûte une app pour un restaurant ? Le tarif dépend des fonctionnalités (commande en ligne, paiement, fidélité, réservation). Mes tarifs sont affichés sur la page Application mobile, avec un devis gratuit sous 24h.",
           "En combien de temps l'application est-elle livrée ? Entre 3 et 5 semaines pour une app restaurant complète avec commande en ligne. Une app menu + réservation est livrée en 2-3 semaines.",
           "Puis-je modifier mon menu moi-même ? Oui. Votre app inclut un panel d'administration web depuis lequel vous modifiez votre menu, vos prix et vos horaires en temps réel.",
           "L'app fonctionne-t-elle sur iPhone et Android ? Oui. Une seule application, publiée à la fois sur l'App Store Apple et sur Google Play, accessible à 100% de vos clients.",
@@ -231,12 +280,12 @@ export const articles: Article[] = [
     description:
       "Freelance ou agence pour votre application mobile ? Prix, délais, communication : le comparatif complet pour choisir selon votre budget et votre projet.",
     date: "2026-04-20",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Conseils",
     sections: [
       {
         paragraphs: [
-          "Un développeur freelance React Native crée votre application mobile iOS & Android pour 490€ à 2 000€, en 2 à 8 semaines. Une agence facture le même projet 15 000€ à 80 000€, en 3 à 12 mois. Pour 95% des TPE, artisans et porteurs de projets, le freelance est le choix rationnel.",
+          "Un développeur freelance React Native crée votre application mobile iOS & Android pour quelques milliers d'euros, en quelques semaines. Une agence facture le même projet 15 000€ à 80 000€, en 3 à 12 mois. Pour la grande majorité des TPE, artisans et porteurs de projets, le freelance est le choix rationnel.",
         ],
       },
       {
@@ -257,7 +306,7 @@ export const articles: Article[] = [
           "Un freelance spécialisé en développement mobile couvre l'ensemble du projet — design, développement, déploiement. Vous avez un interlocuteur unique qui connaît votre projet de A à Z.",
         ],
         list: [
-          "Budget : 400€ à 2 000€ selon les fonctionnalités",
+          "Budget : quelques milliers d'euros selon les fonctionnalités",
           "Délais : 2 à 8 semaines",
           "Communication : directe avec le développeur, sans intermédiaire",
           "Idéal pour : TPE, PME, startups, porteurs de projets",
@@ -302,7 +351,7 @@ export const articles: Article[] = [
     description:
       "Shopify coûte bien plus que son abonnement de base. Commissions, apps payantes, thèmes : le vrai prix sur 2 ans et ce qu'une app sur mesure change pour vous.",
     date: "2026-05-11",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Comparatifs",
     sections: [
       {
@@ -350,7 +399,7 @@ export const articles: Article[] = [
           "Frais de transaction Shopify Payments (1,7 % sur 5 000 €/mois) : 85 € × 24 = 2 040 €",
           "Nom de domaine : 28 € (2 ans)",
           "Total sur 2 ans : 4 744 € — sans développement sur mesure, sans app mobile",
-          "À titre de comparaison : une boutique e-commerce sur mesure BreizhApp coûte 0 € d'installation + 12 % de commission sur les ventes réelles uniquement",
+          "À titre de comparaison : une boutique sur mesure se paie une fois, sans abonnement Shopify ni commission sur vos ventes",
         ],
       },
       {
@@ -382,8 +431,8 @@ export const articles: Article[] = [
       {
         heading: "L'alternative : une app e-commerce sur mesure",
         paragraphs: [
-          "Pour les commerçants qui veulent une application mobile iOS & Android avec boutique intégrée, je propose l'offre App Boutique : 0 € d'installation, 12 % de commission sur les ventes réellement générées.",
-          "Pas d'abonnement mensuel, pas de frais cachés. Vous ne payez que quand vous vendez. C'est le modèle inverse de Shopify : vous n'avez rien à perdre pour tester.",
+          "Pour les commerçants qui veulent une application mobile iOS & Android avec boutique intégrée, je développe une app à votre nom : catalogue, panier, paiement Stripe, gestion des commandes et notifications push.",
+          "Pas d'abonnement Shopify, pas de commission sur vos ventes : l'application vous appartient. Mes tarifs sont détaillés sur la page E-commerce du site, devis gratuit sous 24h.",
         ],
       },
       {
@@ -409,7 +458,7 @@ export const articles: Article[] = [
     description:
       "Wix affiche \"gratuit\" mais le prix d'un vrai site pro grimpe vite : abonnement, apps, options. Le coût réel sur 2 ans et l'alternative sur mesure.",
     date: "2026-05-11",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Comparatifs",
     sections: [
       {
@@ -421,13 +470,14 @@ export const articles: Article[] = [
       {
         heading: "Les plans payants Wix",
         paragraphs: [
-          "Wix propose une gamme d'abonnements. Voici les principaux plans pertinents pour un usage pro en 2025 :",
+          "Wix propose 4 forfaits Premium. Voici les tarifs 2026 en paiement annuel (comptez 25 à 30 % de plus en paiement au mois) :",
         ],
         list: [
-          "Light (ex-Combo) : 13€/mois — domaine personnalisé, sans pub, 2 Go de stockage",
-          "Core (ex-Unlimited) : 17€/mois — 50 Go de stockage, 5 formulaires",
-          "Business : 25€/mois — e-commerce inclus, paiements en ligne",
-          "Business Elite : 159€/mois — fonctionnalités avancées, priorité support",
+          "Light : environ 17€/mois, domaine personnalisé, sans publicité Wix, pour un site vitrine simple",
+          "Core : environ 29€/mois, le forfait qu'il faut pour un site pro complet, avec vente en ligne de base",
+          "Business : environ 41€/mois, e-commerce complet et paiements en ligne",
+          "Business Plus : environ 179€/mois, fonctionnalités avancées et support prioritaire",
+          "Tous les forfaits : hébergement inclus, nom de domaine offert la 1ère année en paiement annuel",
         ],
       },
       {
@@ -437,10 +487,10 @@ export const articles: Article[] = [
         ],
         list: [
           "Nom de domaine : environ 15€/an (offert la première année sur certains plans)",
-          "Applications Wix Market : de nombreuses fonctionnalités (réservations, chat, marketing) nécessitent des apps tierces à 5–30€/mois chacune",
+          "Applications Wix Market : de nombreuses fonctionnalités (réservations, chat, marketing) nécessitent des apps tierces payantes, avec un abonnement mensuel chacune",
           "Wix SEO Booster : plan payant recommandé pour optimiser le référencement",
           "Wix Payments : 2,5% de frais de transaction sur chaque vente",
-          "Emails professionnels via Google Workspace : 6€/mois/utilisateur en plus",
+          "Emails professionnels via Google Workspace : environ 7€/mois par utilisateur en plus",
           "Sauvegarde et restauration avancées : plan payant supplémentaire",
         ],
       },
@@ -460,11 +510,11 @@ export const articles: Article[] = [
       {
         heading: "Coût total estimé sur 2 ans (usage pro)",
         list: [
-          "Plan Core (17€/mois) × 24 : 408€",
+          "Forfait Core (environ 29€/mois) × 24 : environ 696€",
           "Nom de domaine : 30€",
           "2 apps Wix Market (20€/mois) × 24 : 480€",
-          "Emails Google Workspace (6€/mois) × 24 : 144€",
-          "Total : environ 1 062€ — pour un site standard, sans fonctionnalité spécifique",
+          "Emails Google Workspace (environ 7€/mois) × 24 : environ 168€",
+          "Total : environ 1 370€, pour un site standard, sans fonctionnalité spécifique",
         ],
       },
       {
@@ -472,7 +522,7 @@ export const articles: Article[] = [
         paragraphs: [
           "Wix est adapté pour un site vitrine très simple : présenter son activité, donner ses coordonnées, afficher quelques photos. C'est son terrain de jeu naturel.",
           "En revanche, si vous êtes commerçant, restaurateur, prestataire de services qui prend des réservations, ou si vous voulez une application mobile : Wix ne suffit pas — et vous payez pour ses limites.",
-          "Je développe des applications mobiles et des sites sur mesure pour des budgets à partir de 490€, avec une solution qui vous appartient vraiment. Contactez-moi pour un devis gratuit.",
+          "Je développe des applications mobiles et des sites sur mesure, des solutions qui vous appartiennent vraiment. Contactez-moi pour un devis gratuit.",
         ],
       },
     ],
@@ -485,30 +535,30 @@ export const articles: Article[] = [
       credit: "Image : Artlist",
     },
     service: "coiffeur",
-    title: "Planity prix 2026 : le vrai coût pour un salon",
+    title: "Tarif Planity 2026 : prix, abonnement et SMS",
     description:
-      "Planity : ce que comprend l'abonnement, les limites du modèle SaaS pour votre salon, et l'alternative où vous possédez votre outil de réservation.",
+      "Combien coûte Planity en 2026 ? Formules, SMS inclus, engagement, hausses de prix et résiliation : ce qu'il faut savoir avant de signer, et les alternatives.",
     date: "2026-05-11",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Comparatifs",
     sections: [
       {
         paragraphs: [
-          "Planity communique ses tarifs uniquement sur devis — il n'existe pas de grille publique fixe. Ce que l'on sait : c'est un abonnement mensuel sans commission sur les rendez-vous, avec des SMS supplémentaires facturés à l'unité au-delà du quota inclus.",
-          "Voici le calcul complet — chiffres à l'appui — que beaucoup de coiffeurs et esthéticiennes auraient aimé lire avant de signer.",
+          "Planity n'affiche toujours pas de prix sur sa page tarifs en 2026 : le montant de l'abonnement est donné par un conseiller, selon votre salon. Ce que l'on sait : c'est un abonnement mensuel sans engagement, sans commission sur les rendez-vous et sans frais d'installation, avec un quota de SMS inclus.",
+          "Voici tout ce qu'il faut savoir sur le coût réel de Planity, ce que beaucoup de coiffeurs et d'esthéticiennes auraient aimé lire avant de signer.",
         ],
       },
       {
         heading: "Combien coûte Planity par mois en 2026 ?",
         paragraphs: [
-          "Planity ne publie pas de grille tarifaire fixe sur son site — les prix sont communiqués sur devis uniquement. Pour connaître le tarif exact selon votre profil, rendez-vous sur info.planity.com/tarifs.",
+          "Planity propose trois formules sur sa page info.planity.com/tarifs, toutes sans engagement. Le prix exact n'est pas affiché : il faut demander un rendez-vous avec un conseiller pour l'obtenir.",
         ],
         list: [
-          "Formule Agenda seul : tarif sur devis",
-          "Formule Agenda + Caisse NF525 : tarif sur devis",
-          "Formule complète (boutique, marque blanche) : tarif sur devis",
-          "Terminal de paiement (option) : tarif sur devis + frais de transaction",
-          "SMS supplémentaires au-delà du quota inclus : facturation à l'unité",
+          "Formule Agenda : page sur planity.com, prise de rendez-vous en ligne, 300 SMS de rappel par mois, fichier clients, acomptes et prépaiement, bouton de réservation pour vos réseaux sociaux",
+          "Formule Agenda + Caisse : tout l'Agenda + logiciel de caisse certifié NF525, gestion des stocks produits, cartes cadeaux, export comptable",
+          "Formule Agenda + Caisse + TPE (la plus choisie) : tout le reste + terminal de paiement connecté au logiciel, suggestion de pourboire, tickets par email",
+          "Options en plus : boutique en ligne, site internet personnalisé, module de gestion du temps de travail",
+          "Au-delà des 300 SMS mensuels inclus : SMS supplémentaires facturés",
         ],
       },
       {
@@ -519,16 +569,17 @@ export const articles: Article[] = [
         ],
       },
       {
-        heading: "Le coût Planity sur 1 an — exemple chiffré",
+        heading: "Le coût Planity sur 1 an : comment le calculer",
         paragraphs: [
-          "Exemple pour un salon de coiffure avec 1 praticien — les montants exacts dépendent du devis Planity :",
+          "Pour un salon de coiffure avec 1 praticien, voici comment estimer votre budget réel. Les montants exacts dépendent de la proposition de votre conseiller Planity :",
         ],
         list: [
-          "Abonnement mensuel : tarif communiqué sur devis par Planity",
-          "SMS supplémentaires au-delà du quota : facturation à l'unité",
-          "Sur 1 an : abonnement × 12 + SMS supplémentaires",
-          "Sur 2 ans : vous payez sans jamais posséder aucun outil en propre",
-          "Si vous arrêtez Planity : vous perdez votre visibilité annuaire et l'accès à l'historique de réservations hébergé sur la plateforme",
+          "Abonnement mensuel : communiqué par Planity selon la formule choisie",
+          "SMS au-delà des 300 inclus chaque mois : facturés en plus",
+          "Options (boutique en ligne, site internet, gestion du temps) : en supplément",
+          "Sur 1 an : abonnement × 12 + SMS supplémentaires + options",
+          "Sur 2 ans : vous payez sans jamais posséder votre outil",
+          "Si vous arrêtez Planity : vous perdez votre visibilité dans l'annuaire et l'accès à l'historique de réservations hébergé sur la plateforme",
         ],
       },
       {
@@ -540,182 +591,97 @@ export const articles: Article[] = [
         list: [
           "Pas d'application mobile à votre nom sur l'App Store et Google Play",
           "Pas de programme de fidélité personnalisé (tampons numériques, réductions automatiques, cadeaux)",
-          "L'historique de vos réservations est hébergé chez Planity — vérifiez les conditions d'export dans leurs CGU avant de signer",
+          "L'historique de vos réservations est hébergé chez Planity : vérifiez les conditions d'export dans leurs CGU avant de signer",
           "Aucun contrôle sur le design et l'expérience client",
-          "En cas de hausse tarifaire, le préavis de résiliation est de 10 jours (mensuel) à 1 mois (annuel) — peu de marge pour réagir",
-          "Pas de notifications push vers vos clientes — seulement des SMS (avec quota limité)",
+          "Votre page salon est affichée au milieu de celles de vos concurrents sur planity.com",
+          "Pas de notifications push vers vos clientes, seulement des SMS (300 par mois dans la formule Agenda)",
         ],
       },
       {
         heading: "Planity et les hausses de prix",
         paragraphs: [
-          "Des hausses tarifaires ont été signalées par des professionnels en 2024 et 2025. C'est le risque inhérent à toute solution SaaS en location : vous n'êtes pas propriétaire de l'outil.",
+          "Des hausses tarifaires ont été signalées par des professionnels en 2024 et 2025. C'est le risque de toute solution en location : vous n'êtes pas propriétaire de l'outil.",
           "Face à une augmentation, vous avez trois options : accepter, négocier, ou chercher une alternative.",
         ],
         list: [
           "Alternatives : Fresha (modèle différent), Reservio (fonctionnalités limitées), Google Agenda (basique)",
           "Solution intermédiaire : logiciel de caisse avec module réservation intégré",
-          "Solution pérenne : votre propre application mobile — vous payez une fois, vous possédez l'outil",
+          "Solution durable : votre propre application mobile, un outil qui vous appartient",
         ],
       },
       {
-        heading: "L'alternative à Planity : votre propre application mobile",
+        heading: "L'alternative à Planity : l'application de votre salon",
         paragraphs: [
-          "Pour 490€ une fois + 49€/mois, je développe une application mobile iOS & Android à votre nom, avec votre logo et votre charte graphique : réservation en ligne, rappels automatiques par notification push, programme de fidélité numérique, panel admin pour gérer vos créneaux.",
-          "Zéro abonnement croissant. Vos données clients sont hébergées sur votre propre infrastructure Firebase. L'app reste la vôtre même si vous changez de prestataire demain.",
+          "Je développe des applications mobiles iOS & Android pour les salons de coiffure, à votre nom, avec votre logo et vos couleurs : réservation en ligne 24h/24, rappels automatiques par notification push, programme de fidélité, panel admin pour gérer vos créneaux, vos prestations et votre équipe.",
+          "Vos clientes téléchargent l'app de votre salon, pas un annuaire où vos concurrents sont à un clic. Vos données clients restent chez vous, et l'app vous appartient même si vous changez de prestataire.",
+          "Vous pouvez voir un exemple concret, fonctionnalités et panel admin compris, sur la page dédiée aux salons de coiffure. Devis gratuit sous 24h.",
         ],
       },
       {
-        heading: "FAQ — Tarif et utilisation de Planity",
+        heading: "FAQ : tarif et utilisation de Planity",
         list: [
-          "Combien coûte Planity par mois ? Planity ne publie pas de tarif fixe — les prix sont communiqués sur devis uniquement via info.planity.com/tarifs.",
-          "Planity prend-il une commission sur les rendez-vous ? Non. Planity communique officiellement sur un modèle sans commission sur les réservations. Vous payez un abonnement mensuel fixe.",
+          "Combien coûte Planity par mois ? Planity n'affiche pas ses prix : le tarif est communiqué par un conseiller selon la formule (Agenda, Agenda + Caisse, Agenda + Caisse + TPE). Les trois formules sont sans engagement.",
+          "Planity prend-il une commission sur les rendez-vous ? Non. Planity annonce un modèle sans commission sur les réservations, sans frais d'installation ni de maintenance. Vous payez un abonnement mensuel.",
+          "Combien de SMS sont inclus avec Planity ? La formule Agenda inclut 300 SMS de rappel par mois. Au-delà, les SMS sont facturés en plus.",
           "Peut-on utiliser Planity gratuitement ? Il existe une période d'essai, mais il n'y a pas de formule gratuite durable pour un usage professionnel.",
-          "Comment résilier Planity ? Par lettre recommandée avec accusé de réception à Planity - Service Résiliations, 5 rue Saint Fiacre, 75002 Paris — préavis de 10 jours pour un abonnement mensuel, 1 mois pour un abonnement annuel.",
-          "Quelles sont les vraies alternatives à Planity ? Fresha (modèle différent), Reservio, ou une application mobile sur mesure à votre nom sur l'App Store.",
-          "Planity a-t-il augmenté ses prix ? Des hausses tarifaires ont été signalées par des professionnels en 2024 et 2025 — c'est le risque inhérent à tout abonnement SaaS.",
-          "Puis-je exporter mes données clients si je quitte Planity ? Vérifiez les conditions dans leurs CGU avant de signer — les données hébergées chez Planity sont supprimées 3 mois après désactivation du compte.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "application-mobile-pas-chere",
-    image: {
-      src: "/blog/application-mobile-pas-chere.jpg",
-      alt: "Main tenant un smartphone au-dessus d’un bureau avec calculatrice, tirelire et pièces",
-      credit: "Image : Artlist",
-    },
-    service: "application-mobile",
-    title: "Application mobile pas chère : le guide iOS & Android",
-    description:
-      "Une app iOS & Android professionnelle à petit prix : c'est possible avec un freelance React Native. Vrais leviers d'économie, pièges à éviter, devis gratuit.",
-    date: "2026-05-11",
-    lastModified: "2026-08-30",
-    category: "Tarifs",
-    sections: [
-      {
-        paragraphs: [
-          "Une application mobile iOS & Android professionnelle peut coûter 490€ à 600€ chez un développeur freelance React Native — contre 15 000€ à 80 000€ en agence. La différence : une seule base de code pour iOS et Android, zéro chef de projet, zéro marge d'agence.",
-          "Des dizaines de restaurateurs, coiffeurs, commerçants et porteurs de projets me commandent des applications fonctionnelles à ce tarif. Voici comment c'est possible — et comment éviter les pièges.",
-        ],
-      },
-      {
-        heading: "Pourquoi les agences facturent-elles si cher ?",
-        paragraphs: [
-          "Ce n'est pas une arnaque. Une agence emploie plusieurs personnes : chef de projet, UX designer, développeur iOS (Swift), développeur Android (Kotlin), développeur backend, testeur. Chaque personne est facturée à la journée.",
-          "Une app développée par une équipe de 5 personnes pendant 3 mois = un coût réel. Les marges d'agence font le reste.",
-        ],
-        list: [
-          "Chef de projet : 400–600€/jour",
-          "UX Designer : 350–500€/jour",
-          "Développeur iOS natif : 500–700€/jour",
-          "Développeur Android natif : 500–700€/jour",
-          "Développeur backend : 450–650€/jour",
-          "3 mois × 5 personnes = facilement 50 000€ à 80 000€",
-        ],
-      },
-      {
-        heading: "Pourquoi un freelance React Native peut faire la même chose pour moins",
-        paragraphs: [
-          "React Native est un framework JavaScript développé par Meta qui permet de créer une seule base de code qui fonctionne à la fois sur iOS et Android. Plus besoin d'un développeur iOS ET d'un développeur Android.",
-          "En tant que développeur freelance spécialisé, je maîtrise l'ensemble de la chaîne : design, développement, backend, déploiement sur les stores. Zéro intermédiaire, zéro chef de projet, zéro marge d'agence.",
-        ],
-        list: [
-          "Une seule base de code pour iOS et Android — deux fois moins de développement",
-          "Pas de frais de structure ni de marges d'agence",
-          "Technologies modernes et éprouvées : React Native, Expo, Supabase",
-          "Déploiement App Store & Google Play inclus",
-          "Support et mises à jour inclus dans l'abonnement mensuel",
-        ],
-      },
-      {
-        heading: "Ce qu'on entend par \"pas chère\" — et les pièges à éviter",
-        paragraphs: [
-          "\"Pas chère\" ne veut pas dire \"bâclée\". Il faut distinguer :",
-        ],
-        list: [
-          "Fuyez les plateformes \"no-code app builder\" (Glide, Adalo, Bubble) : ce sont des sites web déguisés en app — souvent refusés par Apple et très limités",
-          "Fuyez les freelances sur Fiverr à 50€ : vous obtiendrez du code copié-collé, sans support, sans déploiement réel",
-          "Une app React Native à 490€ est une vraie application native — elle passe les validations Apple et Google, elle est publiée sur les stores, elle fonctionne hors ligne",
-        ],
-      },
-      {
-        heading: "Mes tarifs pour une application mobile pas chère",
-        list: [
-          "App Starter à 490€ : iOS & Android, design sur mesure, authentification, contenu dynamique, hébergement + support à 49€/mois",
-          "App Premium à 600€ : Starter + paiement Stripe, notifications push, panel admin web",
-          "App Boutique à 0€ d'installation : pour les e-commerçants, 12% sur les ventes uniquement — zéro risque",
-        ],
-      },
-      {
-        heading: "Pour qui c'est fait ?",
-        paragraphs: [
-          "Ces tarifs sont pensés pour les TPE, les artisans, les restaurateurs, les prestataires de services et les porteurs de projets qui veulent tester leur idée sans hypothéquer leur activité.",
-          "Si votre projet nécessite une équipe de 10 développeurs et une refonte totale de votre SI — une agence sera plus adaptée. Mais pour 95% des projets que je reçois, une app bien faite à 490€ répond parfaitement au besoin.",
-          "Devis gratuit et sans engagement. Contactez-moi avec votre idée, même floue — je vous réponds sous 24h.",
-        ],
-      },
-      {
-        heading: "FAQ — Application mobile pas chère",
-        list: [
-          "Est-ce qu'une app à 490€ est vraiment de qualité ? Oui. React Native est le même framework utilisé par Facebook, Instagram et Shopify. La différence de prix vient de l'absence de marges d'agence, pas de la qualité du code.",
-          "Une app no-code à 0€ est-elle une alternative ? Non. Les apps créées sur Glide, Adalo ou Bubble sont souvent refusées par l'App Store Apple et ont des performances très limitées. Ce ne sont pas de vraies applications natives.",
-          "Que comprend le tarif de 490€ ? Design sur mesure, développement iOS & Android, authentification, contenu dynamique, déploiement App Store et Google Play. L'hébergement et le support sont inclus dans les 49€/mois.",
-          "Peut-on avoir une app à moins de 490€ ? Pas une vraie application native iOS & Android publiée sur les stores. En dessous de ce seuil, vous êtes dans le territoire du no-code ou du travail offshore sans garantie.",
-          "Combien de temps prend le développement ? Une App Starter est livrée en 2 à 3 semaines. Une App Premium (avec paiement Stripe et panel admin) en 3 à 5 semaines.",
+          "Comment résilier Planity ? Par lettre recommandée avec accusé de réception à Planity, Service Résiliations, 5 rue Saint Fiacre, 75002 Paris. Préavis de 10 jours pour un abonnement mensuel, 1 mois pour un abonnement annuel.",
+          "Quelles sont les vraies alternatives à Planity ? Fresha (modèle différent), Reservio, ou une application mobile sur mesure à votre nom sur l'App Store et Google Play.",
+          "Planity a-t-il augmenté ses prix ? Des hausses tarifaires ont été signalées par des professionnels en 2024 et 2025. C'est le risque de tout abonnement logiciel.",
+          "Puis-je exporter mes données clients si je quitte Planity ? Vérifiez les conditions dans leurs CGU avant de signer : les données hébergées chez Planity sont supprimées 3 mois après la désactivation du compte.",
         ],
       },
     ],
   },
   // --- Nouveaux articles SEO ---
   {
-    slug: "squarespace-tarif-prix-2025",
+    slug: "squarespace-tarif-prix",
     image: {
       src: "/blog/squarespace-tarif-prix-2025.jpg",
       alt: "Ordinateur portable ouvert sur un bureau minimaliste en bois clair, café et carnet",
       credit: "Image : Artlist",
     },
     service: "site-web",
-    title: "Squarespace tarif 2025 : prix et vraie valeur",
+    title: "Squarespace prix 2026 : tarifs des 4 formules",
     description:
-      "Prix Squarespace 2025 : plans Personal, Business, Commerce — ce que coûte vraiment Squarespace pour un site pro. Comparatif avec une solution sur mesure.",
+      "Tarifs Squarespace 2026 : formules Basic, Essentiel, Plus et Advanced, frais de transaction et coûts cachés. Ce que coûte vraiment un site pro, et l'alternative.",
     date: "2026-04-20",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Comparatifs",
     sections: [
       {
         paragraphs: [
-          "Squarespace est réputé pour ses templates soignés et son interface élégante. Mais quel est le vrai prix de Squarespace en 2025, une fois tous les frais additionnels pris en compte ?",
+          "Squarespace est réputé pour ses templates soignés et son interface élégante. En 2026, ses formules ont changé de nom et de prix. Voici ce que coûte vraiment Squarespace, une fois tous les frais additionnels pris en compte.",
         ],
       },
       {
-        heading: "Prix des plans Squarespace en 2025",
+        heading: "Prix des formules Squarespace en 2026",
         paragraphs: [
-          "Squarespace facture en abonnement annuel ou mensuel. Les tarifs mensuels sont :",
+          "Squarespace propose 4 formules, facturées à l'année ou au mois. Le paiement au mois coûte jusqu'à 40 % plus cher :",
         ],
         list: [
-          "Personal : 16€/mois (annuel) ou 23€/mois — site vitrine, domaine inclus 1 an, pas de vente en ligne",
-          "Business : 23€/mois (annuel) ou 33€/mois — e-commerce avec 3% de commission par vente",
-          "Commerce Basic : 28€/mois (annuel) — e-commerce sans commission, fonctionnalités boutique avancées",
-          "Commerce Advanced : 52€/mois (annuel) — abonnements, ventes en gros, API avancée",
+          "Basic : 12€/mois (annuel) ou 17€/mois (mensuel), 2% de frais sur les ventes de la boutique en ligne",
+          "Essentiel : 18€/mois (annuel) ou 24€/mois (mensuel), 0% de frais sur les ventes de la boutique, la formule mise en avant par Squarespace",
+          "Plus : 32€/mois (annuel) ou 42€/mois (mensuel), pour les boutiques et contenus payants plus avancés",
+          "Advanced : 69€/mois (annuel) ou 79€/mois (mensuel), toutes les fonctionnalités, 0% de frais Squarespace",
+          "Sur toutes les formules : frais de carte bancaire en plus sur chaque paiement encaissé (un pourcentage + 0,25€)",
         ],
       },
       {
-        heading: "La commission de 3% sur le plan Business",
+        heading: "Les frais de transaction : le piège de la formule Basic",
         paragraphs: [
-          "Le plan Business est le plus choisi par défaut — mais il prélève 3% sur chaque vente. Sur 2 000€/mois de CA, c'est 60€/mois de commission qui part à Squarespace, soit 720€/an en plus de l'abonnement.",
-          "Pour supprimer cette commission, il faut passer au plan Commerce Basic (28€/mois) — ce qui fait vite grimper la facture réelle.",
+          "La formule Basic est la moins chère, mais elle prélève 2% sur chaque vente de votre boutique en ligne. Sur 2 000€ de ventes par mois, c'est 40€ par mois pour Squarespace, soit 480€ par an en plus de l'abonnement.",
+          "Les contenus payants (espaces membres, contenus numériques) ont des frais encore plus élevés : 7% en Basic, 5% en Essentiel, 1% en Plus. Seule la formule Advanced les supprime complètement.",
+          "Et ces frais s'ajoutent aux frais de carte bancaire, prélevés sur toutes les formules.",
         ],
       },
       {
         heading: "Les coûts additionnels Squarespace",
         list: [
-          "Extensions Squarespace (apps tierces) : 5–20€/mois par extension",
-          "Emails Google Workspace : 6€/mois/utilisateur",
-          "Campagnes email marketing Squarespace : à partir de 7€/mois",
-          "Domaine après la 1ère année : 20–30€/an",
-          "Squarespace Scheduling (prise de rendez-vous) : en supplément",
+          "Extensions (apps tierces) : abonnement mensuel par extension",
+          "Adresses email professionnelles (Google Workspace) : abonnement par utilisateur en supplément",
+          "Campagnes d'emailing Squarespace : en supplément",
+          "Nom de domaine : offert la 1ère année en paiement annuel, puis à renouveler chaque année",
+          "Prise de rendez-vous (Acuity Scheduling) : abonnement séparé",
         ],
       },
       {
@@ -723,67 +689,67 @@ export const articles: Article[] = [
         list: [
           "Impossible de migrer votre site vers un autre hébergeur",
           "Pas d'application mobile native possible",
-          "Personnalisation très limitée : vous restez dans l'éditeur Squarespace",
+          "Personnalisation limitée : vous restez dans l'éditeur Squarespace",
           "SEO moins performant qu'un site Next.js ou WordPress bien optimisé",
-          "Support uniquement par chat et email — pas de téléphone",
+          "Support uniquement par chat et email, pas de téléphone",
         ],
       },
       {
         heading: "Squarespace vs une solution sur mesure",
         paragraphs: [
-          "Squarespace coûte entre 400€ et 750€/an pour un plan pro, sans compter extensions et commissions. En 2 ans, vous avez dépensé entre 800€ et 1 500€ pour un site qui ne vous appartient pas.",
-          "Pour un budget similaire, je développe un site sur mesure ou une application mobile iOS & Android à partir de 490€, avec votre code, vos données, et zéro dépendance à une plateforme.",
-          "Devis gratuit sous 24h — contactez-moi.",
+          "Pour un site pro, comptez 216€ par an en formule Essentiel et 384€ par an en formule Plus, sans les extensions, les emails et les frais de transaction. Sur 3 ans, vous aurez dépensé entre 650€ et 1 150€ pour un site qui ne vous appartient pas.",
+          "Un site sur mesure ou une application mobile iOS & Android vous appartient : votre code, vos données, aucune dépendance à une plateforme ni hausse d'abonnement imposée.",
+          "Devis gratuit sous 24h, contactez-moi avec votre projet.",
         ],
       },
     ],
   },
   {
-    slug: "comparatif-createurs-site-web-prix-2025",
+    slug: "comparatif-createurs-site-web-prix",
     image: {
       src: "/blog/comparatif-createurs-site-web-prix-2025.jpg",
       alt: "Ordinateur portable, tablette et smartphone alignés sur un bureau, chacun affichant un site web",
       credit: "Image : Artlist",
     },
     service: "site-web",
-    title: "Wix, Squarespace, Webflow : comparatif prix 2025",
+    title: "Wix, Squarespace, Webflow : comparatif prix 2026",
     description:
-      "Comparatif prix 2025 : Wix, Squarespace, Webflow, Jimdo. Quel constructeur de site web est le moins cher et quelle alternative choisir ?",
+      "Comparatif prix 2026 : Wix, Squarespace, Webflow, Jimdo, WordPress.com. Quel créateur de site est le moins cher, et quand choisir une solution sur mesure ?",
     date: "2026-04-20",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Comparatifs",
     sections: [
       {
         paragraphs: [
-          "Vous voulez créer un site web professionnel et vous comparez les prix des constructeurs de site ? Wix, Squarespace, Webflow, Jimdo, Ionos, GoDaddy — chaque plateforme a sa propre grille tarifaire, avec ses avantages et ses pièges. Voici le comparatif complet des prix en 2025.",
+          "Vous voulez créer un site web professionnel et vous comparez les prix des constructeurs de site ? Wix, Squarespace, Webflow, Jimdo, Ionos, GoDaddy : chaque plateforme a sa propre grille tarifaire, avec ses avantages et ses pièges. Voici le comparatif des prix en 2026.",
         ],
       },
       {
-        heading: "Tableau des prix des constructeurs de site web en 2025",
+        heading: "Prix des constructeurs de site web en 2026",
         paragraphs: [
-          "Voici les tarifs d'entrée pour un site professionnel (avec domaine propre, sans pub, fonctionnalités e-commerce si applicable) :",
+          "Voici les tarifs mensuels des formules adaptées à un site professionnel (domaine propre, sans publicité), en paiement annuel. En paiement au mois, comptez 20 à 40 % de plus. Les prix évoluent régulièrement : vérifiez-les sur le site de chaque plateforme avant de vous engager.",
         ],
         list: [
-          "Wix Core : 17€/mois (204€/an) — site vitrine pro, stockage 50 Go",
-          "Squarespace Personal : 16€/mois (192€/an) — site vitrine, pas de vente en ligne",
-          "Jimdo Business : 15€/mois (180€/an) — site vitrine, SEO basique",
-          "Ionos Essentiel : 6€/mois (72€/an) — entrée de gamme, fonctionnalités très limitées",
-          "GoDaddy Basic : 10€/mois (120€/an) — site vitrine, intégrations limitées",
-          "Webflow Basic : 18€/mois (216€/an) — pour designers, courbe d'apprentissage élevée",
-          "WordPress.com Business : 25€/mois (300€/an) — plugins inclus, plus flexible",
+          "Wix Light : environ 17€/mois, Wix Core : environ 29€/mois, la formule Core étant celle qu'il faut pour un site pro complet",
+          "Squarespace Basic : 12€/mois, Essentiel : 18€/mois (0% de frais sur les ventes de la boutique)",
+          "Jimdo Start : 9€/mois, Jimdo Grow : 15€/mois, SEO et fonctionnalités basiques",
+          "Ionos MyWebsite : à partir d'environ 5 à 10€/mois selon l'offre, souvent avec une promotion la 1ère année",
+          "GoDaddy Créateur de sites : autour de 9 à 10€/mois pour l'offre de base",
+          "Webflow Basic : 15$/mois (25$ en paiement mensuel), pour les designers, courbe d'apprentissage élevée",
+          "WordPress.com Business : 25$/mois, extensions installables, plus flexible",
         ],
       },
       {
         heading: "Le piège commun à tous ces constructeurs",
         paragraphs: [
-          "Tous ces outils partagent le même modèle économique : vous êtes locataire. Votre site vit sur leurs serveurs, dans leur écosystème. Si la plateforme ferme, augmente ses prix ou change ses conditions — vous n'avez aucun recours.",
+          "Tous ces outils partagent le même modèle économique : vous êtes locataire. Votre site vit sur leurs serveurs, dans leur écosystème. Si la plateforme ferme, augmente ses prix ou change ses conditions, vous n'avez aucun recours.",
           "Et aucun de ces constructeurs ne vous permettra jamais de créer une vraie application mobile iOS & Android native à votre nom.",
         ],
         list: [
           "Verrouillage plateforme : impossible ou très difficile de migrer vers un autre hébergeur",
           "SEO plafonné : les sites sur plateforme sont moins bien référencés que les sites sur mesure",
           "Personnalisation limitée : vous restez dans les templates et contraintes de l'éditeur",
-          "Coût cumulé : sur 3–5 ans, le total dépasse souvent le coût d'un site sur mesure",
+          "Coût cumulé : sur 3 à 5 ans, le total dépasse souvent le coût d'un site sur mesure",
           "Pas d'application mobile native possible",
         ],
       },
@@ -800,32 +766,32 @@ export const articles: Article[] = [
       {
         heading: "L'alternative sur mesure : moins cher sur la durée",
         paragraphs: [
-          "Un site sur mesure ou une application mobile développée par un freelance coûte plus cher en une fois — mais vous appartient définitivement.",
-          "Sur 3 ans, un site Wix à 17€/mois + apps cumulées vous coûte facilement 1 500€ à 2 000€ pour un résultat standard. Un site sur mesure à 800€ est rentabilisé dès la 2ème année — et vous pouvez le déplacer, le faire évoluer, le vendre.",
-          "Et si vous êtes restaurateur, salon de coiffure, commerçant ou prestataire de services : une application mobile iOS & Android à partir de 490€ remplace avantageusement n'importe quel constructeur de site.",
-          "Devis gratuit sous 24h — contactez-moi avec votre projet.",
+          "Un site sur mesure ou une application mobile développée par un freelance coûte plus cher au départ, mais vous appartient définitivement.",
+          "Sur 3 ans, un site Wix Core à environ 29€/mois, plus les applications ajoutées, vous coûte facilement 1 000€ à 1 500€ pour un résultat standard. Un site sur mesure est rentabilisé en quelques années, et vous pouvez le déplacer, le faire évoluer, le vendre.",
+          "Et si vous êtes restaurateur, salon de coiffure, commerçant ou prestataire de services : une application mobile iOS & Android à votre nom va bien plus loin que n'importe quel constructeur de site.",
+          "Devis gratuit sous 24h, contactez-moi avec votre projet.",
         ],
       },
     ],
   },
   {
-    slug: "tarif-creation-site-internet-2025",
+    slug: "tarif-creation-site-internet",
     image: {
       src: "/blog/tarif-creation-site-internet-2025.jpg",
       alt: "Bureau de designer web avec ordinateur portable, nuancier de couleurs et croquis de maquettes",
       credit: "Image : Artlist",
     },
     service: "site-web",
-    title: "Tarif création site internet 2025 : le vrai prix",
+    title: "Tarif création site internet 2026 : le vrai prix",
     description:
-      "Quel est le prix d'un site internet en 2025 ? Freelance, agence, constructeur DIY (Wix, Squarespace) — comparatif complet des tarifs de création de site web.",
+      "Quel est le prix d'un site internet en 2026 ? Constructeur (Wix, Squarespace), WordPress, freelance ou agence : comparatif complet des tarifs de création.",
     date: "2026-04-20",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Tarifs",
     sections: [
       {
         paragraphs: [
-          "\"Combien coûte un site internet ?\" — c'est l'une des questions les plus posées sur Google. Et la réponse varie de 0€ (Wix gratuit) à 80 000€ (agence digitale grand compte). Voici un guide honnête des tarifs réels en 2025, selon votre besoin et votre budget.",
+          "\"Combien coûte un site internet ?\" C'est l'une des questions les plus posées sur Google. Et la réponse varie de 0€ (Wix gratuit) à 80 000€ (agence digitale grand compte). Voici un guide honnête des tarifs réels en 2026, selon votre besoin et votre budget.",
         ],
       },
       {
@@ -834,8 +800,8 @@ export const articles: Article[] = [
           "Les plateformes DIY permettent de créer un site sans coder. Idéales pour un premier site vitrine rapide.",
         ],
         list: [
-          "Tarif : 6€ à 30€/mois selon la plateforme et le plan",
-          "Sur 2 ans : 150€ à 900€ (abonnement seul, sans apps supplémentaires)",
+          "Tarif : 9€ à 30€/mois environ pour un site pro selon la plateforme et la formule (jusqu'à 69€/mois pour les formules haut de gamme)",
+          "Sur 2 ans : 200€ à 750€ (abonnement seul, sans apps supplémentaires)",
           "Avantages : rapide à mettre en place, pas de compétences techniques requises",
           "Inconvénients : site non propriétaire, SEO limité, pas d'app mobile possible, verrouillage plateforme",
         ],
@@ -849,8 +815,8 @@ export const articles: Article[] = [
           "Hébergement : 3€ à 15€/mois (OVH, Infomaniak, o2switch)",
           "Thème premium : 50€ à 150€ (WPAstra, Divi, Elementor Pro)",
           "Plugins indispensables : 50€ à 200€/an cumulés",
-          "Maintenance et sécurité : à gérer soi-même ou à déléguer (50–150€/mois)",
-          "Total sur 2 ans (DIY) : 250€ à 600€ — mais demande du temps et des compétences techniques",
+          "Maintenance et sécurité : à gérer soi-même ou à déléguer (50 à 150€/mois)",
+          "Total sur 2 ans (en le faisant vous-même) : 250€ à 600€, mais cela demande du temps et des compétences techniques",
         ],
       },
       {
@@ -861,8 +827,8 @@ export const articles: Article[] = [
         list: [
           "Site vitrine simple : 400€ à 1 500€ selon les fonctionnalités",
           "Site e-commerce : 800€ à 3 000€",
-          "Application mobile iOS & Android : 490€ à 2 000€ (BreizhApp)",
-          "Site + app mobile : bundle possible à partir de 800€",
+          "Application mobile iOS & Android : de quelques centaines à quelques milliers d'euros selon les fonctionnalités",
+          "Site + app mobile : possible en un seul projet, souvent moins cher que deux prestataires séparés",
           "Avantages : sur mesure, SEO optimisé, vous possédez votre code, pas de verrouillage",
         ],
       },
@@ -883,17 +849,17 @@ export const articles: Article[] = [
         heading: "Quel tarif choisir selon votre profil ?",
         list: [
           "Vous démarrez et avez un budget < 200€/an : commencez par Wix ou Squarespace, mais prévoyez de migrer",
-          "Vous êtes artisan, commerçant, prestataire de service : un freelance à 490–800€ est le meilleur rapport qualité/prix",
-          "Vous vendez en ligne : Shopify ou une boutique mobile sur mesure (0€ + commission)",
+          "Vous êtes artisan, commerçant, prestataire de service : un freelance offre le meilleur rapport qualité/prix",
+          "Vous vendez en ligne : Shopify ou une boutique mobile sur mesure",
           "Vous avez besoin d'une app mobile : seul un développeur freelance peut vous l'offrir pour moins de 15 000€",
           "Vous êtes une grande entreprise : une agence web",
         ],
       },
       {
-        heading: "Mon offre : site ou app mobile à partir de 490€",
+        heading: "Mon offre : site web ou application mobile sur mesure",
         paragraphs: [
-          "Je suis développeur freelance basé à Brest, spécialisé dans les applications mobiles iOS & Android. Je travaille avec des TPE, artisans, restaurateurs et commerçants qui veulent une vraie présence numérique sans le budget d'une grande entreprise.",
-          "App Starter à 490€, App Premium à 600€, App Boutique à 0€ d'installation (12% sur les ventes). Devis gratuit sous 24h.",
+          "Je suis développeur freelance basé à Brest, spécialisé dans les applications mobiles iOS & Android et les sites web sur mesure. Je travaille avec des TPE, artisans, restaurateurs et commerçants qui veulent une vraie présence numérique sans le budget d'une grande entreprise.",
+          "Décrivez-moi votre projet : je vous envoie un devis gratuit et détaillé sous 24h.",
         ],
       },
     ],
@@ -906,16 +872,16 @@ export const articles: Article[] = [
       credit: "Image : Artlist",
     },
     service: "restaurant",
-    title: "Site web pour restaurant à Brest : guide 2025",
+    title: "Site web pour restaurant à Brest : guide 2026",
     description:
-      "Menu en ligne, réservation, commande à emporter : tout ce qu'un site web de restaurant à Brest doit avoir en 2025. Tarifs et conseils d'un développeur local.",
+      "Menu en ligne, réservation, commande à emporter : tout ce qu'un site web de restaurant à Brest doit avoir en 2026. Conseils d'un développeur local.",
     date: "2026-04-25",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Restaurants",
     sections: [
       {
         paragraphs: [
-          "Vous êtes restaurateur à Brest et votre site web date de 2018 — ou vous n'en avez pas encore ? En 2025, un client qui ne vous trouve pas en ligne choisit le restaurant d'à côté. Voici ce qu'un bon site de restaurant doit avoir, et ce que ça coûte vraiment.",
+          "Vous êtes restaurateur à Brest et votre site web date de 2018, ou vous n'en avez pas encore ? En 2026, un client qui ne vous trouve pas en ligne choisit le restaurant d'à côté. Voici ce qu'un bon site de restaurant doit avoir, et ce que ça coûte vraiment.",
         ],
       },
       {
@@ -926,7 +892,7 @@ export const articles: Article[] = [
         ],
       },
       {
-        heading: "Les fonctionnalités indispensables en 2025",
+        heading: "Les fonctionnalités indispensables en 2026",
         list: [
           "Menu en ligne à jour : vos clients consultent votre carte depuis leur téléphone avant de venir — si elle n'est pas là, ils vont ailleurs",
           "Réservation en ligne 24h/24 : formulaire simple avec confirmation automatique par email et SMS",
@@ -939,13 +905,14 @@ export const articles: Article[] = [
       {
         heading: "Ce que coûte un site web pour un restaurant à Brest",
         paragraphs: [
-          "Il existe trois niveaux de prix selon vos besoins :",
+          "Le budget dépend du niveau de fonctionnalités dont vous avez besoin :",
         ],
         list: [
-          "Site vitrine simple (menu, horaires, contact) : 400€ à 800€ chez un freelance local — suffisant pour apparaître sur Google",
-          "Site avec réservation en ligne : 800€ à 1 500€ — idéal pour réduire les appels téléphoniques",
-          "Site + commande en ligne avec paiement : 1 200€ à 2 500€ — pour s'affranchir des plateformes",
-          "Application mobile iOS & Android à partir de 490€ : votre restaurant directement sur le téléphone de vos clients",
+          "Site vitrine (menu, horaires, contact) : la base pour apparaître sur Google",
+          "Site avec réservation en ligne : idéal pour réduire les appels téléphoniques",
+          "Site avec commande en ligne et paiement : pour vous affranchir des plateformes de livraison",
+          "Application mobile iOS & Android : votre restaurant directement sur le téléphone de vos clients",
+          "Mes tarifs sont affichés sur les pages Site web et Application mobile du site, devis gratuit sous 24h",
         ],
       },
       {
@@ -967,88 +934,6 @@ export const articles: Article[] = [
           "Avis Google : invitez chaque client satisfait à en laisser un — c'est le facteur n°1 pour le ranking local",
           "Site rapide et mobile-first : Google pénalise les sites lents dans les résultats locaux",
           "Données structurées Restaurant (schema.org) : informent Google sur vos horaires, votre menu et votre localisation",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "application-mobile-restaurant-bretagne",
-    image: {
-      src: "/blog/application-mobile-restaurant-bretagne.jpg",
-      alt: "Crêpe bretonne servie sur une table en bois avec un smartphone affichant une app de commande",
-      credit: "Image : Artlist",
-    },
-    service: "restaurant",
-    title: "App mobile restaurant en Bretagne : guide 2026",
-    description:
-      "App mobile pour restaurant en Bretagne : fonctionnalités, tarifs et retour sur investissement. Guide par un développeur freelance basé à Brest.",
-    date: "2026-04-25",
-    lastModified: "2026-08-30",
-    category: "Restaurants",
-    sections: [
-      {
-        paragraphs: [
-          "Les restaurateurs bretons sont de plus en plus nombreux à sauter le pas : avoir leur propre application mobile plutôt que de dépendre de Uber Eats, TheFork ou Planity. Moins de commission, plus de fidélité client, une image plus professionnelle.",
-          "Je suis développeur freelance basé à Brest et je travaille avec des restaurants, crêperies, bars et commerces alimentaires en Bretagne. Voici ce que vous devez savoir avant de vous lancer.",
-        ],
-      },
-      {
-        heading: "Pourquoi une application mobile pour votre restaurant en Bretagne ?",
-        paragraphs: [
-          "La Bretagne a une culture gastronomique forte — crêperies, fruits de mer, restaurants bistronomiques — et une clientèle locale fidèle. Une application mobile bien conçue transforme un client de passage en habitué.",
-        ],
-        list: [
-          "Notifications push : prévenez vos clients du plat du jour, d'une soirée spéciale ou d'une offre limitée, directement sur leur téléphone",
-          "Programme de fidélité numérique : tampons virtuels, réductions automatiques à la 10ème visite, cadeaux d'anniversaire",
-          "Commande en ligne sans commission : gardez 100% de vos recettes au lieu de reverser 15 à 30% à Uber Eats",
-          "Réservation de table 24h/24 avec confirmation automatique",
-          "Carte du menu toujours à jour, modifiable en temps réel depuis votre panel admin",
-        ],
-      },
-      {
-        heading: "Combien coûte une application mobile pour un restaurant breton ?",
-        paragraphs: [
-          "C'est souvent la première question. Et la réponse est bien moins effrayante que ce que les restaurateurs imaginent.",
-        ],
-        list: [
-          "App Starter à 490€ + 49€/mois : application iOS & Android avec menu, réservation, notifications push, panel admin",
-          "App Premium à 600€ + 49€/mois : tout le Starter + commande en ligne avec paiement Stripe, programme de fidélité",
-          "App Boutique à 0€ d'installation : pour les restaurants avec livraison, 12% sur les ventes, zéro risque au départ",
-          "Délai de livraison : 3 à 5 semaines selon les fonctionnalités",
-        ],
-      },
-      {
-        heading: "Retour sur investissement : les chiffres réels",
-        paragraphs: [
-          "Un restaurateur de Brest m'a contacté après avoir calculé qu'Uber Eats lui coûtait environ 600€ par mois en commissions (20% sur 3 000€ de commandes livraison). Il a investi 600€ dans une application mobile avec commande en ligne.",
-          "En deux mois, ses clients réguliers avaient basculé sur l'app. Les commissions Uber Eats ont chuté de 60%. L'app était rentabilisée.",
-        ],
-        list: [
-          "Économie sur commissions Uber Eats et Deliveroo : 200€ à 1 000€/mois selon le volume",
-          "Augmentation de la fréquence de visite grâce aux notifications push : +15 à 25% observés",
-          "Programme de fidélité : augmente la valeur client sur 12 mois",
-          "Image professionnelle différenciante face aux concurrents sans app",
-        ],
-      },
-      {
-        heading: "Exemples de restaurants et commerces alimentaires accompagnés en Bretagne",
-        paragraphs: [
-          "Je travaille avec des restaurateurs sur Brest, Quimper, Rennes et le reste de la Bretagne. Les profils typiques :",
-        ],
-        list: [
-          "Restaurants et brasseries : commande sur place via QR code, commande à emporter, programme de fidélité",
-          "Crêperies : menu saisonnier modifiable en temps réel, réservation de groupe",
-          "Restaurants de fruits de mer : disponibilité en temps réel, commande de plateau pour enlèvement",
-          "Bars et bistrots : événements, soirées à thème, préventes de billets via l'app",
-          "Traiteurs et food trucks : planning de présence, commande à l'avance, paiement en ligne",
-        ],
-      },
-      {
-        heading: "Par où commencer ?",
-        paragraphs: [
-          "La première étape est un appel ou un échange par message pour définir vos besoins. Je vous pose les bonnes questions : volume de commandes, clientèle, fonctionnalités prioritaires, budget.",
-          "Sous 48h, vous recevez un devis détaillé avec le périmètre exact, les délais et le prix final. Pas de surprise.",
-          "Contactez-moi pour un devis gratuit — je réponds sous 24h, même le weekend.",
         ],
       },
     ],
@@ -1165,11 +1050,11 @@ export const articles: Article[] = [
       credit: "Image : Artlist",
     },
     service: "application-mobile",
-    title: "Application mobile à Brest : le guide pour créer votre app",
+    title: "Application mobile à Brest : agence ou freelance ?",
     description:
-      "Créer une application mobile à Brest : à qui confier votre projet, les étapes de A à Z, la bonne technologie et les erreurs à éviter. Guide par un développeur local.",
+      "Créer une application mobile à Brest : agence ou développeur freelance, étapes de A à Z, technologie et erreurs à éviter. Les conseils d'un développeur brestois.",
     date: "2026-04-30",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Local",
     sections: [
       {
@@ -1268,7 +1153,7 @@ export const articles: Article[] = [
     description:
       "Boulanger, boucher, fleuriste : pourquoi une application mobile sur mesure dépasse Wix ou Planity pour fidéliser vos clients et booster vos ventes.",
     date: "2026-05-09",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Guides",
     sections: [
       {
@@ -1319,13 +1204,13 @@ export const articles: Article[] = [
       {
         heading: "Combien coûte une application mobile pour un artisan ?",
         paragraphs: [
-          "C'est souvent la première question — et la crainte principale. On imagine un budget de 10 000€ ou plus, réservé aux grandes entreprises. La réalité est très différente.",
-          "En tant que développeur freelance spécialisé React Native, je propose trois formules adaptées aux TPE et artisans :",
+          "C'est souvent la première question, et la crainte principale. On imagine un budget réservé aux grandes entreprises. Avec un développeur freelance React Native, c'est bien plus accessible qu'en agence.",
+          "Le prix dépend des fonctionnalités dont vous avez besoin. Mes tarifs sont affichés sur la page Application mobile du site. Voici les trois niveaux les plus courants :",
         ],
         list: [
-          "App Starter — 490€ + 49€/mois : iOS & Android, design aux couleurs de votre boutique, catalogue produits, authentification clients, déploiement App Store et Google Play, hébergement et support inclus",
-          "App Premium — 600€ + 49€/mois : tout le Starter + paiement en ligne Stripe, notifications push, panel d'administration web pour gérer votre catalogue",
-          "App Boutique — 0€ d'installation : pour les commerçants qui vendent en ligne, je prends 12% de commission sur les ventes — vous ne payez rien si vous ne vendez rien",
+          "App vitrine : iOS & Android, design aux couleurs de votre boutique, catalogue produits, comptes clients, publication sur l'App Store et Google Play",
+          "App avec paiement : tout le niveau vitrine + paiement en ligne Stripe, notifications push, panel d'administration web pour gérer votre catalogue",
+          "App boutique : vente en ligne complète, gestion des commandes et des stocks, programme de fidélité",
         ],
       },
       {
@@ -1334,10 +1219,10 @@ export const articles: Article[] = [
           "Beaucoup de commerçants calculent seulement le prix d'entrée. Voici le coût réel sur 24 mois :",
         ],
         list: [
-          "Wix Business : 17€/mois × 24 mois = 408€ + apps tierces + limitations fonctionnelles",
+          "Wix Business : environ 41€/mois × 24 mois = environ 984€ + apps tierces + limitations fonctionnelles",
           "Shopify Basic : 39€/mois × 24 mois = 936€ + commissions 2% sur chaque vente + apps payantes",
-          "BreizhApp Starter : 490€ installation + 49€/mois × 24 mois = 1 666€ pour une app native iOS & Android, support humain inclus, 0% de commission sur vos ventes",
-          "Résultat : pour un commerçant qui génère 2 000€/mois de ventes en ligne, les commissions Shopify représentent 480€/an — soit plus que l'abonnement mensuel à une vraie app sur mesure",
+          "App sur mesure : un coût de création unique + hébergement, pour une app native iOS & Android qui vous appartient, support humain inclus, 0% de commission sur vos ventes",
+          "Résultat : pour un commerçant qui génère 2 000€/mois de ventes en ligne, les commissions Shopify représentent 480€/an, chaque année, sans que la plateforme ne vous appartienne jamais",
         ],
       },
       {
@@ -1362,7 +1247,7 @@ export const articles: Article[] = [
     description:
       "Coûts cachés, commissions, limitations : ce que Wix et Shopify ne disent pas. Pourquoi une app mobile sur mesure est souvent plus rentable à 24 mois.",
     date: "2026-05-09",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Comparatifs",
     sections: [
       {
@@ -1405,10 +1290,10 @@ export const articles: Article[] = [
           "Voici une comparaison réaliste pour un commerce qui réalise 5 000€ de ventes mensuelles en ligne :",
         ],
         list: [
-          "Wix Business : 17€/mois × 24 = 408€ + apps complémentaires (~30€/mois) = 1 128€ sur 2 ans. Résultat : site web responsive, pas d'app native",
+          "Wix Business : environ 41€/mois × 24 = environ 984€ + apps complémentaires (~30€/mois) = environ 1 700€ sur 2 ans. Résultat : site web responsive, pas d'app native",
           "Shopify Basic : 39€/mois × 24 = 936€ + commissions 2% × 5 000€ × 24 = 2 400€ + apps = environ 4 000€ sur 2 ans",
-          "App BreizhApp Premium : 600€ installation + 49€/mois × 24 = 1 776€ sur 2 ans. Résultat : application native iOS & Android, 0% de commission",
-          "Économie potentielle vs. Shopify Basic : 2 000€ à 3 000€ sur 24 mois pour un commerce à 5 000€/mois de ventes en ligne",
+          "App sur mesure : un coût de création unique + hébergement. Résultat : application native iOS & Android qui vous appartient, 0% de commission",
+          "Avec Shopify, la facture continue chaque mois et grossit avec vos ventes. L'app sur mesure est un investissement ponctuel : plus vous vendez, plus elle est rentable",
         ],
       },
       {
@@ -1458,7 +1343,7 @@ export const articles: Article[] = [
     description:
       "Application mobile ou site e-commerce ? Conversion, fidélisation, coûts : le guide pour choisir la meilleure solution pour votre boutique en ligne.",
     date: "2026-05-09",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Guides",
     sections: [
       {
@@ -1534,12 +1419,12 @@ export const articles: Article[] = [
       {
         heading: "Combien coûte une application mobile pour une boutique en ligne ?",
         paragraphs: [
-          "Je propose une formule spécialement conçue pour les e-commerçants qui veulent une application mobile sans risque financier :",
+          "Le budget dépend de la taille de votre catalogue et des fonctionnalités souhaitées. Mes tarifs sont affichés sur la page E-commerce du site. Voici ce qui est inclus :",
         ],
         list: [
-          "App Boutique — 0€ d'installation : je développe votre application iOS & Android, catalogue produits, paiement Stripe, gestion des commandes, notifications push — et je prends 12% de commission sur les ventes réalisées via l'app",
-          "App Premium — 600€ + 49€/mois : si vous préférez un coût fixe prévisible, cette formule inclut tout sans commission sur vos ventes",
-          "Dans les deux cas : design aux couleurs de votre marque, déploiement sur l'App Store et Google Play, panel admin pour gérer votre catalogue, support humain inclus",
+          "Application iOS & Android à votre nom : catalogue produits, paiement Stripe, gestion des commandes, notifications push",
+          "Aucune commission sur vos ventes : contrairement à Shopify ou aux marketplaces, ce que vous vendez vous revient",
+          "Design aux couleurs de votre marque, publication sur l'App Store et Google Play, panel admin pour gérer votre catalogue, support humain inclus",
         ],
       },
       {
@@ -1555,7 +1440,7 @@ export const articles: Article[] = [
           "Peut-on gérer les stocks depuis l'app ? Oui. Le panel admin inclut la gestion des stocks, des variantes produits et des commandes.",
           "L'app gère-t-elle les livraisons ? Oui. Vous configurez les modes de livraison, les zones et les tarifs dans le panel admin.",
           "Peut-on avoir à la fois un site Shopify et une app sur mesure ? Oui — le site Shopify gère le trafic Google, l'app fidélise les clients acquis. Les deux se complètent.",
-          "L'App Boutique à 0€ — comment ça marche ? Je développe votre app gratuitement et je prends 12% sur les ventes réalisées via l'app. Zéro risque financier pour vous.",
+          "Combien coûte une application pour une boutique en ligne ? Le tarif dépend de la taille du catalogue et des fonctionnalités. Mes tarifs sont affichés sur la page E-commerce, avec un devis détaillé gratuit sous 24h.",
         ],
       },
     ],
@@ -1571,7 +1456,7 @@ export const articles: Article[] = [
     title: "Site web sur mesure : prix réels en 2026",
     description: "Combien coûte un site web sur mesure en 2026 ? Vitrine, e-commerce, plateforme : tarifs réels d'un développeur freelance vs agence. Devis gratuit 48h.",
     date: "2026-05-15",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Tarifs",
     sections: [
       {
@@ -1592,7 +1477,6 @@ export const articles: Article[] = [
           "Formulaire de contact relié à votre email",
           "100% responsive : parfait sur mobile, tablette et desktop",
           "Déploiement et mise en ligne inclus",
-          "Tarif BreizhApp : à partir de 490€ — livraison en 2 à 3 semaines",
         ],
       },
       {
@@ -1606,7 +1490,6 @@ export const articles: Article[] = [
           "Système de réservation ou prise de rendez-vous en ligne",
           "Connexion à des outils tiers (Google Analytics, Mailchimp, CRM)",
           "Espace membre basique : authentification client, espace personnel",
-          "Tarif BreizhApp : entre 800€ et 1 800€ selon les fonctionnalités",
         ],
       },
       {
@@ -1622,7 +1505,6 @@ export const articles: Article[] = [
           "Emails automatiques : confirmation de commande, suivi de livraison",
           "SEO e-commerce : fiches produits, sitemap, rich snippets",
           "Zéro commission sur vos ventes — contrairement à Shopify (0,5% à 2%)",
-          "Tarif BreizhApp : à partir de 1 500€",
         ],
       },
       {
@@ -1636,7 +1518,6 @@ export const articles: Article[] = [
           "Base de données sécurisée avec sauvegarde automatique",
           "API REST pour connecter vos outils existants (CRM, ERP, logiciels métier)",
           "Notifications en temps réel, messagerie interne",
-          "Tarif BreizhApp : à partir de 2 000€ selon la complexité",
         ],
       },
       {
@@ -1645,7 +1526,7 @@ export const articles: Article[] = [
           "Wix, Squarespace et Shopify semblent moins chers au premier coup d'œil. Mais sur 3 ans, la réalité est différente.",
         ],
         list: [
-          "Wix Business : 17€/mois = 612€ sur 3 ans, sans compter les apps payantes et le design limité aux templates",
+          "Wix Business : environ 41€/mois = environ 1 475€ sur 3 ans, sans compter les apps payantes et le design limité aux templates",
           "Shopify Basic : 39€/mois + 2% de commission = entre 1 500€ et 4 000€ sur 3 ans selon votre chiffre d'affaires",
           "Site sur mesure : coût unique, zéro abonnement, zéro commission — vous êtes propriétaire de votre code",
           "Sur mesure = liberté totale : changez l'hébergeur, le design, les fonctionnalités sans contrainte de plateforme",
@@ -1691,7 +1572,7 @@ export const articles: Article[] = [
     title: "Plateforme digitale sur mesure : guide 2026",
     description: "Créer une plateforme digitale sur mesure : espace admin, espace client, multi-rôles. Fonctionnalités, tarifs et alternatives au no-code. Devis gratuit.",
     date: "2026-05-15",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Guides",
     sections: [
       {
@@ -1736,7 +1617,7 @@ export const articles: Article[] = [
           "Des outils comme Bubble, Glide ou Webflow permettent de créer des applications sans coder. Ils ont des avantages réels pour prototyper rapidement — mais aussi des limites importantes pour un usage professionnel à long terme.",
         ],
         list: [
-          "Coût no-code : Bubble facture entre 29€ et 349€/mois selon le trafic — sur 3 ans, ça représente entre 1 000€ et 12 500€ sans posséder votre code",
+          "Coût no-code : Bubble facture entre 29$ et 349$/mois (paiement annuel) selon l'usage, soit 1 000$ à 12 500$ sur 3 ans sans posséder votre code",
           "Performance : les plateformes no-code sont plus lentes qu'une application développée sur mesure — problème pour les plateformes avec beaucoup d'utilisateurs simultanés",
           "Personnalisation limitée : vous êtes contraint par les fonctionnalités de l'outil, impossible d'aller au-delà sans contournements complexes",
           "Dépendance : si Bubble ferme ou change ses tarifs, votre plateforme est en danger — avec du code sur mesure, vous êtes propriétaire",
@@ -1746,12 +1627,12 @@ export const articles: Article[] = [
       {
         heading: "Combien coûte une plateforme digitale sur mesure ?",
         paragraphs: [
-          "Le tarif varie selon la complexité fonctionnelle. Voici les fourchettes réelles pratiquées chez BreizhApp :",
+          "Le tarif varie selon la complexité fonctionnelle. Mes tarifs de départ sont affichés sur la page Web app du site. Voici ce qui fait évoluer le budget :",
         ],
         list: [
-          "Plateforme simple (espace client + admin basique) : entre 2 000€ et 3 500€",
-          "Plateforme intermédiaire (multi-rôles, dashboard, API, notifications) : entre 3 500€ et 6 000€",
-          "Plateforme complexe (marketplace, SaaS, logique métier avancée) : à partir de 6 000€",
+          "Plateforme simple : espace client et admin basique",
+          "Plateforme intermédiaire : plusieurs rôles, tableau de bord, API, notifications",
+          "Plateforme complexe : marketplace, SaaS, logique métier avancée",
           "Dans tous les cas : devis détaillé gratuit sous 48h, paiement en 2 fois (acompte 30% au démarrage, solde à la livraison)",
         ],
       },
@@ -1799,12 +1680,12 @@ export const articles: Article[] = [
     title: "WordPress vs sur mesure : comparatif complet 2026",
     description: "WordPress ou site sur mesure : performances, coûts, SEO, sécurité. Le comparatif complet pour choisir la bonne solution selon votre projet en 2026.",
     date: "2026-05-15",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Comparatifs",
     sections: [
       {
         paragraphs: [
-          "Un site Next.js sur mesure est 2 à 3× plus rapide qu'un site WordPress, obtient des scores Lighthouse de 95-100/100 contre 60-80/100 pour WordPress, et coûte moins cher sur 3 ans (1 000€ à 1 800€ vs 2 900€ à 3 300€). Pour les blogs et sites éditoriaux, WordPress reste pertinent — pour tout le reste, le sur mesure gagne.",
+          "Un site Next.js sur mesure est 2 à 3× plus rapide qu'un site WordPress, obtient des scores Lighthouse de 95-100/100 contre 60-80/100 pour WordPress, et ne vous impose ni plugins payants ni maintenance de sécurité. Pour les blogs et sites éditoriaux, WordPress reste pertinent. Pour tout le reste, le sur mesure gagne.",
         ],
       },
       {
@@ -1856,7 +1737,7 @@ export const articles: Article[] = [
         list: [
           "WordPress basique : thème 150€ + plugins 300€/an + hébergement 180€/an + maintenance 500€/an = environ 2 900€ sur 3 ans",
           "WordPress avec développeur : 1 500€ de développement + 600€/an de maintenance = environ 3 300€ sur 3 ans",
-          "Site sur mesure BreizhApp : 800€ à 1 500€ de développement + hébergement Vercel gratuit ou 7€/mois = environ 1 000€ à 1 800€ sur 3 ans, zéro maintenance imposée",
+          "Site sur mesure : un coût de développement unique + un hébergement peu coûteux (gratuit sur Vercel pour les petits sites), sans plugins payants ni maintenance imposée",
         ],
       },
       {
@@ -1896,7 +1777,7 @@ export const articles: Article[] = [
         list: [
           "WordPress est-il gratuit ? Le logiciel WordPress est gratuit, mais l'hébergement, le thème premium et les plugins représentent 600€ à 1 500€/an en usage professionnel réel.",
           "Un site WordPress est-il bien référencé sur Google ? WordPress peut être bien référencé avec les bons plugins (Yoast, RankMath), mais un site Next.js sur mesure obtient de meilleurs scores Core Web Vitals — facteur SEO officiel depuis 2021.",
-          "Un site sur mesure est-il plus cher que WordPress ? Sur 3 ans, non. Un site WordPress avec maintenance représente 2 900€ à 3 300€. Un site Next.js sur mesure : 1 000€ à 1 800€ tout compris.",
+          "Un site sur mesure est-il plus cher que WordPress ? Pas forcément sur la durée. Un site WordPress avec maintenance représente 2 900€ à 3 300€ sur 3 ans, alors qu'un site sur mesure n'a ni plugins ni maintenance de sécurité à payer chaque année.",
           "Peut-on migrer de WordPress vers un site sur mesure ? Oui. Le contenu (articles, pages) peut être exporté et réintégré. Je gère ce type de migration.",
           "WordPress est-il sécurisé ? C'est le CMS le plus ciblé par les hackers — 90% des CMS piratés tournent sous WordPress. Les mises à jour régulières et un hébergement de qualité réduisent ce risque.",
         ],
@@ -1911,10 +1792,11 @@ export const articles: Article[] = [
       credit: "Image : Artlist",
     },
     service: "application-mobile",
-    title: "No-code vs dev : Bubble, Glide ou sur mesure ?",
-    description: "No-code (Bubble, Glide, Adalo) ou développeur sur mesure ? Coûts, limites, performances : le comparatif complet pour créer votre app ou plateforme en 2026.",
+    title: "No-code (Bubble, Glide) ou développeur ?",
+    description:
+      "Bubble, Glide, Adalo ou développeur sur mesure ? Avantages, limites cachées et coût sur 3 ans : comment choisir entre no-code et développement pour votre projet.",
     date: "2026-05-15",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Comparatifs",
     sections: [
       {
@@ -1934,6 +1816,7 @@ export const articles: Article[] = [
           "Adalo : création d'apps mobiles iOS et Android sans code, avec des composants prêts à l'emploi",
           "FlutterFlow : no-code basé sur Flutter, permet de générer du code exportable",
           "Webflow : principalement pour les sites web marketing avec animations avancées",
+          "Thunkable, Bravo Studio, SAP Build (ex-AppGyver) : d'autres constructeurs d'apps mobiles, du plus simple (Bravo transforme une maquette Figma en app) au plus complet",
         ],
       },
       {
@@ -1954,7 +1837,7 @@ export const articles: Article[] = [
           "Les outils no-code ont des contraintes importantes qui deviennent bloquantes dès que le projet grandit :",
         ],
         list: [
-          "Coût d'abonnement permanent : Bubble coûte entre 29€ et 349€/mois selon le trafic — vous ne possédez jamais votre application, vous la louez",
+          "Coût d'abonnement permanent : Bubble coûte entre 29$ et 349$/mois (paiement annuel) selon l'usage. Vous ne possédez jamais votre application, vous la louez",
           "Performance dégradée : les applications Bubble sont notablement plus lentes qu'une application sur mesure — problème pour l'expérience utilisateur et le SEO",
           "Dépendance totale : si Bubble change ses tarifs, ferme ou modifie ses fonctionnalités, votre application est directement impactée — vous n'avez aucun contrôle",
           "Personnalisation limitée : impossible de sortir du cadre de la plateforme sans contournements complexes qui augmentent la dette technique",
@@ -1969,10 +1852,10 @@ export const articles: Article[] = [
           "Voici la réalité financière sur 3 ans pour une plateforme web avec espace client et admin :",
         ],
         list: [
-          "Bubble Starter (29€/mois) : 1 044€ sur 3 ans — mais limité à 2 types d'utilisateurs et 50 000 pages vues/mois",
-          "Bubble Growth (119€/mois) : 4 284€ sur 3 ans — nécessaire dès que le trafic augmente",
-          "Bubble Team (349€/mois) : 12 564€ sur 3 ans — pour les projets avec plusieurs éditeurs",
-          "Développement sur mesure BreizhApp : 2 000€ à 4 000€ en coût unique + hébergement 7-15€/mois = environ 2 300€ à 4 500€ sur 3 ans, avec votre code en propriété",
+          "Bubble Starter (29$/mois) : 1 044$ sur 3 ans, avec des limites d'usage vite atteintes",
+          "Bubble Growth (119$/mois) : 4 284$ sur 3 ans, nécessaire dès que l'usage augmente",
+          "Bubble Team (349$/mois) : 12 564$ sur 3 ans, pour les projets avec plusieurs éditeurs",
+          "Développement sur mesure : un coût de création unique, puis un hébergement mensuel modeste, avec votre code en propriété. L'écart avec le no-code se réduit vite dès que le projet a besoin des formules supérieures de Bubble, et l'application reste à vous",
         ],
       },
       {
@@ -1998,6 +1881,7 @@ export const articles: Article[] = [
           "Votre besoin est simple et standardisé — un formulaire, un tableau de bord basique, une liste de contacts",
           "Vous n'avez pas encore de revenus et devez absolument minimiser les coûts initiaux",
           "Vous êtes à l'aise techniquement et avez du temps pour apprendre la plateforme",
+          "C'est un outil interne pour votre équipe, pas pour vos clients : les exigences de performance et de design sont moins critiques",
         ],
       },
       {
@@ -2011,6 +1895,8 @@ export const articles: Article[] = [
           "Vous pensez long terme : posséder votre code, choisir votre hébergeur, faire évoluer sans contrainte de plateforme",
           "Votre budget initial est similaire à ce que vous dépenseriez en no-code sur 2-3 ans",
           "Vous avez besoin d'intégrations complexes avec vos outils existants",
+          "Votre prototype no-code a validé l'idée : il est temps de construire la vraie version",
+          "Vos utilisateurs se plaignent de lenteurs ou de bugs sur votre app actuelle",
         ],
       },
       {
@@ -2019,95 +1905,6 @@ export const articles: Article[] = [
           "Si vous avez une idée et aucun budget : testez avec Glide ou Bubble pour valider le concept. Si ça marche, faites développer une version sur mesure.",
           "Si vous avez un budget et un projet sérieux : investissez directement dans le sur mesure. Vous économiserez du temps, éviterez les frustrations des limites no-code, et posséderez un actif qui vous appartient vraiment.",
           "Je suis développeur freelance à Brest, je crée des applications mobiles et des plateformes web sur mesure. Si vous hésitez entre no-code et développement pour votre projet, contactez-moi — je vous donne un avis honnête et un devis gratuit sous 48h.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "application-mobile-coiffeur-salon",
-    image: {
-      src: "/blog/application-mobile-coiffeur-salon.jpg",
-      alt: "Intérieur élégant de salon de coiffure, smartphone sur le comptoir d'accueil affichant une app de réservation, fauteuils et miroirs en arrière-plan",
-      credit: "Image : Artlist",
-    },
-    service: "coiffeur",
-    title: "App mobile pour salon de coiffure : guide 2026",
-    description: "App mobile salon de coiffure : réservation, fidélité, notifications push. Alternative à Planity sans commission. Tarifs et fonctionnalités 2026.",
-    date: "2026-05-15",
-    lastModified: "2026-08-30",
-    category: "Secteurs",
-    sections: [
-      {
-        paragraphs: [
-          "Un salon de coiffure qui n'a pas d'application mobile en 2026 laisse de l'argent sur la table. Réservations en ligne, rappels automatiques, programme de fidélité, vente de produits — une app bien conçue transforme votre relation client et réduit les rendez-vous manqués.",
-          "Et contrairement à une plateforme SaaS en location, une application sur mesure vous appartient entièrement — aucun abonnement croissant, aucune dépendance.",
-        ],
-      },
-      {
-        heading: "Ce qu'une app mobile apporte à un salon de coiffure",
-        paragraphs: [
-          "Voici les fonctionnalités les plus utiles pour un salon de coiffure ou un institut de beauté :",
-        ],
-        list: [
-          "Réservation en ligne 24h/24 : vos clients prennent rendez-vous depuis leur téléphone, à n'importe quelle heure, sans vous appeler",
-          "Rappels automatiques : une notification push la veille et le matin du rendez-vous — les no-shows peuvent diminuer de 40%",
-          "Programme de fidélité : points cumulés à chaque visite, offres exclusives pour les clients réguliers, carte de fidélité digitale",
-          "Historique des prestations : chaque client retrouve ses dernières couleurs, coupes et soins — vous aussi depuis l'espace admin",
-          "Paiement en ligne : acompte à la réservation pour sécuriser le rendez-vous, ou paiement complet via Apple Pay / Stripe",
-          "Vente de produits : proposez vos soins et produits capillaires directement dans l'app",
-          "Notifications push ciblées : prévenez vos clients d'un créneau libéré, d'une promotion ou de l'arrivée d'un nouveau produit",
-          "Avis clients : collectez des avis directement après chaque prestation pour alimenter votre réputation Google",
-        ],
-      },
-      {
-        heading: "Pourquoi ne pas rester sur Planity ?",
-        paragraphs: [
-          "Planity est utile pour se faire connaître de nouveaux clients via son annuaire. Mais ses coûts réels méritent d'être calculés précisément :",
-        ],
-        list: [
-          "Abonnement Planity : tarif communiqué sur devis uniquement (info.planity.com/tarifs)",
-          "Planity communique sur un modèle sans commission sur les rendez-vous — vérifiez les conditions exactes dans leur contrat",
-          "Si vous quittez Planity : vérifiez les conditions d'export de votre historique de réservations dans leurs CGU avant de signer",
-          "Une app sur mesure : coût unique, vos données hébergées sur votre propre infrastructure, votre relation client sans intermédiaire",
-        ],
-      },
-      {
-        heading: "Combien coûte une app mobile pour un salon ?",
-        paragraphs: [
-          "Je propose deux formules adaptées aux salons de coiffure et instituts de beauté :",
-        ],
-        list: [
-          "Formule Essentiel — 790€ : réservation en ligne, rappels automatiques, historique client, espace admin pour gérer les créneaux et les prestations",
-          "Formule Premium — 1 200€ : tout l'essentiel + programme de fidélité, paiement en ligne, notifications push ciblées, vente de produits",
-          "Dans les deux cas : app iOS et Android, déploiement sur les stores, formation à la prise en main, support inclus",
-          "Une app sur mesure remplace un abonnement SaaS récurrent — coût fixe, outil en propre, rentabilisé dans le temps",
-        ],
-      },
-      {
-        heading: "Comment ça se passe concrètement ?",
-        paragraphs: [
-          "Je vous accompagne de A à Z, même si vous n'avez aucune connaissance technique :",
-        ],
-        list: [
-          "Étape 1 : on définit ensemble vos prestations, vos horaires et vos besoins spécifiques",
-          "Étape 2 : je vous montre une maquette de l'app avant de coder — vous validez le design",
-          "Étape 3 : je développe l'app et vous la présente en vidéo à chaque étape importante",
-          "Étape 4 : publication sur l'App Store et Google Play — votre app est disponible pour vos clients",
-          "Étape 5 : formation à l'espace admin — 1h suffit pour prendre en main la gestion des réservations",
-        ],
-      },
-      {
-        heading: "Témoignage type : avant / après",
-        paragraphs: [
-          "Avant l'application : 30% des rendez-vous pris par téléphone, entre 5 et 8 no-shows par mois, aucun programme de fidélité, pas de vente de produits en dehors du salon.",
-          "Après l'application : 80% des réservations via l'app, 2 à 3 no-shows par mois grâce aux rappels automatiques, 15% du chiffre d'affaires généré par la fidélité et la vente de produits en ligne.",
-        ],
-      },
-      {
-        heading: "Demandez votre devis gratuit",
-        paragraphs: [
-          "Je suis développeur freelance spécialisé en applications mobiles pour les professionnels de la beauté et du bien-être. Devis gratuit sous 48h — décrivez-moi votre salon, vos prestations et ce que vous attendez de l'application.",
-          "Basé à Brest, j'interviens partout en France. La totalité du projet se fait à distance, avec des points réguliers en visioconférence.",
         ],
       },
     ],
@@ -2123,7 +1920,7 @@ export const articles: Article[] = [
     title: "App mobile salle de sport : fonctionnalités 2026",
     description: "App mobile salle de sport : abonnements, réservation de cours, suivi des séances, fidélité. Tarifs et fonctionnalités clés en 2026.",
     date: "2026-05-15",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Secteurs",
     sections: [
       {
@@ -2156,7 +1953,7 @@ export const articles: Article[] = [
         list: [
           "Mindbody : entre 129€ et 349€/mois — soit 1 548€ à 4 188€/an, sans compter les modules supplémentaires",
           "Glofox : entre 110€ et 300€/mois selon la taille de la salle — coût récurrent permanent",
-          "App sur mesure : investissement unique entre 1 500€ et 3 000€, hébergement à 10-20€/mois — rentabilisé en 6 à 18 mois",
+          "App sur mesure : un investissement unique + hébergement, rentabilisé en quelques années face à un abonnement qui ne s'arrête jamais",
           "Votre app, vos couleurs, votre marque : une app branded renforce votre identité et fidélise mieux qu'un outil générique",
           "Fonctionnalités sur mesure : adaptées exactement à votre offre — CrossFit, yoga, natation, arts martiaux — sans compromis",
         ],
@@ -2176,12 +1973,12 @@ export const articles: Article[] = [
       {
         heading: "Tarifs et délais",
         paragraphs: [
-          "Je propose des solutions adaptées à la taille et aux besoins de chaque salle :",
+          "Le budget dépend des fonctionnalités et de la taille de votre salle. Mes tarifs sont affichés sur la page Application mobile du site, devis gratuit sous 24h :",
         ],
         list: [
-          "App Essentiel — 1 200€ : inscription en ligne, réservation de cours, QR code d'accès, notifications push, espace admin",
-          "App Complète — 2 000€ : tout l'essentiel + suivi des séances, programmes personnalisés, espace coach, statistiques avancées",
-          "Délai de livraison : 4 à 8 semaines selon la formule choisie",
+          "Les essentiels : inscription en ligne, réservation de cours, QR code d'accès, notifications push, espace admin",
+          "La version complète : suivi des séances, programmes personnalisés, espace coach, statistiques avancées",
+          "Délai de livraison : 4 à 8 semaines selon les fonctionnalités",
           "Déploiement iOS et Android inclus, formation à l'espace admin, support 3 mois inclus",
         ],
       },
@@ -2204,7 +2001,7 @@ export const articles: Article[] = [
     title: "Site web pour artisan : éviter les constructeurs",
     description: "Site web pour artisan : pourquoi éviter Wix et les constructeurs gratuits. Ce qu'un site sur mesure apporte en SEO local, devis en ligne et crédibilité.",
     date: "2026-05-15",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Secteurs",
     sections: [
       {
@@ -2222,7 +2019,7 @@ export const articles: Article[] = [
           "SEO local faible : les sites Wix sont structurellement moins bien référencés que les sites sur mesure — Google le confirme lui-même dans ses recommandations techniques",
           "Design générique : vos prospects voient immédiatement que c'est un template standard — ça ne donne pas confiance pour confier des travaux chez soi",
           "Lenteur sur mobile : les constructeurs de sites génèrent du code lourd qui charge lentement — or 70% de vos prospects cherchent sur smartphone",
-          "Abonnement permanent : Wix Pro coûte 17€/mois = 204€/an pour un résultat moyen — sur 5 ans, vous avez payé 1 020€ sans rien posséder",
+          "Abonnement permanent : Wix Core coûte environ 29€/mois, soit près de 350€ par an pour un résultat moyen. Sur 5 ans, vous avez payé plus de 1 700€ sans rien posséder",
           "Domaine avec mention 'propulsé par Wix' sur les formules gratuites — image peu professionnelle",
           "Impossible de se démarquer : des milliers d'artisans ont le même template que vous",
         ],
@@ -2259,12 +2056,12 @@ export const articles: Article[] = [
       {
         heading: "Combien coûte un site web pour artisan ?",
         paragraphs: [
-          "Je propose des formules adaptées au budget et aux besoins des artisans indépendants :",
+          "Le prix dépend du nombre de pages et des fonctionnalités. Mes tarifs sont affichés sur la page Site web du site. Voici les trois niveaux les plus courants :",
         ],
         list: [
-          "Site Vitrine — 490€ : 5 pages, formulaire de contact, galerie photos, SEO local, responsive mobile — livraison en 2 semaines",
-          "Site Pro — 790€ : tout le vitrine + formulaire de devis avancé, galerie réalisations avec filtres, pages par ville, blog pour le SEO — livraison en 3 semaines",
-          "Site Complet — 1 200€ : tout le Pro + espace client, suivi de chantier en ligne, devis PDF automatique — livraison en 4 à 5 semaines",
+          "Site vitrine : 5 pages, formulaire de contact, galerie photos, SEO local, responsive mobile, livraison en 2 semaines",
+          "Site pro : tout le vitrine + formulaire de devis avancé, galerie réalisations avec filtres, pages par ville, blog pour le SEO, livraison en 3 semaines",
+          "Site complet : tout le pro + espace client, suivi de chantier en ligne, devis PDF automatique, livraison en 4 à 5 semaines",
           "Dans tous les cas : hébergement sur Vercel (rapide et fiable), nom de domaine configuré, formation à la mise à jour du contenu",
         ],
       },
@@ -2297,10 +2094,11 @@ export const articles: Article[] = [
       credit: "Image : Artlist",
     },
     service: "hotel",
-    title: "App mobile pour hôtel : guide complet 2026",
-    description: "Application mobile pour hôtel et hébergement : check-in digital, conciergerie, fidélité, room service. Fonctionnalités clés et tarifs 2026. Devis gratuit.",
+    title: "Application pour hôtel : fonctionnalités clés",
+    description:
+      "Application mobile pour hôtel, gîte ou camping : check-in digital, conciergerie, room service et réservation directe pour moins dépendre de Booking.",
     date: "2026-05-15",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Secteurs",
     sections: [
       {
@@ -2362,20 +2160,20 @@ export const articles: Article[] = [
           "Oaky (upsell & fidélité) : 150 à 400 €/mois selon le nombre de chambres (source : oaky.com, 2026)",
           "Benbria Loop : tarification sur devis, estimée entre 300 et 800 €/mois pour un hôtel indépendant",
           "Coût SaaS sur 3 ans : entre 7 200 € et 28 800 € — sans personnalisation et sans propriété de l'outil",
-          "App sur mesure BreizhApp : investissement unique entre 990 € et 3 000 € selon la taille — votre design, vos fonctionnalités, vos données",
+          "App sur mesure : un investissement unique adapté à la taille de l'établissement, avec votre design, vos fonctionnalités, vos données",
           "Avantage clé du sur mesure : vous possédez l'application et la base clients — aucune dépendance à un éditeur tiers",
         ],
       },
       {
         heading: "Formules adaptées à chaque type d'établissement",
         paragraphs: [
-          "Je conçois des applications adaptées à la taille et au budget de chaque hébergement :",
+          "Je conçois des applications adaptées à la taille de chaque hébergement. Mes tarifs sont affichés sur la page Application mobile du site :",
         ],
         list: [
-          "Maison d'hôtes / gîte (2 à 5 chambres) — à partir de 990 € : informations pratiques, messagerie directe, livre d'or digital, recommandations locales géolocalisées",
-          "Hôtel indépendant (10 à 30 chambres) — à partir de 1 800 € : check-in digital, conciergerie, room service, notifications push, réservation directe",
-          "Hôtel boutique ou résidence (30+ chambres) — à partir de 3 000 € : tout + programme de fidélité complet, clé digitale, tableau de bord multi-chambres, intégration PMS",
-          "Délai de livraison : 4 à 10 semaines selon la formule. Déploiement App Store et Google Play inclus.",
+          "Maison d'hôtes ou gîte (2 à 5 chambres) : informations pratiques, messagerie directe, livre d'or digital, recommandations locales géolocalisées",
+          "Hôtel indépendant (10 à 30 chambres) : check-in digital, conciergerie, room service, notifications push, réservation directe",
+          "Hôtel boutique ou résidence (30+ chambres) : tout + programme de fidélité complet, clé digitale, tableau de bord multi-chambres, intégration PMS",
+          "Délai de livraison : 4 à 10 semaines selon les fonctionnalités. Publication App Store et Google Play incluse.",
         ],
       },
       {
@@ -2400,7 +2198,7 @@ export const articles: Article[] = [
     title: "Développeur freelance à Quimper : web et mobile",
     description: "Développeur freelance à Quimper : applications mobiles iOS & Android, sites web et plateformes digitales sur mesure. Devis gratuit sous 48h, livraison en Bretagne.",
     date: "2026-05-16",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Local",
     sections: [
       {
@@ -2434,14 +2232,14 @@ export const articles: Article[] = [
         ],
       },
       {
-        heading: "Tarifs pour les entreprises de Quimper",
+        heading: "Tarifs et délais pour les entreprises de Quimper",
         paragraphs: [
-          "Mes tarifs sont transparents et identiques quelle que soit votre localisation en Bretagne :",
+          "Mes tarifs, affichés sur les pages services du site, sont identiques quelle que soit votre localisation en Bretagne. Côté délais :",
         ],
         list: [
-          "Site vitrine sur mesure : à partir de 490€ — livraison en 2 à 3 semaines",
-          "Application mobile iOS & Android : à partir de 790€ — livraison en 4 à 8 semaines",
-          "Plateforme digitale avec back-office : à partir de 2 000€ — livraison en 6 à 12 semaines",
+          "Site vitrine sur mesure : livraison en 2 à 3 semaines",
+          "Application mobile iOS & Android : livraison en 4 à 8 semaines",
+          "Plateforme digitale avec back-office : livraison en 6 à 12 semaines",
           "Devis gratuit et détaillé sous 48h pour tout projet",
           "Paiement en 2 fois : 30% à la commande, 70% à la livraison",
         ],
@@ -2477,7 +2275,7 @@ export const articles: Article[] = [
     title: "Développeur freelance à Rennes : web et mobile",
     description: "Développeur freelance à Rennes : applications mobiles iOS & Android, sites web et plateformes sur mesure. Basé en Bretagne, devis gratuit sous 48h.",
     date: "2026-05-16",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Local",
     sections: [
       {
@@ -2525,13 +2323,13 @@ export const articles: Article[] = [
       {
         heading: "Tarifs et délais",
         paragraphs: [
-          "Mes tarifs sont transparents, sans surprise :",
+          "Mes tarifs sont affichés sur les pages services du site, sans surprise. Côté délais :",
         ],
         list: [
-          "Site vitrine sur mesure : à partir de 490€ — livraison en 2 à 3 semaines",
-          "Site e-commerce sur mesure : à partir de 1 500€ — livraison en 4 à 6 semaines",
-          "Application mobile iOS & Android : à partir de 790€ — livraison en 4 à 8 semaines",
-          "Plateforme digitale avec back-office : à partir de 2 000€ — livraison en 6 à 12 semaines",
+          "Site vitrine sur mesure : livraison en 2 à 3 semaines",
+          "Site e-commerce sur mesure : livraison en 4 à 6 semaines",
+          "Application mobile iOS & Android : livraison en 4 à 8 semaines",
+          "Plateforme digitale avec back-office : livraison en 6 à 12 semaines",
           "Devis gratuit et détaillé sous 48h — paiement en 2 fois (30% à la commande)",
         ],
       },
@@ -2554,7 +2352,7 @@ export const articles: Article[] = [
     title: "Création site web à Brest : tarifs 2026",
     description: "Création site web à Brest : vitrine, e-commerce, plateforme sur mesure. Développeur freelance local, SEO optimisé. Devis gratuit sous 24h.",
     date: "2026-05-16",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Local",
     sections: [
       {
@@ -2582,11 +2380,11 @@ export const articles: Article[] = [
           "Je développe tous types de projets web sur mesure pour les entreprises brestoises :",
         ],
         list: [
-          "Site vitrine : présentation de votre activité, vos services, vos réalisations et un formulaire de contact — à partir de 490€",
-          "Site avec blog : vitrine + blog SEO pour attirer des clients via Google — à partir de 790€",
-          "Site e-commerce : boutique en ligne complète avec catalogue, panier et paiement Stripe — à partir de 1 500€",
-          "Plateforme web : espace client, back-office admin, outil de gestion — à partir de 2 000€",
-          "Landing page : page unique pour une offre ou une campagne marketing — à partir de 390€",
+          "Site vitrine : présentation de votre activité, vos services, vos réalisations et un formulaire de contact",
+          "Site avec blog : vitrine + blog SEO pour attirer des clients via Google",
+          "Site e-commerce : boutique en ligne complète avec catalogue, panier et paiement Stripe",
+          "Plateforme web : espace client, back-office admin, outil de gestion",
+          "Landing page : page unique pour une offre ou une campagne marketing",
         ],
       },
       {
@@ -2605,14 +2403,14 @@ export const articles: Article[] = [
       {
         heading: "Tarifs pour les entreprises brestoises",
         paragraphs: [
-          "Mes tarifs sont transparents, sans frais cachés ni abonnement mensuel obligatoire :",
+          "Mes tarifs sont affichés sur la page Site web du site, sans frais cachés ni abonnement mensuel obligatoire. Côté délais :",
         ],
         list: [
-          "Landing page — 390€ : une page, un objectif, un bouton d'action — idéal pour tester une offre",
-          "Site vitrine — 490€ : 5 pages, formulaire de contact, SEO local, responsive — livraison en 2 semaines",
-          "Site pro avec blog — 790€ : vitrine + blog, galerie réalisations, pages de ville — livraison en 3 semaines",
-          "E-commerce — à partir de 1 500€ : boutique complète, paiement Stripe, admin — livraison en 4 à 6 semaines",
-          "Plateforme — à partir de 2 000€ : espace client, back-office, API — livraison en 6 à 10 semaines",
+          "Landing page : une page, un objectif, un bouton d'action, idéal pour tester une offre",
+          "Site vitrine : 5 pages, formulaire de contact, SEO local, responsive, livraison en 2 semaines",
+          "Site pro avec blog : vitrine + blog, galerie réalisations, pages de ville, livraison en 3 semaines",
+          "E-commerce : boutique complète, paiement Stripe, admin, livraison en 4 à 6 semaines",
+          "Plateforme : espace client, back-office, API, livraison en 6 à 10 semaines",
         ],
       },
       {
@@ -2631,10 +2429,11 @@ export const articles: Article[] = [
       credit: "Image : Artlist",
     },
     service: "application-mobile",
-    title: "Développeur application mobile en Bretagne",
-    description: "Développeur application mobile en Bretagne : iOS & Android sur mesure, sites web, plateformes. Basé à Brest, Finistère. Devis gratuit sous 48h.",
+    title: "Développeur application mobile et web en Bretagne",
+    description:
+      "Création d'application mobile et web en Bretagne par un développeur basé à Brest : iOS, Android, web app métier. Finistère, Morbihan, Rennes. Devis gratuit sous 48h.",
     date: "2026-05-16",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Local",
     sections: [
       {
@@ -2679,17 +2478,19 @@ export const articles: Article[] = [
           "App hôtel / camping / gîte : réservation directe, conciergerie digitale, notifications — pour réduire la dépendance à Booking.com",
           "App artisan / prestataire : prise de rendez-vous, devis en ligne, suivi de chantier — pour les plombiers, électriciens, menuisiers du Finistère",
           "App nautisme / club de voile : inscription, réservation de bateaux, actualités du club, gestion des licences",
+          "App tourisme et loisirs : billetterie, guide digital, réservation d'activités pour les gîtes, campings et activités outdoor",
+          "App association ou collectivité : informations, agenda, signalements",
         ],
       },
       {
         heading: "Tarifs et délais",
         paragraphs: [
-          "Mes tarifs sont identiques pour toute la Bretagne, transparents et sans surprise :",
+          "Mes tarifs, affichés sur les pages services du site, sont identiques pour toute la Bretagne. Côté délais :",
         ],
         list: [
-          "Site vitrine sur mesure : à partir de 490€ — livraison en 2 à 3 semaines",
-          "Application mobile iOS & Android : à partir de 790€ — livraison en 4 à 8 semaines",
-          "Plateforme digitale avec back-office : à partir de 2 000€ — livraison en 6 à 12 semaines",
+          "Site vitrine sur mesure : livraison en 2 à 3 semaines",
+          "Application mobile iOS & Android : livraison en 4 à 8 semaines",
+          "Plateforme digitale avec back-office : livraison en 6 à 12 semaines",
           "Devis gratuit et détaillé sous 48h — paiement en 2 fois (30% à la commande, 70% à la livraison)",
         ],
       },
@@ -2700,99 +2501,14 @@ export const articles: Article[] = [
           "Basé à Brest, je connais la Bretagne et ses besoins. Parlons de votre projet.",
         ],
       },
-    ],
-  },
-  {
-    slug: "creer-application-mobile-sans-coder",
-    image: {
-      src: "/blog/creer-application-mobile-sans-coder.jpg",
-      alt: "Smartphone Android posé sur un bureau lumineux affichant un écran d'accueil, carnet de croquis et stylo à côté",
-      credit: "Image : Artlist",
-    },
-    service: "application-mobile",
-    title: "App mobile sans coder : guide honnête 2026",
-    description: "No-code, low-code ou développeur ? Le guide honnête pour créer votre application mobile sans savoir coder — limites, coûts et quand faire appel à un pro.",
-    date: "2026-05-18",
-    lastModified: "2026-08-30",
-    category: "Guides",
-    sections: [
       {
-        paragraphs: [
-          "Vous avez une idée d'application mobile mais vous ne savez pas coder. Bonne nouvelle : il existe aujourd'hui plusieurs façons de créer une app sans écrire une seule ligne de code. Mauvaise nouvelle : chacune a des limites que les outils no-code ne vous disent pas toujours clairement.",
-          "Ce guide fait le tour des options disponibles en 2026, avec leurs avantages, leurs limites réelles et le moment où il devient plus intelligent de confier le projet à un développeur.",
-        ],
-      },
-      {
-        heading: "Option 1 : les constructeurs d'apps no-code",
-        paragraphs: [
-          "Des plateformes comme Glide, Adalo, Bravo Studio ou AppGyver permettent de créer une application mobile sans code, en assemblant des blocs visuels.",
-        ],
+        heading: "FAQ : développeur application mobile en Bretagne",
         list: [
-          "Glide : transforme une feuille Google Sheets en application — parfait pour un outil interne simple ou un MVP rapide à tester",
-          "Adalo : interface drag-and-drop pour créer des apps iOS et Android avec une base de données intégrée",
-          "AppGyver (SAP Build) : plus puissant, permet de créer des apps complexes sans code — courbe d'apprentissage plus élevée",
-          "Bravo Studio : transforme des maquettes Figma en application mobile — idéal si vous avez déjà un design",
-          "Avantage principal : lancer un prototype en quelques jours sans budget de développement",
-          "Limite principale : performances limitées, personnalisation restreinte, abonnement mensuel permanent",
-        ],
-      },
-      {
-        heading: "Option 2 : les plateformes low-code",
-        paragraphs: [
-          "Le low-code se situe entre le no-code et le développement traditionnel. Des plateformes comme Bubble, FlutterFlow ou Thunkable permettent d'aller plus loin avec un minimum de logique.",
-        ],
-        list: [
-          "Bubble : la référence pour créer des web apps complexes sans coder — marketplace, SaaS, espace client multi-rôles",
-          "FlutterFlow : génère du code Flutter exportable, plus proche du vrai développement",
-          "Thunkable : spécialisé dans les apps mobiles simples, bon pour les projets éducatifs ou associatifs",
-          "Avantage : fonctionnalités plus avancées qu'un pur no-code, possibilité d'intégrer des APIs",
-          "Limite : coût d'abonnement entre 30€ et 350€/mois, vous ne possédez pas votre app",
-        ],
-      },
-      {
-        heading: "Ce que le no-code ne peut pas faire",
-        paragraphs: [
-          "Avant de vous lancer sur une plateforme no-code, voici les cas où elle atteindra ses limites — parfois très vite :",
-        ],
-        list: [
-          "Accès aux fonctionnalités natives du téléphone : capteur de proximité, Bluetooth, NFC, Face ID — souvent impossible ou très limité en no-code",
-          "Performances : une app no-code est systématiquement plus lente qu'une app développée sur mesure — vos utilisateurs le ressentent",
-          "Publication App Store : Apple est plus strict avec les apps générées automatiquement, les rejets sont fréquents",
-          "Évolutivité : dès que votre base d'utilisateurs grandit, les performances se dégradent et les coûts explosent",
-          "Personnalisation avancée : chaque besoin spécifique à votre métier devient un contournement complexe",
-          "Propriété du code : sur la plupart des plateformes no-code, vous ne pouvez pas exporter votre application — si la plateforme ferme, vous repartez de zéro",
-        ],
-      },
-      {
-        heading: "Quand le no-code est le bon choix",
-        paragraphs: [
-          "Le no-code n'est pas une mauvaise option — il est simplement mal adapté si on l'utilise au mauvais moment :",
-        ],
-        list: [
-          "Valider une idée rapidement : créez un prototype no-code pour tester votre concept avec de vrais utilisateurs avant d'investir dans le développement",
-          "Budget très limité au démarrage : si vous n'avez pas encore de revenus, un outil no-code permet de commencer sans risque financier",
-          "Besoin simple et stable : si votre app ne fera jamais que 3 ou 4 choses basiques, le no-code peut suffire indéfiniment",
-          "Usage interne : un outil pour votre équipe, pas pour vos clients — les exigences de performance et de design sont moins critiques",
-        ],
-      },
-      {
-        heading: "Quand passer à un développeur sur mesure",
-        paragraphs: [
-          "Il y a un moment précis où faire appel à un développeur devient la décision la plus économique et la plus stratégique :",
-        ],
-        list: [
-          "Votre prototype no-code valide que l'idée fonctionne — il est temps de construire la vraie version",
-          "Vous avez des fonctionnalités spécifiques à votre métier que le no-code ne couvre pas",
-          "Vos utilisateurs se plaignent de la lenteur ou de bugs sur votre app actuelle",
-          "Votre abonnement no-code dépasse 50-100€/mois — vous approchez du seuil où le développement sur mesure est moins cher sur 2-3 ans",
-          "Vous voulez posséder votre application et ne plus dépendre d'une plateforme tierce",
-        ],
-      },
-      {
-        heading: "Le bon chemin pour créer votre app mobile",
-        paragraphs: [
-          "La stratégie la plus efficace en 2026 : commencez par décrire votre projet à un développeur avant même de vous lancer sur une plateforme no-code. Un devis gratuit vous donnera une idée précise du budget réel — vous pourrez alors comparer avec les coûts no-code sur 2-3 ans et choisir en connaissance de cause.",
-          "Je suis développeur freelance à Brest, spécialisé en applications mobiles iOS & Android sur mesure. Je propose un devis gratuit sous 48h — décrivez-moi votre idée, je vous dis honnêtement si le no-code suffit ou si un développement sur mesure est plus adapté à votre situation.",
+          "Peut-on se rencontrer ? Oui. Je suis basé à Brest et je me déplace dans le Finistère (Quimper, Morlaix, Landerneau) pour un premier rendez-vous. Pour les autres départements bretons, je privilégie la visio.",
+          "Travaillez-vous uniquement en Bretagne ? Non. Je travaille avec des clients de toute la France, mais la proximité avec les entreprises bretonnes facilite les échanges.",
+          "Les conditions sont-elles les mêmes à Rennes et à Brest ? Oui, mes tarifs et mes délais sont identiques quelle que soit la localisation de votre entreprise.",
+          "Mon app peut-elle être en breton ? Oui, le breton peut être ajouté comme langue secondaire, c'est techniquement simple à intégrer.",
+          "Travaillez-vous avec les associations et collectivités ? Oui, je réalise aussi des applications d'information, d'agenda ou de signalement pour les structures publiques et associatives.",
         ],
       },
     ],
@@ -2808,7 +2524,7 @@ export const articles: Article[] = [
     title: "App mobile prise de RDV : guide complet 2026",
     description: "Application mobile de prise de rendez-vous en ligne : fonctionnalités, coûts, alternatives à Doctolib et Planity. Guide complet pour professionnels en 2026.",
     date: "2026-05-18",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Guides",
     sections: [
       {
@@ -2854,8 +2570,8 @@ export const articles: Article[] = [
         list: [
           "Planity : abonnement SaaS récurrent sur devis — vous payez sans jamais posséder l'outil",
           "Doctolib (139€/mois) : 5 004€ sur 3 ans",
-          "App sur mesure BreizhApp : investissement unique entre 790€ et 1 500€ — zéro abonnement, zéro commission, vos données vous appartiennent",
-          "Dès la 2ème année, une app sur mesure est moins chère que n'importe quelle solution SaaS",
+          "App sur mesure : un investissement unique, zéro abonnement, zéro commission, vos données vous appartiennent",
+          "Sur quelques années, une app sur mesure revient moins cher qu'un abonnement qui ne s'arrête jamais",
           "Bonus : votre app est aux couleurs de votre marque, pas celle de Planity ou Doctolib",
         ],
       },
@@ -2877,99 +2593,6 @@ export const articles: Article[] = [
         paragraphs: [
           "Je développe des applications mobiles de prise de rendez-vous pour les professionnels indépendants et les petites équipes. Chaque app est conçue selon votre métier — pas un outil générique que vous partagez avec des milliers d'autres professionnels.",
           "Devis gratuit sous 48h. Décrivez-moi votre activité, le nombre de praticiens et vos besoins spécifiques — je vous propose une solution adaptée à votre budget, avec un tarif transparent et un délai de livraison réaliste.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "application-mobile-fidelite-clients",
-    image: {
-      src: "/blog/application-mobile-fidelite-clients.jpg",
-      alt: "Barista préparant un espresso au comptoir d'un café, smartphone affichant une app de carte de fidélité posé sur le comptoir",
-      credit: "Image : Artlist",
-    },
-    service: "application-mobile",
-    title: "App fidélité clients : boostez vos ventes 2026",
-    description: "App fidélité clients : carte de points, offres exclusives, notifications push. Fidélisez vos clients sans commission à une plateforme tierce. Devis gratuit.",
-    date: "2026-05-18",
-    lastModified: "2026-08-30",
-    category: "Guides",
-    sections: [
-      {
-        paragraphs: [
-          "Acquérir un nouveau client coûte 5 à 7 fois plus cher que d'en fidéliser un existant. Pourtant, la plupart des commerces et restaurants n'ont pas de programme de fidélité structuré — ou utilisent des cartes papier qui finissent au fond d'un sac.",
-          "Une application mobile de fidélité change tout : vos clients ont leur carte sur leur téléphone, vous leur envoyez des offres au bon moment, et vous construisez une relation directe sans payer de commission à une plateforme.",
-        ],
-      },
-      {
-        heading: "Pourquoi une app de fidélité plutôt qu'une carte papier",
-        paragraphs: [
-          "La carte de fidélité papier a deux problèmes majeurs : elle se perd, et vous ne pouvez pas communiquer avec vos clients entre deux visites. Une application mobile résout les deux :",
-        ],
-        list: [
-          "Toujours disponible : votre client a son téléphone sur lui — pas besoin de fouiller dans son portefeuille",
-          "Notifications push : envoyez une offre le lundi matin quand votre restaurant est vide, ou le vendredi soir pour remplir les derniers créneaux",
-          "Données client : vous savez exactement combien de fois chaque client vient, ce qu'il achète, et depuis combien de temps vous ne l'avez pas vu",
-          "Gamification : les points, niveaux et récompenses créent un engagement émotionnel que la carte papier ne peut pas reproduire",
-          "Zéro perte : un client qui change de téléphone retrouve son compte — ses points ne disparaissent pas",
-        ],
-      },
-      {
-        heading: "Les fonctionnalités d'une app de fidélité efficace",
-        paragraphs: [
-          "Voici ce qu'une bonne application de fidélité doit proposer à vos clients :",
-        ],
-        list: [
-          "Carte de points digitale : accumulation automatique à chaque achat ou visite, avec QR code ou NFC pour valider en caisse",
-          "Niveaux de fidélité : Bronze, Argent, Or — les clients progressent et débloquent des avantages croissants",
-          "Offres et réductions : coupons exclusifs envoyés par notification push, valables uniquement via l'app",
-          "Récompenses à la carte : vos clients choisissent leur récompense parmi un catalogue (boisson offerte, réduction, produit gratuit)",
-          "Historique complet : chaque client voit ses points, ses visites et ses avantages débloqués",
-          "Parrainage : vos clients fidèles recrutent leurs amis — chaque parrainage récompensé génère de nouveaux clients sans budget pub",
-          "Anniversaires : offre automatique le jour de l'anniversaire du client — le geste coûte peu, l'impact est fort",
-        ],
-      },
-      {
-        heading: "Ce que ça vous apporte côté gestion",
-        paragraphs: [
-          "Du côté de l'admin, vous disposez d'un tableau de bord complet :",
-        ],
-        list: [
-          "Segmentation : identifiez vos clients VIP, ceux qui ne sont plus venus depuis 3 mois, ceux qui ont beaucoup de points à utiliser",
-          "Campagnes ciblées : envoyez une notification uniquement aux clients qui ont visité plus de 5 fois — pas à tout le monde",
-          "Statistiques de fidélité : taux de rétention, fréquence de visite, panier moyen des clients fidèles vs nouveaux",
-          "Export des données : vos clients vous appartiennent — contrairement aux plateformes tierces qui gardent les données",
-        ],
-      },
-      {
-        heading: "Les plateformes de fidélité du marché et leurs limites",
-        paragraphs: [
-          "Des solutions comme Fidall, Stamp Me ou LoyaltyLion existent. Voici pourquoi elles ne sont pas toujours le meilleur choix :",
-        ],
-        list: [
-          "Coût récurrent : entre 30€ et 200€/mois selon la plateforme et le nombre de clients",
-          "Votre programme ressemble à celui de vos concurrents : même interface, même expérience — impossible de vous différencier",
-          "Données partagées : certaines plateformes utilisent vos données clients à des fins marketing tierces",
-          "Personnalisation limitée : impossible d'adapter les règles de fidélité exactement à votre fonctionnement",
-          "App sur mesure : coût unique, vos couleurs, vos règles, vos données — et vos clients téléchargent VOTRE app, pas celle d'une plateforme générique",
-        ],
-      },
-      {
-        heading: "Intégrer la fidélité à votre app existante",
-        paragraphs: [
-          "Si vous avez déjà une application mobile — ou si vous en faites créer une — le programme de fidélité peut être intégré directement. Pas besoin de deux apps séparées :",
-        ],
-        list: [
-          "App restaurant : commande en ligne + programme de fidélité dans la même app — vos clients accumulent des points à chaque commande",
-          "App commerce : catalogue + panier + points de fidélité — l'achat et la récompense se font au même endroit",
-          "App salon de coiffure : réservation en ligne + carte de points + historique des prestations",
-        ],
-      },
-      {
-        heading: "Mettez en place votre programme de fidélité sur mesure",
-        paragraphs: [
-          "Je développe des applications mobiles avec programme de fidélité intégré pour les commerces, restaurants et prestataires de service. Chaque solution est conçue selon votre activité et vos objectifs — pas un template générique.",
-          "Devis gratuit sous 48h. Décrivez-moi votre commerce, votre clientèle et ce que vous souhaitez récompenser — je vous propose une app de fidélité adaptée à votre budget et à votre fonctionnement.",
         ],
       },
     ],
@@ -3073,10 +2696,10 @@ export const articles: Article[] = [
       credit: "Image : Artlist",
     },
     service: "application-mobile",
-    title: "PWA vs application native : que choisir en 2026 ?",
+    title: "PWA vs native : que choisir en 2026 ?",
     description: "Progressive Web App ou application native iOS/Android ? Performances, coûts, App Store, offline : le comparatif complet pour choisir la bonne solution en 2026.",
     date: "2026-05-18",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Comparatifs",
     sections: [
       {
@@ -3171,10 +2794,11 @@ export const articles: Article[] = [
       credit: "Image : Artlist",
     },
     service: "coiffeur",
-    title: "Application mobile coiffeur : réservation & fidélité",
-    description: "App iOS & Android pour salon de coiffure : réservation 24h/24, programme de fidélité, notifications push. L'alternative à Planity. Freelance à Brest.",
+    title: "Application coiffeur : fini les rendez-vous manqués",
+    description:
+      "Une application à votre nom pour votre salon de coiffure : prise de RDV 24h/24, rappels anti no-show, fidélité, notifications push. L'alternative à Planity.",
     date: "2026-06-01",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Guides",
     sections: [
       {
@@ -3207,7 +2831,7 @@ export const articles: Article[] = [
           "Programme de fidélité 100 % personnalisable : tampons numériques, remises automatiques, offres d'anniversaire — impossible à configurer librement sur Planity",
           "Notifications push illimitées et gratuites : alerter toute votre base pour une promotion ne coûte rien — contrairement aux SMS Planity facturés à l'unité (0,06 à 0,10 €/SMS)",
           "Vos données clients vous appartiennent : noms, emails, historique de visites, préférences — hébergés sur votre propre infrastructure, non revendus à des tiers",
-          "Coût prévisible : 49 €/mois fixe, jamais plus — Planity a augmenté ses tarifs deux fois depuis 2022",
+          "Coût prévisible : pas d'abonnement qui augmente d'année en année (Planity a augmenté ses tarifs deux fois depuis 2022)",
           "Zéro dépendance : si Planity ferme ou change ses CGU, vous n'avez rien à craindre",
         ],
       },
@@ -3225,6 +2849,21 @@ export const articles: Article[] = [
           "Messagerie directe : échangez avec vos clientes (photos de coupe souhaitée, questions) sans passer par WhatsApp",
           "Panel admin web : gérez vos créneaux, vos praticiens et vos statistiques depuis un tableau de bord",
           "Paiement d'acompte en ligne (option) : réduire les annulations de dernière minute en demandant 20 % à la réservation",
+          "Vente de produits : proposez vos soins et produits capillaires directement dans l'app",
+          "Avis clients : collectez un avis après chaque prestation pour alimenter votre réputation Google",
+        ],
+      },
+      {
+        heading: "Comment se passe la création de l'app de votre salon ?",
+        paragraphs: [
+          "Je vous accompagne de A à Z, même si vous n'avez aucune connaissance technique :",
+        ],
+        list: [
+          "Étape 1 : on définit ensemble vos prestations, vos horaires, vos coiffeurs et vos besoins spécifiques",
+          "Étape 2 : je vous montre une maquette de l'app avant de coder, vous validez le design",
+          "Étape 3 : je développe l'app et vous la présente en vidéo à chaque étape importante",
+          "Étape 4 : publication sur l'App Store et Google Play, votre app est disponible pour vos clientes",
+          "Étape 5 : prise en main de l'espace admin, 1h suffit pour gérer vos réservations en autonomie",
         ],
       },
       {
@@ -3235,15 +2874,16 @@ export const articles: Article[] = [
         list: [
           "Planity Pro : tarif non publié, communiqué sur devis uniquement — augmentations tarifaires signalées par de nombreux salons en 2024 et 2025",
           "Treatwell Connect : environ 50 à 150 €/mois selon la taille du salon + commission sur réservations apportées par la marketplace",
-          "App BreizhApp sur mesure : 490 € (Starter) ou 600 € (Premium) + 49 €/mois — coût total sur 2 ans : 1 666 € à 1 776 €",
+          "App sur mesure : un coût de création unique + hébergement, sans commission ni hausse d'abonnement imposée",
           "Avantage décisif : avec l'app sur mesure, vous possédez l'outil et vos données — avec Planity/Treatwell, vous louez un accès",
         ],
       },
       {
-        heading: "Tarifs pour un salon de coiffure",
+        heading: "Ce que comprend l'app de votre salon",
         list: [
-          "App Starter — 490 € + 49 €/mois : réservation en ligne, galerie avant/après, catalogue prestations, rappels push, panel admin, iOS & Android",
-          "App Premium — 600 € + 49 €/mois : tout le Starter + paiement d'acompte Stripe, programme de fidélité numérique complet, messagerie client",
+          "Les essentiels : réservation en ligne, galerie avant/après, catalogue prestations, rappels push, panel admin, iOS & Android",
+          "En option : paiement d'acompte Stripe, programme de fidélité numérique complet, messagerie client",
+          "Mes tarifs sont affichés sur la page Coiffeur & salon du site, devis gratuit sous 24h",
           "Délai de livraison : 3 à 5 semaines — déploiement App Store et Google Play inclus",
         ],
       },
@@ -3251,7 +2891,7 @@ export const articles: Article[] = [
         heading: "FAQ — Application mobile salon de coiffure",
         list: [
           "Une app peut-elle vraiment remplacer Planity ? Pour la prise de rendez-vous et la fidélisation, oui. L'app BreizhApp est à votre nom, vos données vous appartiennent, et les notifications push sont illimitées — des avantages impossibles avec Planity.",
-          "Combien coûte l'app par rapport à Planity sur 2 ans ? BreizhApp : 490 € + 49 €/mois = environ 1 666 € sur 2 ans. Planity ne publie pas ses tarifs mais plusieurs salons rapportent des coûts entre 80 et 200 €/mois — soit 1 920 € à 4 800 € sur 2 ans.",
+          "Combien coûte l'app par rapport à Planity ? Planity ne publie pas ses tarifs et se paie chaque mois, sans fin. L'app sur mesure est un investissement unique + hébergement, et elle vous appartient. Mes tarifs sont affichés sur la page Coiffeur & salon.",
           "Mes clientes devront-elles télécharger une nouvelle app ? Oui — elles recherchent le nom de votre salon sur l'App Store ou Google Play. Un QR code affiché en salon et une story Instagram suffisent généralement à convertir 60 à 70 % de votre base en 30 jours.",
           "L'app gère-t-elle plusieurs coiffeurs ? Oui. Le panel admin permet de gérer plusieurs praticiens, leurs agendas respectifs et leurs statistiques individuelles.",
           "L'app est-elle conforme au RGPD ? Oui. Les données sont hébergées en Europe (Firebase EU) et vous restez propriétaire de votre base clients. Une politique de confidentialité et un bandeau de consentement sont inclus.",
@@ -3271,11 +2911,12 @@ export const articles: Article[] = [
     title: "Fidéliser ses clients avec une app mobile : guide",
     description: "Programme de fidélité numérique via une application mobile : tampons virtuels, push ciblées, offres personnalisées. Guide complet pour commerçants.",
     date: "2026-06-01",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Guides",
     sections: [
       {
         paragraphs: [
+          "Acquérir un nouveau client coûte 5 à 7 fois plus cher que d'en fidéliser un existant. Pourtant, la plupart des commerces et restaurants n'ont pas de programme de fidélité structuré, ou utilisent des cartes papier qui finissent au fond d'un sac.",
           "Une application mobile multiplie par 2 à 3 la fréquence de visite de vos clients fidèles grâce aux notifications push et aux programmes de points numériques. Voici comment l'implémenter concrètement pour votre commerce.",
         ],
       },
@@ -3305,336 +2946,53 @@ export const articles: Article[] = [
         ],
       },
       {
+        heading: "Ce que ça vous apporte côté gestion",
+        paragraphs: [
+          "Du côté de l'admin, vous disposez d'un tableau de bord complet :",
+        ],
+        list: [
+          "Segmentation : identifiez vos clients VIP, ceux qui ne sont plus venus depuis 3 mois, ceux qui ont beaucoup de points à utiliser",
+          "Campagnes ciblées : envoyez une notification uniquement aux clients venus plus de 5 fois, pas à tout le monde",
+          "Statistiques de fidélité : taux de rétention, fréquence de visite, panier moyen des clients fidèles comparé aux nouveaux",
+          "Export des données : vos clients vous appartiennent, contrairement aux plateformes tierces qui gardent les données",
+        ],
+      },
+      {
+        heading: "Les plateformes de fidélité du marché et leurs limites",
+        paragraphs: [
+          "Des solutions comme Fidall, Stamp Me ou LoyaltyLion existent. Voici pourquoi elles ne sont pas toujours le meilleur choix :",
+        ],
+        list: [
+          "Coût récurrent : un abonnement mensuel qui augmente souvent avec le nombre de clients",
+          "Votre programme ressemble à celui de vos concurrents : même interface, même expérience, difficile de vous différencier",
+          "Données partagées : certaines plateformes utilisent vos données clients à des fins marketing tierces",
+          "Personnalisation limitée : impossible d'adapter les règles de fidélité exactement à votre fonctionnement",
+          "App sur mesure : vos couleurs, vos règles, vos données, et vos clients téléchargent VOTRE app, pas celle d'une plateforme générique",
+        ],
+      },
+      {
+        heading: "Intégrer la fidélité à votre app",
+        paragraphs: [
+          "Le programme de fidélité s'intègre directement dans votre application mobile, pas besoin de deux apps séparées :",
+        ],
+        list: [
+          "App restaurant : commande en ligne et programme de fidélité dans la même app, vos clients cumulent des points à chaque commande",
+          "App commerce : catalogue, panier et points de fidélité, l'achat et la récompense se font au même endroit",
+          "App salon de coiffure : réservation en ligne, carte de points et historique des prestations",
+        ],
+      },
+      {
         heading: "FAQ — Fidélité client par application mobile",
         list: [
           "Puis-je migrer ma base clients de Planity ou d'une carte papier vers l'app ? Oui. Les clients existants peuvent créer un compte dans l'app et retrouver leur historique si les données sont transférables.",
           "L'app de fidélité fonctionne-t-elle sans internet ? Le solde de points est visible hors ligne. Les transactions sont synchronisées à la reconnexion.",
           "Est-ce que les notifications push sont vraiment efficaces ? Oui. Taux d'ouverture moyen : 7 à 10× supérieur aux emails. Une notification push bien ciblée génère des visites le jour même.",
-          "Combien coûte l'ajout d'un programme de fidélité dans l'app ? Inclus dans l'App Premium à 600€. Disponible aussi en option sur l'App Starter.",
+          "Combien coûte l'ajout d'un programme de fidélité dans l'app ? Il peut être intégré dès la création de l'app ou ajouté ensuite. Le devis gratuit détaille son coût selon les mécaniques choisies (tampons, points, parrainage).",
         ],
       },
     ],
   },
 
-  {
-    slug: "creation-application-mobile-bretagne",
-    image: {
-      src: "/blog/creation-application-mobile-bretagne.jpg",
-      alt: "Main tenant un smartphone devant un paysage côtier breton avec rochers de granit et mer en arrière-plan flou",
-      credit: "Image : Artlist",
-    },
-    service: "application-mobile",
-    title: "Création application mobile en Bretagne",
-    description:
-      "Création d'application mobile en Bretagne : développeur React Native freelance à Brest. App iOS & Android sur mesure pour les entreprises bretonnes. Devis 24h.",
-    date: "2026-06-13",
-    lastModified: "2026-08-30",
-    category: "Local",
-    sections: [
-      {
-        paragraphs: [
-          "Vous cherchez à créer une application mobile en Bretagne sans passer par une agence parisienne hors budget ? Je suis développeur mobile freelance basé à Brest et je travaille avec des TPE, artisans, restaurateurs et porteurs de projets de toute la Bretagne — Finistère, Côtes-d'Armor, Morbihan, Ille-et-Vilaine.",
-        ],
-      },
-      {
-        heading: "Création d'app mobile en Bretagne : les secteurs que je couvre",
-        list: [
-          "Restaurateurs et hôteliers bretons : commande en ligne, réservation, menu digital, fidélité clients",
-          "Artisans et commerçants : catalogue produits, devis en ligne, prise de rendez-vous",
-          "Agriculture et circuits courts : paniers hebdomadaires, abonnements, livraison locale",
-          "Tourisme et loisirs bretons : billetterie, guide digital, réservation d'activités",
-          "Startups et porteurs de projets : MVP mobile pour valider une idée sur le marché breton",
-          "Associations et collectivités : app d'information, agenda, signalement",
-        ],
-      },
-      {
-        heading: "Pourquoi travailler avec un développeur mobile breton ?",
-        list: [
-          "Même fuseau horaire, même langue, même culture — les échanges sont directs et efficaces",
-          "Je connais les spécificités du marché breton : saisonnalité, circuits courts, tourisme côtier",
-          "Disponible pour se rencontrer à Brest, Quimper, Rennes ou Vannes selon votre localisation",
-          "Tarifs sans marges d'agence : dès 490€ pour une app iOS & Android complète",
-          "Réactivité locale : je réponds sous 24h et je m'adapte aux contraintes des TPE bretonnes",
-        ],
-      },
-      {
-        heading: "Tarifs pour les entreprises bretonnes",
-        list: [
-          "App Starter à 490€ + 49€/mois : idéale pour les artisans, commerçants et restaurateurs qui veulent une présence mobile sérieuse",
-          "App Premium à 600€ + 49€/mois : pour les commerces qui veulent vendre en ligne, gérer les réservations et fidéliser leurs clients",
-          "App Boutique à 0€ d'installation : pour les épiceries, maraîchers et commerces de bouche — 12% sur les ventes, zéro investissement initial",
-        ],
-      },
-      {
-        heading: "Villes bretonnes où j'interviens",
-        list: [
-          "Brest et le Finistère : Quimper, Morlaix, Landerneau, Douarnenez, Concarneau",
-          "Rennes et l'Ille-et-Vilaine : Saint-Malo, Fougères, Vitré, Redon",
-          "Vannes et le Morbihan : Lorient, Pontivy, Auray, La Baule",
-          "Saint-Brieuc et les Côtes-d'Armor : Lannion, Dinan, Guingamp",
-          "Toute la Bretagne : le travail se fait principalement en distanciel, la localisation ne change rien",
-        ],
-      },
-      {
-        heading: "FAQ — Création application mobile Bretagne",
-        list: [
-          "Travaillez-vous uniquement en Bretagne ? Non. Je travaille avec des clients de toute la France — mais ma proximité avec les entreprises bretonnes est un vrai avantage pour les échanges.",
-          "Peut-on se rencontrer ? Oui. Je suis basé à Brest et je peux me déplacer dans le Finistère. Pour les autres départements bretons, je privilégie la visio.",
-          "Les tarifs sont-ils les mêmes pour une entreprise rennaise et brestoise ? Oui, mes tarifs sont identiques quelle que soit la localisation de votre entreprise.",
-          "Combien de temps pour créer mon app ? De 2 semaines pour une app simple à 5 semaines pour une app avec paiement, admin et notifications.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "developpeur-application-mobile-finistere",
-    image: {
-      src: "/blog/developpeur-application-mobile-finistere.jpg",
-      alt: "Ordinateur portable et smartphone posés sur un rocher, falaises de la Pointe du Raz et phare au coucher du soleil en arrière-plan flou",
-      credit: "Image : Artlist",
-    },
-    service: "application-mobile",
-    title: "Développeur app mobile Finistère — Brest, Quimper",
-    description:
-      "Développeur application mobile dans le Finistère : Brest, Quimper, Morlaix. App iOS & Android sur mesure. Freelance local, devis gratuit sous 24h.",
-    date: "2026-06-13",
-    lastModified: "2026-08-30",
-    category: "Local",
-    sections: [
-      {
-        paragraphs: [
-          "Vous êtes dans le Finistère et cherchez un développeur pour créer votre application mobile ? Basé à Brest, je couvre l'ensemble du département — de Quimper à Morlaix, de Brest à Concarneau — pour la création d'applications iOS & Android sur mesure.",
-        ],
-      },
-      {
-        heading: "Développeur app mobile dans tout le Finistère",
-        list: [
-          "Brest et Brest Métropole : disponible pour des réunions en présentiel ou en visio",
-          "Quimper et le Pays Glazik : artisans, commerçants du centre-ville, restaurateurs",
-          "Morlaix et le Pays de Morlaix : TPE, tourisme, agriculture",
-          "Concarneau, Douarnenez, Audierne : pêche, tourisme côtier, commerces locaux",
-          "Landerneau, Landivisiau : industrie, agroalimentaire, PME locales",
-          "Tout le Finistère Nord et Sud : je me déplace ou travaille en remote selon votre préférence",
-        ],
-      },
-      {
-        heading: "Ce que je développe pour les entreprises du Finistère",
-        list: [
-          "App de commande en ligne pour les restaurants et pizzerias : menu, Stripe, suivi de commande",
-          "Application de réservation pour les coiffeurs, instituts et prestataires",
-          "App de paniers et abonnements pour les maraîchers et producteurs locaux",
-          "Application catalogue et devis pour les artisans du bâtiment et du nautisme",
-          "App de fidélité et programme de points pour les commerces indépendants",
-          "Application touristique pour les gîtes, campings et activités outdoor en Finistère",
-        ],
-      },
-      {
-        heading: "Mes tarifs pour les entreprises finistériennes",
-        list: [
-          "App Starter à 490€ + 49€/mois : app iOS & Android, design, contenu dynamique, déploiement stores",
-          "App Premium à 600€ + 49€/mois : paiement Stripe, notifications push, panel admin",
-          "App Boutique à 0€ d'installation : 12% de commission sur les ventes — adapté aux producteurs et restaurateurs",
-        ],
-      },
-      {
-        heading: "FAQ — Développeur application mobile Finistère",
-        list: [
-          "Vous déplacez-vous à Quimper ou Morlaix ? Oui, je peux me déplacer dans le Finistère pour un premier rendez-vous. La suite du projet se passe généralement en visio.",
-          "Travaillez-vous avec des associations et collectivités du Finistère ? Oui, je propose des tarifs adaptés pour les associations et structures publiques.",
-          "Mon app sera-t-elle disponible en breton ? Oui, la langue peut être ajoutée comme option — le breton comme langue secondaire est techniquement simple à intégrer.",
-          "Quel est votre délai de réponse pour un devis ? Sous 24h, souvent le jour même. Le devis est gratuit et sans engagement.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "j-ai-une-idee-d-application-mobile",
-    image: {
-      src: "/blog/j-ai-une-idee-d-application-mobile.jpg",
-      alt: "Personne notant une idée d'application dans un carnet, à côté d'un smartphone et d'un café, café animé en arrière-plan flou",
-      credit: "Image : Artlist",
-    },
-    service: "application-mobile",
-    title: "J'ai une idée d'application mobile : par où commencer ?",
-    description:
-      "Vous avez une idée d'app mobile mais vous ne savez pas comment la concrétiser ? Ce guide vous explique les étapes, les coûts et comment trouver le bon développeur.",
-    date: "2026-06-13",
-    lastModified: "2026-08-30",
-    category: "Guides",
-    sections: [
-      {
-        paragraphs: [
-          "Vous avez une idée d'application mobile. Peut-être une solution à un problème que vous vivez tous les jours, une idée de business, ou un outil qui manque dans votre secteur. La bonne nouvelle : c'est exactement comme ça que naissent les meilleures apps. La question, c'est : par où commencer ?",
-          "Ce guide vous accompagne pas à pas, de l'idée brute jusqu'à la mise en ligne sur l'App Store et Google Play.",
-        ],
-      },
-      {
-        heading: "Étape 1 : formuler votre idée clairement",
-        paragraphs: [
-          "Avant de parler à un développeur, vous devez répondre à trois questions simples :",
-        ],
-        list: [
-          "À quel problème mon app répond-elle ? Plus c'est précis, mieux c'est — une app qui fait tout fait généralement tout mal",
-          "Qui sont mes utilisateurs ? Un restaurateur qui gère ses commandes ? Des clients qui veulent commander en ligne ? Les deux sont des apps différentes",
-          "Quelle est la fonctionnalité principale ? La règle du \"un seul job\" : une app qui fait une chose très bien vaut mieux qu'une app qui fait dix choses moyennement",
-          "Existe-t-il déjà quelque chose de similaire ? Si oui, c'est une bonne nouvelle — ça prouve qu'il y a un marché. Votre différenciation sera votre avantage",
-        ],
-      },
-      {
-        heading: "Étape 2 : estimer le coût de votre application mobile",
-        paragraphs: [
-          "Le coût d'une application mobile dépend directement de sa complexité. En tant que développeur mobile freelance à Brest, voici les tarifs réels que je pratique :",
-        ],
-        list: [
-          "App Starter à 490€ : app iOS & Android avec design sur mesure, authentification, contenu dynamique — livraison en 2-3 semaines",
-          "App Premium à 600€ : tout le Starter + paiement Stripe, notifications push, panel d'administration",
-          "App Boutique à 0€ d'installation : pour les e-commerçants, je prends 12% de commission sur les ventes — zéro risque financier",
-          "Ces tarifs s'entendent pour un développeur freelance React Native. Une agence facturera 15 000€ à 80 000€ pour un résultat identique",
-        ],
-      },
-      {
-        heading: "Étape 3 : choisir entre no-code et développeur",
-        paragraphs: [
-          "Des outils comme Glide, Adalo ou Bubble permettent de créer une app sans coder. C'est tentant, mais voici ce qu'on ne vous dit pas :",
-        ],
-        list: [
-          "Les apps no-code sont refusées fréquemment par l'App Store Apple — Apple détecte les apps générées automatiquement",
-          "Vous ne possédez pas votre app — si la plateforme ferme ou augmente ses tarifs, vous êtes bloqué",
-          "Les abonnements no-code (29€ à 350€/mois) dépassent rapidement le coût d'une app sur mesure à 490€",
-          "Les fonctionnalités natives (Bluetooth, NFC, Face ID, géolocalisation avancée) sont souvent impossibles en no-code",
-          "Conclusion : le no-code est adapté pour tester une idée en quelques jours. Dès que vous voulez lancer sérieusement, un développeur vous coûtera moins cher sur le long terme",
-        ],
-      },
-      {
-        heading: "Étape 4 : trouver le bon développeur mobile",
-        paragraphs: [
-          "Trois options s'offrent à vous : une agence digitale, un freelance, ou des plateformes comme Malt ou Upwork.",
-        ],
-        list: [
-          "Agence : budget 15 000€-80 000€, délai 3-6 mois, interlocuteur qui change en cours de projet",
-          "Freelance spécialisé : budget 490€-2 000€, délai 2-5 semaines, vous parlez directement au développeur qui code votre app",
-          "Plateformes offshore : budget attractif, mais barrière de langue, fuseaux horaires et qualité variable",
-          "Ce que je recommande : choisissez un freelance spécialisé React Native pour une app iOS & Android. Une seule base de code = coût divisé par deux, et vous avez un interlocuteur unique de A à Z",
-        ],
-      },
-      {
-        heading: "Étape 5 : préparer votre brief avant le premier contact",
-        paragraphs: [
-          "Avant de contacter un développeur, préparez un brief simple. Pas besoin d'être technique — voici ce qu'il faut mentionner :",
-        ],
-        list: [
-          "Le problème que l'app résout et pour qui",
-          "La fonctionnalité principale et les fonctionnalités secondaires (si vous en avez)",
-          "Les plateformes cibles : iOS seulement, Android seulement, ou les deux",
-          "Votre budget approximatif et votre délai idéal",
-          "Des apps existantes que vous aimez, pour donner une référence visuelle",
-        ],
-      },
-      {
-        heading: "FAQ — J'ai une idée d'application mobile",
-        list: [
-          "Faut-il avoir un business plan avant de contacter un développeur ? Non. Une description claire du problème et de l'utilisateur cible suffit pour obtenir un devis. Le développeur vous aidera à affiner le périmètre.",
-          "Mon idée peut-elle être copiée si j'en parle à un développeur ? Le risque est très faible en pratique. Si vous êtes inquiet, un NDA (accord de confidentialité) peut être signé avant le brief.",
-          "Combien de temps pour développer une app mobile ? Entre 2 semaines (app simple) et 2 mois (app complexe avec backend custom). La plupart des projets que je réalise sont livrés en 3-5 semaines.",
-          "Peut-on modifier l'app après la mise en ligne ? Oui. Une app se fait évoluer — c'est d'ailleurs la bonne approche : lancer une v1 simple, mesurer l'usage, puis améliorer.",
-          "Doit-on payer l'App Store et Google Play ? Oui : 99$/an pour le compte développeur Apple et 25$ une seule fois pour Google Play. Ces frais sont à votre charge — la publication en elle-même est incluse dans mes prestations.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "faire-developper-application-mobile",
-    image: {
-      src: "/blog/faire-developper-application-mobile.jpg",
-      alt: "Personne travaillant tard sur un ordinateur portable dans un bureau faiblement éclairé, lumière chaude de lampe de bureau, carnet et café",
-      credit: "Image : Artlist",
-    },
-    service: "application-mobile",
-    title: "Faire développer une application mobile : guide complet 2026",
-    description:
-      "Combien ça coûte de faire développer une application mobile ? Freelance, agence, no-code : comparatif complet pour choisir la bonne option selon votre budget.",
-    date: "2026-06-13",
-    lastModified: "2026-08-30",
-    category: "Guides",
-    sections: [
-      {
-        paragraphs: [
-          "Faire développer une application mobile iOS & Android est aujourd'hui accessible à partir de 490€ avec un développeur freelance React Native, contre 15 000€ à 80 000€ en agence. Mais comment choisir la bonne option ? Ce guide compare toutes les solutions disponibles en 2026.",
-        ],
-      },
-      {
-        heading: "Option 1 : faire appel à un développeur freelance",
-        paragraphs: [
-          "C'est la solution que je représente en tant que développeur mobile freelance à Brest. Voici ce que ça implique concrètement :",
-        ],
-        list: [
-          "Budget : 490€ à 2 000€ selon les fonctionnalités — dès 490€ pour une app iOS & Android complète",
-          "Délai : 2 à 5 semaines selon la complexité",
-          "Avantage principal : vous parlez directement au développeur qui code votre app, pas à un chef de projet qui transmet",
-          "Technologie : React Native permet de créer une seule application qui tourne sur iOS et Android — coût divisé par deux",
-          "Ce qu'il faut vérifier : le portfolio, les avis clients, et que le freelance est bien spécialisé mobile (pas un développeur web qui \"fait aussi\" du mobile)",
-        ],
-      },
-      {
-        heading: "Option 2 : passer par une agence digitale",
-        paragraphs: [
-          "Les agences digitales proposent des équipes complètes : chef de projet, designer, développeur iOS, développeur Android, testeur.",
-        ],
-        list: [
-          "Budget : 15 000€ à 80 000€ selon la complexité et la localisation de l'agence",
-          "Délai : 3 à 6 mois en moyenne",
-          "Avantage : adapted pour les projets très complexes nécessitant plusieurs développeurs en parallèle",
-          "Inconvénient : vous ne parlez pas au développeur — vous passez par un chef de projet, les allers-retours sont lents",
-          "Quand choisir une agence ? Pour des projets nécessitant une équipe de 5+ personnes et un budget de plus de 50 000€",
-        ],
-      },
-      {
-        heading: "Option 3 : le no-code (Adalo, Glide, Bubble)",
-        paragraphs: [
-          "Les outils no-code permettent de créer une app sans développeur. Voici la réalité derrière les promesses marketing :",
-        ],
-        list: [
-          "Coût apparent : gratuit ou peu cher au départ, mais abonnements de 29€ à 350€/mois à vie",
-          "Coût réel sur 3 ans : entre 1 000€ et 12 600€ en abonnements — souvent plus cher qu'un développement sur mesure",
-          "Limites techniques : accès aux fonctionnalités natives du téléphone très restreint, performances dégradées",
-          "App Store : Apple rejette fréquemment les apps générées par des outils no-code",
-          "Propriété : vous ne possédez pas votre code — si la plateforme ferme, votre app disparaît",
-          "Verdict : adapté pour un MVP très simple ou un prototype de validation — pas pour un lancement commercial sérieux",
-        ],
-      },
-      {
-        heading: "Option 4 : des plateformes comme Malt ou Upwork",
-        paragraphs: [
-          "Ces plateformes permettent de trouver des freelances du monde entier. Avantages et inconvénients :",
-        ],
-        list: [
-          "Malt : freelances français et européens, tarifs journaliers entre 300€ et 800€/jour",
-          "Upwork : freelances internationaux, tarifs très bas mais qualité très variable",
-          "Risques de l'offshore : barrière de la langue, fuseaux horaires, difficultés à suivre l'avancement, livrables parfois décevants",
-          "Ce que je recommande : si vous passez par une plateforme, choisissez un freelance avec des avis vérifiés, un portfolio mobile solide, et préférez quelqu'un dans votre fuseau horaire",
-        ],
-      },
-      {
-        heading: "Récapitulatif : quelle option choisir ?",
-        list: [
-          "Budget < 2 000€ et app standard : développeur freelance React Native — meilleur rapport qualité/prix",
-          "Budget 0€ et vous voulez tester une idée : no-code (Glide ou Adalo) pour un prototype — mais prévoyez de migrer",
-          "Budget > 50 000€ et projet très complexe : agence digitale spécialisée mobile",
-          "Vous avez du temps et des compétences techniques : apprendre React Native vous-même (6-12 mois)",
-        ],
-      },
-      {
-        heading: "FAQ — Faire développer une application mobile",
-        list: [
-          "Combien coûte une application mobile iOS & Android ? Entre 490€ chez un freelance React Native et 80 000€ en agence. La technologie cross-platform React Native permet de diviser le coût par deux.",
-          "Quelle est la différence entre une app native et une app React Native ? Une app native est développée séparément pour iOS (Swift) et Android (Kotlin). React Native utilise une seule base de code JavaScript pour les deux — même qualité, coût divisé par deux.",
-          "Combien de temps dure le développement ? De 2 semaines pour une app simple à 5 mois pour une app complexe. La plupart des projets freelance sont livrés en 3-5 semaines.",
-          "Qui est propriétaire du code après le développement ? Avec un freelance, vous êtes propriétaire à 100% du code source. Sur les plateformes no-code, vous ne l'êtes pas.",
-          "Peut-on avoir une app iOS sans app Android ? Oui, c'est possible. Mais avec React Native, développer pour les deux en même temps coûte à peine plus cher — je le recommande systématiquement.",
-        ],
-      },
-    ],
-  },
   {
     slug: "comment-creer-une-application-mobile",
     image: {
@@ -3645,9 +3003,9 @@ export const articles: Article[] = [
     service: "application-mobile",
     title: "Comment créer une application mobile : le guide 2026",
     description:
-      "Les étapes concrètes pour créer une application mobile iOS & Android : cadrage, design, développement, tests, publication.",
+      "Les étapes concrètes pour créer une application mobile iOS & Android : valider l'idée, préparer le brief, choisir qui la développe, design, tests, publication.",
     date: "2026-06-13",
-    lastModified: "2026-09-03",
+    lastModified: "2026-09-24",
     category: "Guides",
     sections: [
       {
@@ -3683,6 +3041,19 @@ export const articles: Article[] = [
         ],
       },
       {
+        heading: "Préparer votre brief avant le premier contact",
+        paragraphs: [
+          "Pas besoin d'être technique ni d'avoir un cahier des charges. Quelques lignes suffisent pour obtenir un devis précis :",
+        ],
+        list: [
+          "Le problème que l'app résout, et pour qui",
+          "La fonctionnalité principale, puis les fonctionnalités secondaires si vous en avez",
+          "Les plateformes visées : iOS, Android, ou les deux",
+          "Votre budget approximatif et votre délai idéal",
+          "Des applications existantes que vous aimez, pour donner une référence visuelle",
+        ],
+      },
+      {
         heading: "Les 6 étapes de création d'une application mobile",
         list: [
           "1. Cadrage du projet : vous décrivez votre idée, même de façon imprécise, à un développeur mobile. Un échange permet de clarifier les fonctionnalités et de définir un périmètre réaliste pour la première version",
@@ -3703,10 +3074,16 @@ export const articles: Article[] = [
         ],
       },
       {
-        heading: "Développeur freelance ou agence : que choisir",
+        heading: "Freelance, agence ou no-code : qui va créer votre app ?",
         paragraphs: [
-          "Une agence mobilise une équipe complète — chef de projet, designer, développeur iOS, développeur Android, testeur — ce qui a un coût de structure important.",
+          "Une agence mobilise une équipe complète (chef de projet, designer, développeur iOS, développeur Android, testeur), ce qui a un coût de structure important.",
           "Un développeur freelance spécialisé en cross-platform réalise le même travail seul, avec une seule base de code pour les deux plateformes. Vous échangez directement avec la personne qui développe votre application, sans intermédiaire.",
+        ],
+        list: [
+          "Développeur freelance spécialisé : un interlocuteur unique, des délais de quelques semaines, une seule base de code pour iOS et Android",
+          "Agence digitale : adaptée aux projets très complexes qui demandent plusieurs développeurs en parallèle, avec des budgets de 15 000€ à 80 000€ et 3 à 6 mois de délai",
+          "No-code (Glide, Adalo, Bubble) : utile pour tester une idée en quelques jours, mais abonnement à vie, fonctionnalités natives limitées et refus fréquents sur l'App Store",
+          "Plateformes comme Malt ou Upwork : pratiques pour trouver un freelance, à condition de vérifier les avis, le portfolio mobile et de privilégier quelqu'un dans votre fuseau horaire",
         ],
       },
       {
@@ -3720,6 +3097,9 @@ export const articles: Article[] = [
         heading: "FAQ — Comment créer une application mobile",
         list: [
           "Faut-il avoir une idée précise avant de contacter un développeur ? Non. Une idée générale suffit pour un premier échange — le cadrage sert justement à préciser et prioriser les fonctionnalités.",
+          "Faut-il un business plan avant de contacter un développeur ? Non. Une description claire du problème et de l'utilisateur cible suffit pour obtenir un devis.",
+          "Mon idée peut-elle être copiée si j'en parle à un développeur ? Le risque est très faible en pratique. Si vous êtes inquiet, un accord de confidentialité (NDA) peut être signé avant le brief.",
+          "Faut-il payer l'App Store et Google Play ? Oui : 99$ par an pour le compte développeur Apple et 25$ une seule fois pour Google Play. La publication elle-même est incluse dans mes prestations.",
           "Combien de temps prend la création d'une application mobile ? Cela dépend du nombre de fonctionnalités et de leur complexité — un développeur vous donne un délai précis après le cadrage du projet.",
           "Mon application sera-t-elle disponible sur iPhone et Android ? Avec une technologie cross-platform comme React Native, une seule base de code peut tourner sur iOS et Android, ce qui permet de toucher tous les utilisateurs sans double développement.",
           "Comment se déroule le suivi pendant le développement ? Vous recevez des versions de test régulières sur votre téléphone, vous donnez vos retours, et les ajustements sont faits jusqu'à ce que l'application vous convienne.",
@@ -4394,7 +3774,7 @@ export const articles: Article[] = [
     description:
       "Notifications push mobile : fonctionnement, exemples par secteur et bonnes pratiques — la fonctionnalité qui sépare une app utilisée d'une app oubliée.",
     date: "2026-07-03",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Tech",
     sections: [
       {
@@ -4453,7 +3833,7 @@ export const articles: Article[] = [
           "Les notifications push sont-elles payantes ? Non, l'envoi via Firebase Cloud Messaging est gratuit, quel que soit le volume envoyé.",
           "Puis-je envoyer une notification à un seul client ou à tous mes clients ? Les deux : selon la configuration de votre panel admin, vous ciblez un utilisateur précis ou l'ensemble de votre base.",
           "Les notifications fonctionnent-elles si l'app est fermée ? Oui, c'est justement leur intérêt : elles s'affichent même quand l'application n'est pas ouverte.",
-          "Combien coûte l'intégration des notifications push dans mon app ? Elles sont incluses dans mon offre App Premium à 600€, ou disponibles en option (+50€) sur l'offre Starter.",
+          "Combien coûte l'intégration des notifications push dans mon app ? Elles s'intègrent dès la création de l'app ou en option ensuite. Leur coût est détaillé dans le devis gratuit, envoyé sous 24h.",
           "Les utilisateurs peuvent-ils désactiver les notifications ? Oui, à tout moment depuis les réglages de leur téléphone — d'où l'importance de ne pas en abuser.",
         ],
       },
@@ -4471,7 +3851,7 @@ export const articles: Article[] = [
     description:
       "Les principes UX/UI d'une application mobile réussie : navigation intuitive, rapidité, cohérence visuelle. Pour que vos clients restent au-delà de 10 secondes.",
     date: "2026-07-03",
-    lastModified: "2026-08-30",
+    lastModified: "2026-09-24",
     category: "Tech",
     sections: [
       {
@@ -4525,7 +3905,7 @@ export const articles: Article[] = [
           "Quelle est la différence entre UX et UI ? L'UI concerne l'apparence visuelle (couleurs, boutons), l'UX concerne le ressenti et la facilité d'utilisation globale de l'app.",
           "Pourquoi le temps de chargement est-il si important ? Au-delà de 2 à 3 secondes de chargement, une grande partie des utilisateurs quitte l'application avant même de voir le contenu.",
           "Une app développée en no-code a-t-elle une bonne UX ? Rarement : les templates génériques ne s'adaptent pas à votre parcours client spécifique et donnent souvent une expérience impersonnelle.",
-          "L'UX/UI est-elle incluse dans le prix de développement ? Oui, la conception de l'interface et du parcours utilisateur est incluse dans toutes mes offres, dès l'App Starter à 490€.",
+          "L'UX/UI est-elle incluse dans le prix de développement ? Oui, la conception de l'interface et du parcours utilisateur est incluse dans toutes mes offres.",
           "Combien de temps prend la conception UX/UI d'une app ? Comptez 3 à 5 jours pour définir le parcours et les écrans avant le développement, selon la complexité du projet.",
         ],
       },
@@ -5020,11 +4400,11 @@ export const articles: Article[] = [
       alt: "Trois développeurs devant plusieurs écrans affichant un audit technique du site ZEVENT, avec relevés de structure et de contraste",
     },
     service: "site-web",
-    title: "J'ai audité le site de ZEVENT : ce qui est bien fait",
+    title: "Site du ZEVENT : analyse technique complète",
     description:
-      "Analyse technique du site zevent.fr par un développeur freelance : stack, performance, design. Ce qui fonctionne et ce qui pourrait être amélioré.",
+      "Comment est construit le site du ZEVENT ? Stack, performance, design : ce qui est bien fait, ce qui pourrait être amélioré et les astuces web à retenir.",
     date: "2026-09-03",
-    lastModified: "2026-09-03",
+    lastModified: "2026-09-24",
     category: "Tech",
     sections: [
       {

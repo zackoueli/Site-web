@@ -248,16 +248,16 @@ export default async function ArticlePage({ params }: Props) {
           "cout-reel-site-wix",
           "cout-reel-site-shopify",
           "cout-reel-planity",
-          "squarespace-tarif-prix-2025",
-          "comparatif-createurs-site-web-prix-2025",
-          "tarif-creation-site-internet-2025",
+          "squarespace-tarif-prix",
+          "comparatif-createurs-site-web-prix",
+          "tarif-creation-site-internet",
           "shopify-wix-vs-application-mobile-sur-mesure",
           "combien-coute-site-web-sur-mesure",
           "wordpress-vs-sur-mesure",
           "no-code-vs-developpeur",
           "site-web-artisan-sur-mesure",
           "creation-site-web-brest",
-          "application-mobile-coiffeur-salon",
+          "application-mobile-coiffeur",
         ].includes(article.slug) && (
           <div className="mb-12 -mx-4 sm:-mx-8 md:-mx-16 lg:-mx-32 xl:-mx-48">
             <div className="px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48 mb-4">
@@ -299,7 +299,6 @@ export default async function ArticlePage({ params }: Props) {
         {/* Mockup PC — articles restaurant / pizzeria */}
         {[
           "application-mobile-restaurant",
-          "application-mobile-restaurant-bretagne",
           "site-web-restaurant-brest",
           "creation-site-pizzeria-brest",
         ].includes(article.slug) && (
@@ -351,7 +350,7 @@ export default async function ArticlePage({ params }: Props) {
                     isFaq ? (
                       <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
                         <span className="bg-[#FFE234] brutal-border px-2 py-0.5 text-base mono">FAQ</span>
-                        <span>{section.heading.replace(/^FAQ\s*—?\s*/i, "")}</span>
+                        <span>{section.heading.replace(/^FAQ\s*[—:]?\s*/i, "")}</span>
                       </h2>
                     ) : (
                       <h2 className="text-2xl font-bold mb-3">{section.heading}</h2>
@@ -409,6 +408,37 @@ export default async function ArticlePage({ params }: Props) {
             );
           })}
         </div>
+
+        {/* Article Planity : renvoie les gérants de salon vers l'offre coiffeur */}
+        {article.slug === "cout-reel-planity" && (
+          <div className="mt-12 brutal-border brutal-shadow bg-[#FFE234] p-6">
+            <p className="mono text-xs font-bold text-[#0A0A0A]/60 mb-2">// vous gérez un salon ?</p>
+            <p className="font-bold text-2xl mb-2">L&apos;application de votre salon, à votre nom</p>
+            <p className="text-[#0A0A0A]/80 mb-5">
+              Réservation 24h/24, rappels anti no-show, fidélité et panel admin. Vos clientes réservent chez vous, pas sur un annuaire partagé avec vos concurrents.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link
+                href="/services/secteur/coiffeur"
+                className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-5 py-3 text-sm font-bold"
+              >
+                Voir l&apos;offre salon de coiffure →
+              </Link>
+              <Link
+                href="/blog/application-mobile-coiffeur"
+                className="brutal-btn bg-white text-[#0A0A0A] px-5 py-3 text-sm font-bold"
+              >
+                Les fonctionnalités d&apos;une app coiffeur →
+              </Link>
+              <Link
+                href="/blog/panel-admin-salon-coiffure"
+                className="brutal-btn bg-white text-[#0A0A0A] px-5 py-3 text-sm font-bold"
+              >
+                Le panel admin salon →
+              </Link>
+            </div>
+          </div>
+        )}
 
         {/* Liens niches — article panel admin généraliste */}
         {article.slug === "panel-admin-site-web-application-mobile" && (

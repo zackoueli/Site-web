@@ -55,7 +55,7 @@ export default function SantePage() {
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
               <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
-              <Link href="/blog/application-mobile-fidelite-clients" className="brutal-btn bg-[#00D4AA] text-[#0A0A0A] px-8 py-4">Fidélisation clients →</Link>
+              <Link href="/blog/comment-fideliser-clients-application-mobile" className="brutal-btn bg-[#00D4AA] text-[#0A0A0A] px-8 py-4">Fidélisation clients →</Link>
             </div>
             <div className="flex flex-wrap gap-4 mono text-sm text-gray-500">
               <span className="brutal-border px-3 py-1 bg-white">✓ Suivi & journal de bord</span>

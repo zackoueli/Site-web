@@ -73,6 +73,68 @@ const nextConfig: NextConfig = {
         destination: "/blog/comment-creer-une-application-mobile",
         permanent: true,
       },
+      // Fusion des articles en doublon (anti-cannibalisation, sept. 2026)
+      {
+        source: "/blog/application-mobile-coiffeur-salon",
+        destination: "/blog/application-mobile-coiffeur",
+        permanent: true,
+      },
+      {
+        source: "/blog/application-mobile-fidelite-clients",
+        destination: "/blog/comment-fideliser-clients-application-mobile",
+        permanent: true,
+      },
+      {
+        source: "/blog/application-mobile-restaurant-bretagne",
+        destination: "/blog/application-mobile-restaurant",
+        permanent: true,
+      },
+      {
+        source: "/blog/creation-application-mobile-bretagne",
+        destination: "/blog/developpeur-application-mobile-bretagne",
+        permanent: true,
+      },
+      {
+        source: "/blog/developpeur-application-mobile-finistere",
+        destination: "/blog/developpeur-application-mobile-bretagne",
+        permanent: true,
+      },
+      {
+        source: "/blog/application-mobile-pas-chere",
+        destination: "/blog/combien-coute-application-mobile",
+        permanent: true,
+      },
+      {
+        source: "/blog/creer-application-mobile-sans-coder",
+        destination: "/blog/no-code-vs-developpeur",
+        permanent: true,
+      },
+      {
+        source: "/blog/j-ai-une-idee-d-application-mobile",
+        destination: "/blog/comment-creer-une-application-mobile",
+        permanent: true,
+      },
+      {
+        source: "/blog/faire-developper-application-mobile",
+        destination: "/blog/comment-creer-une-application-mobile",
+        permanent: true,
+      },
+      // Slugs sans année (évite un contenu qui paraît daté dans Google)
+      {
+        source: "/blog/squarespace-tarif-prix-2025",
+        destination: "/blog/squarespace-tarif-prix",
+        permanent: true,
+      },
+      {
+        source: "/blog/comparatif-createurs-site-web-prix-2025",
+        destination: "/blog/comparatif-createurs-site-web-prix",
+        permanent: true,
+      },
+      {
+        source: "/blog/tarif-creation-site-internet-2025",
+        destination: "/blog/tarif-creation-site-internet",
+        permanent: true,
+      },
       {
         source: "/services/plateforme",
         destination: "/services/web-app",
