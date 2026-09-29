@@ -9,9 +9,9 @@ import { SECTEURS } from "@/lib/taxonomy";
 import { Smartphone, CheckCircle2, ArrowRight, MapPin, Quote } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Développeur d'application mobile à Brest, iOS & Android - BreizhApp",
+  title: "Agence application mobile à Brest, iOS & Android | BreizhApp",
   description:
-    "Je suis développeur indépendant à Brest, vous échangez directement avec moi, du premier rendez-vous jusqu'à la publication de votre app iOS & Android sur les stores. Devis gratuit sous 24h.",
+    "Développeur freelance à Brest, je crée votre application mobile iOS & Android : design, paiement in-app, notifications, espace client et admin. Devis 24h.",
   keywords: [
     "agence application mobile Brest",
     "agence application mobile",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://breizhapp.tech/services/application-mobile" },
   openGraph: {
-    title: "Développeur d'application mobile à Brest, iOS & Android - BreizhApp",
+    title: "Agence application mobile à Brest, iOS & Android | BreizhApp",
     description:
-      "Je suis développeur indépendant à Brest, vous échangez directement avec moi, du premier rendez-vous jusqu'à la publication de votre app iOS & Android sur les stores. Devis gratuit sous 24h.",
+      "Développeur freelance à Brest, je crée votre application mobile iOS & Android : design, paiement in-app, notifications, espace client et admin. Devis 24h.",
     url: "https://breizhapp.tech/services/application-mobile",
     type: "website",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
