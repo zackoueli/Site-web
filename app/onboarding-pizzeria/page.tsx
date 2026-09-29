@@ -216,7 +216,7 @@ export default function OnboardingPizzeria() {
                   {["Moins de 20", "20 à 50", "50 à 100", "Plus de 100"].map((v) => radio("volume_commandes", v))}
                 </div>
               </div>
-              {field("fonctionnement_specifique", "Avez-vous des contraintes ou spécificités à nous signaler ?", "Ex : service uniquement le soir, fermé le lundi...", "textarea")}
+              {field("fonctionnement_specifique", "Avez-vous des contraintes ou spécificités à me signaler ?", "Ex : service uniquement le soir, fermé le lundi...", "textarea")}
             </div>
           </SectionBlock>
 

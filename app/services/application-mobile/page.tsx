@@ -3,10 +3,12 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
+import RelatedProjects from "@/components/RelatedProjects";
+import FAQItem from "@/components/FAQItem";
 import Contact from "@/components/Contact";
-import PhoneDemo from "@/components/PhoneDemo";
+import PhotoCarousel from "@/components/PhotoCarousel";
 import { SECTEURS } from "@/lib/taxonomy";
-import { Smartphone, CheckCircle2, ArrowRight, MapPin, Quote } from "lucide-react";
+import { Smartphone, CheckCircle2, ArrowRight, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Agence application mobile à Brest, iOS & Android | BreizhApp",
@@ -47,7 +49,7 @@ export const metadata: Metadata = {
 const faq = [
   {
     q: "Quelle est la meilleure agence d'application mobile à Brest ?",
-    a: "BreizhApp est une agence de développement mobile basée à Brest, spécialisée dans la création d'applications iOS & Android sur mesure en React Native. Vous échangez directement avec le développeur qui code votre app, sans chef de projet ni intermédiaire commercial, du premier rendez-vous à la publication sur les stores.",
+    a: "BreizhApp, c'est moi : Enzo, développeur mobile basé à Brest, spécialisé dans la création d'applications iOS & Android sur mesure en React Native. Vous échangez directement avec la personne qui code votre app, sans chef de projet ni intermédiaire commercial, du premier rendez-vous à la publication sur les stores.",
   },
   {
     q: "Combien coûte la création d'une application mobile à Brest ?",
@@ -63,7 +65,7 @@ const faq = [
   },
   {
     q: "Pourrai-je modifier le contenu de mon application moi-même ?",
-    a: "Oui. Chaque application BreizhApp inclut un panel d'administration depuis lequel vous gérez vos contenus, produits, horaires ou tarifs en autonomie, sans repasser par un développeur. Une formation à l'outil est incluse à la livraison.",
+    a: "Oui. Chaque application que je développe inclut un panel d'administration depuis lequel vous gérez vos contenus, produits, horaires ou tarifs en autonomie, sans repasser par un développeur. Une formation à l'outil est incluse à la livraison.",
   },
   {
     q: "Que se passe-t-il après la livraison de l'application ?",
@@ -71,7 +73,7 @@ const faq = [
   },
   {
     q: "Travaillez-vous uniquement à Brest ?",
-    a: "L'agence est basée à Brest et se déplace dans tout le Finistère : Guipavas, Le Relecq-Kerhuon, Plougastel, Landerneau, Quimper, Morlaix. Les projets à distance sont également courants, en Bretagne (Rennes, Lorient, Vannes) comme dans toute la France, avec des points d'avancement en visio.",
+    a: "Je suis basé à Brest et je me déplace dans tout le Finistère : Guipavas, Le Relecq-Kerhuon, Plougastel, Landerneau, Quimper, Morlaix. Les projets à distance sont également courants, en Bretagne (Rennes, Lorient, Vannes) comme dans toute la France, avec des points d'avancement en visio.",
   },
   {
     q: "Pourquoi choisir une agence application mobile locale à Brest ?",
@@ -158,11 +160,14 @@ const process = [
   { step: "04", title: "Tests, déploiement & formation", desc: "Tests sur appareils réels, publication sur l'App Store et Google Play, formation au panel admin incluse." },
 ];
 
-const testimonials = [
-  {
-    author: "Forno Pizzeria",
-    text: "Application livrée en 3 semaines, exactement ce qu'on voulait. On a récupéré nos commandes Uber Eats dès le premier mois.",
-  },
+const appPhotos = [
+  { src: "/services/application-mobile/app-mobile-1.jpg", alt: "Livret d'accueil Bunkly sur iPhone : accès, horaires, WiFi et météo du logement" },
+  { src: "/services/application-mobile/app-mobile-2.jpg", alt: "Livret d'accueil Bunkly, thème photo avec tuiles accès, WiFi et marées" },
+  { src: "/services/application-mobile/app-mobile-3.jpg", alt: "Services proposés aux voyageurs avec achat en ligne du petit déjeuner" },
+  { src: "/services/application-mobile/app-mobile-4.jpg", alt: "Écran d'accueil d'un livret d'accueil avec navigation par onglets" },
+  { src: "/services/application-mobile/app-mobile-5.jpg", alt: "Présentation du logement et message de bienvenue des hôtes" },
+  { src: "/services/application-mobile/app-mobile-6.jpg", alt: "Livret d'accueil avec itinéraire Google Maps et Waze" },
+  { src: "/services/application-mobile/app-mobile-7.jpg", alt: "Application de recrutement : fiche profil d'un candidat" },
 ];
 
 const villes = ["Brest", "Guipavas", "Le Relecq-Kerhuon", "Plougastel", "Landerneau", "Quimper", "Morlaix", "Rennes", "Lorient", "Vannes"];
@@ -175,62 +180,72 @@ export default function AppMobilePage() {
       <main className="bg-[#FFFBF0] min-h-screen">
 
         {/* Breadcrumb */}
-        <nav className="max-w-4xl mx-auto px-4 pt-6 mono text-sm text-gray-500 flex items-center gap-2">
+        <nav className="max-w-6xl mx-auto px-4 pt-6 mono text-sm text-gray-500 flex items-center gap-2">
           <Link href="/" className="hover:text-black transition-colors">Accueil</Link>
           <span>/</span>
           <span className="text-black font-bold">Agence application mobile Brest</span>
         </nav>
 
         {/* Hero */}
-        <section className="border-b-[3px] border-black py-20 px-4">
-          <div className="max-w-4xl mx-auto">
-            <p className="mono text-sm font-bold text-gray-400 mb-4">// agence application mobile · Brest · Finistère</p>
-            <div className="flex items-center gap-4 mb-6">
-              <div className="bg-[#FFE234] brutal-border p-3">
-                <Smartphone size={32} />
+        <section className="border-b-[3px] border-black py-12 px-4">
+          <div className="max-w-6xl mx-auto grid lg:grid-cols-[3fr_2fr] gap-12 items-center">
+            <div>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-[#FFE234] brutal-border p-3">
+                  <Smartphone size={32} />
+                </div>
+                <div>
+                  <h1 className="text-4xl md:text-6xl font-bold leading-tight">Agence application mobile à Brest</h1>
+                  <p className="text-xl font-bold text-gray-500 mt-1">Création d&apos;app iOS & Android · React Native · Sur mesure</p>
+                </div>
               </div>
-              <div>
-                <h1 className="text-4xl md:text-6xl font-bold leading-tight">Agence application mobile à Brest</h1>
-                <p className="text-xl font-bold text-gray-500 mt-1">Création d&apos;app iOS & Android · React Native · Sur mesure</p>
+              <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
+                Vous avez une idée d&apos;application mobile ? Je conçois et développe votre application iOS & Android sur mesure
+                (design, paiement, notifications push, espace client et admin) et je la publie sur l&apos;App Store et Google Play.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
+                  Demander un devis gratuit
+                </a>
+                <a href="/portfolio" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-8 py-4">
+                  Voir les réalisations →
+                </a>
               </div>
             </div>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
-              Vous avez une idée d&apos;application mobile ? BreizhApp est une agence de développement mobile basée à Brest, en Finistère.
-              Je conçois et développe votre application iOS & Android sur mesure (design, fonctionnalités, paiement, notifications push)
-              et je la publie sur l&apos;App Store et Google Play. Vous échangez directement avec le développeur qui code votre app,
-              du premier rendez-vous à la mise en ligne.
-            </p>
-            <div className="flex flex-wrap gap-4 mb-8">
-              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
-                Demander un devis gratuit
-              </a>
-              <a href="/portfolio" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-8 py-4">
-                Voir les réalisations →
-              </a>
-            </div>
-            <div className="flex flex-wrap gap-4 mono text-sm text-gray-500">
-              <span className="brutal-border px-3 py-1 bg-white">✓ Agence basée à Brest</span>
-              <span className="brutal-border px-3 py-1 bg-white">✓ iOS & Android</span>
-              <span className="brutal-border px-3 py-1 bg-white">✓ Livraison 2-5 semaines</span>
-              <span className="brutal-border px-3 py-1 bg-white">✓ Devis gratuit sous 24h</span>
-            </div>
+            <PhotoCarousel slides={appPhotos} caption="Applications que j'ai développées : livrets d'accueil Bunkly pour locations de vacances, et application de recrutement." />
           </div>
         </section>
 
-        {/* Chiffres clés */}
-        <section className="border-b-[3px] border-black bg-[#0A0A0A] py-10 px-4">
-          <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { n: "2-5", label: "semaines de la conception à la mise en ligne" },
-              { n: "1", label: "interlocuteur unique : le développeur qui code votre app" },
-              { n: "2", label: "stores couverts (App Store & Google Play) avec 1 seule codebase" },
-              { n: "24h", label: "pour recevoir votre devis gratuit et détaillé" },
-            ].map(({ n, label }) => (
-              <div key={label} className="border-2 border-gray-800 p-5 text-center hover:border-[#FFE234] transition-colors">
-                <div className="text-3xl font-black text-[#FFE234]">{n}</div>
-                <div className="text-xs font-bold text-gray-400 mono mt-2 leading-relaxed">{label}</div>
+        {/* En bref */}
+        <section className="py-16 px-4 bg-[#0A0A0A]">
+          <div className="max-w-6xl mx-auto grid lg:grid-cols-[2fr_1fr] gap-10">
+            <div className="border-l-4 border-[#FFE234] pl-6">
+              <p className="mono text-sm font-bold text-[#FFE234] mb-4">EN BREF</p>
+              <p className="text-gray-300 leading-relaxed">
+                Je crée des applications mobiles iOS & Android sur mesure en React Native : une seule base de code pour
+                les deux stores, un panel admin pour gérer vos contenus, et la publication sur l&apos;App Store et Google
+                Play prise en charge de A à Z. Je m&apos;appelle Enzo, développeur freelance basé à Brest, et
+                j&apos;accompagne des restaurateurs, commerçants, TPE et porteurs de projet dans tout le Finistère et la
+                Bretagne, sur place ou à distance partout en France. Une application avec panel admin et authentification
+                démarre à 4 000 € et se livre en 2 à 5 semaines selon la complexité. Vous êtes propriétaire du code et
+                de l&apos;application publiée à votre nom, et vous échangez directement avec la personne qui la développe,
+                sans intermédiaire. Devis détaillé sous 24h après un cadrage gratuit.
+              </p>
+            </div>
+            <div className="flex flex-col gap-6">
+              <div className="border-t border-gray-800 pt-4">
+                <p className="mono text-xs font-bold text-gray-500 uppercase mb-1">Livraison</p>
+                <p className="text-xl font-bold text-white">2 à 5 semaines</p>
               </div>
-            ))}
+              <div className="border-t border-gray-800 pt-4">
+                <p className="mono text-xs font-bold text-gray-500 uppercase mb-1">Budget indicatif</p>
+                <p className="text-xl font-bold text-white">Dès 4 000 €</p>
+              </div>
+              <div className="border-t border-gray-800 pt-4">
+                <p className="mono text-xs font-bold text-gray-500 uppercase mb-1">Premier retour</p>
+                <p className="text-xl font-bold text-white">Sous 24h</p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -258,7 +273,7 @@ export default function AppMobilePage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#FFE234] mb-2">Une application mobile pour chaque secteur d&apos;activité</h2>
             <p className="text-gray-400 mb-8 max-w-2xl text-sm">
-              Restaurateurs, coiffeurs, hôteliers, commerçants, coachs : l&apos;agence développe des applications adaptées aux besoins concrets de votre métier.
+              Restaurateurs, coiffeurs, hôteliers, commerçants, coachs : je développe des applications adaptées aux besoins concrets de votre métier.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
               {SECTEURS.map((s) => (
@@ -278,7 +293,7 @@ export default function AppMobilePage() {
         {/* Technologies */}
         <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-2">Les <span className="bg-[#FFE234] px-2 brutal-border">technologies</span> de l&apos;agence</h2>
+            <h2 className="text-2xl font-bold mb-2">Les <span className="bg-[#FFE234] px-2 brutal-border">technologies</span> que j&apos;utilise</h2>
             <p className="text-gray-600 mb-8 max-w-2xl">
               Un stack moderne et éprouvé, le même que celui des grandes applications que vous utilisez au quotidien, pas de solution no-code fragile ni de template générique.
             </p>
@@ -358,36 +373,6 @@ export default function AppMobilePage() {
           </div>
         </section>
 
-        {/* Démo réelle */}
-        <section className="py-16 px-4 border-y-[3px] border-black bg-gray-50">
-          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-            <div>
-              <p className="mono text-sm font-bold text-[#FF6B35] mb-2">// exemple concret</p>
-              <h2 className="text-2xl font-bold mb-2">
-                Une vraie application <span className="bg-[#FFE234] brutal-border px-2">créée par l&apos;agence</span>
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                Naviguez librement dans la démo, c&apos;est l&apos;application réelle d&apos;un restaurant :
-                commande en ligne, menu dynamique, panier et paiement.
-              </p>
-              <div className="flex flex-col gap-2 mono text-sm text-gray-500 mb-6">
-                <span className="brutal-border px-3 py-1 bg-white w-fit">✓ Commande & paiement Stripe</span>
-                <span className="brutal-border px-3 py-1 bg-white w-fit">✓ Menu modifiable depuis le panel admin</span>
-                <span className="brutal-border px-3 py-1 bg-white w-fit">✓ iOS & Android</span>
-              </div>
-              <a href="/portfolio" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
-                Voir toutes les réalisations <ArrowRight size={16} />
-              </a>
-            </div>
-            <div className="flex justify-center">
-              <PhoneDemo
-                src="https://demo.pizzeria.breizhapp.tech/"
-                title="Démo application restaurant créée par l'agence BreizhApp à Brest"
-              />
-            </div>
-          </div>
-        </section>
-
         {/* Budget */}
         <section className="py-16 px-4 bg-gray-50 brutal-border border-t-[3px] border-b-[3px]">
           <div className="max-w-4xl mx-auto">
@@ -430,22 +415,6 @@ export default function AppMobilePage() {
           </div>
         </section>
 
-        {/* Témoignages */}
-        <section className="py-16 px-4 bg-[#0A0A0A]">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#FFE234] mb-8">Ils ont lancé leur application avec l&apos;agence</h2>
-            <div className="grid gap-4">
-              {testimonials.map(({ author, text }) => (
-                <div key={author} className="border-2 border-gray-800 p-6 hover:border-[#FFE234] transition-colors">
-                  <Quote size={20} className="text-[#FFE234] mb-3" />
-                  <p className="text-[#FFFBF0] leading-relaxed mb-4">{text}</p>
-                  <p className="mono text-xs font-bold text-gray-400">{author}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Pourquoi une agence à Brest + zone d'intervention */}
         <section className="py-16 px-4 bg-gray-50 brutal-border border-t-[3px]">
           <div className="max-w-4xl mx-auto">
@@ -463,7 +432,7 @@ export default function AppMobilePage() {
             </p>
             <div className="flex items-center gap-2 mb-4">
               <MapPin size={18} className="text-[#FF6B9D]" />
-              <h3 className="font-bold">Zone d&apos;intervention de l&apos;agence</h3>
+              <h3 className="font-bold">Ma zone d&apos;intervention</h3>
             </div>
             <div className="flex flex-wrap gap-2">
               {villes.map((v) => (
@@ -478,23 +447,22 @@ export default function AppMobilePage() {
         <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold mb-8">Questions fréquentes : agence application mobile à Brest</h2>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-3">
               {faq.map(({ q, a }) => (
-                <div key={q} className="brutal-border bg-white p-5">
-                  <h3 className="font-bold mb-2">{q}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
-                </div>
+                <FAQItem key={q} q={q} a={a} />
               ))}
             </div>
           </div>
         </section>
+
+        <RelatedProjects service="application-mobile" />
 
         {/* CTA */}
         <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto brutal-border brutal-shadow bg-[#FFE234] p-8 flex flex-wrap items-center justify-between gap-6">
             <div>
               <h2 className="text-2xl font-bold">Prêt à lancer votre application mobile ?</h2>
-              <p className="text-sm mt-1">Devis gratuit · Réponse sous 24h · Sans engagement · Agence basée à Brest</p>
+              <p className="text-sm mt-1">Devis gratuit · Réponse sous 24h · Sans engagement · Basé à Brest</p>
             </div>
             <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
               Démarrer maintenant <ArrowRight size={16} />

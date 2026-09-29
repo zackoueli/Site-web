@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
 import Contact from "@/components/Contact";
 import RelatedProjects from "@/components/RelatedProjects";
+import FAQItem from "@/components/FAQItem";
 import { LayoutDashboard, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -37,9 +39,6 @@ const features = [
   { title: "Authentification sécurisée", desc: "Connexion par email, Google, ou SSO. Gestion des permissions par rôle." },
 ];
 
-const demoSites = [
-  { title: "Bunkly", desc: "Plateforme web avec espace admin et gestion multi-rôles.", url: "https://app.bunkly.co" },
-];
 
 const useCases = [
   { emoji: "🛠️", title: "Outil métier & gestion interne", desc: "Le logiciel qui n'existe pas sur le marché parce que votre façon de travailler vous appartient : suivi de production, planning, stocks, interventions, tableaux de bord." },
@@ -100,6 +99,13 @@ const schema = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://breizhapp.tech" },
+        { "@type": "ListItem", position: 2, name: "Développement d'application web", item: "https://breizhapp.tech/services/web-app" },
+      ],
+    },
+    {
       "@type": "FAQPage",
       mainEntity: faq.map(({ q, a }) => ({
         "@type": "Question",
@@ -117,8 +123,15 @@ export default function WebAppPage() {
       <Navbar />
       <main className="bg-[#FFFBF0] min-h-screen">
 
+        {/* Breadcrumb */}
+        <nav className="max-w-6xl mx-auto px-4 pt-6 mono text-sm text-gray-500 flex items-center gap-2">
+          <Link href="/" className="hover:text-black transition-colors">Accueil</Link>
+          <span>/</span>
+          <span className="text-black font-bold">Développement d&apos;application web</span>
+        </nav>
+
         {/* Hero */}
-        <section className="border-b-[3px] border-black py-20 px-4">
+        <section className="border-b-[3px] border-black py-12 px-4">
           <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center gap-4 mb-6">
@@ -131,7 +144,7 @@ export default function WebAppPage() {
                 </div>
               </div>
               <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
-                Une application web complète avec plusieurs niveaux d'accès. Vos équipes et vos clients
+                Une application web complète avec plusieurs niveaux d&apos;accès. Vos équipes et vos clients
                 disposent chacun de leur espace dédié, tout est centralisé, sécurisé et facile à gérer.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -144,12 +157,7 @@ export default function WebAppPage() {
               </div>
             </div>
             <div className="brutal-border brutal-shadow bg-white overflow-hidden">
-              <a
-                href="https://app.bunkly.co"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block overflow-hidden"
-              >
+              <Link href="/portfolio/bunkly" className="block overflow-hidden">
                 <div className="flex items-center gap-1.5 px-3 py-2 border-b-[3px] border-black bg-[#1a1a1a]">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]" />
                   <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
@@ -164,7 +172,7 @@ export default function WebAppPage() {
                     priority
                   />
                 </div>
-              </a>
+              </Link>
               <p className="text-xs text-gray-500 px-4 py-3 border-t-[3px] border-black">
                 Application Web Bunkly, pour créer vos livrets d&apos;accueil digitaux et proposer des services additionnels à vos locataires.
               </p>
@@ -379,90 +387,18 @@ export default function WebAppPage() {
         </section>
 
         {/* FAQ */}
-        <section className="py-16 px-4 bg-[#0A0A0A]">
+        <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#FFE234] mb-8">Questions fréquentes : web app & logiciel sur mesure</h2>
-            <div className="flex flex-col gap-4">
+            <h2 className="text-2xl font-bold mb-8">Questions fréquentes : web app & logiciel sur mesure</h2>
+            <div className="flex flex-col gap-3">
               {faq.map(({ q, a }) => (
-                <div key={q} className="border-2 border-gray-800 p-5">
-                  <h3 className="font-bold text-[#FFFBF0] mb-2">{q}</h3>
-                  <p className="text-sm text-gray-400 leading-relaxed">{a}</p>
-                </div>
+                <FAQItem key={q} q={q} a={a} />
               ))}
             </div>
           </div>
         </section>
 
-        {/* Étude de cas */}
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-2">Une <span className="bg-[#FFE234] px-2 brutal-border">web app que j&apos;ai développée</span></h2>
-            <p className="text-gray-600 mb-8 max-w-2xl">
-              Un projet livré, avec son contexte de départ, le périmètre exact et les technologies employées. Les autres sont sur la page réalisations.
-            </p>
-            <div className="brutal-border brutal-shadow bg-white p-6 md:p-8 mb-8">
-              <p className="mono text-xs font-bold text-[#7C3AED] mb-3">// étude de cas : Hébergement · SaaS</p>
-              <h3 className="text-2xl font-bold mb-4">Bunkly</h3>
-              <div className="grid sm:grid-cols-2 gap-6 mb-4">
-                <div>
-                  <p className="text-xs font-bold text-gray-400 uppercase mb-1">Contexte</p>
-                  <p className="text-sm text-gray-700 leading-relaxed">
-                    Les propriétaires de locations, hôtels et gîtes rédigent leur livret d&apos;accueil dans des documents PDF statiques, jamais traduits, jamais mis à jour, et impossibles à personnaliser rapidement pour chaque hébergement.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-xs font-bold text-gray-400 uppercase mb-1">Ce que j&apos;ai livré</p>
-                  <p className="text-sm text-gray-700 leading-relaxed">
-                    Une plateforme SaaS où le propriétaire gère plusieurs hébergements depuis un dashboard, réorganise les modules du livret en glisser-déposer, et importe une annonce Airbnb, Booking ou VRBO pour un remplissage automatique par IA. Le livret se traduit automatiquement dans la langue du voyageur et se partage par lien ou QR code.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-gray-200">
-                <div className="flex flex-wrap gap-2">
-                  {["Next.js", "SaaS", "Multi-langue", "Dashboard"].map((tech) => (
-                    <span key={tech} className="mono text-xs brutal-border px-2 py-1 bg-gray-50">{tech}</span>
-                  ))}
-                </div>
-                <a href="/portfolio/bunkly" className="brutal-btn bg-[#7C3AED] text-white px-4 py-2 text-sm inline-flex items-center gap-2">
-                  Voir l&apos;étude de cas complète <ArrowRight size={14} />
-                </a>
-              </div>
-            </div>
-            <div className="grid gap-8">
-              {demoSites.map(({ title, desc, url }) => (
-                <div key={title} className="brutal-border brutal-shadow bg-white overflow-hidden">
-                  <div className="border-b-[3px] border-black bg-[#0A0A0A]">
-                    <div className="flex items-center gap-1.5 px-3 py-2 border-b-[3px] border-black bg-[#1a1a1a]">
-                      <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]" />
-                      <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
-                      <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]" />
-                    </div>
-                    <div className="relative w-full aspect-[16/9] overflow-hidden">
-                      <iframe
-                        src={url}
-                        title={`Démo ${title}`}
-                        loading="lazy"
-                        className="absolute top-0 left-0 border-0 w-[222%] h-[222%] origin-top-left scale-[0.45]"
-                      />
-                    </div>
-                  </div>
-                  <div className="p-5">
-                    <h3 className="font-bold mb-1">{title}</h3>
-                    <p className="text-sm text-gray-600 leading-relaxed mb-4">{desc}</p>
-                    <a
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="brutal-btn bg-[#7C3AED] text-white px-4 py-2 text-sm inline-flex items-center gap-2"
-                    >
-                      Voir en plein écran <ArrowRight size={14} />
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <RelatedProjects service="web-app" />
 
         {/* CTA */}
         <section className="py-16 px-4">
@@ -476,8 +412,6 @@ export default function WebAppPage() {
             </a>
           </div>
         </section>
-
-        <RelatedProjects service="web-app" />
 
         <RelatedArticles service="web-app" />
 

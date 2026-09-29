@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
 import Contact from "@/components/Contact";
 import RelatedProjects from "@/components/RelatedProjects";
+import FAQItem from "@/components/FAQItem";
 import { Globe, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -70,6 +73,13 @@ const schema = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://breizhapp.tech" },
+        { "@type": "ListItem", position: 2, name: "Création de site web Brest", item: "https://breizhapp.tech/services/site-web" },
+      ],
+    },
+    {
       "@type": "FAQPage",
       mainEntity: faq.map(({ q, a }) => ({
         "@type": "Question",
@@ -96,10 +106,6 @@ const process = [
   { step: "04", title: "SEO, tests & mise en ligne", desc: "Optimisation des balises et du contenu, tests sur tous les appareils, déploiement et formation au panel admin si inclus." },
 ];
 
-const demoSites = [
-  { title: "Pizzeria", desc: "Site vitrine pour restaurant avec menu et présentation.", url: "https://demo.pizzeria.breizhapp.tech/" },
-  { title: "Paysagiste", desc: "Site vitrine pour artisan paysagiste avec présentation des services.", url: "https://demo.paysagiste.breizhapp.tech/" },
-];
 
 const useCases = [
   { emoji: "🏠", title: "Site vitrine", desc: "Présentation de votre activité, vos services, vos tarifs et vos coordonnées." },
@@ -115,70 +121,91 @@ export default function SiteWebPage() {
       <Navbar />
       <main className="bg-[#FFFBF0] min-h-screen">
 
+        {/* Breadcrumb */}
+        <nav className="max-w-6xl mx-auto px-4 pt-6 mono text-sm text-gray-500 flex items-center gap-2">
+          <Link href="/" className="hover:text-black transition-colors">Accueil</Link>
+          <span>/</span>
+          <span className="text-black font-bold">Création de site web Brest</span>
+        </nav>
+
         {/* Hero */}
-        <section className="border-b-[3px] border-black py-20 px-4">
-          <div className="max-w-4xl mx-auto">
-            <p className="mono text-sm font-bold text-gray-400 mb-4">// service 02</p>
-            <div className="flex items-center gap-4 mb-6">
-              <div className="bg-[#0A0A0A] brutal-border p-3">
-                <Globe size={32} className="text-[#FFFBF0]" />
+        <section className="border-b-[3px] border-black py-12 px-4">
+          <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-[#0A0A0A] brutal-border p-3">
+                  <Globe size={32} className="text-[#FFFBF0]" />
+                </div>
+                <div>
+                  <h1 className="text-4xl md:text-6xl font-bold leading-tight">Création de site web à Brest</h1>
+                  <p className="text-xl font-bold text-gray-500 mt-1">Vitrine · Landing page · Blog</p>
+                </div>
               </div>
-              <div>
-                <h1 className="text-4xl md:text-6xl font-bold leading-tight">Site web</h1>
-                <p className="text-xl font-bold text-gray-500 mt-1">Vitrine · Landing page · Blog</p>
+              <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
+                Un site web professionnel, rapide et bien référencé pour votre activité.
+                Design unique, contenu optimisé SEO, panel admin pour modifier vos contenus vous-même.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
+                  Demander un devis gratuit
+                </a>
+                <a href="/portfolio" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-8 py-4">
+                  Voir les réalisations →
+                </a>
               </div>
             </div>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
-              Un site web professionnel, rapide et bien référencé pour votre activité.
-              Design unique, contenu optimisé SEO, livraison en 2 à 4 semaines.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
-                Demander un devis gratuit
-              </a>
-              <a href="/portfolio" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-8 py-4">
-                Voir les réalisations →
-              </a>
+            <div className="brutal-border brutal-shadow bg-white overflow-hidden">
+              <Link href="/portfolio/demo-paysagiste" className="block overflow-hidden">
+                <div className="flex items-center gap-1.5 px-3 py-2 border-b-[3px] border-black bg-[#1a1a1a]">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]" />
+                </div>
+                <div className="relative w-full aspect-[16/10] overflow-hidden">
+                  <Image
+                    src="/portfolio/demo-paysagiste.png"
+                    alt="Page d'accueil du site vitrine Paradis Vert, paysagiste professionnel"
+                    fill
+                    className="object-cover object-top transition-transform duration-300 hover:scale-105"
+                    priority
+                  />
+                </div>
+              </Link>
+              <p className="text-xs text-gray-500 px-4 py-3 border-t-[3px] border-black">
+                Site vitrine Paradis Vert pour un paysagiste, avec galerie de chantiers, devis en ligne et panel admin.
+              </p>
             </div>
           </div>
         </section>
 
-        {/* Exemples en direct */}
-        <section className="py-16 px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8">Exemples en <span className="bg-[#FFE234] px-2 brutal-border">direct</span></h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              {demoSites.map(({ title, desc, url }) => (
-                <div key={title} className="brutal-border brutal-shadow bg-white overflow-hidden">
-                  <div className="border-b-[3px] border-black bg-[#0A0A0A]">
-                    <div className="flex items-center gap-1.5 px-3 py-2 border-b-[3px] border-black bg-[#1a1a1a]">
-                      <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]" />
-                      <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
-                      <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]" />
-                    </div>
-                    <div className="relative w-full aspect-[16/9] overflow-hidden">
-                      <iframe
-                        src={url}
-                        title={`Démo ${title}`}
-                        loading="lazy"
-                        className="absolute top-0 left-0 border-0 w-[222%] h-[222%] origin-top-left scale-[0.45]"
-                      />
-                    </div>
-                  </div>
-                  <div className="p-5">
-                    <h3 className="font-bold mb-1">{title}</h3>
-                    <p className="text-sm text-gray-600 leading-relaxed mb-4">{desc}</p>
-                    <a
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-4 py-2 text-sm inline-flex items-center gap-2"
-                    >
-                      Voir en plein écran <ArrowRight size={14} />
-                    </a>
-                  </div>
-                </div>
-              ))}
+        {/* En bref */}
+        <section className="py-16 px-4 bg-[#0A0A0A]">
+          <div className="max-w-6xl mx-auto grid lg:grid-cols-[2fr_1fr] gap-10">
+            <div className="border-l-4 border-[#FFE234] pl-6">
+              <p className="mono text-sm font-bold text-[#FFE234] mb-4">EN BREF</p>
+              <p className="text-gray-300 leading-relaxed">
+                Je crée des sites web sur mesure : sites vitrines, landing pages et blogs professionnels, pensés pour
+                être trouvés sur Google et transformer vos visiteurs en demandes de contact. Je m&apos;appelle Enzo,
+                développeur freelance basé à Brest, et j&apos;accompagne des TPE, artisans, restaurateurs et commerçants
+                dans tout le Finistère et la Bretagne, sur place ou à distance partout en France. Un site web sur mesure
+                démarre à 1 500 € et se livre en 2 à 4 semaines selon les fonctionnalités. Vous êtes propriétaire du site
+                et de votre nom de domaine, et vous échangez directement avec la personne qui le développe, sans
+                intermédiaire. Devis détaillé sous 24h après un premier échange gratuit.
+              </p>
+            </div>
+            <div className="flex flex-col gap-6">
+              <div className="border-t border-gray-800 pt-4">
+                <p className="mono text-xs font-bold text-gray-500 uppercase mb-1">Livraison</p>
+                <p className="text-xl font-bold text-white">2 à 4 semaines</p>
+              </div>
+              <div className="border-t border-gray-800 pt-4">
+                <p className="mono text-xs font-bold text-gray-500 uppercase mb-1">Budget indicatif</p>
+                <p className="text-xl font-bold text-white">Dès 1 500 €</p>
+              </div>
+              <div className="border-t border-gray-800 pt-4">
+                <p className="mono text-xs font-bold text-gray-500 uppercase mb-1">Premier retour</p>
+                <p className="text-xl font-bold text-white">Sous 24h</p>
+              </div>
             </div>
           </div>
         </section>
@@ -344,19 +371,18 @@ export default function SiteWebPage() {
         </section>
 
         {/* FAQ */}
-        <section className="py-16 px-4 bg-[#0A0A0A]">
+        <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#FFE234] mb-8">Questions fréquentes : création de site web</h2>
-            <div className="flex flex-col gap-4">
+            <h2 className="text-2xl font-bold mb-8">Questions fréquentes : création de site web</h2>
+            <div className="flex flex-col gap-3">
               {faq.map(({ q, a }) => (
-                <div key={q} className="border-2 border-gray-800 p-5">
-                  <h3 className="font-bold text-[#FFFBF0] mb-2">{q}</h3>
-                  <p className="text-sm text-gray-400 leading-relaxed">{a}</p>
-                </div>
+                <FAQItem key={q} q={q} a={a} />
               ))}
             </div>
           </div>
         </section>
+
+        <RelatedProjects service="site-web" />
 
         {/* CTA */}
         <section className="py-16 px-4">
@@ -370,8 +396,6 @@ export default function SiteWebPage() {
             </a>
           </div>
         </section>
-
-        <RelatedProjects service="site-web" />
 
         <RelatedArticles service="site-web" />
 

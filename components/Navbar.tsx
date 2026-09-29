@@ -47,7 +47,7 @@ export default function Navbar() {
               <div className="absolute top-full left-0 pt-2 w-[560px]">
                 <div className="brutal-border brutal-shadow bg-white p-4 grid grid-cols-2 gap-4">
                   <div>
-                    <p className="mono text-xs font-bold text-gray-400 mb-2 px-2">// nos services</p>
+                    <p className="mono text-xs font-bold text-gray-400 mb-2 px-2">// mes services</p>
                     <ul className="flex flex-col gap-1">
                       {SERVICES.map((s) => (
                         <li key={s.slug}>
@@ -140,7 +140,7 @@ export default function Navbar() {
               </button>
               {mobileSecteursOpen && (
                 <div className="border-t-2 border-black p-3 flex flex-col gap-1">
-                  <p className="mono text-xs font-bold text-gray-400 px-1 mt-1 mb-1">// nos services</p>
+                  <p className="mono text-xs font-bold text-gray-400 px-1 mt-1 mb-1">// mes services</p>
                   {SERVICES.map((s) => (
                     <Link
                       key={s.slug}

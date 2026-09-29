@@ -16,7 +16,7 @@ export default function SchemaFAQ() {
         name: "Combien coûte la création d'une application mobile ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Une app commence à 490€ d'installation + 49€/mois (hébergement & support inclus). Le prix final dépend des fonctionnalités choisies : paiement, notifications, panel admin, réservation. Pour les boutiques e-commerce, j'ai une offre spéciale à 0€ d'installation avec 12% de commission sur les ventes. Chaque projet est unique, le devis est gratuit et sans engagement.",
+          text: "Le prix dépend des fonctionnalités dont vous avez besoin : paiement, notifications, panel admin, réservation. Chaque projet est unique : décrivez-moi votre idée et je vous envoie un devis gratuit et détaillé sous 24h, sans engagement.",
         },
       },
       {

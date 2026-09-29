@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
 import Contact from "@/components/Contact";
 import RelatedProjects from "@/components/RelatedProjects";
+import FAQItem from "@/components/FAQItem";
 import { ShoppingBag, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -43,9 +46,6 @@ const useCases = [
   { emoji: "📦", title: "Dropshipping / revendeur", desc: "Catalogue automatisé, synchronisation fournisseur, gestion multi-entrepôts." },
 ];
 
-const demoSites = [
-  { title: "Histoire Eternelle", desc: "Boutique e-commerce de bijoux avec catalogue, avis clients, espace client et panel admin.", url: "https://www.histoire-eternelle-l-atelier.fr/" },
-];
 
 const process = [
   { step: "01", title: "Cadrage du projet", desc: "On échange sur votre catalogue, vos moyens de livraison et vos besoins de gestion. Devis détaillé sous 24h." },
@@ -65,7 +65,7 @@ const faq = [
   },
   {
     q: "Quels moyens de paiement sont proposés ?",
-    a: "Le paiement est géré par Stripe, la solution la plus utilisée et sécurisée du marché : carte bancaire, Apple Pay et Google Pay, avec conformité PCI-DSS. Aucune commission additionnelle n'est prélevée par BreizhApp sur vos ventes.",
+    a: "Le paiement est géré par Stripe, la solution la plus utilisée et sécurisée du marché : carte bancaire, Apple Pay et Google Pay, avec conformité PCI-DSS. Je ne prélève aucune commission sur vos ventes.",
   },
   {
     q: "Combien de temps pour développer une boutique en ligne ?",
@@ -73,7 +73,7 @@ const faq = [
   },
   {
     q: "Combien coûte une boutique e-commerce sur mesure ?",
-    a: "À partir de 2 500 €, pour une boutique avec catalogue produits, paiement Stripe et panel admin. Le tarif final dépend de la taille du catalogue et des fonctionnalités souhaitées, devis détaillé sous 24h après le cadrage.",
+    a: "À partir de 2 000 €, pour une boutique avec catalogue produits, paiement Stripe et panel admin. Le tarif final dépend de la taille du catalogue et des fonctionnalités souhaitées, devis détaillé sous 24h après le cadrage.",
   },
   {
     q: "La boutique sera-t-elle bien référencée sur Google ?",
@@ -88,6 +88,13 @@ const faq = [
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://breizhapp.tech" },
+        { "@type": "ListItem", position: 2, name: "Création de boutique en ligne Brest", item: "https://breizhapp.tech/services/ecommerce" },
+      ],
+    },
     {
       "@type": "FAQPage",
       mainEntity: faq.map(({ q, a }) => ({
@@ -106,70 +113,91 @@ export default function EcommercePage() {
       <Navbar />
       <main className="bg-[#FFFBF0] min-h-screen">
 
+        {/* Breadcrumb */}
+        <nav className="max-w-7xl mx-auto px-4 pt-6 mono text-sm text-gray-500 flex items-center gap-2">
+          <Link href="/" className="hover:text-black transition-colors">Accueil</Link>
+          <span>/</span>
+          <span className="text-black font-bold">Création de boutique en ligne Brest</span>
+        </nav>
+
         {/* Hero */}
-        <section className="border-b-[3px] border-black py-20 px-4">
-          <div className="max-w-4xl mx-auto">
-            <p className="mono text-sm font-bold text-gray-400 mb-4">// service 04</p>
-            <div className="flex items-center gap-4 mb-6">
-              <div className="bg-[#FF6B9D] brutal-border p-3">
-                <ShoppingBag size={32} className="text-white" />
+        <section className="border-b-[3px] border-black py-12 px-4">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-[2fr_3fr] gap-10 items-center">
+            <div>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-[#FF6B9D] brutal-border p-3 shrink-0">
+                  <ShoppingBag size={32} className="text-white" />
+                </div>
+                <div>
+                  <h1 className="text-4xl md:text-5xl font-bold leading-tight">Création de boutique en ligne à Brest</h1>
+                  <p className="text-xl font-bold text-gray-500 mt-1">E-commerce · Paiement Stripe · Sur mesure</p>
+                </div>
               </div>
-              <div>
-                <h1 className="text-4xl md:text-6xl font-bold leading-tight">E-commerce</h1>
-                <p className="text-xl font-bold text-gray-500 mt-1">Boutique en ligne · Sur mesure</p>
+              <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
+                Une boutique en ligne qui vous appartient, sans abonnement Shopify ni commission sur vos ventes.
+                Design unique, paiement Stripe, gestion des commandes et des stocks depuis votre espace admin.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
+                  Demander un devis gratuit
+                </a>
+                <a href="/portfolio" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-8 py-4">
+                  Voir les réalisations →
+                </a>
               </div>
             </div>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
-              Une boutique en ligne qui vous appartient vraiment, sans abonnement mensuel à Shopify ou commission sur chaque vente.
-              Design unique, paiement Stripe, gestion des commandes intégrée.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
-                Demander un devis gratuit
-              </a>
-              <a href="/portfolio" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-8 py-4">
-                Voir les réalisations →
-              </a>
+            <div className="brutal-border brutal-shadow bg-white overflow-hidden">
+              <Link href="/portfolio/histoire-eternelle" className="block overflow-hidden">
+                <div className="flex items-center gap-1.5 px-3 py-2 border-b-[3px] border-black bg-[#1a1a1a]">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]" />
+                </div>
+                <div className="relative w-full aspect-[1912/917] overflow-hidden">
+                  <Image
+                    src="/services/histoire-eternelle-hero.png"
+                    alt="Page d'accueil de la boutique en ligne Histoire Eternelle, bijoux artisanaux en résine"
+                    fill
+                    className="object-cover object-top transition-transform duration-300 hover:scale-105"
+                    priority
+                  />
+                </div>
+              </Link>
+              <p className="text-xs text-gray-500 px-4 py-3 border-t-[3px] border-black">
+                Boutique en ligne Histoire Eternelle, bijoux artisanaux : catalogue, panier, espace client, paiement Stripe et panel admin.
+              </p>
             </div>
           </div>
         </section>
 
-        {/* Exemples en direct */}
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8">Exemples en <span className="bg-[#FFE234] px-2 brutal-border">direct</span></h2>
-            <div className="grid gap-8">
-              {demoSites.map(({ title, desc, url }) => (
-                <div key={title} className="brutal-border brutal-shadow bg-white overflow-hidden">
-                  <div className="border-b-[3px] border-black bg-[#0A0A0A]">
-                    <div className="flex items-center gap-1.5 px-3 py-2 border-b-[3px] border-black bg-[#1a1a1a]">
-                      <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]" />
-                      <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
-                      <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]" />
-                    </div>
-                    <div className="relative w-full aspect-[16/9] overflow-hidden">
-                      <iframe
-                        src={url}
-                        title={`Démo ${title}`}
-                        loading="lazy"
-                        className="absolute top-0 left-0 border-0 w-[222%] h-[222%] origin-top-left scale-[0.45]"
-                      />
-                    </div>
-                  </div>
-                  <div className="p-5">
-                    <h3 className="font-bold mb-1">{title}</h3>
-                    <p className="text-sm text-gray-600 leading-relaxed mb-4">{desc}</p>
-                    <a
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="brutal-btn bg-[#FF6B9D] text-white px-4 py-2 text-sm inline-flex items-center gap-2"
-                    >
-                      Voir en plein écran <ArrowRight size={14} />
-                    </a>
-                  </div>
-                </div>
-              ))}
+        {/* En bref */}
+        <section className="py-16 px-4 bg-[#0A0A0A]">
+          <div className="max-w-6xl mx-auto grid lg:grid-cols-[2fr_1fr] gap-10">
+            <div className="border-l-4 border-[#FFE234] pl-6">
+              <p className="mono text-sm font-bold text-[#FFE234] mb-4">EN BREF</p>
+              <p className="text-gray-300 leading-relaxed">
+                Je crée des boutiques en ligne sur mesure pour les commerçants, artisans, créateurs et producteurs :
+                catalogue produits, panier, paiement Stripe, espace client et panel admin pour gérer commandes et stocks
+                en autonomie. Je m&apos;appelle Enzo, développeur freelance basé à Brest, et j&apos;accompagne les
+                commerces de tout le Finistère et de la Bretagne, sur place ou à distance partout en France. Une boutique
+                avec catalogue, paiement et panel admin démarre à 2 000 € et se livre en 3 à 6 semaines selon la taille du
+                catalogue. Pas d&apos;abonnement mensuel ni de commission sur vos ventes : vous êtes propriétaire du code
+                et de vos données. Devis détaillé sous 24h après un cadrage gratuit.
+              </p>
+            </div>
+            <div className="flex flex-col gap-6">
+              <div className="border-t border-gray-800 pt-4">
+                <p className="mono text-xs font-bold text-gray-500 uppercase mb-1">Livraison</p>
+                <p className="text-xl font-bold text-white">3 à 6 semaines</p>
+              </div>
+              <div className="border-t border-gray-800 pt-4">
+                <p className="mono text-xs font-bold text-gray-500 uppercase mb-1">Budget indicatif</p>
+                <p className="text-xl font-bold text-white">Dès 2 000 €</p>
+              </div>
+              <div className="border-t border-gray-800 pt-4">
+                <p className="mono text-xs font-bold text-gray-500 uppercase mb-1">Premier retour</p>
+                <p className="text-xl font-bold text-white">Sous 24h</p>
+              </div>
             </div>
           </div>
         </section>
@@ -233,7 +261,7 @@ export default function EcommercePage() {
                   Le tunnel d&apos;achat est conçu pour réduire les abandons de panier : ajout au panier fluide,
                   récapitulatif clair de la commande, et paiement sécurisé via Stripe (carte bancaire, Apple Pay, Google
                   Pay), conforme aux normes PCI-DSS. Des emails automatiques confirment la commande et informent le client
-                  de son expédition, sans aucune commission prélevée par BreizhApp sur vos ventes, contrairement aux
+                  de son expédition, sans aucune commission de ma part sur vos ventes, contrairement aux
                   plateformes SaaS classiques.
                 </p>
               </div>
@@ -280,7 +308,7 @@ export default function EcommercePage() {
             </p>
             <div className="brutal-border brutal-shadow bg-white p-8 max-w-md">
               <p className="mono text-sm font-bold text-gray-400 mb-2">Boutique e-commerce sur mesure</p>
-              <p className="text-4xl font-bold mb-1">À partir de 2 500 €</p>
+              <p className="text-4xl font-bold mb-1">À partir de 2 000 €</p>
               <p className="text-sm text-gray-500 mb-4">Livrée en 3 à 6 semaines selon le catalogue</p>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex items-start gap-2"><CheckCircle2 size={16} className="text-[#FF6B9D] mt-0.5 shrink-0" /> Catalogue produits et paiement Stripe inclus</li>
@@ -314,19 +342,18 @@ export default function EcommercePage() {
         </section>
 
         {/* FAQ */}
-        <section className="py-16 px-4 bg-[#0A0A0A]">
+        <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#FFE234] mb-8">Questions fréquentes : boutique e-commerce sur mesure</h2>
-            <div className="flex flex-col gap-4">
+            <h2 className="text-2xl font-bold mb-8">Questions fréquentes : boutique e-commerce sur mesure</h2>
+            <div className="flex flex-col gap-3">
               {faq.map(({ q, a }) => (
-                <div key={q} className="border-2 border-gray-800 p-5">
-                  <h3 className="font-bold text-[#FFFBF0] mb-2">{q}</h3>
-                  <p className="text-sm text-gray-400 leading-relaxed">{a}</p>
-                </div>
+                <FAQItem key={q} q={q} a={a} />
               ))}
             </div>
           </div>
         </section>
+
+        <RelatedProjects service="ecommerce" />
 
         {/* CTA */}
         <section className="py-16 px-4">
@@ -340,8 +367,6 @@ export default function EcommercePage() {
             </a>
           </div>
         </section>
-
-        <RelatedProjects service="ecommerce" />
 
         <RelatedArticles service="ecommerce" />
 

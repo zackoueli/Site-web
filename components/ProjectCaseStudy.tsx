@@ -293,7 +293,7 @@ export default function ProjectCaseStudy({
             {/* Newsletter */}
             <div className="rounded-3xl bg-[#FFFBF0] text-[#0A0A0A] p-5 md:p-6 shadow-2xl">
               <p className="text-2xl md:text-3xl font-black tracking-tight leading-[1.05] mb-4">
-                Recevez nos<br />actualités
+                Recevez mes<br />actualités
               </p>
               <form
                 onSubmit={(e) => { e.preventDefault(); setMenuOpen(false); }}

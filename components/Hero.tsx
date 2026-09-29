@@ -133,7 +133,7 @@ export default function Hero() {
 
                 {/* Screen: iframe Bunkly — chargée après idle */}
                 <LazyIframe
-                  src="https://app.bunkly.co/b/NAvq6yDTOe"
+                  src="https://app.bunkly.co/b/villa-les-chataigniers"
                   title="Livret d'accueil BreizhApp"
                   sandbox="allow-scripts allow-same-origin allow-popups"
                   className="w-full h-full overflow-hidden"

@@ -15,8 +15,17 @@ export default function RelatedArticles({ service }: { service: string }) {
         <h2 className="text-xl font-bold mb-6">À lire aussi</h2>
         <div className="grid sm:grid-cols-3 gap-4">
           {articles.map((a) => (
-            <Link key={a.slug} href={`/blog/${a.slug}`} className="brutal-border bg-white p-4 hover:bg-[#FFE234] transition-colors block">
-              <p className="font-bold text-sm leading-snug">{a.title} →</p>
+            <Link key={a.slug} href={`/blog/${a.slug}`} className="brutal-border bg-white overflow-hidden hover:bg-[#FFE234] transition-colors flex flex-col">
+              {a.image && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={a.image.src}
+                  alt={a.image.alt}
+                  className="w-full h-32 object-cover border-b-[3px] border-black"
+                  loading="lazy"
+                />
+              )}
+              <p className="font-bold text-sm leading-snug p-4">{a.title} →</p>
             </Link>
           ))}
         </div>

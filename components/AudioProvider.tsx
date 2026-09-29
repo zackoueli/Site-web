@@ -6,16 +6,20 @@ import {
   useEffect,
   useRef,
   useState,
+  useSyncExternalStore,
 } from "react";
 
 const TRACK_SRC = "/lofcosmos-cloudy-skies-and-coffee-vibes-509784.mp3";
-const TARGET_VOLUME = 0.3; // -15 % (0.35 -> 0.30)
+const DEFAULT_VOLUME = 0.2; // volume par défaut (0.30 -> 0.20)
 // "on"  = l'utilisateur veut la musique  |  "off" = il l'a coupée  |  absent = jamais choisi
 const PREF_KEY = "ba-music-pref";
+const VOLUME_KEY = "ba-music-volume";
 
 type AudioCtx = {
   playing: boolean;
   toggle: () => void;
+  volume: number;
+  setVolume: (v: number) => void;
 };
 
 const Ctx = createContext<AudioCtx | null>(null);
@@ -37,11 +41,43 @@ function readPref(): "on" | "off" | null {
 function writePref(v: "on" | "off") {
   try { localStorage.setItem(PREF_KEY, v); } catch {}
 }
+// Volume choisi : mémoire de la session, puis localStorage, puis valeur par défaut
+let sessionVolume: number | null = null;
+const volumeListeners = new Set<() => void>();
+function readVolume(): number {
+  if (sessionVolume !== null) return sessionVolume;
+  try {
+    const v = parseFloat(localStorage.getItem(VOLUME_KEY) ?? "");
+    return Number.isFinite(v) && v >= 0 && v <= 1 ? v : DEFAULT_VOLUME;
+  } catch {
+    return DEFAULT_VOLUME;
+  }
+}
+function writeVolume(v: number) {
+  sessionVolume = v;
+  try { localStorage.setItem(VOLUME_KEY, String(v)); } catch {}
+  volumeListeners.forEach((cb) => cb());
+}
+function subscribeVolume(cb: () => void) {
+  volumeListeners.add(cb);
+  return () => { volumeListeners.delete(cb); };
+}
 
 export default function AudioProvider({ children }: { children: React.ReactNode }) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const fadeRef = useRef<number | null>(null);
   const [playing, setPlaying] = useState(false);
+  const volume = useSyncExternalStore(subscribeVolume, readVolume, () => DEFAULT_VOLUME);
+
+  // Curseur de volume : applique tout de suite (annule un fondu en cours) et mémorise
+  const setVolume = useCallback((v: number) => {
+    const clamped = Math.min(1, Math.max(0, v));
+    writeVolume(clamped);
+    const el = audioRef.current;
+    if (!el) return;
+    if (fadeRef.current) { cancelAnimationFrame(fadeRef.current); fadeRef.current = null; }
+    if (!el.paused) el.volume = clamped;
+  }, []);
 
   // Fondu linéaire du volume (ms), annule un fondu en cours
   const fade = useCallback((to: number, ms: number, onDone?: () => void) => {
@@ -70,7 +106,7 @@ export default function AudioProvider({ children }: { children: React.ReactNode 
     el.volume = 0;
     const pr = el.play();
     const done = pr ?? Promise.resolve();
-    return done.then(() => { fade(TARGET_VOLUME, 1400); });
+    return done.then(() => { fade(readVolume(), 1400); });
   }, [fade]);
 
   // Bouton son : bascule et mémorise le choix explicite (avec fondus)
@@ -150,7 +186,7 @@ export default function AudioProvider({ children }: { children: React.ReactNode 
   }, [play]);
 
   return (
-    <Ctx.Provider value={{ playing, toggle }}>
+    <Ctx.Provider value={{ playing, toggle, volume, setVolume }}>
       <audio ref={audioRef} src={TRACK_SRC} loop preload="auto" />
       {children}
     </Ctx.Provider>

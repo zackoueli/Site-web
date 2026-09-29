@@ -488,7 +488,16 @@ export default async function ArticlePage({ params }: Props) {
             <div className="grid sm:grid-cols-2 gap-4">
               {others.map((a) => (
                 <Link key={a.slug} href={`/blog/${a.slug}`}>
-                  <div className="brutal-card p-4 h-full">
+                  <div className="brutal-card h-full overflow-hidden">
+                    {a.image && (
+                      <img
+                        src={a.image.src}
+                        alt={a.image.alt}
+                        className="w-full h-36 object-cover border-b-2 border-black"
+                        loading="lazy"
+                      />
+                    )}
+                    <div className="p-4">
                     <span
                       className={`mono text-xs font-bold px-2 py-0.5 brutal-border mb-2 inline-block ${
                         categoryColors[a.category] ?? "bg-white"
@@ -497,6 +506,7 @@ export default async function ArticlePage({ params }: Props) {
                       {a.category}
                     </span>
                     <p className="font-bold leading-snug">{a.title}</p>
+                    </div>
                   </div>
                 </Link>
               ))}

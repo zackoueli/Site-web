@@ -16,11 +16,10 @@ export default function FAQItem({ q, a }: { q: string; a: string }) {
           {open ? <Minus size={16} /> : <Plus size={16} />}
         </span>
       </button>
-      {open && (
-        <div className="px-5 pb-5 text-gray-700 leading-relaxed border-t-[3px] border-black pt-4">
-          {a}
-        </div>
-      )}
+      {/* Réponse toujours dans le HTML (lisible par Google), simplement masquée quand fermée */}
+      <div hidden={!open} className="px-5 pb-5 text-gray-700 leading-relaxed border-t-[3px] border-black pt-4">
+        {a}
+      </div>
     </div>
   );
 }
