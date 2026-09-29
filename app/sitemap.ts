@@ -11,7 +11,7 @@ const STATIC_PAGES: MetadataRoute.Sitemap = [
   { url: "https://breizhapp.tech/services/application-mobile",            lastModified: new Date("2026-09-29"), changeFrequency: "monthly", priority: 0.9 },
   { url: "https://breizhapp.tech/services/site-web",                      lastModified: new Date("2026-09-20"), changeFrequency: "monthly", priority: 0.8 },
   { url: "https://breizhapp.tech/services/web-app",                       lastModified: new Date("2026-09-20"), changeFrequency: "monthly", priority: 0.8 },
-  { url: "https://breizhapp.tech/services/ecommerce",                     lastModified: new Date("2026-09-20"), changeFrequency: "monthly", priority: 0.8 },
+  { url: "https://breizhapp.tech/services/ecommerce",                     lastModified: new Date("2026-09-29"), changeFrequency: "monthly", priority: 0.8 },
   { url: "https://breizhapp.tech/services/secteur/restaurant",                    lastModified: new Date("2026-05-01"), changeFrequency: "monthly", priority: 0.9 },
   { url: "https://breizhapp.tech/services/secteur/coiffeur",                      lastModified: new Date("2026-05-01"), changeFrequency: "monthly", priority: 0.85 },
   { url: "https://breizhapp.tech/services/secteur/hotel",                         lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.85 },

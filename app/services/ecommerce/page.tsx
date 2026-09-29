@@ -7,8 +7,8 @@ import RelatedProjects from "@/components/RelatedProjects";
 import { ShoppingBag, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Boutique e-commerce sur mesure · Brest | BreizhApp",
-  description: "Boutique en ligne sur mesure : catalogue, panier, paiement Stripe, gestion des commandes. Alternative à Shopify sans abonnement mensuel.",
+  title: "Création de boutique en ligne à Brest | BreizhApp",
+  description: "Développeur freelance à Brest, je conçois votre boutique en ligne : design, paiement sécurisé, gestion des stocks, espace client et admin. Devis 24h.",
   keywords: [
     "boutique en ligne sur mesure",
     "e-commerce sur mesure brest",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://breizhapp.tech/services/ecommerce" },
   openGraph: {
-    title: "Boutique e-commerce sur mesure · Brest",
-    description: "Boutique en ligne sur mesure : catalogue, panier, Stripe. Alternative à Shopify sans abonnement mensuel.",
+    title: "Création de boutique en ligne à Brest | BreizhApp",
+    description: "Développeur freelance à Brest, je conçois votre boutique en ligne : design, paiement sécurisé, gestion des stocks, espace client et admin. Devis 24h.",
     url: "https://breizhapp.tech/services/ecommerce",
     type: "website",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
