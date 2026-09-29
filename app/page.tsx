@@ -10,7 +10,7 @@ import TechStrip from "@/components/TechStrip";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
 import About from "@/components/About";
-import Pricing from "@/components/Pricing";
+import ProjectEstimator from "@/components/ProjectEstimator";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -26,7 +26,7 @@ export default function Home() {
         <Services />
         <Portfolio />
         <About />
-        <Pricing />
+        <ProjectEstimator />
         <FAQ />
         <Contact />
       </main>
