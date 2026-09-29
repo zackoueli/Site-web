@@ -163,10 +163,6 @@ const testimonials = [
     author: "Forno Pizzeria",
     text: "Application livrée en 3 semaines, exactement ce qu'on voulait. On a récupéré nos commandes Uber Eats dès le premier mois.",
   },
-  {
-    author: "Cliente commerçante · Brest",
-    text: "Développeur très réactif, devis respecté, application fonctionnelle et bien designée. Je recommande BreizhApp sans hésiter.",
-  },
 ];
 
 const villes = ["Brest", "Guipavas", "Le Relecq-Kerhuon", "Plougastel", "Landerneau", "Quimper", "Morlaix", "Rennes", "Lorient", "Vannes"];
@@ -438,7 +434,7 @@ export default function AppMobilePage() {
         <section className="py-16 px-4 bg-[#0A0A0A]">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#FFE234] mb-8">Ils ont lancé leur application avec l&apos;agence</h2>
-            <div className="grid sm:grid-cols-2 gap-4">
+            <div className="grid gap-4">
               {testimonials.map(({ author, text }) => (
                 <div key={author} className="border-2 border-gray-800 p-6 hover:border-[#FFE234] transition-colors">
                   <Quote size={20} className="text-[#FFE234] mb-3" />
