@@ -1,143 +1,138 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import RelatedArticles from "@/components/RelatedArticles";
-import Contact from "@/components/Contact";
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import SectorPage, { MockScreen } from "@/components/SectorPage";
+import { GraduationCap } from "lucide-react";
+
+const TITLE = "Application mobile éducation & formation | BreizhApp";
+const DESCRIPTION =
+  "Développeur freelance à Brest, je crée votre plateforme de formation ou app e-learning : cours, quiz, progression, certificats, paiement. Devis gratuit 24h.";
 
 export const metadata: Metadata = {
-  title: "Application mobile éducation & formation iOS & Android | BreizhApp",
-  description:
-    "Créez votre app e-learning sur mesure : cours en ligne, quiz, progression, certificats, messagerie formateur. Développeur freelance à Brest.",
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: { canonical: "https://breizhapp.tech/services/secteur/education-formation" },
   openGraph: {
-    title: "Application mobile éducation & formation | BreizhApp",
-    description: "App e-learning iOS & Android sur mesure : cours, quiz, progression, certificats. Freelance Brest, devis gratuit sous 24h.",
+    title: TITLE,
+    description: DESCRIPTION,
     url: "https://breizhapp.tech/services/secteur/education-formation",
     type: "website",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
 };
 
-const features = [
-  { title: "Cours & modules structurés", desc: "Organisez votre contenu en chapitres, leçons et modules. Vos apprenants progressent à leur rythme, avec leur avancement sauvegardé automatiquement." },
-  { title: "Quiz & exercices interactifs", desc: "Questions à choix multiples, vrai/faux, textes à compléter : des formats variés pour tester les connaissances et rendre l'apprentissage moins passif." },
-  { title: "Suivi de progression", desc: "Chaque apprenant voit son pourcentage de complétion, ses scores et ses points forts. Vous voyez depuis le dashboard qui avance et qui décroche." },
-  { title: "Certificats de complétion", desc: "Générez et envoyez automatiquement un certificat PDF personnalisé quand un apprenant termine une formation." },
-  { title: "Messagerie formateur-apprenant", desc: "Canal direct pour les questions, les feedbacks et les encouragements. L'accompagnement humain qui fait la différence dans la rétention." },
-  { title: "Accès par abonnement ou à l'unité", desc: "Monétisez votre contenu par abonnement mensuel, achat unique de cours ou accès freemium avec contenu premium payant." },
+const faq = [
+  {
+    q: "Combien coûte une plateforme de formation sur mesure ?",
+    a: "Une plateforme web de formation (web app) démarre à 3 000 €, une application mobile iOS & Android à 4 000 €. Le prix dépend des fonctionnalités : quiz, certificats, classes virtuelles, espace formateur, paiement. Devis détaillé sous 24h.",
+  },
+  {
+    q: "Pourquoi pas Teachizy, LearnyBox ou Kajabi ?",
+    a: "Ces plateformes permettent de démarrer vite, mais vous payez chaque mois, souvent davantage quand vos apprenants sont nombreux, et vos formations ressemblent à celles de tous les autres. Une plateforme sur mesure suit votre pédagogie, porte votre marque et vous appartient.",
+  },
+  {
+    q: "La plateforme aide-t-elle pour Qualiopi ?",
+    a: "Elle peut produire les preuves dont vous avez besoin : suivi de connexion et de progression, résultats aux évaluations, questionnaires de satisfaction et attestations. La certification Qualiopi reste celle de votre organisme, mais la plateforme facilite la traçabilité demandée.",
+  },
+  {
+    q: "Peut-on vendre les formations en ligne ?",
+    a: "Oui : paiement unique, en plusieurs fois ou abonnement à une bibliothèque, via Stripe. Vous pouvez aussi créer des accès pour des entreprises clientes qui inscrivent leurs salariés.",
+  },
+  {
+    q: "Les apprenants peuvent-ils suivre les cours sur mobile ?",
+    a: "Oui, et c'est tout l'intérêt d'une application : leçons courtes, vidéos téléchargeables pour les suivre hors connexion, quiz et rappels pour ne pas décrocher.",
+  },
+  {
+    q: "Comment fonctionnent les certificats ?",
+    a: "Un certificat ou une attestation est généré automatiquement quand l'apprenant a terminé le parcours et réussi les évaluations, avec ses informations et la date.",
+  },
+  {
+    q: "En combien de temps la plateforme est-elle prête ?",
+    a: "Entre 4 et 8 semaines selon le nombre de fonctionnalités et d'interfaces (apprenant, formateur, administrateur).",
+  },
 ];
 
 export default function EducationPage() {
   return (
-    <>
-      <Navbar />
-      <main className="bg-[#FFFBF0] min-h-screen">
-
-        <nav className="max-w-4xl mx-auto px-4 pt-6 mono text-sm text-gray-500 flex items-center gap-2">
-          <Link href="/" className="hover:text-black transition-colors">Accueil</Link>
-          <span>/</span>
-          <Link href="/services/application-mobile" className="hover:text-black transition-colors">Services</Link>
-          <span>/</span>
-          <span className="text-black font-bold">App formation</span>
-        </nav>
-
-        <section className="border-b-[3px] border-black py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <p className="mono text-sm font-bold text-[#FFE234] mb-4">// éducation & formation</p>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
-              Application mobile<br />
-              <span className="bg-[#FFE234] brutal-border px-2">éducation & e-learning</span>
-            </h1>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
-              Teachizy, Thinkific ou Kajabi coûtent entre 30€ et 200€ par mois sans jamais vous appartenir. Une app e-learning sur mesure, c'est votre contenu, votre marque et vos revenus, sans dépendre d'une plateforme tierce.
-            </p>
-            <div className="flex flex-wrap gap-4 mb-8">
-              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
-              <Link href="/blog/creer-plateforme-digitale-sur-mesure" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-8 py-4">Guide plateforme →</Link>
-            </div>
-            <div className="flex flex-wrap gap-4 mono text-sm text-gray-500">
-              <span className="brutal-border px-3 py-1 bg-white">✓ Vos revenus, 0% de commission</span>
-              <span className="brutal-border px-3 py-1 bg-white">✓ iOS & Android</span>
-              <span className="brutal-border px-3 py-1 bg-white">✓ Quiz & certificats</span>
-              <span className="brutal-border px-3 py-1 bg-white">✓ Abonnements Stripe</span>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8">Fonctionnalités <span className="bg-[#FFE234] px-2 brutal-border">de l'app</span></h2>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-              {features.map(({ title, desc }) => (
-                <div key={title} className="brutal-border bg-white p-5">
-                  <CheckCircle2 size={18} className="text-[#FFE234] mb-3" />
-                  <h3 className="font-bold mb-1">{title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4 bg-[#0A0A0A]">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#FFE234] mb-6">Pour qui c'est fait ?</h2>
-            <div className="grid sm:grid-cols-2 gap-4">
-              {[
-                { emoji: "👩‍🏫", label: "Formateurs & consultants", desc: "Monétisez votre expertise avec votre propre app, sans payer d'abonnement à Teachizy ou Thinkific." },
-                { emoji: "🎓", label: "Écoles & organismes de formation", desc: "Complétez votre offre présentielle avec une app mobile qui accompagne vos apprenants entre les sessions." },
-                { emoji: "🌍", label: "Applications de langues", desc: "Apprentissage d'une langue avec fiches, audio, quiz et progression gamifiée : votre alternative à Duolingo." },
-                { emoji: "🔬", label: "Formations techniques & certifiantes", desc: "Préparation à des examens, formations certifiantes, quiz d'entraînement, avec suivi de progression détaillé." },
-              ].map(({ emoji, label, desc }) => (
-                <div key={label} className="border-2 border-gray-800 p-5 hover:border-[#FFE234] transition-colors">
-                  <div className="text-3xl mb-3">{emoji}</div>
-                  <h3 className="font-bold text-[#FFFBF0] mb-1">{label}</h3>
-                  <p className="text-sm text-gray-400 leading-relaxed">{desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4 bg-gray-50 brutal-border border-t-[3px]">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8">Questions fréquentes</h2>
-            <div className="flex flex-col gap-4">
-              {[
-                { q: "Peut-on intégrer des vidéos dans l'app ?", a: "Oui. Les vidéos sont hébergées sur YouTube (privé) ou Vimeo et intégrées dans l'app. C'est la solution la plus économique et performante, pas besoin d'héberger les fichiers vidéo vous-même." },
-                { q: "Comment les apprenants accèdent-ils aux cours payants ?", a: "Via Stripe : achat unique du cours ou abonnement mensuel. L'accès est accordé automatiquement après paiement et révoqué en cas d'annulation d'abonnement." },
-                { q: "Peut-on avoir à la fois du contenu gratuit et payant ?", a: "Oui, c'est le modèle freemium. Vous définissez quels modules sont accessibles gratuitement et lesquels nécessitent un achat ou un abonnement actif." },
-                { q: "Combien ça coûte de développer une app e-learning ?", a: "Le tarif dépend des fonctionnalités : cours, quiz, progression, abonnements, messagerie, certificats. Je vous envoie une estimation précise après un premier échange." },
-              ].map(({ q, a }) => (
-                <div key={q} className="brutal-border bg-white p-5">
-                  <h3 className="font-bold mb-2">{q}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto brutal-border brutal-shadow bg-[#FFE234] p-8 flex flex-wrap items-center justify-between gap-6">
-            <div>
-              <h2 className="text-2xl font-bold">Votre plateforme de formation sur mesure</h2>
-              <p className="text-sm mt-1">Devis gratuit · Réponse sous 24h · Sans engagement · Basé à Brest</p>
-            </div>
-            <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
-              Demander un devis <ArrowRight size={16} />
-            </a>
-          </div>
-        </section>
-
-        <RelatedArticles service="education-formation" />
-
-        <Contact />
-
-      </main>
-      <Footer />
-    </>
+    <SectorPage
+      slug="education-formation"
+      color="#2563EB"
+      icon={GraduationCap}
+      breadcrumb="Application éducation & formation"
+      h1="Application et plateforme de formation en ligne"
+      subtitle="Cours · Quiz · Progression · Certificats"
+      intro="Votre propre plateforme de formation, à votre nom : une web app, une application mobile ou les deux. Vos apprenants suivent les cours, passent les quiz et obtiennent leur certificat, depuis leur ordinateur ou leur téléphone. Vous suivez leur progression depuis un tableau de bord, sans abonnement à une plateforme."
+      guide={{ href: "/blog/creer-plateforme-digitale-sur-mesure", label: "Créer une plateforme sur mesure" }}
+      visual={
+        <MockScreen
+          kicker="MODULE 3 · 45 %"
+          title="Gestion de projet"
+          accent="#93C5FD"
+          rows={[
+            { top: "Vidéo · 8 min", main: "Planifier un projet", badge: "Vu" },
+            { top: "Lecture · 5 min", main: "Les outils du planning", badge: "Vu" },
+            { top: "Quiz · 10 questions", main: "Évaluation du module", badge: "À faire", muted: true },
+            { top: "Classe virtuelle", main: "Jeudi 14h avec Claire", badge: "Inscrit" },
+          ]}
+          footer={{ kicker: "CERTIFICAT", text: "Débloqué à 100 % du parcours" }}
+        />
+      }
+      enBref="Je crée des plateformes de formation et des applications e-learning sur mesure pour les organismes de formation, formateurs indépendants, écoles, associations et entreprises : cours vidéo, quiz, progression, certificats, classes virtuelles et paiement en ligne. Je m'appelle Enzo, développeur freelance basé à Brest, et je travaille avec des formateurs partout en France. Une plateforme web démarre à 3 000 €, une application mobile à 4 000 €. Pas d'abonnement par apprenant, et la plateforme comme vos contenus vous appartiennent."
+      stats={[
+        { label: "Livraison", value: "4 à 8 semaines" },
+        { label: "Budget indicatif", value: "Dès 3 000 €" },
+        { label: "Abonnement par apprenant", value: "Aucun" },
+      ]}
+      sections={[
+        {
+          title: "Côté apprenant",
+          highlight: "apprenant",
+          cols: 3,
+          check: true,
+          items: [
+            { title: "Parcours structurés", desc: "Modules, leçons vidéo, textes et documents, débloqués dans l'ordre que vous choisissez." },
+            { title: "Quiz et évaluations", desc: "QCM, exercices et évaluations finales corrigés automatiquement." },
+            { title: "Progression visible", desc: "Pourcentage d'avancement, prochaine leçon et reprise là où l'apprenant s'était arrêté." },
+            { title: "Hors connexion", desc: "Vidéos téléchargées dans l'application pour apprendre dans le train." },
+            { title: "Certificats", desc: "Attestation générée automatiquement à la fin du parcours." },
+            { title: "Rappels", desc: "Notifications pour ne pas décrocher et ne pas manquer une classe virtuelle." },
+          ],
+        },
+        {
+          title: "Côté formateur et organisme",
+          dark: true,
+          items: [
+            { emoji: "📊", title: "Suivi des apprenants", desc: "Connexions, temps passé, résultats et décrochages repérés tôt." },
+            { emoji: "🧾", title: "Traçabilité", desc: "Historique, évaluations et questionnaires de satisfaction, utiles pour Qualiopi." },
+            { emoji: "🎥", title: "Classes virtuelles", desc: "Sessions en visio planifiées, inscriptions et replays." },
+            { emoji: "🏢", title: "Accès entreprises", desc: "Une entreprise cliente inscrit ses salariés et suit leur progression." },
+          ],
+        },
+        {
+          title: "Pour qui ?",
+          highlight: "qui",
+          items: [
+            { emoji: "🎓", title: "Organismes de formation", desc: "Formations financées, traçabilité et parcours en ligne ou mixtes." },
+            { emoji: "🧑‍🏫", title: "Formateurs et coachs", desc: "Vendre vos formations en ligne sous votre propre marque." },
+            { emoji: "🏫", title: "Écoles et associations", desc: "Cours, devoirs, ressources et communication avec les familles." },
+            { emoji: "🏭", title: "Entreprises", desc: "Onboarding des nouveaux salariés et formation interne." },
+          ],
+        },
+      ]}
+      choices={[
+        { title: "Une plateforme web", desc: "Accessible depuis n'importe quel navigateur, idéale pour les formations longues sur ordinateur. Dès 3 000 €." },
+        { title: "Une application mobile", desc: "Pour les leçons courtes, le hors connexion et les rappels sur le téléphone. Dès 4 000 €." },
+        { title: "Les deux, reliés", desc: "Le même compte et la même progression sur ordinateur et sur mobile." },
+      ]}
+      steps={[
+        { title: "On échange", desc: "Vos formations, votre public, vos obligations et votre modèle de vente." },
+        { title: "Devis et maquettes", desc: "Devis détaillé sous 24h, puis maquettes des parcours apprenant et formateur." },
+        { title: "Développement", desc: "Construction de la plateforme et intégration d'un premier parcours." },
+        { title: "Mise en ligne", desc: "Publication, formation de votre équipe et accompagnement de la première session." },
+      ]}
+      faq={faq}
+      faqTitle="Questions fréquentes : plateforme de formation en ligne"
+      ctaTitle="Lancez votre plateforme de formation"
+      serviceName="Application et plateforme de formation en ligne"
+      serviceDescription="Création de plateformes de formation et d'applications e-learning sur mesure : cours vidéo, quiz, progression, certificats, classes virtuelles, suivi des apprenants et paiement en ligne."
+    />
   );
 }

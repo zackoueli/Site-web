@@ -1,143 +1,138 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import RelatedArticles from "@/components/RelatedArticles";
-import Contact from "@/components/Contact";
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import SectorPage, { MockScreen } from "@/components/SectorPage";
+import { Ticket } from "lucide-react";
+
+const TITLE = "Application mobile événementiel & billetterie | BreizhApp";
+const DESCRIPTION =
+  "Développeur freelance à Brest, je crée l'app de votre festival ou événement : billetterie, QR code d'entrée, programme, notifications. Devis gratuit sous 24h.";
 
 export const metadata: Metadata = {
-  title: "Application mobile événementiel & billetterie iOS & Android | BreizhApp",
-  description:
-    "Créez votre app événementielle sur mesure : billetterie, QR code d'entrée, programme, networking, notifications. Sans commission Eventbrite.",
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: { canonical: "https://breizhapp.tech/services/secteur/evenementiel-billetterie" },
   openGraph: {
-    title: "Application mobile événementiel & billetterie | BreizhApp",
-    description: "App événementielle iOS & Android sur mesure : billetterie, QR codes, programme, notifications. Sans Eventbrite. Freelance Brest, devis gratuit.",
+    title: TITLE,
+    description: DESCRIPTION,
     url: "https://breizhapp.tech/services/secteur/evenementiel-billetterie",
     type: "website",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
 };
 
-const features = [
-  { title: "Billetterie intégrée", desc: "Vente de billets directement dans l'app via Stripe. Tarifs multiples, codes promo, capacités limitées : tout est géré automatiquement." },
-  { title: "QR codes d'entrée", desc: "Chaque billet génère un QR code unique. À l'entrée, vous scannez depuis votre téléphone pour valider en une seconde." },
-  { title: "Programme & planning", desc: "Horaires, intervenants, salles, descriptions de sessions : vos participants ont tout le programme dans leur poche et reçoivent les changements en temps réel." },
-  { title: "Notifications live", desc: "Informez vos participants en temps réel : début de session, changement de salle, annonce surprise. Plus besoin de sonorisation pour les messages d'organisation." },
-  { title: "Networking entre participants", desc: "Profils des participants, messagerie interne, échange de contacts : transformez votre événement en opportunité de rencontres professionnelles." },
-  { title: "Statistiques & contrôle", desc: "Taux de scan, billets vendus par type, heure de pointe des entrées : suivez vos données en temps réel depuis votre dashboard." },
+const faq = [
+  {
+    q: "Combien coûte une application pour un événement ou un festival ?",
+    a: "Un site d'événement avec billetterie démarre à 1 500 €, une application mobile avec billets, programme et notifications à 4 000 €. Le prix dépend des fonctionnalités : plusieurs tarifs, cashless, networking, plusieurs éditions. Devis détaillé sous 24h.",
+  },
+  {
+    q: "Pourquoi ne pas simplement utiliser Weezevent ou Eventbrite ?",
+    a: "Ce sont de bons outils, mais ils prennent une commission sur chaque billet (quelques pourcents plus des frais fixes) et le parcours d'achat se fait chez eux. Avec votre propre billetterie, seuls les frais bancaires de Stripe s'appliquent, et vous gardez la relation avec vos participants d'une édition à l'autre.",
+  },
+  {
+    q: "Comment se passe le contrôle à l'entrée ?",
+    a: "Chaque billet contient un QR code unique. À l'entrée, votre équipe le scanne avec l'application de contrôle sur un simple téléphone : billet valide, déjà utilisé ou invalide s'affiche instantanément, même avec plusieurs points d'entrée.",
+  },
+  {
+    q: "L'application fonctionne-t-elle sans réseau sur le site ?",
+    a: "Le programme, le plan et les billets restent consultables hors connexion une fois téléchargés, ce qui est précieux sur un festival où le réseau sature. Le contrôle des billets peut aussi fonctionner hors ligne et se synchroniser dès le retour du réseau.",
+  },
+  {
+    q: "Peut-on prévenir les participants pendant l'événement ?",
+    a: "Oui, par notification : changement d'horaire, début d'un concert, météo, navette de retour. Un message atteint tous les participants en quelques secondes.",
+  },
+  {
+    q: "L'application peut-elle servir pour plusieurs éditions ?",
+    a: "Oui : vous changez le programme, les tarifs et les visuels depuis le panel admin, et vous retrouvez vos participants des éditions précédentes pour leur annoncer la suivante.",
+  },
+  {
+    q: "En combien de temps l'application est-elle prête ?",
+    a: "Entre 3 et 6 semaines selon les fonctionnalités. Pour un événement daté, on part de la date de mise en vente des billets et on planifie à rebours.",
+  },
 ];
 
 export default function EvenementielPage() {
   return (
-    <>
-      <Navbar />
-      <main className="bg-[#FFFBF0] min-h-screen">
-
-        <nav className="max-w-4xl mx-auto px-4 pt-6 mono text-sm text-gray-500 flex items-center gap-2">
-          <Link href="/" className="hover:text-black transition-colors">Accueil</Link>
-          <span>/</span>
-          <Link href="/services/application-mobile" className="hover:text-black transition-colors">Services</Link>
-          <span>/</span>
-          <span className="text-black font-bold">App événementiel</span>
-        </nav>
-
-        <section className="border-b-[3px] border-black py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <p className="mono text-sm font-bold text-[#FF3B82] mb-4">// événementiel & billetterie</p>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
-              Application mobile<br />
-              <span className="bg-[#FF3B82] text-white brutal-border px-2">événementiel & billetterie</span>
-            </h1>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
-              Eventbrite prend entre 3,5% et 6,5% sur chaque billet vendu. Pour un événement à 1 000 participants à 30€, c'est entre 1 000€ et 2 000€ de commission envolés. Votre propre app de billetterie vous appartient, et vous gardez tout.
-            </p>
-            <div className="flex flex-wrap gap-4 mb-8">
-              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
-              <Link href="/blog/combien-coute-application-mobile" className="brutal-btn bg-[#FF3B82] text-white px-8 py-4">En savoir plus →</Link>
-            </div>
-            <div className="flex flex-wrap gap-4 mono text-sm text-gray-500">
-              <span className="brutal-border px-3 py-1 bg-white">✓ Sans commission Eventbrite</span>
-              <span className="brutal-border px-3 py-1 bg-white">✓ QR codes d'entrée</span>
-              <span className="brutal-border px-3 py-1 bg-white">✓ Billetterie Stripe</span>
-              <span className="brutal-border px-3 py-1 bg-white">✓ iOS & Android</span>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8">Ce qu'inclut votre <span className="bg-[#FFE234] px-2 brutal-border">app événementielle</span></h2>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-              {features.map(({ title, desc }) => (
-                <div key={title} className="brutal-border bg-white p-5">
-                  <CheckCircle2 size={18} className="text-[#FF3B82] mb-3" />
-                  <h3 className="font-bold mb-1">{title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4 bg-[#0A0A0A]">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#FFE234] mb-6">Pour quel type d'événement ?</h2>
-            <div className="grid sm:grid-cols-2 gap-4">
-              {[
-                { emoji: "🎤", label: "Conférences & salons", desc: "Programme multi-scènes, intervenants, networking entre participants, plan du lieu interactif." },
-                { emoji: "🎶", label: "Concerts & festivals", desc: "Billetterie multi-tarifs, QR codes infalsifiables, line-up dynamique mis à jour en temps réel." },
-                { emoji: "🏃", label: "Courses & événements sportifs", desc: "Inscriptions, dossards, résultats en direct, classements par catégorie." },
-                { emoji: "🎓", label: "Séminaires & formations", desc: "Programme par salle et par créneau, liste des participants, évaluations post-session." },
-              ].map(({ emoji, label, desc }) => (
-                <div key={label} className="border-2 border-gray-800 p-5 hover:border-[#FF3B82] transition-colors">
-                  <div className="text-3xl mb-3">{emoji}</div>
-                  <h3 className="font-bold text-[#FFFBF0] mb-1">{label}</h3>
-                  <p className="text-sm text-gray-400 leading-relaxed">{desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4 bg-gray-50 brutal-border border-t-[3px]">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8">Questions fréquentes</h2>
-            <div className="flex flex-col gap-4">
-              {[
-                { q: "Le scan des QR codes fonctionne-t-il sans connexion internet ?", a: "Partiellement. L'app peut télécharger la liste des billets valides en amont et les valider en mode hors ligne. Les données sont synchronisées quand la connexion revient, utile dans des lieux avec une mauvaise couverture réseau." },
-                { q: "Peut-on avoir plusieurs types de billets (VIP, early bird, standard) ?", a: "Oui. Vous créez autant de types de billets que nécessaire avec leurs prix, leurs quotas et leurs dates de vente. L'app gère les ruptures automatiquement et passe au tarif suivant." },
-                { q: "Comment gérer les remboursements de billets ?", a: "Via Stripe. Vous définissez votre politique de remboursement et les remboursements se font en quelques clics depuis votre dashboard. Le délai de traitement dépend de la banque du client (5 à 10 jours ouvrés en général)." },
-                { q: "L'app peut-elle être réutilisée pour plusieurs éditions de l'événement ?", a: "Oui, c'est l'intérêt d'une app sur mesure. Vous payez le développement une fois et vous réutilisez l'app à chaque nouvelle édition, vous mettez à jour le programme et la billetterie depuis votre dashboard." },
-              ].map(({ q, a }) => (
-                <div key={q} className="brutal-border bg-white p-5">
-                  <h3 className="font-bold mb-2">{q}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto brutal-border brutal-shadow bg-[#FF3B82] p-8 flex flex-wrap items-center justify-between gap-6">
-            <div>
-              <h2 className="text-2xl font-bold text-white">Votre app événementielle sans commission</h2>
-              <p className="text-sm mt-1 text-pink-200">Devis gratuit · Réponse sous 24h · Sans engagement · Basé à Brest</p>
-            </div>
-            <a href="#contact" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-6 py-3 inline-flex items-center gap-2">
-              Demander un devis <ArrowRight size={16} />
-            </a>
-          </div>
-        </section>
-
-        <RelatedArticles service="evenementiel-billetterie" />
-
-        <Contact />
-
-      </main>
-      <Footer />
-    </>
+    <SectorPage
+      slug="evenementiel-billetterie"
+      color="#DC2626"
+      icon={Ticket}
+      breadcrumb="Application événementiel & billetterie"
+      h1="Application pour événement, festival et billetterie"
+      subtitle="Billetterie · QR code · Programme"
+      intro="Votre propre billetterie et votre application d'événement, à votre nom : un site web, une application mobile ou les deux. Vos participants achètent leur billet, retrouvent le programme et le plan, et reçoivent vos annonces en direct. Vous gardez la relation avec eux, sans commission de plateforme sur chaque billet."
+      guide={{ href: "/blog/combien-coute-application-mobile", label: "Prix d'une application" }}
+      visual={
+        <MockScreen
+          kicker="FESTIVAL · SAMEDI"
+          title="Programme"
+          accent="#FCA5A5"
+          rows={[
+            { top: "Scène principale", main: "18:30 · Ouverture", badge: "Favori" },
+            { top: "Chapiteau", main: "20:00 · Concert", badge: "Dans 12 min" },
+            { top: "Village", main: "Food trucks", badge: "Plan", muted: true },
+            { top: "Mon billet", main: "Pass 2 jours", badge: "QR code" },
+          ]}
+          footer={{ kicker: "NOTIFICATION", text: "Navette retour à 01:30, porte B" }}
+        />
+      }
+      enBref="Je crée des billetteries et des applications d'événement sur mesure pour les festivals, salons, concerts, événements sportifs, associations et organisateurs de séminaires : vente de billets, QR code d'entrée, contrôle d'accès, programme, plan, notifications et networking. Je m'appelle Enzo, développeur freelance basé à Brest, et je travaille avec des organisateurs partout en France. Un site avec billetterie démarre à 1 500 €, une application à 4 000 €. Pas de commission de plateforme sur vos billets, et le fichier de vos participants vous appartient."
+      stats={[
+        { label: "Livraison", value: "3 à 6 semaines" },
+        { label: "Budget indicatif", value: "Dès 1 500 €" },
+        { label: "Commission sur vos billets", value: "0 %" },
+      ]}
+      sections={[
+        {
+          title: "Avant, pendant et après l'événement",
+          highlight: "pendant",
+          cols: 3,
+          items: [
+            { emoji: "🎟️", title: "Avant", desc: "Vente des billets, tarifs réduits et codes promo, programme dévoilé artiste par artiste, rappels à l'approche de la date." },
+            { emoji: "📍", title: "Pendant", desc: "Billet QR code, programme personnel, plan du site, notifications en direct et infos pratiques hors connexion." },
+            { emoji: "📸", title: "Après", desc: "Photos, questionnaire de satisfaction et annonce de la prochaine édition à vos participants." },
+          ],
+        },
+        {
+          title: "Les fonctionnalités clés",
+          dark: true,
+          cols: 3,
+          check: true,
+          items: [
+            { title: "Billetterie en ligne", desc: "Plusieurs tarifs, quotas, codes promo et paiement Stripe, carte, Apple Pay et Google Pay." },
+            { title: "Contrôle d'accès", desc: "Scan des QR codes par votre équipe, plusieurs entrées, fonctionnement hors ligne." },
+            { title: "Programme et favoris", desc: "Horaires par scène ou par salle, et programme personnel avec rappels." },
+            { title: "Plan interactif", desc: "Scènes, stands, toilettes, secours et parkings, consultables sans réseau." },
+            { title: "Notifications en direct", desc: "Changements d'horaires, météo, navettes : tout le monde est prévenu en quelques secondes." },
+            { title: "Networking", desc: "Pour les salons et séminaires : profils participants, prise de rendez-vous et messagerie." },
+          ],
+        },
+        {
+          title: "Pour qui ?",
+          highlight: "qui",
+          items: [
+            { emoji: "🎸", title: "Festivals et concerts", desc: "Billetterie, programme, plan du site et infos pratiques en direct." },
+            { emoji: "🏢", title: "Salons et séminaires", desc: "Inscriptions, badges, agenda des conférences et networking entre participants." },
+            { emoji: "🏃", title: "Événements sportifs", desc: "Inscriptions, dossards, parcours et résultats en direct." },
+            { emoji: "🎭", title: "Associations et lieux culturels", desc: "Saison de spectacles, abonnements et billetterie à l'année." },
+          ],
+        },
+      ]}
+      choices={[
+        { title: "Un site avec billetterie", desc: "Pour présenter l'événement, être trouvé sur Google et vendre les billets sans rien installer. Dès 1 500 €." },
+        { title: "Une application mobile", desc: "Pour le jour J : billet, programme, plan hors connexion et notifications en direct. Dès 4 000 €." },
+        { title: "Les deux, reliés", desc: "Billets achetés sur le site, retrouvés dans l'application, et un seul tableau de bord." },
+      ]}
+      steps={[
+        { title: "On échange", desc: "Votre événement, votre public, vos dates de mise en vente et vos contraintes sur place." },
+        { title: "Devis et planning", desc: "Devis détaillé sous 24h et planning construit à rebours depuis la date de mise en vente." },
+        { title: "Développement", desc: "Billetterie, application et outil de contrôle, testés en conditions réelles." },
+        { title: "Jour J", desc: "Formation de l'équipe d'accueil et assistance pendant l'événement." },
+      ]}
+      faq={faq}
+      faqTitle="Questions fréquentes : application événementielle et billetterie"
+      ctaTitle="Lancez la billetterie de votre événement"
+      serviceName="Application événementielle & billetterie"
+      serviceDescription="Création de billetteries et d'applications d'événement sur mesure : vente de billets, QR code d'entrée, contrôle d'accès, programme, plan, notifications et networking."
+    />
   );
 }

@@ -1,142 +1,133 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import RelatedArticles from "@/components/RelatedArticles";
-import Contact from "@/components/Contact";
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import SectorPage from "@/components/SectorPage";
+import PhoneDemo from "@/components/PhoneDemo";
+import { BriefcaseBusiness } from "lucide-react";
+
+const TITLE = "Site vitrine & portfolio pour artisans et pros | BreizhApp";
+const DESCRIPTION =
+  "Développeur freelance à Brest, je crée le site ou l'app vitrine de votre activité : réalisations, demande de devis, avis clients, SEO local. Devis gratuit 24h.";
 
 export const metadata: Metadata = {
-  title: "Application mobile portfolio & vitrine professionnelle | BreizhApp",
-  description:
-    "Créez votre app vitrine iOS & Android : galerie de réalisations, présentation de services, contact direct, panel admin. Développeur freelance à Brest.",
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: { canonical: "https://breizhapp.tech/services/secteur/portfolio-vitrine" },
   openGraph: {
-    title: "Application mobile portfolio & vitrine professionnelle | BreizhApp",
-    description: "App vitrine sur mesure pour artisans, freelances et PME : galerie, services, devis en ligne, notifications. Freelance à Brest, devis gratuit sous 24h.",
+    title: TITLE,
+    description: DESCRIPTION,
     url: "https://breizhapp.tech/services/secteur/portfolio-vitrine",
     type: "website",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
 };
 
-const features = [
-  { title: "Galerie de réalisations", desc: "Présentez vos projets avec photos, descriptions et catégories. Vos clients voient la qualité de votre travail avant même de vous contacter." },
-  { title: "Présentation des services", desc: "Chaque prestation détaillée avec ses spécificités, sa fourchette de prix et ses avantages. Clair, structuré, convaincant." },
-  { title: "Formulaire de devis intégré", desc: "Vos prospects remplissent un formulaire depuis l'app, vous recevez leur demande par email avec toutes les infos nécessaires pour répondre." },
-  { title: "Témoignages clients", desc: "Avis et témoignages affichés directement dans l'app. La preuve sociale est le levier de conversion le plus puissant." },
-  { title: "Panel admin pour tout gérer", desc: "Ajoutez des projets, modifiez vos services et mettez à jour vos tarifs depuis votre téléphone. Sans développeur, sans technique." },
-  { title: "Notifications push ciblées", desc: "Informez vos clients de vos nouvelles réalisations, de vos disponibilités ou d'une offre ponctuelle." },
+const faq = [
+  {
+    q: "Combien coûte un site vitrine avec portfolio ?",
+    a: "Un site vitrine sur mesure avec galerie de réalisations, demande de devis et panel admin démarre à 1 500 €. Une application mobile vitrine démarre à 4 000 €. Devis détaillé sous 24h.",
+  },
+  {
+    q: "Puis-je ajouter mes nouveaux chantiers moi-même ?",
+    a: "Oui. Depuis le panel admin, vous ajoutez un projet en quelques minutes : photos avant/après, description, ville et catégorie. Il apparaît immédiatement sur le site, sans passer par moi.",
+  },
+  {
+    q: "Le site m'aidera-t-il à être trouvé sur Google dans ma ville ?",
+    a: "C'est l'objectif : une page par service et par zone d'intervention, des textes qui reprennent ce que vos clients tapent vraiment (« paysagiste Brest », « rénovation salle de bain Quimper »), un site rapide et des données structurées. Je vous aide aussi à relier le site à votre fiche Google Business Profile.",
+  },
+  {
+    q: "Comment afficher mes avis clients ?",
+    a: "Vos avis Google peuvent être affichés sur le site, et après chaque chantier un lien peut être envoyé au client pour l'inviter à laisser un avis. Les avis rassurent les visiteurs qui ne vous connaissent pas encore.",
+  },
+  {
+    q: "Site vitrine ou application : que choisir ?",
+    a: "Pour la plupart des artisans et indépendants, le site vitrine suffit : c'est lui qui vous fait trouver sur Google. L'application devient utile quand vous avez des clients réguliers à fidéliser ou un suivi de chantier à partager avec eux.",
+  },
+  {
+    q: "En combien de temps le site est-il en ligne ?",
+    a: "Entre 2 et 4 semaines selon le nombre de pages et de réalisations à intégrer.",
+  },
 ];
 
 export default function PortfolioVitrinePage() {
   return (
-    <>
-      <Navbar />
-      <main className="bg-[#FFFBF0] min-h-screen">
-
-        <nav className="max-w-4xl mx-auto px-4 pt-6 mono text-sm text-gray-500 flex items-center gap-2">
-          <Link href="/" className="hover:text-black transition-colors">Accueil</Link>
-          <span>/</span>
-          <Link href="/services/application-mobile" className="hover:text-black transition-colors">Services</Link>
-          <span>/</span>
-          <span className="text-black font-bold">App vitrine</span>
-        </nav>
-
-        <section className="border-b-[3px] border-black py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <p className="mono text-sm font-bold text-[#FF6B9D] mb-4">// portfolio & vitrine</p>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
-              Application mobile<br />
-              <span className="bg-[#FF6B9D] text-white brutal-border px-2">vitrine professionnelle</span>
-            </h1>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
-              Une app vitrine, c'est votre meilleure carte de visite : disponible 24h/24 dans la poche de vos clients, avec vos réalisations, vos services et un moyen de vous contacter directement. Parfait pour un artisan, un freelance ou une petite entreprise.
-            </p>
-            <div className="flex flex-wrap gap-4 mb-8">
-              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Devis gratuit sous 24h</a>
-              <Link href="/blog/application-mobile-artisan-commercant" className="brutal-btn bg-[#FF6B9D] text-white px-8 py-4">Guide app artisan →</Link>
-            </div>
-            <div className="flex flex-wrap gap-4 mono text-sm text-gray-500">
-              <span className="brutal-border px-3 py-1 bg-white">✓ iOS & Android</span>
-              <span className="brutal-border px-3 py-1 bg-white">✓ Panel admin inclus</span>
-              <span className="brutal-border px-3 py-1 bg-white">✓ Livraison 2-3 semaines</span>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8">Ce qu'inclut votre <span className="bg-[#FFE234] px-2 brutal-border">app vitrine</span></h2>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-              {features.map(({ title, desc }) => (
-                <div key={title} className="brutal-border bg-white p-5">
-                  <CheckCircle2 size={18} className="text-[#FF6B9D] mb-3" />
-                  <h3 className="font-bold mb-1">{title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4 bg-[#0A0A0A]">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#FFE234] mb-6">Pour qui c'est fait ?</h2>
-            <div className="grid sm:grid-cols-2 gap-4">
-              {[
-                { emoji: "🔨", label: "Artisans", desc: "Plombiers, électriciens, menuisiers, peintres : montrez vos chantiers terminés et recevez des demandes de devis directement." },
-                { emoji: "🎨", label: "Créatifs & freelances", desc: "Photographes, graphistes, architectes d'intérieur : votre portfolio dans la poche de chaque prospect." },
-                { emoji: "🏢", label: "PME & prestataires", desc: "Agences, cabinets, bureaux d'études : une app professionnelle qui renforce votre crédibilité face à vos concurrents." },
-                { emoji: "💆", label: "Thérapeutes & praticiens", desc: "Coachs, ostéopathes, naturopathes : présentez vos approches et permettez la prise de contact directe." },
-              ].map(({ emoji, label, desc }) => (
-                <div key={label} className="border-2 border-gray-800 p-5 hover:border-[#FF6B9D] transition-colors">
-                  <div className="text-3xl mb-3">{emoji}</div>
-                  <h3 className="font-bold text-[#FFFBF0] mb-1">{label}</h3>
-                  <p className="text-sm text-gray-400 leading-relaxed">{desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4 bg-gray-50 brutal-border border-t-[3px]">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8">Questions fréquentes</h2>
-            <div className="flex flex-col gap-4">
-              {[
-                { q: "Une app vitrine, c'est vraiment utile par rapport à un site web ?", a: "Les deux se complètent. Un site web capte le trafic Google, une app mobile convertit les clients acquis grâce aux notifications push et à l'expérience plus fluide. Pour un artisan ou un freelance, l'app crée une présence mémorable que peu de concurrents ont." },
-                { q: "Puis-je modifier mon portfolio moi-même ?", a: "Oui, c'est l'un des points clés. Le panel admin vous permet d'ajouter des projets, des photos et des descriptions depuis votre téléphone, sans passer par moi à chaque nouveau chantier." },
-                { q: "Combien ça coûte ?", a: "Le tarif dépend des fonctionnalités souhaitées : panel admin, galerie, formulaire de contact, notifications push. Contactez-moi pour un devis gratuit et personnalisé." },
-                { q: "L'app peut-elle intégrer un système de prise de rendez-vous ?", a: "Oui. La prise de rendez-vous en ligne est une fonctionnalité que j'intègre régulièrement : créneaux disponibles, confirmation automatique, rappels push." },
-              ].map(({ q, a }) => (
-                <div key={q} className="brutal-border bg-white p-5">
-                  <h3 className="font-bold mb-2">{q}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto brutal-border brutal-shadow bg-[#FFE234] p-8 flex flex-wrap items-center justify-between gap-6">
-            <div>
-              <h2 className="text-2xl font-bold">Votre app vitrine en 2-3 semaines</h2>
-              <p className="text-sm mt-1">Devis gratuit · Réponse sous 24h · Sans engagement · Basé à Brest</p>
-            </div>
-            <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
-              Demander un devis <ArrowRight size={16} />
-            </a>
-          </div>
-        </section>
-
-        <RelatedArticles service="portfolio-vitrine" />
-
-        <Contact />
-
-      </main>
-      <Footer />
-    </>
+    <SectorPage
+      slug="portfolio-vitrine"
+      color="#2D5016"
+      icon={BriefcaseBusiness}
+      breadcrumb="Site vitrine & portfolio"
+      h1="Site et application vitrine pour artisans et indépendants"
+      subtitle="Réalisations · Devis en ligne · SEO local"
+      intro="Votre vitrine professionnelle, à votre nom : un site web, une application mobile ou les deux. Vos futurs clients découvrent vos réalisations, lisent les avis et vous envoient une demande de devis détaillée. Vous ajoutez vos nouveaux chantiers vous-même, depuis votre téléphone."
+      guide={{ href: "/blog/application-mobile-artisan-commercant", label: "Guide artisans et commerçants" }}
+      visual={
+        <>
+          <PhoneDemo
+            src="https://demo.paysagiste.breizhapp.tech/"
+            title="Démo de site vitrine pour un paysagiste"
+          />
+          <p className="text-xs text-gray-500 text-center max-w-xs">
+            Site vitrine Paradis Vert, réalisé par BreizhApp. Naviguez librement.
+          </p>
+        </>
+      }
+      enBref="Je crée des sites vitrines et des applications sur mesure pour les artisans, indépendants, photographes, architectes et professions libérales : galerie de réalisations, demande de devis en ligne, avis clients et référencement local. Je m'appelle Enzo, développeur freelance basé à Brest, et je travaille avec des professionnels de tout le Finistère et de la Bretagne. Un site vitrine démarre à 1 500 € et se livre en 2 à 4 semaines. Vous gérez vos contenus vous-même depuis un panel admin, et le site vous appartient, nom de domaine compris."
+      stats={[
+        { label: "Livraison", value: "2 à 4 semaines" },
+        { label: "Budget indicatif", value: "Dès 1 500 €" },
+        { label: "Premier retour", value: "Sous 24h" },
+      ]}
+      sections={[
+        {
+          title: "Une vitrine qui transforme les visiteurs en demandes de devis",
+          highlight: "en demandes de devis",
+          cols: 3,
+          check: true,
+          items: [
+            { title: "Galerie de réalisations", desc: "Vos chantiers ou projets classés par catégorie, avec des photos avant/après qui parlent d'elles-mêmes." },
+            { title: "Demande de devis détaillée", desc: "Le client précise son besoin, sa ville, son budget et joint des photos : vous recevez une demande exploitable." },
+            { title: "Avis clients", desc: "Vos avis Google mis en avant, et une invitation à laisser un avis après chaque prestation." },
+            { title: "Pages services et zones", desc: "Une page par métier et par ville d'intervention, pour ressortir sur les recherches locales." },
+            { title: "Labels et garanties", desc: "Qualifications, assurances et labels (RGE, Qualibat…) affichés là où ils rassurent." },
+            { title: "Panel admin", desc: "Réalisations, textes, services et horaires modifiables depuis votre téléphone." },
+          ],
+        },
+        {
+          title: "Être trouvé sur Google dans votre ville",
+          dark: true,
+          intro: "La majorité de vos futurs clients vous cherchent sur Google avec le nom de votre métier et de leur ville. Votre site est construit pour ces recherches.",
+          items: [
+            { emoji: "📍", title: "Référencement local", desc: "Textes, titres et pages pensés pour « votre métier + votre ville »." },
+            { emoji: "🗺️", title: "Fiche Google Business Profile", desc: "Site et fiche Google reliés, pour apparaître aussi dans Google Maps." },
+            { emoji: "⚡", title: "Site rapide", desc: "Un site léger qui s'affiche vite sur mobile, ce que Google prend en compte." },
+            { emoji: "🔎", title: "Données structurées", desc: "Adresse, horaires, avis et services lisibles directement par Google." },
+          ],
+        },
+        {
+          title: "Pour qui ?",
+          highlight: "qui",
+          items: [
+            { emoji: "🔨", title: "Artisans du bâtiment", desc: "Maçons, menuisiers, électriciens, plombiers : chantiers avant/après et devis." },
+            { emoji: "🌳", title: "Paysagistes et jardiniers", desc: "Réalisations par saison, entretien et création de jardins." },
+            { emoji: "📷", title: "Photographes et créatifs", desc: "Portfolio plein écran, séries et prise de contact pour une séance." },
+            { emoji: "📐", title: "Architectes et décorateurs", desc: "Projets détaillés, plans et étapes, du croquis à la livraison." },
+          ],
+        },
+      ]}
+      choices={[
+        { title: "Un site vitrine", desc: "Pour être trouvé sur Google et recevoir des demandes de devis. Le bon choix pour la plupart des pros. Dès 1 500 €." },
+        { title: "Une application mobile", desc: "Pour fidéliser des clients réguliers ou partager le suivi d'un chantier avec eux. Dès 4 000 €." },
+        { title: "Les deux, reliés", desc: "Un seul panel admin : chaque réalisation ajoutée apparaît sur le site et dans l'application." },
+      ]}
+      steps={[
+        { title: "On échange", desc: "Votre métier, vos clients, vos zones d'intervention et vos meilleures réalisations." },
+        { title: "Devis et maquette", desc: "Devis détaillé sous 24h, puis une maquette à votre image." },
+        { title: "Développement", desc: "Je construis le site avec vos vrais contenus et je l'optimise pour Google." },
+        { title: "Mise en ligne", desc: "Nom de domaine, fiche Google reliée et formation au panel admin." },
+      ]}
+      faq={faq}
+      faqTitle="Questions fréquentes : site vitrine et portfolio"
+      ctaTitle="Mettez vos réalisations en valeur"
+      serviceName="Site vitrine & portfolio pour artisans et indépendants"
+      serviceDescription="Création de site vitrine et d'application sur mesure pour artisans et indépendants : galerie de réalisations, demande de devis en ligne, avis clients et référencement local."
+    />
   );
 }

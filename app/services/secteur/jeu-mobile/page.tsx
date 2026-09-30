@@ -1,164 +1,136 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import RelatedArticles from "@/components/RelatedArticles";
-import Contact from "@/components/Contact";
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import SectorPage, { MockScreen } from "@/components/SectorPage";
+import { Gamepad2 } from "lucide-react";
+
+const TITLE = "Développeur jeu mobile iOS & Android sur mesure | BreizhApp";
+const DESCRIPTION =
+  "Développeur freelance à Brest, je crée votre jeu mobile iOS & Android : gameplay, niveaux, classements, pubs récompensées et achats intégrés. Devis 24h.";
 
 export const metadata: Metadata = {
-  title: "Développeur jeu mobile iOS & Android sur mesure | BreizhApp",
-  description:
-    "Développement de jeu mobile iOS & Android : Unity, React Native Games, leaderboard, in-app purchase, niveaux. Développeur freelance à Brest. Devis gratuit.",
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: { canonical: "https://breizhapp.tech/services/secteur/jeu-mobile" },
   openGraph: {
-    title: "Développeur jeu mobile iOS & Android | BreizhApp",
-    description: "Création de jeux mobiles iOS & Android sur mesure : gameplay, leaderboard, niveaux, in-app purchase. Freelance à Brest, devis gratuit sous 24h.",
+    title: TITLE,
+    description: DESCRIPTION,
     url: "https://breizhapp.tech/services/secteur/jeu-mobile",
     type: "website",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
 };
 
-const schema = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Service",
-      name: "Développement jeu mobile iOS & Android",
-      description: "Création de jeux mobiles sur mesure : gameplay, niveaux, leaderboard, in-app purchase, monétisation.",
-      provider: { "@id": "https://breizhapp.tech/#business" },
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://breizhapp.tech" },
-        { "@type": "ListItem", position: 2, name: "Services", item: "https://breizhapp.tech/services/application-mobile" },
-        { "@type": "ListItem", position: 3, name: "Jeu mobile", item: "https://breizhapp.tech/services/secteur/jeu-mobile" },
-      ],
-    },
-  ],
-};
-
-const features = [
-  { title: "Gameplay sur mesure", desc: "Mécanique de jeu développée selon votre concept : puzzle, arcade, réflexion, quiz, jeu de cartes. Chaque projet part d'une feuille blanche." },
-  { title: "Système de niveaux", desc: "Progression par niveaux, déblocage de contenu, difficultés croissantes. L'architecture est conçue pour que vous puissiez ajouter des niveaux sans toucher au code." },
-  { title: "Leaderboard & classements", desc: "Classements en temps réel, scores globaux ou entre amis. Le côté compétitif augmente significativement la rétention des joueurs." },
-  { title: "In-app purchase", desc: "Monétisation par achat intégré : vies supplémentaires, skins, niveaux premium, pass saisonnier. Validé App Store et Google Play." },
-  { title: "Récompenses & achievements", desc: "Succès débloqués, streaks quotidiens, récompenses à la connexion. Des mécaniques éprouvées pour garder vos joueurs actifs." },
-  { title: "iOS & Android natif", desc: "Publication sur l'App Store et Google Play. L'app est optimisée pour les performances : animations fluides même sur les appareils anciens." },
+const faq = [
+  {
+    q: "Combien coûte le développement d'un jeu mobile ?",
+    a: "Le tarif dépend de la complexité du gameplay : un jeu simple (quiz, puzzle à niveaux) n'a rien à voir avec un jeu multijoueur doté d'une économie virtuelle. Décrivez-moi votre concept, je vous envoie une estimation détaillée sous 24h.",
+  },
+  {
+    q: "Comment un jeu mobile gagne-t-il de l'argent ?",
+    a: "Trois modèles se combinent souvent : la publicité (les vidéos récompensées, que le joueur choisit de regarder contre une vie ou un bonus, sont les mieux acceptées), les achats intégrés (vies, skins, niveaux premium, pass de saison) et l'abonnement pour les jeux à contenu régulier. On choisit ensemble le modèle adapté à votre jeu dès la conception.",
+  },
+  {
+    q: "Mon jeu sera-t-il accepté sur l'App Store et Google Play ?",
+    a: "Oui, à condition de respecter les règles d'Apple et de Google, ce que je fais systématiquement : achats intégrés conformes, publicités correctement déclarées, politique de confidentialité et fiche store complète. Je m'occupe de la soumission et du suivi de la validation.",
+  },
+  {
+    q: "Est-ce que je reste propriétaire du jeu ?",
+    a: "Oui. Le jeu est publié sur votre compte développeur, et vous êtes propriétaire du code, des visuels livrés et des revenus générés.",
+  },
+  {
+    q: "Pouvez-vous reprendre un jeu déjà commencé ?",
+    a: "Oui, si le code est accessible. Chaque reprise commence par une analyse du code existant : je vous dis honnêtement s'il vaut mieux continuer dessus ou repartir proprement.",
+  },
+  {
+    q: "Comment ajouter des niveaux après la sortie ?",
+    a: "Le jeu est construit pour que les niveaux, les récompenses et les événements soient pilotés depuis un panel admin : vous ajoutez du contenu et lancez un événement sans republier l'application.",
+  },
+  {
+    q: "Faut-il un prototype avant de développer tout le jeu ?",
+    a: "C'est ce que je recommande pour un premier jeu : une version jouable du cœur du gameplay, testée sur de vrais joueurs, avant d'investir dans tous les niveaux et la monétisation. On sait vite si le jeu est amusant.",
+  },
 ];
 
 export default function JeuMobilePage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <Navbar />
-      <main className="bg-[#FFFBF0] min-h-screen">
-
-        <nav className="max-w-4xl mx-auto px-4 pt-6 mono text-sm text-gray-500 flex items-center gap-2">
-          <Link href="/" className="hover:text-black transition-colors">Accueil</Link>
-          <span>/</span>
-          <Link href="/services/application-mobile" className="hover:text-black transition-colors">Services</Link>
-          <span>/</span>
-          <span className="text-black font-bold">Jeu mobile</span>
-        </nav>
-
-        <section className="border-b-[3px] border-black py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <p className="mono text-sm font-bold text-[#7C3AED] mb-4">// game development</p>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
-              Développeur<br />
-              <span className="bg-[#7C3AED] text-white brutal-border px-2">jeu mobile</span>
-            </h1>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">
-              Vous avez une idée de jeu mobile ? Puzzle, quiz, arcade, jeu de cartes, je développe votre concept de A à Z, publiable sur l'App Store et Google Play. Le jeu mobile est le secteur avec le meilleur potentiel de monétisation sur mobile.
-            </p>
-            <div className="flex flex-wrap gap-4 mb-8">
-              <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">Discuter de mon projet</a>
-              <Link href="/blog/react-native-vs-flutter" className="brutal-btn bg-[#7C3AED] text-white px-8 py-4">React Native vs Flutter →</Link>
-            </div>
-            <div className="flex flex-wrap gap-4 mono text-sm text-gray-500">
-              <span className="brutal-border px-3 py-1 bg-white">✓ iOS & Android</span>
-              <span className="brutal-border px-3 py-1 bg-white">✓ In-app purchase</span>
-              <span className="brutal-border px-3 py-1 bg-white">✓ Leaderboard</span>
-              <span className="brutal-border px-3 py-1 bg-white">✓ Devis gratuit</span>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8">Fonctionnalités <span className="bg-[#FFE234] px-2 brutal-border">incluses</span></h2>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-              {features.map(({ title, desc }) => (
-                <div key={title} className="brutal-border bg-white p-5">
-                  <CheckCircle2 size={18} className="text-[#7C3AED] mb-3" />
-                  <h3 className="font-bold mb-1">{title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4 bg-[#0A0A0A]">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#FFE234] mb-6">Types de jeux que je développe</h2>
-            <div className="grid sm:grid-cols-2 gap-4">
-              {[
-                { emoji: "🧩", label: "Puzzle & réflexion", desc: "Sudoku, jeux de mots, labyrinthes, casse-têtes visuels : gameplay addictif et sessions courtes." },
-                { emoji: "❓", label: "Quiz & culture", desc: "Quiz multijoueur, questions thématiques, championnats hebdomadaires, mode défi entre amis." },
-                { emoji: "🃏", label: "Jeux de cartes", desc: "Belote, Uno-like, jeux de collection de cartes avec deck building et matchmaking." },
-                { emoji: "🕹️", label: "Arcade & action", desc: "Jeux de réflexes, runner, shoot'em up : mécaniques simples, rejouabilité maximale." },
-              ].map(({ emoji, label, desc }) => (
-                <div key={label} className="border-2 border-gray-800 p-5 hover:border-[#7C3AED] transition-colors">
-                  <div className="text-3xl mb-3">{emoji}</div>
-                  <h3 className="font-bold text-[#FFFBF0] mb-1">{label}</h3>
-                  <p className="text-sm text-gray-400 leading-relaxed">{desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4 bg-gray-50 brutal-border border-t-[3px]">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8">Questions fréquentes</h2>
-            <div className="flex flex-col gap-4">
-              {[
-                { q: "Combien coûte le développement d'un jeu mobile ?", a: "Le tarif dépend de la complexité du gameplay : un jeu simple (quiz, puzzle à niveaux) ou un jeu plus complexe avec multijoueur et économie virtuelle. Je vous envoie une estimation sous 24h après avoir discuté de votre concept." },
-                { q: "Mon jeu sera-t-il accepté sur l'App Store Apple ?", a: "Oui, à condition de respecter les guidelines Apple, ce que je fais systématiquement. Les jeux développés sur mesure passent bien mieux la validation que les apps générées par des outils no-code." },
-                { q: "Peut-on monétiser le jeu avec de la publicité ?", a: "Oui. Je peux intégrer AdMob (Google) pour des publicités interstitielles ou des rewarded ads, le format le mieux accepté par les joueurs car il est volontaire. La monétisation par in-app purchase est aussi possible en parallèle." },
-                { q: "Est-ce que vous pouvez reprendre un jeu déjà commencé ?", a: "Oui, si le code est accessible et documenté. Chaque reprise commence par une analyse du code existant, je vous dis honnêtement si c'est faisable ou s'il vaut mieux repartir proprement." },
-              ].map(({ q, a }) => (
-                <div key={q} className="brutal-border bg-white p-5">
-                  <h3 className="font-bold mb-2">{q}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{a}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto brutal-border brutal-shadow bg-[#7C3AED] p-8 flex flex-wrap items-center justify-between gap-6">
-            <div>
-              <h2 className="text-2xl font-bold text-white">Votre idée de jeu mérite d'exister</h2>
-              <p className="text-sm mt-1 text-purple-200">Devis gratuit · Réponse sous 24h · Sans engagement</p>
-            </div>
-            <a href="#contact" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-6 py-3 inline-flex items-center gap-2">
-              En parler maintenant <ArrowRight size={16} />
-            </a>
-          </div>
-        </section>
-
-        <RelatedArticles service="jeu-mobile" />
-
-        <Contact />
-
-      </main>
-      <Footer />
-    </>
+    <SectorPage
+      slug="jeu-mobile"
+      color="#7C3AED"
+      icon={Gamepad2}
+      breadcrumb="Développeur jeu mobile"
+      h1="Développeur de jeu mobile iOS & Android"
+      subtitle="Gameplay · Niveaux · Monétisation"
+      intro="Vous avez une idée de jeu mobile ? Puzzle, quiz, arcade ou jeu de cartes, je développe votre concept de A à Z, du prototype jouable à la publication sur l'App Store et Google Play, avec la monétisation pensée dès le départ."
+      guide={{ href: "/blog/react-native-vs-flutter", label: "React Native vs Flutter" }}
+      visual={
+        <MockScreen
+          kicker="NIVEAU 12"
+          title="Classement de la semaine"
+          accent="#C4B5FD"
+          rows={[
+            { top: "1er", main: "Maëlle", badge: "12 480" },
+            { top: "2e", main: "Yanis", badge: "11 920" },
+            { top: "3e · vous", main: "Vous", badge: "10 305" },
+            { top: "Bonus", main: "Regarder une vidéo", badge: "+1 vie", muted: true },
+          ]}
+          footer={{ kicker: "DÉFI QUOTIDIEN", text: "Série de 7 jours : coffre débloqué" }}
+        />
+      }
+      enBref="Je développe des jeux mobiles sur mesure pour iOS et Android : puzzle, quiz, arcade, jeux de cartes et jeux éducatifs. Je m'occupe du gameplay, des niveaux, des classements, des récompenses et de la monétisation par publicité récompensée ou achats intégrés, jusqu'à la publication sur les stores. Je m'appelle Enzo, développeur freelance basé à Brest, et je travaille avec des porteurs de projet partout en France et en Belgique. Le jeu est publié sur votre compte, vous êtes propriétaire du code et des revenus."
+      stats={[
+        { label: "Estimation", value: "Sous 24h" },
+        { label: "Plateformes", value: "iOS & Android" },
+        { label: "Monétisation", value: "Pubs & achats intégrés" },
+      ]}
+      sections={[
+        {
+          title: "Ce que je développe pour votre jeu",
+          highlight: "votre jeu",
+          cols: 3,
+          check: true,
+          items: [
+            { title: "Gameplay sur mesure", desc: "La mécanique de votre concept, codée et ajustée jusqu'à ce qu'elle soit agréable à jouer." },
+            { title: "Système de niveaux", desc: "Progression, difficulté croissante et contenu débloquable, ajoutable depuis un panel admin." },
+            { title: "Classements", desc: "Scores globaux, entre amis ou de la semaine : le ressort compétitif qui fait revenir les joueurs." },
+            { title: "Récompenses quotidiennes", desc: "Séries de connexion, défis du jour et succès à débloquer." },
+            { title: "Achats intégrés", desc: "Vies, skins, niveaux premium ou pass de saison, conformes aux règles d'Apple et Google." },
+            { title: "Publicité récompensée", desc: "Le joueur choisit de regarder une vidéo contre un bonus : le format le mieux accepté." },
+          ],
+        },
+        {
+          title: "Les modèles de monétisation",
+          dark: true,
+          intro: "Un jeu gratuit ne rapporte que si la monétisation est prévue dès la conception, sans gâcher l'expérience du joueur.",
+          items: [
+            { emoji: "🎬", title: "Publicité", desc: "Vidéos récompensées, et interstitiels avec parcimonie entre deux parties." },
+            { emoji: "💎", title: "Achats intégrés", desc: "Monnaie virtuelle, objets cosmétiques, niveaux ou mondes supplémentaires." },
+            { emoji: "🎟️", title: "Pass de saison", desc: "Un parcours de récompenses sur plusieurs semaines, gratuit et premium." },
+            { emoji: "🔁", title: "Abonnement", desc: "Pour les jeux à contenu régulier : sans publicité et avec des avantages." },
+          ],
+        },
+        {
+          title: "Quel type de jeu ?",
+          highlight: "jeu",
+          items: [
+            { emoji: "🧩", title: "Puzzle et réflexion", desc: "Sudoku, jeux de mots, casse-têtes : sessions courtes et forte rétention." },
+            { emoji: "❓", title: "Quiz", desc: "Questions thématiques, championnats hebdomadaires, défis entre amis." },
+            { emoji: "🃏", title: "Jeux de cartes", desc: "Jeux classiques ou de collection, parties contre l'ordinateur ou entre joueurs." },
+            { emoji: "⚡", title: "Arcade", desc: "Runner, réflexes, jeux d'adresse : mécanique simple, rejouabilité maximale." },
+            { emoji: "🎓", title: "Jeux éducatifs", desc: "Apprendre en jouant, pour une école, une marque ou une association." },
+            { emoji: "🏷️", title: "Jeux de marque", desc: "Un jeu aux couleurs d'une entreprise pour une campagne ou un événement." },
+          ],
+        },
+      ]}
+      steps={[
+        { title: "Le concept", desc: "Vous me présentez votre idée, on définit le cœur du gameplay et la monétisation." },
+        { title: "Le prototype", desc: "Une version jouable du cœur du jeu, testée avant d'aller plus loin." },
+        { title: "Le développement", desc: "Niveaux, classements, récompenses, achats intégrés, avec des versions de test régulières." },
+        { title: "La publication", desc: "Fiches store, soumission à Apple et Google, puis mises à jour et événements." },
+      ]}
+      faq={faq}
+      faqTitle="Questions fréquentes : développement de jeu mobile"
+      ctaTitle="Donnons vie à votre jeu mobile"
+      serviceName="Développement de jeu mobile iOS & Android"
+      serviceDescription="Création de jeux mobiles sur mesure pour iOS et Android : gameplay, niveaux, classements, récompenses, publicité récompensée et achats intégrés, jusqu'à la publication sur les stores."
+    />
   );
 }
