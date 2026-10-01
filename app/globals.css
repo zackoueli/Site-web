@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -19,9 +18,11 @@ html { scroll-behavior: smooth; }
 body {
   background-color: var(--cream);
   color: var(--black);
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-space-grotesk), sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+.mono { font-family: var(--font-space-mono), monospace; }
 
 /* ── Neu-brutalism utilities ── */
 .brutal-border  { border: 3px solid var(--black); }
@@ -33,7 +34,7 @@ body {
   border: 3px solid var(--black);
   box-shadow: 4px 4px 0px var(--black);
   font-weight: 700;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-space-grotesk), sans-serif;
   transition: all 0.12s ease;
   cursor: pointer;
   display: inline-flex;

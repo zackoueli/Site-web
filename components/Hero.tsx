@@ -131,7 +131,7 @@ export default function Hero() {
                   <div className="w-10 h-2 rounded-full bg-[#1a1a1a] border border-[#333]" />
                 </div>
 
-                {/* Screen: iframe Bunkly — chargée après idle */}
+                {/* Screen: iframe Bunkly, chargée à la première interaction */}
                 <LazyIframe
                   src="https://app.bunkly.co/b/villa-les-chataigniers"
                   title="Livret d'accueil BreizhApp"

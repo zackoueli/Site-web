@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 interface Props {
   src: string;
@@ -9,36 +9,33 @@ interface Props {
   style?: React.CSSProperties;
 }
 
+const WAKE_EVENTS = ["pointermove", "pointerdown", "touchstart", "scroll", "keydown"] as const;
+
 export default function LazyIframe({ src, title, className, sandbox, style }: Props) {
   const [load, setLoad] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Charge l'iframe après que la page est interactive, via requestIdleCallback
-    const id = (window as Window & { requestIdleCallback?: (cb: () => void, opts?: object) => number })
-      .requestIdleCallback
-      ? (window as Window & { requestIdleCallback: (cb: () => void, opts?: object) => number })
-          .requestIdleCallback(() => setLoad(true), { timeout: 3000 })
-      : window.setTimeout(() => setLoad(true), 2000);
-
-    return () => {
-      if ((window as Window & { cancelIdleCallback?: (id: number) => void }).cancelIdleCallback) {
-        (window as Window & { cancelIdleCallback: (id: number) => void }).cancelIdleCallback(id as number);
-      } else {
-        clearTimeout(id as number);
-      }
-    };
+    // Charge l'iframe à la première interaction du visiteur (souris, toucher, scroll, clavier) :
+    // le site embarqué et ses scripts tiers ne pèsent plus sur le chargement initial de la page.
+    const wake = () => setLoad(true);
+    const opts = { once: true, passive: true } as const;
+    WAKE_EVENTS.forEach((e) => window.addEventListener(e, wake, opts));
+    return () => WAKE_EVENTS.forEach((e) => window.removeEventListener(e, wake));
   }, []);
 
   return (
-    <div ref={ref} className={className} style={style}>
-      {load && (
+    <div className={className} style={style}>
+      {load ? (
         <iframe
           src={src}
           title={title}
           className="w-full h-full border-0"
           sandbox={sandbox}
         />
+      ) : (
+        <div className="w-full h-full bg-[#0A0A0A] flex items-center justify-center" aria-hidden="true">
+          <span className="text-3xl animate-pulse">📱</span>
+        </div>
       )}
     </div>
   );

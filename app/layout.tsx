@@ -1,9 +1,23 @@
 import type { Metadata } from "next";
+import { Space_Grotesk, Space_Mono } from "next/font/google";
 import "./globals.css";
 import SchemaLD from "@/components/SchemaLD";
 import AudioProvider from "@/components/AudioProvider";
 import SfxProvider from "@/components/SfxProvider";
 import MusicToggle from "@/components/MusicToggle";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-space-grotesk",
+});
+
+const spaceMono = Space_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+  variable: "--font-space-mono",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://breizhapp.tech"),
@@ -44,11 +58,9 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="fr">
+    <html lang="fr" className={`${spaceGrotesk.variable} ${spaceMono.variable}`}>
       <head>
         <SchemaLD />
-        <link rel="preconnect" href="https://app.bunkly.co" />
-        <link rel="preconnect" href="https://firebasestorage.googleapis.com" />
         <link rel="dns-prefetch" href="https://app.bunkly.co" />
         <link rel="dns-prefetch" href="https://firebasestorage.googleapis.com" />
       </head>
