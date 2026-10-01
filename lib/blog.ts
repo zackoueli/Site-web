@@ -353,7 +353,7 @@ export const articles: Article[] = [
         list: [
           "Une application mobile restaurant remplace-t-elle Uber Eats ? Oui pour vos clients réguliers : elle intègre la commande en ligne avec paiement Stripe. Vos clients commandent directement dans votre app, sans commission à une plateforme tierce.",
           "Combien coûte une app pour un restaurant ? Le tarif dépend des fonctionnalités (commande en ligne, paiement, fidélité, réservation). Mes tarifs sont affichés sur la page Application mobile, avec un devis gratuit sous 24h.",
-          "En combien de temps l'application est-elle livrée ? Entre 3 et 5 semaines pour une app restaurant complète avec commande en ligne. Une app menu et réservation est livrée en 2 à 3 semaines.",
+          "En combien de temps l'application est-elle livrée ? Entre 4 et 8 semaines pour une app restaurant complète avec commande en ligne. Une app menu et réservation est livrée en 4 à 5 semaines.",
           "Puis-je modifier mon menu moi-même ? Oui. Votre app inclut un panel d'administration web depuis lequel vous modifiez votre menu, vos prix et vos horaires en temps réel.",
           "L'app fonctionne-t-elle sur iPhone et Android ? Oui. Une seule application, publiée à la fois sur l'App Store et sur Google Play, accessible à tous vos clients.",
           "Comment mes clients téléchargent-ils l'app ? En cherchant votre nom sur l'App Store ou Google Play, ou en scannant un QR code que vous affichez dans votre restaurant.",
@@ -945,7 +945,7 @@ export const articles: Article[] = [
           rows: [
             ["Créateur de site", "9 à 30 €/mois", "Un site rapide à lancer, que vous louez"],
             ["WordPress", "250 à 600 € sur 2 ans", "Un site personnalisable, si vous gérez la technique"],
-            ["Freelance", "Quelques centaines à quelques milliers d'euros", "Un site sur mesure qui vous appartient"],
+            ["Freelance", "Quelques milliers d'euros", "Un site sur mesure qui vous appartient"],
             ["Agence web", "3 000 à 80 000 €", "Une équipe complète pour les gros projets"],
           ],
         },
@@ -968,7 +968,7 @@ export const articles: Article[] = [
         heading: "Option 3 : un développeur freelance",
         paragraphs: [
           "Un freelance développe votre site sur mesure : design personnalisé, fonctionnalités adaptées à votre activité, référencement optimisé. Vous obtenez exactement ce dont vous avez besoin, ni plus ni moins, et vous êtes propriétaire de votre code, sans dépendre d'une plateforme.",
-          "Sur le marché, un site vitrine simple se situe entre 400 € et 1 500 € selon les fonctionnalités, et un site e-commerce entre 800 € et 3 000 €. Une application mobile iOS et Android demande quelques milliers d'euros selon ses fonctionnalités. Site et application peuvent aussi être réalisés dans un seul projet, ce qui revient souvent moins cher que de passer par deux prestataires.",
+          "Sur le marché, un site vitrine sur mesure se situe entre 1 500 € et 3 000 € selon les fonctionnalités, et un site e-commerce entre 2 000 € et 6 000 €. Une application mobile iOS et Android demande quelques milliers d'euros selon ses fonctionnalités. Site et application peuvent aussi être réalisés dans un seul projet, ce qui revient souvent moins cher que de passer par deux prestataires.",
         ],
       },
       {
@@ -1283,7 +1283,7 @@ export const articles: Article[] = [
         list: [
           "Où êtes-vous basé à Brest ? Je travaille depuis Brest (Finistère, 29200). Je peux me déplacer pour vous rencontrer dans toute la Brest métropole : Guipavas, Plougastel-Daoulas, Le Relecq-Kerhuon, Landerneau.",
           "Peut-on travailler à distance sans se rencontrer ? Oui. Une partie de mes clients est suivie entièrement à distance, par appels vidéo, démos en ligne et livraison numérique. La rencontre est un plus, pas une obligation.",
-          "Combien de temps faut-il pour créer une application mobile ? Entre 2 et 5 semaines selon la complexité, de la conception à la publication sur l'App Store et Google Play.",
+          "Combien de temps faut-il pour créer une application mobile ? Entre 4 et 8 semaines selon la complexité, de la conception à la publication sur l'App Store et Google Play.",
           "Combien coûte une application mobile à Brest ? Cela dépend des fonctionnalités : paiement en ligne, notifications push, réservation, panel admin. Contactez-moi pour un devis gratuit et détaillé sous 24h, adapté à votre projet.",
           "Intervenez-vous en dehors de Brest ? Oui : Quimper, Morlaix, Landerneau, Rennes, et partout en France à distance.",
           "Quelle est la différence entre un développeur à Brest et un freelance en ligne ? La proximité : on peut se rencontrer, je connais le tissu économique local, et je suis joignable sur le même fuseau horaire, dans la même langue, sans ambiguïté.",
@@ -1586,7 +1586,7 @@ export const articles: Article[] = [
     },
     service: "site-web",
     title: "Site web sur mesure : prix réels en 2026",
-    description: "Combien coûte un site web sur mesure en 2026 ? Vitrine, e-commerce, plateforme : tarifs réels d'un développeur freelance vs agence. Devis gratuit 48h.",
+    description: "Combien coûte un site web sur mesure en 2026 ? Vitrine, e-commerce, plateforme : tarifs réels d'un développeur freelance vs agence. Devis gratuit sous 24h.",
     date: "2026-05-15",
     lastModified: "2026-10-01",
     category: "Tarifs",
@@ -1602,10 +1602,10 @@ export const articles: Article[] = [
         table: {
           head: ["Type de site", "Fourchette chez un freelance", "Pour qui"],
           rows: [
-            ["Site vitrine", "400 € à 1 500 €", "Présenter son activité et être contacté"],
-            ["Site avec blog ou catalogue", "800 € à 2 500 €", "Publier régulièrement, présenter une offre large"],
-            ["Site e-commerce", "1 500 € à 5 000 €", "Vendre en ligne sans commission"],
-            ["Plateforme avec back-office", "2 000 € à 8 000 €", "Espace client, multi-rôles, outil métier"],
+            ["Site vitrine", "1 500 € à 3 000 €", "Présenter son activité et être contacté"],
+            ["Site avec blog ou catalogue", "2 000 € à 4 000 €", "Publier régulièrement, présenter une offre large"],
+            ["Site e-commerce", "2 000 € à 6 000 €", "Vendre en ligne sans commission"],
+            ["Plateforme avec back-office", "3 000 € à 10 000 €", "Espace client, multi-rôles, outil métier"],
           ],
         },
       },
@@ -2249,7 +2249,7 @@ export const articles: Article[] = [
       },
       {
         paragraphs: [
-          "Comptez 4 à 10 semaines selon les fonctionnalités, publication sur l'App Store et Google Play comprise.",
+          "Comptez 4 à 8 semaines selon les fonctionnalités, publication sur l'App Store et Google Play comprise.",
         ],
       },
       {
@@ -2272,7 +2272,7 @@ export const articles: Article[] = [
     },
     service: "application-mobile",
     title: "Développeur freelance à Quimper : web et mobile",
-    description: "Développeur freelance à Quimper : applications mobiles iOS & Android, sites web et plateformes digitales sur mesure. Devis gratuit sous 48h, livraison en Bretagne.",
+    description: "Développeur freelance à Quimper : applications mobiles iOS & Android, sites web et plateformes digitales sur mesure. Devis gratuit sous 24h, livraison en Bretagne.",
     date: "2026-05-16",
     lastModified: "2026-10-01",
     category: "Local",
@@ -2335,7 +2335,7 @@ export const articles: Article[] = [
     },
     service: "application-mobile",
     title: "Développeur freelance à Rennes : web et mobile",
-    description: "Développeur freelance à Rennes : applications mobiles iOS & Android, sites web et plateformes sur mesure. Basé en Bretagne, devis gratuit sous 48h.",
+    description: "Développeur freelance à Rennes : applications mobiles iOS & Android, sites web et plateformes sur mesure. Basé en Bretagne, devis gratuit sous 24h.",
     date: "2026-05-16",
     lastModified: "2026-10-01",
     category: "Local",
@@ -2460,7 +2460,7 @@ export const articles: Article[] = [
     service: "application-mobile",
     title: "Développeur application mobile et web en Bretagne",
     description:
-      "Création d'application mobile et web en Bretagne par un développeur basé à Brest : iOS, Android, web app métier. Finistère, Morbihan, Rennes. Devis gratuit sous 48h.",
+      "Création d'application mobile et web en Bretagne par un développeur basé à Brest : iOS, Android, web app métier. Finistère, Morbihan, Rennes. Devis gratuit sous 24h.",
     date: "2026-05-16",
     lastModified: "2026-10-01",
     category: "Local",
@@ -2924,7 +2924,7 @@ export const articles: Article[] = [
         heading: "Ce que comprend l'application de votre salon",
         paragraphs: [
           "L'essentiel est inclus : réservation en ligne, galerie avant/après, catalogue de prestations, rappels, panel d'administration, sur iOS et Android. En option, vous pouvez ajouter le paiement d'acompte avec Stripe, un programme de fidélité complet et la messagerie client.",
-          "Comptez 3 à 5 semaines, publication sur l'App Store et Google Play comprise. Mes tarifs sont affichés sur la page Application mobile du site, avec un devis gratuit sous 24h.",
+          "Comptez 4 à 8 semaines, publication sur l'App Store et Google Play comprise. Mes tarifs sont affichés sur la page Application mobile du site, avec un devis gratuit sous 24h.",
         ],
       },
       {
@@ -3234,7 +3234,7 @@ export const articles: Article[] = [
         heading: "Ce qui est inclus dans une application photobooth sur mesure",
         paragraphs: [
           "Je développe des applications photobooth pour les photographes, loueurs et organisateurs d'événements, chaque projet étant adapté à votre matériel et à votre usage. La base comprend la prise de photo avec la tablette, les cadres personnalisables, l'envoi par QR code ou email, la galerie partagée et le panel d'administration, sur iOS et/ou Android.",
-          "En option, j'ajoute l'impression directe avec votre imprimante (DNP, HiTi, Canon Selphy), la connexion à un appareil photo reflex ou hybride, et un branding multi-clients pour les loueurs, qui permet de configurer le modèle de chaque client sans redévelopper l'application. Comptez 3 à 6 semaines selon les fonctionnalités, publication sur l'App Store et Google Play comprise, avec un support mensuel pour l'hébergement de la galerie, les mises à jour iOS et Android et l'assistance technique.",
+          "En option, j'ajoute l'impression directe avec votre imprimante (DNP, HiTi, Canon Selphy), la connexion à un appareil photo reflex ou hybride, et un branding multi-clients pour les loueurs, qui permet de configurer le modèle de chaque client sans redévelopper l'application. Comptez 4 à 8 semaines selon les fonctionnalités, publication sur l'App Store et Google Play comprise, avec un support mensuel pour l'hébergement de la galerie, les mises à jour iOS et Android et l'assistance technique.",
         ],
       },
       {

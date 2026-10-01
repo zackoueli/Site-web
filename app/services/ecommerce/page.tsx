@@ -360,7 +360,7 @@ export default function EcommercePage() {
           <div className="max-w-4xl mx-auto brutal-border brutal-shadow bg-[#FF6B9D] p-8 flex flex-wrap items-center justify-between gap-6">
             <div>
               <h2 className="text-2xl font-bold text-white">Lancez votre boutique en ligne</h2>
-              <p className="text-sm mt-1 text-pink-100">Devis gratuit · Réponse sous 48h · Sans engagement</p>
+              <p className="text-sm mt-1 text-pink-100">Devis gratuit · Réponse sous 24h · Sans engagement</p>
             </div>
             <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2 font-bold">
               Démarrer maintenant <ArrowRight size={16} />

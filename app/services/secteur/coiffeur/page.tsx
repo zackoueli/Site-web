@@ -54,7 +54,7 @@ const faq = [
   },
   {
     q: "En combien de temps l'application est-elle prête ?",
-    a: "Entre 3 et 5 semaines pour une application complète avec réservation et fidélité. Un site web avec réservation en ligne se livre en 2 à 4 semaines.",
+    a: "Entre 4 et 8 semaines pour une application complète avec réservation et fidélité. Un site web avec réservation en ligne se livre en 2 à 4 semaines.",
   },
 ];
 
@@ -195,7 +195,7 @@ export default function CoiffeurPage() {
             <div className="flex flex-col gap-6">
               <div className="border-t border-gray-800 pt-4">
                 <p className="mono text-xs font-bold text-gray-500 uppercase mb-1">Livraison</p>
-                <p className="text-xl font-bold text-white">2 à 5 semaines</p>
+                <p className="text-xl font-bold text-white">2 à 8 semaines</p>
               </div>
               <div className="border-t border-gray-800 pt-4">
                 <p className="mono text-xs font-bold text-gray-500 uppercase mb-1">Budget indicatif</p>

@@ -46,7 +46,7 @@ const offers = [
 
 const process = [
   { num: "01", label: "Brief", desc: "Vous décrivez votre idée, je pose les bonnes questions." },
-  { num: "02", label: "Devis",  desc: "Je vous envoie un devis détaillé sous 48h, sans engagement." },
+  { num: "02", label: "Devis",  desc: "Je vous envoie un devis détaillé sous 24h, sans engagement." },
   { num: "03", label: "Développement", desc: "Je code votre projet avec des points d'avancement réguliers." },
   { num: "04", label: "Livraison", desc: "Mise en ligne et formation à la prise en main incluses." },
 ];

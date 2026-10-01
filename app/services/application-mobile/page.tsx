@@ -57,7 +57,7 @@ const faq = [
   },
   {
     q: "Combien de temps pour développer une application mobile ?",
-    a: "Entre 2 et 5 semaines selon la complexité, de la conception au déploiement sur l'App Store et Google Play. Les applications simples (catalogue, réservation) sont livrées en 2 à 3 semaines, les projets avec paiement et espace admin en 4 à 5 semaines.",
+    a: "Entre 4 et 8 semaines selon la complexité, de la conception au déploiement sur l'App Store et Google Play. Les applications simples (catalogue, réservation) sont livrées en 4 à 5 semaines, les projets avec paiement et espace admin en 6 à 8 semaines.",
   },
   {
     q: "Application native ou cross-platform : que choisir ?",
@@ -227,7 +227,7 @@ export default function AppMobilePage() {
                 Play prise en charge de A à Z. Je m&apos;appelle Enzo, développeur freelance basé à Brest, et
                 j&apos;accompagne des restaurateurs, commerçants, TPE et porteurs de projet dans tout le Finistère et la
                 Bretagne, sur place ou à distance partout en France. Une application avec panel admin et authentification
-                démarre à 4 000 € et se livre en 2 à 5 semaines selon la complexité. Vous êtes propriétaire du code et
+                démarre à 4 000 € et se livre en 4 à 8 semaines selon la complexité. Vous êtes propriétaire du code et
                 de l&apos;application publiée à votre nom, et vous échangez directement avec la personne qui la développe,
                 sans intermédiaire. Devis détaillé sous 24h après un cadrage gratuit.
               </p>
@@ -235,7 +235,7 @@ export default function AppMobilePage() {
             <div className="flex flex-col gap-6">
               <div className="border-t border-gray-800 pt-4">
                 <p className="mono text-xs font-bold text-gray-500 uppercase mb-1">Livraison</p>
-                <p className="text-xl font-bold text-white">2 à 5 semaines</p>
+                <p className="text-xl font-bold text-white">4 à 8 semaines</p>
               </div>
               <div className="border-t border-gray-800 pt-4">
                 <p className="mono text-xs font-bold text-gray-500 uppercase mb-1">Budget indicatif</p>
@@ -383,7 +383,7 @@ export default function AppMobilePage() {
             <div className="brutal-border brutal-shadow bg-white p-8 max-w-md">
               <p className="mono text-sm font-bold text-gray-400 mb-2">Application mobile sur mesure</p>
               <p className="text-4xl font-bold mb-1">À partir de 4 000 €</p>
-              <p className="text-sm text-gray-500 mb-4">Livrée en 2 à 5 semaines selon la complexité</p>
+              <p className="text-sm text-gray-500 mb-4">Livrée en 4 à 8 semaines selon la complexité</p>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex items-start gap-2"><CheckCircle2 size={16} className="text-[#00D4AA] mt-0.5 shrink-0" /> iOS & Android, panel admin et authentification inclus</li>
                 <li className="flex items-start gap-2"><CheckCircle2 size={16} className="text-[#00D4AA] mt-0.5 shrink-0" /> Publication sur l&apos;App Store et Google Play incluse</li>

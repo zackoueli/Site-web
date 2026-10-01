@@ -46,7 +46,7 @@ const faq = [
   },
   {
     q: "En combien de temps l'application est-elle prête ?",
-    a: "Entre 3 et 6 semaines selon les fonctionnalités. Pour un événement daté, on part de la date de mise en vente des billets et on planifie à rebours.",
+    a: "Entre 4 et 8 semaines selon les fonctionnalités. Pour un événement daté, on part de la date de mise en vente des billets et on planifie à rebours.",
   },
 ];
 
@@ -77,7 +77,7 @@ export default function EvenementielPage() {
       }
       enBref="Je crée des billetteries et des applications d'événement sur mesure pour les festivals, salons, concerts, événements sportifs, associations et organisateurs de séminaires : vente de billets, QR code d'entrée, contrôle d'accès, programme, plan, notifications et networking. Je m'appelle Enzo, développeur freelance basé à Brest, et je travaille avec des organisateurs partout en France. Un site avec billetterie démarre à 1 500 €, une application à 4 000 €. Pas de commission de plateforme sur vos billets, et le fichier de vos participants vous appartient."
       stats={[
-        { label: "Livraison", value: "3 à 6 semaines" },
+        { label: "Livraison", value: "4 à 8 semaines" },
         { label: "Budget indicatif", value: "Dès 1 500 €" },
         { label: "Commission sur vos billets", value: "0 %" },
       ]}

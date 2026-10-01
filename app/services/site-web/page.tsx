@@ -317,7 +317,7 @@ export default function SiteWebPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold mb-2">Combien coûte un <span className="bg-[#FFE234] px-2 brutal-border">site web sur mesure</span> ?</h2>
             <p className="text-gray-600 mb-8 max-w-2xl">
-              Le prix dépend des fonctionnalités réellement nécessaires à votre activité, pas d&apos;un forfait figé. La fourchette ci-dessous sert de repère : le devis détaillé arrive sous 24 à 48h après notre échange.
+              Le prix dépend des fonctionnalités réellement nécessaires à votre activité, pas d&apos;un forfait figé. La fourchette ci-dessous sert de repère : le devis détaillé arrive sous 24h après notre échange.
             </p>
             <div className="brutal-border brutal-shadow bg-white p-8 max-w-md">
               <p className="mono text-sm font-bold text-gray-400 mb-2">Site web sur mesure</p>
@@ -389,7 +389,7 @@ export default function SiteWebPage() {
           <div className="max-w-4xl mx-auto brutal-border brutal-shadow bg-[#FFE234] p-8 flex flex-wrap items-center justify-between gap-6">
             <div>
               <h2 className="text-2xl font-bold">Votre site web en 4 semaines</h2>
-              <p className="text-sm mt-1">Devis gratuit · Réponse sous 48h · Sans engagement</p>
+              <p className="text-sm mt-1">Devis gratuit · Réponse sous 24h · Sans engagement</p>
             </div>
             <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-6 py-3 inline-flex items-center gap-2">
               Démarrer maintenant <ArrowRight size={16} />

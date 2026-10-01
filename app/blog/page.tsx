@@ -59,7 +59,7 @@ const faqItems = [
   },
   {
     q: "En combien de temps une application mobile est-elle livrée ?",
-    a: "Généralement entre 2 et 5 semaines selon les fonctionnalités, publication sur l'App Store et Google Play incluse. Un site web vitrine est livré plus rapidement.",
+    a: "Généralement entre 4 et 8 semaines selon les fonctionnalités, publication sur l'App Store et Google Play incluse. Un site web vitrine est livré plus rapidement.",
   },
   {
     q: "Travaillez-vous uniquement en Bretagne ?",

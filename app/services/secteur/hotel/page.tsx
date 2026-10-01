@@ -51,7 +51,7 @@ const faq = [
   },
   {
     q: "Combien de temps pour créer une application hôtel ?",
-    a: "Comptez 3 à 5 semaines pour une application complète avec réservation directe et conciergerie. Un livret d'accueil digital ou un site avec réservation peut être livré en 2 à 3 semaines.",
+    a: "Comptez 4 à 8 semaines pour une application complète avec réservation directe et conciergerie. Un livret d'accueil digital ou un site avec réservation peut être livré en 2 à 3 semaines.",
   },
   {
     q: "Comment mesurer les résultats ?",
@@ -195,7 +195,7 @@ export default function HotelPage() {
             <div className="flex flex-col gap-6">
               <div className="border-t border-gray-800 pt-4">
                 <p className="mono text-xs font-bold text-gray-500 uppercase mb-1">Livraison</p>
-                <p className="text-xl font-bold text-white">2 à 5 semaines</p>
+                <p className="text-xl font-bold text-white">2 à 8 semaines</p>
               </div>
               <div className="border-t border-gray-800 pt-4">
                 <p className="mono text-xs font-bold text-gray-500 uppercase mb-1">Budget indicatif</p>

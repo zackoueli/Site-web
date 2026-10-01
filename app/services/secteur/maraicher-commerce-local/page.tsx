@@ -46,7 +46,7 @@ const faq = [
   },
   {
     q: "En combien de temps l'outil est-il prêt ?",
-    a: "Entre 2 et 4 semaines pour un site avec boutique et click & collect, 3 à 5 semaines pour une application complète avec abonnements.",
+    a: "Entre 2 et 4 semaines pour un site avec boutique et click & collect, 4 à 8 semaines pour une application complète avec abonnements.",
   },
 ];
 
@@ -77,7 +77,7 @@ export default function MaraicherPage() {
       }
       enBref="Je crée des sites web et des applications mobiles sur mesure pour les maraîchers, fermes, producteurs, épiceries et commerces de proximité : catalogue qui change chaque semaine, paniers et abonnements, click & collect, livraison et paiement en ligne. Je m'appelle Enzo, développeur freelance basé à Brest, et je travaille avec des producteurs de tout le Finistère et de la Bretagne. Un site avec boutique démarre à 1 500 €, une application à 4 000 €. Aucune commission sur vos ventes, et l'outil comme votre fichier clients vous appartiennent."
       stats={[
-        { label: "Livraison", value: "2 à 5 semaines" },
+        { label: "Livraison", value: "2 à 8 semaines" },
         { label: "Budget indicatif", value: "Dès 1 500 €" },
         { label: "Commission sur vos ventes", value: "0 %" },
       ]}

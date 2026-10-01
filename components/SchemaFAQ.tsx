@@ -8,7 +8,7 @@ export default function SchemaFAQ() {
         name: "Je veux une application mobile, par où commencer ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Très simple : contactez-moi avec votre idée, même si elle n'est pas encore précise. Je vous pose des questions pour comprendre vos besoins, puis je vous envoie un devis détaillé sous 48h. On démarre dès validation.",
+          text: "Très simple : contactez-moi avec votre idée, même si elle n'est pas encore précise. Je vous pose des questions pour comprendre vos besoins, puis je vous envoie un devis détaillé sous 24h. On démarre dès validation.",
         },
       },
       {

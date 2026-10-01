@@ -46,7 +46,7 @@ const faq = [
   },
   {
     q: "En combien de temps l'outil est-il prêt ?",
-    a: "Entre 2 et 4 semaines pour un site avec prise de rendez-vous, 3 à 6 semaines pour une application avec espace client et programmes.",
+    a: "Entre 2 et 4 semaines pour un site avec prise de rendez-vous, 4 à 8 semaines pour une application avec espace client et programmes.",
   },
 ];
 
@@ -77,7 +77,7 @@ export default function SantePage() {
       }
       enBref="Je crée des sites web et des applications mobiles sur mesure pour les praticiens de santé et du bien-être : naturopathes, sophrologues, psychologues, kinés, coachs, diététiciens et centres de soins. Prise de rendez-vous, espace client, suivi entre les séances, programmes, visio et paiement. Je m'appelle Enzo, développeur freelance basé à Brest, et je travaille avec des praticiens partout en France. Un site avec prise de rendez-vous démarre à 1 500 €, une application à 4 000 €. L'outil porte votre nom et vous appartient."
       stats={[
-        { label: "Livraison", value: "2 à 6 semaines" },
+        { label: "Livraison", value: "2 à 8 semaines" },
         { label: "Budget indicatif", value: "Dès 1 500 €" },
         { label: "Abonnement mensuel", value: "Aucun" },
       ]}

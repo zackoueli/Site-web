@@ -14,7 +14,7 @@ const values = [
   {
     icon: Zap,
     title: "Livraison rapide",
-    desc: "Un site web en 1 à 2 semaines, une app mobile en 2 à 8 semaines selon la complexité du projet. Des délais tenus, des points d'avancement réguliers.",
+    desc: "Un site web en 1 à 2 semaines, une app mobile en 4 à 8 semaines selon la complexité du projet. Des délais tenus, des points d'avancement réguliers.",
   },
   {
     icon: Users,

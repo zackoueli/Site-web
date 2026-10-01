@@ -405,7 +405,7 @@ export default function WebAppPage() {
           <div className="max-w-4xl mx-auto brutal-border brutal-shadow bg-[#7C3AED] p-8 flex flex-wrap items-center justify-between gap-6">
             <div>
               <h2 className="text-2xl font-bold text-white">Votre outil métier sur mesure</h2>
-              <p className="text-sm mt-1 text-purple-200">Devis gratuit · Réponse sous 48h · Sans engagement</p>
+              <p className="text-sm mt-1 text-purple-200">Devis gratuit · Réponse sous 24h · Sans engagement</p>
             </div>
             <a href="#contact" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-6 py-3 inline-flex items-center gap-2 font-bold">
               Démarrer maintenant <ArrowRight size={16} />

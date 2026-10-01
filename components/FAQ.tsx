@@ -3,7 +3,7 @@ import FAQItem from "@/components/FAQItem";
 const faqs = [
   {
     q: "Je veux une application mobile, par où commencer ?",
-    a: "Très simple : contactez-moi avec votre idée, même si elle n'est pas encore précise. Je vous pose des questions pour comprendre vos besoins, puis je vous envoie un devis détaillé sous 48h. On démarre dès validation.",
+    a: "Très simple : contactez-moi avec votre idée, même si elle n'est pas encore précise. Je vous pose des questions pour comprendre vos besoins, puis je vous envoie un devis détaillé sous 24h. On démarre dès validation.",
   },
   {
     q: "Combien coûte la création d'une application mobile ?",

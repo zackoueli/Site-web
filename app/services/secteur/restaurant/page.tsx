@@ -30,7 +30,7 @@ const faq = [
   },
   {
     q: "En combien de temps l'application est-elle livrée ?",
-    a: "Entre 3 et 5 semaines pour une application complète avec commande en ligne et paiement. Une application plus simple (menu, horaires, réservation) peut être livrée en 2 à 3 semaines.",
+    a: "Entre 4 et 8 semaines pour une application complète avec commande en ligne et paiement. Une application plus simple (menu, horaires, réservation) peut être livrée en 4 à 5 semaines.",
   },
   {
     q: "Est-ce que l'app remplace Uber Eats ou Deliveroo ?",
@@ -179,14 +179,14 @@ export default function RestaurantPage() {
                 traiteurs : menu, commande en ligne, click & collect, livraison, fidélité et notifications push, avec un
                 panel admin pour tout gérer vous-même. Je m&apos;appelle Enzo, développeur freelance basé à Brest, et
                 je travaille avec les restaurateurs de tout le Finistère et de la Bretagne. Une application restaurant
-                démarre à 4 000 € et se livre en 3 à 5 semaines. Elle est publiée à votre nom, vous êtes propriétaire
+                démarre à 4 000 € et se livre en 4 à 8 semaines. Elle est publiée à votre nom, vous êtes propriétaire
                 du code et de votre fichier clients, et vous ne payez aucune commission sur vos ventes.
               </p>
             </div>
             <div className="flex flex-col gap-6">
               <div className="border-t border-gray-800 pt-4">
                 <p className="mono text-xs font-bold text-gray-500 uppercase mb-1">Livraison</p>
-                <p className="text-xl font-bold text-white">3 à 5 semaines</p>
+                <p className="text-xl font-bold text-white">4 à 8 semaines</p>
               </div>
               <div className="border-t border-gray-800 pt-4">
                 <p className="mono text-xs font-bold text-gray-500 uppercase mb-1">Budget indicatif</p>
