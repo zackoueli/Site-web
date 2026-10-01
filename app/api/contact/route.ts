@@ -13,6 +13,7 @@ export async function POST(req: Request) {
     const { source } = body;
     const name = esc(body.name);
     const email = esc(body.email);
+    const phone = esc(body.phone).trim();
     const budget = esc(body.budget);
     const message = esc(body.message);
 
@@ -44,7 +45,13 @@ export async function POST(req: Request) {
               <td style="padding: 10px; border: 2px solid #0A0A0A; background: #fff;">
                 <a href="mailto:${email}" style="color: #7C3AED;">${email}</a>
               </td>
-            </tr>
+            </tr>${phone ? `
+            <tr>
+              <td style="padding: 10px; border: 2px solid #0A0A0A; background: #fff; font-weight: bold;">Téléphone</td>
+              <td style="padding: 10px; border: 2px solid #0A0A0A; background: #fff;">
+                <a href="tel:${phone.replace(/[^\d+]/g, "")}" style="color: #7C3AED;">${phone}</a>
+              </td>
+            </tr>` : ""}
             <tr>
               <td style="padding: 10px; border: 2px solid #0A0A0A; background: #fff; font-weight: bold;">Type de projet</td>
               <td style="padding: 10px; border: 2px solid #0A0A0A; background: #fff;">${budget || "Non précisé"}</td>

@@ -8,6 +8,7 @@ export default function Contact() {
   const [form, setForm] = useState({
     name: "",
     email: "",
+    phone: "",
     budget: "",
     message: "",
   });
@@ -116,6 +117,19 @@ export default function Contact() {
                   className="brutal-border p-3 font-medium outline-none focus:bg-[#FFFBF0]"
                 />
               </div>
+            </div>
+
+            <div className="flex flex-col gap-1.5">
+              <label className="font-bold text-sm" htmlFor="phone">Téléphone</label>
+              <input
+                id="phone"
+                type="tel"
+                autoComplete="tel"
+                placeholder="06 12 34 56 78"
+                value={form.phone}
+                onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                className="brutal-border p-3 font-medium outline-none focus:bg-[#FFFBF0]"
+              />
             </div>
 
             <div className="flex flex-col gap-1.5">
