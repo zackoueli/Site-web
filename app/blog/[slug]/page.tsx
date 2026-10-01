@@ -6,6 +6,18 @@ import { resolveTaxonomySlug } from "@/lib/taxonomy";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
+import BlogServiceShowcase from "@/components/BlogServiceShowcase";
+import ArticleToc from "@/components/ArticleToc";
+
+/** Ancre d'une section, dérivée de son titre (utilisée par le sommaire). */
+function headingId(heading: string) {
+  return heading
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -119,26 +131,28 @@ function MidArticleCTA({ article }: { article: Article }) {
   const offset = pool.length ? hash % pool.length : 0;
   const relatedArticles = [...pool.slice(offset), ...pool.slice(0, offset)].slice(0, 3);
 
-  const links = [
-    ...(taxon ? [{ label: `Découvrir ${taxon.label}`, href: taxon.href }] : []),
-    ...relatedArticles.map((a) => ({ label: a.title, href: `/blog/${a.slug}` })),
-  ];
+  const links = relatedArticles.map((a) => ({ label: a.title, href: `/blog/${a.slug}` }));
 
-  if (links.length === 0) return null;
+  if (!taxon && links.length === 0) return null;
 
   return (
-    <div className="my-2 brutal-border border-l-4 border-[#FFE234] bg-[#FFFBF0] p-4">
-      <p className="mono text-xs font-bold text-gray-500 mb-2">// articles liés</p>
-      <ul className="flex flex-col gap-1">
-        {links.map((l) => (
-          <li key={l.href}>
-            <Link href={l.href} className="text-sm font-semibold text-[#0A0A0A] hover:text-[#7C3AED] transition-colors underline underline-offset-2">
-              → {l.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      {taxon && <BlogServiceShowcase service={article.service} />}
+      {links.length > 0 && (
+        <div className="my-2 brutal-border border-l-4 border-[#FFE234] bg-[#FFFBF0] p-4">
+          <p className="mono text-xs font-bold text-gray-500 mb-2">{"// articles liés"}</p>
+          <ul className="flex flex-col gap-1">
+            {links.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="text-sm font-semibold text-[#0A0A0A] hover:text-[#7C3AED] transition-colors underline underline-offset-2">
+                  → {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </>
   );
 }
 
@@ -182,11 +196,28 @@ export default async function ArticlePage({ params }: Props) {
     ...different.slice(0, 2),
   ].slice(0, 4);
 
+  const toc = article.sections
+    .filter((s) => s.heading)
+    .map((s) => ({ id: headingId(s.heading!), label: s.heading!.replace(/^FAQ\s*[—:]?\s*/i, "FAQ : ") }));
+
   return (
     <>
       <ArticleSchema article={article} />
       <Navbar />
-      <main className="max-w-3xl mx-auto px-4 py-20">
+      <main className="max-w-6xl mx-auto px-4 py-16 lg:grid lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-14">
+        <aside>
+            <div className="lg:sticky lg:top-28 flex flex-col gap-8">
+              <ArticleToc items={toc} />
+              <div className="hidden lg:block brutal-border brutal-shadow bg-[#0A0A0A] text-[#FFFBF0] p-5">
+                <p className="text-lg font-bold leading-snug mb-2">Un projet ?</p>
+                <p className="text-sm text-gray-400 mb-4">Devis gratuit et sans engagement, réponse sous 24h.</p>
+                <a href="#contact" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-4 py-2 text-sm font-bold inline-flex">
+                  Demander un devis →
+                </a>
+              </div>
+            </div>
+        </aside>
+        <div className="min-w-0">
         {/* Breadcrumb */}
         <nav className="mono text-sm text-gray-500 mb-10 flex items-center gap-2 flex-wrap">
           <Link href="/" className="hover:text-black transition-colors">Accueil</Link>
@@ -259,8 +290,8 @@ export default async function ArticlePage({ params }: Props) {
           "creation-site-web-brest",
           "application-mobile-coiffeur",
         ].includes(article.slug) && (
-          <div className="mb-12 -mx-4 sm:-mx-8 md:-mx-16 lg:-mx-32 xl:-mx-48">
-            <div className="px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48 mb-4">
+          <div className="mb-12">
+            <div className="mb-4">
               <p className="mono text-xs font-bold text-[#FF6B9D] mb-1">// alternative à Wix</p>
               <h2 className="text-xl font-bold mb-1">
                 Un site pro fait sur mesure,{" "}
@@ -302,8 +333,8 @@ export default async function ArticlePage({ params }: Props) {
           "site-web-restaurant-brest",
           "creation-site-pizzeria-brest",
         ].includes(article.slug) && (
-          <div className="mb-12 -mx-4 sm:-mx-8 md:-mx-16 lg:-mx-32 xl:-mx-48">
-            <div className="px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48 mb-4">
+          <div className="mb-12">
+            <div className="mb-4">
               <p className="mono text-xs font-bold text-[#FF6B35] mb-1">// exemple concret</p>
               <h2 className="text-xl font-bold mb-1">
                 Une vraie app restaurant{" "}
@@ -345,7 +376,7 @@ export default async function ArticlePage({ params }: Props) {
             const isFaq = section.heading?.startsWith("FAQ");
             return (
               <>
-                <section key={i}>
+                <section key={i} id={section.heading ? headingId(section.heading) : undefined} className="scroll-mt-28">
                   {section.heading && (
                     isFaq ? (
                       <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
@@ -353,14 +384,54 @@ export default async function ArticlePage({ params }: Props) {
                         <span>{section.heading.replace(/^FAQ\s*[—:]?\s*/i, "")}</span>
                       </h2>
                     ) : (
-                      <h2 className="text-2xl font-bold mb-3">{section.heading}</h2>
+                      <h2 className="text-3xl font-bold mb-5 leading-tight">{section.heading}</h2>
                     )
                   )}
                   {section.paragraphs?.map((p, j) => (
-                    <p key={j} className="text-gray-700 leading-relaxed mb-3">
+                    <p key={j} className="text-[17px] text-gray-800 leading-8 mb-5">
                       {p}
                     </p>
                   ))}
+                  {section.subsections?.map((sub) => (
+                    <div key={sub.heading} className="mt-6">
+                      <h3 className="text-xl font-bold mb-3">{sub.heading}</h3>
+                      {sub.paragraphs.map((p, j) => (
+                        <p key={j} className="text-[17px] text-gray-800 leading-8 mb-4">
+                          {p}
+                        </p>
+                      ))}
+                    </div>
+                  ))}
+                  {section.table && (
+                    <div className="my-6 brutal-border bg-white overflow-x-auto">
+                      <table className="w-full text-left text-[15px]">
+                        <thead className="bg-[#0A0A0A] text-[#FFFBF0]">
+                          <tr>
+                            {section.table.head.map((h) => (
+                              <th key={h} className="px-4 py-3 font-bold">{h}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {section.table.rows.map((row, r) => (
+                            <tr key={r} className={r % 2 ? "bg-[#FFFBF0]" : "bg-white"}>
+                              {row.map((cell, c) => (
+                                <td key={c} className={`px-4 py-3 border-t border-gray-200 align-top ${c === 0 ? "font-semibold" : "text-gray-700"}`}>
+                                  {cell}
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  )}
+                  {section.callout && (
+                    <div className="my-6 border-l-4 border-[#FF6B35] bg-[#FFF1E8] p-5">
+                      {section.callout.title && <p className="font-bold mb-1">⚠️ {section.callout.title}</p>}
+                      <p className="text-gray-800 leading-relaxed">{section.callout.text}</p>
+                    </div>
+                  )}
                   {section.image && (
                     <figure className="my-6">
                       <img
@@ -471,14 +542,18 @@ export default async function ArticlePage({ params }: Props) {
         {/* CTA */}
         <div className="mt-16 brutal-border brutal-shadow bg-[#0A0A0A] text-[#FFFBF0] p-8">
           <p className="mono text-xs text-[#FFE234] font-bold mb-2">// développeur freelance · Brest</p>
-          <p className="text-2xl font-bold mb-2">Vous avez un projet d'application mobile ?</p>
+          <p className="text-2xl font-bold mb-2">Vous avez un projet ?</p>
           <p className="text-gray-400 mb-6">Devis gratuit et sans engagement, je réponds sous 24h.</p>
-          <a
-            href="#contact"
-            className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-6 py-3 inline-flex"
-          >
-            Demander un devis gratuit →
-          </a>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <a href="#contact" className="brutal-btn bg-[#FFE234] text-[#0A0A0A] px-6 py-3 inline-flex justify-center">
+              Demander un devis gratuit →
+            </a>
+            {taxon && (
+              <Link href={taxon.href} className="brutal-btn bg-white text-[#0A0A0A] px-6 py-3 inline-flex justify-center">
+                Voir l&apos;offre {taxon.label} →
+              </Link>
+            )}
+          </div>
         </div>
 
         {/* Other articles */}
@@ -513,6 +588,7 @@ export default async function ArticlePage({ params }: Props) {
             </div>
           </div>
         )}
+        </div>
       </main>
       <Contact />
       <Footer />
