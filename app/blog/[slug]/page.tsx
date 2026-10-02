@@ -400,6 +400,21 @@ export default async function ArticlePage({ params }: Props) {
                           {p}
                         </p>
                       ))}
+                      {sub.image && (
+                        <figure className="my-6 max-w-md mx-auto">
+                          <img
+                            src={sub.image.src}
+                            alt={sub.image.alt}
+                            className="brutal-border brutal-shadow w-full rounded-sm"
+                            loading="lazy"
+                          />
+                          {sub.image.caption && (
+                            <figcaption className="mt-2 text-xs text-gray-500 mono text-center">
+                              {sub.image.caption}
+                            </figcaption>
+                          )}
+                        </figure>
+                      )}
                     </div>
                   ))}
                   {section.table && (

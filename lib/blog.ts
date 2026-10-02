@@ -15,7 +15,7 @@ type Section = {
   heading?: string;
   paragraphs?: string[];
   /** Sous-parties (H3) avec leurs paragraphes. */
-  subsections?: { heading: string; paragraphs: string[] }[];
+  subsections?: { heading: string; paragraphs: string[]; image?: { src: string; alt: string; caption?: string } }[];
   list?: string[];
   table?: { head: string[]; rows: string[][] };
   /** Encadré mis en avant (alerte, règle à retenir). */
@@ -4579,7 +4579,7 @@ export const articles: Article[] = [
     description:
       "7 visiteurs sur 10 abandonnent leur panier. Découvrez 20 tactiques concrètes et chiffrées pour transformer votre boutique en ligne en machine à vendre.",
     date: "2026-10-01",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-02",
     category: "Guides",
     sections: [
       {
@@ -4685,6 +4685,7 @@ export const articles: Article[] = [
               "Une seule photo sur fond blanc ne suffit plus. Montrez le produit sous tous les angles, en situation, porté ou utilisé, avec un gros plan sur la matière et un repère de taille. La boutique Pretty Wire, par exemple, présente chaque vêtement porté en extérieur : le client se projette immédiatement.",
               "À faire cette semaine : pour vos 5 meilleures ventes, ajoutez au minimum une photo en situation, un gros plan et une courte vidéo tournée au smartphone.",
             ],
+            image: { src: "/blog/tactiques-boutique-en-ligne/photos-produits.webp", alt: "« Vos photos doivent remplacer le magasin » : grille produits Pretty Wire où chaque vêtement est porté en situation réelle, dans la rue" },
           },
           {
             heading: "Tactique 10 : des descriptions orientées bénéfices",
@@ -4699,6 +4700,7 @@ export const articles: Article[] = [
               "Avec 5 avis, la probabilité d'achat d'un produit augmente de 270 % par rapport à un produit sans avis. Plus surprenant : les notes les plus convaincantes se situent entre 4,0 et 4,7 sur 5, car un 5/5 parfait paraît trop beau pour être vrai (Spiegel Research Center). Amazon affiche d'ailleurs la note et le nombre d'avis dès la vignette produit.",
               "À faire cette semaine : programmez un e-mail automatique qui demande un avis 7 jours après la livraison, et répondez publiquement aux avis négatifs.",
             ],
+            image: { src: "/blog/tactiques-boutique-en-ligne/avis-clients.webp", alt: "« Affichez vos avis, même imparfaits » : +270 % de probabilité d'achat dès 5 avis, avec la rubrique « Les mieux notés » d'Amazon affichant note et nombre d'avis" },
           },
           {
             heading: "Tactique 12 : lever les doutes avant qu'ils n'arrivent",
@@ -4706,6 +4708,7 @@ export const articles: Article[] = [
               "19 % des abandons de panier viennent d'un manque de confiance dans le paiement, et 13 % d'une politique de retour jugée insuffisante (Baymard Institute). La réponse : un bloc de réassurance juste sous le bouton d'achat, avec le délai de livraison, les conditions de retour, le paiement sécurisé et un moyen de contacter un humain.",
               "À faire cette semaine : ajoutez sous votre bouton « Ajouter au panier » une ligne de réassurance (par exemple : « Expédié sous 48 h · Retours gratuits 30 jours · Paiement sécurisé »).",
             ],
+            image: { src: "/blog/tactiques-boutique-en-ligne/reassurance.webp", alt: "« Levez les doutes avant qu'ils n'arrivent » : fiche produit avec délais de livraison, livraison et retours gratuits affichés sous le bouton Ajouter au panier" },
           },
         ],
       },
@@ -4737,6 +4740,7 @@ export const articles: Article[] = [
               "Les frais imprévus sont la première cause d'abandon, loin devant les autres. Affichez les frais de livraison dès la fiche produit et proposez la livraison offerte à partir d'un seuil. Sephora le fait très bien avec une jauge dans le panier : « Plus que 29,00 € pour bénéficier de la livraison gratuite ».",
               "À faire cette semaine : fixez votre seuil de livraison offerte un peu au-dessus de votre panier moyen, pour inciter à ajouter un article.",
             ],
+            image: { src: "/blog/tactiques-boutique-en-ligne/frais-livraison.webp", alt: "« Zéro mauvaise surprise sur les frais » : récapitulatif de panier Sephora avec une jauge « Plus que 29,00 € pour bénéficier de la livraison gratuite »" },
           },
           {
             heading: "Tactique 14 : la commande sans compte obligatoire",
@@ -4744,6 +4748,7 @@ export const articles: Article[] = [
               "18 % des acheteurs abandonnent quand on les force à créer un compte. Proposez toujours une commande en invité, et invitez à créer un compte après le paiement, quand il suffit d'ajouter un mot de passe. L'écran de connexion imposé avant le paiement est l'exemple à éviter.",
               "À faire cette semaine : vérifiez que le bouton « Continuer sans compte » est visible dès la première étape du paiement.",
             ],
+            image: { src: "/blog/tactiques-boutique-en-ligne/commande-sans-compte.webp", alt: "« Un paiement en 2 minutes, sans compte » : écran Sephora de connexion ou inscription imposée, à éviter, sans option invité visible" },
           },
           {
             heading: "Tactique 15 : un tunnel de commande court",
@@ -4776,6 +4781,7 @@ export const articles: Article[] = [
               "Le bloc « Produits fréquemment achetés ensemble » d'Amazon est l'exemple type : trois produits logiquement liés, un prix total et un seul bouton pour tout ajouter. La clé est la pertinence. Un complément utile (la housse avec le téléphone, l'entretien avec le cuir) aide le client ; un produit au hasard le distrait.",
               "À faire cette semaine : pour chacun de vos 10 meilleurs produits, choisissez à la main 1 à 3 compléments vraiment utiles.",
             ],
+            image: { src: "/blog/tactiques-boutique-en-ligne/produits-complementaires.webp", alt: "« Faites grimper le panier, intelligemment » : bloc Amazon « Produits fréquemment achetés ensemble » avec trois produits et un bouton pour tout ajouter" },
           },
           {
             heading: "Tactique 18 : relancer les paniers abandonnés",
@@ -4784,6 +4790,7 @@ export const articles: Article[] = [
               "1 h après : un simple rappel avec la photo des produits et un lien direct vers le panier. 24 h après : de la réassurance (avis clients, retours gratuits, contact). 72 h après : si besoin, un petit geste limité dans le temps (livraison offerte ou code promo).",
               "À faire cette semaine : activez la relance de panier abandonné de votre plateforme (Shopify, WooCommerce, Klaviyo, Brevo) et rédigez au moins le premier e-mail.",
             ],
+            image: { src: "/blog/tactiques-boutique-en-ligne/relance-panier.webp", alt: "« Relancez les paniers abandonnés » : e-mail de relance « Votre panier vous attend » avec rappel des produits, stock limité, code promo et bouton pour finaliser la commande" },
           },
           {
             heading: "Tactique 19 : fidélité et service client réactif",
@@ -4799,6 +4806,7 @@ export const articles: Article[] = [
               "Visite : attirez-vous le bon public ? Fiche produit : les visiteurs regardent-ils vos produits ? Panier : ajoutent-ils au panier ? Paiement : commencent-ils le paiement ? Achat : le terminent-ils, et reviennent-ils ?",
               "À faire cette semaine : repérez l'étape où vous perdez le plus de monde et appliquez d'abord les tactiques qui la concernent. Une seule étape à la fois, puis mesurez à nouveau.",
             ],
+            image: { src: "/blog/tactiques-boutique-en-ligne/tunnel-de-vente.webp", alt: "« Construisez un tunnel de vente sans fuite » : les 5 étapes visite, fiche, panier, paiement et achat, avec l'action clé de chacune" },
           },
         ],
       },
