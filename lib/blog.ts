@@ -36,7 +36,7 @@ export const articles: Article[] = [
     description:
       "Combien coûte une application iOS & Android en 2026 ? Ce qui fait varier le prix, comment lire et comparer un devis, pièges à éviter et frais après.",
     date: "2025-03-15",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-02",
     category: "Tarifs",
     sections: [
       {
@@ -233,7 +233,7 @@ export const articles: Article[] = [
       {
         heading: "Mes tarifs",
         paragraphs: [
-          "Mes tarifs sont affichés sur la page Application mobile du site, avec le détail de ce qui est inclus. Chaque projet reste unique : décrivez-moi votre idée, même floue, et je vous envoie un devis gratuit et détaillé sous 24h, poste par poste.",
+          "Mes tarifs sont affichés sur la page [Application mobile](/services/application-mobile) du site, avec le détail de ce qui est inclus. Chaque projet reste unique : décrivez-moi votre idée, même floue, et je vous envoie un devis gratuit et détaillé sous 24h, poste par poste.",
         ],
       },
       {
@@ -264,7 +264,7 @@ export const articles: Article[] = [
     description:
       "Commande en ligne, fidélité, réservation : tout ce qu'une application restaurant doit avoir, sans commission Uber Eats. Devis gratuit sous 24h.",
     date: "2026-05-11",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-02",
     category: "Restaurants",
     sections: [
       {
@@ -321,7 +321,7 @@ export const articles: Article[] = [
       {
         heading: "Combien coûte une application pour un restaurant ?",
         paragraphs: [
-          "Le prix dépend surtout de deux fonctionnalités : la commande en ligne avec paiement intégré, et le programme de fidélité. Une application avec menu et réservation est plus simple qu'une application de commande complète. Mes tarifs sont affichés sur la page Application mobile du site, et je vous envoie un devis détaillé gratuit sous 24h.",
+          "Le prix dépend surtout de deux fonctionnalités : la commande en ligne avec paiement intégré, et le programme de fidélité. Une application avec menu et réservation est plus simple qu'une application de commande complète. Mes tarifs sont affichés sur la page [Application mobile](/services/application-mobile) du site, et je vous envoie un devis détaillé gratuit sous 24h.",
           "Pour mesurer l'intérêt, comparez avec ce que vous versez aujourd'hui aux plateformes : à 15 à 30 % de commission par commande, une application à votre nom s'amortit en général en quelques mois sur un restaurant actif.",
         ],
       },
@@ -352,7 +352,7 @@ export const articles: Article[] = [
         heading: "FAQ : application mobile pour restaurant",
         list: [
           "Une application mobile restaurant remplace-t-elle Uber Eats ? Oui pour vos clients réguliers : elle intègre la commande en ligne avec paiement Stripe. Vos clients commandent directement dans votre app, sans commission à une plateforme tierce.",
-          "Combien coûte une app pour un restaurant ? Le tarif dépend des fonctionnalités (commande en ligne, paiement, fidélité, réservation). Mes tarifs sont affichés sur la page Application mobile, avec un devis gratuit sous 24h.",
+          "Combien coûte une app pour un restaurant ? Le tarif dépend des fonctionnalités (commande en ligne, paiement, fidélité, réservation). Mes tarifs sont affichés sur la page [Application mobile](/services/application-mobile), avec un devis gratuit sous 24h.",
           "En combien de temps l'application est-elle livrée ? Entre 4 et 8 semaines pour une app restaurant complète avec commande en ligne. Une app menu et réservation est livrée en 4 à 5 semaines.",
           "Puis-je modifier mon menu moi-même ? Oui. Votre app inclut un panel d'administration web depuis lequel vous modifiez votre menu, vos prix et vos horaires en temps réel.",
           "L'app fonctionne-t-elle sur iPhone et Android ? Oui. Une seule application, publiée à la fois sur l'App Store et sur Google Play, accessible à tous vos clients.",
@@ -518,7 +518,7 @@ export const articles: Article[] = [
     description:
       "Shopify coûte bien plus que son abonnement de base. Commissions, apps payantes, thèmes : le vrai prix sur 2 ans et ce qu'une app sur mesure change pour vous.",
     date: "2026-05-11",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-02",
     category: "Comparatifs",
     sections: [
       {
@@ -590,7 +590,7 @@ export const articles: Article[] = [
         heading: "L'alternative : une application e-commerce sur mesure",
         paragraphs: [
           "Pour les commerçants qui veulent une application mobile iOS et Android avec boutique intégrée, je développe une application à votre nom : catalogue, panier, paiement Stripe, gestion des commandes et notifications push.",
-          "Pas d'abonnement Shopify ni de commission sur vos ventes : l'application vous appartient. Mes tarifs sont détaillés sur la page E-commerce du site, avec un devis gratuit sous 24h.",
+          "Pas d'abonnement Shopify ni de commission sur vos ventes : l'application vous appartient. Mes tarifs sont détaillés sur la page [E-commerce](/services/ecommerce) du site, avec un devis gratuit sous 24h.",
         ],
       },
       {
@@ -1005,7 +1005,7 @@ export const articles: Article[] = [
     description:
       "Menu en ligne, réservation, commande à emporter : tout ce qu'un site web de restaurant à Brest doit avoir en 2026. Conseils d'un développeur local.",
     date: "2026-04-25",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-02",
     category: "Restaurants",
     sections: [
       {
@@ -1054,7 +1054,7 @@ export const articles: Article[] = [
         heading: "Ce que coûte un site pour un restaurant",
         paragraphs: [
           "Le budget dépend des fonctionnalités dont vous avez besoin. Un site vitrine avec menu, horaires et contact est la base pour apparaître sur Google. La réservation en ligne réduit les appels, la commande en ligne avec paiement vous affranchit des plateformes de livraison, et une application mobile place votre restaurant directement sur le téléphone de vos clients.",
-          "Mes tarifs sont affichés sur les pages Site web et Application mobile du site, et je vous envoie un devis gratuit sous 24h.",
+          "Mes tarifs sont affichés sur les pages [Site web](/services/site-web) et [Application mobile](/services/application-mobile) du site, et je vous envoie un devis gratuit sous 24h.",
         ],
       },
       {
@@ -1303,7 +1303,7 @@ export const articles: Article[] = [
     description:
       "Boulanger, boucher, fleuriste : pourquoi une application mobile sur mesure dépasse Wix ou Planity pour fidéliser vos clients et booster vos ventes.",
     date: "2026-05-09",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-02",
     category: "Guides",
     sections: [
       {
@@ -1364,7 +1364,7 @@ export const articles: Article[] = [
       {
         heading: "Combien coûte une application pour un artisan ?",
         paragraphs: [
-          "C'est souvent la première question, et la principale crainte : on imagine un budget réservé aux grandes entreprises. Avec un développeur freelance React Native, c'est bien plus accessible qu'en agence. Mes tarifs sont affichés sur la page Application mobile du site.",
+          "C'est souvent la première question, et la principale crainte : on imagine un budget réservé aux grandes entreprises. Avec un développeur freelance React Native, c'est bien plus accessible qu'en agence. Mes tarifs sont affichés sur la page [Application mobile](/services/application-mobile) du site.",
           "Trois niveaux reviennent le plus souvent. L'application vitrine, aux couleurs de votre boutique, avec catalogue, comptes clients et publication sur les stores. L'application avec paiement, qui ajoute le paiement en ligne, les notifications et le panel d'administration. Et l'application boutique complète, avec gestion des commandes et des stocks et programme de fidélité.",
         ],
       },
@@ -1483,7 +1483,7 @@ export const articles: Article[] = [
     description:
       "Application mobile ou site e-commerce ? Conversion, fidélisation, coûts : le guide pour choisir la meilleure solution pour votre boutique en ligne.",
     date: "2026-05-09",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-02",
     category: "Guides",
     sections: [
       {
@@ -1555,7 +1555,7 @@ export const articles: Article[] = [
       {
         heading: "Combien coûte une application pour une boutique en ligne ?",
         paragraphs: [
-          "Le budget dépend de la taille de votre catalogue et des fonctionnalités souhaitées ; mes tarifs sont affichés sur la page E-commerce du site. L'application est à votre nom, sur iOS et Android, avec catalogue, paiement Stripe, gestion des commandes et notifications.",
+          "Le budget dépend de la taille de votre catalogue et des fonctionnalités souhaitées ; mes tarifs sont affichés sur la page [E-commerce](/services/ecommerce) du site. L'application est à votre nom, sur iOS et Android, avec catalogue, paiement Stripe, gestion des commandes et notifications.",
           "Contrairement à Shopify ou aux marketplaces, aucune commission n'est prélevée sur vos ventes. Le design reprend les couleurs de votre marque, la publication sur l'App Store et Google Play est comprise, et un panel d'administration vous permet de gérer votre catalogue, avec un support humain.",
         ],
       },
@@ -1572,7 +1572,7 @@ export const articles: Article[] = [
           "Peut-on gérer les stocks depuis l'app ? Oui. Le panel admin inclut la gestion des stocks, des variantes produits et des commandes.",
           "L'app gère-t-elle les livraisons ? Oui. Vous configurez les modes de livraison, les zones et les tarifs dans le panel admin.",
           "Peut-on avoir à la fois un site Shopify et une app sur mesure ? Oui : le site Shopify gère le trafic Google, l'app fidélise les clients acquis. Les deux se complètent.",
-          "Combien coûte une application pour une boutique en ligne ? Le tarif dépend de la taille du catalogue et des fonctionnalités. Mes tarifs sont affichés sur la page E-commerce, avec un devis détaillé gratuit sous 24h.",
+          "Combien coûte une application pour une boutique en ligne ? Le tarif dépend de la taille du catalogue et des fonctionnalités. Mes tarifs sont affichés sur la page [E-commerce](/services/ecommerce), avec un devis détaillé gratuit sous 24h.",
         ],
       },
     ],
@@ -1588,7 +1588,7 @@ export const articles: Article[] = [
     title: "Site web sur mesure : prix réels en 2026",
     description: "Combien coûte un site web sur mesure en 2026 ? Vitrine, e-commerce, plateforme : tarifs réels d'un développeur freelance vs agence. Devis gratuit sous 24h.",
     date: "2026-05-15",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-02",
     category: "Tarifs",
     sections: [
       {
@@ -1611,7 +1611,7 @@ export const articles: Article[] = [
       },
       {
         paragraphs: [
-          "Ce sont des fourchettes de marché, pour vous donner des repères. Mes propres tarifs sont affichés sur la page Site web du site.",
+          "Ce sont des fourchettes de marché, pour vous donner des repères. Mes propres tarifs sont affichés sur la page [Site web](/services/site-web) du site.",
         ],
       },
       {
@@ -1682,7 +1682,7 @@ export const articles: Article[] = [
     title: "Plateforme digitale sur mesure : guide 2026",
     description: "Créer une plateforme digitale sur mesure : espace admin, espace client, multi-rôles. Fonctionnalités, tarifs et alternatives au no-code. Devis gratuit.",
     date: "2026-05-15",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-02",
     category: "Guides",
     sections: [
       {
@@ -1741,7 +1741,7 @@ export const articles: Article[] = [
       {
         heading: "Combien coûte une plateforme sur mesure ?",
         paragraphs: [
-          "Le tarif dépend de la complexité fonctionnelle ; mes tarifs de départ sont affichés sur la page Web app du site. Une plateforme simple, avec espace client et administration de base, n'a pas le même coût qu'une plateforme intermédiaire avec plusieurs rôles, tableau de bord, API et notifications, ni qu'un projet complexe de type marketplace ou SaaS.",
+          "Le tarif dépend de la complexité fonctionnelle ; mes tarifs de départ sont affichés sur la page [Web app](/services/web-app) du site. Une plateforme simple, avec espace client et administration de base, n'a pas le même coût qu'une plateforme intermédiaire avec plusieurs rôles, tableau de bord, API et notifications, ni qu'un projet complexe de type marketplace ou SaaS.",
           "Dans tous les cas, je vous envoie un devis détaillé gratuit, et le paiement se fait en deux fois : un acompte de 30 % au démarrage, le solde à la livraison.",
         ],
       },
@@ -2006,7 +2006,7 @@ export const articles: Article[] = [
     title: "App mobile salle de sport : fonctionnalités 2026",
     description: "App mobile salle de sport : abonnements, réservation de cours, suivi des séances, fidélité. Tarifs et fonctionnalités clés en 2026.",
     date: "2026-05-15",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-02",
     category: "Secteurs",
     sections: [
       {
@@ -2061,7 +2061,7 @@ export const articles: Article[] = [
       {
         heading: "Tarifs et délais",
         paragraphs: [
-          "Le budget dépend des fonctionnalités et de la taille de votre salle ; mes tarifs sont affichés sur la page Application mobile du site. Une première version réunit l'essentiel : inscription en ligne, réservation de cours, QR code d'accès, notifications et espace d'administration. La version complète ajoute le suivi des séances, les programmes personnalisés, l'espace coach et des statistiques avancées.",
+          "Le budget dépend des fonctionnalités et de la taille de votre salle ; mes tarifs sont affichés sur la page [Application mobile](/services/application-mobile) du site. Une première version réunit l'essentiel : inscription en ligne, réservation de cours, QR code d'accès, notifications et espace d'administration. La version complète ajoute le suivi des séances, les programmes personnalisés, l'espace coach et des statistiques avancées.",
           "Comptez 4 à 8 semaines selon les fonctionnalités. La publication sur iOS et Android, la formation à l'espace d'administration et trois mois de support sont inclus.",
         ],
       },
@@ -2084,7 +2084,7 @@ export const articles: Article[] = [
     title: "Site web pour artisan : éviter les constructeurs",
     description: "Site web pour artisan : pourquoi éviter Wix et les constructeurs gratuits. Ce qu'un site sur mesure apporte en SEO local, devis en ligne et crédibilité.",
     date: "2026-05-15",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-02",
     category: "Secteurs",
     sections: [
       {
@@ -2129,7 +2129,7 @@ export const articles: Article[] = [
       {
         heading: "Combien coûte un site web pour artisan ?",
         paragraphs: [
-          "Le prix dépend du nombre de pages et des fonctionnalités ; mes tarifs sont affichés sur la page Site web du site. Trois niveaux reviennent le plus souvent.",
+          "Le prix dépend du nombre de pages et des fonctionnalités ; mes tarifs sont affichés sur la page [Site web](/services/site-web) du site. Trois niveaux reviennent le plus souvent.",
           "Le site vitrine compte 5 pages, avec formulaire de contact, galerie photos et référencement local, livré en deux semaines. Le site pro y ajoute un formulaire de devis avancé, une galerie de réalisations avec filtres, des pages par ville et un blog pour le référencement, en trois semaines. Le site complet ajoute un espace client, le suivi de chantier en ligne et la génération automatique de devis en PDF, en quatre à cinq semaines.",
           "Dans tous les cas, l'hébergement sur Vercel (rapide et fiable), la configuration du nom de domaine et une formation pour mettre à jour votre contenu sont compris.",
         ],
@@ -2161,7 +2161,7 @@ export const articles: Article[] = [
     description:
       "Application mobile pour hôtel, gîte ou camping : check-in digital, conciergerie, room service et réservation directe pour moins dépendre de Booking.",
     date: "2026-05-15",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-02",
     category: "Secteurs",
     sections: [
       {
@@ -2236,7 +2236,7 @@ export const articles: Article[] = [
       {
         heading: "Une formule adaptée à chaque établissement",
         paragraphs: [
-          "Je conçois des applications adaptées à la taille de chaque hébergement ; mes tarifs sont affichés sur la page Application mobile du site.",
+          "Je conçois des applications adaptées à la taille de chaque hébergement ; mes tarifs sont affichés sur la page [Application mobile](/services/application-mobile) du site.",
         ],
         table: {
           head: ["Établissement", "Fonctionnalités adaptées"],
@@ -2401,7 +2401,7 @@ export const articles: Article[] = [
     title: "Création site web à Brest : tarifs 2026",
     description: "Création site web à Brest : vitrine, e-commerce, plateforme sur mesure. Développeur freelance local, SEO optimisé. Devis gratuit sous 24h.",
     date: "2026-05-16",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-02",
     category: "Local",
     sections: [
       {
@@ -2432,7 +2432,7 @@ export const articles: Article[] = [
       },
       {
         paragraphs: [
-          "Mes tarifs sont affichés sur la page Site web du site, sans frais cachés ni abonnement mensuel obligatoire.",
+          "Mes tarifs sont affichés sur la page [Site web](/services/site-web) du site, sans frais cachés ni abonnement mensuel obligatoire.",
         ],
       },
       {
@@ -2568,7 +2568,7 @@ export const articles: Article[] = [
     description:
       "Vos clients doivent toujours vous appeler pour réserver ? Avec une application de prise de rendez-vous, ils réservent seuls, 24h/24, avec rappels automatiques.",
     date: "2026-05-18",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-02",
     category: "Guides",
     sections: [
       {
@@ -2659,7 +2659,7 @@ export const articles: Article[] = [
         heading: "Je crée votre application de prise de rendez-vous",
         paragraphs: [
           "Je suis développeur freelance à Brest, spécialisé en applications mobiles iOS et Android. Je conçois des applications de réservation pour les indépendants et les petites équipes, pensées pour votre métier : vos prestations, vos durées, vos règles d'annulation. Pas un outil générique partagé avec des milliers d'autres professionnels.",
-          "Vous me parlez directement, du premier échange à la publication sur l'App Store et Google Play. Je configure l'application avec vous, je vous montre comment gérer votre agenda en quelques minutes, et je reste disponible après le lancement. Mes tarifs sont affichés sur la page Application mobile du site : décrivez-moi votre activité, je vous envoie un devis gratuit sous 24h.",
+          "Vous me parlez directement, du premier échange à la publication sur l'App Store et Google Play. Je configure l'application avec vous, je vous montre comment gérer votre agenda en quelques minutes, et je reste disponible après le lancement. Mes tarifs sont affichés sur la page [Application mobile](/services/application-mobile) du site : décrivez-moi votre activité, je vous envoie un devis gratuit sous 24h.",
         ],
       },
       {
@@ -2670,7 +2670,7 @@ export const articles: Article[] = [
           "Puis-je bloquer des créneaux ou prendre des congés ? Oui. Vous fermez les créneaux que vous voulez depuis votre téléphone, ils disparaissent aussitôt de l'application.",
           "Que se passe-t-il si un client ne vient pas ? Les rappels automatiques limitent les oublis. Pour les prestations longues, vous pouvez demander un acompte à la réservation.",
           "Un site web avec un formulaire ne suffit-il pas ? Un formulaire vous oblige encore à rappeler le client pour confirmer. Une application montre les créneaux réellement libres, confirme automatiquement et envoie les rappels.",
-          "Combien coûte une application de prise de rendez-vous ? Cela dépend du nombre de praticiens et des options (acompte, fidélité). Mes tarifs sont affichés sur la page Application mobile, avec un devis gratuit sous 24h.",
+          "Combien coûte une application de prise de rendez-vous ? Cela dépend du nombre de praticiens et des options (acompte, fidélité). Mes tarifs sont affichés sur la page [Application mobile](/services/application-mobile), avec un devis gratuit sous 24h.",
         ],
       },
     ],
@@ -2845,7 +2845,7 @@ export const articles: Article[] = [
     description:
       "Une application à votre nom pour votre salon de coiffure : prise de RDV 24h/24, rappels anti no-show, fidélité, notifications push. L'alternative à Planity.",
     date: "2026-06-01",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-02",
     category: "Guides",
     sections: [
       {
@@ -2924,14 +2924,14 @@ export const articles: Article[] = [
         heading: "Ce que comprend l'application de votre salon",
         paragraphs: [
           "L'essentiel est inclus : réservation en ligne, galerie avant/après, catalogue de prestations, rappels, panel d'administration, sur iOS et Android. En option, vous pouvez ajouter le paiement d'acompte avec Stripe, un programme de fidélité complet et la messagerie client.",
-          "Comptez 4 à 8 semaines, publication sur l'App Store et Google Play comprise. Mes tarifs sont affichés sur la page Application mobile du site, avec un devis gratuit sous 24h.",
+          "Comptez 4 à 8 semaines, publication sur l'App Store et Google Play comprise. Mes tarifs sont affichés sur la page [Application mobile](/services/application-mobile) du site, avec un devis gratuit sous 24h.",
         ],
       },
       {
         heading: "FAQ : application mobile pour salon de coiffure",
         list: [
           "Une app peut-elle vraiment remplacer Planity ? Pour la prise de rendez-vous et la fidélisation, oui. L'application est à votre nom, vos données vous appartiennent et les notifications sont illimitées, des avantages impossibles avec Planity.",
-          "Combien coûte l'app par rapport à Planity ? Planity ne publie pas ses tarifs et se paie chaque mois, sans fin. L'app sur mesure est un investissement unique plus l'hébergement, et elle vous appartient. Mes tarifs sont affichés sur la page Application mobile.",
+          "Combien coûte l'app par rapport à Planity ? Planity ne publie pas ses tarifs et se paie chaque mois, sans fin. L'app sur mesure est un investissement unique plus l'hébergement, et elle vous appartient. Mes tarifs sont affichés sur la page [Application mobile](/services/application-mobile).",
           "Mes clientes devront-elles télécharger une nouvelle app ? Oui : elles cherchent le nom de votre salon sur l'App Store ou Google Play. Un QR code affiché au salon et une story Instagram suffisent généralement à convertir 60 à 70 % de votre clientèle en 30 jours.",
           "L'app gère-t-elle plusieurs coiffeurs ? Oui. Le panel admin permet de gérer plusieurs praticiens, leurs agendas respectifs et leurs statistiques individuelles.",
           "L'app est-elle conforme au RGPD ? Oui. Les données sont hébergées en Europe (Firebase EU) et vous restez propriétaire de votre base clients. Une politique de confidentialité et un bandeau de consentement sont inclus.",
@@ -4469,7 +4469,7 @@ export const articles: Article[] = [
     description:
       "Vous avez un site et voulez une application ? PWA, app « coquille », hybride ou native : les options pour transformer votre site, et comment bien choisir.",
     date: "2026-09-24",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-02",
     category: "Guides",
     sections: [
       {
@@ -4553,8 +4553,8 @@ export const articles: Article[] = [
         heading: "Pourquoi me confier la transformation de votre site",
         paragraphs: [
           "Je suis développeur freelance à Brest, spécialisé en applications mobiles iOS et Android. Avec moi, vous parlez directement à la personne qui conçoit et développe votre application, du premier échange à la publication, sans chef de projet entre nous.",
-          "Je pars de votre site pour créer une application connectée à vos données, sans double saisie. Je vous dis honnêtement si une application vaut le coup pour votre activité, je m'occupe de la publication sur les stores et je reste disponible après le lancement. Vous trouverez des exemples de mes réalisations sur la page Portfolio.",
-          "Mes tarifs sont affichés sur la page Application mobile du site. Envoyez-moi l'adresse de votre site : je vous fais un premier retour et un devis gratuit sous 24h. J'accompagne des clients à Brest, dans toute la Bretagne et partout en France.",
+          "Je pars de votre site pour créer une application connectée à vos données, sans double saisie. Je vous dis honnêtement si une application vaut le coup pour votre activité, je m'occupe de la publication sur les stores et je reste disponible après le lancement. Vous trouverez des exemples de mes réalisations sur la page [Portfolio](/portfolio).",
+          "Mes tarifs sont affichés sur la page [Application mobile](/services/application-mobile) du site. Envoyez-moi l'adresse de votre site : je vous fais un premier retour et un devis gratuit sous 24h. J'accompagne des clients à Brest, dans toute la Bretagne et partout en France.",
         ],
       },
       {
@@ -4567,7 +4567,7 @@ export const articles: Article[] = [
           "Faut-il commencer par iPhone ou par Android ? Avec React Native, pas besoin de choisir : la même application est publiée sur l'App Store et sur Google Play.",
           "Faut-il un cahier des charges ? Non. Une description de votre activité et l'adresse de votre site suffisent. Je définis le périmètre avec vous pendant l'audit.",
           "Combien de temps faut-il pour transformer mon site en application ? Quelques semaines selon les fonctionnalités. Le délai précis est donné dans le devis, après l'audit de votre site.",
-          "Combien ça coûte ? Cela dépend des fonctionnalités et de la technologie de votre site. Mes tarifs sont affichés sur la page Application mobile, avec un devis gratuit et détaillé sous 24h.",
+          "Combien ça coûte ? Cela dépend des fonctionnalités et de la technologie de votre site. Mes tarifs sont affichés sur la page [Application mobile](/services/application-mobile), avec un devis gratuit et détaillé sous 24h.",
         ],
       },
     ],
@@ -4670,7 +4670,7 @@ export const articles: Article[] = [
           },
         ],
         callout: {
-          text: "Votre boutique a du trafic mais peu de ventes ? J'audite votre parcours d'achat et je vous dis où vous perdez vos clients. Demandez un devis gratuit via le formulaire en bas de page, je réponds sous 24h.",
+          text: "Votre boutique a du trafic mais peu de ventes ? J'audite votre parcours d'achat et je vous dis où vous perdez vos clients. Demandez un devis gratuit via le [formulaire en bas de page](#contact), je réponds sous 24h.",
         },
       },
       {
@@ -4766,7 +4766,7 @@ export const articles: Article[] = [
           },
         ],
         callout: {
-          text: "Envie d'un tunnel de commande qui ne laisse rien filer ? Je crée des boutiques sur mesure avec paiement Stripe, sans abonnement ni commission sur vos ventes. Demandez un devis gratuit via le formulaire en bas de page.",
+          text: "Envie d'un tunnel de commande qui ne laisse rien filer ? Je crée des boutiques sur mesure avec paiement Stripe, sans abonnement ni commission sur vos ventes. Demandez un devis gratuit via le [formulaire en bas de page](#contact).",
         },
       },
       {

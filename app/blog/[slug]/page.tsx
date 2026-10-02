@@ -19,6 +19,35 @@ function headingId(heading: string) {
     .replace(/^-|-$/g, "");
 }
 
+/** Liens internes écrits « [texte](/chemin) » dans le texte des articles (lib/blog.ts). */
+const INLINE_LINK = /\[([^\]]+)\]\(((?:\/|#)[^)\s]*)\)/g;
+
+/** Rend un texte d'article en remplaçant ses liens internes par des liens cliquables. */
+function renderInline(text: string): React.ReactNode {
+  const nodes: React.ReactNode[] = [];
+  let last = 0;
+  for (const m of text.matchAll(INLINE_LINK)) {
+    if (m.index > last) nodes.push(text.slice(last, m.index));
+    const className = "font-semibold text-[#0A0A0A] underline decoration-2 underline-offset-2 hover:text-[#7C3AED] transition-colors";
+    nodes.push(
+      m[2].startsWith("#") ? (
+        <a key={m.index} href={m[2]} className={className}>{m[1]}</a>
+      ) : (
+        <Link key={m.index} href={m[2]} className={className}>{m[1]}</Link>
+      )
+    );
+    last = m.index + m[0].length;
+  }
+  if (nodes.length === 0) return text;
+  if (last < text.length) nodes.push(text.slice(last));
+  return nodes;
+}
+
+/** Version texte brut (sans liens), pour les données structurées. */
+function stripInlineLinks(text: string) {
+  return text.replace(INLINE_LINK, "$1");
+}
+
 type Props = { params: Promise<{ slug: string }> };
 
 export async function generateStaticParams() {
@@ -52,7 +81,8 @@ function ArticleSchema({ article }: { article: NonNullable<ReturnType<typeof get
   const faqEntity = faqSection?.list
     ? {
         "@type": "FAQPage",
-        mainEntity: faqSection.list.map((item) => {
+        mainEntity: faqSection.list.map((raw) => {
+          const item = stripInlineLinks(raw);
           const sep = item.indexOf(" ? ");
           const q = sep !== -1 ? item.slice(0, sep + 2).trim() : item.split(":")[0].trim();
           const a = sep !== -1 ? item.slice(sep + 3).trim() : item.slice(item.indexOf(":") + 1).trim();
@@ -389,7 +419,7 @@ export default async function ArticlePage({ params }: Props) {
                   )}
                   {section.paragraphs?.map((p, j) => (
                     <p key={j} className="text-[17px] text-gray-800 leading-8 mb-5">
-                      {p}
+                      {renderInline(p)}
                     </p>
                   ))}
                   {section.subsections?.map((sub) => (
@@ -397,7 +427,7 @@ export default async function ArticlePage({ params }: Props) {
                       <h3 className="text-xl font-bold mb-3">{sub.heading}</h3>
                       {sub.paragraphs.map((p, j) => (
                         <p key={j} className="text-[17px] text-gray-800 leading-8 mb-4">
-                          {p}
+                          {renderInline(p)}
                         </p>
                       ))}
                       {sub.image && (
@@ -432,7 +462,7 @@ export default async function ArticlePage({ params }: Props) {
                             <tr key={r} className={r % 2 ? "bg-[#FFFBF0]" : "bg-white"}>
                               {row.map((cell, c) => (
                                 <td key={c} className={`px-4 py-3 border-t border-gray-200 align-top ${c === 0 ? "font-semibold" : "text-gray-700"}`}>
-                                  {cell}
+                                  {renderInline(cell)}
                                 </td>
                               ))}
                             </tr>
@@ -444,7 +474,7 @@ export default async function ArticlePage({ params }: Props) {
                   {section.callout && (
                     <div className="my-6 border-l-4 border-[#FF6B35] bg-[#FFF1E8] p-5">
                       {section.callout.title && <p className="font-bold mb-1">⚠️ {section.callout.title}</p>}
-                      <p className="text-gray-800 leading-relaxed">{section.callout.text}</p>
+                      <p className="text-gray-800 leading-relaxed">{renderInline(section.callout.text)}</p>
                     </div>
                   )}
                   {section.image && (
@@ -472,7 +502,7 @@ export default async function ArticlePage({ params }: Props) {
                           return (
                             <div key={j} className="brutal-border bg-white p-4">
                               <dt className="font-bold text-sm mb-1">{q}</dt>
-                              <dd className="text-gray-700 text-sm leading-relaxed">{a}</dd>
+                              <dd className="text-gray-700 text-sm leading-relaxed">{renderInline(a)}</dd>
                             </div>
                           );
                         })}
@@ -482,7 +512,7 @@ export default async function ArticlePage({ params }: Props) {
                         {section.list.map((item, j) => (
                           <li key={j} className="flex gap-3 items-start">
                             <span className="mt-1 w-3 h-3 min-w-[12px] bg-[#FFE234] brutal-border inline-block" />
-                            <span className="text-gray-700 leading-relaxed">{item}</span>
+                            <span className="text-gray-700 leading-relaxed">{renderInline(item)}</span>
                           </li>
                         ))}
                       </ul>

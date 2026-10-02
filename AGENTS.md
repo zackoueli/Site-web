@@ -29,6 +29,7 @@ Ces règles s'appliquent à toute création ou modification de page/article. Ell
 
 - Tout article de `lib/blog.ts` doit renseigner `service:` avec un slug valide de `SERVICES` ou `SECTEURS` (`lib/taxonomy.ts`) — c'est ce qui alimente automatiquement les breadcrumbs, les « articles liés » et les sections des pages services.
 - Les pages services/secteurs utilisent `<RelatedArticles service="..." />` et `<RelatedProjects service="..." />` — ne pas coder de listes de liens en dur.
+- **Liens internes dans le texte des articles** : dès qu'un article mentionne une page du site (« la page Application mobile », « la page E-commerce », « la page Portfolio »...), le nom de la page est un lien cliquable, écrit `[Application mobile](/services/application-mobile)` dans `lib/blog.ts`. Seuls les liens internes (`/chemin` ou `#ancre`) sont pris en charge. Un appel au devis renvoie vers `[formulaire en bas de page](#contact)`.
 
 ## Fraîcheur et indexation
 
