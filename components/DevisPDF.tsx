@@ -6,6 +6,7 @@ import {
   StyleSheet,
   Font,
 } from "@react-pdf/renderer";
+import { computeTotals, remiseLabel, type Remise } from "@/lib/devisTotals";
 
 Font.register({
   family: "Helvetica",
@@ -245,6 +246,18 @@ const styles = StyleSheet.create({
     fontSize: 8,
     color: BLACK,
   },
+  // Conditions particulières
+  notesBox: {
+    marginTop: 12,
+    borderWidth: 1,
+    borderColor: LIGHTGRAY,
+    padding: 10,
+  },
+  notesText: {
+    fontSize: 8,
+    color: BLACK,
+    lineHeight: 1.5,
+  },
   // IBAN
   ibanBox: {
     marginTop: 16,
@@ -366,8 +379,10 @@ export type DevisData = {
     quantite: number;
     prixHT: number;
   }[];
+  remise?: Remise;
   acompte: number;
   delai: string;
+  notes?: string;
   devisRef?: string;
 };
 
@@ -378,9 +393,8 @@ function formatEur(n: number) {
 }
 
 export function DevisPDF({ data }: { data: DevisData }) {
-  const totalHT = data.lignes.reduce((s, l) => s + l.quantite * l.prixHT, 0);
-  const montantAcompte = totalHT * (data.acompte / 100);
-  const montantSolde = totalHT - montantAcompte;
+  const { sousTotalHT, montantRemise, totalHT, montantAcompte, montantSolde } = computeTotals(data.lignes, data.remise, data.acompte);
+  const notes = data.notes?.trim();
 
   const docLabel =
     data.type === "acompte"
@@ -458,6 +472,18 @@ export function DevisPDF({ data }: { data: DevisData }) {
         {/* TOTAUX */}
         <View style={styles.totalsSection}>
           <View style={styles.totalsBox}>
+            {montantRemise > 0 && data.remise && (
+              <>
+                <View style={styles.totalRow}>
+                  <Text style={styles.totalLabel}>Sous-total HT</Text>
+                  <Text style={styles.totalValue}>{formatEur(sousTotalHT)}</Text>
+                </View>
+                <View style={styles.totalRow}>
+                  <Text style={styles.totalLabel}>{remiseLabel(data.remise)}</Text>
+                  <Text style={styles.totalValue}>-{formatEur(montantRemise)}</Text>
+                </View>
+              </>
+            )}
             <View style={styles.totalRow}>
               <Text style={styles.totalLabel}>Total HT</Text>
               <Text style={styles.totalValue}>{formatEur(totalHT)}</Text>
@@ -505,7 +531,7 @@ export function DevisPDF({ data }: { data: DevisData }) {
         )}
 
         {/* CONDITIONS */}
-        <View style={styles.conditionsRow}>
+        <View style={styles.conditionsRow} wrap={false}>
           <View style={styles.condBox}>
             <Text style={styles.condLabel}>Délai de réalisation</Text>
             <Text style={styles.condValue}>{data.delai}</Text>
@@ -519,6 +545,14 @@ export function DevisPDF({ data }: { data: DevisData }) {
             <Text style={styles.condValue}>À réception de facture</Text>
           </View>
         </View>
+
+        {/* CONDITIONS PARTICULIÈRES (texte libre) */}
+        {notes && (
+          <View style={styles.notesBox} wrap={false}>
+            <Text style={styles.condLabel}>Conditions particulières</Text>
+            <Text style={styles.notesText}>{notes}</Text>
+          </View>
+        )}
 
         {/* IBAN */}
         {(data.type === "acompte" || data.type === "solde") && (
@@ -555,7 +589,7 @@ export function DevisPDF({ data }: { data: DevisData }) {
         )}
 
         {/* FOOTER */}
-        <View style={styles.footer}>
+        <View style={styles.footer} fixed>
           <Text style={styles.footerText}>BreizhApp · breizhapp.tech · breizhapp@outlook.fr</Text>
           <Text style={styles.footerText}>{docLabel} N° {data.numero} du {data.date}</Text>
         </View>

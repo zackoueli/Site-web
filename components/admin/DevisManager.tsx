@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
+import { computeTotals, defaultRemise, remiseLabel, type Remise } from "@/lib/devisTotals";
 
 type Ligne = {
   titre: string;
@@ -16,8 +17,10 @@ type DevisRecord = {
   validite?: number;
   client: { nom: string; email: string; adresse: string; ville: string; siret?: string };
   lignes: Ligne[];
+  remise?: Remise;
   acompte: number;
   delai: string;
+  notes?: string;
   devisRef?: string;
   updatedAt: string;
 };
@@ -34,8 +37,10 @@ export default function DevisManager() {
   const [devisRef, setDevisRef] = useState("");
   const [client, setClient] = useState(defaultClient);
   const [lignes, setLignes] = useState<Ligne[]>([defaultLigne()]);
+  const [remise, setRemise] = useState<Remise>(defaultRemise());
   const [acompte, setAcompte] = useState(30);
   const [delai, setDelai] = useState("");
+  const [notes, setNotes] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -43,9 +48,7 @@ export default function DevisManager() {
   const [listLoading, setListLoading] = useState(true);
   const [listError, setListError] = useState("");
 
-  const totalHT = lignes.reduce((s, l) => s + l.quantite * l.prixHT, 0);
-  const montantAcompte = totalHT * (acompte / 100);
-  const montantSolde = totalHT - montantAcompte;
+  const { sousTotalHT, montantRemise, totalHT, montantAcompte, montantSolde } = computeTotals(lignes, remise, acompte);
 
   function formatEur(n: number) {
     const parts = n.toFixed(2).split(".");
@@ -93,8 +96,10 @@ export default function DevisManager() {
     setDevisRef("");
     setClient(defaultClient);
     setLignes([defaultLigne()]);
+    setRemise(defaultRemise());
     setAcompte(30);
     setDelai("");
+    setNotes("");
     setError("");
   }
 
@@ -107,8 +112,10 @@ export default function DevisManager() {
     setDevisRef(d.devisRef ?? "");
     setClient({ ...defaultClient, ...d.client });
     setLignes(d.lignes.length ? d.lignes : [defaultLigne()]);
+    setRemise(d.remise ?? defaultRemise());
     setAcompte(d.acompte);
     setDelai(d.delai);
+    setNotes(d.notes ?? "");
     setError("");
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -138,8 +145,10 @@ export default function DevisManager() {
       validite: type === "devis" ? validite : undefined,
       client,
       lignes,
+      remise,
       acompte,
       delai,
+      notes,
       devisRef: devisRef || undefined,
     };
     try {
@@ -339,6 +348,29 @@ export default function DevisManager() {
         <button onClick={addLigne} className="brutal-btn mt-4 px-4 py-2 bg-[#FFE234] text-sm font-bold">+ Ajouter une ligne</button>
       </section>
 
+      {/* Remise */}
+      <section className="brutal-border border-[2px] p-5 mb-5 bg-white">
+        <h2 className="font-bold mb-4 uppercase text-sm tracking-wider">Remise</h2>
+        <div className="grid grid-cols-2 gap-4">
+          <div className="col-span-2">
+            <label className={labelCls}>Libellé</label>
+            <input className={inputCls} value={remise.libelle} onChange={e => setRemise(r => ({ ...r, libelle: e.target.value }))} placeholder="Remise partenariat" />
+          </div>
+          <div>
+            <label className={labelCls}>Type</label>
+            <select className={inputCls} value={remise.type} onChange={e => setRemise(r => ({ ...r, type: e.target.value as Remise["type"] }))}>
+              <option value="montant">Montant (€ HT)</option>
+              <option value="pourcent">Pourcentage (%)</option>
+            </select>
+          </div>
+          <div>
+            <label className={labelCls}>{remise.type === "pourcent" ? "Remise (%)" : "Remise (€ HT)"}</label>
+            <input type="number" className={inputCls} value={remise.valeur} onChange={e => setRemise(r => ({ ...r, valeur: Number(e.target.value) }))} min={0} max={remise.type === "pourcent" ? 100 : undefined} step={remise.type === "pourcent" ? 1 : 10} />
+          </div>
+        </div>
+        <p className="text-xs text-gray-500 mt-2">Laisser à 0 pour ne pas afficher de remise. Montant déduit : {formatEur(montantRemise)}</p>
+      </section>
+
       {/* Conditions */}
       <section className="brutal-border border-[2px] p-5 mb-5 bg-white">
         <h2 className="font-bold mb-4 uppercase text-sm tracking-wider">Conditions</h2>
@@ -352,12 +384,27 @@ export default function DevisManager() {
             <label className={labelCls}>Délai de réalisation *</label>
             <input className={inputCls} value={delai} onChange={e => setDelai(e.target.value)} placeholder="4 à 6 semaines" />
           </div>
+          <div className="col-span-2">
+            <label className={labelCls}>Conditions particulières (texte libre)</label>
+            <textarea className={inputCls + " resize-y"} rows={4} value={notes} onChange={e => setNotes(e.target.value)} placeholder="Ex. : la remise partenariat est conditionnée à la signature d'un pacte d'associés avant le..." />
+            <p className="text-xs text-gray-500 mt-1">Affiché sur le PDF sous les conditions. Laisser vide pour ne rien afficher.</p>
+          </div>
         </div>
       </section>
 
       {/* Récap */}
       <section className="brutal-border border-[2px] p-5 mb-6 bg-[#0A0A0A] text-[#FFFBF0]">
         <h2 className="font-bold mb-3 uppercase text-sm tracking-wider text-[#FFE234]">Récapitulatif</h2>
+        {montantRemise > 0 && (
+          <>
+            <div className="flex justify-between text-sm mb-1">
+              <span>Sous-total HT</span><span className="font-bold">{formatEur(sousTotalHT)}</span>
+            </div>
+            <div className="flex justify-between text-sm mb-1">
+              <span>{remiseLabel(remise)}</span><span className="font-bold">−{formatEur(montantRemise)}</span>
+            </div>
+          </>
+        )}
         <div className="flex justify-between text-sm mb-1">
           <span>Total HT</span><span className="font-bold">{formatEur(totalHT)}</span>
         </div>
