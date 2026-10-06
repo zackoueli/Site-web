@@ -192,8 +192,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     backgroundColor: BLACK,
   },
-  totalLabel: { fontSize: 8, color: GRAY },
-  totalValue: { fontSize: 8, color: BLACK, fontFamily: "Helvetica-Bold" },
+  // Libellé à gauche qui passe à la ligne si besoin, montant à droite jamais écrasé
+  totalLabel: { fontSize: 8, color: GRAY, flex: 1, marginRight: 8 },
+  totalValue: { fontSize: 8, color: BLACK, fontFamily: "Helvetica-Bold", flexShrink: 0, textAlign: "right" },
   totalLabelFinal: { fontSize: 10, color: YELLOW, fontFamily: "Helvetica-Bold" },
   totalValueFinal: { fontSize: 10, color: YELLOW, fontFamily: "Helvetica-Bold" },
   // Acompte
@@ -470,7 +471,7 @@ export function DevisPDF({ data }: { data: DevisData }) {
         ))}
 
         {/* TOTAUX */}
-        <View style={styles.totalsSection}>
+        <View style={styles.totalsSection} wrap={false}>
           <View style={styles.totalsBox}>
             {montantRemise > 0 && data.remise && (
               <>
@@ -501,7 +502,7 @@ export function DevisPDF({ data }: { data: DevisData }) {
 
         {/* ACOMPTE / SOLDE */}
         {data.type === "devis" && (
-          <View style={styles.acompteSection}>
+          <View style={styles.acompteSection} wrap={false}>
             <View>
               <Text style={styles.acompteLabel}>Acompte à la commande ({data.acompte}%)</Text>
               <Text style={styles.acompteDetail}>Solde à la livraison : {formatEur(montantSolde)}</Text>
@@ -511,7 +512,7 @@ export function DevisPDF({ data }: { data: DevisData }) {
         )}
 
         {data.type === "acompte" && (
-          <View style={styles.acompteSection}>
+          <View style={styles.acompteSection} wrap={false}>
             <View>
               <Text style={styles.acompteLabel}>Acompte {data.acompte}% (ref. devis {data.devisRef})</Text>
               <Text style={styles.acompteDetail}>Solde restant dû à la livraison : {formatEur(montantSolde)}</Text>
@@ -521,7 +522,7 @@ export function DevisPDF({ data }: { data: DevisData }) {
         )}
 
         {data.type === "solde" && (
-          <View style={styles.acompteSection}>
+          <View style={styles.acompteSection} wrap={false}>
             <View>
               <Text style={styles.acompteLabel}>Solde (ref. devis {data.devisRef})</Text>
               <Text style={styles.acompteDetail}>Acompte de {data.acompte}% ({formatEur(montantAcompte)}) déjà réglé</Text>
@@ -548,7 +549,7 @@ export function DevisPDF({ data }: { data: DevisData }) {
 
         {/* CONDITIONS PARTICULIÈRES (texte libre) */}
         {notes && (
-          <View style={styles.notesBox} wrap={false}>
+          <View style={styles.notesBox}>
             <Text style={styles.condLabel}>Conditions particulières</Text>
             <Text style={styles.notesText}>{notes}</Text>
           </View>
