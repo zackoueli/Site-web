@@ -15,6 +15,7 @@ const nextConfig: NextConfig = {
     return [
       { source: "/games/confidentialite.html", destination: "/games/confidentialite" },
       { source: "/games/conditions.html", destination: "/games/conditions" },
+      { source: "/games/support.html", destination: "/games/support" },
     ];
   },
   async redirects() {
