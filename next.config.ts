@@ -10,6 +10,13 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Pages légales de l'app BreizhApp Games : l'app pointe vers les URLs en .html
+  async rewrites() {
+    return [
+      { source: "/games/confidentialite.html", destination: "/games/confidentialite" },
+      { source: "/games/conditions.html", destination: "/games/conditions" },
+    ];
+  },
   async redirects() {
     return [
       {
