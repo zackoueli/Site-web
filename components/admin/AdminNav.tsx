@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 const tabs = [
   { href: "/admin", label: "Projets" },
   { href: "/admin/devis", label: "Devis & factures" },
+  { href: "/admin/seo", label: "SEO" },
 ];
 
 export default function AdminNav() {
