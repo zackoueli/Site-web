@@ -4883,6 +4883,119 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "obtenir-premiers-utilisateurs-app-mobile",
+    image: {
+      src: "/blog/obtenir-premiers-utilisateurs-app-mobile.jpg",
+      alt: "Smartphone affichant une application mobile entouré d'indicateurs de téléchargements, à côté d'un carnet listant clients existants, fiche store, avis et client actif",
+    },
+    service: "application-mobile",
+    title: "Comment obtenir les premiers utilisateurs d'une app mobile ?",
+    description:
+      "Votre application est en ligne mais personne ne la télécharge ? Clients existants, fiche store, avis : la méthode pour obtenir vos premiers utilisateurs.",
+    date: "2026-10-10",
+    lastModified: "2026-10-10",
+    category: "Guides",
+    sections: [
+      {
+        paragraphs: [
+          "Votre application vient d'être validée par Apple et Google. Vous l'annoncez autour de vous, quelques proches l'installent, puis plus rien. Les jours suivants, le compteur de téléchargements reste presque à zéro.",
+          "C'est le scénario le plus courant, et il ne veut pas dire que l'application est mauvaise. Ce guide s'appuie sur des centaines de retours de créateurs d'applications et sur ce que j'observe chez mes clients. Voici comment obtenir vos premiers utilisateurs, puis les garder.",
+        ],
+      },
+      {
+        heading: "Pourquoi une application publiée ne se télécharge pas toute seule",
+        paragraphs: [
+          "Chaque semaine, des milliers de nouvelles applications arrivent sur les stores. Ni Apple ni Google ne mettent en avant une application inconnue, sans avis ni historique. Être publié, c'est être disponible. Ce n'est pas être visible.",
+          "Un développeur a raconté en détail ses trois premiers mois : environ 5 téléchargements par jour sur iPhone, quelles que soient les améliorations apportées. Il repoussait sa communication en attendant une grosse mise à jour. Quand il s'est mis à publier deux à trois vidéos courtes par jour pendant dix jours, son rythme de téléchargements a presque doublé. Aucune de ces vidéos n'a pourtant dépassé quelques centaines de vues.",
+        ],
+        callout: {
+          title: "La règle à retenir",
+          text: "Améliorer votre application et la faire connaître sont deux chantiers différents. Le second commence le jour du lancement, pas après la prochaine mise à jour.",
+        },
+      },
+      {
+        heading: "Votre meilleur atout : les clients que vous avez déjà",
+        paragraphs: [
+          "Un développeur indépendant part de zéro : il doit trouver des inconnus intéressés par son idée. Un restaurant, un salon ou une boutique a déjà des clients qui passent la porte chaque semaine. Ce sont vos premiers utilisateurs, à condition d'aller les chercher.",
+          "Un créateur d'application pour supporters de football en a fait l'expérience : une simple affiche avec un QR code, collée à l'entrée d'un stade un soir de grand match, lui a apporté environ 13 000 installations, sans aucune publicité. Le même principe fonctionne à votre comptoir.",
+        ],
+        list: [
+          "Le QR code à chaque point de contact : comptoir, vitrine, table, ticket de caisse, carte de visite. Il renvoie vers l'App Store ou Google Play selon le téléphone du client.",
+          "La demande de vive voix : une phrase de votre équipe au moment du paiement convainc mieux qu'une affiche. Donnez une raison concrète, par exemple « la prochaine fois, vous pourrez réserver directement dans l'appli ».",
+          "Un avantage réservé à l'application : une remise sur la première commande, une carte de fidélité intégrée ou un accès prioritaire. Sans contrepartie, peu de clients prennent la peine d'installer.",
+          "Votre fichier clients : un email ou un SMS d'annonce à ceux qui ont accepté de recevoir vos messages. Le consentement est obligatoire (RGPD).",
+          "Votre site web et votre fiche Google : un bouton de téléchargement bien visible, et une bannière qui propose l'application aux visiteurs sur iPhone.",
+          "Le cercle local d'abord : 200 utilisateurs dans votre quartier valent mieux que 200 éparpillés partout. Tinder a démarré sur un seul campus américain, en faisant installer l'application à des groupes d'étudiants qui se connaissaient déjà.",
+        ],
+      },
+      {
+        heading: "Soigner sa fiche sur les stores : l'ASO",
+        paragraphs: [
+          "L'ASO (App Store Optimization) est le référencement des applications : c'est ce qui fait apparaître la vôtre quand quelqu'un tape « pizza à emporter Brest » ou « réserver coiffeur » dans le store. Selon Apple, la majorité des téléchargements sur l'App Store se font juste après une recherche.",
+          "Un outil spécialisé a analysé 12 000 fiches App Store : les mêmes erreurs reviennent dans la plupart d'entre elles. Voici les règles qui comptent vraiment.",
+        ],
+        list: [
+          "Un titre qui dit ce que fait l'application : « Le Comptoir » ne dit rien, « Le Comptoir : pizza à emporter Brest » se trouve. 7 fiches sur 10 visent un mot-clé trop disputé pour elles, alors qu'un terme précis et local se gagne bien plus vite.",
+          "Aucune répétition : Apple compte une seule fois chaque mot du titre, du sous-titre et du champ mots-clés. 42 % des fiches gaspillent leur champ mots-clés en répétant le titre.",
+          "Les mots de vos clients, pas votre jargon : un développeur a renommé son application de suivi de poids avec les mots exacts que tapaient les utilisateurs. Ses téléchargements dans ce pays ont presque quadruplé en 90 jours.",
+          "Des captures qui tiennent la promesse de la recherche : un autre créateur a changé son titre pour ressortir sur plus de recherches. Ses impressions ont bondi de 122 %, mais son taux de conversion a chuté de 73 %, car ses captures montraient autre chose que ce que les gens cherchaient. Le guide des [captures d'écran App Store et Play Store](/blog/captures-ecran-app-store-play-store) détaille comment les construire.",
+        ],
+        callout: {
+          title: "Côté Android",
+          text: "Les nouveaux comptes développeurs Google doivent passer par un test fermé avec 12 testeurs pendant 14 jours avant la mise en ligne publique. Vos clients fidèles font d'excellents testeurs, et ce sont souvent vos premiers avis. Le détail est dans le guide pour [publier son application sur Google Play](/blog/publier-application-google-play-store).",
+        },
+      },
+      {
+        heading: "Du téléchargement au client actif",
+        paragraphs: [
+          "Un téléchargement n'est pas un client. Prenons un cas réel : Dispo, une application d'emploi et de recrutement que j'ai publiée sur l'App Store. Sur la période observée, elle est apparue 2 240 fois dans le store (+420 %), 258 personnes ont ouvert sa fiche et 217 l'ont téléchargée pour la première fois (+295 %).",
+          "L'acquisition fonctionne, mais un téléchargement ne garantit pas qu'un utilisateur revienne. L'objectif est donc d'amener chaque nouvel utilisateur vite à un premier résultat concret : une commande passée, un rendez-vous réservé, un premier tampon de fidélité.",
+        ],
+        image: {
+          src: "/blog/obtenir-premiers-utilisateurs-app-store-connect.png",
+          alt: "Tableau de bord App Store Connect de l'application Dispo : premiers téléchargements, impressions, vues de la page produit, taux de conversion et rétention moyenne",
+          caption: "Les statistiques d'acquisition de Dispo dans App Store Connect.",
+        },
+        list: [
+          "Pas d'inscription obligatoire au premier écran : laissez découvrir la carte ou les créneaux, et demandez la création du compte au moment de commander. Un créateur a découvert que son premier écran, qui ressemblait à un formulaire d'inscription, faisait fuir la plupart des nouveaux venus.",
+          "Une seule action mise en avant au démarrage : réserver, commander ou découvrir l'offre du moment. Pas cinq.",
+          "La demande d'avis au bon moment : juste après une action réussie, jamais à la première ouverture. Une application est restée huit mois avec une seule note, simplement parce qu'elle ne la demandait jamais. Apple limite cette demande à trois affichages par an et par utilisateur, d'où l'importance de bien choisir l'instant.",
+          "Des notifications utiles, pas publicitaires : un rappel de rendez-vous ou une commande prête font revenir, une promotion par jour fait désinstaller.",
+          "Le bon indicateur : pas le nombre de téléchargements, mais la part d'utilisateurs qui reviennent après 7 et 30 jours, et celle qui passe sa première commande. Pour les faire revenir ensuite, les leviers sont détaillés dans le guide pour [fidéliser ses clients avec une application mobile](/blog/comment-fideliser-clients-application-mobile).",
+        ],
+      },
+      {
+        heading: "Les erreurs qui coûtent vos premiers utilisateurs",
+        list: [
+          "Payer des installations avant d'avoir soigné la fiche : un créateur a testé la publicité sur cinq plateformes. Chaque vraie inscription lui a coûté plus de 50 fois le prix d'une simple installation. Une campagne « installations » attire des gens qui ne vont pas plus loin.",
+          "Attendre la version parfaite pour communiquer : chaque semaine sans communication est une semaine perdue, et les retours des premiers utilisateurs vous diront quoi améliorer.",
+          "Montrer une fonctionnalité pas encore disponible : la validation d'une mise à jour peut prendre plus d'une semaine chez Apple, contre quelques heures chez Google. Faites valider les deux versions avant d'en parler.",
+          "Écrire « gratuit » sur les captures d'écran : Apple peut y voir une information de prix et refuser la mise à jour pour ce seul mot.",
+          "Prendre l'entourage pour un indicateur : vos proches installent par gentillesse. Le vrai test, c'est un client qui ne vous connaît pas et qui revient.",
+          "Se disperser sur tous les réseaux : un seul canal suivi régulièrement vaut mieux que cinq essayés une fois.",
+        ],
+      },
+      {
+        heading: "Lancer votre application à Brest et dans le Finistère",
+        paragraphs: [
+          "Pour un commerce local, le lancement se joue dans un rayon de quelques kilomètres : votre clientèle, votre quartier, les associations et les événements de la ville. C'est aussi là qu'une application vous distingue le plus, face à des concurrents qui n'en ont pas.",
+          "Quand je développe une application, je prépare aussi sa fiche App Store et Google Play : titre, mots-clés et captures d'écran pensés pour la recherche locale. Tout est détaillé sur la page [Application mobile](/services/application-mobile).",
+          "Vous avez un projet d'application, ou une application qui peine à décoller ? Décrivez-moi votre situation via le [formulaire en bas de page](#contact). Le devis est gratuit, et je vous réponds sous 24h.",
+        ],
+      },
+      {
+        heading: "FAQ — premiers utilisateurs d'une application mobile",
+        list: [
+          "Combien de téléchargements espérer après le lancement ? Il n'y a pas de chiffre type. Sans communication, une nouvelle application plafonne souvent à quelques téléchargements par jour. Pour un commerce, le meilleur repère est la part de vos clients réguliers qui l'installent.",
+          "Faut-il payer de la publicité pour lancer une application ? Pas au début. Commencez par vos clients, votre fiche sur les stores et les avis. La publicité amplifie une application qui convertit déjà, elle ne corrige pas une fiche ou un premier écran qui font fuir.",
+          "Qu'est-ce que l'ASO ? C'est le référencement des applications dans l'App Store et Google Play. Le titre, le sous-titre, les mots-clés, les captures d'écran et les avis déterminent votre place dans les résultats de recherche.",
+          "Comment obtenir des avis sur l'App Store et Google Play ? En les demandant dans l'application juste après une action réussie, et de vive voix à vos clients satisfaits. N'achetez jamais d'avis : Apple et Google sanctionnent les faux avis.",
+          "Comment savoir si mon application plaît vraiment ? Regardez combien d'utilisateurs reviennent après 7 et 30 jours, et combien réalisent une première action, comme une commande ou une réservation. C'est bien plus parlant que le nombre de téléchargements.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
