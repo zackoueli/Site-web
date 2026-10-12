@@ -376,10 +376,10 @@ export default function SeoDashboard({
       {report && tab === "silos" && (
         <Section
           title="Silos : une page pilier par thème"
-          hint="Chaque page service ou secteur est le hub de ses articles. « Sans lien vers le hub » : articles du silo qui ne citent pas leur page pilier dans le texte."
+          hint="Chaque page service ou secteur est le hub de ses articles. Le fil d’Ariane, le bandeau et le bouton du gabarit pointent déjà vers le hub sur tous les articles. La dernière colonne liste les articles dont le TEXTE ne contient aucun lien vers le hub : ajouter un lien dans une phrase (ex. « notre page Coiffeur & salon ») renforce le silo."
         >
           <Table
-            head={["Hub", "Articles", "Clics (90 j)", "Impr. (90 j)", "Sans lien vers le hub"]}
+            head={["Hub", "Articles", "Clics (90 j)", "Impr. (90 j)", "Aucun lien dans le texte"]}
             rows={report.silos.map((s) => [
               <div key="h">
                 <div className="font-bold">{s.label}</div>

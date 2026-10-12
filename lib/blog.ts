@@ -696,7 +696,7 @@ export const articles: Article[] = [
     description:
       "Combien coûte Planity en 2026 ? Formules, SMS inclus, engagement, hausses de prix et résiliation : ce qu'il faut savoir avant de signer, et les alternatives.",
     date: "2026-05-11",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-12",
     category: "Comparatifs",
     sections: [
       {
@@ -761,7 +761,7 @@ export const articles: Article[] = [
         paragraphs: [
           "Je développe des applications mobiles iOS et Android pour les salons de coiffure, à votre nom, avec votre logo et vos couleurs : réservation en ligne 24h/24, rappels automatiques par notification, programme de fidélité, et panel admin pour gérer vos créneaux, vos prestations et votre équipe.",
           "Vos clientes téléchargent l'application de votre salon, pas un annuaire où vos concurrents sont à un clic. Vos données clients restent chez vous, et l'application vous appartient, même si vous changez un jour de prestataire.",
-          "Vous trouverez un exemple concret, fonctionnalités et panel admin compris, sur la page dédiée aux salons de coiffure. Devis gratuit sous 24h.",
+          "Vous trouverez un exemple concret, fonctionnalités et panel admin compris, sur la page [Application pour salon de coiffure](/services/secteur/coiffeur). Devis gratuit sous 24h.",
         ],
       },
       {
@@ -2845,7 +2845,7 @@ export const articles: Article[] = [
     description:
       "Une application à votre nom pour votre salon de coiffure : prise de RDV 24h/24, rappels anti no-show, fidélité, notifications push. L'alternative à Planity.",
     date: "2026-06-01",
-    lastModified: "2026-10-02",
+    lastModified: "2026-10-12",
     category: "Guides",
     sections: [
       {
@@ -2923,7 +2923,7 @@ export const articles: Article[] = [
       {
         heading: "Ce que comprend l'application de votre salon",
         paragraphs: [
-          "L'essentiel est inclus : réservation en ligne, galerie avant/après, catalogue de prestations, rappels, panel d'administration, sur iOS et Android. En option, vous pouvez ajouter le paiement d'acompte avec Stripe, un programme de fidélité complet et la messagerie client.",
+          "L'essentiel est inclus : réservation en ligne, galerie avant/après, catalogue de prestations, rappels, panel d'administration, sur iOS et Android. En option, vous pouvez ajouter le paiement d'acompte avec Stripe, un programme de fidélité complet et la messagerie client. Le parcours de réservation et les règles d'agenda sont détaillés écran par écran sur la page [Application mobile pour salon de coiffure](/services/secteur/coiffeur).",
           "Comptez 4 à 8 semaines, publication sur l'App Store et Google Play comprise. Mes tarifs sont affichés sur la page [Application mobile](/services/application-mobile) du site, avec un devis gratuit sous 24h.",
         ],
       },
@@ -3353,7 +3353,7 @@ export const articles: Article[] = [
     description:
       "Le panel d'administration inclus pour les salons de coiffure : rendez-vous, prestations, équipe, galerie et messages depuis un seul tableau de bord.",
     date: "2026-06-29",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-12",
     category: "Secteurs",
     sections: [
       {
@@ -3448,7 +3448,7 @@ export const articles: Article[] = [
       {
         heading: "Un panel inclus dans chaque projet de salon",
         paragraphs: [
-          "Ce panel d'administration est livré avec chaque site ou application que je développe pour un salon de coiffure, inclus dans le tarif, sans supplément.",
+          "Ce panel d'administration est livré avec chaque site ou application que je développe pour un salon de coiffure, inclus dans le tarif, sans supplément. Ce que voient vos clientes de leur côté (réservation 24h/24, fidélité, rappels) est présenté sur la page [application mobile pour votre salon de coiffure](/services/secteur/coiffeur).",
           "Il s'ouvre depuis un ordinateur, une tablette ou un smartphone, avec une interface pensée pour un usage quotidien sans formation. Chaque coiffeur peut avoir son compte, les données sont sécurisées et sauvegardées sur Firebase, et le support est compris dans l'abonnement mensuel.",
         ],
       },
