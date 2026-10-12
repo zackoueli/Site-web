@@ -107,6 +107,7 @@ export default function SeoDashboard({
   const [tab, setTab] = useState<Tab>(Array.isArray(drafts) && drafts.length ? "publier" : "semaine");
   const [refreshing, setRefreshing] = useState(false);
   const [refreshError, setRefreshError] = useState("");
+  const [refreshed, setRefreshed] = useState("");
 
   const [keyword, setKeyword] = useState("");
   const [notes, setNotes] = useState("");
@@ -118,10 +119,16 @@ export default function SeoDashboard({
   async function refresh() {
     setRefreshing(true);
     setRefreshError("");
+    setRefreshed("");
     try {
       const res = await fetch("/api/admin/seo/report", { method: "POST" });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error);
+      // Search Console a ~3 jours de retard : les chiffres changent rarement dans la journée
+      setRefreshed(
+        `Rapport régénéré à ${new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" })}. ` +
+          "Les chiffres de Search Console ayant environ 3 jours de retard, ils peuvent rester identiques dans la journée."
+      );
       router.push("/admin/seo");
       router.refresh();
     } catch (e) {
@@ -175,7 +182,10 @@ export default function SeoDashboard({
         <div className="text-sm">
           {report ? (
             <>
-              Rapport du <strong>{report.id}</strong> · données du {report.periods.current.start} au{" "}
+              Rapport du <strong>{report.id}</strong>
+              {" "}(généré à{" "}
+              {new Date(report.createdAt).toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Paris" })})
+              {" "}· données du {report.periods.current.start} au{" "}
               {report.periods.current.end}, comparées aux 28 jours précédents
             </>
           ) : (
@@ -204,6 +214,7 @@ export default function SeoDashboard({
         </div>
       </div>
       {refreshError && <p className="text-sm text-red-700 font-bold mb-4">{refreshError}</p>}
+      {refreshed && <p className="text-sm text-green-700 font-bold mb-4">{refreshed}</p>}
 
       {report && (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
