@@ -373,7 +373,7 @@ export const articles: Article[] = [
     description:
       "React Native ou Flutter pour votre app iOS & Android ? Performance, coût, écosystème : le comparatif complet d'un développeur freelance en 2026.",
     date: "2026-05-11",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-12",
     category: "Tech",
     sections: [
       {
@@ -414,7 +414,7 @@ export const articles: Article[] = [
       {
         heading: "Mon verdict pour les projets clients",
         paragraphs: [
-          "Pour 90 % des projets que je réalise (restaurants, commerces, réservation, marketplaces), React Native est le meilleur choix. L'écosystème est plus riche, l'intégration avec les services tiers est meilleure, et la reprise du projet par un autre développeur sera plus facile si besoin.",
+          "Pour 90 % des projets que je réalise (restaurants, commerces, réservation, marketplaces), React Native est le meilleur choix. L'écosystème est plus riche, l'intégration avec les services tiers est meilleure, et la reprise du projet par un autre développeur sera plus facile si besoin. C'est la technologie que j'utilise pour la [création d'applications mobiles](/services/application-mobile) de mes clients.",
           "Flutter reste un excellent choix pour des applications très graphiques ou des jeux mobiles où le rendu au pixel près est décisif. Dans tous les cas, les deux frameworks produisent de vraies applications natives disponibles sur l'App Store et Google Play, et non des sites web déguisés en application.",
         ],
       },
@@ -1190,7 +1190,7 @@ export const articles: Article[] = [
     description:
       "Créer une application mobile à Brest : agence ou développeur freelance, étapes de A à Z, technologie et erreurs à éviter. Les conseils d'un développeur brestois.",
     date: "2026-04-30",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-12",
     category: "Local",
     sections: [
       {
@@ -1275,7 +1275,7 @@ export const articles: Article[] = [
         paragraphs: [
           "Je suis basé à Brest et je travaille avec des clients dans tout le Finistère et la Bretagne : Quimper, Landerneau, Morlaix et Brest métropole (Guipavas, Plougastel-Daoulas, Le Relecq-Kerhuon).",
           "Travailler avec un développeur local, c'est pouvoir se retrouver autour d'un café pour poser votre idée, montrer l'avancement de vive voix et ajuster rapidement. Et si vous préférez, tout peut aussi se faire à distance, par appel vidéo et démonstration en ligne.",
-          "Vous avez une idée d'application, même floue ? Écrivez-moi : le devis est gratuit, sans engagement, et je réponds sous 24h.",
+          "Vous avez une idée d'application, même floue ? Mon offre et mes réalisations sont présentées sur la page [Application mobile](/services/application-mobile). Écrivez-moi : le devis est gratuit, sans engagement, et je réponds sous 24h.",
         ],
       },
       {
@@ -1887,7 +1887,7 @@ export const articles: Article[] = [
     description:
       "Bubble, Glide, Adalo ou développeur sur mesure ? Avantages, limites cachées et coût sur 3 ans : comment choisir entre no-code et développement pour votre projet.",
     date: "2026-05-15",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-12",
     category: "Comparatifs",
     sections: [
       {
@@ -1990,7 +1990,7 @@ export const articles: Article[] = [
         heading: "Ma recommandation",
         paragraphs: [
           "Si vous avez une idée et aucun budget, testez-la avec Glide ou Bubble pour valider le concept. Si elle fonctionne, faites développer une version sur mesure.",
-          "Si vous avez un budget et un projet sérieux, investissez directement dans le sur mesure : vous gagnerez du temps, éviterez les frustrations des limites du no-code et posséderez un actif qui vous appartient vraiment. Je suis développeur freelance à Brest ; si vous hésitez, écrivez-moi, je vous donne un avis honnête et un devis gratuit.",
+          "Si vous avez un budget et un projet sérieux, investissez directement dans le sur mesure : vous gagnerez du temps, éviterez les frustrations des limites du no-code et posséderez un actif qui vous appartient vraiment. Je suis développeur freelance à Brest et je réalise des [applications mobiles sur mesure](/services/application-mobile) ; si vous hésitez, écrivez-moi, je vous donne un avis honnête et un devis gratuit.",
         ],
       },
     ],
@@ -2462,7 +2462,7 @@ export const articles: Article[] = [
     description:
       "Création d'application mobile et web en Bretagne par un développeur basé à Brest : iOS, Android, web app métier. Finistère, Morbihan, Rennes. Devis gratuit sous 24h.",
     date: "2026-05-16",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-12",
     category: "Local",
     sections: [
       {
@@ -2527,7 +2527,7 @@ export const articles: Article[] = [
       {
         heading: "Tarifs et délais",
         paragraphs: [
-          "Mes tarifs, affichés sur les pages services du site, sont les mêmes dans toute la Bretagne. Le paiement se fait en deux fois : 30 % à la commande, 70 % à la livraison.",
+          "Mes tarifs, affichés sur les pages services du site comme [Application mobile](/services/application-mobile), sont les mêmes dans toute la Bretagne. Le paiement se fait en deux fois : 30 % à la commande, 70 % à la livraison.",
         ],
         table: {
           head: ["Projet", "Délai de livraison"],
@@ -2771,7 +2771,7 @@ export const articles: Article[] = [
     title: "PWA vs native : que choisir en 2026 ?",
     description: "Progressive Web App ou application native iOS/Android ? Performances, coûts, App Store, offline : le comparatif complet pour choisir la bonne solution en 2026.",
     date: "2026-05-18",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-12",
     category: "Comparatifs",
     sections: [
       {
@@ -2827,7 +2827,7 @@ export const articles: Article[] = [
       {
         heading: "Mon choix : React Native, le meilleur des deux mondes",
         paragraphs: [
-          "Je développe les applications mobiles avec React Native, un framework qui permet de créer une application iOS et Android à partir d'un seul code. Vous obtenez les performances et les fonctionnalités d'une application native, avec les économies d'une approche multiplateforme.",
+          "Je développe mes [applications mobiles iOS et Android](/services/application-mobile) avec React Native, un framework qui permet de créer une application iOS et Android à partir d'un seul code. Vous obtenez les performances et les fonctionnalités d'une application native, avec les économies d'une approche multiplateforme.",
           "Si votre projet se prête mieux à une PWA, je vous le dis honnêtement : je préfère vous conseiller la bonne solution plutôt que de vous vendre quelque chose de surdimensionné. Décrivez-moi votre projet, je vous envoie un devis gratuit, PWA ou native.",
         ],
       },
@@ -3265,12 +3265,12 @@ export const articles: Article[] = [
     description:
       "Chaque site et application BreizhApp inclut un panel d'administration sur mesure : menu, commandes, statistiques. Gérez tout en autonomie totale.",
     date: "2026-06-29",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-12",
     category: "Conseils",
     sections: [
       {
         paragraphs: [
-          "Quand je livre un site web ou une application mobile, je ne livre pas seulement des écrans. Je livre aussi un outil de gestion complet, accessible depuis n'importe quel navigateur, que vous utilisez seul, sans jamais avoir à me recontacter pour une modification.",
+          "Quand je livre un site web ou une [application mobile](/services/application-mobile), je ne livre pas seulement des écrans. Je livre aussi un outil de gestion complet, accessible depuis n'importe quel navigateur, que vous utilisez seul, sans jamais avoir à me recontacter pour une modification.",
           "C'est ce qu'on appelle le panel d'administration, ou back-office. Voici ce qu'il contient concrètement, des exemples réels, et pourquoi c'est l'un des éléments les plus importants d'un projet numérique.",
         ],
       },
@@ -3982,7 +3982,7 @@ export const articles: Article[] = [
     description:
       "Publier une application iOS sur l'App Store : compte développeur, délais de validation, règles Apple et erreurs qui font rejeter une app.",
     date: "2026-07-03",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-12",
     category: "Guides",
     sections: [
       {
@@ -4021,7 +4021,7 @@ export const articles: Article[] = [
       {
         heading: "Comment je gère la publication pour mes clients",
         paragraphs: [
-          "La publication sur l'App Store est incluse dans toutes mes offres. Je prépare la fiche complète et les captures d'écran, et je gère les échanges avec Apple si une précision est demandée pendant l'examen. Vous ne payez que les 99 $ par an du compte développeur, qui reste à votre nom.",
+          "La publication sur l'App Store est incluse dans toutes mes offres de [création d'application mobile](/services/application-mobile). Je prépare la fiche complète et les captures d'écran, et je gère les échanges avec Apple si une précision est demandée pendant l'examen. Vous ne payez que les 99 $ par an du compte développeur, qui reste à votre nom.",
           "Comme je développe en React Native avec une vraie logique applicative, et non une simple coquille web, le taux d'acceptation dès la première soumission est nettement plus élevé qu'avec un outil no-code générique. Le devis est gratuit et sans engagement, et je vous réponds sous 24h.",
         ],
       },
@@ -4049,7 +4049,7 @@ export const articles: Article[] = [
     description:
       "Publier une application Android sur le Google Play Store : compte développeur, fiche Play Console, délais de validation et publication sans rejet.",
     date: "2026-07-03",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-12",
     category: "Guides",
     sections: [
       {
@@ -4092,7 +4092,7 @@ export const articles: Article[] = [
       {
         heading: "Comment je gère la publication pour mes clients",
         paragraphs: [
-          "La publication sur Google Play est incluse dans toutes mes offres. Je prépare la fiche complète dans la Play Console, je gère la phase de test fermé obligatoire et la fiche « Sécurité des données ». Le compte développeur reste à votre nom et sous votre contrôle, et vous ne payez que les 25 $ à Google, une seule fois.",
+          "La publication sur Google Play est incluse dans toutes mes offres de [développement d'application iOS et Android](/services/application-mobile). Je prépare la fiche complète dans la Play Console, je gère la phase de test fermé obligatoire et la fiche « Sécurité des données ». Le compte développeur reste à votre nom et sous votre contrôle, et vous ne payez que les 25 $ à Google, une seule fois.",
           "Le devis est gratuit et sans engagement. Décrivez-moi votre projet, je vous réponds sous 24h.",
         ],
       },
@@ -4120,12 +4120,12 @@ export const articles: Article[] = [
     description:
       "Les avantages du développement cross-platform : une seule base de code pour iOS et Android, des délais réduits et une expérience utilisateur optimale.",
     date: "2026-07-18",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-12",
     category: "Tech",
     sections: [
       {
         paragraphs: [
-          "Une application cross-platform est une application mobile développée à partir d'une seule base de code, qui fonctionne à la fois sur iOS et sur Android. C'est l'approche que j'utilise avec React Native pour tous mes projets d'application mobile.",
+          "Une application cross-platform est une application mobile développée à partir d'une seule base de code, qui fonctionne à la fois sur iOS et sur Android. C'est l'approche que j'utilise avec React Native pour tous mes [projets d'application mobile](/services/application-mobile).",
           "À l'inverse, une application native est codée deux fois : en Swift pour iOS, en Kotlin pour Android. Au moment de choisir un développeur ou une agence, la question revient donc toujours : faut-il viser le natif ou le cross-platform ? Voici les vrais avantages de chaque approche, et pourquoi le cross-platform convient à la grande majorité des projets.",
         ],
       },
