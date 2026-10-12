@@ -1,7 +1,9 @@
 import { getReport, listReportIds } from "@/lib/seoReport";
 import { cadenceBlocker, listGenerations } from "@/lib/articleRoutine";
 import { githubConfigured, listArticleDrafts, type ArticleDraft } from "@/lib/github";
+import { articles } from "@/lib/blog";
 import SeoDashboard from "@/components/admin/SeoDashboard";
+import type { ArticleMeta } from "@/components/admin/ArticleList";
 
 export const dynamic = "force-dynamic";
 
@@ -21,6 +23,17 @@ export default async function AdminSeoPage({
       : Promise.resolve<ArticleDraft[] | string>("GITHUB_TOKEN manquant : impossible de lister les articles en attente."),
   ]);
 
+  // Title et meta tels qu'ils sont en ligne (lib/blog.ts), pas tels qu'au moment du rapport
+  const articleMeta: ArticleMeta[] = articles.map((a) => ({
+    slug: a.slug,
+    title: a.title,
+    description: a.description,
+    date: a.date,
+    lastModified: a.lastModified ?? a.date,
+    category: a.category,
+    service: a.service,
+  }));
+
   return (
     <div>
       <h1 className="text-2xl font-black mb-6">SEO</h1>
@@ -31,6 +44,7 @@ export default async function AdminSeoPage({
         cadenceBlocked={blocked}
         routineConfigured={!!process.env.CLAUDE_ROUTINE_URL && !!process.env.CLAUDE_ROUTINE_TOKEN}
         drafts={drafts}
+        articles={articleMeta}
       />
     </div>
   );

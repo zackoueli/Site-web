@@ -74,6 +74,8 @@ export type SeoReport = {
   toRepoint: RepointCandidate[];
   silos: Silo[];
   opportunities: { query: string; page: string; impressions: number; clicks: number; position: number }[];
+  /** Statistiques 90 jours de chaque page (absent des rapports antérieurs au 2026-10-12). */
+  pages?: ({ url: string } & PageStat)[];
 };
 
 // ---------- utilitaires ----------
@@ -388,6 +390,7 @@ export async function buildReport(now = new Date()): Promise<SeoReport> {
     toRepoint,
     silos,
     opportunities,
+    pages: [...statsLong].map(([url, s]) => ({ url, ...s })),
   };
 }
 

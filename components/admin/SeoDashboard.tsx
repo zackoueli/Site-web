@@ -5,10 +5,11 @@ import type { SeoReport } from "@/lib/seoReport";
 import type { Generation } from "@/lib/articleRoutine";
 import type { ArticleDraft } from "@/lib/github";
 import ArticleDrafts from "@/components/admin/ArticleDrafts";
+import ArticleList, { ArticleCell, type ArticleMeta } from "@/components/admin/ArticleList";
 
 const ORIGIN = "https://breizhapp.tech";
 
-type Tab = "publier" | "semaine" | "couper" | "reorienter" | "silos" | "article";
+type Tab = "publier" | "semaine" | "couper" | "reorienter" | "silos" | "articles" | "article";
 
 type Conflict = { page: string; clicks: number; impressions: number; position: number | null };
 
@@ -91,6 +92,7 @@ export default function SeoDashboard({
   cadenceBlocked,
   routineConfigured,
   drafts,
+  articles,
 }: {
   report: SeoReport | null;
   reportIds: string[];
@@ -98,8 +100,10 @@ export default function SeoDashboard({
   cadenceBlocked: string | null;
   routineConfigured: boolean;
   drafts: ArticleDraft[] | string;
+  articles: ArticleMeta[];
 }) {
   const router = useRouter();
+  const articleByUrl = new Map(articles.map((a) => [`${ORIGIN}/blog/${a.slug}`, a]));
   const [tab, setTab] = useState<Tab>(Array.isArray(drafts) && drafts.length ? "publier" : "semaine");
   const [refreshing, setRefreshing] = useState(false);
   const [refreshError, setRefreshError] = useState("");
@@ -159,6 +163,7 @@ export default function SeoDashboard({
     { id: "couper", label: `À couper${report ? ` (${report.toCut.length})` : ""}` },
     { id: "reorienter", label: `À réorienter${report ? ` (${report.toRepoint.length})` : ""}` },
     { id: "silos", label: "Silos" },
+    { id: "articles", label: `Articles (${articles.length})` },
     { id: "article", label: "Nouvel article" },
     { id: "publier", label: `À publier${Array.isArray(drafts) ? ` (${drafts.length})` : ""}` },
   ];
@@ -232,7 +237,7 @@ export default function SeoDashboard({
         ))}
       </nav>
 
-      {!report && tab !== "article" && tab !== "publier" && (
+      {!report && tab !== "article" && tab !== "publier" && tab !== "articles" && (
         <Empty>Cliquez sur « Actualiser maintenant » pour générer le premier rapport. Il se régénère ensuite chaque lundi.</Empty>
       )}
 
@@ -330,10 +335,7 @@ export default function SeoDashboard({
             <Table
               head={["Page", "Publié", "Mots", "Impr.", "Position", "Suggestion"]}
               rows={report.toCut.map((p) => [
-                <div key="u">
-                  {p.title && <div className="font-bold">{p.title}</div>}
-                  <PageLink url={p.url} />
-                </div>,
+                <ArticleCell key="u" url={p.url} title={p.title} meta={articleByUrl.get(p.url)} />,
                 p.published ?? "–",
                 p.words ?? "–",
                 p.impressions,
@@ -356,10 +358,7 @@ export default function SeoDashboard({
             <Table
               head={["Article", "Requête Google", "Impr.", "Position", "CTR", "Diagnostic"]}
               rows={report.toRepoint.map((p) => [
-                <div key="u">
-                  <div className="font-bold">{p.title}</div>
-                  <PageLink url={p.url} />
-                </div>,
+                <ArticleCell key="u" url={p.url} title={p.title} meta={articleByUrl.get(p.url)} />,
                 <strong key="q">{p.googleQuery}</strong>,
                 p.queryImpressions,
                 pos(p.position),
@@ -370,6 +369,15 @@ export default function SeoDashboard({
           ) : (
             <Empty>Tous les articles sont alignés sur la requête que Google leur attribue.</Empty>
           )}
+        </Section>
+      )}
+
+      {tab === "articles" && (
+        <Section
+          title="Titles et metas des articles"
+          hint="Ce qui s'affiche dans Google pour chaque article, tel qu'il est en ligne. Clics, impressions et position sur les 90 jours du rapport affiché."
+        >
+          <ArticleList articles={articles} pages={report?.pages} />
         </Section>
       )}
 
