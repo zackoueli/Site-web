@@ -1074,53 +1074,24 @@ export const articles: Article[] = [
     ],
   },
   {
-    slug: "creation-site-pizzeria-brest",
+    slug: "astuces-site-web-pizzeria",
     image: {
       src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Pizza_in_oven.jpg/960px-Pizza_in_oven.jpg",
       alt: "Pizza en cuisson dans un four",
       credit: "Photo : Dimitri Neyt, domaine public, via Wikimedia Commons",
     },
     service: "restaurant",
-    title: "Créer un site web professionnel pour pizzeria à Brest : guide 2026",
+    title: "Astuces de pro pour créer le site web de votre pizzeria : guide 2026",
     description:
-      "Développeur freelance à Brest : je crée votre site web professionnel de pizzeria, avec commande en ligne, menu digital et référencement local. Guide complet.",
+      "Photos qui donnent faim, menu court, suggestion au panier, fidélité simple : les astuces de pro pour que le site de votre pizzeria vende plus de pizzas.",
     date: "2026-04-25",
-    lastModified: "2026-10-01",
+    lastModified: "2026-10-13",
     category: "Restaurants",
     sections: [
       {
         paragraphs: [
-          "Vous tenez une pizzeria à Brest et vous cherchez à créer un site web professionnel ? Ce guide s'adresse aux pizzaiolos qui veulent récupérer leurs commandes en ligne sans reverser 25 % à Uber Eats ou Just Eat, et apparaître en premier quand un client cherche « pizzeria Brest » sur Google.",
-          "Voici ce qu'un site de pizzeria doit contenir, comment le rendre visible localement, et les astuces concrètes qui font vendre plus de pizzas en ligne.",
-        ],
-      },
-      {
-        heading: "Le vrai coût des plateformes de livraison",
-        paragraphs: [
-          "Uber Eats, Just Eat, Deliveroo : ces plateformes apportent de la visibilité au départ, mais à un prix élevé. Elles prennent entre 20 et 30 % de commission sur chaque commande, sans compter les frais d'activation et les campagnes promotionnelles « conseillées ».",
-          "Sur une pizza à 14 €, vous reversez entre 2,80 € et 4,20 € à la plateforme. Sur 50 pizzas par soir, ce sont 140 € à 210 € qui ne vous reviennent pas, soit 4 000 € à 6 000 € par mois sur une activité de livraison correcte. Un site avec commande en ligne directe est un investissement unique, qui s'amortit en quelques semaines à ce rythme.",
-        ],
-      },
-      {
-        heading: "Ce qu'un site de pizzeria doit avoir",
-        paragraphs: [
-          "Le cœur du site, c'est le menu : vos pizzas, leurs ingrédients, leurs tailles et leurs prix, lisibles sur un téléphone en trois secondes, avec de belles photos. Autour, la commande en ligne avec le choix entre livraison et emporter, un paiement sécurisé par Stripe et une confirmation automatique par SMS.",
-          "Deux détails font une grande différence pendant le coup de feu : afficher une estimation du temps de préparation en temps réel, ce qui réduit fortement les appels, et intégrer des avis clients pour rassurer les nouveaux. Et comme l'immense majorité des commandes de pizzas se fait depuis un smartphone, la version mobile doit être irréprochable.",
-          "Enfin, le site doit être relié à votre fiche Google : horaires d'ouverture, zone de livraison et lien de commande directement dans Google Maps.",
-        ],
-      },
-      {
-        heading: "Apparaître sur « pizzeria Brest »",
-        paragraphs: [
-          "Pour les recherches alimentaires, Google affiche en priorité les résultats locaux. Votre position dépend d'abord de votre fiche Google Business : photos récentes, horaires exacts, menu en ligne et réponses aux avis. Les avis eux-mêmes comptent énormément, en nombre comme en qualité : à Brest, une dizaine d'avis 5 étoiles suffit à faire une vraie différence.",
-          "Le site joue aussi son rôle. Il doit être rapide (un site Next.js ou WordPress optimisé se charge en moins d'une seconde), mentionner Brest et vos quartiers de livraison (Saint-Marc, Lambézellec, Kerichen…), et contenir des données structurées de type Restaurant pour que Google comprenne votre établissement, vos horaires et votre menu.",
-        ],
-      },
-      {
-        heading: "Application mobile ou site web pour une pizzeria ?",
-        paragraphs: [
-          "Ma recommandation est claire : le site web d'abord. Apparaître sur Google n'est pas négociable, c'est votre premier canal pour trouver de nouveaux clients.",
-          "L'application mobile vient ensuite, pour vos habitués : notifications « Pizza du vendredi », programme de fidélité (dix pizzas achetées, une offerte) et commande en un geste. Le site attire, l'application fidélise : les deux se complètent parfaitement.",
+          "Vous tenez une pizzeria et vous voulez créer un site web professionnel ? Ce guide s'adresse aux pizzaiolos qui veulent récupérer leurs commandes en ligne sans reverser 25 % à Uber Eats ou Just Eat, et apparaître en premier quand un client cherche une pizzeria près de chez lui sur Google.",
+          "Commençons par les astuces concrètes qui font vendre plus de pizzas en ligne. Vous verrez ensuite ce qu'un site de pizzeria doit contenir et comment le rendre visible dans votre ville.",
         ],
       },
       {
@@ -1162,6 +1133,35 @@ export const articles: Article[] = [
         ],
       },
       {
+        heading: "Le vrai coût des plateformes de livraison",
+        paragraphs: [
+          "Uber Eats, Just Eat, Deliveroo : ces plateformes apportent de la visibilité au départ, mais à un prix élevé. Elles prennent entre 20 et 30 % de commission sur chaque commande, sans compter les frais d'activation et les campagnes promotionnelles « conseillées ».",
+          "Sur une pizza à 14 €, vous reversez entre 2,80 € et 4,20 € à la plateforme. Sur 50 pizzas par soir, ce sont 140 € à 210 € qui ne vous reviennent pas, soit 4 000 € à 6 000 € par mois sur une activité de livraison correcte. Un site avec commande en ligne directe est un investissement unique, qui s'amortit en quelques semaines à ce rythme.",
+        ],
+      },
+      {
+        heading: "Ce qu'un site de pizzeria doit avoir",
+        paragraphs: [
+          "Le cœur du site, c'est le menu : vos pizzas, leurs ingrédients, leurs tailles et leurs prix, lisibles sur un téléphone en trois secondes, avec de belles photos. Autour, la commande en ligne avec le choix entre livraison et emporter, un paiement sécurisé par Stripe et une confirmation automatique par SMS.",
+          "Deux détails font une grande différence pendant le coup de feu : afficher une estimation du temps de préparation en temps réel, ce qui réduit fortement les appels, et intégrer des avis clients pour rassurer les nouveaux. Et comme l'immense majorité des commandes de pizzas se fait depuis un smartphone, la version mobile doit être irréprochable.",
+          "Enfin, le site doit être relié à votre fiche Google : horaires d'ouverture, zone de livraison et lien de commande directement dans Google Maps.",
+        ],
+      },
+      {
+        heading: "Apparaître sur « pizzeria + votre ville »",
+        paragraphs: [
+          "Pour les recherches alimentaires, Google affiche en priorité les résultats locaux. Votre position dépend d'abord de votre fiche Google Business : photos récentes, horaires exacts, menu en ligne et réponses aux avis. Les avis eux-mêmes comptent énormément, en nombre comme en qualité : dans une ville moyenne, une dizaine d'avis 5 étoiles suffit à faire une vraie différence.",
+          "Le site joue aussi son rôle. Il doit être rapide (un site Next.js ou WordPress optimisé se charge en moins d'une seconde), mentionner votre ville et vos quartiers de livraison, et contenir des données structurées de type Restaurant pour que Google comprenne votre établissement, vos horaires et votre menu.",
+        ],
+      },
+      {
+        heading: "Application mobile ou site web pour une pizzeria ?",
+        paragraphs: [
+          "Ma recommandation est claire : le site web d'abord. Apparaître sur Google n'est pas négociable, c'est votre premier canal pour trouver de nouveaux clients.",
+          "L'application mobile vient ensuite, pour vos habitués : notifications « Pizza du vendredi », programme de fidélité (dix pizzas achetées, une offerte) et commande en un geste. Le site attire, l'application fidélise : les deux se complètent parfaitement.",
+        ],
+      },
+      {
         heading: "Fidéliser sans y passer vos soirées",
         paragraphs: [
           "La fidélisation d'une pizzeria de quartier ne repose pas sur des outils complexes, mais sur la régularité de quelques actions simples. Le bon moment pour envoyer une notification ou un SMS, c'est le jeudi ou le vendredi en fin d'après-midi, quand se prend la décision « on commande ce soir » ; le mardi ou le mercredi donnent beaucoup moins de résultats.",
@@ -1173,7 +1173,7 @@ export const articles: Article[] = [
         heading: "Des formules adaptées à votre pizzeria",
         paragraphs: [
           "Je propose plusieurs formules aux pizzerias et restaurants indépendants : un site vitrine avec menu en ligne pour apparaître sur Google, un site avec commande en ligne et paiement Stripe pour recevoir les commandes directement sur votre écran, une application mobile iOS et Android avec notifications et fidélité, ou le pack site et application pour vous affranchir complètement des plateformes.",
-          "Je suis basé à Brest et je peux vous rencontrer pour parler de votre projet. Devis gratuit sous 24h.",
+          "Parlons de votre projet : décrivez votre pizzeria dans le [formulaire en bas de page](#contact), je vous réponds avec un devis gratuit sous 24h.",
         ],
       },
     ],

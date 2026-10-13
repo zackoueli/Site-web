@@ -42,6 +42,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/blog/creation-site-pizzeria-brest",
+        destination: "/blog/astuces-site-web-pizzeria",
+        permanent: true,
+      },
+      {
         source: "/blog/planity-tarif-prix-abonnement-2025",
         destination: "/blog/cout-reel-planity",
         permanent: true,

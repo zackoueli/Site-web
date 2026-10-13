@@ -186,6 +186,13 @@ function MidArticleCTA({ article }: { article: Article }) {
   );
 }
 
+/** Articles affichant la démo restaurant en tête d'article. */
+const RESTAURANT_DEMO_TOP = ["application-mobile-restaurant", "site-web-restaurant-brest"];
+/** Articles affichant la démo restaurant après une section précise (titre de la section). */
+const RESTAURANT_DEMO_AFTER_SECTION: Record<string, string> = {
+  "astuces-site-web-pizzeria": "5 astuces pour vendre plus de pizzas en ligne",
+};
+
 const categoryColors: Record<string, string> = {
   Tarifs: "bg-[#FFE234] text-[#0A0A0A]",
   Restaurants: "bg-[#FF6B35] text-white",
@@ -229,6 +236,44 @@ export default async function ArticlePage({ params }: Props) {
   const toc = article.sections
     .filter((s) => s.heading)
     .map((s) => ({ id: headingId(s.heading!), label: s.heading!.replace(/^FAQ\s*[—:]?\s*/i, "FAQ : ") }));
+
+  const restaurantDemo = (
+    <div className="mb-12">
+      <div className="mb-4">
+        <p className="mono text-xs font-bold text-[#FF6B35] mb-1">// exemple concret</p>
+        <h2 className="text-xl font-bold mb-1">
+          Une vraie app restaurant{" "}
+          <span className="bg-[#FFE234] brutal-border px-1">faite avec BreizhApp</span>
+        </h2>
+        <p className="text-sm text-gray-600">
+          Naviguez librement dans la démo, c&apos;est l&apos;application réelle. Commande, menu, paiement.
+        </p>
+      </div>
+      <div className="brutal-border brutal-shadow bg-[#1a1a1a] rounded-t-xl p-3 pb-0">
+        <div className="bg-[#2d2d2d] rounded-t-lg px-4 py-2 flex items-center gap-3">
+          <div className="flex gap-1.5">
+            <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
+            <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
+            <div className="w-3 h-3 rounded-full bg-[#28c840]" />
+          </div>
+          <div className="flex-1 bg-[#3d3d3d] rounded px-3 py-1 mono text-xs text-gray-400 truncate">
+            demo.pizzeria.breizhapp.tech
+          </div>
+        </div>
+        <div className="w-full overflow-hidden" style={{ height: "580px" }}>
+          <iframe
+            src="https://demo.pizzeria.breizhapp.tech/"
+            title="Démo application restaurant BreizhApp"
+            className="w-full h-full border-0 block"
+            loading="eager"
+          />
+        </div>
+      </div>
+      <div className="brutal-border border-t-0 bg-[#1a1a1a] h-4 rounded-b-sm" />
+      <div className="brutal-border border-t-0 bg-[#2d2d2d] h-3 mx-8 rounded-b-md" />
+      <div className="brutal-border border-t-0 bg-[#3d3d3d] h-2 mx-16 rounded-b-lg" />
+    </div>
+  );
 
   return (
     <>
@@ -357,48 +402,8 @@ export default async function ArticlePage({ params }: Props) {
           </div>
         )}
 
-        {/* Mockup PC — articles restaurant / pizzeria */}
-        {[
-          "application-mobile-restaurant",
-          "site-web-restaurant-brest",
-          "creation-site-pizzeria-brest",
-        ].includes(article.slug) && (
-          <div className="mb-12">
-            <div className="mb-4">
-              <p className="mono text-xs font-bold text-[#FF6B35] mb-1">// exemple concret</p>
-              <h2 className="text-xl font-bold mb-1">
-                Une vraie app restaurant{" "}
-                <span className="bg-[#FFE234] brutal-border px-1">faite avec BreizhApp</span>
-              </h2>
-              <p className="text-sm text-gray-600">
-                Naviguez librement dans la démo, c&apos;est l&apos;application réelle. Commande, menu, paiement.
-              </p>
-            </div>
-            <div className="brutal-border brutal-shadow bg-[#1a1a1a] rounded-t-xl p-3 pb-0">
-              <div className="bg-[#2d2d2d] rounded-t-lg px-4 py-2 flex items-center gap-3">
-                <div className="flex gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
-                  <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
-                  <div className="w-3 h-3 rounded-full bg-[#28c840]" />
-                </div>
-                <div className="flex-1 bg-[#3d3d3d] rounded px-3 py-1 mono text-xs text-gray-400 truncate">
-                  demo.pizzeria.breizhapp.tech
-                </div>
-              </div>
-              <div className="w-full overflow-hidden" style={{ height: "580px" }}>
-                <iframe
-                  src="https://demo.pizzeria.breizhapp.tech/"
-                  title="Démo application restaurant BreizhApp"
-                  className="w-full h-full border-0 block"
-                  loading="eager"
-                />
-              </div>
-            </div>
-            <div className="brutal-border border-t-0 bg-[#1a1a1a] h-4 rounded-b-sm" />
-            <div className="brutal-border border-t-0 bg-[#2d2d2d] h-3 mx-8 rounded-b-md" />
-            <div className="brutal-border border-t-0 bg-[#3d3d3d] h-2 mx-16 rounded-b-lg" />
-          </div>
-        )}
+        {/* Mockup PC — articles restaurant (placé dans le corps si l'article le demande) */}
+        {RESTAURANT_DEMO_TOP.includes(article.slug) && restaurantDemo}
 
         {/* Article body */}
         <div className="flex flex-col gap-8">
@@ -519,6 +524,7 @@ export default async function ArticlePage({ params }: Props) {
                     )
                   )}
                 </section>
+                {section.heading === RESTAURANT_DEMO_AFTER_SECTION[article.slug] && restaurantDemo}
                 {i === 1 && <MidArticleCTA article={article} />}
               </>
             );
