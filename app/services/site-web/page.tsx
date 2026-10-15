@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import LazyIframe from "@/components/LazyIframe";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -155,24 +155,21 @@ export default function SiteWebPage() {
               </div>
             </div>
             <div className="brutal-border brutal-shadow bg-white overflow-hidden">
-              <Link href="/portfolio/demo-paysagiste" className="block overflow-hidden">
-                <div className="flex items-center gap-1.5 px-3 py-2 border-b-[3px] border-black bg-[#1a1a1a]">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]" />
-                </div>
-                <div className="relative w-full aspect-[16/10] overflow-hidden">
-                  <Image
-                    src="/portfolio/demo-paysagiste.png"
-                    alt="Page d'accueil du site vitrine Paradis Vert, paysagiste professionnel"
-                    fill
-                    className="object-cover object-top transition-transform duration-300 hover:scale-105"
-                    priority
-                  />
-                </div>
-              </Link>
+              <div className="flex items-center gap-1.5 px-3 py-2 border-b-[3px] border-black bg-[#1a1a1a]">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]" />
+              </div>
+              <div className="relative w-full aspect-[16/10] overflow-hidden">
+                {/* Rendu desktop (~1400px) réduit à 40 % pour tenir dans le cadre */}
+                <LazyIframe
+                  src="https://www.pannea.fr/"
+                  title="Site Pannea, réparation d'électroménager à domicile"
+                  className="absolute top-0 left-0 w-[250%] h-[250%] origin-top-left scale-[0.4]"
+                />
+              </div>
               <p className="text-xs text-gray-500 px-4 py-3 border-t-[3px] border-black">
-                Site vitrine Paradis Vert pour un paysagiste, avec galerie de chantiers, devis en ligne et panel admin.
+                Site <a href="https://www.pannea.fr/" target="_blank" rel="noopener" className="underline hover:text-black">Pannea</a> pour la réparation d&apos;électroménager à domicile, avec demande d&apos;intervention en ligne.
               </p>
             </div>
           </div>
