@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import SectorPage, { MockScreen } from "@/components/SectorPage";
+import SectorPage, { MockImage } from "@/components/SectorPage";
 import { HeartPulse } from "lucide-react";
 
 const TITLE = "Application mobile santé & bien-être | BreizhApp";
@@ -62,17 +62,11 @@ export default function SantePage() {
       intro="Votre propre espace, à votre nom : un site web, une application mobile ou les deux. Vos clients prennent rendez-vous, retrouvent leurs exercices et leurs contenus entre deux séances, et suivent leur progression. Vous gardez le lien avec eux, sans dépendre d'une plateforme."
       guide={{ href: "/blog/comment-fideliser-clients-application-mobile", label: "Fidéliser avec une app" }}
       visual={
-        <MockScreen
-          kicker="MON ACCOMPAGNEMENT"
-          title="Semaine 3 sur 8"
-          accent="#5EEAD4"
-          rows={[
-            { top: "Audio · 12 min", main: "Respiration du soir", badge: "Fait" },
-            { top: "Journal", main: "Comment vous sentez-vous ?", badge: "À remplir", muted: true },
-            { top: "Exercice", main: "Étirements du matin", badge: "Fait" },
-            { top: "Prochaine séance", main: "Mardi 18h · visio", badge: "Rappel" },
-          ]}
-          footer={{ kicker: "PROGRESSION", text: "Sommeil : +2 points en 3 semaines" }}
+        <MockImage
+          src="/services/sante-bien-etre-app.png"
+          alt="Écran d'accueil d'une application bien-être : rubriques activité, nutrition, récupération, sommeil et score bien-être"
+          width={329}
+          height={681}
         />
       }
       enBref="Je crée des sites web et des applications mobiles sur mesure pour les praticiens de santé et du bien-être : naturopathes, sophrologues, psychologues, kinés, coachs, diététiciens et centres de soins. Prise de rendez-vous, espace client, suivi entre les séances, programmes, visio et paiement. Je m'appelle Enzo, développeur freelance basé à Brest, et je travaille avec des praticiens partout en France. Un site avec prise de rendez-vous démarre à 1 500 €, une application à 4 000 €. L'outil porte votre nom et vous appartient."

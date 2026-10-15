@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import type { LucideIcon } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
@@ -276,6 +277,19 @@ export default function SectorPage(p: SectorPageProps) {
 
       </main>
       <Footer />
+    </>
+  );
+}
+
+/** Capture d'écran d'app affichée dans le même cadre de téléphone que MockScreen. */
+export function MockImage({ src, alt, width, height }: { src: string; alt: string; width: number; height: number }) {
+  return (
+    <>
+      <div className="w-[280px] rounded-[40px] border-[3px] border-black bg-[#111] p-2.5 shadow-[6px_6px_0_#0A0A0A]">
+        <div className="rounded-[32px] overflow-hidden">
+          <Image src={src} alt={alt} width={width} height={height} className="w-full h-auto block" priority />
+        </div>
+      </div>
     </>
   );
 }
