@@ -239,16 +239,6 @@ export default async function ArticlePage({ params }: Props) {
 
   const restaurantDemo = (
     <div className="mb-12">
-      <div className="mb-4">
-        <p className="mono text-xs font-bold text-[#FF6B35] mb-1">// exemple concret</p>
-        <h2 className="text-xl font-bold mb-1">
-          Une vraie app restaurant{" "}
-          <span className="bg-[#FFE234] brutal-border px-1">faite avec BreizhApp</span>
-        </h2>
-        <p className="text-sm text-gray-600">
-          Naviguez librement dans la démo, c&apos;est l&apos;application réelle. Commande, menu, paiement.
-        </p>
-      </div>
       <div className="brutal-border brutal-shadow bg-[#1a1a1a] rounded-t-xl p-3 pb-0">
         <div className="bg-[#2d2d2d] rounded-t-lg px-4 py-2 flex items-center gap-3">
           <div className="flex gap-1.5">
