@@ -4996,6 +4996,175 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "applications-bien-etre-mental",
+    service: "sante-bien-etre",
+    title: "Applications bien-être mental : le classement 2026",
+    description:
+      "Quelles applications pour suivre son bien-être mental au quotidien ? Mon classement par univers, celles à installer en premier et pourquoi elles fonctionnent.",
+    date: "2026-10-15",
+    lastModified: "2026-10-15",
+    category: "Comparatifs",
+    sections: [
+      {
+        paragraphs: [
+          "Vous avez déjà téléchargé une application de méditation, ouverte trois fois, puis oubliée au fond d'un dossier ? C'est très courant. La plupart des applications bien-être sont abandonnées dans les premières semaines. Pas parce qu'elles sont mauvaises, mais parce qu'elles ne correspondent pas au besoin réel de la personne.",
+          "Le bien-être mental ne se joue pas dans une seule application. Il dépend du sommeil, de l'activité physique, de la respiration, de la façon dont on suit son humeur. J'ai donc classé les applications par univers, avec pour chacune ce qu'elle fait bien, pour qui elle est faite, et ce qui, techniquement, explique qu'on continue à l'ouvrir.",
+        ],
+      },
+      {
+        heading: "Le classement en un coup d'œil",
+        table: {
+          head: ["Rang", "Application", "Univers", "Idéale pour"],
+          rows: [
+            ["1", "Daylio", "Suivi d'humeur", "Comprendre ce qui influence votre moral"],
+            ["2", "Petit BamBou", "Méditation", "Débuter la méditation, en français"],
+            ["3", "RespiRelax+", "Relaxation", "Faire baisser le stress en quelques minutes"],
+            ["4", "Sleep Cycle", "Sommeil", "Mieux comprendre ses nuits"],
+            ["5", "Calm", "Sommeil et détente", "S'endormir plus facilement"],
+            ["6", "Santé (iPhone) ou Health Connect (Android)", "Santé physique", "Centraliser toutes vos données"],
+            ["7", "Strava", "Sport", "Bouger avec la motivation d'un groupe"],
+            ["8", "Nike Training Club", "Sport", "S'entraîner chez soi sans matériel"],
+            ["9", "Fabulous", "Habitudes", "Installer une routine durable"],
+          ],
+        },
+        paragraphs: [
+          "Ce classement ne mesure pas la qualité absolue de chaque application. Il reflète leur utilité pour un suivi du bien-être mental au quotidien, et la facilité à les garder dans ses habitudes.",
+        ],
+      },
+      {
+        heading: "Santé mentale et suivi d'humeur",
+        subsections: [
+          {
+            heading: "1. Daylio : le journal d'humeur en deux gestes",
+            paragraphs: [
+              "Daylio vous demande chaque jour comment vous allez, sur une échelle de cinq visages, puis ce que vous avez fait : sport, travail, amis, mauvaise nuit. Aucun texte à écrire si vous n'en avez pas envie. Au bout de quelques semaines, l'application fait ressortir les liens entre vos activités et votre humeur.",
+              "Pourquoi elle fonctionne : la saisie prend moins de dix secondes. C'est le point clé de toute application de suivi : si noter son humeur demande un effort, on arrête. Les données sont stockées sur le téléphone, ce qui rassure sur un sujet aussi intime.",
+            ],
+          },
+          {
+            heading: "2. Petit BamBou : la méditation guidée, en français",
+            paragraphs: [
+              "Application française, Petit BamBou propose des programmes de méditation guidée classés par objectif : stress, sommeil, concentration, émotions. Les premières séances sont gratuites, le reste du catalogue est sous abonnement.",
+              "Pourquoi elle fonctionne : les programmes sont découpés en séances courtes et numérotées. On sait toujours quelle est la prochaine étape, ce qui évite de se demander « qu'est-ce que je fais aujourd'hui ? ». Les séances peuvent être téléchargées pour être écoutées hors connexion, dans le train ou en avion.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Relaxation et sommeil",
+        subsections: [
+          {
+            heading: "3. RespiRelax+ : la cohérence cardiaque guidée",
+            paragraphs: [
+              "Une bulle qui monte et qui descend, vous respirez à son rythme pendant quelques minutes. C'est le principe de la cohérence cardiaque, une technique de respiration régulière souvent recommandée pour réduire le stress. L'application est gratuite et ne fait qu'une chose, mais elle la fait bien.",
+              "Pourquoi elle fonctionne : une seule fonction, un seul écran. Pas d'inscription, pas de menu. Dans un moment de stress, c'est exactement ce qu'il faut : ouvrir et commencer.",
+            ],
+          },
+          {
+            heading: "4. Sleep Cycle : comprendre ses nuits",
+            paragraphs: [
+              "Posé près du lit, le téléphone analyse vos mouvements et les sons de la nuit pour estimer vos phases de sommeil. Le réveil sonne pendant une phase de sommeil léger, dans une fenêtre que vous choisissez, pour un réveil moins brutal.",
+              "Pourquoi elle fonctionne : elle utilise les capteurs déjà présents dans le téléphone, le micro et l'accéléromètre, sans demander d'objet connecté en plus. Le rapport du matin donne une raison concrète d'ouvrir l'application chaque jour.",
+            ],
+          },
+          {
+            heading: "5. Calm : les histoires pour s'endormir",
+            paragraphs: [
+              "Calm est surtout connue pour ses « histoires pour dormir », lues d'une voix lente, et ses ambiances sonores. Elle propose aussi de la méditation, mais c'est sur l'endormissement qu'elle se distingue. Une partie du contenu est en français, l'essentiel du catalogue est en anglais.",
+              "Pourquoi elle fonctionne : elle s'insère dans un moment qui existe déjà, le coucher. Pas besoin de créer une nouvelle habitude, l'application vient se greffer sur une routine quotidienne.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Santé physique et sport",
+        subsections: [
+          {
+            heading: "6. Santé (iPhone) ou Health Connect (Android) : le tableau de bord central",
+            paragraphs: [
+              "Déjà installée sur l'iPhone, l'application Santé regroupe les pas, le sommeil, la fréquence cardiaque et les données envoyées par les autres applications. Elle permet aussi de noter son état d'esprit et propose des questionnaires reconnus pour évaluer un risque d'anxiété ou de dépression. Sur Android, Health Connect joue le rôle de point central entre les applications de santé.",
+              "Pourquoi elle fonctionne : elle relie tout le reste. Votre séance Strava, votre nuit Sleep Cycle et votre humeur se retrouvent au même endroit, et c'est là qu'on voit, par exemple, qu'une mauvaise nuit précède souvent une journée difficile.",
+            ],
+          },
+          {
+            heading: "7. Strava : la motivation des autres",
+            paragraphs: [
+              "Course, vélo, marche : Strava enregistre vos sorties par GPS et les partage avec vos amis ou votre club, qui peuvent réagir avec des « kudos ». L'activité physique régulière est l'un des leviers les plus solides du bien-être mental.",
+              "Pourquoi elle fonctionne : la dimension sociale. Savoir que ses amis verront la sortie, ou recevoir leurs encouragements, pousse à sortir même les jours sans envie. C'est un ressort bien plus puissant qu'une simple notification.",
+            ],
+          },
+          {
+            heading: "8. Nike Training Club : le sport à la maison",
+            paragraphs: [
+              "Des centaines de séances guidées en vidéo, du renforcement au yoga, souvent sans matériel. L'application est gratuite et ne demande que quelques mètres carrés.",
+              "Pourquoi elle fonctionne : elle lève les deux freins habituels, le temps et le lieu. Les séances courtes, filtrables par durée, laissent peu d'excuses.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Habitudes et routine",
+        subsections: [
+          {
+            heading: "9. Fabulous : une routine, un geste à la fois",
+            paragraphs: [
+              "Fabulous ne mesure rien. Elle vous aide à construire une routine, un petit geste à la fois : boire un verre d'eau au réveil, puis quelques minutes d'étirement, puis un moment sans écran le soir. Chaque nouvelle habitude s'ajoute une fois la précédente installée.",
+              "Pourquoi elle fonctionne : la progression par petites étapes. Changer une seule chose à la fois réussit beaucoup plus souvent que de tout vouloir changer le lundi matin.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Pourquoi ces applications fonctionnent : l'analyse technique",
+        paragraphs: [
+          "En tant que développeur, ce qui m'intéresse dans ce classement, c'est ce que ces applications ont en commun. On retrouve les mêmes mécanismes, quel que soit l'univers.",
+        ],
+        list: [
+          "Une saisie quasi instantanée : Daylio ou RespiRelax+ se lancent et s'utilisent en quelques secondes. Chaque écran en trop fait perdre des utilisateurs.",
+          "Des notifications au bon moment : un rappel le soir pour noter son humeur, le matin pour le rapport de sommeil. Une notification utile est attendue, une notification au hasard fait désinstaller. J'explique comment bien les régler dans mon guide sur les [notifications push](/blog/notifications-push-application-mobile).",
+          "La visualisation des progrès : courbes, séries de jours, rapport hebdomadaire. Voir son évolution est souvent la première raison de revenir.",
+          "L'utilisation des capteurs du téléphone : GPS, accéléromètre, micro, fréquence cardiaque via la montre. Les données se collectent sans effort pour l'utilisateur.",
+          "Le partage avec Santé et Health Connect : les applications qui échangent leurs données avec ces plateformes deviennent une pièce d'un ensemble, et ne sont pas abandonnées au profit d'une autre.",
+          "Le contenu disponible hors connexion : une méditation téléchargée se lance partout, même sans réseau.",
+          "Le respect de la vie privée : sur des données aussi sensibles, un stockage local ou chiffré et une politique claire sont un vrai argument de confiance.",
+        ],
+      },
+      {
+        heading: "Mes conseils pour bien démarrer",
+        list: [
+          "Commencez par une seule application : choisissez celle qui répond à votre principal besoin du moment (stress, sommeil, moral, activité) et gardez-la un mois avant d'en ajouter une autre.",
+          "Si vous ne savez pas par où commencer, installez Daylio : quelques semaines de suivi vous diront sur quoi agir en priorité.",
+          "Activez la synchronisation avec Santé ou Health Connect : vos données restent regroupées, même si vous changez d'application.",
+          "Réglez les notifications vous-même : un seul rappel par jour, à une heure qui vous convient, vaut mieux que cinq rappels ignorés.",
+          "Ne courez pas après les séries : rater un jour n'efface pas vos progrès. Si l'application devient une source de pression, c'est qu'elle ne vous convient plus.",
+        ],
+        callout: {
+          title: "Une application ne remplace pas un professionnel",
+          text: "Ces applications accompagnent le quotidien, elles ne posent pas de diagnostic. Si votre moral reste bas plusieurs semaines, parlez-en à votre médecin ou à un psychologue. En cas de détresse ou de pensées suicidaires, le 3114 répond 24h/24 et 7j/7, gratuitement.",
+        },
+      },
+      {
+        heading: "Vous êtes praticien ? Votre propre application",
+        paragraphs: [
+          "Les grandes applications du classement s'adressent à tout le monde. C'est leur force, et leur limite : elles ne connaissent ni vos clients, ni votre méthode, ni le programme que vous leur avez construit.",
+          "Sophrologues, naturopathes, coachs, psychologues ou centres de soins : une application à votre nom reprend les mécanismes qui fonctionnent (suivi d'humeur, exercices audio hors connexion, rappels, progression visible) au service de votre accompagnement. Vos clients retrouvent vos exercices entre deux séances, et vous gardez le lien. Tout est détaillé sur la page [Application santé & bien-être](/services/secteur/sante-bien-etre).",
+          "Je suis développeur freelance basé à Brest et je travaille avec des praticiens partout en France. Décrivez-moi votre pratique via le [formulaire en bas de page](#contact) : le devis est gratuit, et je vous réponds sous 24h.",
+        ],
+      },
+      {
+        heading: "FAQ : applications pour le bien-être mental",
+        list: [
+          "Quelle est la meilleure application pour suivre son humeur ? Daylio est l'une des plus simples : une humeur et quelques activités à cocher chaque jour, puis des statistiques qui montrent ce qui influence votre moral.",
+          "Existe-t-il de bonnes applications de méditation en français ? Oui. Petit BamBou est une application française, avec des programmes guidés par thème. RespiRelax+ est aussi en français, pour la respiration guidée.",
+          "Les applications bien-être sont-elles gratuites ? Beaucoup proposent une version gratuite (Daylio, RespiRelax+, Nike Training Club, Strava) et un abonnement pour accéder à tout le contenu. Testez toujours la version gratuite avant de payer.",
+          "Mes données de santé sont-elles protégées ? Cela dépend de l'application. Vérifiez où sont stockées vos données, si elles sont partagées avec des tiers, et préférez les applications qui permettent un stockage local ou une suppression complète du compte.",
+          "Une application peut-elle remplacer un psychologue ? Non. Elle aide à prendre conscience de son état et à installer de bonnes habitudes, mais ne remplace pas un accompagnement professionnel. En cas de détresse, appelez le 3114.",
+          "Peut-on créer une application de bien-être pour ses propres clients ? Oui. Un praticien peut proposer une application à son nom, avec ses exercices, ses programmes et la prise de rendez-vous. Elle reprend les mécanismes des grandes applications, adaptés à sa méthode.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
