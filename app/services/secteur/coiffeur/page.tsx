@@ -153,7 +153,9 @@ export default function CoiffeurPage() {
                 </div>
               </div>
               <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">
-                Votre propre plateforme de réservation, à votre nom : un site web, une application mobile iOS/Android
+                Votre propre plateforme de réservation, à votre nom :{" "}
+                <Link href="/services/site-web" className="font-bold text-black underline decoration-[#FF6B9D] decoration-2 underline-offset-4 hover:bg-[#FFE234]">un site web</Link>,{" "}
+                <Link href="/services/application-mobile" className="font-bold text-black underline decoration-[#FF6B9D] decoration-2 underline-offset-4 hover:bg-[#FFE234]">une application mobile iOS/Android</Link>{" "}
                 ou les deux. Vos clientes réservent en quelques gestes, cumulent leurs points de fidélité et reçoivent
                 vos offres. Vous recevez les réservations sur un dashboard interne. Sans commission sur vos rendez-vous.
               </p>
@@ -184,7 +186,11 @@ export default function CoiffeurPage() {
             <div className="border-l-4 border-[#FFE234] pl-6">
               <p className="mono text-sm font-bold text-[#FFE234] mb-4">EN BREF</p>
               <p className="text-gray-300 leading-relaxed">
-                Je crée des applications mobiles et des sites web sur mesure pour les salons de coiffure, barbiers et
+                Je crée des{" "}
+                <Link href="/services/application-mobile" className="text-white underline decoration-[#FFE234] decoration-2 underline-offset-4 hover:text-[#FFE234]">applications mobiles</Link>{" "}
+                et des{" "}
+                <Link href="/services/site-web" className="text-white underline decoration-[#FFE234] decoration-2 underline-offset-4 hover:text-[#FFE234]">sites web sur mesure</Link>{" "}
+                pour les salons de coiffure, barbiers et
                 instituts de beauté : réservation en ligne qui respecte les règles de votre salon, fidélité, rappels
                 automatiques et notifications, avec un panel admin pour tout gérer. Je m&apos;appelle Enzo,
                 développeur freelance basé à Brest, et je travaille avec des salons partout en France. Un site avec
@@ -268,7 +274,11 @@ export default function CoiffeurPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold mb-2">Application, <span className="bg-[#FFE234] px-2 brutal-border">site web</span> ou les deux ?</h2>
             <p className="text-gray-600 mb-8 max-w-2xl">
-              Selon votre salon, la bonne réponse n&apos;est pas toujours une application. Je vous conseille la formule utile, pas la plus chère.
+              Selon votre salon, la bonne réponse n&apos;est pas toujours une{" "}
+              <Link href="/services/application-mobile" className="font-bold text-black underline decoration-[#FF6B9D] decoration-2 underline-offset-4 hover:bg-[#FFE234]">application mobile</Link>{" "}
+              : un{" "}
+              <Link href="/services/site-web" className="font-bold text-black underline decoration-[#FF6B9D] decoration-2 underline-offset-4 hover:bg-[#FFE234]">site web sur mesure</Link>{" "}
+              suffit parfois. Je vous conseille la formule utile, pas la plus chère.
             </p>
             <div className="grid sm:grid-cols-3 gap-4 mb-10">
               {[
