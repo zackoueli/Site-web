@@ -1,6 +1,7 @@
 import "server-only";
 import { getDb } from "@/lib/firebaseAdmin";
 import { projects as SEED, type Project } from "@/lib/portfolio";
+import { toSiteImage } from "@/lib/siteImage";
 
 const COLLECTION = "projects";
 
@@ -29,7 +30,7 @@ function normalize(id: string, data: Record<string, unknown>): ProjectDoc {
     icon: d.icon ?? "✦",
     description: d.description ?? "",
     tags: Array.isArray(d.tags) ? d.tags : [],
-    image: d.image || undefined,
+    image: toSiteImage(d.image || undefined),
     previewUrl: d.previewUrl || undefined,
     externalUrl: d.externalUrl || undefined,
     caseIntro: d.caseIntro || undefined,
@@ -37,7 +38,14 @@ function normalize(id: string, data: Record<string, unknown>): ProjectDoc {
     year: d.year || undefined,
     role: d.role || undefined,
     partner: d.partner && d.partner.name ? d.partner : undefined,
-    gallery: Array.isArray(d.gallery) ? d.gallery : undefined,
+    gallery: Array.isArray(d.gallery)
+      ? d.gallery.map((g, i) => ({
+          ...g,
+          src: toSiteImage(g.src),
+          // Alt vide = image invisible pour Google Images
+          alt: g.alt?.trim() || `${d.name ?? "Projet"} : capture d'écran ${i + 1}`,
+        }))
+      : undefined,
     order: typeof d.order === "number" ? d.order : undefined,
     createdAt: d.createdAt,
     updatedAt: d.updatedAt,

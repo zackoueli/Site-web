@@ -7,7 +7,7 @@ export type Article = {
   category: string;
   service: string;
   /** Image d'illustration (vignette blog + en-tête d'article). Le crédit est requis pour les photos Wikimedia Commons. */
-  image?: { src: string; alt: string; credit?: string };
+  image?: { src: string; alt: string; credit?: string; /** Visuel vertical (4:5) : affiché en entier, sans recadrage, en en-tête d'article. */ portrait?: boolean };
   sections: Section[];
 };
 
@@ -3369,7 +3369,7 @@ export const articles: Article[] = [
           "Vous y voyez aussi la répartition des rendez-vous entre les membres de l'équipe et le classement de vos meilleures prestations sur la période.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/coiffeur-60625.firebasestorage.app/o/image%201.png?alt=media&token=7b42d1a9-def3-461c-b2d8-f874d3b3ee81",
+          src: "/blog/panel-admin-salon-coiffure/tableau-de-bord-panel-admin-salon-de-coiffure.webp",
           alt: "Tableau de bord panel admin salon de coiffure BreizhApp",
           caption: "Tableau de bord : CA semaine, RDV en attente, top coiffeur et top prestation",
         },
@@ -3381,7 +3381,7 @@ export const articles: Article[] = [
           "Vous pouvez filtrer par coiffeur, par date ou par statut pour ne jamais laisser passer une demande.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/coiffeur-60625.firebasestorage.app/o/image%202.png?alt=media&token=0d1dd08a-f5b7-4fa4-b229-edbb4c5fbd70",
+          src: "/blog/panel-admin-salon-coiffure/gestion-des-rendez-vous-panel-admin-coiffeur.webp",
           alt: "Gestion des rendez-vous panel admin coiffeur BreizhApp",
           caption: "Vue Rendez-vous : liste, statuts et confirmation en un clic",
         },
@@ -3393,7 +3393,7 @@ export const articles: Article[] = [
           "Vous pouvez aussi désactiver une prestation sans la supprimer, ce qui est pratique quand une offre est temporairement indisponible.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/coiffeur-60625.firebasestorage.app/o/image%203.png?alt=media&token=fab4712a-7c4f-4fdd-a13d-8c9448bc1d7c",
+          src: "/blog/panel-admin-salon-coiffure/gestion-des-prestations-panel-admin-salon-de-coiffure.webp",
           alt: "Gestion des prestations panel admin salon de coiffure",
           caption: "Catalogue de prestations : durée, prix et coiffeurs associés",
         },
@@ -3405,7 +3405,7 @@ export const articles: Article[] = [
           "Chaque coiffeur peut avoir son propre accès au panel pour gérer son agenda, sans voir les données des autres.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/coiffeur-60625.firebasestorage.app/o/image%204.png?alt=media&token=a73bb391-d8e0-4a54-9a6c-c1e4ae5d93dc",
+          src: "/blog/panel-admin-salon-coiffure/gestion-de-l-equipe-panel-admin-coiffeur.webp",
           alt: "Gestion de l'équipe panel admin coiffeur BreizhApp",
           caption: "Section Équipe : membres, disponibilités et prestations attribuées",
         },
@@ -3417,7 +3417,7 @@ export const articles: Article[] = [
           "Les photos sont stockées sur Firebase et s'affichent instantanément sur votre site ou votre application.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/coiffeur-60625.firebasestorage.app/o/image%205.png?alt=media&token=b3277470-57d7-4f7b-8532-9cc2a69677a1",
+          src: "/blog/panel-admin-salon-coiffure/gestion-galerie-photos-panel-admin-salon-de-coiffure.webp",
           alt: "Gestion galerie photos panel admin salon de coiffure",
           caption: "Galerie : ajout et suppression de photos de réalisations",
         },
@@ -3428,7 +3428,7 @@ export const articles: Article[] = [
           "Tous les messages envoyés depuis le formulaire de contact de votre site ou de votre application arrivent dans cette section. Vous gardez une trace de chaque demande, sans passer par votre boîte mail.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/coiffeur-60625.firebasestorage.app/o/image%206.png?alt=media&token=735d357f-4414-4e7d-b784-0bd5ec1a5443",
+          src: "/blog/panel-admin-salon-coiffure/messagerie-panel-admin-coiffeur.webp",
           alt: "Messagerie panel admin coiffeur BreizhApp",
           caption: "Messagerie : tous les messages clients centralisés",
         },
@@ -3440,7 +3440,7 @@ export const articles: Article[] = [
           "Vos clientes voient ainsi vos disponibilités réelles au moment de prendre rendez-vous.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/coiffeur-60625.firebasestorage.app/o/image%207.png?alt=media&token=c8ff0d91-37de-4b12-8e99-fbf6fcb81dec",
+          src: "/blog/panel-admin-salon-coiffure/gestion-des-fermetures-panel-admin-salon-de-coiffure.webp",
           alt: "Gestion des fermetures panel admin salon de coiffure",
           caption: "Fermetures : congés et jours exceptionnels bloqués automatiquement",
         },
@@ -3492,7 +3492,7 @@ export const articles: Article[] = [
           "Vous mettez à jour le statut en un clic : reçue, en préparation, en livraison, livrée.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%208.png?alt=media&token=92d7ca24-a6e5-45f6-bc2d-b481d87e4349",
+          src: "/blog/panel-admin-restaurant-pizzeria/gestion-des-commandes-panel-admin-pizzeria.webp",
           alt: "Gestion des commandes panel admin pizzeria BreizhApp",
           caption: "Commandes : suivi en temps réel avec statut et détail client",
         },
@@ -3504,7 +3504,7 @@ export const articles: Article[] = [
           "Un produit en rupture d'ingrédient ? Vous le désactivez en un toggle. Il disparaît du menu client immédiatement.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%209.png?alt=media&token=6250154b-d30c-4111-9d3d-7a1b53697a52",
+          src: "/blog/panel-admin-restaurant-pizzeria/gestion-du-menu-panel-admin-restaurant.webp",
           alt: "Gestion du menu panel admin restaurant BreizhApp",
           caption: "Menu : 40 produits, toggle disponibilité et mise en avant en un clic",
         },
@@ -3515,7 +3515,7 @@ export const articles: Article[] = [
           "La section Réservations liste toutes les demandes de table reçues avec le nombre de couverts, la date, l'heure et les coordonnées du client. Vous confirmez ou refusez chaque demande, le client est notifié automatiquement.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%2010.png?alt=media&token=c9830477-4c1d-4192-9324-bf646ca7c979",
+          src: "/blog/panel-admin-restaurant-pizzeria/gestion-des-reservations-panel-admin-restaurant.webp",
           alt: "Gestion des réservations panel admin restaurant BreizhApp",
           caption: "Réservations : confirmation ou refus avec notification automatique au client",
         },
@@ -3526,7 +3526,7 @@ export const articles: Article[] = [
           "Vous définissez vos horaires d'ouverture jour par jour depuis cette section. Les horaires s'affichent en temps réel sur votre site et dans votre application. Fermeture exceptionnelle ? Vous bloquez le créneau en quelques secondes.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%2011.png?alt=media&token=7727e288-5dd9-496f-b1b3-4fcd428829bd",
+          src: "/blog/panel-admin-restaurant-pizzeria/gestion-des-horaires-panel-admin-restaurant.webp",
           alt: "Gestion des horaires panel admin restaurant BreizhApp",
           caption: "Horaires : ouverture jour par jour, mis à jour en temps réel sur le site",
         },
@@ -3537,7 +3537,7 @@ export const articles: Article[] = [
           "La section Codes promo vous permet de créer des réductions en pourcentage ou en montant fixe, avec une date d'expiration et un nombre d'utilisations maximum. Idéal pour une offre de lancement, une promotion du weekend ou une récompense client.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%2012.png?alt=media&token=3c49f102-3be5-43cf-be02-8624faef6d1c",
+          src: "/blog/panel-admin-restaurant-pizzeria/codes-promo-panel-admin-pizzeria.webp",
           alt: "Codes promo panel admin pizzeria BreizhApp",
           caption: "Codes promo : réduction en % ou montant fixe, date d'expiration paramétrable",
         },
@@ -3548,7 +3548,7 @@ export const articles: Article[] = [
           "Si vous proposez la livraison à domicile, la section Livreurs vous permet d'ajouter vos livreurs, de leur attribuer des commandes et de suivre leur activité. Chaque livreur peut accéder à l'application depuis son téléphone pour voir ses livraisons du jour.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%2013.png?alt=media&token=d1603c4a-1952-4cbc-9ab8-6286c97c4994",
+          src: "/blog/panel-admin-restaurant-pizzeria/gestion-des-livreurs-panel-admin-restaurant.webp",
           alt: "Gestion des livreurs panel admin restaurant BreizhApp",
           caption: "Livreurs : gestion de l'équipe et attribution des commandes",
         },
@@ -3559,7 +3559,7 @@ export const articles: Article[] = [
           "La section Statistiques affiche vos données de vente sur la période de votre choix : nombre de commandes, chiffre d'affaires, produits les plus commandés, heures de pointe. Ces données vous aident à ajuster votre menu et vos horaires.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%2014.png?alt=media&token=e3140706-626a-435d-9feb-bfbf9f8c2482",
+          src: "/blog/panel-admin-restaurant-pizzeria/statistiques-panel-admin-restaurant-pizzeria.webp",
           alt: "Statistiques panel admin restaurant pizzeria BreizhApp",
           caption: "Statistiques : CA, commandes et top produits sur la période choisie",
         },
@@ -3570,7 +3570,7 @@ export const articles: Article[] = [
           "Tous les messages envoyés depuis votre site ou application arrivent dans la messagerie du panel. Vous répondez directement depuis l'interface, sans jongler entre différentes boîtes mail.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%2015.png?alt=media&token=163b5c12-a423-43fc-8862-2c10877cf095",
+          src: "/blog/panel-admin-restaurant-pizzeria/messagerie-panel-admin-restaurant.webp",
           alt: "Messagerie panel admin restaurant BreizhApp",
           caption: "Messagerie : tous les échanges clients centralisés dans le panel",
         },
@@ -3581,7 +3581,7 @@ export const articles: Article[] = [
           "Ajoutez ou supprimez des photos de votre restaurant, de vos plats ou de votre équipe directement depuis le panel. Les visuels s'affichent instantanément sur votre site et dans votre application.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%2016.png?alt=media&token=999da8b8-c263-4142-8b20-6dd232d33ba7",
+          src: "/blog/panel-admin-restaurant-pizzeria/galerie-photos-panel-admin-pizzeria.webp",
           alt: "Galerie photos panel admin pizzeria BreizhApp",
           caption: "Photos : upload et suppression de visuels sans faire appel au développeur",
         },
@@ -3592,7 +3592,7 @@ export const articles: Article[] = [
           "La section À propos vous permet de modifier le texte de présentation de votre restaurant, vos coordonnées, votre adresse et les informations qui s'affichent sur la page de présentation de votre site ou application.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/pizzeria2-8057e.firebasestorage.app/o/image%2017.png?alt=media&token=7bb95b3f-9ed1-4fb6-a414-2df423b4344d",
+          src: "/blog/panel-admin-restaurant-pizzeria/section-a-propos-panel-admin-restaurant.webp",
           alt: "Section à propos panel admin restaurant BreizhApp",
           caption: "À propos : présentation, coordonnées et adresse modifiables en autonomie",
         },
@@ -3643,7 +3643,7 @@ export const articles: Article[] = [
           "La page d'accueil du panel affiche vos indicateurs clés : chiffre d'affaires, nombre de commandes et nombre de produits actifs. Les dernières commandes sont listées directement sur le tableau de bord pour que vous puissiez les traiter sans naviguer.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20171.png?alt=media&token=0b58df62-b2a0-4154-9d5f-37028df9a118",
+          src: "/portfolio/histoire-eternelle/dashboard-admin-chiffre-d-affaires-commandes-et-produits-actifs.webp",
           alt: "Dashboard panel admin boutique e-commerce BreizhApp",
           caption: "Dashboard : CA, commandes, produits et dernières ventes en temps réel",
         },
@@ -3655,7 +3655,7 @@ export const articles: Article[] = [
           "Besoin d'ajouter un nouveau bijou ou une nouvelle collection ? Vous le faites directement depuis le panel, sans passer par un développeur.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20231.png?alt=media&token=7a678b6e-9968-4496-8566-9c53b16fa0c9",
+          src: "/portfolio/histoire-eternelle/gestion-des-produits-ajout-prix-et-disponibilite.webp",
           alt: "Gestion des produits panel admin boutique en ligne BreizhApp",
           caption: "Produits : ajout, modification, prix et disponibilité en autonomie totale",
         },
@@ -3666,7 +3666,7 @@ export const articles: Article[] = [
           "La section Catégories vous permet de créer et d'organiser les familles de produits de votre boutique. Chaque catégorie s'affiche dans la navigation de votre site pour guider vos clients vers ce qu'ils cherchent.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20232.png?alt=media&token=84bf1909-e871-45e4-afcf-2fc63f78f0bf",
+          src: "/blog/panel-admin-boutique-ecommerce/gestion-des-categories-panel-admin-e-commerce.webp",
           alt: "Gestion des catégories panel admin e-commerce BreizhApp",
           caption: "Catégories : organisation du catalogue et navigation client",
         },
@@ -3677,7 +3677,7 @@ export const articles: Article[] = [
           "La section Commandes centralise toutes les ventes avec le détail de chaque commande, le statut de traitement, le mode de livraison et les coordonnées de l'acheteur. Vous mettez à jour le statut et le client est notifié automatiquement.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/Group%20256.png?alt=media&token=def1d244-a682-4f31-b171-393225977ccc",
+          src: "/portfolio/histoire-eternelle/suivi-et-traitement-des-commandes-en-temps-reel.webp",
           alt: "Gestion des commandes panel admin boutique e-commerce BreizhApp",
           caption: "Commandes : suivi en temps réel avec statut et notification client automatique",
         },
@@ -3688,7 +3688,7 @@ export const articles: Article[] = [
           "Créez des codes de réduction en pourcentage ou en montant fixe, avec une date d'expiration et un nombre d'utilisations maximum. Idéal pour une offre de lancement, une vente flash ou une récompense client fidèle.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/Group%20257.png?alt=media&token=a3445f31-8795-42df-9e71-11fa1802c81e",
+          src: "/portfolio/histoire-eternelle/codes-promo-parametrables.webp",
           alt: "Codes promo panel admin boutique en ligne BreizhApp",
           caption: "Codes promo : réduction en % ou montant fixe, durée et limite d'utilisation",
         },
@@ -3699,7 +3699,7 @@ export const articles: Article[] = [
           "Tous les messages envoyés depuis votre boutique arrivent dans la messagerie du panel. Vous centralisez vos échanges sans jongler entre différentes boîtes mail ou outils.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20173.png?alt=media&token=2983ac78-a682-4c00-8d7c-e6e358c5a971",
+          src: "/blog/panel-admin-boutique-ecommerce/messagerie-panel-admin-boutique-e-commerce.webp",
           alt: "Messagerie panel admin boutique e-commerce BreizhApp",
           caption: "Messagerie : échanges clients centralisés dans le panel",
         },
@@ -3710,7 +3710,7 @@ export const articles: Article[] = [
           "La section Avis centralise les avis laissés par vos clients sur vos produits. Vous les modérez depuis le panel avant publication, pour garder le contrôle sur ce qui s'affiche sur votre boutique.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20235.png?alt=media&token=e3a5d0a0-3eef-4de7-ba09-9f6b5d5e098a",
+          src: "/portfolio/histoire-eternelle/moderation-des-avis-clients-avant-publication.webp",
           alt: "Avis clients panel admin boutique en ligne BreizhApp",
           caption: "Avis clients : modération avant publication pour garder le contrôle",
         },
@@ -3721,7 +3721,7 @@ export const articles: Article[] = [
           "Ajoutez ou supprimez des photos de votre boutique, de vos produits ou de votre univers de marque directement depuis le panel. Les visuels s'affichent instantanément sur votre site.",
         ],
         image: {
-          src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20236.png?alt=media&token=d6341f5b-3948-4132-a4ff-eeaa5aeee829",
+          src: "/blog/panel-admin-boutique-ecommerce/photos-panel-admin-boutique-e-commerce.webp",
           alt: "Photos panel admin boutique e-commerce BreizhApp",
           caption: "Photos : upload et gestion des visuels sans faire appel au développeur",
         },
@@ -4574,6 +4574,11 @@ export const articles: Article[] = [
   },
   {
     slug: "tactiques-boutique-en-ligne",
+    image: {
+      src: "/blog/tactiques-boutique-en-ligne/couverture.webp",
+      alt: "« 7 sur 10 visiteurs quittent votre boutique avec un panier plein » : 8 tactiques concrètes et chiffrées pour les faire acheter",
+      portrait: true,
+    },
     service: "ecommerce",
     title: "Boutique en ligne : 20 tactiques pour vendre plus en 2026",
     description:

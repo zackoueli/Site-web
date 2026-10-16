@@ -30,7 +30,16 @@ export async function POST(req: Request) {
 
   const ext = file.type.split("/")[1].replace("jpeg", "jpg");
   const safeFolder = folder.replace(/[^a-z0-9/_-]/gi, "");
-  const path = `${safeFolder}/${Date.now()}-${randomUUID().slice(0, 8)}.${ext}`;
+  // Nom lisible (repris du fichier envoyé) : compte pour le référencement Google Images
+  const baseName = file.name
+    .replace(/\.[^.]+$/, "")
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 60);
+  const path = `${safeFolder}/${baseName ? `${baseName}-` : ""}${randomUUID().slice(0, 8)}.${ext}`;
 
   try {
     const bucket = getBucket();

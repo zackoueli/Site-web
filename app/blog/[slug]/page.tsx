@@ -330,11 +330,15 @@ export default async function ArticlePage({ params }: Props) {
 
         {/* Image d'illustration */}
         {article.image && (
-          <figure className="mb-12">
+          <figure className={article.image.portrait ? "mb-12 max-w-md mx-auto" : "mb-12"}>
             <img
               src={article.image.src}
               alt={article.image.alt}
-              className="brutal-border brutal-shadow w-full max-h-96 object-cover rounded-sm"
+              className={
+                article.image.portrait
+                  ? "brutal-border brutal-shadow w-full aspect-[4/5] rounded-sm"
+                  : "brutal-border brutal-shadow w-full max-h-96 object-cover rounded-sm"
+              }
               loading="eager"
             />
             {article.image.credit && (
@@ -520,7 +524,9 @@ export default async function ArticlePage({ params }: Props) {
                     )
                   )}
                 </section>
-                {section.heading === SITE_DEMO_AFTER_SECTION[article.slug]?.section && siteDemo(SITE_DEMO_AFTER_SECTION[article.slug])}
+                {SITE_DEMO_AFTER_SECTION[article.slug] &&
+                  section.heading === SITE_DEMO_AFTER_SECTION[article.slug].section &&
+                  siteDemo(SITE_DEMO_AFTER_SECTION[article.slug])}
                 {i === 1 && <MidArticleCTA article={article} />}
               </>
             );

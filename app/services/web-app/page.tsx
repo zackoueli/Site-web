@@ -165,7 +165,7 @@ export default function WebAppPage() {
                 </div>
                 <div className="relative w-full aspect-[16/10] overflow-hidden">
                   <Image
-                    src="https://firebasestorage.googleapis.com/v0/b/livret-d-accueil-b98ba.firebasestorage.app/o/image%2022.png?alt=media&token=ef050d7a-0e53-4b32-802c-180de481b910"
+                    src="/portfolio/bunkly/vue-d-ensemble-des-livrets-statut-de-publication-et-statistiques.webp"
                     alt="Dashboard Bunkly : vue d'ensemble des livrets, statut de publication et statistiques"
                     fill
                     className="object-cover object-top transition-transform duration-300 hover:scale-105"

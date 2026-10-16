@@ -56,11 +56,11 @@ export const projects: Project[] = [
     partner: { name: "Agence Web Armor", url: "https://agence-web-armor.fr/" },
     services: ["Concept", "UX / UI Design", "Développement web", "Dashboard SaaS", "Traduction auto", "Déploiement"],
     gallery: [
-      { src: "https://firebasestorage.googleapis.com/v0/b/livret-d-accueil-b98ba.firebasestorage.app/o/image%2022.png?alt=media&token=ef050d7a-0e53-4b32-802c-180de481b910", alt: "Vue d'ensemble des livrets, statut de publication et statistiques", wide: true },
-      { src: "https://firebasestorage.googleapis.com/v0/b/livret-d-accueil-b98ba.firebasestorage.app/o/image%2023.png?alt=media&token=e64c2445-0e94-4b84-b925-a0f17acd1dac", alt: "Édition d'un module avec aperçu mobile en temps réel" },
-      { src: "https://firebasestorage.googleapis.com/v0/b/livret-d-accueil-b98ba.firebasestorage.app/o/image%2024.png?alt=media&token=6840d98e-e79b-4e1e-864f-80ad245a7f90", alt: "Modules du livret réorganisables en glisser-déposer" },
-      { src: "https://firebasestorage.googleapis.com/v0/b/livret-d-accueil-b98ba.firebasestorage.app/o/image%2025.png?alt=media&token=2f7d5256-39de-46b7-9ef7-fd10b3b49c02", alt: "Traduction automatique du livret en plusieurs langues", wide: true },
-      { src: "https://firebasestorage.googleapis.com/v0/b/livret-d-accueil-b98ba.firebasestorage.app/o/image%2026.png?alt=media&token=5b4ff726-f0c3-4791-8543-120caae1db09", alt: "Import IA depuis une annonce Airbnb, Booking ou VRBO" },
+      { src: "/portfolio/bunkly/vue-d-ensemble-des-livrets-statut-de-publication-et-statistiques.webp", alt: "Vue d'ensemble des livrets, statut de publication et statistiques", wide: true },
+      { src: "/portfolio/bunkly/edition-d-un-module-avec-apercu-mobile-en-temps-reel.webp", alt: "Édition d'un module avec aperçu mobile en temps réel" },
+      { src: "/portfolio/bunkly/modules-du-livret-reorganisables-en-glisser-deposer.webp", alt: "Modules du livret réorganisables en glisser-déposer" },
+      { src: "/portfolio/bunkly/traduction-automatique-du-livret-en-plusieurs-langues.webp", alt: "Traduction automatique du livret en plusieurs langues", wide: true },
+      { src: "/portfolio/bunkly/import-ia-depuis-une-annonce-airbnb-booking-ou-vrbo.webp", alt: "Import IA depuis une annonce Airbnb, Booking ou VRBO" },
     ],
   },
   {
@@ -86,11 +86,11 @@ export const projects: Project[] = [
     role: "Direction artistique & développement e-commerce",
     services: ["Concept", "Direction artistique", "Développement e-commerce", "Intégration Stripe", "Panel admin", "SEO"],
     gallery: [
-      { src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20171.png?alt=media&token=0b58df62-b2a0-4154-9d5f-37028df9a118", alt: "Dashboard admin : chiffre d'affaires, commandes et produits actifs", wide: true },
-      { src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20231.png?alt=media&token=7a678b6e-9968-4496-8566-9c53b16fa0c9", alt: "Gestion des produits : ajout, prix et disponibilité" },
-      { src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/Group%20256.png?alt=media&token=def1d244-a682-4f31-b171-393225977ccc", alt: "Suivi et traitement des commandes en temps réel" },
-      { src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/Group%20257.png?alt=media&token=a3445f31-8795-42df-9e71-11fa1802c81e", alt: "Codes promo paramétrables", wide: true },
-      { src: "https://firebasestorage.googleapis.com/v0/b/fir-boutique-754bb.firebasestorage.app/o/image%20235.png?alt=media&token=e3a5d0a0-3eef-4de7-ba09-9f6b5d5e098a", alt: "Modération des avis clients avant publication" },
+      { src: "/portfolio/histoire-eternelle/dashboard-admin-chiffre-d-affaires-commandes-et-produits-actifs.webp", alt: "Dashboard admin : chiffre d'affaires, commandes et produits actifs", wide: true },
+      { src: "/portfolio/histoire-eternelle/gestion-des-produits-ajout-prix-et-disponibilite.webp", alt: "Gestion des produits : ajout, prix et disponibilité" },
+      { src: "/portfolio/histoire-eternelle/suivi-et-traitement-des-commandes-en-temps-reel.webp", alt: "Suivi et traitement des commandes en temps réel" },
+      { src: "/portfolio/histoire-eternelle/codes-promo-parametrables.webp", alt: "Codes promo paramétrables", wide: true },
+      { src: "/portfolio/histoire-eternelle/moderation-des-avis-clients-avant-publication.webp", alt: "Modération des avis clients avant publication" },
     ],
   },
   {

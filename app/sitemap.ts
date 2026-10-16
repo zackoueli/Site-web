@@ -31,12 +31,25 @@ const STATIC_PAGES: MetadataRoute.Sitemap = [
   { url: "https://breizhapp.tech/cgv",                                    lastModified: new Date("2026-07-26"), changeFrequency: "yearly",  priority: 0.3 },
 ];
 
+/** URLs absolues et dédoublonnées pour le sitemap d'images (Google Images). */
+function absoluteImages(srcs: (string | undefined)[]): string[] {
+  const urls = srcs
+    .filter((s): s is string => !!s)
+    .map((s) => (s.startsWith("/") ? `https://breizhapp.tech${s}` : s))
+    .filter((s) => s.startsWith("https://breizhapp.tech/"));
+  return [...new Set(urls)];
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const blogArticles = articles.map((a) => ({
     url: `https://breizhapp.tech/blog/${a.slug}`,
     lastModified: new Date(a.lastModified ?? a.date),
     changeFrequency: "monthly" as const,
     priority: 0.8,
+    images: absoluteImages([
+      a.image?.src,
+      ...a.sections.flatMap((s) => [s.image?.src, ...(s.subsections ?? []).map((sub) => sub.image?.src)]),
+    ]),
   }));
 
   const projects = await getAllProjects();
@@ -45,6 +58,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: new Date(p.updatedAt ?? p.createdAt ?? Date.now()),
     changeFrequency: "monthly" as const,
     priority: 0.7,
+    images: absoluteImages([p.image, ...(p.gallery ?? []).map((g) => g.src)]),
   }));
 
   return [...STATIC_PAGES, ...projectPages, ...blogArticles];
