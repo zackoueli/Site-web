@@ -188,9 +188,15 @@ function MidArticleCTA({ article }: { article: Article }) {
 
 /** Articles affichant la démo restaurant en tête d'article. */
 const RESTAURANT_DEMO_TOP = ["application-mobile-restaurant", "site-web-restaurant-brest"];
-/** Articles affichant la démo restaurant après une section précise (titre de la section). */
-const RESTAURANT_DEMO_AFTER_SECTION: Record<string, string> = {
-  "astuces-site-web-pizzeria": "5 astuces pour vendre plus de pizzas en ligne",
+const RESTAURANT_DEMO = { url: "https://demo.pizzeria.breizhapp.tech/", title: "Démo application restaurant BreizhApp" };
+/** Articles affichant une démo de site après une section précise (titre de la section). */
+const SITE_DEMO_AFTER_SECTION: Record<string, { section: string; url: string; title: string }> = {
+  "astuces-site-web-pizzeria": { section: "5 astuces pour vendre plus de pizzas en ligne", ...RESTAURANT_DEMO },
+  "tactiques-boutique-en-ligne": {
+    section: "Conclusion : une boutique qui vend se construit étape par étape",
+    url: "https://www.histoire-eternelle-l-atelier.fr/",
+    title: "Boutique en ligne Histoire Eternelle réalisée par BreizhApp",
+  },
 };
 
 const categoryColors: Record<string, string> = {
@@ -237,7 +243,7 @@ export default async function ArticlePage({ params }: Props) {
     .filter((s) => s.heading)
     .map((s) => ({ id: headingId(s.heading!), label: s.heading!.replace(/^FAQ\s*[—:]?\s*/i, "FAQ : ") }));
 
-  const restaurantDemo = (
+  const siteDemo = ({ url, title }: { url: string; title: string }) => (
     <div className="mb-12">
       <div className="brutal-border brutal-shadow bg-[#1a1a1a] rounded-t-xl p-3 pb-0">
         <div className="bg-[#2d2d2d] rounded-t-lg px-4 py-2 flex items-center gap-3">
@@ -247,13 +253,13 @@ export default async function ArticlePage({ params }: Props) {
             <div className="w-3 h-3 rounded-full bg-[#28c840]" />
           </div>
           <div className="flex-1 bg-[#3d3d3d] rounded px-3 py-1 mono text-xs text-gray-400 truncate">
-            demo.pizzeria.breizhapp.tech
+            {new URL(url).hostname.replace(/^www\./, "")}
           </div>
         </div>
         <div className="w-full overflow-hidden" style={{ height: "580px" }}>
           <iframe
-            src="https://demo.pizzeria.breizhapp.tech/"
-            title="Démo application restaurant BreizhApp"
+            src={url}
+            title={title}
             className="w-full h-full border-0 block"
             loading="eager"
           />
@@ -393,7 +399,7 @@ export default async function ArticlePage({ params }: Props) {
         )}
 
         {/* Mockup PC — articles restaurant (placé dans le corps si l'article le demande) */}
-        {RESTAURANT_DEMO_TOP.includes(article.slug) && restaurantDemo}
+        {RESTAURANT_DEMO_TOP.includes(article.slug) && siteDemo(RESTAURANT_DEMO)}
 
         {/* Article body */}
         <div className="flex flex-col gap-8">
@@ -514,7 +520,7 @@ export default async function ArticlePage({ params }: Props) {
                     )
                   )}
                 </section>
-                {section.heading === RESTAURANT_DEMO_AFTER_SECTION[article.slug] && restaurantDemo}
+                {section.heading === SITE_DEMO_AFTER_SECTION[article.slug]?.section && siteDemo(SITE_DEMO_AFTER_SECTION[article.slug])}
                 {i === 1 && <MidArticleCTA article={article} />}
               </>
             );

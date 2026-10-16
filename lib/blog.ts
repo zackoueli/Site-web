@@ -4579,7 +4579,7 @@ export const articles: Article[] = [
     description:
       "7 visiteurs sur 10 abandonnent leur panier. Découvrez 20 tactiques concrètes et chiffrées pour transformer votre boutique en ligne en machine à vendre.",
     date: "2026-10-01",
-    lastModified: "2026-10-02",
+    lastModified: "2026-10-16",
     category: "Guides",
     sections: [
       {
@@ -4998,12 +4998,16 @@ export const articles: Article[] = [
   },
   {
     slug: "applications-bien-etre-mental",
+    image: {
+      src: "/blog/applications-bien-etre-mental.jpg",
+      alt: "Femme détendue au soleil près d'un smartphone affichant une application bien-être : humeur, sommeil, sport et habitudes",
+    },
     service: "sante-bien-etre",
     title: "Applications bien-être mental : le classement 2026",
     description:
       "Quelles applications pour suivre son bien-être mental au quotidien ? Mon classement par univers, celles à installer en premier et pourquoi elles fonctionnent.",
     date: "2026-10-15",
-    lastModified: "2026-10-15",
+    lastModified: "2026-10-16",
     category: "Comparatifs",
     sections: [
       {
