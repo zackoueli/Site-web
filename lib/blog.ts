@@ -5174,6 +5174,233 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "site-internet-therapeute",
+    image: {
+      src: "/blog/site-internet-therapeute.jpg",
+      alt: "Psychologue souriante en séance dans son cabinet lumineux, carnet sur les genoux, face à une patiente, avec plantes, bibliothèque et diplôme au mur",
+    },
+    service: "sante-bien-etre",
+    title: "Site internet thérapeute : 12 conseils pour le réussir",
+    description:
+      "Créer le site internet d'un thérapeute qui rassure et fait réserver : pages clés, textes, prise de RDV, règles à respecter et un plan d'action en 7 jours.",
+    date: "2026-10-26",
+    lastModified: "2026-10-26",
+    category: "Conseils",
+    sections: [
+      {
+        paragraphs: [
+          "Il est 23h. Quelqu'un n'arrive pas à dormir, encore une fois. Sur son téléphone, il tape « sophrologue sommeil Brest », ouvre trois sites, les parcourt en quelques secondes chacun. Le premier parle de « reconnexion à soi » sans dire ce qui se passe en séance. Le deuxième ne s'affiche pas correctement sur mobile. Le troisième dit : « Vous dormez mal depuis des mois ? Je vous aide à retrouver des nuits calmes, en cabinet à Brest ou en visio. » Avec une photo de la praticienne, les tarifs et un bouton pour réserver. C'est là qu'il prend rendez-vous.",
+          "Pour un thérapeute, le site internet est la salle d'attente avant la salle d'attente. Votre futur client y décide s'il ose franchir le pas, souvent seul, souvent dans un moment fragile. Ce guide réunit ce qui fonctionne vraiment, en France comme chez les spécialistes anglo-saxons du site de thérapeute : 12 conseils concrets, les erreurs qui font fuir, et un plan d'action pour améliorer votre site dès cette semaine.",
+        ],
+      },
+      {
+        heading: "Ce que votre visiteur cherche, et en combien de temps",
+        paragraphs: [
+          "Un visiteur qui arrive sur le site d'un psychologue, d'un naturopathe ou d'un hypnothérapeute n'est pas dans la même disposition qu'un client qui commande une pizza. Il hésite, il a parfois honte de consulter, il compare trois ou quatre praticiens. Il ne lit pas votre site, il le survole.",
+          "En quelques secondes, il cherche à répondre à trois questions. Est-ce que cette personne peut m'aider, moi, avec ce que je vis ? Est-ce que je me sens en confiance avec elle ? Et concrètement, comment ça se passe : où, combien de temps, à quel prix, et comment je réserve ? Chaque conseil de ce guide sert à répondre à l'une de ces trois questions, le plus vite possible.",
+        ],
+        callout: {
+          title: "Le test des 5 secondes",
+          text: "Montrez la page d'accueil de votre site à un proche pendant 5 secondes sur son téléphone, puis cachez l'écran. Demandez-lui : qui est cette personne, pour qui elle travaille, et comment on prend rendez-vous ? S'il ne sait pas répondre aux trois questions, c'est le premier chantier de votre site.",
+        },
+      },
+      {
+        heading: "Votre message : à qui vous parlez et avec quels mots",
+        subsections: [
+          {
+            heading: "Conseil 1 : écrivez pour une personne précise",
+            paragraphs: [
+              "« J'accompagne toute personne en recherche de mieux-être » ne parle à personne. Les sites de thérapeutes qui remplissent leur agenda nomment clairement leur public et le problème qu'ils l'aident à traverser. Vous pouvez recevoir d'autres profils en séance, mais votre site doit donner à votre client idéal l'impression d'avoir été écrit pour lui.",
+              "Exercice à faire maintenant, en 10 minutes. Complétez cette phrase : « J'aide [qui] à [résultat concret] grâce à [votre approche], à [votre ville] et en visio. » Par exemple : « J'aide les adultes anxieux à retrouver un sommeil apaisé grâce à la sophrologie, à Brest et en visio. » Cette phrase devient le titre de votre page d'accueil.",
+            ],
+          },
+          {
+            heading: "Conseil 2 : parlez avec les mots de vos clients, pas ceux de vos formations",
+            paragraphs: [
+              "Personne ne tape « approche intégrative psychocorporelle » sur Google à minuit. On tape « je n'arrive plus à gérer mon stress » ou « crises d'angoisse que faire ». Pendant deux semaines, notez dans un carnet les phrases exactes que vos clients prononcent au premier appel ou en début de séance. Ce sont vos meilleurs titres, et ce sont aussi les mots que Google associera à votre site.",
+              "Autre réflexe utile : relisez votre page d'accueil et comptez les « je » et les « vous ». Si les « je » dominent, réécrivez. Votre parcours compte, mais le visiteur cherche d'abord à se reconnaître.",
+            ],
+          },
+        ],
+        table: {
+          head: ["Ce qu'on lit souvent", "Ce qui donne envie de réserver"],
+          rows: [
+            ["Bienvenue sur mon site", "Psychologue à Brest, j'accompagne les adolescents et leurs parents en période de crise"],
+            ["Approche holistique et intégrative", "On travaille sur le corps, les émotions et vos habitudes, pas seulement sur les symptômes"],
+            ["Libérez-vous de vos blocages", "Vous évitez certaines situations par peur ? On avance ensemble, à votre rythme"],
+            ["Contactez-moi", "Réserver une première séance"],
+          ],
+        },
+      },
+      {
+        heading: "Conseil 3 : une page d'accueil construite dans le bon ordre",
+        paragraphs: [
+          "La page d'accueil suit le cheminement du visiteur, de « est-ce pour moi ? » jusqu'à « je réserve ». Pas besoin de dix sections : l'ordre des blocs ci-dessous fonctionne pour la grande majorité des praticiens. Le bouton de rendez-vous apparaît dès le premier écran, puis revient en fin de page.",
+        ],
+        list: [
+          "Premier écran : votre phrase « J'aide [qui] à [quoi] », votre photo et un bouton « Prendre rendez-vous ».",
+          "« Vous vous reconnaissez ? » : trois à cinq situations décrites avec les mots de vos clients.",
+          "Comment je peux vous aider : vos accompagnements, chacun avec un lien vers sa page.",
+          "Qui je suis : trois lignes, une photo, un lien vers la page « À propos ».",
+          "Comment ça se passe : la première séance résumée en trois étapes.",
+          "Avis et témoignages, si votre profession le permet (voir plus bas).",
+          "Infos pratiques : adresse, accès, visio, tarifs.",
+          "Dernier appel à l'action : le même bouton de rendez-vous qu'en haut de page.",
+        ],
+      },
+      {
+        heading: "Les autres pages indispensables",
+        paragraphs: [
+          "Cinq ou six pages bien faites suffisent pour démarrer. Mieux vaut un site court et clair en ligne ce mois-ci qu'un site parfait qui attend un an.",
+        ],
+        subsections: [
+          {
+            heading: "Conseil 4 : soignez la page « À propos », celle qu'on lit avant d'appeler",
+            paragraphs: [
+              "C'est souvent l'une des pages les plus consultées d'un site de thérapeute, parce qu'on ne choisit pas une prestation, on choisit une personne. Commencez par ce que vous apportez au visiteur, puis racontez pourquoi vous faites ce métier, en quelques lignes. Ajoutez ensuite votre parcours (formations, certifications, années de pratique) et la façon dont vous travaillez en séance.",
+              "La photo compte autant que le texte. Une vraie photo de vous, en lumière naturelle, souriante, regard vers l'objectif, vaut mieux que n'importe quelle image de banque de photos. Ajoutez une photo de votre cabinet : le visiteur se projette dans le lieu avant même d'y venir.",
+            ],
+          },
+          {
+            heading: "Conseil 5 : une page par accompagnement",
+            paragraphs: [
+              "Regrouper toutes vos prestations sur une seule page oblige le visiteur à chercher ce qui le concerne. Une page par accompagnement (gestion du stress, arrêt du tabac, préparation à l'accouchement, thérapie de couple...) répond mieux à sa question et vous donne plus de chances d'apparaître sur Google pour cette recherche précise.",
+              "Chaque page reprend la même trame : pour qui c'est fait, ce qu'on travaille, comment se déroule une séance, combien de séances en général, la durée et le tarif, puis un bouton de réservation.",
+            ],
+          },
+          {
+            heading: "Conseil 6 : créez une page « Votre première séance »",
+            paragraphs: [
+              "C'est le conseil le plus repris par les sites anglo-saxons spécialisés (la fameuse page « What to expect »), et l'un des moins appliqués en France. La première séance fait peur : on ne sait pas quoi dire, ni si on devra tout raconter. Une page dédiée lève ces freins un par un.",
+              "Décrivez ce qui se passe, dans l'ordre : l'accueil, les premières questions, ce qu'on définit ensemble, la durée, ce qu'il faut apporter, comment se passe le paiement. Puis répondez aux peurs fréquentes : « Est-ce que je dois tout dire dès le début ? » (non, vous choisissez ce que vous partagez), « Et si le courant ne passe pas ? » (c'est normal d'en parler, et de changer de praticien si besoin). Rappeler que l'appréhension est normale suffit souvent à rassurer.",
+            ],
+          },
+          {
+            heading: "Conseil 7 : affichez vos tarifs",
+            paragraphs: [
+              "Beaucoup de praticiens hésitent à afficher leurs prix. C'est pourtant l'une des premières informations recherchées, et son absence fait fuir les visiteurs qui n'osent pas demander. Indiquez le tarif par séance (ou une fourchette), la durée, les modes de paiement, et les éventuelles prises en charge : remboursement par certaines mutuelles, ou dispositif Mon soutien psy si vous êtes psychologue conventionné. Les demandes que vous recevrez seront mieux qualifiées.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Conseil 8 : enlevez chaque frein à la prise de rendez-vous",
+        paragraphs: [
+          "Un visiteur convaincu peut encore renoncer au dernier moment, simplement parce que réserver est compliqué. Un formulaire « écrivez-moi » qui oblige à expliquer sa situation à un inconnu, un numéro de téléphone seul alors qu'il est 23h, un calendrier qui s'ouvre dans un nouvel onglet illisible sur mobile : chacun de ces détails coûte des rendez-vous.",
+          "Un agenda en ligne intégré au site règle la plupart de ces problèmes. Selon votre profession, vous pouvez utiliser un outil existant (Doctolib si vous y êtes éligible, Resalib, Médoucine, Calendly...) ou un module de réservation propre à votre site. Les options sont détaillées sur la page [Prise de rendez-vous](/services/secteur/reservation-prise-de-rdv).",
+        ],
+        list: [
+          "Un seul appel à l'action principal, toujours formulé de la même façon, visible en haut de chaque page et fixe en bas de l'écran sur mobile.",
+          "Un bouton qui dit ce qui va se passer : « Réserver une première séance » plutôt que « Envoyer » ou « En savoir plus ».",
+          "Une étape intermédiaire pour les plus hésitants : un appel découverte gratuit de 15 minutes, si vous savez le transformer en rendez-vous.",
+          "Un formulaire de contact minimal : nom, moyen de contact, disponibilités. Pas de champ « décrivez votre problème ».",
+          "Un rappel automatique la veille de la séance par SMS ou email, pour réduire les oublis.",
+          "Votre numéro cliquable sur mobile, avec vos horaires de rappel indiqués à côté.",
+        ],
+      },
+      {
+        heading: "Conseil 9 : un design apaisant, mais surtout lisible",
+        paragraphs: [
+          "Tons doux, verts naturels, bleus calmes, couleurs terre : les palettes apaisantes ont du sens pour un thérapeute. Le piège est de tout mettre en pastel, jusqu'à rendre le texte gris clair sur fond beige difficile à lire. Un site apaisant est d'abord un site où l'on trouve l'information sans effort.",
+        ],
+        list: [
+          "Une couleur réservée aux boutons de rendez-vous, et à rien d'autre : l'œil la repère immédiatement.",
+          "Un texte d'au moins 16 pixels, bien contrasté, avec des paragraphes courts et des intertitres.",
+          "Vos propres photos (vous, votre cabinet, la salle d'attente), même prises au smartphone, plutôt que des images de banque vues partout.",
+          "Un site pensé d'abord pour le téléphone : c'est là que la majorité de vos visiteurs vous découvrent.",
+          "Un site rapide : testez-le sur PageSpeed Insights (gratuit, par Google). En dessous de 50 sur mobile, il y a du travail sur les images et l'hébergement.",
+          "Un menu court : Accueil, Accompagnements, Première séance, À propos, Tarifs, et le bouton de rendez-vous.",
+        ],
+      },
+      {
+        heading: "Conseil 10 : confiance, confidentialité et règles à respecter",
+        paragraphs: [
+          "Les personnes qui consultent un thérapeute partagent des informations intimes. Votre site doit montrer que vous en prenez soin, et respecter les règles qui encadrent votre activité.",
+        ],
+        callout: {
+          title: "Pas de promesse de guérison",
+          text: "« Guérissez de l'anxiété en 3 séances » attire peut-être des clics, mais c'est une promesse que vous ne pouvez pas garantir, contraire à l'éthique de la plupart des professions d'accompagnement et risquée juridiquement. Décrivez ce que vous faites et comment, sans garantir de résultat.",
+        },
+        list: [
+          "Mentions légales complètes : nom, statut, SIRET, adresse, hébergeur du site. Pour un psychologue, le numéro ADELI ou RPPS.",
+          "Une politique de confidentialité conforme au RGPD, qui explique quelles données vous collectez, pourquoi et combien de temps vous les gardez.",
+          "Un site en HTTPS (le cadenas dans la barre d'adresse), indispensable dès qu'il y a un formulaire.",
+          "Des données de santé protégées : si votre site ou votre application stocke des informations médicales sur vos patients, elles doivent être hébergées chez un hébergeur certifié HDS (Hébergeur de Données de Santé).",
+          "Des témoignages avec prudence : certaines professions de santé encadrent strictement la publicité et les témoignages. Vérifiez les règles de votre profession, demandez toujours un accord écrit et anonymisez.",
+          "Une mention d'urgence visible : vous n'êtes pas un service d'urgence. Rappelez le 15 et le 3114 (prévention du suicide, 24h/24) pour les situations de détresse.",
+        ],
+      },
+      {
+        heading: "Être trouvé par les personnes près de chez vous",
+        subsections: [
+          {
+            heading: "Conseil 11 : soignez votre présence locale sur Google",
+            paragraphs: [
+              "La plupart des recherches de thérapeute contiennent une ville : « naturopathe Quimper », « psychologue enfant Brest ». Commencez par la fiche Google Business Profile, gratuite : bonne catégorie, adresse, horaires, photos du cabinet, description qui reprend votre phrase « J'aide [qui] à [quoi] », et un lien vers votre site.",
+              "Sur le site, chaque page doit avoir un titre qui contient votre métier et votre ville, par exemple « Sophrologue à Brest | Prénom Nom ». Inscrivez-vous aussi sur les annuaires de votre profession avec un lien vers votre site, et utilisez exactement le même nom, la même adresse et le même numéro partout. Enfin, quand votre déontologie le permet, proposez un avis Google en fin d'accompagnement avec un lien direct : c'est l'un des signaux qui comptent le plus pour apparaître dans la carte.",
+            ],
+          },
+          {
+            heading: "Conseil 12 : un blog qui répond aux vraies questions",
+            paragraphs: [
+              "Un article par mois suffit, à condition de répondre à une question que vos clients se posent vraiment. Reprenez votre carnet de phrases du conseil 2 : chaque question entendue au téléphone est un sujet d'article. Par exemple : « Comment se passe une séance d'hypnose ? », « Sophrologie ou méditation : quelle différence ? », « Faut-il consulter pour un enfant qui ne dort pas ? », « Combien de séances faut-il prévoir ? ».",
+              "Chaque article se termine par un lien vers l'accompagnement correspondant et le bouton de rendez-vous. Ces contenus rassurent les visiteurs qui hésitent encore et attirent, avec le temps, des personnes qui ne vous connaissaient pas.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Les erreurs qui font fuir les visiteurs",
+        list: [
+          "Une page d'accueil qui commence par « Bienvenue sur mon site » : le premier titre doit dire qui vous aidez.",
+          "Des photos de galets, de mains en lotus et de couchers de soleil, mais aucune photo de vous.",
+          "Un vocabulaire de formation (« approche systémique intégrative ») que vos clients n'utilisent jamais.",
+          "Aucun tarif, aucune durée de séance : le visiteur n'ose pas demander et part ailleurs.",
+          "Un seul moyen de contact, le téléphone, alors que beaucoup de gens cherchent le soir.",
+          "Un site lent ou mal affiché sur mobile.",
+          "Des promesses de résultat garanti, qui inquiètent autant qu'elles attirent.",
+          "Un site jamais mis à jour : une actualité de 2021 en page d'accueil laisse penser que vous avez arrêté.",
+        ],
+      },
+      {
+        heading: "Votre plan d'action en 7 jours",
+        paragraphs: [
+          "Pas besoin de tout refaire. Une tâche par jour, de 30 minutes à une heure, et votre site aura changé d'ici la semaine prochaine.",
+        ],
+        table: {
+          head: ["Jour", "Action", "Résultat"],
+          rows: [
+            ["1", "Faire le test des 5 secondes avec deux proches", "Vous savez ce qui manque sur votre page d'accueil"],
+            ["2", "Écrire votre phrase « J'aide [qui] à [quoi] » et la mettre en titre", "Le visiteur sait tout de suite s'il est au bon endroit"],
+            ["3", "Remplacer les images de banque par vos propres photos", "Votre site inspire confiance"],
+            ["4", "Ajouter vos tarifs, la durée des séances et les infos pratiques", "Moins de visiteurs qui partent sans demander"],
+            ["5", "Rédiger la page « Votre première séance »", "Les plus hésitants osent réserver"],
+            ["6", "Mettre un bouton de réservation identique sur chaque page", "Réserver devient évident, y compris sur mobile"],
+            ["7", "Compléter votre fiche Google Business Profile", "Vous apparaissez dans les recherches locales"],
+          ],
+        },
+      },
+      {
+        heading: "Site vitrine, réservation en ligne ou application : par où commencer ?",
+        paragraphs: [
+          "Pour la plupart des praticiens, la bonne base est un site vitrine clair avec réservation en ligne intégrée. C'est ce qui fait venir de nouveaux clients. Si vous accompagnez vos clients sur la durée (programmes, exercices entre les séances, suivi d'humeur, audios de relaxation), une application à votre nom prolonge le lien entre deux rendez-vous. Les deux approches sont présentées sur les pages [Site web](/services/site-web) et [Application santé & bien-être](/services/secteur/sante-bien-etre).",
+          "Je suis développeur freelance basé à Brest et je crée des sites et des applications pour des praticiens du Finistère et de toute la France : psychologues, sophrologues, naturopathes, hypnothérapeutes, coachs. Décrivez-moi votre pratique via le [formulaire en bas de page](#contact) : je vous réponds sous 24h avec un devis gratuit.",
+        ],
+      },
+      {
+        heading: "FAQ : site internet de thérapeute",
+        list: [
+          "Quelles pages doit contenir le site d'un thérapeute ? Au minimum une page d'accueil, une page « À propos », une page par accompagnement, une page tarifs et infos pratiques, une page de prise de rendez-vous, les mentions légales et la politique de confidentialité. Une page « Votre première séance » est fortement recommandée.",
+          "Faut-il afficher ses tarifs sur son site de thérapeute ? Oui. Le prix est l'une des premières informations recherchées. L'afficher, même sous forme de fourchette, rassure le visiteur et vous évite des demandes qui n'aboutiront pas.",
+          "Un thérapeute peut-il publier des témoignages de clients ? Cela dépend de la profession. Certaines professions de santé encadrent la publicité et les témoignages. Vérifiez les règles qui s'appliquent à votre métier, demandez un accord écrit et anonymisez toujours les témoignages.",
+          "Combien de temps faut-il pour créer un site de thérapeute ? Comptez quelques semaines entre la rédaction des textes, les photos et la mise en ligne. Le plus long est souvent de rassembler les contenus : commencez par votre phrase d'accroche et vos tarifs.",
+          "Mon site doit-il être hébergé chez un hébergeur HDS ? Seulement s'il stocke des données de santé sur vos patients (dossiers, comptes rendus, questionnaires médicaux). Un site vitrine avec un formulaire de contact minimal n'en a pas besoin, mais doit respecter le RGPD.",
+          "Comment être trouvé sur Google quand on est thérapeute ? Créez votre fiche Google Business Profile, mettez votre métier et votre ville dans le titre de vos pages, créez une page par accompagnement, inscrivez-vous sur les annuaires de votre profession et publiez régulièrement des articles qui répondent aux questions de vos clients.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
