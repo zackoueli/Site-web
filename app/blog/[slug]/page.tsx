@@ -568,7 +568,7 @@ export default async function ArticlePage({ params }: Props) {
         {article.slug === "panel-admin-site-web-application-mobile" && (
           <div className="mt-12 brutal-border bg-[#FFFBF0] p-6">
             <p className="mono text-xs font-bold text-gray-400 mb-4">// voir par secteur</p>
-            <p className="font-bold text-lg mb-4">Découvrez le panel admin de votre secteur</p>
+            <p className="font-bold text-lg mb-4">Découvrez l&apos;offre de votre secteur</p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="/blog/panel-admin-salon-coiffure"
@@ -577,16 +577,16 @@ export default async function ArticlePage({ params }: Props) {
                 Panel admin coiffeur →
               </Link>
               <Link
-                href="/blog/panel-admin-restaurant-pizzeria"
+                href="/services/secteur/restaurant"
                 className="brutal-btn bg-[#FF6B35] text-white px-5 py-3 text-sm font-bold"
               >
-                Panel admin restaurant →
+                Application restaurant →
               </Link>
               <Link
-                href="/blog/panel-admin-boutique-ecommerce"
+                href="/services/ecommerce"
                 className="brutal-btn bg-[#FF6B9D] text-white px-5 py-3 text-sm font-bold"
               >
-                Panel admin boutique →
+                Boutique en ligne →
               </Link>
             </div>
           </div>

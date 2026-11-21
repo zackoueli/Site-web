@@ -80,8 +80,6 @@ Brest, Quimper, Morlaix, Rennes, Nantes — et toute la France.
 - [Blog & guides](https://breizhapp.tech/blog)
 - [Panel admin site web & application mobile](https://breizhapp.tech/blog/panel-admin-site-web-application-mobile)
 - [Panel admin salon de coiffure](https://breizhapp.tech/blog/panel-admin-salon-coiffure)
-- [Panel admin restaurant & pizzeria](https://breizhapp.tech/blog/panel-admin-restaurant-pizzeria)
-- [Panel admin boutique e-commerce](https://breizhapp.tech/blog/panel-admin-boutique-ecommerce)
 
 ## Contact
 

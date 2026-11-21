@@ -15,7 +15,7 @@ const STATIC_PAGES: MetadataRoute.Sitemap = [
   { url: "https://breizhapp.tech/services/secteur/restaurant",                    lastModified: new Date("2026-10-01"), changeFrequency: "monthly", priority: 0.9 },
   { url: "https://breizhapp.tech/services/secteur/coiffeur",                      lastModified: new Date("2026-10-01"), changeFrequency: "monthly", priority: 0.85 },
   { url: "https://breizhapp.tech/services/secteur/hotel",                         lastModified: new Date("2026-10-01"), changeFrequency: "monthly", priority: 0.85 },
-  { url: "https://breizhapp.tech/services/secteur/salle-de-sport",                lastModified: new Date("2026-10-01"), changeFrequency: "monthly", priority: 0.85 },
+  { url: "https://breizhapp.tech/services/secteur/salle-de-sport",                lastModified: new Date("2026-11-21"), changeFrequency: "monthly", priority: 0.85 },
   { url: "https://breizhapp.tech/services/secteur/maraicher-commerce-local",      lastModified: new Date("2026-10-01"), changeFrequency: "monthly", priority: 0.85 },
   { url: "https://breizhapp.tech/services/secteur/jeu-mobile",                    lastModified: new Date("2026-09-30"), changeFrequency: "monthly", priority: 0.85 },
   { url: "https://breizhapp.tech/services/secteur/portfolio-vitrine",             lastModified: new Date("2026-09-30"), changeFrequency: "monthly", priority: 0.85 },

@@ -32,6 +32,10 @@ const faq = [
     a: "Les logiciels du marché fonctionnent par abonnement mensuel et proposent la même application à toutes les salles, avec votre logo. Une application sur mesure suit vos règles (cours, crédits, niveaux), porte vraiment votre marque et vous appartient. Si votre logiciel propose une API, les deux peuvent être connectés.",
   },
   {
+    q: "Une app sur mesure est-elle rentable face à Mindbody ou Glofox ?",
+    a: "Ces logiciels coûtent chaque mois, souvent plus de 100 € hors modules, et cet abonnement ne s'arrête jamais. Une application sur mesure est un investissement de départ plus l'hébergement : pour une salle de 200 à 500 membres, elle se rentabilise en quelques années, et elle ouvre de nouveaux revenus (programmes en ligne, coaching à distance).",
+  },
+  {
     q: "Mes membres peuvent-ils payer et renouveler leur abonnement dans l'app ?",
     a: "Oui. Abonnement mensuel, carte de 10 séances ou offre annuelle : le paiement passe par Stripe (carte, Apple Pay, Google Pay, prélèvement SEPA). Le membre retrouve son historique et ses factures dans son espace, et je ne prends aucune commission sur vos ventes.",
   },
@@ -150,8 +154,8 @@ export default function SalleDesSportPage() {
                 <a href="#contact" className="brutal-btn bg-[#0A0A0A] text-[#FFFBF0] px-8 py-4">
                   Demander un devis gratuit
                 </a>
-                <Link href="/blog/application-mobile-salle-sport-fitness" className="brutal-btn bg-[#00D4AA] text-[#0A0A0A] px-8 py-4">
-                  Guide app fitness →
+                <Link href="/blog/comment-fideliser-clients-application-mobile" className="brutal-btn bg-[#00D4AA] text-[#0A0A0A] px-8 py-4">
+                  Guide fidélisation →
                 </Link>
               </div>
             </div>

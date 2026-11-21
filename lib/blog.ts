@@ -371,30 +371,74 @@ export const articles: Article[] = [
     service: "application-mobile",
     title: "React Native vs Flutter 2026 : lequel choisir ?",
     description:
-      "React Native ou Flutter pour votre app iOS & Android ? Performance, coût, écosystème : le comparatif complet d'un développeur freelance en 2026.",
+      "React Native ou Flutter, cross-platform ou natif ? Performance, coût, écosystème : le comparatif complet d'un développeur freelance pour votre app iOS & Android.",
     date: "2026-05-11",
-    lastModified: "2026-10-12",
+    lastModified: "2026-11-21",
     category: "Tech",
     sections: [
       {
         paragraphs: [
-          "Quand un client me demande avec quoi je vais développer son application, la question « React Native ou Flutter ? » revient souvent. Ce sont les deux technologies les plus utilisées pour créer une seule application qui fonctionne à la fois sur iPhone et sur Android, et toutes les deux produisent de vraies applications publiées sur les stores.",
-          "Elles n'ont pourtant pas les mêmes forces. Voici mon analyse après avoir travaillé avec les deux, et pourquoi j'utilise React Native pour mes projets clients.",
+          "Quand un client me demande avec quoi je vais développer son application, deux questions reviennent : faut-il une application native ou cross-platform ? Et si c'est du cross-platform, React Native ou Flutter ?",
+          "Ce guide répond aux deux. D'abord ce que le cross-platform change pour votre budget et vos délais, puis le match entre les deux technologies qui dominent ce marché en 2026, et enfin mon verdict après avoir travaillé avec les deux.",
+        ],
+      },
+      {
+        heading: "Natif ou cross-platform : de quoi parle-t-on ?",
+        paragraphs: [
+          "Une application native est codée deux fois : en Swift pour iOS, en Kotlin pour Android, souvent par deux développeurs différents. Une application cross-platform est développée à partir d'une seule base de code, qui fonctionne à la fois sur iPhone et sur Android. React Native et Flutter sont les deux technologies cross-platform les plus utilisées, et toutes les deux produisent de vraies applications publiées sur l'App Store et Google Play, pas des sites web déguisés.",
+        ],
+        table: {
+          head: ["", "Natif", "Cross-platform"],
+          rows: [
+            ["Bases de code", "Deux, à développer et maintenir en parallèle", "Une seule"],
+            ["Budget et délais", "Doublés pour chaque évolution", "Un seul développement"],
+            ["Performances", "Maximales, utiles pour les jeux 3D", "Très proches du natif pour la grande majorité des apps"],
+            ["Fonctions du téléphone", "Accès immédiat aux toutes dernières nouveautés", "Accès à l'essentiel : caméra, GPS, notifications, paiement"],
+            ["Publication", "Deux projets séparés", "Simultanée sur l'App Store et Google Play"],
+          ],
+        },
+      },
+      {
+        heading: "Les avantages concrets du cross-platform",
+        subsections: [
+          {
+            heading: "Du temps et du budget économisés",
+            paragraphs: [
+              "Une seule base de code à écrire, tester et maintenir suffit pour toucher tous les utilisateurs mobiles. En natif, il faudrait deux équipes ou deux développements distincts, et donc presque deux fois le budget.",
+            ],
+          },
+          {
+            heading: "La même expérience sur iPhone et Android",
+            paragraphs: [
+              "Les fonctionnalités, le design et les comportements sont identiques sur les deux plateformes. Aucun de vos clients n'a droit à une version au rabais, ni à une version en retard de trois mois.",
+            ],
+          },
+          {
+            heading: "Une maintenance simplifiée",
+            paragraphs: [
+              "Une correction ou une nouvelle fonctionnalité se déploie en une seule fois pour les deux plateformes. C'est aussi ce qui garde le [coût de maintenance](/blog/cout-maintenance-application-mobile) raisonnable sur la durée.",
+            ],
+          },
+        ],
+      },
+      {
+        paragraphs: [
+          "Le natif garde sa place pour des cas précis : jeux 3D exigeants, réalité augmentée poussée, ou application qui doit exploiter une fonction du téléphone sortie la semaine dernière. Pour un commerce, un restaurant, une application de réservation ou une marketplace, le cross-platform est aujourd'hui le choix par défaut, y compris chez Instagram, Discord ou Shopify.",
         ],
       },
       {
         heading: "React Native : le JavaScript au service du mobile",
         paragraphs: [
-          "React Native est maintenu par Meta, la maison mère de Facebook. Il permet d'écrire l'application en JavaScript ou en TypeScript, les langages du web, et de produire une application native pour iOS et Android à partir d'une seule base de code.",
-          "Son premier atout, c'est son écosystème : des milliers de bibliothèques existent déjà pour le paiement, les cartes, les notifications ou l'authentification, et il s'intègre très bien avec Firebase, Stripe ou n'importe quelle API. Son deuxième atout, c'est la rapidité de développement : chaque modification s'affiche en temps réel, sans recompiler l'application.",
-          "C'est aussi une technologie éprouvée à grande échelle, utilisée par Facebook, Instagram, Shopify ou Airbnb. Pour un client, cela signifie un outil durable et des développeurs faciles à trouver si un jour le projet doit changer de mains.",
+          "React Native est maintenu par Meta, la maison mère de Facebook. Il permet d'écrire l'application en JavaScript ou en TypeScript, les langages du web, et utilise les vrais composants du téléphone pour l'affichage : un bouton sur iPhone ressemble à un bouton iPhone.",
+          "Son premier atout est son écosystème : des milliers de bibliothèques existent déjà pour le paiement, les cartes, les notifications ou la connexion, et il s'intègre très bien avec Firebase, Stripe ou n'importe quelle API. En 2026, il s'utilise presque toujours avec Expo, une boîte à outils qui simplifie la compilation, les mises à jour et la publication sur les stores.",
+          "Son deuxième atout tient au recrutement : les développeurs JavaScript sont bien plus nombreux que les développeurs Dart. Pour vous, cela signifie un outil durable, et un projet facile à reprendre par un autre développeur si un jour il doit changer de mains. Sa nouvelle architecture, désormais activée par défaut, a aussi comblé l'essentiel de l'écart de performance qui existait avec Flutter.",
         ],
       },
       {
         heading: "Flutter : le choix de Google",
         paragraphs: [
-          "Flutter est développé par Google et utilise le langage Dart. Sa particularité : au lieu d'utiliser les composants du téléphone, il redessine lui-même chaque pixel de l'interface. Il garde ainsi un contrôle total sur le rendu, identique au pixel près sur iOS et Android.",
-          "Ce choix lui donne d'excellentes performances graphiques, idéales pour les animations complexes, les interfaces très personnalisées ou les jeux légers. Sa limite tient surtout au langage : Dart est beaucoup moins répandu que JavaScript, ce qui réduit le nombre de bibliothèques et de développeurs disponibles.",
+          "Flutter est développé par Google et utilise le langage Dart. Sa particularité : au lieu d'utiliser les composants du téléphone, il redessine lui-même chaque pixel de l'interface avec son propre moteur graphique. Le rendu est donc identique au pixel près sur iOS et Android.",
+          "Ce choix lui donne d'excellentes performances graphiques, idéales pour les animations complexes, les interfaces très personnalisées ou les jeux légers. Son outillage est aussi très intégré, et il vise plus facilement le web et l'ordinateur en plus du mobile. Sa limite tient surtout au langage : Dart est beaucoup moins répandu que JavaScript, ce qui réduit le nombre de bibliothèques et de développeurs disponibles.",
         ],
       },
       {
@@ -404,18 +448,29 @@ export const articles: Article[] = [
           rows: [
             ["Créateur", "Meta", "Google"],
             ["Langage", "JavaScript / TypeScript", "Dart"],
-            ["Écosystème", "Très riche, issu du web", "Plus restreint"],
             ["Rendu", "Composants natifs du téléphone", "Moteur graphique propre"],
-            ["Points forts", "Intégrations, rapidité, recrutement", "Animations, rendu identique partout"],
-            ["Idéal pour", "Commerces, services, marketplaces", "Apps très graphiques, jeux légers"],
+            ["Écosystème", "Très riche, issu du web", "Plus restreint, mais bien outillé"],
+            ["Développeurs disponibles", "Très nombreux", "Moins nombreux"],
+            ["Points forts", "Intégrations, rendu natif, reprise du projet", "Animations, rendu identique partout"],
+            ["Idéal pour", "Commerces, services, réservation, marketplaces", "Apps très graphiques, jeux légers"],
           ],
         },
       },
       {
         heading: "Mon verdict pour les projets clients",
         paragraphs: [
-          "Pour 90 % des projets que je réalise (restaurants, commerces, réservation, marketplaces), React Native est le meilleur choix. L'écosystème est plus riche, l'intégration avec les services tiers est meilleure, et la reprise du projet par un autre développeur sera plus facile si besoin. C'est la technologie que j'utilise pour la [création d'applications mobiles](/services/application-mobile) de mes clients.",
-          "Flutter reste un excellent choix pour des applications très graphiques ou des jeux mobiles où le rendu au pixel près est décisif. Dans tous les cas, les deux frameworks produisent de vraies applications natives disponibles sur l'App Store et Google Play, et non des sites web déguisés en application.",
+          "Pour la grande majorité des projets que je réalise (restaurants, commerces, réservation, marketplaces), React Native est le meilleur choix. L'écosystème est plus riche, l'intégration avec les services tiers est meilleure, l'application a le rendu natif que vos clients attendent, et la reprise du projet par un autre développeur sera plus facile si besoin. C'est la technologie que j'utilise pour la [création d'applications mobiles](/services/application-mobile) de mes clients.",
+          "Flutter reste un excellent choix pour des applications très graphiques, où le rendu au pixel près est décisif. Dans tous les cas, la vraie question n'est pas le framework, mais la qualité du code et l'expérience du développeur qui l'écrit. Vous avez un projet ? Décrivez-le via le [formulaire en bas de page](#contact), je vous réponds sous 24h.",
+        ],
+      },
+      {
+        heading: "FAQ : React Native, Flutter et cross-platform",
+        list: [
+          "Le cross-platform est-il aussi performant que le natif ? Pour la grande majorité des usages (commerce, réservation, contenu, communauté), oui. Seules les applications aux besoins matériels très poussés, comme les jeux 3D, gardent un écart notable.",
+          "React Native ou Flutter, lequel est le plus rapide ? En 2026, l'écart est devenu minime pour une application classique. Flutter garde un léger avantage sur les animations très complexes.",
+          "Mon application sera-t-elle refusée par Apple parce qu'elle est en React Native ? Non. Instagram, Discord ou Shopify utilisent React Native. Apple refuse les applications qui ne sont qu'un site web dans une coquille, ce qui n'a rien à voir.",
+          "Puis-je migrer une application native existante vers React Native ? Oui, en repartant du fonctionnement de l'application existante. J'étudie la faisabilité lors d'un premier échange.",
+          "Un autre développeur pourra-t-il reprendre mon application ? Oui, c'est l'un des points forts de React Native : JavaScript est le langage le plus répandu, et le code vous appartient.",
         ],
       },
     ],
@@ -852,72 +907,6 @@ export const articles: Article[] = [
     ],
   },
   {
-    slug: "comparatif-createurs-site-web-prix",
-    image: {
-      src: "/blog/comparatif-createurs-site-web-prix-2025.jpg",
-      alt: "Ordinateur portable, tablette et smartphone alignés sur un bureau, chacun affichant un site web",
-      credit: "Image : Artlist",
-    },
-    service: "site-web",
-    title: "Wix, Squarespace, Webflow : comparatif prix 2026",
-    description:
-      "Comparatif prix 2026 : Wix, Squarespace, Webflow, Jimdo, WordPress.com. Quel créateur de site est le moins cher, et quand choisir une solution sur mesure ?",
-    date: "2026-04-20",
-    lastModified: "2026-10-01",
-    category: "Comparatifs",
-    sections: [
-      {
-        paragraphs: [
-          "Vous voulez créer un site professionnel et vous comparez les créateurs de sites ? Wix, Squarespace, Webflow, Jimdo, Ionos, GoDaddy : chaque plateforme a sa grille tarifaire, ses avantages et ses pièges, et les comparer n'est pas simple tant les formules se ressemblent.",
-          "Voici le comparatif des prix en 2026, ce que ces outils ont tous en commun, et comment choisir selon votre besoin.",
-        ],
-      },
-      {
-        heading: "Prix des créateurs de sites en 2026",
-        paragraphs: [
-          "Voici les tarifs mensuels des formules adaptées à un site professionnel (domaine personnalisé, sans publicité), en paiement annuel. En paiement mensuel, comptez 20 à 40 % de plus. Les prix évoluent régulièrement : vérifiez-les sur le site de chaque plateforme avant de vous engager.",
-        ],
-        table: {
-          head: ["Plateforme", "Prix mensuel (annuel)", "Pour qui"],
-          rows: [
-            ["Wix", "Light environ 17 €, Core environ 29 €", "Core est la formule nécessaire pour un site pro complet"],
-            ["Squarespace", "Basic 12 €, Essentiel 18 €", "Beaux modèles, 0 % de frais de vente en Essentiel"],
-            ["Jimdo", "Start 9 €, Grow 15 €", "Sites simples, SEO et fonctionnalités basiques"],
-            ["Ionos MyWebsite", "environ 5 à 10 €", "Petits budgets, souvent une promotion la 1re année"],
-            ["GoDaddy", "environ 9 à 10 €", "Offre de base pour démarrer"],
-            ["Webflow", "Basic 15 $ (25 $ au mois)", "Designers, courbe d'apprentissage élevée"],
-            ["WordPress.com", "Business 25 $", "Plus flexible, extensions installables"],
-          ],
-        },
-      },
-      {
-        heading: "Le piège commun à tous ces créateurs de sites",
-        paragraphs: [
-          "Tous ces outils partagent le même modèle économique : vous êtes locataire. Votre site vit sur leurs serveurs, dans leur écosystème. Si la plateforme ferme, augmente ses prix ou change ses conditions, vous n'avez aucun recours, et migrer vers un autre hébergeur est impossible ou très difficile.",
-          "Ce modèle a d'autres conséquences. Le référencement est plafonné, un site sur plateforme se classant généralement moins bien qu'un site sur mesure. La personnalisation reste enfermée dans les modèles et les contraintes de l'éditeur. Et sur trois à cinq ans, le coût cumulé dépasse souvent celui d'un site sur mesure.",
-        ],
-        callout: {
-          title: "Et pas d'application mobile",
-          text: "Aucun de ces créateurs de sites ne vous permettra de créer une vraie application mobile iOS et Android à votre nom.",
-        },
-      },
-      {
-        heading: "Quel créateur de site choisir selon votre besoin ?",
-        paragraphs: [
-          "Pour un site vitrine simple d'artisan ou de profession libérale, Ionos ou GoDaddy conviennent si le budget est serré, et Squarespace si l'esthétique compte avant tout. Pour une boutique en ligne, Shopify reste la référence, à condition de bien regarder les commissions.",
-          "Pour un blog ou un site de contenu, WordPress.com ou la formule Core de Wix font l'affaire. Pour un site très personnalisé, de designer ou d'agence, Webflow est le plus souple. En revanche, si vous voulez aussi une application mobile, aucun de ces outils ne pourra vous suivre.",
-        ],
-      },
-      {
-        heading: "L'alternative sur mesure : moins chère sur la durée",
-        paragraphs: [
-          "Un site sur mesure ou une application mobile développée par un freelance coûte plus cher au départ, mais vous appartient définitivement. Sur trois ans, un site Wix Core à environ 29 € par mois, plus les applications ajoutées, revient facilement à 1 000 € à 1 500 € pour un résultat standard.",
-          "Un site sur mesure se rentabilise en quelques années, et vous pouvez le déplacer, le faire évoluer, voire le vendre. Et si vous êtes restaurateur, coiffeur, commerçant ou prestataire de services, une application mobile à votre nom va bien plus loin que n'importe quel créateur de site. Devis gratuit sous 24h.",
-        ],
-      },
-    ],
-  },
-  {
     slug: "tarif-creation-site-internet",
     image: {
       src: "/blog/tarif-creation-site-internet-2025.jpg",
@@ -927,68 +916,220 @@ export const articles: Article[] = [
     service: "site-web",
     title: "Tarif création site internet 2026 : le vrai prix",
     description:
-      "Quel est le prix d'un site internet en 2026 ? Constructeur (Wix, Squarespace), WordPress, freelance ou agence : comparatif complet des tarifs de création.",
+      "Quel est le prix d'un site internet en 2026 ? Wix, WordPress, freelance ou agence : comparatif des tarifs, coûts cachés et pièges du devis.",
     date: "2026-04-20",
-    lastModified: "2026-10-01",
+    lastModified: "2026-11-21",
     category: "Tarifs",
     sections: [
       {
         paragraphs: [
-          "« Combien coûte un site internet ? » C'est l'une des questions les plus posées sur Google, et la réponse va de 0 € pour un site Wix gratuit à 80 000 € pour une agence digitale grand compte. Entre les deux, quatre grandes options, chacune avec ses avantages et ses coûts cachés.",
-          "Voici un guide honnête des tarifs réels en 2026, pour vous aider à choisir selon votre besoin et votre budget.",
+          "« Combien coûte un site internet ? » C'est l'une des questions les plus posées sur Google, et la réponse va de 0 € pour un site Wix gratuit à plusieurs dizaines de milliers d'euros pour une agence. Entre les deux, quatre grandes options, chacune avec ses avantages, ses limites et ses coûts cachés.",
+          "Ce guide réunit tout ce qu'il faut savoir pour choisir : les tarifs réels de chaque option, ce que coûte un site sur trois ans (pas seulement le jour de la mise en ligne), le match WordPress contre sur mesure, et les questions à poser avant de signer un devis.",
         ],
       },
       {
         heading: "Les quatre options en un coup d'œil",
         table: {
-          head: ["Option", "Budget", "Ce que vous obtenez"],
+          head: ["Option", "Budget de départ", "Ce que vous obtenez"],
           rows: [
-            ["Créateur de site", "9 à 30 €/mois", "Un site rapide à lancer, que vous louez"],
-            ["WordPress", "250 à 600 € sur 2 ans", "Un site personnalisable, si vous gérez la technique"],
-            ["Freelance", "Quelques milliers d'euros", "Un site sur mesure qui vous appartient"],
-            ["Agence web", "3 000 à 80 000 €", "Une équipe complète pour les gros projets"],
+            ["Créateur de site (Wix, Squarespace…)", "9 à 30 €/mois", "Un site rapide à lancer, que vous louez"],
+            ["WordPress", "250 à 600 € sur 2 ans en le faisant vous-même", "Un site personnalisable, si vous gérez la technique"],
+            ["Développeur freelance", "1 500 à 6 000 € selon le type de site", "Un site sur mesure qui vous appartient"],
+            ["Agence web", "3 000 à 50 000 € et plus", "Une équipe complète pour les gros projets"],
           ],
         },
       },
       {
-        heading: "Option 1 : les créateurs de sites (Wix, Squarespace, Jimdo…)",
         paragraphs: [
-          "Ces plateformes permettent de créer un site sans coder, ce qui en fait une bonne solution pour un premier site vitrine rapide. Comptez environ 9 à 30 € par mois pour une formule professionnelle, jusqu'à 69 € pour les formules haut de gamme, soit 200 à 750 € sur deux ans pour l'abonnement seul.",
-          "Leur avantage est évident : la mise en place est rapide et ne demande aucune compétence technique. Leurs limites aussi : le site ne vous appartient pas, le référencement est limité, aucune application mobile n'est possible et vous êtes enfermé dans la plateforme.",
+          "Pour situer ces chiffres, le baromètre de La Fabrique du Net, établi sur plus de 3 000 projets réels, place le budget médian d'un site internet professionnel autour de 5 000 €. La moitié des entreprises dépensent donc moins, l'autre moitié davantage, et l'écart dépend surtout du type de site et du prestataire choisi.",
         ],
       },
       {
-        heading: "Option 2 : WordPress avec hébergement",
+        heading: "Option 1 : les créateurs de sites (Wix, Squarespace, Webflow…)",
         paragraphs: [
-          "WordPress, installé sur votre propre hébergement, est la solution la plus répandue au monde. Vous choisissez un hébergeur, installez WordPress, ajoutez un thème et le personnalisez.",
-          "Le budget se décompose ainsi : 3 à 15 € par mois d'hébergement (OVH, Infomaniak, o2switch), 50 à 150 € pour un thème premium (Astra, Divi, Elementor Pro) et 50 à 200 € par an d'extensions. Si vous faites tout vous-même, comptez 250 à 600 € sur deux ans. Mais la maintenance et la sécurité sont à votre charge, ou à déléguer pour 50 à 150 € par mois, et l'ensemble demande du temps et des compétences techniques.",
+          "Ces plateformes permettent de créer un site sans coder, ce qui en fait une bonne solution pour un premier site vitrine rapide. Voici les tarifs mensuels des formules adaptées à un site professionnel (domaine personnalisé, sans publicité), en paiement annuel. En paiement mensuel, comptez 20 à 40 % de plus, et vérifiez les prix sur le site de chaque plateforme, car ils évoluent régulièrement.",
+        ],
+        table: {
+          head: ["Plateforme", "Prix mensuel (annuel)", "Pour qui"],
+          rows: [
+            ["Wix", "Light environ 17 €, Core environ 29 €", "Core est la formule nécessaire pour un site pro complet"],
+            ["Squarespace", "Basic 12 €, Essentiel 18 €", "Beaux modèles, 0 % de frais de vente en Essentiel"],
+            ["Jimdo", "Start 9 €, Grow 15 €", "Sites simples, référencement et fonctions basiques"],
+            ["Ionos MyWebsite", "environ 5 à 10 €", "Petits budgets, souvent une promotion la 1re année"],
+            ["GoDaddy", "environ 9 à 10 €", "Offre de base pour démarrer"],
+            ["Webflow", "Basic 15 $ (25 $ au mois)", "Designers, courbe d'apprentissage élevée"],
+            ["WordPress.com", "Business 25 $", "Plus flexible, extensions installables"],
+          ],
+        },
+      },
+      {
+        subsections: [
+          {
+            heading: "Le piège commun : vous êtes locataire",
+            paragraphs: [
+              "Tous ces outils partagent le même modèle : votre site vit sur leurs serveurs, dans leur écosystème. Si la plateforme augmente ses prix ou change ses conditions, vous n'avez aucun recours, et migrer ailleurs est impossible ou très difficile. La personnalisation reste enfermée dans les modèles de l'éditeur, le référencement est plafonné, et aucun de ces outils ne vous permettra de créer une vraie application mobile à votre nom.",
+              "Sur la durée, l'addition grimpe aussi. Un site Wix Core revient à environ 1 000 € sur trois ans, et bien plus si vous ajoutez des applications payantes, pour un site que vous ne possédez toujours pas.",
+            ],
+          },
+          {
+            heading: "Quel créateur choisir selon votre besoin ?",
+            paragraphs: [
+              "Pour un site vitrine simple avec un budget serré, Ionos ou GoDaddy font le travail, et Squarespace si l'esthétique compte avant tout. Pour un blog, WordPress.com ou Wix Core suffisent. Pour un site très personnalisé de designer, Webflow est le plus souple. Pour une boutique, Shopify reste la référence, à condition de bien regarder les commissions sur les ventes.",
+            ],
+          },
         ],
       },
       {
-        heading: "Option 3 : un développeur freelance",
+        heading: "Option 2 : WordPress",
         paragraphs: [
-          "Un freelance développe votre site sur mesure : design personnalisé, fonctionnalités adaptées à votre activité, référencement optimisé. Vous obtenez exactement ce dont vous avez besoin, ni plus ni moins, et vous êtes propriétaire de votre code, sans dépendre d'une plateforme.",
-          "Sur le marché, un site vitrine sur mesure se situe entre 1 500 € et 3 000 € selon les fonctionnalités, et un site e-commerce entre 2 000 € et 6 000 €. Une application mobile iOS et Android demande quelques milliers d'euros selon ses fonctionnalités. Site et application peuvent aussi être réalisés dans un seul projet, ce qui revient souvent moins cher que de passer par deux prestataires.",
+          "WordPress, installé sur votre propre hébergement, est le système de gestion de site le plus répandu au monde. Le logiciel est gratuit, mais tout le reste se paie : 3 à 15 € par mois d'hébergement (OVH, Infomaniak, o2switch), 50 à 150 € pour un thème premium et 50 à 200 € par an d'extensions. Si vous faites tout vous-même, comptez 250 à 600 € sur deux ans. Avec un freelance WordPress, un site vitrine se situe généralement entre 1 500 et 5 000 €.",
+        ],
+        subsections: [
+          {
+            heading: "Ce que WordPress fait bien",
+            paragraphs: [
+              "C'est une solution mature, avec plus de 60 000 extensions (formulaires, référencement, galeries, réservation) et une communauté gigantesque. Son interface permet de publier sans formation technique, et pour un blog ou un site éditorial qui publie beaucoup, c'est son terrain naturel.",
+            ],
+          },
+          {
+            heading: "Ses limites en 2026",
+            paragraphs: [
+              "La sécurité d'abord : WordPress est la première cible des pirates, et une extension oubliée lors des mises à jour suffit à ouvrir une faille. La vitesse ensuite : chaque extension alourdit le site, et les thèmes sont rarement optimisés pour les Core Web Vitals, les indicateurs de vitesse que Google prend en compte dans son classement. Enfin, la maintenance : les mises à jour cassent parfois une extension ou le thème, et la déléguer coûte 50 à 150 € par mois.",
+            ],
+          },
+        ],
+      },
+      {
+        paragraphs: [
+          "Sur trois ans, la comparaison avec un site sur mesure tourne souvent à l'avantage de ce dernier :",
+        ],
+        table: {
+          head: ["Solution", "Détail", "Coût sur 3 ans"],
+          rows: [
+            ["WordPress basique", "Thème + extensions + hébergement + maintenance déléguée", "environ 2 900 €"],
+            ["WordPress avec développeur", "Création + maintenance annuelle", "environ 3 300 €"],
+            ["Site sur mesure", "Création + hébergement léger, sans extensions à mettre à jour", "Le coût de création, presque rien ensuite"],
+          ],
+        },
+      },
+      {
+        heading: "Option 3 : un développeur freelance, site sur mesure",
+        paragraphs: [
+          "Un site sur mesure n'est pas un site Wix ou Shopify : il est développé pour votre activité, sans modèle générique et sans abonnement à une plateforme. Vous êtes propriétaire du code, libre de changer d'hébergeur ou de prestataire. Voici les fourchettes pratiquées par les freelances en 2026, selon le type de site.",
+        ],
+        table: {
+          head: ["Type de site", "Fourchette chez un freelance", "Pour qui"],
+          rows: [
+            ["Site vitrine", "1 500 € à 3 000 €", "Présenter son activité et être contacté"],
+            ["Site avec blog ou catalogue", "2 000 € à 4 000 €", "Publier régulièrement, présenter une offre large"],
+            ["Site e-commerce", "2 000 € à 6 000 €", "Vendre en ligne sans commission"],
+            ["Plateforme avec back-office", "3 000 € à 10 000 €", "Espace client, plusieurs rôles, outil métier"],
+          ],
+        },
+        subsections: [
+          {
+            heading: "Le site vitrine",
+            paragraphs: [
+              "Cinq à dix pages (accueil, services, à propos, contact), un design unique à vos couleurs plutôt qu'un modèle partagé avec des milliers d'autres sites, un référencement soigné dès le départ et un formulaire de contact qui arrive directement dans votre boîte mail.",
+            ],
+          },
+          {
+            heading: "Le site avec blog ou catalogue",
+            paragraphs: [
+              "On y ajoute un blog que vous alimentez seul, un catalogue ou un portfolio avec filtres, parfois une prise de rendez-vous ou un espace membre. C'est le format qui travaille le mieux le référencement sur la durée.",
+            ],
+          },
+          {
+            heading: "Le site e-commerce",
+            paragraphs: [
+              "Une boutique sur mesure ne prélève aucune commission sur vos ventes, là où Shopify prend de 0,5 % à 2 % selon la formule. Elle comprend le catalogue avec variantes et stocks, le paiement (carte, Apple Pay, Google Pay) et un [panel d'administration](/blog/panel-admin-site-web-application-mobile) pour gérer commandes, clients et produits.",
+            ],
+          },
+          {
+            heading: "La plateforme avec back-office",
+            paragraphs: [
+              "C'est une véritable application web : connexion avec plusieurs rôles (administrateur, client, partenaire), tableau de bord, base de données sécurisée et souvent une connexion à vos outils existants. Le guide [plateforme digitale sur mesure](/blog/creer-plateforme-digitale-sur-mesure) détaille ce format.",
+            ],
+          },
         ],
       },
       {
         heading: "Option 4 : une agence web",
         paragraphs: [
-          "Une agence met à disposition toute une équipe : chef de projet, designer, développeurs, référenceur. C'est adapté aux grandes entreprises et aux projets complexes, avec des budgets à la hauteur : 3 000 € à 15 000 € pour un site vitrine, 8 000 € à 50 000 € pour un site e-commerce et 15 000 € à 80 000 € pour une application mobile, avec des délais de un à six mois.",
+          "Une agence met à disposition toute une équipe : chef de projet, designer, développeurs, référenceur. C'est adapté aux grandes entreprises et aux projets complexes, avec des budgets à la hauteur : de 3 000 à 15 000 € pour un site vitrine, de 8 000 à 50 000 € pour un site e-commerce, et des délais de un à six mois.",
+          "À résultat comparable, une agence facture souvent deux à cinq fois plus qu'un freelance, parce qu'elle paie aussi ses locaux, ses commerciaux et ses chefs de projet. Le comparatif [freelance ou agence](/blog/developpeur-freelance-vs-agence) détaille les avantages de chaque formule.",
         ],
       },
       {
-        heading: "Quel tarif choisir selon votre profil ?",
+        heading: "Les coûts à prévoir après la mise en ligne",
         paragraphs: [
-          "Si vous démarrez avec moins de 200 € par an, commencez avec Wix ou Squarespace, en prévoyant de migrer plus tard. Si vous êtes artisan, commerçant ou prestataire de services, un freelance offre le meilleur rapport qualité-prix. Si vous vendez en ligne, regardez Shopify ou une boutique sur mesure.",
-          "Si vous avez besoin d'une application mobile, un développeur freelance est la seule option pour moins de 15 000 €. Et si vous êtes une grande entreprise avec plusieurs équipes à coordonner, une agence web reste le choix le plus adapté.",
+          "Le prix de création n'est que le début. Un site a aussi des frais annuels, qu'il faut connaître avant de comparer deux devis.",
+        ],
+        table: {
+          head: ["Poste", "Ordre de grandeur", "À savoir"],
+          rows: [
+            ["Nom de domaine", "10 à 20 €/an", "Il doit être enregistré à votre nom, pas à celui du prestataire"],
+            ["Hébergement", "0 à 30 €/mois", "Un site sur mesure léger coûte très peu à héberger"],
+            ["Maintenance", "0 à 150 €/mois", "Indispensable sur WordPress, beaucoup plus légère sur un site sur mesure"],
+            ["Abonnement plateforme", "9 à 40 €/mois", "Uniquement pour Wix, Squarespace, Shopify et équivalents"],
+            ["Refonte", "Plus chère qu'une création", "Un site bien construit dès le départ repousse la refonte de plusieurs années"],
+          ],
+        },
+      },
+      {
+        heading: "Ce qui fait varier le prix d'un devis",
+        paragraphs: [
+          "À type de site égal, le tarif final dépend de quelques facteurs : le nombre de pages et de fonctionnalités, la présence d'un espace d'administration, les connexions avec d'autres outils (paiement, réservation, CRM), le travail de design selon que vous avez déjà une charte graphique ou non, la rédaction des textes (fournis par vous ou rédigés pour vous) et le délai souhaité.",
+        ],
+        callout: {
+          title: "Les 6 questions à poser avant de signer",
+          text: "Le nom de domaine sera-t-il à mon nom ? Le code m'appartiendra-t-il ? Le référencement de base (titres, vitesse, mobile) est-il compris ? Les mentions légales et la gestion des cookies sont-elles prévues ? Que coûte une modification après la livraison ? Qui s'occupe des mises à jour, et à quel prix ? Ce qui n'est pas écrit dans le devis n'est pas prévu.",
+        },
+      },
+      {
+        heading: "Le cas des artisans et commerçants",
+        paragraphs: [
+          "Pour un plombier, un électricien, un menuisier ou un commerçant, le site est la première carte de visite : avant de vous appeler, vos prospects vous cherchent sur Google depuis leur téléphone. Un modèle Wix se reconnaît vite, et il est difficile d'inspirer confiance avec le même site que des milliers d'autres artisans. Le site d'un artisan doit surtout ressortir sur des recherches comme « plombier Brest » et transformer la visite en demande de devis.",
+        ],
+        table: {
+          head: ["Page", "Son rôle"],
+          rows: [
+            ["Accueil", "Votre activité, votre zone et un bouton d'appel ou de devis bien visible"],
+            ["Services", "Une page par prestation, avec les mots que tapent vos clients"],
+            ["Réalisations", "Des chantiers en photos avant et après, qui prouvent votre savoir-faire"],
+            ["Zones d'intervention", "Les communes couvertes, avec une page pour les villes principales"],
+            ["Contact et devis", "Un formulaire simple : type de travaux, surface, délai souhaité"],
+            ["À propos", "Votre parcours, vos certifications, vos assurances"],
+          ],
+        },
+      },
+      {
+        paragraphs: [
+          "Ajoutez à cela une fiche Google Business Profile soignée, le levier le plus puissant pour apparaître dans Google Maps, et des avis clients affichés sur le site : c'est ce trio qui fait sonner le téléphone.",
         ],
       },
       {
-        heading: "Mon offre : site web ou application mobile sur mesure",
+        heading: "Quelle option choisir selon votre profil ?",
         paragraphs: [
-          "Je suis développeur freelance basé à Brest, spécialisé dans les applications mobiles iOS et Android et les sites web sur mesure. Je travaille avec des TPE, artisans, restaurateurs et commerçants qui veulent une vraie présence numérique sans le budget d'une grande entreprise.",
-          "Décrivez-moi votre projet : je vous envoie un devis gratuit et détaillé sous 24h.",
+          "Si vous démarrez avec moins de 200 € par an, commencez avec Wix ou Squarespace, en sachant qu'il faudra migrer plus tard. Si vous publiez beaucoup de contenu, WordPress reste pertinent. Si vous êtes artisan, commerçant ou prestataire de services et que votre site doit vous apporter des clients, un freelance offre le meilleur rapport qualité-prix. Si vous vendez en ligne, comparez Shopify et une boutique sur mesure sur trois ans, commissions comprises.",
+          "Si vous avez aussi besoin d'une application mobile, aucun créateur de site ne pourra suivre : site et application peuvent alors être réalisés dans un seul projet. Et pour une grande entreprise avec plusieurs équipes à coordonner, une agence reste le choix le plus adapté.",
+        ],
+      },
+      {
+        heading: "Obtenir un devis précis pour votre site",
+        paragraphs: [
+          "Je suis développeur freelance basé à Brest et je crée des sites sur mesure pour des TPE, artisans, restaurateurs et commerçants. Mes tarifs sont affichés sur la page [Site web](/services/site-web). Décrivez-moi votre activité et ce que votre site doit faire via le [formulaire en bas de page](#contact) : je vous envoie un devis détaillé et gratuit sous 24h.",
+        ],
+      },
+      {
+        heading: "FAQ : prix d'un site internet",
+        list: [
+          "Quel est le prix moyen d'un site internet professionnel ? Le budget médian tourne autour de 5 000 € selon le baromètre de La Fabrique du Net. Un site vitrine chez un freelance se situe plutôt entre 1 500 et 3 000 €.",
+          "WordPress est-il gratuit ? Le logiciel l'est, mais l'hébergement, le thème, les extensions et la maintenance représentent souvent 600 à 1 500 € par an en usage professionnel.",
+          "Un site sur mesure est-il plus cher que WordPress ? Pas forcément sur la durée : sans extensions à renouveler ni maintenance de sécurité permanente, il revient souvent moins cher sur trois ans.",
+          "Peut-on passer de Wix ou WordPress à un site sur mesure ? Oui. Les textes, images et articles peuvent être repris, et des redirections préservent votre référencement.",
+          "Un site WordPress est-il bien référencé ? Il peut l'être avec les bonnes extensions, mais un site sur mesure léger obtient en général de meilleurs scores de vitesse, un critère pris en compte par Google.",
+          "Le nom de domaine m'appartient-il ? Il doit être enregistré à votre nom. Vérifiez-le dans le devis : c'est votre adresse sur internet, vous devez pouvoir la garder si vous changez de prestataire.",
         ],
       },
     ],
@@ -1578,100 +1719,6 @@ export const articles: Article[] = [
     ],
   },
   {
-    slug: "combien-coute-site-web-sur-mesure",
-    image: {
-      src: "/blog/combien-coute-site-web-sur-mesure.jpg",
-      alt: "Grand écran affichant du code coloré dans un éditeur, clavier mécanique et tasse sur un bureau, ambiance de développement en soirée",
-      credit: "Image : Artlist",
-    },
-    service: "site-web",
-    title: "Site web sur mesure : prix réels en 2026",
-    description: "Combien coûte un site web sur mesure en 2026 ? Vitrine, e-commerce, plateforme : tarifs réels d'un développeur freelance vs agence. Devis gratuit sous 24h.",
-    date: "2026-05-15",
-    lastModified: "2026-10-02",
-    category: "Tarifs",
-    sections: [
-      {
-        paragraphs: [
-          "Vous avez besoin d'un site web et vous voulez comprendre ce que cela coûte vraiment, sans formules floues ni devis à rallonge. Le prix d'un site sur mesure dépend surtout de ce qu'il doit faire : un site vitrine de cinq pages n'a rien à voir avec une boutique en ligne ou une plateforme avec espace client.",
-          "Précision importante : un site sur mesure n'est pas un site Wix ou Shopify. Il est développé de A à Z pour votre activité, sans modèle générique et sans abonnement mensuel à une plateforme. Voici les fourchettes de prix pratiquées par les développeurs freelances en 2026, niveau par niveau.",
-        ],
-      },
-      {
-        heading: "Les fourchettes de prix en un coup d'œil",
-        table: {
-          head: ["Type de site", "Fourchette chez un freelance", "Pour qui"],
-          rows: [
-            ["Site vitrine", "1 500 € à 3 000 €", "Présenter son activité et être contacté"],
-            ["Site avec blog ou catalogue", "2 000 € à 4 000 €", "Publier régulièrement, présenter une offre large"],
-            ["Site e-commerce", "2 000 € à 6 000 €", "Vendre en ligne sans commission"],
-            ["Plateforme avec back-office", "3 000 € à 10 000 €", "Espace client, multi-rôles, outil métier"],
-          ],
-        },
-      },
-      {
-        paragraphs: [
-          "Ce sont des fourchettes de marché, pour vous donner des repères. Mes propres tarifs sont affichés sur la page [Site web](/services/site-web) du site.",
-        ],
-      },
-      {
-        heading: "Le site vitrine",
-        paragraphs: [
-          "Un site vitrine présente votre activité, vos services, vos coordonnées et un formulaire de contact. C'est le minimum indispensable pour exister en ligne de façon professionnelle, et le point de départ de la plupart des entreprises.",
-          "Un site vitrine sur mesure compte en général 5 à 10 pages (accueil, services, tarifs, à propos, contact), avec un design unique à vos couleurs plutôt qu'un modèle Wix partagé avec des milliers d'autres sites. Il est optimisé pour le référencement dès le départ (balises, vitesse, structure), parfaitement lisible sur mobile, tablette et ordinateur, et son formulaire de contact arrive directement dans votre boîte mail. La mise en ligne est comprise.",
-        ],
-      },
-      {
-        heading: "Le site avec blog ou catalogue",
-        paragraphs: [
-          "Si vous voulez publier des articles, présenter un catalogue de produits ou de services, ou mettre à jour votre contenu régulièrement, le site gagne en complexité, et en valeur.",
-          "On y ajoute un blog que vous alimentez depuis un back-office simple, un catalogue ou un portfolio avec filtres et galeries, et parfois un système de réservation ou de prise de rendez-vous. Le site peut aussi se connecter à vos outils (Google Analytics, Mailchimp, CRM) et proposer un espace membre avec connexion client.",
-        ],
-      },
-      {
-        heading: "Le site e-commerce",
-        paragraphs: [
-          "Une boutique en ligne sur mesure va plus loin que Shopify sur un point essentiel : aucune commission sur vos ventes, là où Shopify prélève de 0,5 % à 2 %, et aucun abonnement mensuel. Le design vous appartient vraiment.",
-          "Elle comprend un catalogue avec variantes, stocks et catégories, un parcours d'achat optimisé du panier au paiement (Stripe, Apple Pay, Google Pay, carte bancaire), et un panel d'administration pour gérer commandes, clients et produits. Les emails automatiques de confirmation et de suivi de livraison sont prévus, tout comme le référencement des fiches produits.",
-        ],
-      },
-      {
-        heading: "La plateforme web avec back-office",
-        paragraphs: [
-          "Une plateforme est une véritable application web, avec plusieurs niveaux d'accès : espace administrateur, espace client, tableau de bord et données en temps réel.",
-          "Elle repose sur une authentification à plusieurs rôles (administrateur, manager, client, partenaire), un tableau de bord avec indicateurs et rapports exportables, une base de données sécurisée et sauvegardée, et souvent une API pour se connecter à vos outils existants. Des notifications en temps réel et une messagerie interne complètent l'ensemble.",
-        ],
-      },
-      {
-        heading: "Sur mesure ou créateur de site : le vrai comparatif",
-        paragraphs: [
-          "Wix, Squarespace et Shopify semblent moins chers au premier coup d'œil. Sur trois ans, la réalité est différente : le forfait Wix Business, à environ 41 € par mois, revient à près de 1 475 €, sans compter les applications payantes ni les limites du design. Shopify Basic, à 39 € par mois plus 2 % de commission, coûte entre 1 500 € et 4 000 € selon votre chiffre d'affaires.",
-          "Un site sur mesure se paie une fois, sans abonnement ni commission, et vous êtes propriétaire de votre code. Vous restez libre de changer d'hébergeur, de design ou de fonctionnalités, sans dépendre d'une plateforme.",
-        ],
-      },
-      {
-        heading: "Freelance ou agence ?",
-        paragraphs: [
-          "Une agence web facture généralement trois à cinq fois plus cher pour un résultat comparable, parce qu'elle paie ses locaux, ses commerciaux et ses chefs de projet. Vous payez l'organisation autant que le code.",
-          "Avec un développeur freelance, vous avez un interlocuteur unique, des délais plus courts et un tarif transparent. Chez BreizhApp, je développe moi-même votre site de A à Z, sans sous-traitance et sans surprise.",
-        ],
-      },
-      {
-        heading: "Ce qui fait varier le prix",
-        paragraphs: [
-          "Le tarif final dépend de quelques facteurs que j'évalue lors du devis : le nombre de pages et de fonctionnalités, la présence d'un back-office ou d'un espace d'administration, les intégrations avec d'autres outils (paiement, réservation, CRM, API), la complexité du design selon que vous avez déjà une charte graphique ou non, et le délai souhaité, une livraison express étant possible.",
-        ],
-      },
-      {
-        heading: "Comment obtenir un devis précis ?",
-        paragraphs: [
-          "Décrivez-moi votre projet : votre activité, ce que votre site doit faire et votre budget indicatif. Je vous envoie une proposition concrète, avec le détail des fonctionnalités et le tarif exact.",
-          "Pas de formulaire interminable : un email suffit. Je réponds personnellement à chaque demande, et je prends le temps de comprendre votre activité avant de chiffrer.",
-        ],
-      },
-    ],
-  },
-  {
     slug: "creer-plateforme-digitale-sur-mesure",
     image: {
       src: "/blog/creer-plateforme-digitale-sur-mesure.jpg",
@@ -1771,106 +1818,6 @@ export const articles: Article[] = [
         paragraphs: [
           "Je suis développeur freelance basé à Brest, spécialisé dans les applications mobiles et les plateformes web sur mesure. Je développe chaque projet moi-même, sans sous-traitance ni intermédiaire.",
           "Décrivez-moi votre projet, les types d'utilisateurs que vous avez et ce que vous voulez qu'ils puissent faire : je vous réponds avec une proposition concrète et un tarif transparent.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "wordpress-vs-sur-mesure",
-    image: {
-      src: "/blog/wordpress-vs-sur-mesure.jpg",
-      alt: "Deux écrans côte à côte : à gauche un tableau de bord CMS générique, à droite un éditeur de code",
-      credit: "Image : Artlist",
-    },
-    service: "site-web",
-    title: "WordPress vs sur mesure : comparatif complet 2026",
-    description: "WordPress ou site sur mesure : performances, coûts, SEO, sécurité. Le comparatif complet pour choisir la bonne solution selon votre projet en 2026.",
-    date: "2026-05-15",
-    lastModified: "2026-10-01",
-    category: "Comparatifs",
-    sections: [
-      {
-        paragraphs: [
-          "WordPress fait tourner une part immense des sites dans le monde, et c'est souvent le premier nom que l'on entend quand on veut créer un site. Pourtant, un site Next.js sur mesure est généralement deux à trois fois plus rapide, obtient des scores Lighthouse de 95 à 100 sur 100 contre 60 à 80 pour WordPress, et ne vous impose ni extensions payantes ni maintenance de sécurité permanente.",
-          "Alors, lequel choisir ? Pour les blogs et les sites éditoriaux, WordPress reste pertinent. Pour presque tout le reste, le sur mesure l'emporte. Voici le comparatif complet.",
-        ],
-      },
-      {
-        heading: "Ce que WordPress fait bien",
-        paragraphs: [
-          "WordPress est une solution mature, avec un écosystème immense. Avec un petit budget, un site WordPress peut être opérationnel pour moins de 500 €, grâce à un thème premium et quelques extensions. Et pour le contenu éditorial, c'est son terrain naturel : il a été conçu pour les blogs et les médias.",
-          "Son interface d'administration est familière, et permet à n'importe qui de publier sans formation technique. Plus de 60 000 extensions couvrent la plupart des besoins courants (formulaires, SEO, galeries, réservation), et sa communauté est gigantesque : tutoriels, forums et développeurs ne manquent pas.",
-        ],
-      },
-      {
-        heading: "Les limites de WordPress en 2026",
-        subsections: [
-          {
-            heading: "La sécurité",
-            paragraphs: [
-              "WordPress est la première cible des pirates : la grande majorité des sites CMS piratés tournent sous WordPress. Les mises à jour constantes des extensions deviennent une contrainte réelle, et en oublier une suffit à ouvrir une faille.",
-            ],
-          },
-          {
-            heading: "La performance",
-            paragraphs: [
-              "Un site WordPress mal optimisé se charge lentement, et chaque extension ajoutée l'alourdit encore. Les thèmes sont rarement optimisés pour les Core Web Vitals, les indicateurs de vitesse que Google prend en compte dans son classement.",
-            ],
-          },
-          {
-            heading: "Les coûts cachés et la maintenance",
-            paragraphs: [
-              "Thème premium (60 à 300 €), extensions premium (20 à 100 € par an chacune), hébergement adapté (10 à 30 € par mois) et maintenance : le coût réel dépasse souvent 1 000 € par an. Et les mises à jour de WordPress cassent parfois une extension ou le thème, ce qui transforme la maintenance en travail à part entière.",
-            ],
-          },
-          {
-            heading: "La personnalisation",
-            paragraphs: [
-              "Tant que votre besoin reste standard, WordPress suit. Dès qu'il sort des sentiers battus, vous passez votre temps à lutter contre l'outil plutôt qu'à l'utiliser.",
-            ],
-          },
-        ],
-      },
-      {
-        heading: "Les avantages du développement sur mesure",
-        paragraphs: [
-          "Un site développé sur mesure avec une technologie moderne comme Next.js apporte d'abord la performance : des scores Lighthouse de 95 à 100 sur 100, là où WordPress plafonne généralement à 60 ou 80 sans optimisation lourde. Il est aussi plus sûr, sans extensions vulnérables ni CMS standardisé que les robots savent attaquer.",
-          "Vous ne dépendez d'aucune plateforme : pas d'extension qui disparaît, pas de thème abandonné. Le design est unique, et tout ce que vous voulez est possible, sans compromis avec les limites d'une extension. Enfin, un code bien écrit est plus simple à faire évoluer qu'un enchevêtrement d'extensions.",
-        ],
-      },
-      {
-        heading: "Les coûts comparés sur 3 ans",
-        table: {
-          head: ["Solution", "Détail", "Coût sur 3 ans"],
-          rows: [
-            ["WordPress basique", "Thème 150 € + extensions 300 €/an + hébergement 180 €/an + maintenance 500 €/an", "environ 2 900 €"],
-            ["WordPress avec développeur", "1 500 € de développement + 600 €/an de maintenance", "environ 3 300 €"],
-            ["Site sur mesure", "Développement unique + hébergement peu coûteux (gratuit sur Vercel pour un petit site)", "Sans extensions ni maintenance imposée"],
-          ],
-        },
-      },
-      {
-        heading: "Quand choisir WordPress, quand choisir le sur mesure ?",
-        paragraphs: [
-          "WordPress reste pertinent si vous avez besoin d'un site rapidement, avec un budget minimal et des besoins standards, ou si vous publiez beaucoup de contenu éditorial, comme un blog d'actualité ou un magazine. Si vous avez déjà un site WordPress à faire évoluer, repartir de zéro n'est pas toujours justifié. Et les développeurs WordPress sont nombreux, donc faciles à remplacer.",
-          "Le sur mesure s'impose quand votre site est un outil stratégique (e-commerce, plateforme, espace client) où la performance et la sécurité comptent vraiment, quand vous voulez un design qui vous ressemble, ou quand vos fonctionnalités ne sont couvertes correctement par aucune extension. C'est aussi le bon choix si vous pensez long terme et ne voulez pas dépendre d'un éditeur tiers.",
-        ],
-      },
-      {
-        heading: "Mon avis de développeur",
-        paragraphs: [
-          "WordPress est un excellent outil pour ce qu'il a été conçu à faire : gérer du contenu éditorial simplement. Mais pour un site vitrine professionnel, une boutique en ligne ou une plateforme avec des fonctionnalités spécifiques, le sur mesure offre de meilleures performances, plus de sécurité et un coût total souvent inférieur sur trois ans.",
-          "Je développe des sites sur mesure avec Next.js depuis plusieurs années. Si vous hésitez, écrivez-moi : je vous donne un avis honnête selon votre cas, sans chercher à vous vendre ce dont vous n'avez pas besoin.",
-        ],
-      },
-      {
-        heading: "FAQ : WordPress ou site sur mesure",
-        list: [
-          "WordPress est-il gratuit ? Le logiciel WordPress est gratuit, mais l'hébergement, le thème premium et les extensions représentent 600 € à 1 500 €/an en usage professionnel réel.",
-          "Un site WordPress est-il bien référencé sur Google ? WordPress peut être bien référencé avec les bonnes extensions (Yoast, RankMath), mais un site Next.js sur mesure obtient de meilleurs scores Core Web Vitals, un facteur SEO officiel depuis 2021.",
-          "Un site sur mesure est-il plus cher que WordPress ? Pas forcément sur la durée. Un site WordPress avec maintenance représente 2 900 € à 3 300 € sur 3 ans, alors qu'un site sur mesure n'a ni extensions ni maintenance de sécurité à payer chaque année.",
-          "Peut-on migrer de WordPress vers un site sur mesure ? Oui. Le contenu (articles, pages) peut être exporté et réintégré. Je gère ce type de migration.",
-          "WordPress est-il sécurisé ? C'est le CMS le plus ciblé par les pirates : la grande majorité des CMS piratés tournent sous WordPress. Des mises à jour régulières et un hébergement de qualité réduisent ce risque.",
         ],
       },
     ],
@@ -1996,160 +1943,6 @@ export const articles: Article[] = [
     ],
   },
   {
-    slug: "application-mobile-salle-sport-fitness",
-    image: {
-      src: "/blog/application-mobile-salle-sport-fitness.jpg",
-      alt: "Salle de sport moderne avec machines de musculation et haltères, smartphone posé sur un banc affichant une app de fitness",
-      credit: "Image : Artlist",
-    },
-    service: "salle-de-sport",
-    title: "App mobile salle de sport : fonctionnalités 2026",
-    description: "App mobile salle de sport : abonnements, réservation de cours, suivi des séances, fidélité. Tarifs et fonctionnalités clés en 2026.",
-    date: "2026-05-15",
-    lastModified: "2026-10-02",
-    category: "Secteurs",
-    sections: [
-      {
-        paragraphs: [
-          "En 2026, une salle de sport sans application, c'est une occasion manquée chaque jour. Vos membres réservent leurs cours, paient leur abonnement et suivent leurs entraînements sur leur téléphone : si ce n'est pas dans votre application, c'est dans celle de quelqu'un d'autre.",
-          "Inscription en ligne, réservation de cours collectifs, suivi des performances, notifications de nouveaux créneaux : une application bien conçue fidélise vos membres et allège votre charge administrative. Voici les fonctionnalités clés, et ce qu'elles changent pour une salle indépendante.",
-        ],
-      },
-      {
-        heading: "Les fonctionnalités indispensables",
-        subsections: [
-          {
-            heading: "Inscription, abonnement et accès",
-            paragraphs: [
-              "Vos prospects s'inscrivent et paient directement depuis l'application, sans passer à l'accueil. Ils gèrent ensuite leur abonnement en autonomie : renouvellement automatique, pause, changement de formule. Et un QR code dans l'application leur ouvre les portes de la salle, fini les cartes perdues.",
-            ],
-          },
-          {
-            heading: "Les cours collectifs",
-            paragraphs: [
-              "Le planning s'affiche en temps réel, la réservation se fait en un geste, et une liste d'attente prend le relais automatiquement quand un cours est complet. Les notifications préviennent vos membres d'un nouveau cours, d'un changement de planning ou d'une offre.",
-            ],
-          },
-          {
-            heading: "Le suivi d'entraînement",
-            paragraphs: [
-              "Vos membres enregistrent leurs séances, suivent leurs progrès et consultent leur historique. Vos coachs peuvent leur assigner des programmes selon leurs objectifs, et disposent de leur propre espace pour gérer leurs créneaux, voir leurs inscrits et échanger avec leurs élèves.",
-            ],
-          },
-          {
-            heading: "Le pilotage de la salle",
-            paragraphs: [
-              "Un tableau de bord d'administration vous donne le taux de présence, les cours les plus populaires et le taux de départ des abonnés : de quoi ajuster votre planning sur des chiffres, plutôt qu'à l'intuition.",
-            ],
-          },
-        ],
-      },
-      {
-        heading: "Application sur mesure ou logiciel de gestion de salle ?",
-        paragraphs: [
-          "Des logiciels comme Mindbody, Glofox ou Gymmaster proposent des solutions clés en main. Elles ont un coût récurrent important : Mindbody revient entre 129 € et 349 € par mois, soit 1 548 € à 4 188 € par an, hors modules supplémentaires, et Glofox entre 110 € et 300 € par mois selon la taille de la salle.",
-          "Une application sur mesure représente un investissement unique plus l'hébergement, rentabilisé en quelques années face à un abonnement qui ne s'arrête jamais. Elle porte vos couleurs et votre marque, ce qui fidélise mieux qu'un outil générique, et ses fonctionnalités collent exactement à votre offre, que vous fassiez du CrossFit, du yoga, de la natation ou des arts martiaux.",
-        ],
-      },
-      {
-        heading: "Ce que ça change pour une salle indépendante",
-        paragraphs: [
-          "Pour une salle de 200 à 500 membres, les effets se voient vite. Les rappels automatiques réduisent nettement les absences aux cours collectifs, et la plupart des demandes du quotidien (inscription, planning, abonnement) sont traitées dans l'application, sans appel ni passage à l'accueil.",
-          "Les membres qui utilisent l'application sont aussi plus fidèles que les autres, et elle ouvre de nouveaux revenus : vente de programmes en ligne, coaching à distance ou produits dérivés.",
-        ],
-      },
-      {
-        heading: "Tarifs et délais",
-        paragraphs: [
-          "Le budget dépend des fonctionnalités et de la taille de votre salle ; mes tarifs sont affichés sur la page [Application mobile](/services/application-mobile) du site. Une première version réunit l'essentiel : inscription en ligne, réservation de cours, QR code d'accès, notifications et espace d'administration. La version complète ajoute le suivi des séances, les programmes personnalisés, l'espace coach et des statistiques avancées.",
-          "Comptez 4 à 8 semaines selon les fonctionnalités. La publication sur iOS et Android, la formation à l'espace d'administration et trois mois de support sont inclus.",
-        ],
-      },
-      {
-        heading: "Demandez votre devis gratuit",
-        paragraphs: [
-          "Je suis développeur freelance basé à Brest, spécialisé dans les applications pour les professionnels du sport et du bien-être. Décrivez-moi votre salle, votre offre et vos besoins : je vous envoie un devis détaillé et gratuit.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "site-web-artisan-sur-mesure",
-    image: {
-      src: "/blog/site-web-artisan-sur-mesure.jpg",
-      alt: "Établi de menuisier avec outils traditionnels et copeaux de bois, ordinateur portable ouvert affichant un site web",
-      credit: "Image : Artlist",
-    },
-    service: "site-web",
-    title: "Site web pour artisan : éviter les constructeurs",
-    description: "Site web pour artisan : pourquoi éviter Wix et les constructeurs gratuits. Ce qu'un site sur mesure apporte en SEO local, devis en ligne et crédibilité.",
-    date: "2026-05-15",
-    lastModified: "2026-10-02",
-    category: "Secteurs",
-    sections: [
-      {
-        paragraphs: [
-          "Plombier, électricien, menuisier, peintre, maçon : pour un artisan, le site web est la première carte de visite. Avant de vous appeler, vos prospects vous cherchent sur Google, et ce qu'ils trouvent décide s'ils vous contactent, ou s'ils contactent un concurrent.",
-          "Wix, Jimdo et les autres créateurs de sites semblent pratiques. Mais ils ont des inconvénients concrets qui pèsent sur votre référencement local et sur votre image professionnelle. Voici pourquoi, et ce qu'un site sur mesure change pour vous.",
-        ],
-      },
-      {
-        heading: "Le problème des créateurs de sites pour les artisans",
-        paragraphs: [
-          "Les sites créés avec Wix, Jimdo ou les offres packagées des annuaires ont d'abord un problème de visibilité : leur structure technique les rend moins bien référencés qu'un site sur mesure, et leur code lourd les ralentit sur mobile, alors que la majorité de vos prospects vous cherchent depuis leur smartphone.",
-          "Ils ont ensuite un problème d'image. Un modèle standard se reconnaît immédiatement, et des milliers d'artisans utilisent le même que vous : difficile d'inspirer confiance quand on demande à quelqu'un de vous ouvrir sa maison pour des travaux. Sur les formules gratuites, la mention « propulsé par Wix » n'arrange rien.",
-          "Enfin, il y a le coût dans la durée. Le forfait Wix Core coûte environ 29 € par mois, soit près de 350 € par an pour un résultat moyen. Sur cinq ans, vous aurez payé plus de 1 700 € sans rien posséder.",
-        ],
-      },
-      {
-        heading: "Ce qu'un site sur mesure apporte à un artisan",
-        paragraphs: [
-          "Un site développé sur mesure est pensé pour votre activité, votre zone et vos clients. Il est construit pour ressortir sur les recherches qui comptent, comme « plombier Brest » ou « électricien Quimper », avec les bonnes balises, le bon contenu et une structure technique irréprochable. Et si vous intervenez sur plusieurs communes, une page par ville vous fait apparaître sur chacune.",
-          "Il met aussi votre travail en valeur. Une galerie de réalisations montre vos chantiers terminés, en photos avant et après. Vos avis Google s'affichent directement sur le site pour rassurer les nouveaux visiteurs. Et un formulaire de demande de devis détaillé vous envoie des demandes qualifiées, directement par email.",
-          "Enfin, un site léger se charge en moins d'une seconde sur mobile : c'est un critère clé pour le référencement, et pour que les visiteurs vous contactent plutôt que de repartir.",
-        ],
-      },
-      {
-        heading: "Les pages indispensables d'un site d'artisan",
-        paragraphs: [
-          "Voici la structure que je recommande pour un site d'artisan efficace, à la fois pour le référencement et pour obtenir des demandes.",
-        ],
-        table: {
-          head: ["Page", "Son rôle"],
-          rows: [
-            ["Accueil", "Votre activité, votre zone, votre argument principal et un bouton d'appel ou de devis bien visible"],
-            ["Services", "Une page par prestation, avec les mots que tapent vos clients"],
-            ["Réalisations", "Galerie de chantiers commentés, qui prouve votre savoir-faire"],
-            ["Zones d'intervention", "Les communes couvertes, avec une page pour les villes principales"],
-            ["Contact et devis", "Un formulaire simple : type de travaux, surface, délai souhaité"],
-            ["À propos", "Votre parcours, vos certifications, vos assurances"],
-          ],
-        },
-      },
-      {
-        heading: "Combien coûte un site web pour artisan ?",
-        paragraphs: [
-          "Le prix dépend du nombre de pages et des fonctionnalités ; mes tarifs sont affichés sur la page [Site web](/services/site-web) du site. Trois niveaux reviennent le plus souvent.",
-          "Le site vitrine compte 5 pages, avec formulaire de contact, galerie photos et référencement local, livré en deux semaines. Le site pro y ajoute un formulaire de devis avancé, une galerie de réalisations avec filtres, des pages par ville et un blog pour le référencement, en trois semaines. Le site complet ajoute un espace client, le suivi de chantier en ligne et la génération automatique de devis en PDF, en quatre à cinq semaines.",
-          "Dans tous les cas, l'hébergement sur Vercel (rapide et fiable), la configuration du nom de domaine et une formation pour mettre à jour votre contenu sont compris.",
-        ],
-      },
-      {
-        heading: "Apparaître en premier sur Google dans votre zone",
-        paragraphs: [
-          "Le référencement local est la priorité d'un artisan. Sur chaque site, je soigne les titres et descriptions de chaque page avec les mots-clés locaux, et j'ajoute des données structurées de type LocalBusiness, que Google utilise pour afficher votre activité, vos horaires et vos avis.",
-          "Je vous aide aussi à créer ou optimiser votre fiche Google Business Profile, le levier le plus puissant pour apparaître dans Google Maps. Avec des pages dédiées à vos communes clés et un site qui se charge en moins d'une seconde, vous mettez toutes les chances de votre côté.",
-        ],
-      },
-      {
-        heading: "Demandez votre devis gratuit",
-        paragraphs: [
-          "Je suis développeur freelance basé à Brest, et je crée des sites pour artisans et commerçants dans toute la Bretagne et en France. Décrivez-moi votre activité, votre zone d'intervention et votre budget : je vous envoie un devis gratuit.",
-        ],
-      },
-    ],
-  },
-  {
     slug: "application-mobile-hotel-hebergement",
     image: {
       src: "/blog/application-mobile-hotel-hebergement.jpg",
@@ -2264,113 +2057,142 @@ export const articles: Article[] = [
     ],
   },
   {
-    slug: "developpeur-freelance-quimper",
+    slug: "developpeur-application-mobile-bretagne",
     image: {
-      src: "/blog/developpeur-freelance-quimper.jpg",
-      alt: "Ordinateur portable sur une table de terrasse de café, flèches de la cathédrale de Quimper en arrière-plan flou, café et carnet",
+      src: "/blog/developpeur-application-mobile-bretagne.jpg",
+      alt: "Main tenant un smartphone devant la côte de granit rose de Bretagne au coucher du soleil",
       credit: "Image : Artlist",
     },
     service: "application-mobile",
-    title: "Développeur freelance à Quimper : web et mobile",
-    description: "Développeur freelance à Quimper : applications mobiles iOS & Android, sites web et plateformes digitales sur mesure. Devis gratuit sous 24h, livraison en Bretagne.",
+    title: "Développeur application mobile et web en Bretagne",
+    description:
+      "Développeur freelance basé à Brest : applications iOS & Android, sites web et plateformes sur mesure à Brest, Quimper, Rennes et dans toute la Bretagne.",
     date: "2026-05-16",
-    lastModified: "2026-10-01",
+    lastModified: "2026-11-21",
     category: "Local",
     sections: [
       {
         paragraphs: [
-          "Vous cherchez un développeur freelance à Quimper pour créer votre application mobile, votre site web ou votre plateforme digitale ? Je suis basé en Bretagne et je travaille régulièrement avec des entreprises du Finistère Sud : Quimper, Concarneau, Pont-l'Abbé, Douarnenez.",
-          "Que vous soyez commerçant, artisan, restaurateur ou porteur de projet, voici ce que je peux développer pour vous, comment se déroule un projet, et dans quels délais.",
+          "Vous cherchez un développeur freelance en Bretagne pour créer votre application mobile, votre site web ou votre plateforme digitale ? Je suis basé à Brest et j'accompagne des entreprises du Finistère, du Morbihan, des Côtes-d'Armor et d'Ille-et-Vilaine : commerçants, artisans, restaurateurs, startups, associations.",
+          "Voici ce que je développe, comment je travaille avec les entreprises de Brest, Quimper, Rennes et du reste de la région, pourquoi un freelance local peut être plus intéressant qu'une agence, et dans quels délais.",
         ],
       },
       {
-        heading: "Ce que je développe pour les entreprises de Quimper",
-        paragraphs: [
-          "Je crée trois types de projets sur mesure. Les applications mobiles iOS et Android d'abord : application de commande pour un restaurant, de réservation pour un salon, de fidélité pour un commerce, publiée sur l'App Store et Google Play.",
-          "Les sites web ensuite : vitrine professionnelle, site avec demande de devis ou blog pour le référencement, développés avec Next.js pour être rapides et bien classés sur Google. Et enfin les plateformes digitales : espace client sécurisé, back-office d'administration ou outil de gestion interne, construits autour de votre activité.",
+        heading: "Ce que je développe pour les entreprises bretonnes",
+        subsections: [
+          {
+            heading: "Applications mobiles iOS et Android",
+            paragraphs: [
+              "Application de commande pour un restaurant, de réservation pour un salon, de fidélité pour un commerce : je développe avec React Native, une seule base de code qui fonctionne sur iPhone et sur Android, puis je publie l'application sur l'App Store et Google Play. Plus de détails sur la page [Application mobile](/services/application-mobile).",
+            ],
+          },
+          {
+            heading: "Sites web sur mesure",
+            paragraphs: [
+              "Site vitrine, site avec demande de devis, blog pour le référencement ou boutique en ligne, développés avec Next.js pour être rapides et bien classés sur Google. Voir la page [Site web](/services/site-web).",
+            ],
+          },
+          {
+            heading: "Plateformes digitales",
+            paragraphs: [
+              "Espace client sécurisé, back-office à plusieurs rôles, outil de gestion interne : une application web construite autour de votre façon de travailler. Voir la page [Web app](/services/web-app).",
+            ],
+          },
         ],
       },
       {
-        heading: "Pourquoi choisir un développeur basé en Bretagne ?",
+        heading: "Pourquoi la Bretagne a besoin de développeurs locaux",
         paragraphs: [
-          "Travailler avec un développeur breton plutôt qu'avec une agence parisienne ou un prestataire à l'étranger a des avantages concrets. Nous sommes sur le même fuseau horaire, avec les mêmes disponibilités : planifier un appel ou une visio est simple. Je connais aussi le tissu économique local, la saisonnalité touristique du Finistère et les enjeux des commerces bretons.",
-          "Vous avez un interlocuteur unique, sans chef de projet intermédiaire ni sous-traitance : je développe votre projet moi-même. Sans les frais généraux d'une agence, je propose des tarifs compétitifs pour une qualité équivalente. Et je suis réactif : un message reçu le matin obtient une réponse dans la journée.",
+          "La Bretagne a une économie riche et variée : agroalimentaire, tourisme, commerce, artisanat, pêche, nautisme, tech. Ces secteurs ont des besoins numériques particuliers, que les agences parisiennes ou les prestataires à l'étranger ne saisissent pas toujours.",
+          "La saisonnalité touristique en est un bon exemple : une application de réservation pour un hôtel breton doit gérer le pic de juillet-août comme le creux de l'hiver. Les circuits courts, très développés ici, demandent des outils de paniers, d'abonnements et de vente directe. Et le monde maritime, du port de plaisance au club de voile, a des besoins très spécifiques que je comprends d'autant mieux que je suis breton.",
         ],
       },
       {
-        heading: "Tarifs et délais",
+        heading: "Développeur et création de site web à Brest",
         paragraphs: [
-          "Mes tarifs, affichés sur les pages services du site, sont les mêmes partout en Bretagne. Le paiement se fait en deux fois : 30 % à la commande, 70 % à la livraison. Voici les délais habituels :",
+          "Brest est ma ville, et c'est là que je rencontre le plus facilement mes clients. Son tissu économique est varié : commerce, restauration, artisanat, tourisme, maritime, défense et recherche. Quelle que soit votre activité, vos prospects vous cherchent d'abord sur Google, et votre site est souvent leur premier contact avec vous.",
+          "Pour les commerces et prestataires brestois, le référencement local est décisif. J'optimise chaque site pour Brest et ses quartiers (Recouvrance, Saint-Marc, Lambézellec, Saint-Pierre), avec des données structurées que Google utilise pour afficher votre adresse, vos horaires et vos avis, et je vous aide à soigner votre fiche Google Business Profile, celle qui vous fait apparaître dans Google Maps.",
         ],
         table: {
-          head: ["Projet", "Délai de livraison"],
+          head: ["Type de projet à Brest", "Pour quoi faire", "Délai"],
           rows: [
-            ["Site vitrine sur mesure", "2 à 3 semaines"],
-            ["Application mobile iOS et Android", "4 à 8 semaines"],
-            ["Plateforme digitale avec back-office", "6 à 12 semaines"],
+            ["Landing page", "Une page, un objectif : tester une offre ou une campagne", "Quelques jours"],
+            ["Site vitrine", "Présenter votre activité, vos services et vos réalisations", "2 semaines"],
+            ["Site pro avec blog", "Attirer des clients via Google, galerie de réalisations, pages par quartier", "3 semaines"],
+            ["Site e-commerce", "Vendre en ligne avec catalogue, panier et paiement sécurisé", "4 à 6 semaines"],
+            ["Application mobile", "Commande, réservation, fidélité, publiée sur les stores", "4 à 8 semaines"],
           ],
         },
       },
       {
-        heading: "Comment se passe un projet à distance ?",
         paragraphs: [
-          "La plupart des projets avec des entreprises de Quimper se déroulent à distance, avec des points réguliers en visio ; une rencontre reste possible si vous le souhaitez.",
-          "Tout commence par un échange de 30 à 60 minutes pour définir votre projet, vos besoins et vos objectifs. Je vous envoie ensuite un devis détaillé, avec les fonctionnalités, le tarif et le planning prévisionnel. Pendant le développement, je vous partage des versions intermédiaires à valider. Enfin, je m'occupe de la mise en ligne et de votre formation, avec un support après la livraison.",
+          "Vous êtes restaurateur à Brest ? Le guide [site web pour restaurant à Brest](/blog/site-web-restaurant-brest) détaille ce que votre site doit contenir, et le guide [application mobile à Brest](/blog/application-mobile-brest) présente les projets d'application pour les entreprises brestoises.",
         ],
       },
       {
-        heading: "Demandez votre devis gratuit",
+        heading: "Développeur freelance à Quimper et dans le Finistère Sud",
         paragraphs: [
-          "Vous êtes à Quimper ou dans le Finistère Sud et vous avez un projet ? Écrivez-moi par email ou via le formulaire de contact : je vous réponds avec une proposition concrète, adaptée à votre budget.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "developpeur-freelance-rennes",
-    image: {
-      src: "/blog/developpeur-freelance-rennes.jpg",
-      alt: "Ordinateur portable et carnet sur une table, bâtiment historique en pierre (Parlement de Bretagne à Rennes) en arrière-plan flou",
-      credit: "Image : Artlist",
-    },
-    service: "application-mobile",
-    title: "Développeur freelance à Rennes : web et mobile",
-    description: "Développeur freelance à Rennes : applications mobiles iOS & Android, sites web et plateformes sur mesure. Basé en Bretagne, devis gratuit sous 24h.",
-    date: "2026-05-16",
-    lastModified: "2026-10-01",
-    category: "Local",
-    sections: [
-      {
-        paragraphs: [
-          "Vous cherchez un développeur freelance à Rennes pour votre application mobile, votre site web ou votre plateforme digitale ? Je suis développeur indépendant basé en Bretagne, et j'accompagne des entreprises rennaises dans leurs projets numériques.",
-          "Vous avez un interlocuteur unique, de la première discussion à la mise en ligne. Voici ce que je développe, pourquoi un freelance peut être plus intéressant qu'une agence, et dans quels délais.",
+          "Je travaille régulièrement avec des entreprises de Quimper, Concarneau, Pont-l'Abbé, Douarnenez et Quimperlé. Le Finistère Sud vit beaucoup du tourisme et du commerce de proximité : crêperies, campings, boutiques de centre-ville, artisans du bâtiment. Ce sont des activités où une application de réservation ou de fidélité, et un site bien placé sur « crêperie Quimper » ou « plombier Concarneau », font une vraie différence en saison comme hors saison.",
+          "La plupart des projets avec le Finistère Sud se déroulent à distance, avec des points réguliers en visio. Je me déplace volontiers à Quimper pour un premier rendez-vous si vous préférez vous rencontrer.",
         ],
       },
       {
-        heading: "Mes services pour les entreprises rennaises",
+        heading: "Développeur freelance à Rennes et en Ille-et-Vilaine",
         paragraphs: [
-          "Je propose trois types de développement sur mesure pour les startups, PME et indépendants de Rennes. Les applications mobiles iOS et Android, de l'idée à la publication sur les stores, développées avec React Native pour fonctionner sur iPhone et Android à partir d'une seule base de code.",
-          "Les sites web sur mesure, qu'il s'agisse d'une vitrine professionnelle, d'une boutique en ligne ou d'une page de lancement, développés avec Next.js pour la vitesse et le référencement. Et les plateformes digitales : SaaS, espace client, back-office à plusieurs rôles ou outil de gestion interne, adaptés à votre activité.",
+          "Rennes est l'une des grandes métropoles françaises du numérique, avec un écosystème de startups, de PME innovantes et de grands groupes. La concurrence pour attirer et garder des clients y est forte, et un outil numérique de qualité fait la différence.",
+          "J'y accompagne des profils variés : des startups qui veulent passer d'un prototype no-code à une application sur mesure capable de grandir, des commerces et restaurants qui veulent une application de fidélité ou de commande pour rivaliser avec les grandes chaînes, des artisans qui veulent un site bien classé à Rennes, et des associations qui ont besoin d'une plateforme d'inscription ou d'un espace adhérent. Les projets rennais se mènent en visio, avec la même réactivité qu'à Brest.",
         ],
       },
       {
-        heading: "Rennes, capitale bretonne du numérique",
+        heading: "Mes zones d'intervention",
         paragraphs: [
-          "Rennes est l'une des grandes métropoles françaises, avec un écosystème tech dynamique : startups, scale-ups, grands groupes et PME innovantes. La concurrence pour attirer et garder des clients y est forte, et un outil numérique de qualité fait la différence.",
-          "J'y accompagne des profils variés : des startups qui veulent passer d'un prototype no-code à une application sur mesure capable de grandir, des commerces et restaurants qui veulent une application de fidélité ou de commande pour rivaliser avec les grandes chaînes, des artisans qui veulent un site bien classé sur Google à Rennes, et des associations ou structures publiques qui ont besoin d'une plateforme d'inscription ou d'un espace adhérent.",
+          "J'interviens dans toute la Bretagne, avec une présence renforcée dans le Finistère, et je travaille aussi avec des clients partout en France.",
+        ],
+        table: {
+          head: ["Département", "Villes principales"],
+          rows: [
+            ["Finistère (29)", "Brest, Quimper, Morlaix, Landerneau, Douarnenez, Concarneau, Quimperlé, Pont-l'Abbé"],
+            ["Morbihan (56)", "Lorient, Vannes, Auray, Pontivy, Ploërmel"],
+            ["Côtes-d'Armor (22)", "Saint-Brieuc, Lannion, Dinan, Guingamp"],
+            ["Ille-et-Vilaine (35)", "Rennes, Saint-Malo, Fougères, Vitré"],
+          ],
+        },
+      },
+      {
+        heading: "Des applications pensées pour les secteurs bretons",
+        subsections: [
+          {
+            heading: "Restauration et commerce",
+            paragraphs: [
+              "Pour un restaurant ou une crêperie : commande en ligne, réservation et fidélité, sans commission aux plateformes de livraison. Pour un maraîcher ou un producteur : paniers hebdomadaires, abonnements, points de retrait et paiement en ligne, pour développer la vente en circuit court.",
+            ],
+          },
+          {
+            heading: "Tourisme et hébergement",
+            paragraphs: [
+              "Pour un hôtel, un camping ou un gîte : réservation directe, conciergerie et notifications, pour moins dépendre de Booking.com. Pour les loisirs : billetterie, guide numérique et réservation d'activités de plein air.",
+            ],
+          },
+          {
+            heading: "Artisans, nautisme et associations",
+            paragraphs: [
+              "Pour un plombier, un électricien ou un menuisier : prise de rendez-vous, devis en ligne et suivi de chantier. Pour un club de voile : inscriptions, réservation de bateaux et licences. Pour une association ou une collectivité : informations, agenda et signalements.",
+            ],
+          },
         ],
       },
       {
-        heading: "Freelance ou agence web à Rennes ?",
+        heading: "Freelance ou agence web en Bretagne ?",
         paragraphs: [
-          "Rennes compte de nombreuses agences web, et le choix n'est pas toujours évident. Travailler directement avec un développeur freelance coûte en général deux à trois fois moins cher, car il n'y a ni frais généraux, ni commerciaux, ni chef de projet : vous payez le développement.",
-          "Vous échangez directement avec la personne qui code votre projet, sans perte d'information. Un message envoyé le matin obtient une réponse dans la journée, et je m'adapte à vos contraintes de budget et de planning. Quant à la qualité, elle est comparable : les mêmes technologies (Next.js, React Native) et les mêmes standards de code que les meilleures agences.",
+          "Brest, Rennes et Quimper comptent de nombreuses agences web. Travailler directement avec un développeur freelance coûte en général nettement moins cher, car il n'y a ni commerciaux, ni chef de projet intermédiaire, ni locaux à financer : vous payez le développement.",
+          "Vous échangez directement avec la personne qui code votre projet, sans perte d'information. Un message envoyé le matin obtient une réponse dans la journée. Et la qualité est comparable, avec les mêmes technologies que les bonnes agences. Le comparatif [freelance ou agence](/blog/developpeur-freelance-vs-agence) détaille les cas où l'une ou l'autre formule est la plus adaptée.",
         ],
       },
       {
-        heading: "Tarifs et délais",
+        heading: "Comment se déroule un projet",
         paragraphs: [
-          "Mes tarifs sont affichés sur les pages services du site, sans surprise. Le paiement se fait en deux fois, avec 30 % à la commande. Voici les délais habituels :",
+          "Tout commence par un échange de 30 à 60 minutes, en visio ou en personne dans le Finistère, pour définir votre projet et vos objectifs. Je vous envoie ensuite un devis détaillé, avec les fonctionnalités, le tarif et le planning. Pendant le développement, vous recevez des versions intermédiaires à valider. Enfin, je m'occupe de la mise en ligne et de votre prise en main, avec un suivi après la livraison.",
+          "Mes tarifs, affichés sur les pages services du site, sont les mêmes dans toute la Bretagne. Le paiement se fait en deux fois : 30 % à la commande, 70 % à la livraison.",
         ],
         table: {
           head: ["Projet", "Délai de livraison"],
@@ -2385,171 +2207,16 @@ export const articles: Article[] = [
       {
         heading: "Demandez votre devis gratuit",
         paragraphs: [
-          "Vous avez un projet à Rennes ou en Ille-et-Vilaine ? Écrivez-moi par email ou via le formulaire de contact : je vous réponds avec une proposition concrète et un tarif transparent.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "creation-site-web-brest",
-    image: {
-      src: "/blog/creation-site-web-brest.jpg",
-      alt: "Ordinateur portable sur une table près d'une fenêtre, port de plaisance de Brest avec voiliers en arrière-plan flou, tasse de café",
-      credit: "Image : Artlist",
-    },
-    service: "site-web",
-    title: "Création site web à Brest : tarifs 2026",
-    description: "Création site web à Brest : vitrine, e-commerce, plateforme sur mesure. Développeur freelance local, SEO optimisé. Devis gratuit sous 24h.",
-    date: "2026-05-16",
-    lastModified: "2026-10-02",
-    category: "Local",
-    sections: [
-      {
-        paragraphs: [
-          "Vous voulez créer un site web à Brest ? Vitrine professionnelle, boutique en ligne ou plateforme avec espace client, je développe des sites sur mesure pour les entreprises brestoises, et je suis votre interlocuteur unique de la première discussion à la mise en ligne.",
-          "Voici à quoi sert un site pour une entreprise brestoise, les différents types de sites possibles, comment apparaître sur Google à Brest, et dans quels délais.",
-        ],
-      },
-      {
-        heading: "Pourquoi un site sur mesure pour une entreprise brestoise ?",
-        paragraphs: [
-          "Brest a un tissu économique varié : commerce, restauration, artisanat, tourisme, maritime, tech. Quelle que soit votre activité, vos prospects vous cherchent d'abord sur Google, et votre site est souvent leur premier contact avec vous.",
-          "Un site professionnel vous fait apparaître quand on cherche votre métier à Brest, et montre votre sérieux avant même le premier échange. Il reçoit des demandes de devis à toute heure, sans que vous ayez à décrocher. Il vous permet de rivaliser avec les grandes enseignes, et de fidéliser vos clients grâce à un blog, des actualités ou un espace client.",
-        ],
-      },
-      {
-        heading: "Les types de sites que je crée à Brest",
-        table: {
-          head: ["Type de site", "Pour quoi faire", "Délai"],
-          rows: [
-            ["Landing page", "Une page, un objectif : tester une offre ou une campagne", "Quelques jours"],
-            ["Site vitrine", "Présenter votre activité, vos services et vos réalisations", "2 semaines"],
-            ["Site pro avec blog", "Attirer des clients via Google, galerie de réalisations, pages de ville", "3 semaines"],
-            ["Site e-commerce", "Vendre en ligne avec catalogue, panier et paiement Stripe", "4 à 6 semaines"],
-            ["Plateforme web", "Espace client, back-office, outil de gestion", "6 à 10 semaines"],
-          ],
-        },
-      },
-      {
-        paragraphs: [
-          "Mes tarifs sont affichés sur la page [Site web](/services/site-web) du site, sans frais cachés ni abonnement mensuel obligatoire.",
-        ],
-      },
-      {
-        heading: "Apparaître en premier sur Google à Brest",
-        paragraphs: [
-          "Pour les commerces et prestataires brestois, le référencement local est décisif. Sur chaque site, j'optimise les balises pour Brest et ses quartiers (Recouvrance, Saint-Marc, Lambézellec…), et j'ajoute des données structurées de type LocalBusiness pour que Google affiche correctement votre adresse, vos horaires et vos avis.",
-          "Je vous aide aussi à créer ou optimiser votre fiche Google Business Profile, celle qui vous fait apparaître dans Google Maps. Je vise systématiquement un score Lighthouse de 95 sur 100 ou plus, car un site qui se charge en moins d'une seconde est favorisé par Google. Et si vous couvrez plusieurs zones du Finistère, des pages dédiées par quartier ou par secteur élargissent votre visibilité.",
-        ],
-      },
-      {
-        heading: "Demandez votre devis gratuit à Brest",
-        paragraphs: [
-          "Je suis basé à Brest et je réponds personnellement à chaque demande. Décrivez-moi votre projet, votre activité, ce que votre site doit faire et votre budget indicatif : je vous envoie un devis détaillé et gratuit.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "developpeur-application-mobile-bretagne",
-    image: {
-      src: "/blog/developpeur-application-mobile-bretagne.jpg",
-      alt: "Main tenant un smartphone devant la côte de granit rose de Bretagne au coucher du soleil",
-      credit: "Image : Artlist",
-    },
-    service: "application-mobile",
-    title: "Développeur application mobile et web en Bretagne",
-    description:
-      "Création d'application mobile et web en Bretagne par un développeur basé à Brest : iOS, Android, web app métier. Finistère, Morbihan, Rennes. Devis gratuit sous 24h.",
-    date: "2026-05-16",
-    lastModified: "2026-10-12",
-    category: "Local",
-    sections: [
-      {
-        paragraphs: [
-          "Vous cherchez un développeur d'application mobile en Bretagne ? Je suis basé à Brest et j'accompagne des entreprises du Finistère, du Morbihan, des Côtes-d'Armor et d'Ille-et-Vilaine dans la création de leurs outils numériques : applications iOS et Android, sites web sur mesure et plateformes avec back-office.",
-          "Voici pourquoi un développeur local fait la différence pour les entreprises bretonnes, les projets que je réalise, et comment nous pouvons travailler ensemble.",
-        ],
-      },
-      {
-        heading: "Pourquoi la Bretagne a besoin de développeurs locaux",
-        paragraphs: [
-          "La Bretagne a une économie riche et variée : agriculture, agroalimentaire, tourisme, commerce, artisanat, pêche, tech. Ces secteurs ont des besoins numériques particuliers, que les agences parisiennes ou les prestataires étrangers ne saisissent pas toujours.",
-          "La saisonnalité touristique en est un bon exemple : une application de réservation pour un hôtel breton doit gérer le pic de juillet-août comme le creux de l'hiver. Les commerces de proximité ont leurs propres habitudes de fidélité et de commande locale. Les circuits courts, très développés ici, demandent des outils de paniers, d'abonnements et de vente directe. Et le monde maritime, de la gestion de port au club de voile, a des besoins très spécifiques que je comprends d'autant mieux que je suis breton.",
-        ],
-      },
-      {
-        heading: "Mes zones d'intervention",
-        paragraphs: [
-          "J'interviens dans toute la Bretagne, avec une présence renforcée dans le Finistère.",
-        ],
-        table: {
-          head: ["Département", "Villes principales"],
-          rows: [
-            ["Finistère (29)", "Brest, Quimper, Morlaix, Landerneau, Douarnenez, Concarneau, Quimperlé, Pont-l'Abbé"],
-            ["Morbihan (56)", "Lorient, Vannes, Auray, Pontivy, Ploërmel"],
-            ["Côtes-d'Armor (22)", "Saint-Brieuc, Lannion, Dinan, Guingamp"],
-            ["Ille-et-Vilaine (35)", "Rennes, Saint-Malo, Fougères, Vitré"],
-          ],
-        },
-      },
-      {
-        paragraphs: [
-          "Je travaille aussi avec des clients partout en France : la plupart des projets peuvent se mener à distance, la localisation n'est donc pas une contrainte.",
-        ],
-      },
-      {
-        heading: "Des applications pensées pour les secteurs bretons",
-        paragraphs: [
-          "Voici des exemples de projets adaptés à l'économie bretonne.",
-        ],
-        subsections: [
-          {
-            heading: "Restauration et commerce",
-            paragraphs: [
-              "Pour un restaurant ou une crêperie : commande en ligne, réservation et fidélité, sans payer de commission aux plateformes de livraison. Pour un maraîcher ou un producteur : paniers hebdomadaires, abonnements, points de retrait et paiement en ligne, pour développer la vente en circuit court.",
-            ],
-          },
-          {
-            heading: "Tourisme et hébergement",
-            paragraphs: [
-              "Pour un hôtel, un camping ou un gîte : réservation directe, conciergerie et notifications, pour moins dépendre de Booking.com. Pour le tourisme et les loisirs : billetterie, guide numérique et réservation d'activités de plein air.",
-            ],
-          },
-          {
-            heading: "Artisans, nautisme et associations",
-            paragraphs: [
-              "Pour un plombier, un électricien ou un menuisier du Finistère : prise de rendez-vous, devis en ligne et suivi de chantier. Pour un club de voile : inscriptions, réservation de bateaux, actualités et licences. Et pour une association ou une collectivité : informations, agenda et signalements.",
-            ],
-          },
-        ],
-      },
-      {
-        heading: "Tarifs et délais",
-        paragraphs: [
-          "Mes tarifs, affichés sur les pages services du site comme [Application mobile](/services/application-mobile), sont les mêmes dans toute la Bretagne. Le paiement se fait en deux fois : 30 % à la commande, 70 % à la livraison.",
-        ],
-        table: {
-          head: ["Projet", "Délai de livraison"],
-          rows: [
-            ["Site vitrine sur mesure", "2 à 3 semaines"],
-            ["Application mobile iOS et Android", "4 à 8 semaines"],
-            ["Plateforme digitale avec back-office", "6 à 12 semaines"],
-          ],
-        },
-      },
-      {
-        heading: "Demandez votre devis gratuit",
-        paragraphs: [
-          "Vous avez un projet en Bretagne ? Écrivez-moi par email ou via le formulaire de contact : je vous réponds avec une proposition concrète, un tarif transparent et un planning réaliste. Basé à Brest, je connais la Bretagne et ses besoins.",
+          "Vous avez un projet à Brest, Quimper, Rennes ou ailleurs en Bretagne ? Décrivez-le via le [formulaire en bas de page](#contact) : je vous réponds sous 24h avec une proposition concrète, un tarif transparent et un planning réaliste.",
         ],
       },
       {
         heading: "FAQ : développeur application mobile en Bretagne",
         list: [
-          "Peut-on se rencontrer ? Oui. Je suis basé à Brest et je me déplace dans le Finistère (Quimper, Morlaix, Landerneau) pour un premier rendez-vous. Pour les autres départements bretons, je privilégie la visio.",
-          "Travaillez-vous uniquement en Bretagne ? Non. Je travaille avec des clients de toute la France, mais la proximité avec les entreprises bretonnes facilite les échanges.",
-          "Les conditions sont-elles les mêmes à Rennes et à Brest ? Oui, mes tarifs et mes délais sont identiques quelle que soit la localisation de votre entreprise.",
+          "Peut-on se rencontrer ? Oui. Je suis basé à Brest et je me déplace dans le Finistère (Quimper, Morlaix, Landerneau) pour un premier rendez-vous. Pour Rennes et les autres départements, je privilégie la visio.",
+          "Travaillez-vous uniquement en Bretagne ? Non. Je travaille avec des clients de toute la France, mais la proximité facilite les échanges avec les entreprises bretonnes.",
+          "Les conditions sont-elles les mêmes à Rennes, Quimper et Brest ? Oui, mes tarifs et mes délais sont identiques quelle que soit la ville de votre entreprise.",
+          "Créez-vous aussi des sites web, ou seulement des applications ? Les deux : sites vitrines, boutiques en ligne, plateformes et applications iOS et Android, séparément ou dans un même projet.",
           "Mon app peut-elle être en breton ? Oui, le breton peut être ajouté comme langue secondaire, c'est techniquement simple à intégrer.",
           "Travaillez-vous avec les associations et collectivités ? Oui, je réalise aussi des applications d'information, d'agenda ou de signalement pour les structures publiques et associatives.",
         ],
@@ -2948,15 +2615,15 @@ export const articles: Article[] = [
     },
     service: "application-mobile",
     title: "Fidéliser ses clients avec une app mobile : guide",
-    description: "Programme de fidélité numérique via une application mobile : tampons virtuels, push ciblées, offres personnalisées. Guide complet pour commerçants.",
+    description: "Fidéliser vos clients avec une application : tampons virtuels, points, notifications push ciblées. Mécaniques, exemples par secteur et bonnes pratiques.",
     date: "2026-06-01",
-    lastModified: "2026-10-01",
+    lastModified: "2026-11-21",
     category: "Guides",
     sections: [
       {
         paragraphs: [
           "Acquérir un nouveau client coûte cinq à sept fois plus cher que d'en fidéliser un existant. Pourtant, la plupart des commerces et restaurants n'ont pas de vrai programme de fidélité, ou se contentent de cartes papier qui finissent au fond d'un sac.",
-          "Une application mobile change la donne : grâce aux notifications et aux programmes de points numériques, elle fait revenir vos clients plus souvent. Voici pourquoi la carte papier ne suffit plus, quelles mécaniques fonctionnent vraiment, et comment les mettre en place dans votre commerce.",
+          "Une application mobile change la donne grâce à deux leviers qui se complètent : un programme de fidélité numérique, qui donne une raison de revenir, et les notifications push, qui le rappellent au bon moment. Voici comment fonctionnent ces deux leviers, quelles mécaniques marchent vraiment, et les erreurs qui font désinstaller une application.",
         ],
       },
       {
@@ -2982,46 +2649,81 @@ export const articles: Article[] = [
             ],
           },
           {
-            heading: "Les notifications au bon moment",
+            heading: "Le parrainage",
             paragraphs: [
-              "Une offre d'anniversaire envoyée automatiquement le jour J, ou une relance qui donne envie de revenir : « Vous avez 8 tampons sur 10, plus que 2 visites pour votre cadeau ! » C'est souvent ce petit rappel qui déclenche la visite suivante.",
+              "Un client satisfait qui fait venir un ami reçoit une récompense, et l'ami aussi. C'est la façon la moins chère de recruter de nouveaux clients, parce qu'ils arrivent recommandés par quelqu'un en qui ils ont confiance.",
             ],
           },
         ],
       },
       {
-        heading: "Les résultats observés chez mes clients",
+        heading: "Les notifications push, le moteur de la fidélité",
         paragraphs: [
-          "Les commerçants et restaurateurs qui ont intégré un programme de fidélité à leur application observent en moyenne une hausse de 20 à 30 % de la fréquence de visite de leurs clients actifs, et nettement moins de clients qui disparaissent sans revenir.",
+          "Un programme de fidélité que personne ne consulte ne sert à rien. Les notifications push sont le seul canal qui rappelle votre existence au client sans qu'il ait à ouvrir l'application de lui-même : un message qui s'affiche sur l'écran de verrouillage, même quand l'application est fermée.",
+          "Contrairement à un SMS, une notification ne coûte rien à l'envoi. Contrairement à un post Instagram, elle ne dépend d'aucun algorithme qui décide qui la voit. Et contrairement à un email, elle ne finit pas dans une boîte de réception saturée ou dans les spams. Une fois l'application installée, c'est un canal qui vous appartient.",
+          "Techniquement, l'application s'enregistre à son installation auprès de Firebase Cloud Messaging, un service gratuit qui fonctionne pour iOS comme pour Android. Vous envoyez ensuite vos messages à la main depuis votre [panel d'administration](/blog/panel-admin-site-web-application-mobile), ou automatiquement selon un événement : commande prête, rendez-vous demain, tampon gagné.",
+        ],
+      },
+      {
+        heading: "Des exemples concrets par secteur",
+        paragraphs: [
+          "Le bon message au bon moment fait toute la différence. Voici comment fidélité et notifications se combinent selon le métier.",
+        ],
+        table: {
+          head: ["Secteur", "Mécanique de fidélité", "Notification type"],
+          rows: [
+            ["Restaurant", "Points à chaque commande", "« Votre commande est prête ! » puis « Plus que 2 commandes pour votre dessert offert »"],
+            ["Coiffeur, institut", "Carte de 10 prestations", "Rappel de rendez-vous la veille, pour réduire les absences"],
+            ["Boutique", "Club VIP et ventes privées", "Vente privée réservée aux membres, ou retour en stock d'un produit en favori"],
+            ["Salle de sport", "Récompense d'assiduité", "Fin d'abonnement proche, ou rappel du cours de demain"],
+            ["Boulangerie, commerce", "Tampons numériques", "Offre d'anniversaire envoyée automatiquement le jour J"],
+          ],
+        },
+      },
+      {
+        heading: "Les bonnes pratiques pour ne pas être désinstallé",
+        paragraphs: [
+          "Les études des outils d'envoi convergent sur un point : une notification ciblée et utile est ouverte deux à trois fois plus souvent qu'un message générique envoyé à tout le monde. Quelques règles font toute la différence.",
+        ],
+        list: [
+          "Demandez l'autorisation au bon moment : après une première commande ou une réservation, quand le client voit l'intérêt, plutôt qu'à la toute première ouverture de l'application.",
+          "Personnalisez : « Votre commande n°482 est prête » est bien plus utile que « Une notification vous attend ».",
+          "Ciblez : une offre envoyée uniquement aux clients venus plus de cinq fois, ou à ceux absents depuis trois mois, fonctionne mieux qu'une offre pour tous.",
+          "Limitez la fréquence : hors messages de service (commande, rendez-vous), une à deux notifications par semaine au maximum, au-delà de quoi les désinstallations augmentent.",
+          "Choisissez l'heure : une notification à 7h du matin ou en plein repas a peu de chances d'être bien reçue.",
+          "Posez une question de temps en temps : « Une pizza ce soir ? » donne plus envie de cliquer qu'une affirmation.",
         ],
       },
       {
         heading: "Ce que ça vous apporte côté gestion",
         paragraphs: [
-          "Côté administration, vous disposez d'un vrai tableau de bord. Vous pouvez repérer vos clients VIP, ceux qui ne sont pas venus depuis trois mois, ou ceux qui ont beaucoup de points à utiliser. Vous envoyez alors une notification ciblée, par exemple uniquement aux clients venus plus de cinq fois, plutôt qu'un message à tout le monde.",
-          "Les statistiques vous montrent votre taux de fidélisation, la fréquence de visite et le panier moyen de vos fidèles comparé à celui des nouveaux clients. Et vous pouvez exporter vos données à tout moment : vos clients vous appartiennent, contrairement aux plateformes qui gardent les données.",
+          "Côté administration, vous disposez d'un vrai tableau de bord. Vous repérez vos clients VIP, ceux qui ne sont pas venus depuis trois mois, ou ceux qui ont beaucoup de points à utiliser, et vous leur envoyez une notification ciblée.",
+          "Les statistiques vous montrent votre taux de fidélisation, la fréquence de visite et le panier moyen de vos fidèles comparé à celui des nouveaux clients. Les commerçants qui ont intégré un programme de fidélité à leur application observent en moyenne une hausse de 20 à 30 % de la fréquence de visite de leurs clients actifs. Et vous pouvez exporter vos données à tout moment : vos clients vous appartiennent.",
         ],
       },
       {
         heading: "Les plateformes de fidélité et leurs limites",
         paragraphs: [
-          "Des solutions comme Fidall, Stamp Me ou LoyaltyLion existent. Elles ont un coût récurrent, sous forme d'abonnement qui augmente souvent avec le nombre de clients. Votre programme ressemble alors à celui de vos concurrents, avec la même interface et la même expérience, ce qui rend difficile de vous démarquer.",
-          "Les règles sont aussi difficiles à adapter exactement à votre fonctionnement, et certaines plateformes utilisent vos données clients à d'autres fins. Une application sur mesure reprend vos couleurs, vos règles et vos données, et vos clients téléchargent votre application, pas celle d'une plateforme.",
+          "Des solutions comme Fidall, Stamp Me ou LoyaltyLion existent. Elles ont un coût récurrent, sous forme d'abonnement qui augmente souvent avec le nombre de clients. Votre programme ressemble alors à celui de vos concurrents, avec la même interface, ce qui rend difficile de vous démarquer.",
+          "Les règles sont aussi difficiles à adapter exactement à votre fonctionnement, et le client télécharge l'application de la plateforme, pas la vôtre. Une application sur mesure reprend vos couleurs, vos règles et vos données, et réunit commande, réservation, fidélité et notifications au même endroit.",
         ],
       },
       {
         heading: "Intégrer la fidélité à votre application",
         paragraphs: [
-          "Le programme de fidélité s'intègre directement dans votre application, sans seconde application à installer. Dans une application de restaurant, la commande en ligne et la fidélité cohabitent : vos clients cumulent des points à chaque commande. Dans un commerce, l'achat et la récompense se font au même endroit, du catalogue au panier. Et dans un salon de coiffure, la réservation, la carte de points et l'historique des prestations se retrouvent dans la même application.",
+          "Dans une application de restaurant, la commande en ligne et la fidélité cohabitent : vos clients cumulent des points à chaque commande. Dans un commerce, l'achat et la récompense se font au même endroit. Et dans un salon de coiffure, la réservation, la carte de points et l'historique des prestations se retrouvent dans la même application. Plus de détails sur la page [Application mobile](/services/application-mobile), ou décrivez-moi votre commerce via le [formulaire en bas de page](#contact) : je vous réponds sous 24h.",
         ],
       },
       {
-        heading: "FAQ : fidélité client par application mobile",
+        heading: "FAQ : fidélité client et notifications push",
         list: [
-          "Puis-je migrer ma base clients de Planity ou d'une carte papier vers l'app ? Oui. Les clients existants peuvent créer un compte dans l'app et retrouver leur historique si les données sont transférables.",
-          "L'app de fidélité fonctionne-t-elle sans internet ? Le solde de points est visible hors ligne. Les transactions sont synchronisées à la reconnexion.",
-          "Les notifications sont-elles vraiment efficaces ? Oui. Leur taux d'ouverture est bien supérieur à celui des emails, et une notification bien ciblée génère des visites le jour même.",
-          "Combien coûte l'ajout d'un programme de fidélité dans l'app ? Il peut être intégré dès la création de l'app ou ajouté ensuite. Le devis gratuit détaille son coût selon les mécaniques choisies (tampons, points, parrainage).",
+          "Les notifications push sont-elles payantes ? Non, l'envoi via Firebase Cloud Messaging est gratuit, quel que soit le volume.",
+          "Puis-je envoyer une notification à un seul client ou à tous ? Les deux : vous ciblez un client précis, un groupe (clients VIP, clients absents) ou toute votre base.",
+          "Les notifications fonctionnent-elles si l'application est fermée ? Oui, c'est justement leur intérêt : elles s'affichent même quand l'application n'est pas ouverte.",
+          "Mes clients peuvent-ils désactiver les notifications ? Oui, à tout moment depuis les réglages de leur téléphone, d'où l'importance de ne pas en abuser.",
+          "Puis-je reprendre ma base clients d'une carte papier ou d'une autre plateforme ? Oui. Les clients existants créent un compte dans l'application et retrouvent leur historique si les données sont transférables.",
+          "L'application de fidélité fonctionne-t-elle sans internet ? Le solde de points reste visible hors ligne, et les transactions sont synchronisées à la reconnexion.",
+          "Le programme de fidélité peut-il être ajouté plus tard ? Oui. Il peut être intégré dès la création de l'application ou ajouté ensuite, son coût est détaillé dans le devis gratuit.",
         ],
       },
     ],
@@ -3036,9 +2738,9 @@ export const articles: Article[] = [
     service: "application-mobile",
     title: "Comment créer une application mobile : le guide 2026",
     description:
-      "Créer une application mobile iOS & Android étape par étape : valider l'idée, lancer un MVP, préparer le brief, choisir qui la développe, jusqu'à la publication.",
+      "Créer une application mobile iOS & Android étape par étape : valider l'idée, MVP, brief, design UX/UI, choix du prestataire, jusqu'à la publication.",
     date: "2026-06-13",
-    lastModified: "2026-10-01",
+    lastModified: "2026-11-21",
     category: "Guides",
     sections: [
       {
@@ -3114,6 +2816,37 @@ export const articles: Article[] = [
         },
       },
       {
+        heading: "Soigner l'expérience utilisateur (UX/UI)",
+        paragraphs: [
+          "Un utilisateur décide de garder ou de désinstaller une application dans les premières secondes. Ce jugement ne repose pas sur les fonctionnalités, mais sur l'expérience : est-ce clair, est-ce rapide, est-ce agréable ? C'est pourquoi l'étape de design compte autant que le développement.",
+          "L'UI, l'interface, c'est ce que l'œil voit : couleurs, boutons, typographie, icônes. L'UX, l'expérience utilisateur, c'est ce que la personne ressent en s'en servant : trouve-t-elle ce qu'elle cherche, comprend-elle où appuyer, l'application répond-elle vite ? Une application peut être belle mais frustrante, ou l'inverse. Les deux se pensent ensemble, avant d'écrire la moindre ligne de code.",
+        ],
+        subsections: [
+          {
+            heading: "Partir de l'action principale",
+            paragraphs: [
+              "Avant de dessiner un écran, définissez ce que votre client doit pouvoir faire en priorité : réserver, commander, appeler. Tout le parcours se construit autour de cette action, qui ne devrait jamais demander plus de trois gestes, et rester accessible d'une seule main.",
+            ],
+          },
+          {
+            heading: "La rapidité et le retour visuel",
+            paragraphs: [
+              "Un écran doit s'afficher en moins de deux secondes : au-delà, une grande partie des utilisateurs abandonne. Chaque appui doit aussi produire une réaction immédiate (bouton qui réagit, chargement visible, confirmation claire), pour que l'utilisateur sache que sa demande a été prise en compte.",
+            ],
+          },
+          {
+            heading: "La cohérence et les règles de chaque plateforme",
+            paragraphs: [
+              "Les mêmes couleurs, les mêmes boutons et les mêmes gestes sur tous les écrans évitent à l'utilisateur de se sentir perdu. Une bonne application respecte aussi les règles de design d'Apple (Human Interface Guidelines) et d'Android (Material Design) : elle paraît familière dès la première ouverture, sans apprentissage.",
+            ],
+          },
+        ],
+        callout: {
+          title: "Les erreurs UX qui font fuir",
+          text: "Un formulaire d'inscription trop long (demandez le strict nécessaire, le profil se complétera plus tard), un écran surchargé où l'action principale se noie, des textes trop petits, aucun retour après un appui, ou un bouton retour qui change de place d'un écran à l'autre.",
+        },
+      },
+      {
         heading: "Les erreurs à éviter",
         paragraphs: [
           "La plus courante consiste à vouloir tout mettre dans la première version : une application trop ambitieuse au départ prend plus de temps à livrer et retarde les premiers retours d'utilisateurs. La deuxième, c'est de négliger les maquettes : passer directement au développement sans avoir validé le design entraîne des retouches coûteuses ensuite.",
@@ -3147,6 +2880,7 @@ export const articles: Article[] = [
           "Mon application sera-t-elle disponible sur iPhone et Android ? Avec une technologie multiplateforme comme React Native, une seule base de code fonctionne sur iOS et Android, ce qui permet de toucher tous les utilisateurs sans double développement.",
           "Comment se déroule le suivi pendant le développement ? Vous recevez des versions de test régulières sur votre téléphone, vous donnez vos retours, et les ajustements sont faits jusqu'à ce que l'application vous convienne.",
           "Que se passe-t-il après la publication de l'app ? Un suivi de maintenance permet de garder l'application compatible avec les nouvelles versions d'iOS et Android, de corriger les éventuels bugs et d'ajouter de nouvelles fonctionnalités.",
+          "L'UX/UI est-elle comprise dans le développement ? Oui, la conception du parcours et des écrans fait partie du projet et se valide avec vous avant le développement.",
         ],
       },
     ],
@@ -3263,80 +2997,217 @@ export const articles: Article[] = [
     service: "application-mobile",
     title: "Panel admin site web & application mobile : le guide",
     description:
-      "Chaque site et application BreizhApp inclut un panel d'administration sur mesure : menu, commandes, statistiques. Gérez tout en autonomie totale.",
+      "Panel d'administration (back-office) d'un site ou d'une app : modules indispensables, exemples réels pour restaurant, pizzeria et boutique en ligne.",
     date: "2026-06-29",
-    lastModified: "2026-10-12",
+    lastModified: "2026-11-21",
     category: "Conseils",
     sections: [
       {
         paragraphs: [
-          "Quand je livre un site web ou une [application mobile](/services/application-mobile), je ne livre pas seulement des écrans. Je livre aussi un outil de gestion complet, accessible depuis n'importe quel navigateur, que vous utilisez seul, sans jamais avoir à me recontacter pour une modification.",
-          "C'est ce qu'on appelle le panel d'administration, ou back-office. Voici ce qu'il contient concrètement, des exemples réels, et pourquoi c'est l'un des éléments les plus importants d'un projet numérique.",
+          "Quand je livre un site web ou une [application mobile](/services/application-mobile), je ne livre pas seulement des écrans. Je livre aussi un outil de gestion complet, accessible depuis n'importe quel navigateur, que vous utilisez seul, sans avoir à me recontacter pour changer un prix ou une photo.",
+          "C'est ce qu'on appelle le panel d'administration, ou back-office. Voici ce qu'il doit contenir, comment le choisir, et à quoi il ressemble concrètement pour un restaurant, une pizzeria et une boutique en ligne, captures d'écran à l'appui.",
         ],
       },
       {
         heading: "Qu'est-ce qu'un panel d'administration ?",
         paragraphs: [
-          "Le panel d'administration est une interface web privée, accessible uniquement à vous et, si besoin, aux membres de votre équipe. Il vous permet de piloter votre activité en temps réel : ajouter un produit, confirmer une commande, voir vos revenus de la semaine, gérer vos rendez-vous.",
-          "Il est développé sur mesure pour votre projet. Ce n'est pas un outil générique comme Shopify ou WordPress qu'il faut apprivoiser, mais un tableau de bord pensé pour votre cas précis, avec uniquement les fonctions dont vous avez besoin.",
+          "Le panel d'administration est une interface web privée, accessible uniquement à vous et, si besoin, aux membres de votre équipe. Si le site ou l'application est la vitrine que voient vos clients, le panel est l'arrière-boutique : c'est là que vous pilotez votre activité en temps réel. Ajouter un produit, confirmer une commande, voir vos revenus de la semaine, gérer vos rendez-vous.",
+          "Toute modification faite dans le panel se répercute immédiatement sur le site et l'application : un plat désactivé disparaît du menu, un nouveau produit apparaît dans le catalogue, sans délai ni intervention technique.",
         ],
       },
       {
-        heading: "Ce que contient le panel selon votre activité",
+        heading: "Les modules les plus courants",
         paragraphs: [
-          "Les fonctionnalités varient selon le projet, mais voici les modules les plus courants.",
+          "Les fonctionnalités varient selon le projet, mais certaines reviennent dans presque tous les panels, que l'on parle d'un logiciel de caisse, d'une boutique ou d'une application de réservation.",
         ],
         table: {
           head: ["Module", "Ce qu'il vous permet de faire"],
           rows: [
-            ["Tableau de bord", "Chiffre d'affaires de la semaine, nombre de commandes ou de rendez-vous, produit ou prestation le plus demandé"],
+            ["Tableau de bord", "Chiffre d'affaires de la semaine, nombre de commandes ou de rendez-vous, produit le plus demandé"],
             ["Produits ou menu", "Ajouter, modifier, supprimer des articles, changer les prix, activer ou désactiver un produit en un clic"],
-            ["Commandes", "Suivre les commandes en temps réel, changer leur statut, contacter le client"],
-            ["Rendez-vous", "Confirmer ou refuser une demande, voir la répartition par membre de l'équipe, bloquer des créneaux"],
+            ["Commandes", "Suivre les commandes en temps réel, changer leur statut, prévenir le client"],
+            ["Rendez-vous ou réservations", "Confirmer ou refuser une demande, bloquer des créneaux, voir la répartition par membre de l'équipe"],
             ["Codes promo", "Créer des réductions en pourcentage ou en montant fixe, avec une date d'expiration"],
-            ["Messages", "Recevoir les messages envoyés depuis le site ou l'application"],
-            ["Galerie photos", "Ajouter ou retirer des visuels sans développeur"],
-            ["Équipe", "Ajouter un collaborateur, définir ses accès, suivre son activité"],
-            ["Statistiques", "Commandes par période, meilleures ventes, revenus mensuels"],
+            ["Messages et avis", "Recevoir les messages clients, modérer les avis avant publication"],
+            ["Photos et contenus", "Changer les visuels, les horaires, les textes de présentation sans développeur"],
+            ["Équipe et accès", "Ajouter un collaborateur et définir ce qu'il peut voir ou modifier"],
+            ["Statistiques", "Ventes par période, meilleures ventes, heures de pointe"],
           ],
         },
       },
       {
-        heading: "Exemple concret : le panel d'un salon de coiffure",
+        heading: "Comment juger un bon panel d'administration",
         paragraphs: [
-          "Pour Aurum Studio, un salon de coiffure, le panel affiche en temps réel le chiffre d'affaires confirmé de la semaine, le nombre de rendez-vous en attente de confirmation, le coiffeur le plus demandé et la prestation la plus réservée.",
-          "Depuis le panel, le gérant confirme ou refuse les rendez-vous, gère les prestations et leurs tarifs, bloque des créneaux pour une fermeture exceptionnelle et consulte la répartition des rendez-vous par membre de l'équipe. Tout cela depuis un navigateur, sur téléphone ou ordinateur, sans jamais ouvrir de code.",
+          "Un panel peut aligner trente fonctionnalités et rester pénible à utiliser. Voici les critères qui comptent vraiment au quotidien.",
+        ],
+        list: [
+          "Il est pensé pour votre métier : un restaurateur doit voir ses commandes du soir, pas un tableau de bord générique rempli d'options inutiles.",
+          "Il s'utilise sur téléphone : en plein service ou sur un chantier, vous n'avez pas toujours un ordinateur sous la main.",
+          "Chaque personne a les bons accès : un livreur voit ses livraisons, un employé son planning, le gérant tout le reste.",
+          "Les changements sont instantanés : ce que vous modifiez s'affiche tout de suite côté client.",
+          "Vos données vous appartiennent : vous pouvez exporter vos clients et vos ventes à tout moment.",
         ],
       },
       {
-        heading: "Exemple concret : le panel d'une pizzeria",
+        heading: "Exemple concret : le panel d'un restaurant ou d'une pizzeria",
         paragraphs: [
-          "Pour une pizzeria, le panel va plus loin. Il centralise la gestion du menu (40 produits répartis entre pizzas, pâtes, antipasti, desserts et boissons), les commandes en temps réel avec leur statut de préparation, les réservations de table, les horaires d'ouverture, les codes promo, les livreurs et les statistiques de vente.",
-          "Chaque produit s'active ou se désactive en un clic, ce qui est précieux quand un ingrédient vient à manquer. Et un plat peut être mis en avant sur la page d'accueil sans retoucher le site.",
+          "Pour un restaurant ou une pizzeria, le panel centralise tout ce qui se passe pendant le service et en dehors. Voici ses principaux modules, tels qu'ils apparaissent dans le panel d'une vraie pizzeria. Pour la partie visible par vos clients, voir la page [application pour restaurant](/services/secteur/restaurant).",
+        ],
+        subsections: [
+          {
+            heading: "Commandes en temps réel",
+            paragraphs: [
+              "Toutes les commandes passées depuis l'application ou le site arrivent ici, avec le détail, le mode de retrait ou de livraison et les coordonnées du client. Le statut se met à jour en un clic (reçue, en préparation, en livraison, livrée) et le client est prévenu automatiquement.",
+            ],
+            image: {
+              src: "/blog/panel-admin-restaurant-pizzeria/gestion-des-commandes-panel-admin-pizzeria.webp",
+              alt: "Gestion des commandes panel admin pizzeria BreizhApp",
+              caption: "Commandes : suivi en temps réel avec statut et détail client",
+            },
+          },
+          {
+            heading: "Menu, prix et disponibilités",
+            paragraphs: [
+              "Le menu est classé par catégories : pizzas, pâtes, antipasti, desserts, boissons, suppléments. Pour chaque produit, vous modifiez le nom, la description, le prix et la photo, et vous pouvez le mettre en avant sur la page d'accueil. Un ingrédient vient à manquer ? Vous désactivez le plat d'un geste, il disparaît du menu client immédiatement.",
+            ],
+            image: {
+              src: "/blog/panel-admin-restaurant-pizzeria/gestion-du-menu-panel-admin-restaurant.webp",
+              alt: "Gestion du menu panel admin restaurant BreizhApp",
+              caption: "Menu : produits, disponibilité et mise en avant en un clic",
+            },
+          },
+          {
+            heading: "Réservations et horaires",
+            paragraphs: [
+              "Les demandes de table arrivent avec le nombre de couverts, la date et l'heure : vous confirmez ou refusez, le client est notifié. Les horaires d'ouverture se règlent jour par jour, et une fermeture exceptionnelle se bloque en quelques secondes.",
+            ],
+            image: {
+              src: "/blog/panel-admin-restaurant-pizzeria/gestion-des-reservations-panel-admin-restaurant.webp",
+              alt: "Gestion des réservations panel admin restaurant BreizhApp",
+              caption: "Réservations : confirmation ou refus avec notification automatique au client",
+            },
+          },
+          {
+            heading: "Livreurs",
+            paragraphs: [
+              "Si vous livrez, vous ajoutez vos livreurs, vous leur attribuez des commandes et vous suivez leur activité. Chaque livreur voit uniquement ses livraisons du jour depuis son téléphone.",
+            ],
+            image: {
+              src: "/blog/panel-admin-restaurant-pizzeria/gestion-des-livreurs-panel-admin-restaurant.webp",
+              alt: "Gestion des livreurs panel admin restaurant BreizhApp",
+              caption: "Livreurs : gestion de l'équipe et attribution des commandes",
+            },
+          },
+          {
+            heading: "Codes promo et statistiques",
+            paragraphs: [
+              "Vous créez des réductions avec une date d'expiration et un nombre d'utilisations maximum, pour une offre de lancement ou une promo du week-end. Les statistiques affichent le chiffre d'affaires, les plats les plus commandés et les heures de pointe : de quoi ajuster votre carte et vos horaires sur des chiffres réels.",
+            ],
+            image: {
+              src: "/blog/panel-admin-restaurant-pizzeria/statistiques-panel-admin-restaurant-pizzeria.webp",
+              alt: "Statistiques panel admin restaurant pizzeria BreizhApp",
+              caption: "Statistiques : chiffre d'affaires, commandes et meilleures ventes sur la période choisie",
+            },
+          },
+        ],
+      },
+      {
+        paragraphs: [
+          "Le panel du restaurant comprend aussi une messagerie, une galerie photos et une section « À propos » pour modifier la présentation, l'adresse et les coordonnées de l'établissement.",
         ],
       },
       {
         heading: "Exemple concret : le panel d'une boutique en ligne",
         paragraphs: [
-          "Pour Histoire Eternelle, une bijouterie en ligne, le panel permet de gérer le catalogue par catégories, de suivre les commandes et leur statut, de créer des codes promo, de répondre aux messages des clients et de gérer les photos de la boutique.",
-          "L'objectif est toujours le même : que la gérante pilote son activité en toute autonomie, sans avoir à m'appeler pour changer un prix ou ajouter une photo.",
+          "Pour Histoire Eternelle, une bijouterie en ligne, le panel permet à la gérante de piloter toute sa boutique seule. Les modules sont différents de ceux d'un restaurant, parce que le métier est différent. Pour en savoir plus sur la boutique elle-même, voir la page [E-commerce](/services/ecommerce).",
+        ],
+        subsections: [
+          {
+            heading: "Tableau de bord",
+            paragraphs: [
+              "Chiffre d'affaires, nombre de commandes et produits actifs en un coup d'œil, avec les dernières commandes listées pour être traitées sans naviguer.",
+            ],
+            image: {
+              src: "/portfolio/histoire-eternelle/dashboard-admin-chiffre-d-affaires-commandes-et-produits-actifs.webp",
+              alt: "Dashboard panel admin boutique e-commerce BreizhApp",
+              caption: "Tableau de bord : chiffre d'affaires, commandes, produits et dernières ventes",
+            },
+          },
+          {
+            heading: "Produits et catégories",
+            paragraphs: [
+              "Pour chaque article : nom, description, prix, photos, stock et catégorie. Un produit se désactive sans être supprimé, et une nouvelle collection s'ajoute en quelques minutes. Les catégories créées dans le panel deviennent automatiquement la navigation de la boutique.",
+            ],
+            image: {
+              src: "/portfolio/histoire-eternelle/gestion-des-produits-ajout-prix-et-disponibilite.webp",
+              alt: "Gestion des produits panel admin boutique en ligne BreizhApp",
+              caption: "Produits : ajout, modification, prix et disponibilité en autonomie",
+            },
+          },
+          {
+            heading: "Commandes",
+            paragraphs: [
+              "Chaque vente arrive avec son détail, son mode de livraison et les coordonnées de l'acheteur. Vous changez le statut, et le client reçoit automatiquement un email de suivi.",
+            ],
+            image: {
+              src: "/portfolio/histoire-eternelle/suivi-et-traitement-des-commandes-en-temps-reel.webp",
+              alt: "Gestion des commandes panel admin boutique e-commerce BreizhApp",
+              caption: "Commandes : suivi en temps réel et notification client automatique",
+            },
+          },
+          {
+            heading: "Codes promo",
+            paragraphs: [
+              "Réduction en pourcentage ou en montant fixe, durée et nombre d'utilisations limités : idéal pour une vente flash, une offre de lancement ou un geste envers une cliente fidèle.",
+            ],
+            image: {
+              src: "/portfolio/histoire-eternelle/codes-promo-parametrables.webp",
+              alt: "Codes promo panel admin boutique en ligne BreizhApp",
+              caption: "Codes promo : réduction, durée et limite d'utilisation",
+            },
+          },
+          {
+            heading: "Avis clients",
+            paragraphs: [
+              "Les avis laissés sur les produits passent par le panel avant publication. La gérante garde ainsi le contrôle de ce qui s'affiche, sans pour autant masquer les retours utiles.",
+            ],
+            image: {
+              src: "/portfolio/histoire-eternelle/moderation-des-avis-clients-avant-publication.webp",
+              alt: "Avis clients panel admin boutique en ligne BreizhApp",
+              caption: "Avis clients : modération avant publication",
+            },
+          },
+        ],
+      },
+      {
+        heading: "Et pour un salon de coiffure ?",
+        paragraphs: [
+          "Le panel d'un salon tourne autour des rendez-vous : confirmation en un clic, prestations et durées, agenda de chaque coiffeur, fermetures et congés. Il est présenté écran par écran dans le guide [panel admin salon de coiffure](/blog/panel-admin-salon-coiffure).",
+        ],
+      },
+      {
+        heading: "Panel sur mesure ou outil générique ?",
+        paragraphs: [
+          "Shopify, WordPress ou les logiciels de caisse ont tous un back-office. Ils sont complets, mais pensés pour tout le monde : vous naviguez entre des dizaines de menus dont vous n'avez pas besoin, vous payez un abonnement chaque mois, et certaines fonctions indispensables pour vous ne sont disponibles qu'en option payante.",
+          "Un panel développé sur mesure ne contient que ce dont votre activité a besoin, avec vos mots. Il se prend en main en quelques minutes, et il évolue avec vous : un nouveau module s'ajoute quand votre activité le demande.",
         ],
       },
       {
         heading: "Pourquoi il est inclus dans chaque projet BreizhApp",
         paragraphs: [
-          "Un site ou une application sans panel d'administration, c'est un outil qui vous rend dépendant du développeur pour la moindre modification. C'est long, coûteux, et cela freine votre réactivité.",
-          "Je construis donc tous mes projets avec un back-office dès le départ, parce que votre autonomie n'est pas négociable. Aucune modification ne vous est facturée pour changer un prix, un texte ou une photo. Le panel s'ouvre depuis n'importe quel appareil, sans installation, avec une interface pensée pour des non-développeurs et plusieurs comptes si vous avez une équipe. Vos données sont stockées sur Firebase, sécurisées et sauvegardées.",
+          "Un site ou une application sans panel d'administration vous rend dépendant du développeur pour la moindre modification. C'est long, coûteux, et cela freine votre réactivité.",
+          "Je construis donc tous mes projets avec un back-office dès le départ. Aucune modification ne vous est facturée pour changer un prix, un texte ou une photo. Le panel s'ouvre depuis n'importe quel appareil, sans installation, avec plusieurs comptes si vous avez une équipe, et vos données sont stockées sur Firebase, sécurisées et sauvegardées. Décrivez-moi votre activité via le [formulaire en bas de page](#contact) : je vous réponds sous 24h.",
         ],
       },
       {
-        heading: "FAQ : le panel d'administration BreizhApp",
+        heading: "FAQ : le panel d'administration",
         list: [
-          "Est-ce que le panel admin est compris dans le prix ? Oui. Le panel d'administration est inclus dans toutes les offres BreizhApp, sans supplément.",
-          "Puis-je donner accès à un employé ? Oui. Je peux créer plusieurs comptes avec des niveaux d'accès différents selon votre organisation.",
-          "Est-ce que je dois être à l'aise avec l'informatique ? Non. L'interface est conçue pour être utilisée sans formation technique. Si besoin, je vous accompagne lors de la livraison.",
-          "Que se passe-t-il si j'ai un problème avec le panel ? Je suis joignable par WhatsApp et email. Le support est inclus dans l'abonnement mensuel.",
-          "Le panel fonctionne-t-il sur téléphone ? Oui. Le panel s'adapte à tous les écrans : smartphone, tablette et ordinateur.",
+          "Le panel admin est-il compris dans le prix ? Oui. Le panel d'administration est inclus dans toutes les offres BreizhApp, sans supplément.",
+          "Puis-je donner accès à un employé ou à un livreur ? Oui. Chaque personne a son compte, avec des accès limités à ce dont elle a besoin.",
+          "Faut-il être à l'aise avec l'informatique ? Non. L'interface est conçue pour être utilisée sans formation technique, et je vous accompagne à la livraison.",
+          "Mes clients sont-ils prévenus quand je change le statut d'une commande ? Oui, par notification ou par email, automatiquement.",
+          "Le panel fonctionne-t-il sur téléphone ? Oui. Il s'adapte à tous les écrans : smartphone, tablette et ordinateur.",
+          "Que se passe-t-il si j'ai un problème avec le panel ? Je suis joignable par WhatsApp et email, et le support est inclus dans l'abonnement mensuel.",
         ],
       },
     ],
@@ -3465,512 +3336,6 @@ export const articles: Article[] = [
     ],
   },
   {
-    slug: "panel-admin-restaurant-pizzeria",
-    image: {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Wood-fired_Pizza_Oven_at_Baronessa_Italian_Restaurant.jpg/960px-Wood-fired_Pizza_Oven_at_Baronessa_Italian_Restaurant.jpg",
-      alt: "Four à pizza au feu de bois dans un restaurant italien",
-      credit: "Photo : Zacatillo1, CC BY-SA 4.0, via Wikimedia Commons",
-    },
-    service: "restaurant",
-    title: "Panel admin restaurant & pizzeria : menu et commandes",
-    description:
-      "Le panel d'administration inclus pour restaurants et pizzerias : menu, commandes, réservations, horaires, codes promo, livreurs et statistiques.",
-    date: "2026-06-29",
-    lastModified: "2026-10-01",
-    category: "Secteurs",
-    sections: [
-      {
-        paragraphs: [
-          "Chaque application mobile et site web que je développe pour un restaurant ou une pizzeria inclut un panel d'administration complet. Vous pilotez votre activité en temps réel depuis n'importe quel appareil, sans avoir besoin de faire appel à un développeur pour la moindre modification.",
-          "Voici les 10 modules du panel, capture par capture.",
-        ],
-      },
-      {
-        heading: "Commandes : suivez chaque commande en temps réel",
-        paragraphs: [
-          "La section Commandes centralise toutes les commandes passées depuis votre application ou votre site. Vous voyez le détail de chaque commande, le statut de préparation, le mode de livraison et les coordonnées du client.",
-          "Vous mettez à jour le statut en un clic : reçue, en préparation, en livraison, livrée.",
-        ],
-        image: {
-          src: "/blog/panel-admin-restaurant-pizzeria/gestion-des-commandes-panel-admin-pizzeria.webp",
-          alt: "Gestion des commandes panel admin pizzeria BreizhApp",
-          caption: "Commandes : suivi en temps réel avec statut et détail client",
-        },
-      },
-      {
-        heading: "Menu : modifiez vos produits, prix et disponibilités",
-        paragraphs: [
-          "La section Menu liste l'intégralité de votre catalogue, réparti par catégories : Pizzas, Pastas, Antipasti, Desserts, Boissons, Suppléments. Pour chaque produit, vous pouvez modifier le nom, la description, le prix, la photo, activer ou désactiver la disponibilité et le mettre en avant sur la page d'accueil.",
-          "Un produit en rupture d'ingrédient ? Vous le désactivez en un toggle. Il disparaît du menu client immédiatement.",
-        ],
-        image: {
-          src: "/blog/panel-admin-restaurant-pizzeria/gestion-du-menu-panel-admin-restaurant.webp",
-          alt: "Gestion du menu panel admin restaurant BreizhApp",
-          caption: "Menu : 40 produits, toggle disponibilité et mise en avant en un clic",
-        },
-      },
-      {
-        heading: "Réservations : gérez les tables et les groupes",
-        paragraphs: [
-          "La section Réservations liste toutes les demandes de table reçues avec le nombre de couverts, la date, l'heure et les coordonnées du client. Vous confirmez ou refusez chaque demande, le client est notifié automatiquement.",
-        ],
-        image: {
-          src: "/blog/panel-admin-restaurant-pizzeria/gestion-des-reservations-panel-admin-restaurant.webp",
-          alt: "Gestion des réservations panel admin restaurant BreizhApp",
-          caption: "Réservations : confirmation ou refus avec notification automatique au client",
-        },
-      },
-      {
-        heading: "Horaires : mettez à jour vos horaires d'ouverture",
-        paragraphs: [
-          "Vous définissez vos horaires d'ouverture jour par jour depuis cette section. Les horaires s'affichent en temps réel sur votre site et dans votre application. Fermeture exceptionnelle ? Vous bloquez le créneau en quelques secondes.",
-        ],
-        image: {
-          src: "/blog/panel-admin-restaurant-pizzeria/gestion-des-horaires-panel-admin-restaurant.webp",
-          alt: "Gestion des horaires panel admin restaurant BreizhApp",
-          caption: "Horaires : ouverture jour par jour, mis à jour en temps réel sur le site",
-        },
-      },
-      {
-        heading: "Codes promo : créez vos offres en quelques clics",
-        paragraphs: [
-          "La section Codes promo vous permet de créer des réductions en pourcentage ou en montant fixe, avec une date d'expiration et un nombre d'utilisations maximum. Idéal pour une offre de lancement, une promotion du weekend ou une récompense client.",
-        ],
-        image: {
-          src: "/blog/panel-admin-restaurant-pizzeria/codes-promo-panel-admin-pizzeria.webp",
-          alt: "Codes promo panel admin pizzeria BreizhApp",
-          caption: "Codes promo : réduction en % ou montant fixe, date d'expiration paramétrable",
-        },
-      },
-      {
-        heading: "Livreurs : gérez votre équipe de livraison",
-        paragraphs: [
-          "Si vous proposez la livraison à domicile, la section Livreurs vous permet d'ajouter vos livreurs, de leur attribuer des commandes et de suivre leur activité. Chaque livreur peut accéder à l'application depuis son téléphone pour voir ses livraisons du jour.",
-        ],
-        image: {
-          src: "/blog/panel-admin-restaurant-pizzeria/gestion-des-livreurs-panel-admin-restaurant.webp",
-          alt: "Gestion des livreurs panel admin restaurant BreizhApp",
-          caption: "Livreurs : gestion de l'équipe et attribution des commandes",
-        },
-      },
-      {
-        heading: "Statistiques : analysez votre activité",
-        paragraphs: [
-          "La section Statistiques affiche vos données de vente sur la période de votre choix : nombre de commandes, chiffre d'affaires, produits les plus commandés, heures de pointe. Ces données vous aident à ajuster votre menu et vos horaires.",
-        ],
-        image: {
-          src: "/blog/panel-admin-restaurant-pizzeria/statistiques-panel-admin-restaurant-pizzeria.webp",
-          alt: "Statistiques panel admin restaurant pizzeria BreizhApp",
-          caption: "Statistiques : CA, commandes et top produits sur la période choisie",
-        },
-      },
-      {
-        heading: "Messagerie : centralisez vos échanges clients",
-        paragraphs: [
-          "Tous les messages envoyés depuis votre site ou application arrivent dans la messagerie du panel. Vous répondez directement depuis l'interface, sans jongler entre différentes boîtes mail.",
-        ],
-        image: {
-          src: "/blog/panel-admin-restaurant-pizzeria/messagerie-panel-admin-restaurant.webp",
-          alt: "Messagerie panel admin restaurant BreizhApp",
-          caption: "Messagerie : tous les échanges clients centralisés dans le panel",
-        },
-      },
-      {
-        heading: "Photos : mettez à jour vos visuels en autonomie",
-        paragraphs: [
-          "Ajoutez ou supprimez des photos de votre restaurant, de vos plats ou de votre équipe directement depuis le panel. Les visuels s'affichent instantanément sur votre site et dans votre application.",
-        ],
-        image: {
-          src: "/blog/panel-admin-restaurant-pizzeria/galerie-photos-panel-admin-pizzeria.webp",
-          alt: "Galerie photos panel admin pizzeria BreizhApp",
-          caption: "Photos : upload et suppression de visuels sans faire appel au développeur",
-        },
-      },
-      {
-        heading: "À propos : personnalisez la présentation de votre établissement",
-        paragraphs: [
-          "La section À propos vous permet de modifier le texte de présentation de votre restaurant, vos coordonnées, votre adresse et les informations qui s'affichent sur la page de présentation de votre site ou application.",
-        ],
-        image: {
-          src: "/blog/panel-admin-restaurant-pizzeria/section-a-propos-panel-admin-restaurant.webp",
-          alt: "Section à propos panel admin restaurant BreizhApp",
-          caption: "À propos : présentation, coordonnées et adresse modifiables en autonomie",
-        },
-      },
-      {
-        heading: "Ce panel est inclus dans chaque projet restaurant",
-        paragraphs: [
-          "Ce panel d'administration est livré avec chaque site ou application que je développe pour un restaurant ou une pizzeria, inclus dans le tarif, sans supplément.",
-          "Il s'ouvre depuis un ordinateur, une tablette ou un smartphone, avec une interface pensée pour un usage quotidien sans formation. Vous êtes prévenu en temps réel à chaque nouvelle commande ou réservation, vos données sont sécurisées sur Firebase, et le support est compris dans l'abonnement mensuel.",
-        ],
-      },
-      {
-        heading: "FAQ : le panel d'administration pour restaurant",
-        list: [
-          "Le panel est-il inclus dans le prix ? Oui. Le panel d'administration complet est inclus dans toutes les offres BreizhApp pour les restaurants.",
-          "Puis-je modifier mon menu moi-même ? Oui. Vous ajoutez, modifiez et supprimez des produits depuis la section Menu, sans faire appel à un développeur.",
-          "Les clients sont-ils notifiés quand je confirme leur commande ? Oui. Une notification push est envoyée automatiquement au client à chaque changement de statut.",
-          "Mes livreurs peuvent-ils accéder au panel ? Oui. Chaque livreur a son propre accès limité à ses livraisons du jour.",
-          "Le panel fonctionne-t-il sur téléphone ? Oui. Le panel s'adapte à tous les écrans.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "panel-admin-boutique-ecommerce",
-    image: {
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Luxer_One_Parcel_Lockers_-_Package_Delivery_%2854123579861%29.jpg/960px-Luxer_One_Parcel_Lockers_-_Package_Delivery_%2854123579861%29.jpg",
-      alt: "Casiers de retrait de colis e-commerce",
-      credit: "Photo : Tony Webster, CC BY 2.0, via Wikimedia Commons",
-    },
-    service: "ecommerce",
-    title: "Panel admin e-commerce : produits, commandes et avis",
-    description:
-      "Le panel d'administration inclus dans chaque boutique en ligne : produits, commandes, codes promo, avis clients et messagerie depuis un seul tableau de bord.",
-    date: "2026-06-29",
-    lastModified: "2026-10-01",
-    category: "Secteurs",
-    sections: [
-      {
-        paragraphs: [
-          "Chaque boutique en ligne que je développe inclut un panel d'administration complet. Vous gérez votre catalogue, vos commandes et vos clients en totale autonomie, sans jamais avoir besoin de faire appel à un développeur pour la moindre modification.",
-          "Voici les 8 modules du panel, capture par capture.",
-        ],
-      },
-      {
-        heading: "Dashboard : votre boutique en un coup d'œil",
-        paragraphs: [
-          "La page d'accueil du panel affiche vos indicateurs clés : chiffre d'affaires, nombre de commandes et nombre de produits actifs. Les dernières commandes sont listées directement sur le tableau de bord pour que vous puissiez les traiter sans naviguer.",
-        ],
-        image: {
-          src: "/portfolio/histoire-eternelle/dashboard-admin-chiffre-d-affaires-commandes-et-produits-actifs.webp",
-          alt: "Dashboard panel admin boutique e-commerce BreizhApp",
-          caption: "Dashboard : CA, commandes, produits et dernières ventes en temps réel",
-        },
-      },
-      {
-        heading: "Produits : gérez votre catalogue en autonomie",
-        paragraphs: [
-          "La section Produits liste l'intégralité de votre catalogue. Pour chaque article, vous modifiez le nom, la description, le prix, les photos, le stock et la catégorie. Vous activez ou désactivez un produit en un clic sans le supprimer.",
-          "Besoin d'ajouter un nouveau bijou ou une nouvelle collection ? Vous le faites directement depuis le panel, sans passer par un développeur.",
-        ],
-        image: {
-          src: "/portfolio/histoire-eternelle/gestion-des-produits-ajout-prix-et-disponibilite.webp",
-          alt: "Gestion des produits panel admin boutique en ligne BreizhApp",
-          caption: "Produits : ajout, modification, prix et disponibilité en autonomie totale",
-        },
-      },
-      {
-        heading: "Catégories : organisez votre catalogue",
-        paragraphs: [
-          "La section Catégories vous permet de créer et d'organiser les familles de produits de votre boutique. Chaque catégorie s'affiche dans la navigation de votre site pour guider vos clients vers ce qu'ils cherchent.",
-        ],
-        image: {
-          src: "/blog/panel-admin-boutique-ecommerce/gestion-des-categories-panel-admin-e-commerce.webp",
-          alt: "Gestion des catégories panel admin e-commerce BreizhApp",
-          caption: "Catégories : organisation du catalogue et navigation client",
-        },
-      },
-      {
-        heading: "Commandes : traitez chaque vente en temps réel",
-        paragraphs: [
-          "La section Commandes centralise toutes les ventes avec le détail de chaque commande, le statut de traitement, le mode de livraison et les coordonnées de l'acheteur. Vous mettez à jour le statut et le client est notifié automatiquement.",
-        ],
-        image: {
-          src: "/portfolio/histoire-eternelle/suivi-et-traitement-des-commandes-en-temps-reel.webp",
-          alt: "Gestion des commandes panel admin boutique e-commerce BreizhApp",
-          caption: "Commandes : suivi en temps réel avec statut et notification client automatique",
-        },
-      },
-      {
-        heading: "Codes promo : créez vos offres promotionnelles",
-        paragraphs: [
-          "Créez des codes de réduction en pourcentage ou en montant fixe, avec une date d'expiration et un nombre d'utilisations maximum. Idéal pour une offre de lancement, une vente flash ou une récompense client fidèle.",
-        ],
-        image: {
-          src: "/portfolio/histoire-eternelle/codes-promo-parametrables.webp",
-          alt: "Codes promo panel admin boutique en ligne BreizhApp",
-          caption: "Codes promo : réduction en % ou montant fixe, durée et limite d'utilisation",
-        },
-      },
-      {
-        heading: "Messagerie : répondez à vos clients depuis le panel",
-        paragraphs: [
-          "Tous les messages envoyés depuis votre boutique arrivent dans la messagerie du panel. Vous centralisez vos échanges sans jongler entre différentes boîtes mail ou outils.",
-        ],
-        image: {
-          src: "/blog/panel-admin-boutique-ecommerce/messagerie-panel-admin-boutique-e-commerce.webp",
-          alt: "Messagerie panel admin boutique e-commerce BreizhApp",
-          caption: "Messagerie : échanges clients centralisés dans le panel",
-        },
-      },
-      {
-        heading: "Avis clients : gérez votre réputation",
-        paragraphs: [
-          "La section Avis centralise les avis laissés par vos clients sur vos produits. Vous les modérez depuis le panel avant publication, pour garder le contrôle sur ce qui s'affiche sur votre boutique.",
-        ],
-        image: {
-          src: "/portfolio/histoire-eternelle/moderation-des-avis-clients-avant-publication.webp",
-          alt: "Avis clients panel admin boutique en ligne BreizhApp",
-          caption: "Avis clients : modération avant publication pour garder le contrôle",
-        },
-      },
-      {
-        heading: "Photos : mettez à jour vos visuels en autonomie",
-        paragraphs: [
-          "Ajoutez ou supprimez des photos de votre boutique, de vos produits ou de votre univers de marque directement depuis le panel. Les visuels s'affichent instantanément sur votre site.",
-        ],
-        image: {
-          src: "/blog/panel-admin-boutique-ecommerce/photos-panel-admin-boutique-e-commerce.webp",
-          alt: "Photos panel admin boutique e-commerce BreizhApp",
-          caption: "Photos : upload et gestion des visuels sans faire appel au développeur",
-        },
-      },
-      {
-        heading: "Ce panel est inclus dans chaque boutique BreizhApp",
-        paragraphs: [
-          "Ce panel d'administration est livré avec chaque boutique en ligne que je développe, inclus dans le tarif, sans supplément.",
-          "Il s'ouvre depuis un ordinateur, une tablette ou un smartphone, avec une interface pensée pour un usage quotidien sans formation. Le paiement sécurisé par Stripe est intégré, vos données sont protégées sur Firebase, et le support est compris dans l'abonnement mensuel.",
-        ],
-      },
-      {
-        heading: "FAQ : le panel d'administration e-commerce",
-        list: [
-          "Le panel est-il inclus dans le prix ? Oui. Le panel d'administration complet est inclus dans toutes les offres BreizhApp pour les boutiques en ligne.",
-          "Puis-je ajouter des produits moi-même ? Oui. Vous ajoutez, modifiez et supprimez des produits depuis la section Produits, sans faire appel à un développeur.",
-          "Les clients sont-ils notifiés quand je traite leur commande ? Oui. Une notification ou un email est envoyé automatiquement au client à chaque changement de statut de commande.",
-          "Puis-je modérer les avis avant qu'ils s'affichent ? Oui. Chaque avis passe par la section Avis du panel avant d'être publié sur votre boutique.",
-          "Le panel fonctionne-t-il sur téléphone ? Oui. Le panel s'adapte à tous les écrans.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "notifications-push-application-mobile",
-    image: {
-      src: "/blog/notifications-push-application-mobile.jpg",
-      alt: "Gros plan d'une main tenant un smartphone dont l'écran verrouillé affiche une bannière de notification, lumière intérieure douce",
-      credit: "Image : Artlist",
-    },
-    service: "application-mobile",
-    title: "Notifications push : faire revenir vos clients dans l'app",
-    description:
-      "Notifications push mobile : fonctionnement, exemples par secteur et bonnes pratiques. La fonctionnalité qui sépare une app utilisée d'une app oubliée.",
-    date: "2026-07-03",
-    lastModified: "2026-10-01",
-    category: "Tech",
-    sections: [
-      {
-        paragraphs: [
-          "Une application sans notifications push, c'est un commerce qui n'a jamais le numéro de téléphone de ses clients. Vous pouvez avoir la plus belle application du monde : si personne n'y repense après le premier téléchargement, elle finit oubliée dans un dossier.",
-          "Les notifications sont le seul canal qui rappelle votre existence à l'utilisateur sans qu'il ait à ouvrir l'application de lui-même. C'est la fonctionnalité qui transforme une application installée une fois en un outil utilisé chaque semaine. Voici comment elles fonctionnent, et comment bien s'en servir.",
-        ],
-      },
-      {
-        heading: "Qu'est-ce qu'une notification push, concrètement ?",
-        paragraphs: [
-          "Une notification push est un message qui s'affiche sur l'écran de verrouillage ou en haut de l'écran du téléphone, même quand l'application est fermée. Contrairement à un SMS ou à un email, elle ne coûte rien à l'envoi, et son taux d'ouverture est nettement supérieur, souvent trois à cinq fois plus élevé qu'un email marketing.",
-          "Techniquement, l'application s'enregistre dès son installation auprès d'un service de notification, Firebase Cloud Messaging, qui fonctionne pour iOS comme pour Android. Le propriétaire de l'application peut ensuite déclencher un envoi à la main depuis son panel d'administration, ou automatiquement selon un événement : nouvelle commande, rendez-vous à venir, promotion du jour.",
-        ],
-      },
-      {
-        heading: "Des exemples concrets par secteur",
-        paragraphs: [
-          "Le bon message au bon moment fait toute la différence. Voici comment j'intègre les notifications selon le métier de mes clients.",
-        ],
-        table: {
-          head: ["Secteur", "Notification type"],
-          rows: [
-            ["Restaurant", "« Votre commande est prête ! », envoyée automatiquement dès le changement de statut dans le panel"],
-            ["Coiffeur, institut", "Rappel de rendez-vous 24h avant, pour réduire les absences sans passer un coup de fil"],
-            ["Boutique en ligne", "Promotion flash, ou retour en stock d'un produit mis en favori"],
-            ["Salle de sport", "Fin d'abonnement proche, ou rappel d'une séance programmée"],
-            ["Hôtel, location saisonnière", "Horaires d'arrivée rappelés la veille du séjour"],
-          ],
-        },
-      },
-      {
-        heading: "Plus efficace qu'un post Instagram ou un email",
-        paragraphs: [
-          "Un post sur les réseaux sociaux dépend d'un algorithme qui décide qui le voit. Un email arrive dans une boîte de réception saturée, quand il ne finit pas dans les spams. La notification, elle, s'affiche directement sur l'écran verrouillé du téléphone de votre client, sans intermédiaire et sans algorithme à contourner.",
-          "C'est aussi un canal qui vous appartient : une fois l'application installée, vous ne dépendez plus d'une plateforme pour recontacter vos clients.",
-        ],
-      },
-      {
-        heading: "Les bonnes pratiques pour ne pas être désinstallé",
-        paragraphs: [
-          "La première règle est de personnaliser le message : « Votre commande n°482 est prête » est bien plus utile que « Une notification vous attend ». La deuxième, de limiter la fréquence : hors messages transactionnels, une à deux notifications par semaine au maximum, au-delà de quoi les désinstallations augmentent.",
-          "Privilégiez les messages transactionnels (confirmation, rappel de rendez-vous), toujours mieux perçus que les promotions, et ciblez vos envois plutôt que d'envoyer la même offre à tout le monde. Enfin, testez l'heure d'envoi : une notification à 8h du matin ou en plein repas a moins de chances d'être bien reçue.",
-        ],
-      },
-      {
-        heading: "Comment j'intègre les notifications dans vos projets",
-        paragraphs: [
-          "Chaque application que je développe en React Native peut intégrer les notifications via Firebase Cloud Messaging, la solution la plus fiable, et gratuite, pour iOS et Android. L'envoi se pilote depuis le panel d'administration inclus dans votre projet : vous rédigez et envoyez vos notifications sans aucune compétence technique.",
-          "Le devis est gratuit et sans engagement. Décrivez-moi votre projet, même flou, je vous réponds sous 24h.",
-        ],
-      },
-      {
-        heading: "FAQ : notifications push sur application mobile",
-        list: [
-          "Les notifications push sont-elles payantes ? Non, l'envoi via Firebase Cloud Messaging est gratuit, quel que soit le volume.",
-          "Puis-je envoyer une notification à un seul client ou à tous mes clients ? Les deux : selon la configuration de votre panel admin, vous ciblez un utilisateur précis ou l'ensemble de votre base.",
-          "Les notifications fonctionnent-elles si l'app est fermée ? Oui, c'est justement leur intérêt : elles s'affichent même quand l'application n'est pas ouverte.",
-          "Combien coûte l'intégration des notifications push dans mon app ? Elles s'intègrent dès la création de l'app ou en option ensuite. Leur coût est détaillé dans le devis gratuit, envoyé sous 24h.",
-          "Les utilisateurs peuvent-ils désactiver les notifications ? Oui, à tout moment depuis les réglages de leur téléphone, d'où l'importance de ne pas en abuser.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "ux-ui-application-mobile-reussie",
-    image: {
-      src: "/blog/ux-ui-application-mobile-reussie.jpg",
-      alt: "Plan de travail de conception UX/UI d'application mobile : smartphone affichant une interface épurée, croquis de wireframes et nuancier de couleurs",
-      credit: "Image : Artlist",
-    },
-    service: "application-mobile",
-    title: "UX/UI application mobile : ce qui fait rester vos clients",
-    description:
-      "Les principes UX/UI d'une application mobile réussie : navigation intuitive, rapidité, cohérence visuelle. Pour que vos clients restent au-delà de 10 secondes.",
-    date: "2026-07-03",
-    lastModified: "2026-10-01",
-    category: "Tech",
-    sections: [
-      {
-        paragraphs: [
-          "Un utilisateur décide de garder ou de désinstaller une application dans les dix premières secondes. Ce jugement instantané ne repose pas sur les fonctionnalités, mais sur l'expérience : est-ce clair, est-ce rapide, est-ce agréable ?",
-          "L'UX, l'expérience utilisateur, et l'UI, l'interface utilisateur, font souvent toute la différence entre une application qui génère des réservations et une application installée puis oubliée. Voici les principes qui comptent vraiment, et les erreurs qui font fuir.",
-        ],
-      },
-      {
-        heading: "UX et UI : deux choses différentes, mais indissociables",
-        paragraphs: [
-          "L'UI, c'est ce que l'œil voit : les couleurs, les boutons, la typographie, les icônes. L'UX, c'est ce que l'utilisateur ressent en se servant de l'application : trouve-t-il facilement ce qu'il cherche, comprend-il où appuyer, l'application répond-elle vite ?",
-          "Une application peut être belle mais frustrante à utiliser, ou l'inverse. Les deux doivent donc être pensées ensemble, dès la conception.",
-        ],
-      },
-      {
-        heading: "Les principes d'une bonne expérience mobile",
-        subsections: [
-          {
-            heading: "Tout à portée de pouce",
-            paragraphs: [
-              "Les actions principales doivent être accessibles d'une seule main, sans changer sa prise du téléphone. Et les actions clés (réserver, commander, contacter) ne devraient jamais demander plus de trois gestes.",
-            ],
-          },
-          {
-            heading: "La rapidité",
-            paragraphs: [
-              "Un écran doit s'afficher en moins de deux secondes : au-delà, une grande partie des utilisateurs abandonne. Chaque action doit aussi produire une réaction immédiate (bouton qui réagit, chargement visible, confirmation claire), pour que l'utilisateur sache que sa demande a été prise en compte.",
-            ],
-          },
-          {
-            heading: "La cohérence et la lisibilité",
-            paragraphs: [
-              "Les mêmes couleurs, les mêmes boutons et les mêmes comportements sur tous les écrans permettent à l'utilisateur de ne jamais se sentir perdu. Des textes courts et lisibles, avec une hiérarchie claire entre titre, contenu et actions, font le reste.",
-            ],
-          },
-        ],
-      },
-      {
-        heading: "Les erreurs qui font fuir les utilisateurs",
-        paragraphs: [
-          "Certaines erreurs reviennent très souvent dans les applications développées à la hâte ou avec des outils no-code génériques. La plus courante est le formulaire d'inscription trop long : demandez le strict nécessaire, le profil se complétera plus tard. Vient ensuite l'écran surchargé, avec tant d'options que l'action principale se noie.",
-          "L'absence de retour visuel laisse l'utilisateur dans le doute après chaque appui. Des textes trop petits deviennent illisibles sur un petit écran. Et une navigation incohérente, avec un bouton retour qui change de place ou des gestes différents d'un écran à l'autre, suffit à faire abandonner.",
-        ],
-      },
-      {
-        heading: "Comment je conçois l'expérience de vos applications",
-        paragraphs: [
-          "Avant de coder le moindre écran, je définis le parcours utilisateur : quelle est l'action prioritaire que le client doit pouvoir faire (réserver, commander, appeler), et je construis l'interface autour de cet objectif.",
-          "Chaque application que je développe en React Native suit les règles de conception natives d'iOS (Human Interface Guidelines) et d'Android (Material Design). Résultat : l'application est intuitive dès la première ouverture, sans que l'utilisateur ait à apprendre à s'en servir. Le devis est gratuit et sans engagement, et je vous réponds sous 24h.",
-        ],
-      },
-      {
-        heading: "FAQ : UX/UI d'une application mobile",
-        list: [
-          "Quelle est la différence entre UX et UI ? L'UI concerne l'apparence visuelle (couleurs, boutons), l'UX concerne le ressenti et la facilité d'utilisation globale de l'app.",
-          "Pourquoi le temps de chargement est-il si important ? Au-delà de 2 à 3 secondes de chargement, une grande partie des utilisateurs quitte l'application avant même de voir le contenu.",
-          "Une app développée en no-code a-t-elle une bonne UX ? Rarement : les modèles génériques ne s'adaptent pas à votre parcours client et donnent souvent une expérience impersonnelle.",
-          "L'UX/UI est-elle incluse dans le prix de développement ? Oui, la conception de l'interface et du parcours utilisateur est incluse dans toutes mes offres.",
-          "Combien de temps prend la conception UX/UI d'une app ? Comptez 3 à 5 jours pour définir le parcours et les écrans avant le développement, selon la complexité du projet.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "captures-ecran-app-store-play-store",
-    image: {
-      src: "/blog/captures-ecran-app-store-play-store.jpg",
-      alt: "Smartphone affichant une grille d'icônes d'applications à côté d'un ordinateur portable avec un outil de design ouvert, sur un bureau lumineux",
-      credit: "Image : Artlist",
-    },
-    service: "application-mobile",
-    title: "Captures d'écran App Store & Play Store : le guide",
-    description:
-      "Créer des captures d'écran qui convertissent sur l'App Store et Google Play : formats requis, bonnes pratiques et erreurs à éviter pour être téléchargé.",
-    date: "2026-07-03",
-    lastModified: "2026-10-01",
-    category: "Guides",
-    sections: [
-      {
-        paragraphs: [
-          "Avant de télécharger une application, un utilisateur regarde en moyenne trois à cinq captures d'écran sur sa fiche App Store ou Google Play. C'est souvent ce qui décide s'il appuie sur « Installer » ou s'il passe à l'application concurrente juste en dessous.",
-          "Des captures mal cadrées, sans contexte, ou de simples copies d'écran brutes font perdre des téléchargements, même quand l'application est excellente. Voici les formats à respecter, ce qui fait une bonne capture, et les erreurs à éviter.",
-        ],
-      },
-      {
-        heading: "Les formats requis par chaque store",
-        paragraphs: [
-          "Apple et Google imposent des formats précis, qui varient selon la taille d'écran des appareils.",
-        ],
-        table: {
-          head: ["Store", "Exigences"],
-          rows: [
-            ["App Store (iOS)", "Captures obligatoires pour iPhone 6,9 pouces (1320 × 2868 px) et 6,5 pouces, plus iPad si l'application est compatible tablette"],
-            ["Google Play (Android)", "Au moins 2 captures, de 320 à 3840 px, au format conseillé 16:9 ou 9:16"],
-            ["Les deux", "De 2 à 10 captures, et une vidéo de présentation de 15 à 30 secondes possible"],
-          ],
-        },
-        callout: {
-          title: "Utilisez tout l'espace",
-          text: "Les deux stores acceptent jusqu'à 10 captures : ne vous arrêtez pas à deux. Une vidéo de présentation augmente aussi sensiblement le nombre de téléchargements.",
-        },
-      },
-      {
-        heading: "Ce qui fait une capture qui convertit",
-        paragraphs: [
-          "La différence ne tient pas à la qualité de l'application, mais à la mise en scène de ses écrans. Ajoutez un titre court au-dessus de chaque capture (« Réservez en 2 clics », « Suivez votre commande en temps réel ») plutôt qu'une copie d'écran nue, et mettez en avant le bénéfice plutôt que la fonction technique : « Ne ratez plus un rendez-vous » parle davantage que « Notifications activées ».",
-          "Pensez la série comme une histoire : la première capture donne envie, les suivantes détaillent les bénéfices clés. Présentez les écrans dans un téléphone plutôt qu'en plein cadre, pour un rendu plus professionnel, et restez fidèle à votre identité visuelle, avec les couleurs et polices de votre logo et de votre site.",
-        ],
-      },
-      {
-        heading: "Les erreurs qui font fuir avant même le téléchargement",
-        paragraphs: [
-          "Des captures floues ou en basse résolution sont rédhibitoires sur les écrans actuels. Des textes trop longs deviennent illisibles en miniature, dans les résultats de recherche. Des captures qui ne montrent pas le vrai écran d'accueil donnent à l'utilisateur l'impression d'avoir été trompé une fois l'application installée. Et sans capture centrée sur l'action principale (réserver, commander, acheter), l'utilisateur ne comprend pas tout de suite à quoi sert l'application.",
-        ],
-      },
-      {
-        heading: "Comment je gère ça pour mes clients",
-        paragraphs: [
-          "La création des captures d'écran pour l'App Store et Google Play fait partie de la publication de chaque application que je développe. Je prépare les visuels aux bons formats, avec des titres et une mise en scène adaptés à votre secteur, avant la soumission aux deux stores.",
-          "Le devis est gratuit et sans engagement. Décrivez-moi votre projet, je vous réponds sous 24h.",
-        ],
-      },
-      {
-        heading: "FAQ : captures d'écran App Store et Google Play",
-        list: [
-          "Combien de captures d'écran dois-je fournir ? Entre 2 et 10 par plateforme. Je recommande d'en utiliser au moins 5 pour raconter une histoire complète.",
-          "Puis-je utiliser les mêmes captures pour l'App Store et le Google Play Store ? Les tailles diffèrent, mais le contenu et la mise en scène peuvent rester identiques, simplement redimensionnés.",
-          "Faut-il ajouter du texte sur les captures ? Oui, un court titre par capture augmente nettement les téléchargements par rapport à des copies d'écran nues.",
-          "La création des captures est-elle incluse dans le prix de développement ? Oui, dans toutes mes offres : la publication sur les stores inclut la préparation des visuels.",
-          "Une vidéo de présentation est-elle nécessaire ? Pas obligatoire, mais recommandée : elle augmente généralement le taux de téléchargement par rapport aux captures seules.",
-        ],
-      },
-    ],
-  },
-  {
     slug: "publier-application-app-store",
     image: {
       src: "/blog/publier-application-app-store.jpg",
@@ -3980,15 +3345,15 @@ export const articles: Article[] = [
     service: "application-mobile",
     title: "Publier son application sur l'App Store : guide 2026",
     description:
-      "Publier une application iOS sur l'App Store : compte développeur, délais de validation, règles Apple et erreurs qui font rejeter une app.",
+      "Publier une app iOS sur l'App Store : compte développeur, fiche, captures d'écran aux bons formats, validation Apple et erreurs qui font rejeter une app.",
     date: "2026-07-03",
-    lastModified: "2026-10-12",
+    lastModified: "2026-11-21",
     category: "Guides",
     sections: [
       {
         paragraphs: [
           "Publier une application sur l'App Store est plus exigeant que sur Google Play. Apple examine manuellement chaque application avant sa mise en ligne, et une part importante des premières soumissions est refusée, le plus souvent pour des raisons évitables.",
-          "Voici les étapes réelles de la publication, telles que je les gère pour chaque client, du compte développeur à la mise en ligne, avec les motifs de refus les plus fréquents.",
+          "Voici les étapes réelles de la publication, telles que je les gère pour chaque client : le compte développeur, la fiche, les captures d'écran qui donnent envie de télécharger, la validation par Apple et les motifs de refus les plus fréquents.",
         ],
       },
       {
@@ -4001,38 +3366,82 @@ export const articles: Article[] = [
         heading: "Étape 2 : préparer la fiche dans App Store Connect",
         paragraphs: [
           "Une fois le compte validé, la publication se prépare dans App Store Connect, le back-office d'Apple. La fiche comprend le nom de l'application et son sous-titre (30 caractères chacun au maximum), la description complète, les mots-clés de recherche et la catégorie.",
-          "Il faut aussi fournir les captures d'écran aux formats requis pour iPhone, et pour iPad si l'application est compatible, une politique de confidentialité, obligatoire même pour une application simple, ainsi que vos coordonnées et des informations de test pour les vérificateurs d'Apple.",
+          "Il faut aussi fournir une politique de confidentialité, obligatoire même pour une application simple, vos coordonnées, des identifiants de test pour les vérificateurs d'Apple, et surtout les captures d'écran, qui méritent une étape à part entière.",
         ],
       },
       {
-        heading: "Étape 3 : la validation par Apple",
+        heading: "Étape 3 : des captures d'écran qui donnent envie de télécharger",
+        paragraphs: [
+          "Avant de télécharger une application, la plupart des gens ne lisent pas la description : ils regardent les trois premières captures d'écran. C'est souvent ce qui décide s'ils appuient sur « Obtenir » ou s'ils passent à l'application concurrente juste en dessous.",
+        ],
+        table: {
+          head: ["Store", "Ce qui est demandé"],
+          rows: [
+            ["App Store (iPhone)", "Format 6,9 pouces, 1320 × 2868 px en portrait, qu'Apple réduit automatiquement pour les écrans plus petits"],
+            ["App Store (iPad)", "Captures iPad 13 pouces, uniquement si l'application est compatible tablette"],
+            ["Google Play", "Au moins 2 captures, de 320 à 3840 px, au format 9:16 conseillé"],
+            ["Les deux stores", "Jusqu'à 10 captures par langue, et une courte vidéo de présentation possible"],
+          ],
+        },
+        callout: {
+          title: "Vérifiez les formats au moment de publier",
+          text: "Apple fait évoluer ses formats à chaque nouvelle génération d'iPhone. Les dimensions exactes acceptées sont listées dans la page « Screenshot specifications » d'App Store Connect.",
+        },
+      },
+      {
+        subsections: [
+          {
+            heading: "Ce qui fait une capture qui convertit",
+            paragraphs: [
+              "Ajoutez un titre court au-dessus de chaque capture (« Réservez en 2 clics », « Suivez votre commande en direct ») plutôt qu'une copie d'écran nue, et mettez en avant le bénéfice plutôt que la fonction : « Ne ratez plus un rendez-vous » parle davantage que « Notifications activées ».",
+              "Pensez la série comme une histoire : la première capture donne envie, les suivantes détaillent les bénéfices clés. Présentez les écrans dans un téléphone pour un rendu plus professionnel, et restez fidèle à vos couleurs et à votre logo. Utilisez au moins cinq captures : les deux stores en acceptent dix.",
+            ],
+          },
+          {
+            heading: "Les erreurs qui font fuir avant le téléchargement",
+            paragraphs: [
+              "Des captures floues ou en basse résolution sont rédhibitoires. Des textes trop longs deviennent illisibles en miniature dans les résultats de recherche. Des captures qui ne montrent pas les vrais écrans donnent l'impression d'avoir été trompé une fois l'application installée, et Apple peut d'ailleurs les refuser. Enfin, sans capture centrée sur l'action principale (réserver, commander, acheter), l'utilisateur ne comprend pas tout de suite à quoi sert l'application.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Étape 4 : la validation par Apple",
         paragraphs: [
           "Apple examine chaque application à la main avant de la publier. Le délai moyen est de 24 à 48h, mais il peut atteindre une semaine en cas de refus suivi d'une nouvelle soumission.",
-          "Les vérificateurs testent l'application comme un vrai utilisateur : ils créent un compte, parcourent les écrans et testent le paiement s'il y en a un. Toute fonctionnalité cassée ou trompeuse entraîne un refus immédiat.",
+          "Les vérificateurs testent l'application comme un vrai utilisateur : ils créent un compte, parcourent les écrans et testent le paiement s'il y en a un. Toute fonctionnalité cassée ou trompeuse entraîne un refus.",
         ],
       },
       {
         heading: "Les motifs de refus les plus fréquents",
         paragraphs: [
           "Le premier motif est technique : une application qui plante, ou un bug bloquant pendant le test. Viennent ensuite les contenus incomplets (écrans vides, boutons qui ne mènent nulle part, texte provisoire de type « Lorem ipsum ») et l'absence de politique de confidentialité, ou un lien cassé vers celle-ci.",
-          "Apple refuse aussi les applications qui annoncent dans leur description une fonctionnalité absente, et celles qui vendent du contenu numérique sans passer par son système de paiement, sur lequel Apple prélève une commission de 15 à 30 %. Enfin, une application qui se contente d'afficher un site web dans une coquille vide est de plus en plus souvent rejetée.",
+          "Apple refuse aussi les applications qui annoncent une fonctionnalité absente, celles dont les captures ne correspondent pas à l'application réelle, et celles qui vendent du contenu numérique sans passer par son système de paiement, sur lequel Apple prélève une commission de 15 à 30 %. Enfin, une application qui se contente d'afficher un site web dans une coquille vide est de plus en plus souvent rejetée.",
+        ],
+      },
+      {
+        heading: "Et sur Google Play ?",
+        paragraphs: [
+          "La publication sur Android suit une logique proche, avec ses propres règles : compte à 25 $ payé une seule fois, phase de test fermé obligatoire pour les nouveaux comptes personnels, et validation généralement plus rapide. Tout est détaillé dans le guide [publier une application sur Google Play](/blog/publier-application-google-play-store).",
         ],
       },
       {
         heading: "Comment je gère la publication pour mes clients",
         paragraphs: [
-          "La publication sur l'App Store est incluse dans toutes mes offres de [création d'application mobile](/services/application-mobile). Je prépare la fiche complète et les captures d'écran, et je gère les échanges avec Apple si une précision est demandée pendant l'examen. Vous ne payez que les 99 $ par an du compte développeur, qui reste à votre nom.",
-          "Comme je développe en React Native avec une vraie logique applicative, et non une simple coquille web, le taux d'acceptation dès la première soumission est nettement plus élevé qu'avec un outil no-code générique. Le devis est gratuit et sans engagement, et je vous réponds sous 24h.",
+          "La publication sur l'App Store et Google Play est incluse dans toutes mes offres de [création d'application mobile](/services/application-mobile). Je prépare la fiche complète, je crée les captures d'écran aux bons formats avec des titres adaptés à votre secteur, et je gère les échanges avec Apple si une précision est demandée pendant l'examen. Vous ne payez que les 99 $ par an du compte développeur, qui reste à votre nom.",
+          "Comme je développe en React Native avec une vraie logique applicative, et non une simple coquille web, le taux d'acceptation dès la première soumission est nettement plus élevé qu'avec un outil no-code générique. Décrivez-moi votre projet via le [formulaire en bas de page](#contact) : je vous réponds sous 24h.",
         ],
       },
       {
         heading: "FAQ : publier une application sur l'App Store",
         list: [
-          "Combien coûte la publication sur l'App Store ? Le compte développeur Apple coûte 99$/an. La publication elle-même est incluse dans mes offres de développement.",
+          "Combien coûte la publication sur l'App Store ? Le compte développeur Apple coûte 99 $ par an. La publication elle-même est incluse dans mes offres de développement.",
           "Combien de temps prend la validation Apple ? En moyenne 24 à 48h, jusqu'à une semaine en cas de rejet et de correction.",
-          "Pourquoi mon app a-t-elle été rejetée ? Les causes les plus fréquentes sont les bugs, le contenu incomplet ou l'absence de politique de confidentialité.",
-          "Puis-je publier une app no-code sur l'App Store ? C'est possible mais risqué : Apple rejette de plus en plus les applications qui ressemblent à une simple coquille de site web.",
-          "Qui est propriétaire du compte développeur et de l'app publiée ? Vous. Le compte est ouvert à votre nom et reste votre propriété, même après la fin de notre collaboration.",
+          "Combien de captures d'écran faut-il fournir ? Au moins une par format demandé, jusqu'à 10. Je recommande d'en utiliser au moins 5 pour raconter une histoire complète.",
+          "Peut-on utiliser les mêmes captures pour l'App Store et Google Play ? Le contenu et la mise en scène peuvent rester identiques, seules les dimensions changent.",
+          "Pourquoi mon application a-t-elle été rejetée ? Les causes les plus fréquentes sont les bugs, le contenu incomplet, des captures trompeuses ou l'absence de politique de confidentialité.",
+          "Puis-je publier une application no-code sur l'App Store ? C'est possible mais risqué : Apple rejette de plus en plus les applications qui ressemblent à une simple coquille de site web.",
+          "Qui est propriétaire du compte développeur et de l'application ? Vous. Le compte est ouvert à votre nom et reste votre propriété, même après la fin de notre collaboration.",
         ],
       },
     ],
@@ -4104,101 +3513,6 @@ export const articles: Article[] = [
           "Qu'est-ce que la phase de test fermé obligatoire ? Depuis 2023, Google impose 12 testeurs actifs pendant 14 jours minimum avant d'autoriser un nouveau compte à publier publiquement.",
           "La publication sur Google Play est-elle plus simple que sur l'App Store ? Globalement oui, la validation est plus automatisée et moins stricte que celle d'Apple.",
           "Qui est propriétaire du compte développeur Google Play ? Vous. Le compte est ouvert à votre nom et reste votre propriété.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "avantages-developpement-application-mobile-cross-platform",
-    image: {
-      src: "/blog/avantages-developpement-application-mobile-cross-platform.jpg",
-      alt: "Un iPhone et un smartphone Android côte à côte affichant la même mise en page floutée, ordinateur portable avec du code en arrière-plan",
-      credit: "Image : Artlist",
-    },
-    service: "application-mobile",
-    title: "Application mobile cross-platform : les avantages",
-    description:
-      "Les avantages du développement cross-platform : une seule base de code pour iOS et Android, des délais réduits et une expérience utilisateur optimale.",
-    date: "2026-07-18",
-    lastModified: "2026-10-12",
-    category: "Tech",
-    sections: [
-      {
-        paragraphs: [
-          "Une application cross-platform est une application mobile développée à partir d'une seule base de code, qui fonctionne à la fois sur iOS et sur Android. C'est l'approche que j'utilise avec React Native pour tous mes [projets d'application mobile](/services/application-mobile).",
-          "À l'inverse, une application native est codée deux fois : en Swift pour iOS, en Kotlin pour Android. Au moment de choisir un développeur ou une agence, la question revient donc toujours : faut-il viser le natif ou le cross-platform ? Voici les vrais avantages de chaque approche, et pourquoi le cross-platform convient à la grande majorité des projets.",
-        ],
-      },
-      {
-        heading: "Les bénéfices du développement cross-platform",
-        paragraphs: [
-          "Le choix du cross-platform n'est pas qu'une question de coût. Trois bénéfices concrets reviennent sur mes projets clients.",
-        ],
-        subsections: [
-          {
-            heading: "Du temps et du budget économisés",
-            paragraphs: [
-              "Une seule base de code à écrire, tester et maintenir suffit pour toucher tous les utilisateurs mobiles, sur iPhone comme sur Android. En natif, il faudrait deux équipes, ou deux développements distincts.",
-            ],
-          },
-          {
-            heading: "Une expérience identique sur les deux plateformes",
-            paragraphs: [
-              "Les fonctionnalités, le design et les comportements sont les mêmes sur iOS et Android. Aucun de vos utilisateurs n'a droit à une version au rabais.",
-            ],
-          },
-          {
-            heading: "Une maintenance simplifiée",
-            paragraphs: [
-              "Une correction de bug ou une nouvelle fonctionnalité se déploie en une seule fois pour les deux plateformes, au lieu d'être développée et testée deux fois.",
-            ],
-          },
-        ],
-      },
-      {
-        heading: "Cross-platform ou natif : la comparaison",
-        paragraphs: [
-          "Le développement natif garde de vrais avantages, mais dans des cas plus rares qu'on ne le pense.",
-        ],
-        table: {
-          head: ["", "Natif", "Cross-platform"],
-          rows: [
-            ["Bases de code", "Deux, à développer et maintenir en parallèle", "Une seule"],
-            ["Budget et délais", "Doublés pour chaque évolution", "Un seul développement"],
-            ["Performances", "Maximales, utiles pour les jeux 3D", "Très proches du natif avec React Native"],
-            ["Fonctions matérielles", "Accès le plus direct aux dernières nouveautés", "Accès à l'essentiel des fonctions du téléphone"],
-            ["Publication", "Deux projets séparés", "Simultanée sur l'App Store et Google Play"],
-          ],
-        },
-      },
-      {
-        heading: "Les usages du cross-platform",
-        paragraphs: [
-          "Le cross-platform s'est imposé comme le choix par défaut pour la plupart des applications d'entreprise. Instagram, Discord ou Shopify utilisent des technologies cross-platform pour tout ou partie de leurs applications : la preuve que ce n'est pas une solution d'entrée de gamme.",
-          "Il convient aux applications de commerce et d'e-commerce (catalogue, paiement, notifications), aux applications de réservation et de service (rendez-vous, créneaux, rappels automatiques), et aux applications communautaires ou de contenu (profils, messagerie, fil d'actualité), qui doivent évoluer vite sur les deux plateformes à la fois. Pour un restaurant, un artisan ou une salle de sport, il permet d'obtenir une application complète sur iOS et Android sans multiplier les coûts.",
-        ],
-      },
-      {
-        heading: "Pourquoi faire appel à un spécialiste",
-        paragraphs: [
-          "Faire appel à une agence ou à un développeur freelance spécialisé en cross-platform permet d'aller plus vite qu'en recrutant une équipe interne. Vous profitez d'une expertise déjà rodée sur React Native, sans délai de recrutement.",
-          "C'est aussi l'assurance d'un code propre, documenté et évolutif, un point clé si vous comptez faire grandir votre application avec de nouvelles fonctionnalités, ou la confier un jour à une autre équipe.",
-        ],
-      },
-      {
-        heading: "En résumé",
-        paragraphs: [
-          "Le cross-platform est aujourd'hui l'option la plus pertinente pour la grande majorité des projets d'application mobile : il touche tous les utilisateurs, iOS et Android, avec un seul développement, une expérience homogène et une maintenance simplifiée. Le natif garde sa place pour des cas très particuliers, qui demandent des performances ou des fonctions matérielles de pointe.",
-          "Vous avez un projet d'application ? Écrivez-moi pour en parler : le devis est gratuit et sans engagement, et je vous réponds sous 24h.",
-        ],
-      },
-      {
-        heading: "FAQ : développement d'application mobile cross-platform",
-        list: [
-          "Le cross-platform est-il aussi performant que le natif ? Pour la grande majorité des usages (commerce, réservation, contenu, communauté), oui. Seules les applications aux besoins matériels très spécifiques (jeux 3D avancés, réalité augmentée poussée) gardent un écart de performance notable.",
-          "Quelle technologie utilisez-vous pour le cross-platform ? React Native, le framework le plus mature et le plus utilisé pour le développement d'applications sur mesure, par des startups comme par de grandes entreprises comme Instagram ou Shopify.",
-          "Puis-je migrer une app native existante vers le cross-platform ? Oui, en repartant du fonctionnement de l'app existante. Chaque cas est différent : j'étudie la faisabilité lors d'un premier échange.",
-          "Le cross-platform convient-il à toutes les tailles de projet ? Oui. C'est même l'option recommandée pour la majorité des projets, des applications vitrines aux plateformes plus complexes avec paiement et gestion de plusieurs utilisateurs.",
         ],
       },
     ],
@@ -4944,7 +4258,7 @@ export const articles: Article[] = [
           "Un titre qui dit ce que fait l'application : « Le Comptoir » ne dit rien, « Le Comptoir : pizza à emporter Brest » se trouve. 7 fiches sur 10 visent un mot-clé trop disputé pour elles, alors qu'un terme précis et local se gagne bien plus vite.",
           "Aucune répétition : Apple compte une seule fois chaque mot du titre, du sous-titre et du champ mots-clés. 42 % des fiches gaspillent leur champ mots-clés en répétant le titre.",
           "Les mots de vos clients, pas votre jargon : un développeur a renommé son application de suivi de poids avec les mots exacts que tapaient les utilisateurs. Ses téléchargements dans ce pays ont presque quadruplé en 90 jours.",
-          "Des captures qui tiennent la promesse de la recherche : un autre créateur a changé son titre pour ressortir sur plus de recherches. Ses impressions ont bondi de 122 %, mais son taux de conversion a chuté de 73 %, car ses captures montraient autre chose que ce que les gens cherchaient. Le guide des [captures d'écran App Store et Play Store](/blog/captures-ecran-app-store-play-store) détaille comment les construire.",
+          "Des captures qui tiennent la promesse de la recherche : un autre créateur a changé son titre pour ressortir sur plus de recherches. Ses impressions ont bondi de 122 %, mais son taux de conversion a chuté de 73 %, car ses captures montraient autre chose que ce que les gens cherchaient. Le guide de [publication sur l'App Store](/blog/publier-application-app-store) détaille comment les construire.",
         ],
         callout: {
           title: "Côté Android",
@@ -5131,7 +4445,7 @@ export const articles: Article[] = [
         ],
         list: [
           "Une saisie quasi instantanée : Daylio ou RespiRelax+ se lancent et s'utilisent en quelques secondes. Chaque écran en trop fait perdre des utilisateurs.",
-          "Des notifications au bon moment : un rappel le soir pour noter son humeur, le matin pour le rapport de sommeil. Une notification utile est attendue, une notification au hasard fait désinstaller. J'explique comment bien les régler dans mon guide sur les [notifications push](/blog/notifications-push-application-mobile).",
+          "Des notifications au bon moment : un rappel le soir pour noter son humeur, le matin pour le rapport de sommeil. Une notification utile est attendue, une notification au hasard fait désinstaller. J'explique comment bien les régler dans mon guide sur la [fidélisation et les notifications push](/blog/comment-fideliser-clients-application-mobile).",
           "La visualisation des progrès : courbes, séries de jours, rapport hebdomadaire. Voir son évolution est souvent la première raison de revenir.",
           "L'utilisation des capteurs du téléphone : GPS, accéléromètre, micro, fréquence cardiaque via la montre. Les données se collectent sans effort pour l'utilisateur.",
           "Le partage avec Santé et Health Connect : les applications qui échangent leurs données avec ces plateformes deviennent une pièce d'un ensemble, et ne sont pas abandonnées au profit d'une autre.",

@@ -102,8 +102,8 @@ export default function Footer() {
             ["Progressive Web App", "/blog/progressive-web-app-vs-application-native"],
             ["Développeur app Bretagne", "/blog/developpeur-application-mobile-bretagne"],
             ["Application mobile Brest", "/blog/application-mobile-brest"],
-            ["Développeur Quimper", "/blog/developpeur-freelance-quimper"],
-            ["Développeur Rennes", "/blog/developpeur-freelance-rennes"],
+            ["Prix d'un site internet", "/blog/tarif-creation-site-internet"],
+            ["Fidéliser ses clients", "/blog/comment-fideliser-clients-application-mobile"],
           ]} />
         </div>
       </div>

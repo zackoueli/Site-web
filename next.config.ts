@@ -140,7 +140,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/blog/comparatif-createurs-site-web-prix-2025",
-        destination: "/blog/comparatif-createurs-site-web-prix",
+        destination: "/blog/tarif-creation-site-internet",
         permanent: true,
       },
       {
@@ -153,6 +153,27 @@ const nextConfig: NextConfig = {
         destination: "/services/web-app",
         permanent: true,
       },
+      // Fusions d'articles du 2026-11-21 (pages sans trafic regroupées dans l'article le plus complet)
+      ...([
+        ["comparatif-createurs-site-web-prix", "/blog/tarif-creation-site-internet"],
+        ["combien-coute-site-web-sur-mesure", "/blog/tarif-creation-site-internet"],
+        ["wordpress-vs-sur-mesure", "/blog/tarif-creation-site-internet"],
+        ["site-web-artisan-sur-mesure", "/blog/tarif-creation-site-internet"],
+        ["developpeur-freelance-quimper", "/blog/developpeur-application-mobile-bretagne"],
+        ["developpeur-freelance-rennes", "/blog/developpeur-application-mobile-bretagne"],
+        ["creation-site-web-brest", "/blog/developpeur-application-mobile-bretagne"],
+        ["panel-admin-restaurant-pizzeria", "/blog/panel-admin-site-web-application-mobile"],
+        ["panel-admin-boutique-ecommerce", "/blog/panel-admin-site-web-application-mobile"],
+        ["avantages-developpement-application-mobile-cross-platform", "/blog/react-native-vs-flutter"],
+        ["notifications-push-application-mobile", "/blog/comment-fideliser-clients-application-mobile"],
+        ["captures-ecran-app-store-play-store", "/blog/publier-application-app-store"],
+        ["ux-ui-application-mobile-reussie", "/blog/comment-creer-une-application-mobile"],
+        ["application-mobile-salle-sport-fitness", "/services/secteur/salle-de-sport"],
+      ] as const).map(([slug, destination]) => ({
+        source: `/blog/${slug}`,
+        destination,
+        permanent: true,
+      })),
     ];
   },
 };
